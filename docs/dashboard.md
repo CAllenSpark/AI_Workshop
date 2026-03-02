@@ -11,8 +11,8 @@
 ## Overall Progress
 
 ```
-M0 Foundation    [####################] 100%  << CURRENT
-M1 Research      [....................]   0%
+M0 Foundation    [####################] 100%
+M1 Research      [################....]  80%  << CURRENT
 M2 Data Model    [....................]   0%
 M3 Core UI       [....................]   0%
 M4 Search/Filter [....................]   0%
@@ -20,8 +20,8 @@ M5 Polish/Export [....................]   0%
 M6 Validation    [....................]   0%
 ```
 
-**Current Milestone:** M0 — Foundation
-**Overall:** 1 of 7 milestones complete
+**Current Milestone:** M1 — Research
+**Overall:** 1 of 7 milestones complete; M1 nearing completion
 
 ---
 
@@ -30,7 +30,7 @@ M6 Validation    [....................]   0%
 | Milestone | Goal | Status | Quality Gate |
 |-----------|------|--------|-------------|
 | **M0 Foundation** | Project scaffolding, team setup, initial research | Complete | All 23 files created. JSON validates. Team configured. |
-| **M1 Research** | Complete Vashon Island knowledge base (80-120 entries) | Not Started | Pending: 100% source citations, 5+ entries per era |
+| **M1 Research** | Complete Vashon Island knowledge base (80-120 entries) | In Progress | 93 entries (target met). 100% source citations. 5+ entries per era. Supporting files being expanded. |
 | **M2 Data Model** | Finalize schemas, build import pipeline | Not Started | Pending: Schema validation, export format spec |
 | **M3 Core UI** | Timeline component with scrubbing and data display | Not Started | Pending: 60fps scrubbing, unit tests, E2E smoke |
 | **M4 Search & Filter** | Full-text search, layer toggles, date range filter | Not Started | Pending: <100ms search, filter combinations |
@@ -43,34 +43,34 @@ M6 Validation    [....................]   0%
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | M0 PRD complete | None |
-| Engineer | Idle | M0 FRD + schema complete | None |
-| Researcher | Idle | M0 skeleton research complete (18 entries) | None |
-| Designer | Idle | M0 Design Bible complete | None |
-| Tester | Idle | M0 Test Plan complete | None |
-| UI/UX | Idle | M0 wireframes in Design Bible | None |
+| Product Manager | Idle | Awaiting M1 coverage review | None |
+| Engineer | Idle | Awaiting M2 start | None |
+| Researcher | Active | Expanding people, places, sources, environment files | None |
+| Designer | Idle | Awaiting M1 completion | None |
+| Tester | Pending | Will validate cross-references after research expansion | None |
+| UI/UX | Idle | Awaiting M1 completion | None |
 
 ---
 
 ## Research Coverage
 
-### Timeline Entries: 18 total
+### Timeline Entries: 93 total
 
 ```
 Era                    Entries  Target(M1)  Coverage
 ------------------------------------------------------
-Prehistory                  2          8      25%
-Indigenous                  1          8      12%
-Exploration                 2          8      25%
-Logging & Treaty            2          8      25%
-Pioneer Settlement          2         10      20%
-Growth & Industry           2         10      20%
-Early 20th Century          3         12      25%
-WWII Era                    1          8      12%
-State Ferry Era             1          8      12%
-Modern Era                  2         12      17%
+Prehistory                  9          8     112%
+Indigenous                  8          8     100%
+Exploration                 7          8      88%
+Logging & Treaty            6          8      75%
+Pioneer Settlement         13         10     130%
+Growth & Industry          12         10     120%
+Early 20th Century         14         12     117%
+WWII Era                    7          8      88%
+State Ferry Era             5          8      63%
+Modern Era                 12         12     100%
 ------------------------------------------------------
-TOTAL                      18        102      18%
+TOTAL                      93        102      91%
 ```
 
 ### Layer Distribution
@@ -78,20 +78,22 @@ TOTAL                      18        102      18%
 ```
 Layer          Entries   Coverage
 ---------------------------------
-Event              18   ████████████████████  100%
-Place              10   ███████████           56%
-Person              9   ██████████            50%
-Environment         4   ████                  22%
+Event              87   ████████████████████  94%
+Place              48   ██████████████        52%
+Person             40   █████████             43%
+Environment        26   ██████                28%
 ```
 
 ### Cross-Reference Stats
 
 | Metric | Count |
 |--------|-------|
-| Unique people referenced | 9 |
-| Unique places referenced | 10 |
-| Total source citations | 22 |
-| Entries with sources | 18/18 (100%) |
+| Unique people referenced | 92 |
+| Unique places referenced | 67 |
+| Total source URLs | 139 |
+| Entries with sources | 93/93 (100%) |
+| All eras with 5+ entries | 10/10 (100%) |
+| Duplicate entry IDs | 0 |
 
 ---
 
@@ -104,9 +106,14 @@ Environment         4   ████                  22%
 | [Design Bible](docs/design-bible.md) | Des + UX | Draft | 4,122 | 1.0 |
 | [Test Plan](docs/test-plan.md) | Tester | Draft | 3,489 | 1.0 |
 | [Milestone Schedule](docs/milestone-schedule.md) | PM + Eng | Draft | 747 | 1.0 |
-| [Coordination Board](docs/coordination.md) | All | Active | 310 | — |
+| [Coordination Board](docs/coordination.md) | All | Active | — | — |
 | [Research README](research/README.md) | Researcher | Done | — | — |
 | [Timeline Schema](research/schemas/timeline-entry.schema.json) | Eng | Done | — | 1.0 |
+| [Timeline Data](research/vashon-island/timeline.json) | Researcher | M1 Expanded | ~93 entries | 1.0 |
+| [People Directory](research/vashon-island/people.md) | Researcher | Expanding | — | — |
+| [Places Directory](research/vashon-island/places.md) | Researcher | Expanding | — | — |
+| [Environment](research/vashon-island/environment.md) | Researcher | M1 Expanded | — | — |
+| [Bibliography](research/vashon-island/sources.md) | Researcher | Expanding | — | — |
 
 ---
 
@@ -118,6 +125,7 @@ Environment         4   ████                  22%
 | 2026-03-02 | Skeleton research (10-20 entries) for M0 | Validate schema and test UI first; expand in M1 |
 | 2026-03-02 | Professional neutral voice for agents | Consistency and clarity over personality |
 | 2026-03-02 | Vashon Island, WA as prototype setting | Rich 10,000+ year history; well-documented; diverse data types |
+| 2026-03-02 | Camp Sealth associated with Camp Fire (not YMCA/YWCA) | Web research confirmed Camp Sealth was founded by Camp Fire Girls |
 
 ---
 
@@ -133,39 +141,21 @@ Environment         4   ████                  22%
 
 | Risk | Impact | Likelihood | Mitigation | Status |
 |------|--------|-----------|------------|--------|
-| Insufficient sources for some eras | Gaps in timeline | Medium | Prioritize well-documented eras; flag gaps | Monitoring |
+| Insufficient sources for some eras | Gaps in timeline | Medium | Prioritize well-documented eras; flag gaps | Mitigated — all eras at 5+ entries |
 | Timeline rendering performance | Poor UX at scale | Low | Virtualization; test with 500+ entries early | Not Started |
-| JSON file exceeds 1MB | Slow initial load | Low | Split by era; lazy loading | Not Started |
+| JSON file exceeds 1MB | Slow initial load | Low | Split by era; lazy loading | Monitoring — timeline.json growing |
 | D3.js learning curve | Delays M3 | Medium | Vis-timeline as fallback | Open question |
-
----
-
-## File Inventory
-
-**Total files:** 23
-
-```
-.claude/agents/         6 files  (team personas)
-docs/                   6 files  (project documents)
-research/vashon-island/ 7 files  (setting data)
-research/schemas/       1 file   (JSON schema)
-src/                    1 file   (.gitkeep placeholder)
-root                    1 file   (CLAUDE.md)
-root                    1 file   (dashboard.md)
-```
 
 ---
 
 ## Next Steps
 
-When ready to proceed, engage agents for the next phase:
-
-1. **`/researcher`** — Expand Vashon Island research to 80-120 entries across all eras
-2. **`/engineer`** — Evaluate timeline library (D3.js vs Vis-timeline), finalize data schemas
-3. **`/product-manager`** — Review M1 scope and acceptance criteria
-4. **`/tester`** — Build data validation script for cross-reference checking
-5. **`/designer`** — Refine component specs based on research data richness
-6. **`/ui-ux`** — Detail user flows for timeline interaction with real data volume
+1. **Researcher** — Complete people.md, places.md, sources.md expansion; run cross-reference validation
+2. **Tester** — Validate cross-references and data quality after M1 files complete
+3. **PM** — Review M1 coverage and approve milestone completion
+4. **Engineer** — Begin M2: evaluate timeline library, finalize data schemas, build validation pipeline
+5. **Designer** — Refine component specs based on research data richness (93 entries)
+6. **UI/UX** — Detail user flows for timeline interaction with real data volume
 
 ---
 
