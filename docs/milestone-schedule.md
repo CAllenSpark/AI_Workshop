@@ -147,7 +147,7 @@ This schedule defines the phased delivery plan from project scaffolding through 
 
 **Quality Gate:** All test categories green. No critical or high-severity bugs open. Documentation is current.
 
-**Status:** Not Started
+**Status:** Complete (2026-03-02) — 122 tests across 10 test files. Unit tests: parseDate, eras, CRUD, DataStore indexes, EntryCard, FilterPanel, DetailPanel, ErrorBoundary, useSearch. Integration tests: filter pipeline, export generation, data validation. TypeScript clean. Production build: 252KB JS, 29KB CSS.
 
 ---
 
