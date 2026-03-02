@@ -106,7 +106,7 @@ This schedule defines the phased delivery plan from project scaffolding through 
 
 **Quality Gate:** Search returns accurate results under 100ms. All filter combinations work correctly. Layer toggles update timeline and cards.
 
-**Status:** Not Started
+**Status:** Complete (2026-03-02) — Fuse.js full-text search (<100ms). FilterPanel with layer toggles, era chips, dual-handle date range slider. Combined AND filter logic (search + layers + eras + date range). Empty state UX. 228KB JS production build.
 
 ---
 

@@ -1,20 +1,41 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
-import type { TimelineEntry, LayerKey, ZoomLevel } from './types';
+import type { TimelineEntry, LayerKey, EraKey, ZoomLevel } from './types';
 import { useTimelineData } from './hooks/useTimelineData';
-import { LAYER_COLORS } from './data/eras';
+import { useSearch } from './hooks/useSearch';
+import { parseDate } from './data/loader';
+import { ERAS } from './data/eras';
 import TimelineTrack from './components/TimelineTrack';
 import EntryCard from './components/EntryCard';
 import DetailPanel from './components/DetailPanel';
+import FilterPanel from './components/FilterPanel';
 import './App.css';
+
+const ALL_LAYERS = new Set<LayerKey>(['event', 'person', 'place', 'environment']);
 
 export default function App() {
   const { data, loading, error } = useTimelineData();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [zoomLevel, setZoomLevel] = useState<ZoomLevel>(1);
-  const [activeLayers, setActiveLayers] = useState<Set<LayerKey>>(
-    new Set(['event', 'person', 'place', 'environment'])
-  );
+  const [activeLayers, setActiveLayers] = useState<Set<LayerKey>>(new Set(ALL_LAYERS));
+  const [selectedEras, setSelectedEras] = useState<Set<EraKey>>(new Set());
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Compute the full date range from data
+  const fullDateRange = useMemo<[number, number]>(() => {
+    if (!data || data.entries.length === 0) return [-15000, 2026];
+    const years = data.entries.map((e) => parseDate(e.date_start));
+    return [Math.min(...years), Math.max(...years)];
+  }, [data]);
+
+  const [dateRange, setDateRange] = useState<[number, number]>(fullDateRange);
+
+  // Sync dateRange with fullDateRange when data first loads
+  useEffect(() => {
+    setDateRange(fullDateRange);
+  }, [fullDateRange]);
+
+  // Initialize Fuse.js search
+  const { search } = useSearch(data?.entries ?? []);
 
   // Keyboard shortcut: Escape to close detail panel, / to focus search
   useEffect(() => {
@@ -42,25 +63,53 @@ export default function App() {
     });
   }, []);
 
-  // Filter entries
+  const toggleEra = useCallback((era: EraKey) => {
+    setSelectedEras((prev) => {
+      const next = new Set(prev);
+      if (next.has(era)) next.delete(era);
+      else next.add(era);
+      return next;
+    });
+  }, []);
+
+  const handleClearAll = useCallback(() => {
+    setActiveLayers(new Set(ALL_LAYERS));
+    setSelectedEras(new Set());
+    setDateRange(fullDateRange);
+    setSearchQuery('');
+  }, [fullDateRange]);
+
+  // Combined AND filter: search + layers + eras + date range
   const filteredEntries = useMemo(() => {
     if (!data) return [];
-    let result = data.entries.filter((e) =>
+
+    // Start with search results or all entries
+    let result: TimelineEntry[];
+    if (searchQuery.trim().length >= 2) {
+      const searchResults = search(searchQuery);
+      result = searchResults.map((r) => r.entry);
+    } else {
+      result = data.entries;
+    }
+
+    // Filter by active layers
+    result = result.filter((e) =>
       e.layers.some((l) => activeLayers.has(l as LayerKey))
     );
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
-      result = result.filter(
-        (e) =>
-          e.title.toLowerCase().includes(q) ||
-          e.description.toLowerCase().includes(q) ||
-          e.people.some((p) => p.toLowerCase().includes(q)) ||
-          e.places.some((p) => p.toLowerCase().includes(q)) ||
-          e.tags.some((t) => t.toLowerCase().includes(q))
-      );
+
+    // Filter by selected eras (if any selected; empty = show all)
+    if (selectedEras.size > 0) {
+      result = result.filter((e) => selectedEras.has(e.era));
     }
+
+    // Filter by date range
+    result = result.filter((e) => {
+      const year = parseDate(e.date_start);
+      return year >= dateRange[0] && year <= dateRange[1];
+    });
+
     return result;
-  }, [data, activeLayers, searchQuery]);
+  }, [data, searchQuery, search, activeLayers, selectedEras, dateRange]);
 
   const selectedEntry = useMemo<TimelineEntry | null>(
     () => data?.entries.find((e) => e.id === selectedId) ?? null,
@@ -112,30 +161,19 @@ export default function App() {
         </div>
       </header>
 
-      {/* Layer toggles */}
-      <nav className="layer-toggles" aria-label="Data layer filters">
-        {(Object.entries(LAYER_COLORS) as [string, typeof LAYER_COLORS.event][]).map(
-          ([key, lc]) => (
-            <button
-              key={key}
-              className={`layer-toggle ${activeLayers.has(key as LayerKey) ? 'active' : ''}`}
-              style={{
-                borderColor: lc.color,
-                backgroundColor: activeLayers.has(key as LayerKey) ? lc.bg : 'transparent',
-                color: lc.color,
-              }}
-              onClick={() => toggleLayer(key as LayerKey)}
-              aria-pressed={activeLayers.has(key as LayerKey)}
-            >
-              <span
-                className="toggle-dot"
-                style={{ backgroundColor: activeLayers.has(key as LayerKey) ? lc.color : 'transparent' }}
-              />
-              {lc.label}
-            </button>
-          )
-        )}
-      </nav>
+      {/* Filter panel with layer toggles, era chips, date range */}
+      <FilterPanel
+        activeLayers={activeLayers}
+        selectedEras={selectedEras}
+        dateRange={dateRange}
+        fullDateRange={fullDateRange}
+        totalCount={data.entries.length}
+        filteredCount={filteredEntries.length}
+        onLayerToggle={toggleLayer}
+        onEraToggle={toggleEra}
+        onDateRangeChange={setDateRange}
+        onClearAll={handleClearAll}
+      />
 
       {/* Timeline */}
       <main className="app-main">
@@ -150,14 +188,23 @@ export default function App() {
 
         {/* Entry list */}
         <div className="entry-list">
-          {filteredEntries.map((entry) => (
-            <EntryCard
-              key={entry.id}
-              entry={entry}
-              isSelected={entry.id === selectedId}
-              onClick={() => handleEntrySelect(entry.id)}
-            />
-          ))}
+          {filteredEntries.length === 0 ? (
+            <div className="empty-state">
+              <p>No entries match your current filters.</p>
+              <button className="clear-filters-btn" onClick={handleClearAll}>
+                Clear All Filters
+              </button>
+            </div>
+          ) : (
+            filteredEntries.map((entry) => (
+              <EntryCard
+                key={entry.id}
+                entry={entry}
+                isSelected={entry.id === selectedId}
+                onClick={() => handleEntrySelect(entry.id)}
+              />
+            ))
+          )}
         </div>
       </main>
 

@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-02
+**Last Updated:** 2026-03-02 (M4 complete)
 **Setting:** Vashon Island, WA (prehistory to present)
 **Branch:** `claude/writers-research-companion-zTnuE`
 
@@ -14,14 +14,14 @@
 M0 Foundation    [####################] 100%
 M1 Research      [####################] 100%
 M2 Data Model    [####################] 100%
-M3 Core UI       [####################] 100%  << COMPLETE
-M4 Search/Filter [....................]   0%  << NEXT
-M5 Polish/Export [....................]   0%
+M3 Core UI       [####################] 100%
+M4 Search/Filter [####################] 100%  << COMPLETE
+M5 Polish/Export [....................]   0%  << NEXT
 M6 Validation    [....................]   0%
 ```
 
-**Current Milestone:** M3 complete; M4 — Search & Filter next
-**Overall:** 4 of 7 milestones complete
+**Current Milestone:** M4 complete; M5 — Polish & Export next
+**Overall:** 5 of 7 milestones complete
 
 ---
 
@@ -33,7 +33,7 @@ M6 Validation    [....................]   0%
 | **M1 Research** | Complete Vashon Island knowledge base (80-120 entries) | Complete | 93 entries. 85 people. 67 places. 137 sources. 100% citations. All eras 5+. |
 | **M2 Data Model** | Finalize schemas, build import pipeline | Complete | 4 schemas. Transform pipeline. Validation script (0 errors). Search index (264 records). Narrator export (350KB). |
 | **M3 Core UI** | Timeline component with scrubbing and data display | Complete | React+TS+Vite scaffold. TimelineTrack with era bands, markers, scrubbing, zoom (4 levels). EntryCard, DetailPanel. 481KB build. |
-| **M4 Search & Filter** | Full-text search, layer toggles, date range filter | Not Started | Pending: <100ms search, filter combinations |
+| **M4 Search & Filter** | Full-text search, layer toggles, date range filter | Complete | Fuse.js search <100ms. FilterPanel with layers/eras/date range. Combined AND logic. Empty state UX. 228KB build. |
 | **M5 Polish & Export** | AI narrator export, responsive, accessibility | Not Started | Pending: WCAG AA, export validation |
 | **M6 Validation** | End-to-end testing, user testing, refinement | Not Started | Pending: All test categories green |
 
@@ -43,12 +43,12 @@ M6 Validation    [....................]   0%
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | M3 complete; ready for M4 planning | None |
-| Engineer | Active | M3 complete; ready for M4 search/filter | None |
+| Product Manager | Idle | M4 complete; ready for M5 planning | None |
+| Engineer | Active | M4 complete; ready for M5 polish/export | None |
 | Researcher | Idle | Data finalized | None |
-| Designer | Idle | Design Bible applied to M3 components | None |
-| Tester | Ready | Will validate M4 search performance (<100ms) | None |
-| UI/UX | Ready | Will review M4 filter interaction design | None |
+| Designer | Ready | Will review M5 visual polish | None |
+| Tester | Ready | Will audit M5 accessibility (WCAG AA) | None |
+| UI/UX | Ready | Will review M5 responsive + keyboard nav | None |
 
 ---
 
@@ -160,11 +160,11 @@ Environment        26   ██████                28%
 
 ## Next Steps
 
-1. **Engineer** — Begin M4: Integrate Fuse.js for full-text search; build filter panel
-2. **Engineer** — Add layer toggles, era filter, date range slider
-3. **UI/UX** — Review filter interaction patterns and combined filter logic
-4. **Tester** — Validate search returns <100ms; test all filter combinations
-5. **PM** — Review M3 deliverables and approve M4 start
+1. **Engineer** — Begin M5: AI narrator JSON export UI; responsive layout refinement
+2. **Designer** — Visual polish per Design Bible; color contrast audit
+3. **UI/UX** — Responsive breakpoints review; keyboard navigation audit; screen reader support
+4. **Tester** — WCAG 2.1 AA accessibility audit; export schema validation
+5. **PM** — Review M4 deliverables and approve M5 start
 
 ---
 
