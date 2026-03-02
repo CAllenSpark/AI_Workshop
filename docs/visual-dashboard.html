@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writer's Research Companion — Project Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Core Colors from Design Bible */
+    --forest-green: #2D5F3E;
+    --slate-blue: #4A6D8C;
+    --warm-amber: #C8913A;
+    --parchment: #F5F0E8;
+    --soft-gray: #E8E4DD;
+    --charcoal: #2C2C2C;
+    --warm-gray: #6B6560;
+    --stone: #D1CCC4;
+
+    /* Layer Colors */
+    --layer-event: #C8913A;
+    --layer-event-bg: #FBF3E4;
+    --layer-person: #3A8C8C;
+    --layer-person-bg: #E4F3F3;
+    --layer-place: #2D5F3E;
+    --layer-place-bg: #E4F0E8;
+    --layer-env: #8C6B4A;
+    --layer-env-bg: #F0EBE4;
+
+    /* Semantic */
+    --success: #3E7A4F;
+    --warning: #C8913A;
+    --error: #B84233;
+    --info: #4A6D8C;
+
+    /* Dark surfaces */
+    --panel-bg: #3A3835;
+    --panel-surface: #4A4744;
+    --panel-text: #F5F0E8;
+    --panel-text-muted: #A8A29E;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+    background: var(--parchment);
+    color: var(--charcoal);
+    line-height: 1.6;
+  }
+
+  /* Header */
+  .header {
+    background: var(--panel-bg);
+    color: var(--panel-text);
+    padding: 2rem 2rem 1.5rem;
+    border-bottom: 3px solid var(--forest-green);
+  }
+  .header h1 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  .header .subtitle {
+    color: var(--panel-text-muted);
+    font-size: 0.875rem;
+  }
+  .header .meta {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--panel-text-muted);
+  }
+  .header .meta span { display: flex; align-items: center; gap: 0.35rem; }
+  .header .meta .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    display: inline-block;
+  }
+  .header .meta .dot.active { background: var(--success); }
+
+  /* Navigation */
+  .nav {
+    background: var(--soft-gray);
+    border-bottom: 1px solid var(--stone);
+    padding: 0 2rem;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+  }
+  .nav a {
+    padding: 0.75rem 1.25rem;
+    text-decoration: none;
+    color: var(--warm-gray);
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .nav a:hover { color: var(--charcoal); border-bottom-color: var(--stone); }
+  .nav a.active { color: var(--forest-green); border-bottom-color: var(--forest-green); }
+
+  /* Main Layout */
+  .main { max-width: 1280px; margin: 0 auto; padding: 1.5rem 2rem 3rem; }
+
+  /* Sections */
+  .section {
+    margin-bottom: 2rem;
+    background: white;
+    border: 1px solid var(--stone);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .section-header {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--stone);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+  }
+  .section-header:hover { background: var(--soft-gray); }
+  .section-header h2 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .section-header .toggle {
+    font-size: 1.2rem;
+    color: var(--warm-gray);
+    transition: transform 0.2s;
+  }
+  .section-header.collapsed .toggle { transform: rotate(-90deg); }
+  .section-body { padding: 1.25rem; }
+  .section-body.collapsed { display: none; }
+
+  /* KPI Cards */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .kpi {
+    background: white;
+    border: 1px solid var(--stone);
+    border-radius: 8px;
+    padding: 1.25rem;
+    text-align: center;
+  }
+  .kpi .value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .kpi .label {
+    font-size: 0.75rem;
+    color: var(--warm-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+  }
+  .kpi .sub {
+    font-size: 0.7rem;
+    color: var(--warm-gray);
+    margin-top: 0.35rem;
+  }
+  .kpi.green .value { color: var(--success); }
+  .kpi.amber .value { color: var(--warm-amber); }
+  .kpi.blue .value { color: var(--slate-blue); }
+  .kpi.teal .value { color: var(--layer-person); }
+
+  /* Progress Bars */
+  .milestone-row {
+    display: grid;
+    grid-template-columns: 140px 1fr 80px 80px;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #f0ece5;
+    font-size: 0.85rem;
+  }
+  .milestone-row:last-child { border-bottom: none; }
+  .milestone-row .name {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  .milestone-row .name.current { color: var(--forest-green); }
+  .progress-bar {
+    height: 20px;
+    background: var(--soft-gray);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.6s ease;
+    position: relative;
+  }
+  .progress-fill.complete { background: var(--success); }
+  .progress-fill.active { background: linear-gradient(90deg, var(--forest-green), var(--success)); }
+  .progress-fill.pending { background: var(--stone); }
+  .progress-pct {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--warm-gray);
+    text-align: right;
+  }
+  .milestone-status {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .milestone-status.complete { color: var(--success); }
+  .milestone-status.active { color: var(--forest-green); }
+  .milestone-status.pending { color: var(--warm-gray); }
+
+  /* Era Chart */
+  .era-chart { display: flex; flex-direction: column; gap: 0.5rem; }
+  .era-row {
+    display: grid;
+    grid-template-columns: 160px 1fr 40px 40px;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+  }
+  .era-name { font-weight: 500; text-align: right; }
+  .era-bar-container {
+    height: 24px;
+    background: var(--soft-gray);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .era-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.4s ease;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: 500;
+  }
+  .era-target {
+    position: absolute;
+    top: 0; bottom: 0;
+    border-left: 2px dashed var(--warm-gray);
+    opacity: 0.5;
+  }
+  .era-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: right;
+  }
+  .era-pct {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--warm-gray);
+  }
+
+  /* Layer Distribution */
+  .layer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .layer-card {
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .layer-card .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .layer-card .name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+  }
+  .layer-card.event { background: var(--layer-event-bg); border: 1px solid var(--layer-event); }
+  .layer-card.event .count, .layer-card.event .name { color: var(--layer-event); }
+  .layer-card.person { background: var(--layer-person-bg); border: 1px solid var(--layer-person); }
+  .layer-card.person .count, .layer-card.person .name { color: var(--layer-person); }
+  .layer-card.place { background: var(--layer-place-bg); border: 1px solid var(--layer-place); }
+  .layer-card.place .count, .layer-card.place .name { color: var(--layer-place); }
+  .layer-card.env { background: var(--layer-env-bg); border: 1px solid var(--layer-env); }
+  .layer-card.env .count, .layer-card.env .name { color: var(--layer-env); }
+
+  /* Document Table */
+  .doc-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+  .doc-table th {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    background: var(--soft-gray);
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--warm-gray);
+    border-bottom: 1px solid var(--stone);
+  }
+  .doc-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid #f0ece5;
+    vertical-align: middle;
+  }
+  .doc-table tr:last-child td { border-bottom: none; }
+  .doc-table .doc-name { font-weight: 500; }
+  .doc-table .lines {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--warm-gray);
+  }
+
+  /* Status Badges */
+  .badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .badge.complete { background: #e6f4ea; color: var(--success); }
+  .badge.active { background: #e8f0e8; color: var(--forest-green); }
+  .badge.draft { background: var(--layer-event-bg); color: var(--warm-amber); }
+  .badge.pending { background: var(--soft-gray); color: var(--warm-gray); }
+  .badge.expanding { background: #e4f3f3; color: var(--layer-person); }
+
+  /* Quality Gates */
+  .gate-grid { display: flex; flex-direction: column; gap: 0.5rem; }
+  .gate-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--parchment);
+    border-radius: 6px;
+    font-size: 0.8rem;
+  }
+  .gate-icon {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .gate-icon.pass { background: #e6f4ea; color: var(--success); }
+  .gate-icon.pending { background: var(--soft-gray); color: var(--warm-gray); }
+  .gate-label { flex: 1; }
+  .gate-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--warm-gray);
+  }
+
+  /* Tag Cloud */
+  .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tag {
+    padding: 0.25rem 0.65rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border: 1px solid var(--stone);
+    background: white;
+    color: var(--warm-gray);
+    transition: all 0.15s;
+  }
+  .tag:hover { border-color: var(--forest-green); color: var(--forest-green); }
+
+  /* Team Status */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+  }
+  .team-card {
+    border: 1px solid var(--stone);
+    border-radius: 8px;
+    padding: 1rem;
+    background: var(--parchment);
+  }
+  .team-card .role {
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 0.35rem;
+  }
+  .team-card .task {
+    font-size: 0.75rem;
+    color: var(--warm-gray);
+    line-height: 1.4;
+  }
+
+  /* Decisions / Recommendations */
+  .item-list { display: flex; flex-direction: column; gap: 0.5rem; }
+  .item-card {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: var(--parchment);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    align-items: flex-start;
+  }
+  .item-card .icon {
+    flex-shrink: 0;
+    width: 24px; height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+  .item-card .icon.decision { background: var(--layer-event-bg); color: var(--warm-amber); }
+  .item-card .icon.question { background: #e4f3f3; color: var(--layer-person); }
+  .item-card .icon.risk { background: #fde8e4; color: var(--error); }
+  .item-card .icon.rec { background: var(--layer-place-bg); color: var(--forest-green); }
+  .item-card .content { flex: 1; }
+  .item-card .content strong { font-weight: 600; }
+  .item-card .meta-info { font-size: 0.7rem; color: var(--warm-gray); margin-top: 0.2rem; }
+
+  /* Source breakdown */
+  .source-bar {
+    display: flex;
+    height: 28px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 0.75rem 0;
+  }
+  .source-bar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .layer-grid { grid-template-columns: repeat(2, 1fr); }
+    .team-grid { grid-template-columns: 1fr; }
+    .era-row { grid-template-columns: 100px 1fr 40px 40px; }
+    .milestone-row { grid-template-columns: 100px 1fr 60px 60px; }
+    .main { padding: 1rem; }
+    .header { padding: 1.5rem 1rem 1rem; }
+    .nav { padding: 0 1rem; }
+  }
+
+  @media print {
+    .nav { display: none; }
+    .section-header .toggle { display: none; }
+    .section-body.collapsed { display: block !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Writer's Research Companion</h1>
+  <div class="subtitle">Vashon Island, WA — Prehistory to Present</div>
+  <div class="meta">
+    <span><span class="dot active"></span> Branch: claude/writers-research-companion-zTnuE</span>
+    <span>Updated: 2026-03-02</span>
+    <span>Milestone: M1 Research</span>
+  </div>
+</div>
+
+<div class="nav">
+  <a href="#overview" class="active">Overview</a>
+  <a href="#milestones">Milestones</a>
+  <a href="#research">Research</a>
+  <a href="#documents">Documents</a>
+  <a href="#quality">Quality Gates</a>
+  <a href="#team">Team</a>
+  <a href="#decisions">Decisions</a>
+  <a href="#recommendations">Next Steps</a>
+</div>
+
+<div class="main">
+
+  <!-- KPI Overview -->
+  <div class="kpi-grid" id="overview">
+    <div class="kpi green">
+      <div class="value">93</div>
+      <div class="label">Timeline Entries</div>
+      <div class="sub">Target: 80-120</div>
+    </div>
+    <div class="kpi teal">
+      <div class="value">92</div>
+      <div class="label">People Documented</div>
+      <div class="sub">85 in directory</div>
+    </div>
+    <div class="kpi green">
+      <div class="value">67</div>
+      <div class="label">Places Catalogued</div>
+      <div class="sub">100% coverage</div>
+    </div>
+    <div class="kpi blue">
+      <div class="value">139</div>
+      <div class="label">Source Citations</div>
+      <div class="sub">100% entries sourced</div>
+    </div>
+    <div class="kpi amber">
+      <div class="value">10</div>
+      <div class="label">Eras Covered</div>
+      <div class="sub">All at 5+ entries</div>
+    </div>
+    <div class="kpi green">
+      <div class="value">2/7</div>
+      <div class="label">Milestones</div>
+      <div class="sub">M0 done, M1 ~80%</div>
+    </div>
+  </div>
+
+  <!-- Milestone Progress -->
+  <div class="section" id="milestones">
+    <div class="section-header" onclick="toggleSection(this)">
+      <h2>Milestone Progress</h2>
+      <span class="toggle">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="milestone-row">
+        <div class="name">M0 Foundation</div>
+        <div class="progress-bar"><div class="progress-fill complete" style="width:100%"></div></div>
+        <div class="progress-pct">100%</div>
+        <div class="milestone-status complete">Complete</div>
+      </div>
+      <div class="milestone-row">
+        <div class="name current">M1 Research</div>
+        <div class="progress-bar"><div class="progress-fill active" style="width:80%"></div></div>
+        <div class="progress-pct">80%</div>
+        <div class="milestone-status active">Active</div>
+      </div>
+      <div class="milestone-row">
+        <div class="name">M2 Data Model</div>
+        <div class="progress-bar"><div class="progress-fill pending" style="width:0%"></div></div>
+        <div class="progress-pct">0%</div>
+        <div class="milestone-status pending">Pending</div>
+      </div>
+      <div class="milestone-row">
+        <div class="name">M3 Core UI</div>
+        <div class="progress-bar"><div class="progress-fill pending" style="width:0%"></div></div>
+        <div class="progress-pct">0%</div>
+        <div class="milestone-status pending">Pending</div>
+      </div>
+      <div class="milestone-row">
+        <div class="name">M4 Search/Filter</div>
+        <div class="progress-bar"><div class="progress-fill pending" style="width:0%"></div></div>
+        <div class="progress-pct">0%</div>
+        <div class="milestone-status pending">Pending</div>
+      </div>
+      <div class="milestone-row">
+        <div class="name">M5 Polish/Export</div>
+        <div class="progress-bar"><div class="progress-fill pending" style="width:0%"></div></div>
+        <div class="progress-pct">0%</div>
+        <div class="milestone-status pending">Pending</div>
+      </div>
+      <div class="milestone-row">
+        <div class="name">M6 Validation</div>
+        <div class="progress-bar"><div class="progress-fill pending" style="width:0%"></div></div>
+        <div class="progress-pct">0%</div>
+        <div class="milestone-status pending">Pending</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Research Coverage -->
+  <div class="section" id="research">
+    <div class="section-header" onclick="toggleSection(this)">
+      <h2>Research Coverage by Era</h2>
+      <span class="toggle">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="era-chart">
+        <div class="era-row">
+          <div class="era-name">Prehistory</div>
+          <div class="era-bar-container">
+            <div class="era-bar" style="width:64%;background:var(--layer-env)">9</div>
+            <div class="era-target" style="left:57%"></div>
+          </div>
+          <div class="era-count">9</div>
+          <div class="era-pct">112%</div>
+        </div>
+        <div class="era-row">
+          <div class="era-name">Indigenous</div>
+          <div class="era-bar-container">
+            <div class="era-bar" style="width:57%;background:var(--layer-person)">8</div>
+            <div class="era-target" style="left:57%"></div>
+          </div>
+          <div class="era-count">8</div>
+          <div class="era-pct">100%</div>
+        </div>
+        <div class="era-row">
+          <div class="era-name">Exploration</div>
+          <div class="era-bar-container">
+            <div class="era-bar" style="width:50%;background:var(--slate-blue)">7</div>
+            <div class="era-target" style="left:57%"></div>
+          </div>
+          <div class="era-count">7</div>
+          <div class="era-pct">88%</div>
+        </div>
+        <div class="era-row">
+          <div class="era-name">Logging & Treaty</div>
+          <div class="era-bar-container">
+            <div class="era-bar" style="width:43%;background:var(--layer-env)">6</div>
+            <div class="era-target" style="left:57%"></div>
+          </div>
+          <div class="era-count">6</div>
+          <div class="era-pct">75%</div>
+        </div>
+        <div class="era-row">
+          <div class="era-name">Pioneer</div>
+          <div class="era-bar-container">
+            <div class="era-bar" style="width:93%;background:var(--forest-green)">13</div>
+            <div class="era-target" style="left:71%"></div>
+          </div>
+          <div class="era-count">13</div>
+          <div class="era-pct">130%</div>
+        </div>
+        <div class="era-row">
+          <div class="era-name">Growth & Industry</div>
+          <div class="era-bar-container">
+            <div class="era-bar" style="width:86%;background:var(--warm-amber)">12</div>
+            <div class="era-target" style="left:71%"></div>
+          </div>
+          <div class="era-count">12</div>
+          <div class="era-pct">120%</div>
+        </div>
+        <div class="era-row">
+          <div class="era-name">Early 20th Century</div>
+          <div class="era-bar-container">
+            <div class="era-bar" style="width:100%;background:var(--forest-green)">14</div>
+            <div class="era-target" style="left:86%"></div>
+          </div>
+          <div class="era-count">14</div>
+          <div class="era-pct">117%</div>
+        </div>
+        <div class="era-row">
+          <div class="era-name">WWII Era</div>
+          <div class="era-bar-container">
+            <div class="era-bar" style="width:50%;background:var(--error)">7</div>
+            <div class="era-target" style="left:57%"></div>
+          </div>
+          <div class="era-count">7</div>
+          <div class="era-pct">88%</div>
+        </div>
+        <div class="era-row">
+          <div class="era-name">State Ferry Era</div>
+          <div class="era-bar-container">
+            <div class="era-bar" style="width:36%;background:var(--slate-blue)">5</div>
+            <div class="era-target" style="left:57%"></div>
+          </div>
+          <div class="era-count">5</div>
+          <div class="era-pct">63%</div>
+        </div>
+        <div class="era-row">
+          <div class="era-name">Modern Era</div>
+          <div class="era-bar-container">
+            <div class="era-bar" style="width:86%;background:var(--layer-person)">12</div>
+            <div class="era-target" style="left:86%"></div>
+          </div>
+          <div class="era-count">12</div>
+          <div class="era-pct">100%</div>
+        </div>
+      </div>
+
+      <div style="margin-top:0.75rem;font-size:0.7rem;color:var(--warm-gray)">
+        Dashed line = M1 target. Bar width proportional to 14 (max era count).
+      </div>
+
+      <!-- Layer Distribution -->
+      <h3 style="font-family:'Merriweather',serif;font-size:0.95rem;margin:1.5rem 0 0.75rem">Layer Distribution</h3>
+      <div class="layer-grid">
+        <div class="layer-card event">
+          <div class="count">87</div>
+          <div class="name">Events</div>
+        </div>
+        <div class="layer-card place">
+          <div class="count">48</div>
+          <div class="name">Places</div>
+        </div>
+        <div class="layer-card person">
+          <div class="count">40</div>
+          <div class="name">People</div>
+        </div>
+        <div class="layer-card env">
+          <div class="count">26</div>
+          <div class="name">Environment</div>
+        </div>
+      </div>
+
+      <!-- Source Breakdown -->
+      <h3 style="font-family:'Merriweather',serif;font-size:0.95rem;margin:1.5rem 0 0.5rem">Source Citations by Type</h3>
+      <div class="source-bar">
+        <div style="width:6.1%;background:var(--forest-green)" title="12 Primary">P:12</div>
+        <div style="width:80.1%;background:var(--slate-blue)" title="157 Secondary">Secondary: 157</div>
+        <div style="width:13.8%;background:var(--warm-gray)" title="27 Tertiary">T:27</div>
+      </div>
+      <div style="display:flex;gap:1.5rem;font-size:0.7rem;color:var(--warm-gray)">
+        <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--forest-green);vertical-align:middle;margin-right:4px"></span>Primary (12)</span>
+        <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--slate-blue);vertical-align:middle;margin-right:4px"></span>Secondary (157)</span>
+        <span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--warm-gray);vertical-align:middle;margin-right:4px"></span>Tertiary (27)</span>
+      </div>
+
+      <!-- Top Tags -->
+      <h3 style="font-family:'Merriweather',serif;font-size:0.95rem;margin:1.5rem 0 0.75rem">Top Research Tags</h3>
+      <div class="tag-cloud">
+        <span class="tag" style="font-size:0.85rem;font-weight:600">japanese-american (11)</span>
+        <span class="tag" style="font-size:0.82rem;font-weight:600">industry (10)</span>
+        <span class="tag" style="font-size:0.8rem">pioneer (9)</span>
+        <span class="tag" style="font-size:0.8rem">agriculture (9)</span>
+        <span class="tag" style="font-size:0.78rem">transportation (8)</span>
+        <span class="tag">exploration (6)</span>
+        <span class="tag">community (6)</span>
+        <span class="tag">strawberries (6)</span>
+        <span class="tag">wwii (6)</span>
+        <span class="tag">culture (5)</span>
+        <span class="tag">settlement (5)</span>
+        <span class="tag">internment (5)</span>
+        <span class="tag">infrastructure (5)</span>
+        <span class="tag">manufacturing (5)</span>
+        <span class="tag">burton (5)</span>
+        <span class="tag" style="font-size:0.68rem">ecology (4)</span>
+        <span class="tag" style="font-size:0.68rem">logging (4)</span>
+        <span class="tag" style="font-size:0.68rem">education (4)</span>
+        <span class="tag" style="font-size:0.68rem">landmark (4)</span>
+        <span class="tag" style="font-size:0.68rem">quartermaster-harbor (4)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Documents -->
+  <div class="section" id="documents">
+    <div class="section-header" onclick="toggleSection(this)">
+      <h2>Document Inventory</h2>
+      <span class="toggle">&#9660;</span>
+    </div>
+    <div class="section-body" style="padding:0">
+      <table class="doc-table">
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Owner</th>
+            <th>Status</th>
+            <th>Lines</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="doc-name">PRD.md</td>
+            <td>Product Manager</td>
+            <td><span class="badge draft">Draft</span></td>
+            <td class="lines">286</td>
+            <td>Specification</td>
+          </tr>
+          <tr>
+            <td class="doc-name">FRD.md</td>
+            <td>Engineer</td>
+            <td><span class="badge draft">Draft</span></td>
+            <td class="lines">703</td>
+            <td>Specification</td>
+          </tr>
+          <tr>
+            <td class="doc-name">design-bible.md</td>
+            <td>Designer + UI/UX</td>
+            <td><span class="badge draft">Draft</span></td>
+            <td class="lines">699</td>
+            <td>Specification</td>
+          </tr>
+          <tr>
+            <td class="doc-name">test-plan.md</td>
+            <td>Tester</td>
+            <td><span class="badge draft">Draft</span></td>
+            <td class="lines">355</td>
+            <td>Specification</td>
+          </tr>
+          <tr>
+            <td class="doc-name">milestone-schedule.md</td>
+            <td>PM + Engineer</td>
+            <td><span class="badge draft">Draft</span></td>
+            <td class="lines">173</td>
+            <td>Planning</td>
+          </tr>
+          <tr>
+            <td class="doc-name">coordination.md</td>
+            <td>All Agents</td>
+            <td><span class="badge active">Active</span></td>
+            <td class="lines">48</td>
+            <td>Coordination</td>
+          </tr>
+          <tr style="background:var(--layer-event-bg)">
+            <td class="doc-name">timeline.json</td>
+            <td>Researcher</td>
+            <td><span class="badge complete">M1 Expanded</span></td>
+            <td class="lines">3,682</td>
+            <td>Research Data</td>
+          </tr>
+          <tr style="background:var(--layer-person-bg)">
+            <td class="doc-name">people.md</td>
+            <td>Researcher</td>
+            <td><span class="badge complete">M1 Expanded</span></td>
+            <td class="lines">543</td>
+            <td>Research Data</td>
+          </tr>
+          <tr style="background:var(--layer-place-bg)">
+            <td class="doc-name">places.md</td>
+            <td>Researcher</td>
+            <td><span class="badge complete">M1 Expanded</span></td>
+            <td class="lines">369</td>
+            <td>Research Data</td>
+          </tr>
+          <tr style="background:var(--layer-env-bg)">
+            <td class="doc-name">environment.md</td>
+            <td>Researcher</td>
+            <td><span class="badge complete">M1 Expanded</span></td>
+            <td class="lines">127</td>
+            <td>Research Data</td>
+          </tr>
+          <tr>
+            <td class="doc-name">sources.md</td>
+            <td>Researcher</td>
+            <td><span class="badge complete">M1 Expanded</span></td>
+            <td class="lines">1,009</td>
+            <td>Bibliography</td>
+          </tr>
+          <tr>
+            <td class="doc-name">timeline-entry.schema.json</td>
+            <td>Engineer</td>
+            <td><span class="badge complete">Complete</span></td>
+            <td class="lines">--</td>
+            <td>Schema</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Quality Gates -->
+  <div class="section" id="quality">
+    <div class="section-header" onclick="toggleSection(this)">
+      <h2>M1 Quality Gates</h2>
+      <span class="toggle">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="gate-grid">
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">80-120 timeline entries</div>
+          <div class="gate-value">93 entries</div>
+        </div>
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">100% of entries have source citations</div>
+          <div class="gate-value">93/93</div>
+        </div>
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">All eras have minimum 5 entries</div>
+          <div class="gate-value">10/10 eras</div>
+        </div>
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">People directory with key historical figures</div>
+          <div class="gate-value">85 entries</div>
+        </div>
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">Places directory with locations and landmarks</div>
+          <div class="gate-value">67 entries</div>
+        </div>
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">Environment file with geography, ecology, climate</div>
+          <div class="gate-value">127 lines</div>
+        </div>
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">Complete bibliography with source ranking</div>
+          <div class="gate-value">139 sources</div>
+        </div>
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">No duplicate entry IDs</div>
+          <div class="gate-value">0 dupes</div>
+        </div>
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">Places cross-reference coverage</div>
+          <div class="gate-value">67/67 (100%)</div>
+        </div>
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">Source URL cross-reference coverage</div>
+          <div class="gate-value">139/139 (100%)</div>
+        </div>
+        <div class="gate-row">
+          <div class="gate-icon pass">&#10003;</div>
+          <div class="gate-label">People cross-reference coverage</div>
+          <div class="gate-value">88/92 (96%)</div>
+        </div>
+        <div class="gate-row" style="background:#fef9f0">
+          <div class="gate-icon pending">~</div>
+          <div class="gate-label">Cross-reference validation (bidirectional links)</div>
+          <div class="gate-value">Pending review</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Status -->
+  <div class="section" id="team">
+    <div class="section-header" onclick="toggleSection(this)">
+      <h2>Team Status</h2>
+      <span class="toggle">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="role">Product Manager</div>
+          <span class="badge pending">Idle</span>
+          <div class="task">Awaiting M1 coverage review</div>
+        </div>
+        <div class="team-card">
+          <div class="role">Engineer</div>
+          <span class="badge pending">Idle</span>
+          <div class="task">Awaiting M2 start</div>
+        </div>
+        <div class="team-card" style="border-color:var(--forest-green)">
+          <div class="role">Researcher</div>
+          <span class="badge active">Active</span>
+          <div class="task">M1 research expansion complete; 93 entries across 10 eras</div>
+        </div>
+        <div class="team-card">
+          <div class="role">Designer</div>
+          <span class="badge pending">Idle</span>
+          <div class="task">Awaiting M1 completion for component refinement</div>
+        </div>
+        <div class="team-card">
+          <div class="role">Tester</div>
+          <span class="badge pending">Pending</span>
+          <div class="task">Will validate cross-references after M1 sign-off</div>
+        </div>
+        <div class="team-card">
+          <div class="role">UI/UX</div>
+          <span class="badge pending">Idle</span>
+          <div class="task">Awaiting M1 completion for user flow updates</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Decisions -->
+  <div class="section" id="decisions">
+    <div class="section-header" onclick="toggleSection(this)">
+      <h2>Key Decisions & Open Questions</h2>
+      <span class="toggle">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <h3 style="font-family:'Merriweather',serif;font-size:0.9rem;margin-bottom:0.75rem">Decisions</h3>
+      <div class="item-list">
+        <div class="item-card">
+          <div class="icon decision">D</div>
+          <div class="content">
+            <strong>JSON flat files as data layer</strong>
+            <div class="meta-info">Simpler for prototype; portable, hand-editable, version-controlled</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon decision">D</div>
+          <div class="content">
+            <strong>Vashon Island, WA as prototype setting</strong>
+            <div class="meta-info">Rich 10,000+ year history; well-documented; diverse data types</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon decision">D</div>
+          <div class="content">
+            <strong>Professional neutral voice for all agents</strong>
+            <div class="meta-info">Consistency and clarity over personality</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon decision">D</div>
+          <div class="content">
+            <strong>Camp Sealth: Camp Fire (not YMCA/YWCA)</strong>
+            <div class="meta-info">Web research confirmed Camp Sealth was founded by Camp Fire Girls</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Merriweather',serif;font-size:0.9rem;margin:1.5rem 0 0.75rem">Open Questions</h3>
+      <div class="item-list">
+        <div class="item-card">
+          <div class="icon question">?</div>
+          <div class="content">
+            <strong>Timeline library: D3.js vs Vis-timeline</strong>
+            <div class="meta-info">Engineer to evaluate in M2. Flexible+complex vs simpler+purpose-built</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon question">?</div>
+          <div class="content">
+            <strong>Approximate date handling in AI export</strong>
+            <div class="meta-info">How should "~10000 BCE" be represented? Engineer + Researcher in M2</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon question">?</div>
+          <div class="content">
+            <strong>Map view source: historical maps vs satellite</strong>
+            <div class="meta-info">Designer + Researcher in M1</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Merriweather',serif;font-size:0.9rem;margin:1.5rem 0 0.75rem">Risk Register</h3>
+      <div class="item-list">
+        <div class="item-card">
+          <div class="icon risk" style="background:#e6f4ea;color:var(--success)">&#10003;</div>
+          <div class="content">
+            <strong>Insufficient sources for some eras</strong>
+            <div class="meta-info">MITIGATED: All 10 eras now have 5+ entries with citations</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon risk">!</div>
+          <div class="content">
+            <strong>Timeline rendering performance with many entries</strong>
+            <div class="meta-info">Impact: UX degradation. Mitigation: virtualization, test at 500+ entries</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon risk">!</div>
+          <div class="content">
+            <strong>JSON file size growth (timeline.json = 185KB)</strong>
+            <div class="meta-info">Monitoring. Mitigation: split by era, lazy loading</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon risk">!</div>
+          <div class="content">
+            <strong>D3.js learning curve may delay M3</strong>
+            <div class="meta-info">Vis-timeline as fallback option. Decision needed in M2.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recommendations -->
+  <div class="section" id="recommendations">
+    <div class="section-header" onclick="toggleSection(this)">
+      <h2>Recommendations & Next Steps</h2>
+      <span class="toggle">&#9660;</span>
+    </div>
+    <div class="section-body">
+      <div class="item-list">
+        <div class="item-card">
+          <div class="icon rec">1</div>
+          <div class="content">
+            <strong>Complete M1 sign-off</strong>
+            <div class="meta-info">PM to review coverage. Tester to run cross-reference validation. All core quality gates pass.</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon rec">2</div>
+          <div class="content">
+            <strong>Enrich thin eras (optional)</strong>
+            <div class="meta-info">State Ferry (5 entries) and Logging & Treaty (6 entries) are at minimum thresholds. 2-3 additional entries per era would improve coverage.</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon rec">3</div>
+          <div class="content">
+            <strong>Begin M2: Data Model</strong>
+            <div class="meta-info">Engineer: evaluate D3.js vs Vis-timeline, finalize schemas, build validation pipeline, create indexed search structure.</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon rec">4</div>
+          <div class="content">
+            <strong>Build data validation script</strong>
+            <div class="meta-info">Automate schema validation, cross-reference checking, and source verification. Foundation for CI pipeline.</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon rec">5</div>
+          <div class="content">
+            <strong>Design component specs for 93-entry dataset</strong>
+            <div class="meta-info">Designer + UI/UX: refine card layouts, timeline density, and filter UX based on actual data volume and distribution.</div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="icon rec">6</div>
+          <div class="content">
+            <strong>Create AI narrator export sample</strong>
+            <div class="meta-info">Engineer + Researcher: build a sample export in the planned format to validate the data model serves both writer and AI narrator use cases.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggleSection(header) {
+  const body = header.nextElementSibling;
+  header.classList.toggle('collapsed');
+  body.classList.toggle('collapsed');
+}
+
+// Smooth scroll for nav links
+document.querySelectorAll('.nav a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+      this.classList.add('active');
+    }
+  });
+});
+
+// Update active nav on scroll
+const sections = document.querySelectorAll('.section, .kpi-grid');
+const navLinks = document.querySelectorAll('.nav a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 120) current = section.id;
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
