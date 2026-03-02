@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "narrator-export.schema.json",
-  "title": "AI Narrator Export",
-  "description": "Self-contained JSON export for consumption by AI narrators, language models, and game engines",
+  "title": "AI Narrator Export v2",
+  "description": "Self-contained JSON export for AI narrators hosting fantasy-meets-reality adventures. Includes atmosphere, sensory data, adventure hooks, and fantasy integration layer.",
   "type": "object",
-  "required": ["export_metadata", "eras", "entries", "people", "places", "environment_features"],
+  "required": ["export_metadata", "narrator_system_prompt", "eras", "entries", "people", "places", "environment_features", "adventure_hooks", "fantasy_layer", "hazards"],
   "properties": {
     "export_metadata": {
       "type": "object",
@@ -16,17 +16,31 @@
         "version": { "type": "string" }
       }
     },
+    "narrator_system_prompt": { "type": "string" },
     "eras": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["key", "name", "start", "end", "context_summary"],
+        "required": ["key", "name", "start", "end", "context_summary", "atmosphere"],
         "properties": {
           "key": { "type": "string" },
           "name": { "type": "string" },
           "start": { "type": "string" },
           "end": { "type": "string" },
-          "context_summary": { "type": "string" }
+          "context_summary": { "type": "string" },
+          "atmosphere": {
+            "type": "object",
+            "required": ["mood", "soundscape"],
+            "properties": {
+              "mood": { "type": "string" },
+              "visual_palette": { "type": "string" },
+              "soundscape": { "type": "string" },
+              "smells": { "type": "string" },
+              "social_dynamics": { "type": "string" },
+              "daily_life": { "type": "string" },
+              "tensions": { "type": "string" }
+            }
+          }
         }
       }
     },
@@ -95,7 +109,8 @@
                 "type": { "type": "string" }
               }
             }
-          }
+          },
+          "narrator_notes": { "type": "string" }
         }
       }
     },
@@ -111,6 +126,18 @@
           "death_year": { "type": "string" },
           "description": { "type": "string" },
           "role": { "type": "string" },
+          "personality": { "type": "string" },
+          "motivation": { "type": "string" },
+          "speech_style": { "type": "string" },
+          "relationships": {
+            "type": "object",
+            "additionalProperties": { "type": "string" }
+          },
+          "secrets": { "type": "string" },
+          "adventure_role": {
+            "type": "string",
+            "enum": ["quest_giver", "ally", "antagonist", "mentor", "trickster", "guardian", "witness", "authority_figure", "victim", "survivor"]
+          },
           "related_entry_ids": {
             "type": "array",
             "items": { "type": "string" }
@@ -135,6 +162,38 @@
             }
           },
           "description": { "type": "string" },
+          "sensory": {
+            "type": "object",
+            "properties": {
+              "default": {
+                "type": "object",
+                "properties": {
+                  "sight": { "type": "string" },
+                  "sound": { "type": "string" },
+                  "smell": { "type": "string" },
+                  "notable_features": { "type": "string" }
+                }
+              },
+              "by_era": {
+                "type": "object",
+                "additionalProperties": { "type": "string" }
+              }
+            }
+          },
+          "spatial": {
+            "type": "object",
+            "properties": {
+              "adjacent_places": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "visibility": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "travel_notes": { "type": "string" }
+            }
+          },
           "related_entry_ids": {
             "type": "array",
             "items": { "type": "string" }
@@ -153,6 +212,118 @@
           "type": { "type": "string" },
           "description": { "type": "string" },
           "time_relevance": { "type": "string" }
+        }
+      }
+    },
+    "adventure_hooks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "title", "description"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["mystery", "conflict", "discovery", "survival", "moral_dilemma", "time_echo"]
+          },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "related_entries": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "related_places": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "era_range": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "fantasy_potential": { "type": "string" }
+        }
+      }
+    },
+    "fantasy_layer": {
+      "type": "object",
+      "properties": {
+        "temporal_anomalies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["location", "description"],
+            "properties": {
+              "location": { "type": "string" },
+              "description": { "type": "string" },
+              "eras_affected": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "liminal_spaces": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "description"],
+            "properties": {
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "locations": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "historical_gaps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["period", "description"],
+            "properties": {
+              "period": { "type": "string" },
+              "description": { "type": "string" },
+              "fantasy_potential": { "type": "string" }
+            }
+          }
+        },
+        "unexplained_facts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["fact"],
+            "properties": {
+              "fact": { "type": "string" },
+              "fantasy_potential": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "hazards": {
+      "type": "object",
+      "properties": {
+        "natural": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "description", "severity"],
+            "properties": {
+              "type": { "type": "string" },
+              "description": { "type": "string" },
+              "severity": { "type": "string", "enum": ["low", "moderate", "high", "extreme"] },
+              "eras": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "social": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "description", "severity"],
+            "properties": {
+              "type": { "type": "string" },
+              "description": { "type": "string" },
+              "severity": { "type": "string", "enum": ["low", "moderate", "high", "critical"] },
+              "eras": { "type": "array", "items": { "type": "string" } },
+              "narrator_note": { "type": "string" }
+            }
+          }
         }
       }
     }

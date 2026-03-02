@@ -49,6 +49,7 @@ M6 Validation    [....................]   0%
 | Designer | Ready | Will review M5 visual polish | None |
 | Tester | Ready | Will audit M5 accessibility (WCAG AA) | None |
 | UI/UX | Ready | Will review M5 responsive + keyboard nav | None |
+| AI Narrator | Active | Auditing narrator export for adventure-readiness | None |
 
 ---
 

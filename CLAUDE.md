@@ -10,7 +10,7 @@ The knowledge base is designed for dual use:
 
 ## Team
 
-This project uses 6 persistent agent personas. Invoke them by name to engage their expertise:
+This project uses 7 persistent agent personas. Invoke them by name to engage their expertise:
 
 | Agent | Invoke | Owns | Primary Files |
 |-------|--------|------|---------------|
@@ -20,6 +20,7 @@ This project uses 6 persistent agent personas. Invoke them by name to engage the
 | Designer | `/designer` | Visual design, information architecture | `docs/design-bible.md` |
 | Tester | `/tester` | Test plan, QA strategy, acceptance criteria | `docs/test-plan.md` |
 | UI/UX | `/ui-ux` | Interaction design, user flows, accessibility | `docs/design-bible.md` (interaction sections) |
+| AI Narrator | `/ai-narrator` | Narrator export evaluation, adventure data requirements | `docs/narrator-guide.md`, `research/schemas/narrator-export.schema.json` |
 
 All agents share access to `docs/coordination.md` (the team status board) and `docs/dashboard.md` (the project dashboard).
 
@@ -27,7 +28,7 @@ All agents share access to `docs/coordination.md` (the team status board) and `d
 
 The project dashboard at `docs/dashboard.md` provides a consolidated view of:
 - Overall milestone progress with visual progress bars
-- Team status across all 6 agents
+- Team status across all 7 agents
 - Research coverage metrics (entries per era, layer distribution)
 - Document status and word counts
 - Key decisions, open questions, and risk register
