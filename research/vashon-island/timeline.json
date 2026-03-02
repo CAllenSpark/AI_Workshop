@@ -1760,7 +1760,7 @@
         "environment"
       ],
       "description": "Eight or more brickyards operate on Vashon and Maury Islands, employing over 200 men and supplying bricks for the rebuilding of Seattle after the Great Fire of 1889.",
-      "details": "The growth of Seattle and Tacoma, fires in Tacoma during the 1880s, and the Great Seattle Fire of 1889 created enormous demand for bricks. Vashon Island's glacial clay soils proved ideal for brick manufacturing. The Fairfowld Brick Yard employed 100 men producing bricks mostly for Tacoma buildings and streets. Five brickyards around Quartermaster Harbor employed 200 men, with the Bleeker Yard at Burton being the largest. Lucian Cook ran a brickyard on Quartermaster and bought the steamer Estella to ferry bricks and workmen to Tacoma, later commissioning six barges and buying the steamer Seaside as a towboat. The brick industry was so central to island life that infrastructure was built around it: T.D. Soper petitioned for a road (now Bank and Soper Roads) from the island's center to the brickyard at Vashon Landing. By the early 1900s the brickyards were in decline, and the island transitioned to agriculture.",
+      "details": "In 1891, a group of Tacoma businessmen including M.F. Hatch of Vashon Island formed The Puget Sound Drydock Company. They purchased an unfinished dry dock originally built for Port Townsend (whose real estate market had collapsed) and towed it from Port Hadlock to the sheltered cove at the mouth of Quartermaster Harbor. The drydock measured 325 feet long by 102 feet wide — one of the largest on the Pacific Coast. Peter Manson, noting the facility could 'dock a ton of boats,' named the new village Dockton. By June 1892, the dock employed more than 80 workers. Alfred J. Stuckey served as superintendent until 1909. John A. Martinolich, a Croatian-born shipbuilder who arrived in 1896, founded his own yard in 1904 and became known as the 'King of Purse Seiners' for his fishing boat designs. Many workers came from the Dalmatian Coast; Croatian surnames were so common that Dockton was nicknamed 'Ichville.' Workers lived in a large three-story hotel; managers lived in 'Piano Row' — the only island homes large enough to hold a piano.",
       "people": [
         "Lucian Cook"
       ],
@@ -2393,7 +2393,7 @@
         "person"
       ],
       "description": "Denichiro Mukai arrives on Vashon Island and develops a renowned method for barreling fresh strawberries that concentrates flavor and moisture.",
-      "details": "Denichiro Mukai came to Vashon Island in 1910 and became one of the island's most prominent Japanese American farmers. His innovation in strawberry preservation — a special barreling method that concentrated flavor and moisture — earned him widespread recognition. The Mukai farmstead, including a cold-process fruit barreling plant built in 1926, still stands and is now a heritage site.",
+      "details": "Denichiro ('B.D.') Mukai arrived on Vashon Island around 1910 and began farming strawberries. Unable to own land himself due to the 1921 Washington State Alien Land Law, he purchased 40 acres in the name of his 15-year-old American-born son, Masahiro ('Masa'), in 1926. The Cold Process Fruit Barreling Plant was established in 1927 as the Vashon Island Packing Company ('VIPCO'). The patented cold process packed berries into wooden barrels at a 2:1 ratio of fruit to sugar (300 lbs. strawberries to 150 lbs. sugar per barrel), then shipped them to Spokane Street Cold Storage in Seattle for freezing. This was the first commercial frozen berry operation in the United States. By the 1930s, the farm employed over 400 workers annually, shipped 200 tons of strawberries per year, and housed 250 seasonal workers in an on-site bunkhouse. The farm remained profitable through the Great Depression. In 1934, B.D. retired to Japan and Masa, age 23, a Washington State University engineering graduate, took over. In 1939, with anti-Japanese sentiment rising, Masa renamed the business 'Vashon Island Packing Company' to reduce its Japanese-sounding profile.",
       "people": [
         "Denichiro Mukai"
       ],
@@ -3476,7 +3476,7 @@
         "person"
       ],
       "description": "The Mukai Farm and Garden on Vashon Island is listed on the National Register of Historic Places, preserving one of the last intact pre-WWII Japanese American farmsteads in America.",
-      "details": "In 1993, the Mukai house, Japanese garden, and cold-process fruit barreling plant -- along with the five acres remaining of the original 60-acre farm -- were designated a King County Landmark. The following year, 1994, the site was included on the National Register of Historic Places. The property was founded by Issei pioneer B.D. (Denichiro) Mukai in 1926 as a strawberry farm. The Japanese garden was designed and installed in the 1930s by Kuni Mukai, a Japanese immigrant woman -- making it the only known Japanese garden of that era designed by a woman. The nonprofit Friends of Mukai maintains the property as a heritage site and cultural center, hosting the annual Japan Festival, Day of Exile commemorations, and public tours. The 'Nisei Trilogy,' a collaborative artwork by poet Lawrence Matsuda and artist Roger Shimomura depicting the Japanese American wartime experience, is on permanent display in the Mukai house.",
+      "details": "The Mukai House, Garden, and Barreling Plant (5 acres remaining of the original 40+) was designated a King County Landmark in 1993 — the first site associated with Japanese American history to receive that designation. It was listed on the National Register of Historic Places in 1994. Masahiro Mukai died in 1999. In 2000, the nonprofit Island Landmarks purchased the property with $500,000 in public funds from King County, the National Park Service, and the State of Washington. The garden, designed by Kuni Mukai in 1928, survives as a rare intact example of Japanese stroll garden design in the Pacific Northwest — the only known Japanese stroll garden of that era designed by a woman. Ongoing restoration of the Barreling Plant, supported by a $150,000 NEH Challenge Grant, aims to convert it into a Vashon Food Hub. In 2021, King County Executive held an honorary street designation ceremony naming a road 'Mukai Way.'",
       "people": [
         "Denichiro Mukai",
         "Kuni Mukai",
@@ -3677,6 +3677,610 @@
         "community-response",
         "volunteer",
         "public-health"
+      ]
+    },
+    {
+      "id": "fer-006",
+      "title": "Black Ball Line Sold to Washington State",
+      "date_start": "1951",
+      "era": "state-ferry",
+      "layers": [
+        "event"
+      ],
+      "description": "The State of Washington purchased the Puget Sound Navigation Company (Black Ball Line) fleet from Captain Alexander Peabody for $4.9 million, creating Washington State Ferries.",
+      "details": "Captain Alexander Peabody's Black Ball Line had long been the primary ferry operator on Puget Sound, including routes to Vashon Island. After years of contentious disputes over fares and subsidies, and a crippling 1947 strike that left island communities stranded, the state legislature authorized the purchase. The acquisition transformed ferry service from a private monopoly into a public utility, fundamentally changing how island communities related to the state government.",
+      "people": [
+        "Captain Alexander M. Peabody"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "HistoryLink.org: Washington State Ferries",
+          "url": "https://www.historylink.org/file/8327",
+          "type": "secondary"
+        },
+        {
+          "title": "Haulman, Vashon Island History",
+          "url": "https://vashonhistory.com",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "ferry",
+        "transportation",
+        "government"
+      ]
+    },
+    {
+      "id": "fer-007",
+      "title": "Vashon Island Independent Ferry District Formed",
+      "date_start": "1948",
+      "era": "state-ferry",
+      "layers": [
+        "event"
+      ],
+      "description": "Following the devastating 1947 Black Ball Line ferry strike that left Vashon Island isolated, residents formed an independent ferry district to ensure reliable transportation service.",
+      "details": "The 1947 strike by the Inlandboatmen's Union against the Black Ball Line left Vashon Island residents unable to commute to work or obtain supplies for weeks. The crisis galvanized the community to take control of its transportation future, leading to the formation of the Vashon Island Ferry District in 1948. This grassroots response demonstrated the island community's capacity for self-governance and foreshadowed the eventual state takeover of ferry operations in 1951.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Haulman, Vashon Island History",
+          "url": "https://vashonhistory.com",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "ferry",
+        "community",
+        "transportation"
+      ]
+    },
+    {
+      "id": "fer-008",
+      "title": "Tahlequah-Point Defiance Ferry Route Established",
+      "date_start": "1951",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Washington State Ferries established the Tahlequah-Point Defiance route, providing a direct connection between southern Vashon Island and Tacoma/Pierce County.",
+      "details": "The Tahlequah-Point Defiance route became one of two primary ferry connections for Vashon Island (the other being the northern route to Fauntleroy in West Seattle). The southern route provided access to Tacoma and the Kitsap Peninsula via Point Defiance. Together, the two routes defined the island's unique position as equidistant between Seattle and Tacoma, accessible to both yet truly part of neither.",
+      "people": [],
+      "places": [
+        "Tahlequah",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Washington State Ferries",
+          "url": "https://wsdot.wa.gov/ferries",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "ferry",
+        "transportation",
+        "route"
+      ]
+    },
+    {
+      "id": "fer-009",
+      "title": "Cross-Sound Bridge Proposal Debated",
+      "date_start": "1953",
+      "date_end": "1959",
+      "era": "state-ferry",
+      "layers": [
+        "event"
+      ],
+      "description": "The Cross-Sound Bridge Bill proposed a bridge connecting Vashon Island to the mainland, sparking years of passionate debate about the island's future identity.",
+      "details": "The bridge proposal divided the island community. Proponents argued it would boost economic development and eliminate ferry dependence. Opponents, led by Alex Anderson and the anti-bridge committee, warned it would destroy the island's rural character and lead to 'Mercerization' — the rapid suburbanization that had transformed nearby Mercer Island after bridge construction. At a pivotal 1959 legislative session, Lt. Governor John Cherberg's procedural ruling effectively killed the bill, preserving Vashon's ferry-dependent identity for generations to come.",
+      "people": [
+        "John Cherberg",
+        "Alex Anderson",
+        "Homer Hadley"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "HistoryLink.org",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        },
+        {
+          "title": "Haulman, Vashon Island History",
+          "url": "https://vashonhistory.com",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "bridge",
+        "debate",
+        "identity",
+        "transportation"
+      ]
+    },
+    {
+      "id": "fer-010",
+      "title": "Post-War Population and Suburban Pressure",
+      "date_start": "1950",
+      "date_end": "1960",
+      "era": "state-ferry",
+      "layers": [
+        "event"
+      ],
+      "description": "Post-WWII suburban expansion pressured Vashon Island as returning veterans and young families sought affordable rural land within commuting distance of Seattle and Tacoma.",
+      "details": "The 1950s brought significant demographic change to Vashon Island. GI Bill benefits enabled veterans to purchase homes, and the new state ferry system made commuting feasible. The island's population grew from approximately 3,000 to 4,500 during the decade. New subdivisions were platted, and the tension between growth and rural preservation became a defining theme of island politics that continues to the present day.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Haulman, Vashon Island History",
+          "url": "https://vashonhistory.com",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "population",
+        "growth",
+        "suburbanization"
+      ]
+    },
+    {
+      "id": "fer-011",
+      "title": "Vashon Heritage Museum Founded",
+      "date_start": "1969",
+      "era": "state-ferry",
+      "layers": [
+        "event"
+      ],
+      "description": "The Vashon-Maury Island Heritage Association was founded to preserve the island's history, later becoming the Vashon Heritage Museum.",
+      "details": "Concerned about the rapid loss of pioneer-era structures and oral histories, community members including Jean Findlay established the heritage association. The organization began collecting photographs, documents, and artifacts from island families. Over the decades it grew into the Vashon Heritage Museum, which now houses the most comprehensive collection of Vashon Island historical materials and serves as the primary resource for researchers studying the island's past.",
+      "people": [
+        "Jean Findlay"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Vashon Heritage Museum",
+          "url": "https://vashonheritagemuseum.org",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "museum",
+        "heritage",
+        "preservation",
+        "community"
+      ]
+    },
+    {
+      "id": "log-007",
+      "title": "Ox-Team Skid Roads Built for Logging Operations",
+      "date_start": "1853",
+      "date_end": "1870",
+      "era": "logging-treaty",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "Logging crews built ox-team skid roads across Vashon Island to drag felled timber from interior forests to shoreline loading points.",
+      "details": "The earliest logging on Vashon Island relied on teams of oxen pulling logs along 'skid roads' — paths of greased logs laid perpendicular to the route of travel. These primitive roads cut through dense old-growth forest, creating the first significant human-made pathways across the island's interior. The ecological impact was substantial: the roads cleared corridors through ancient forest, altered drainage patterns, and created the first large-scale disturbance of the island's forest canopy since the last glacial period.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Haulman, Vashon Island History",
+          "url": "https://vashonhistory.com",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "logging",
+        "environment",
+        "transportation",
+        "ecology"
+      ]
+    },
+    {
+      "id": "log-008",
+      "title": "Port Gamble Mill's Vashon Timber Operations",
+      "date_start": "1864",
+      "date_end": "1890",
+      "era": "logging-treaty",
+      "layers": [
+        "event"
+      ],
+      "description": "The Puget Mill Company at Port Gamble, owned by Maine lumber barons Pope and Talbot, systematically harvested Vashon Island's old-growth timber for the Pacific lumber trade.",
+      "details": "Andrew J. Pope and William C. Talbot's Port Gamble mill had been operating since 1853 when they filed their first Vashon Island land claim in 1864. Their operations represented the extension of east-coast industrial capitalism to the Pacific Northwest. Massive Douglas fir, western red cedar, and Sitka spruce — some over 500 years old — were felled and towed in log rafts to the Port Gamble mill for processing. The timber was shipped to San Francisco, the Hawaiian Islands, and markets throughout the Pacific. By the 1890s, much of the island's accessible old-growth forest had been cut.",
+      "people": [
+        "Andrew J. Pope",
+        "William C. Talbot"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Haulman, Vashon Island History",
+          "url": "https://vashonhistory.com",
+          "type": "secondary"
+        },
+        {
+          "title": "HistoryLink.org: Pope and Talbot",
+          "url": "https://www.historylink.org",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "logging",
+        "timber",
+        "industry",
+        "old-growth"
+      ]
+    },
+    {
+      "id": "log-009",
+      "title": "Donation Land Claim Act Opens Vashon to Settlement",
+      "date_start": "1850",
+      "era": "logging-treaty",
+      "layers": [
+        "event"
+      ],
+      "description": "The Donation Land Claim Act of 1850, authored by Oregon Territory delegate Samuel Royal Thurston, provided the legal framework for claiming Vashon Island land — while explicitly excluding Black and Hawaiian settlers.",
+      "details": "The act granted up to 320 acres to single white male settlers and 640 acres to married couples who could demonstrate residence and cultivation of the land. It was a cornerstone of Manifest Destiny policy, designed to encourage American settlement of the Oregon Territory (which then included present-day Washington). Its racial exclusions reflected the era's systemic discrimination. On Vashon Island, the first claims under this act would not be filed until the 1860s, after logging operations had begun to open the dense forest.",
+      "people": [
+        "Samuel Royal Thurston"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "HistoryLink.org: Donation Land Claim Act",
+          "url": "https://www.historylink.org",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "settlement",
+        "law",
+        "land claims",
+        "discrimination"
+      ]
+    },
+    {
+      "id": "log-010",
+      "title": "Hudson's Bay Company Influence Wanes on Puget Sound",
+      "date_start": "1846",
+      "date_end": "1860",
+      "era": "logging-treaty",
+      "layers": [
+        "event"
+      ],
+      "description": "The Oregon Treaty of 1846 established the US-Canada border at the 49th parallel, ending British claims to Puget Sound and gradually diminishing the Hudson's Bay Company's commercial influence around Vashon Island.",
+      "details": "The HBC's Fort Nisqually had been the dominant European presence near Vashon Island since 1833, operating the Puget Sound Agricultural Company with extensive livestock and farming operations. After the Oregon Treaty, American settlers increasingly challenged the HBC's land claims. William Tolmie, the fort's Chief Factor, struggled to maintain British commercial interests as American territorial governance took hold. The transition from HBC fur trade economy to American settler economy fundamentally changed the dynamics of land use and indigenous relations in the waters around Vashon.",
+      "people": [
+        "William Tolmie",
+        "Archibald McDonald"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "HistoryLink.org: Fort Nisqually",
+          "url": "https://www.historylink.org",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "treaty",
+        "HBC",
+        "territory",
+        "trade"
+      ]
+    },
+    {
+      "id": "mod-013",
+      "title": "Backbone Campaign Founded on Vashon Island",
+      "date_start": "2003",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Bill Moyer founded the Backbone Campaign on Vashon Island, pioneering 'artful activism' that combined creative arts with environmental and social justice advocacy.",
+      "details": "The Backbone Campaign became nationally recognized for its innovative protest tactics, including giant puppets, mobile stages, and creative direct action. Based on Vashon Island, it organized annual Action Camps that drew activists from across the country. Key campaigns included opposition to Lower Snake River dams (for salmon and orca protection), support for Standing Rock water protectors, and the ShellNO kayaktivist actions against Arctic drilling. The organization reflected Vashon's identity as a progressive, environmentally conscious community.",
+      "people": [
+        "Bill Moyer"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Backbone Campaign",
+          "url": "https://backbonecampaign.org",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "activism",
+        "environment",
+        "arts",
+        "community"
+      ]
+    },
+    {
+      "id": "mod-014",
+      "title": "Vashon Island Organic Farming Renaissance",
+      "date_start": "1975",
+      "date_end": "2000",
+      "era": "modern",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "The back-to-the-land movement brought a new generation of organic farmers to Vashon Island, transforming the island into a Pacific Northwest center for sustainable agriculture.",
+      "details": "Beginning in the mid-1970s, young farmers drawn by Vashon's rural character and relatively affordable land began establishing organic farms on the island. Pioneers like Henning Sehmsdorf and Elizabeth Simpson founded S&S Homestead Farm as a model biodynamic operation. The Vashon Island Growers Association and the weekly Farmers Market became community institutions. By the 2000s, Vashon had one of the highest concentrations of organic farms per capita in Washington state, and organic agriculture had become central to the island's cultural identity and economic life.",
+      "people": [
+        "Henning Sehmsdorf",
+        "Elizabeth Simpson",
+        "Rayna Holtz"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Vashon Island Growers Association",
+          "url": "",
+          "type": "primary"
+        },
+        {
+          "title": "Haulman, Vashon Island History",
+          "url": "https://vashonhistory.com",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "organic",
+        "farming",
+        "agriculture",
+        "sustainability",
+        "community"
+      ]
+    },
+    {
+      "id": "mod-015",
+      "title": "Bruce Haulman Begins Documenting Vashon History",
+      "date_start": "1990",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Historian Bruce Haulman began his decades-long project of comprehensively documenting Vashon Island history, creating vashonhistory.com and authoring multiple books on the island's past.",
+      "details": "Building on the work of earlier historians like Oliver Van Olinda and Marjorie Rose Stanley, Haulman brought academic rigor and digital accessibility to Vashon Island history. His website vashonhistory.com became the most comprehensive online resource for island history, while his regular columns in the Vashon-Maury Island Beachcomber brought historical awareness to the wider community. His work ensured that the stories of indigenous peoples, pioneers, Japanese American farmers, and modern islanders would be preserved and accessible for future generations.",
+      "people": [
+        "Bruce Haulman",
+        "Oliver Scott Van Olinda"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Haulman, Vashon Island History",
+          "url": "https://vashonhistory.com",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "history",
+        "preservation",
+        "writing",
+        "community"
+      ]
+    },
+    {
+      "id": "ww2-008",
+      "title": "Japanese American Farms Lost During Internment",
+      "date_start": "1942",
+      "date_end": "1945",
+      "era": "wwii",
+      "layers": [
+        "event"
+      ],
+      "description": "During the forced internment of Japanese Americans, Vashon Island's Japanese farming families lost their lands, crops, equipment, and livelihoods — devastating losses from which the community never fully recovered.",
+      "details": "When Executive Order 9066 forced the removal of all Japanese Americans from the West Coast, Vashon Island's Japanese farming families — including the Mukais, Matsudas, Sakais, and Hoshis — were given only days to dispose of property accumulated over decades. Most farms were sold at fire-sale prices or simply abandoned. Equipment, livestock, and stored crops were lost. The island's strawberry industry, which Japanese American farmers had built into a nationally significant operation, collapsed. After the war, only a handful of families returned to Vashon, and the community's agricultural legacy was largely erased from the landscape.",
+      "people": [
+        "Sakai Family",
+        "Hoshi Family",
+        "Denichiro Mukai",
+        "Heisuke Matsuda"
+      ],
+      "places": [
+        "Vashon Island",
+        "Mukai Farm"
+      ],
+      "sources": [
+        {
+          "title": "Densho Encyclopedia",
+          "url": "https://encyclopedia.densho.org",
+          "type": "secondary"
+        },
+        {
+          "title": "Haulman, Vashon Island History",
+          "url": "https://vashonhistory.com",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "internment",
+        "japanese-american",
+        "agriculture",
+        "loss",
+        "injustice"
+      ]
+    },
+    {
+      "id": "ind-009",
+      "title": "Lucy Gerand Documents S'Homamish Place Names and Lifeways",
+      "date_start": "1920",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Puyallup elder Lucy Gerand provided anthropologist T.T. Waterman with detailed accounts of traditional sx̌ʷəbabš place names, village locations, and seasonal gathering patterns on Vashon and Maury Islands.",
+      "details": "Lucy Gerand's interviews with Waterman in the 1920s preserved knowledge of indigenous place names and resource gathering sites that would otherwise have been lost. She described the seasonal round — spring fish camps, summer berry gathering, fall salmon runs, and winter village life — that had sustained the S'Homamish people for millennia. Her testimony documented at least five major village sites on Vashon and Maury Islands, including sites at Quartermaster Harbor, Burton, and the island's western shore. These accounts remain among the most important primary sources for understanding the island's pre-contact indigenous geography.",
+      "people": [
+        "Lucy Gerand"
+      ],
+      "places": [
+        "Vashon Island",
+        "Quartermaster Harbor",
+        "Burton"
+      ],
+      "sources": [
+        {
+          "title": "Waterman, T.T. Puget Sound Geography",
+          "url": "",
+          "type": "primary"
+        },
+        {
+          "title": "Vashon Heritage Museum",
+          "url": "https://vashonheritagemuseum.org",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "indigenous",
+        "oral-history",
+        "place-names",
+        "preservation"
+      ]
+    },
+    {
+      "id": "mod-016",
+      "title": "Betty MacDonald Writes 'Onions in the Stew' on Vashon",
+      "date_start": "1955",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Author Betty MacDonald published 'Onions in the Stew,' a humorous memoir of island life on Vashon that introduced the island to a national audience.",
+      "details": "Betty MacDonald (born Anne Elizabeth Campbell Bard, 1907) moved to Vashon Island on April 24, 1942, after marrying Donald C. MacDonald. She had already achieved fame with 'The Egg and I' (1945), which was serialized in The Atlantic before publication and became a bestseller inspiring the Ma and Pa Kettle film series. 'Onions in the Stew' (1955) was a direct memoir of her Vashon years — a humorous account of ferry dependency, eccentric neighbors, gardening misadventures, and raising teenage daughters on the island. She also wrote the beloved Mrs. Piggle-Wiggle children's series while living on Vashon. U.S. Senator Richard Neuberger compared her humor to Mark Twain. Her Vashon home was approximately a quarter-mile south of Dolphin Point on the east side of the island. She died of cancer in Seattle on February 7, 1958, age 50.",
+      "people": [
+        "Betty MacDonald"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "HistoryLink: Betty MacDonald",
+          "url": "https://www.historylink.org/File/156",
+          "type": "secondary"
+        },
+        {
+          "title": "MacDonald, Betty. Onions in the Stew (1955)",
+          "url": "",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "literature",
+        "memoir",
+        "culture",
+        "writing"
+      ]
+    },
+    {
+      "id": "ear-015",
+      "title": "First Vashon Island Strawberry Festival",
+      "date_start": "1909",
+      "era": "early-20th-century",
+      "layers": [
+        "event"
+      ],
+      "description": "The Vashon Island Commercial Club organized the first Strawberry Festival, celebrating the island's booming berry industry that was shipping over 120,000 crates of strawberries annually.",
+      "details": "The Strawberry Festival was organized in 1909 by the Vashon Island Commercial Club to promote the island's signature crop. That year, Vashon was shipping more than 120,000 crates of strawberries annually. The Burton Fair advertised 'Eat 20 miles of strawberries.' The festival became the island's premier community event. During WWII it was suspended, then briefly rebranded as the Peach Festival (1946-1948), Vashon Festival (1949), Harvest Festival (1951), and Island Festival (1952-1983). Renamed the Strawberry Festival in 1984, it now draws tens of thousands of visitors annually and remains the island's largest event. Community members have re-established small test plots of the heritage Marshall variety.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Vashon Strawberry Festival History",
+          "url": "https://vashon-maury.com/the-history-of-the-strawberry-festival/",
+          "type": "secondary"
+        },
+        {
+          "title": "Haulman, Vashon Island History",
+          "url": "https://vashonhistory.com",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "festival",
+        "strawberry",
+        "agriculture",
+        "community"
+      ]
+    },
+    {
+      "id": "gro-013",
+      "title": "John Martinolich Founds Shipbuilding Company at Dockton",
+      "date_start": "1904",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Croatian-born shipbuilder John A. Martinolich founded his own shipyard at Dockton, launching a career that would make him the 'King of Purse Seiners' and establish Dockton as a major Pacific Coast shipbuilding center.",
+      "details": "John A. Martinolich was born on the island of Mali Lussin, Croatia, and began working in his father's shipyard at age 10. He emigrated in 1896 and settled in Dockton, finding work as a shipwright at the existing dry dock. In 1904, he left the main yard and founded the John A. Martinolich Shipbuilding Company. His first vessel was the steamer Vashon, completed in 1905. Over the following decades he built dozens of vessels: Verona (1910), Nisqually (1911), Calista (1911), Florence J. (1914), F.G. Reeves (1916), Vashona (1921), and the ferry Whidby (1923). By the 1920s, he was known as the 'King of Purse Seiners' for developing the West Coast purse seiner — a deep-draft fishing boat design that became the standard for the Pacific fishing fleet.",
+      "people": [
+        "John A. Martinolich",
+        "Alfred J. Stuckey"
+      ],
+      "places": [
+        "Dockton"
+      ],
+      "sources": [
+        {
+          "title": "HistoryLink: Dockton Drydock",
+          "url": "https://www.historylink.org/File/3910",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon Beachcomber: Dockton Dry Dock",
+          "url": "https://www.vashonbeachcomber.com/news/time-and-again-the-dockton-dry-dock/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "shipbuilding",
+        "maritime",
+        "industry",
+        "croatian",
+        "immigration"
       ]
     }
   ]

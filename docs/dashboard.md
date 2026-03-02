@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-02 (M6 Validation complete)
+**Last Updated:** 2026-03-02 (Research enrichment pass complete)
 **Setting:** Vashon Island, WA (prehistory to present)
 **Branch:** `claude/writers-research-companion-zTnuE`
 
@@ -30,8 +30,8 @@ M6 Validation    [####################] 100%  << COMPLETE
 | Milestone | Goal | Status | Quality Gate |
 |-----------|------|--------|-------------|
 | **M0 Foundation** | Project scaffolding, team setup, initial research | Complete | All 23 files created. JSON validates. Team configured. |
-| **M1 Research** | Complete Vashon Island knowledge base (80-120 entries) | Complete | 93 entries. 85 people. 67 places. 137 sources. 100% citations. All eras 5+. |
-| **M2 Data Model** | Finalize schemas, build import pipeline | Complete | 4 schemas. Transform pipeline. Validation script (0 errors). Search index (264 records). Narrator export (350KB). |
+| **M1 Research** | Complete Vashon Island knowledge base (80-120 entries) | Complete | 111 entries. 113 people. 67 places. 223 sources. 100% citations. All eras 7+. |
+| **M2 Data Model** | Finalize schemas, build import pipeline | Complete | 4 schemas. Transform pipeline. Validation script (0 errors). Search index (303 records). Narrator export (292KB). |
 | **M3 Core UI** | Timeline component with scrubbing and data display | Complete | React+TS+Vite scaffold. TimelineTrack with era bands, markers, scrubbing, zoom (4 levels). EntryCard, DetailPanel. 481KB build. |
 | **M4 Search & Filter** | Full-text search, layer toggles, date range filter | Complete | Fuse.js search <100ms. FilterPanel with layers/eras/date range. Combined AND logic. Empty state UX. 228KB build. |
 | **M5 Polish & Export** | AI narrator export, responsive, accessibility | Complete | ExportDialog with 3 scopes. WCAG AA contrast fixes. Skip link, aria-live, focus trap. Keyboard help (?). 237KB build. |
@@ -46,7 +46,7 @@ M6 Validation    [####################] 100%  << COMPLETE
 | Product Manager | Idle | All milestones complete | None |
 | Engineer | Complete | M6 test suite delivered | None |
 | Database Engineer | Idle | Optimizations validated by tests | None |
-| Researcher | Idle | Data finalized and validated | None |
+| Researcher | Complete | Research enrichment: +18 entries, +28 people, 4 entries enriched | None |
 | Designer | Idle | Visual consistency confirmed | None |
 | Tester | Complete | 122 tests passing, all categories green | None |
 | UI/UX | Idle | Accessibility verified in tests | None |
@@ -56,23 +56,23 @@ M6 Validation    [####################] 100%  << COMPLETE
 
 ## Research Coverage
 
-### Timeline Entries: 93 total
+### Timeline Entries: 111 total
 
 ```
 Era                    Entries  Target(M1)  Coverage
 ------------------------------------------------------
-Prehistory                  9          8     112%
-Indigenous                  8          8     100%
-Exploration                 7          8      88%
-Logging & Treaty            6          8      75%
+Modern Era                 16         12     133%
+Early 20th Century         15         12     125%
 Pioneer Settlement         13         10     130%
-Growth & Industry          12         10     120%
-Early 20th Century         14         12     117%
-WWII Era                    7          8      88%
-State Ferry Era             5          8      63%
-Modern Era                 12         12     100%
+Growth & Industry          13         10     130%
+State Ferry Era            11          8     138%
+Logging & Treaty           10          8     125%
+Prehistory                  9          8     112%
+Indigenous                  9          8     112%
+WWII Era                    8          8     100%
+Exploration                 7          8      88%
 ------------------------------------------------------
-TOTAL                      93        102      91%
+TOTAL                     111        102     109%
 ```
 
 ### Layer Distribution
@@ -80,21 +80,21 @@ TOTAL                      93        102      91%
 ```
 Layer          Entries   Coverage
 ---------------------------------
-Event              87   ████████████████████  94%
-Place              48   ██████████████        52%
-Person             40   █████████             43%
-Environment        26   ██████                28%
+Event             105   ██████████████████    94%
+Place              49   ████████              44%
+Person             45   ████████              40%
+Environment        28   █████                 25%
 ```
 
 ### Cross-Reference Stats
 
 | Metric | Count |
 |--------|-------|
-| Unique people referenced | 92 |
+| Unique people referenced | 113 |
 | Unique places referenced | 67 |
-| Total source URLs | 139 |
-| Entries with sources | 93/93 (100%) |
-| All eras with 5+ entries | 10/10 (100%) |
+| Total source URLs | 223 |
+| Entries with sources | 111/111 (100%) |
+| All eras with 7+ entries | 10/10 (100%) |
 | Duplicate entry IDs | 0 |
 
 ---
@@ -111,8 +111,8 @@ Environment        26   ██████                28%
 | [Coordination Board](docs/coordination.md) | All | Active | — | — |
 | [Research README](research/README.md) | Researcher | Done | — | — |
 | [Timeline Schema](research/schemas/timeline-entry.schema.json) | Eng | Done | — | 1.0 |
-| [Timeline Data](research/vashon-island/timeline.json) | Researcher | M1 Complete | 93 entries | 1.0 |
-| [People Directory](research/vashon-island/people.md) | Researcher | M1 Complete | 85 people | 1.0 |
+| [Timeline Data](research/vashon-island/timeline.json) | Researcher | Enriched | 111 entries | 1.1 |
+| [People Directory](research/vashon-island/people.md) | Researcher | Enriched | 113 people | 1.1 |
 | [Places Directory](research/vashon-island/places.md) | Researcher | M1 Complete | 67 places | 1.0 |
 | [Environment](research/vashon-island/environment.md) | Researcher | M1 Complete | — | 1.0 |
 | [Bibliography](research/vashon-island/sources.md) | Researcher | M1 Complete | 137 sources | 1.0 |
@@ -120,12 +120,12 @@ Environment        26   ██████                28%
 | [Place Schema](research/schemas/place.schema.json) | Eng | M2 Complete | — | 1.0 |
 | [Environment Schema](research/schemas/environment-feature.schema.json) | Eng | M2 Complete | — | 1.0 |
 | [Export Schema](research/schemas/narrator-export.schema.json) | Eng | M2 Complete | — | 1.0 |
-| [People JSON](research/vashon-island/people.json) | Eng | M2 Complete | 92 records | 1.0 |
+| [People JSON](research/vashon-island/people.json) | Eng | Enriched | 113 records | 1.1 |
 | [Places JSON](research/vashon-island/places.json) | Eng | M2 Complete | 67 records | 1.0 |
-| [Environment JSON](research/vashon-island/environment.json) | Eng | M2 Complete | 12 features | 1.0 |
-| [Search Index](research/vashon-island/search-index.json) | Eng | M2 Complete | 264 records | 1.0 |
-| [Narrator Export](research/vashon-island/narrator-export.json) | Eng | M2 Complete | 93 entries | 1.0 |
-| [ID Mapping](research/vashon-island/id-mapping.json) | Eng | M2 Complete | 159 mappings | 1.0 |
+| [Environment JSON](research/vashon-island/environment.json) | Eng | Cross-refs fixed | 12 features | 1.1 |
+| [Search Index](research/vashon-island/search-index.json) | Eng | Regenerated | 303 records | 1.1 |
+| [Narrator Export](research/vashon-island/narrator-export.json) | Eng | Regenerated | 111 entries | 1.1 |
+| [ID Mapping](research/vashon-island/id-mapping.json) | Eng | Regenerated | 303 mappings | 1.1 |
 | ExportDialog component | Eng | M5 Complete | — | 1.0 |
 | KeyboardHelp component | Eng | M5 Complete | — | 1.0 |
 | Test Setup (vite.config, setup.ts) | Tester | M6 Complete | — | 1.0 |
@@ -188,6 +188,14 @@ TOTAL                     10    122   ALL GREEN
 ## Next Steps
 
 All 7 milestones complete. The project is feature-complete for the prototype phase.
+
+**Post-M6 Research Enrichment (Complete):**
+- Added 18 new timeline entries (93 -> 111) filling thin eras (state-ferry +6, logging-treaty +4, modern +4, wwii +1, indigenous +1, early-20th-century +1, growth-industry +1)
+- Added 28 new people (85 -> 113) including Betty MacDonald, Lucy Gerand, Captain Gertrude Wiman, Bruce Haulman, Bill Moyer, Japanese American farming families, Martinolich, Peabody, and sustainable farming pioneers
+- Enriched 4 existing entries with deeper research-backed details (Mukai Barreling Plant, Dockton Dry Dock, Strawberry Industry, Mukai Historic Places)
+- Fixed all 12 environment feature cross-references (were all pointing to pre-007)
+- Regenerated search index (303 records), narrator export (292KB), and ID mapping (303 mappings)
+- All 122 tests still passing
 
 ---
 

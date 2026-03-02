@@ -7,7 +7,7 @@
 | Product Manager | Idle | M6 validated; all milestones complete | None |
 | Engineer | Complete | M6 test suite written and passing | None |
 | Database Engineer | Idle | Optimizations validated by tests | None |
-| Researcher | Idle | Data finalized and validated | None |
+| Researcher | Complete | Research enrichment: +18 entries, +28 people, 4 entries enriched, env cross-refs fixed | None |
 | Designer | Idle | Visual consistency confirmed | None |
 | Tester | Complete | 122 tests passing across 10 files | None |
 | UI/UX | Idle | Accessibility verified in tests | None |
@@ -83,3 +83,10 @@
 - [x] Integration tests: filter pipeline (8 cases), export generation (11 cases), data validation (16 cases) (2026-03-02)
 - [x] TypeScript clean (0 errors), production build: 252KB JS, 29KB CSS (2026-03-02)
 - [x] **M6 Validation milestone complete** (2026-03-02) — 122 tests, 10 files, all green
+- [x] Research enrichment: +18 timeline entries (93->111), filling state-ferry (+6), logging-treaty (+4), modern (+4), wwii/indigenous/ear/gro (+1 each) (2026-03-02)
+- [x] Research enrichment: +28 people (85->113) — Betty MacDonald, Lucy Gerand, Captain Gertrude Wiman, Bruce Haulman, Bill Moyer, Martinolich, Peabody, farming families, and more (2026-03-02)
+- [x] Research enrichment: 4 entries enriched with deeper details — Mukai Barreling Plant, Dockton Dry Dock, Strawberry Industry, Mukai Historic Places (2026-03-02)
+- [x] Environment cross-references fixed: all 12 features now point to relevant entries instead of pre-007 (2026-03-02)
+- [x] Search index, narrator export, and ID mapping regenerated with enriched data (303 records, 292KB, 303 mappings) (2026-03-02)
+- [x] people.md narrative updated with all 28 new figures (2026-03-02)
+- [x] All 122 tests still passing after enrichment (2026-03-02)

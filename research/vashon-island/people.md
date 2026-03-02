@@ -8,6 +8,12 @@
 - **Significance:** Original permanent inhabitants of Vashon and Maury Islands. Built five main village sites. Relied on salmon fishing, shellfish, hunting, and plant harvesting. Descendants are enrolled members of the Puyallup Tribe of Indians.
 - **Related entries:** ind-001, log-002
 
+### Lucy Gerand
+- **Who:** Puyallup woman and vital historical witness to pre-settlement Vashon Island life
+- **Period:** Early 1800s–1929
+- **Significance:** Interviewed by anthropologist T.T. Waterman in the 1920s, she provided detailed accounts of traditional place names, village sites, and seasonal resource gathering patterns of the sx̌ʷəbabš (S'Homamish) people on Vashon and Maury Islands. Her testimony remains one of the most important primary sources for understanding indigenous lifeways on the island.
+- **Related entries:** ind-009
+
 ## Archaeologists and Researchers
 
 ### Julie K. Stein
@@ -96,7 +102,13 @@
 - **Significance:** Established Fort Nisqually in 1833, the first European settlement on Puget Sound, near the mouth of Sequalitchew Creek. The fort served as a fur trade hub and drew European and American attention to the broader Puget Sound region, including Vashon Island.
 - **Related entries:** exp-006
 
-## Treaty Era
+## Treaty Era / Hudson's Bay Company
+
+### William Tolmie
+- **Who:** Chief Factor at the Hudson's Bay Company's Fort Nisqually
+- **Period:** Active 1843–1860s
+- **Significance:** Managed the Puget Sound Agricultural Company from Fort Nisqually, running livestock operations that competed with American settlers for land. His presence and the HBC's claims complicated early American settlement patterns around Vashon Island as the British and American governments negotiated sovereignty over the Oregon Country.
+- **Related entries:** log-010
 
 ### Samuel Royal Thurston
 - **Who:** Oregon Territory delegate to the U.S. Congress
@@ -114,6 +126,18 @@
 - **Who:** Nisqually tribal leader
 - **Period:** 1850s
 - **Significance:** Led resistance against the Treaty of Medicine Creek's unfair terms during the Puget Sound Indian War of 1855–1856. Retreated east after the Battle of Seattle (January 26, 1856), was later captured, controversially convicted of murder, and hanged in 1858. Posthumously exonerated in 2004.
+- **Related entries:** log-005
+
+### Leschi's Wife (Mary)
+- **Who:** Wife of Chief Leschi of the Nisqually
+- **Period:** Active 1850s
+- **Significance:** During the Puget Sound War, she and other family members were among those displaced by the conflict. Her story represents the broader experience of indigenous women and families during the treaty era and forced relocations.
+- **Related entries:** log-005
+
+### Leschi's Wife (Mary)
+- **Who:** Wife of Chief Leschi of the Nisqually
+- **Period:** Active 1850s
+- **Significance:** During the Puget Sound War, she and other family members were among those displaced by the conflict. Her story represents the broader experience of indigenous women and families during the treaty era and forced relocations.
 - **Related entries:** log-005
 
 ### John Swan
@@ -148,6 +172,12 @@
 - **Who:** First European-American settler on Vashon Island
 - **Period:** Filed homestead claim in 1865
 - **Significance:** First permanent homesteader, marking the beginning of European-American settlement on the island.
+- **Related entries:** pio-001
+
+### Mary Bridges
+- **Who:** Wife of Mathew Bridges, the first homesteader
+- **Period:** Active 1860s–1870s
+- **Significance:** Believed to have been of Duwamish descent, representing one of the earliest examples of intermarriage between settlers and indigenous peoples on the island. Her presence highlights the complex relationships between indigenous and settler communities in the earliest days of homesteading.
 - **Related entries:** pio-001
 
 ### Salmon Sherman
@@ -290,6 +320,24 @@
 - **Significance:** Founded the Steen Mill and built a logging railroad along what is now Cove Road. His mill provided his home with an early luxury -- electric light -- before the island's formal electrification in 1913.
 - **Related entries:** gro-012
 
+### John A. Martinolich
+- **Who:** Croatian-born shipbuilder, known as the "King of Purse Seiners"
+- **Period:** Active 1910s–1940s
+- **Significance:** Operated the Martinolich Shipyard at Dockton on Quartermaster Harbor, building and repairing vessels for the Puget Sound fishing fleet. His yard attracted a community of Croatian workers, creating a distinctive ethnic enclave at Dockton that locals called "Ichville." His purse seiners were considered the finest on Puget Sound.
+- **Related entries:** gro-013
+
+### Alfred J. Stuckey
+- **Who:** Superintendent of the Martinolich Shipyard (Dockton Dry Dock)
+- **Period:** Active 1892–1909
+- **Significance:** Oversaw construction of numerous vessels including steam launches and small freighters. Under his management, the yard employed over 80 workers and became one of the most important maritime industrial operations on Puget Sound.
+- **Related entries:** gro-003
+
+### Peter Manson
+- **Who:** Dockton village founder and marine construction pioneer
+- **Period:** Active 1890s–1920s
+- **Significance:** Named the village of Dockton on Quartermaster Harbor, noting the dry dock facility could "dock a ton of boats." Founded a pile driving company that grew into Manson Construction, which became a major marine construction firm still operating today. His entrepreneurship at Dockton exemplified the industrial ambition of Vashon's growth era.
+- **Related entries:** gro-003
+
 ### Mark Twain
 - **Who:** American author (Samuel Clemens)
 - **Period:** Reportedly spoke at Vashon Chautauqua, late 1800s–early 1900s
@@ -321,6 +369,12 @@
 - **Period:** Born 1911 on Vashon Island; active through 1990s
 - **Significance:** Because his parents could not own land under Washington's 1921 Alien Land Law, the family purchased 40 acres in Masa's name in 1926. Designed the cold-process fruit barreling plant as a teenager. Received advance warning of internment from a military friend and moved his family to eastern Oregon, making them the only Vashon Japanese Americans to avoid the concentration camps. Invented his own seed harvester in Oregon. Returned to Vashon after the war.
 - **Related entries:** ear-012, ww2-003, ww2-006
+
+### Sato Mukai
+- **Who:** First wife of Denichiro Mukai
+- **Period:** Active 1910–1921
+- **Significance:** Arrived on Vashon with Denichiro as part of the early Japanese American farming community. Her death in 1921 preceded the family's strategic land purchase in their American-born son Masa's name in 1926, a legal maneuver necessitated by the Washington State Alien Land Law that barred Japanese immigrants from owning property.
+- **Related entries:** ear-001
 
 ### Deb Harrington
 - **Who:** Local contractor on Vashon Island
@@ -372,6 +426,12 @@
 - **Significance:** Founded Camp Sealth in 1920, the first permanent resident camp for girls in Washington State. The camp began on Blake Island and moved to a 150-acre site on Vashon Island's southwest corner in 1921. It has operated for over 100 continuous summers and expanded to nearly 400 acres.
 - **Related entries:** ear-010
 
+### Captain Gertrude Wiman
+- **Who:** First woman licensed as a steamship pilot on Puget Sound
+- **Period:** Active ~1907
+- **Significance:** Earned her license around 1907 and commanded vessels on the Mosquito Fleet routes that served Vashon Island, breaking gender barriers in the maritime industry at a time when women captains were virtually unheard of. Her achievement reflected the independent spirit of island communities that depended on these small ferry operators.
+- **Related entries:** ear-006
+
 ### Louis Modaranga
 - **Who:** Filipino farmworker on Vashon Island
 - **Period:** Active 1930
@@ -379,6 +439,12 @@
 - **Related entries:** ear-013
 
 ## Historians
+
+### Marjorie Rose Stanley
+- **Who:** Vashon Island historian and documentarian
+- **Period:** Active 1920s–1980s
+- **Significance:** Spent over 60 years documenting island history. Published the first "History of Vashon Island" in 1926 and later serialized an expanded version in the Vashon-Maury Island Beachcomber in 1967. Her work preserved the oral histories and pioneer stories that might otherwise have been lost, forming the foundation for later historians like Bruce Haulman.
+- **Related entries:** mod-015
 
 ### Oliver Scott Van Olinda (also Oliver Van Olinda)
 - **Who:** Faculty member at Vashon College; community historian
@@ -412,6 +478,26 @@
 - **Significance:** Published "Looking Like the Enemy: My Story of Imprisonment in Japanese American Internment Camps" in 2005 at age 80, preserving the story of Vashon's Japanese American community. Enrolled in the U.S. Cadet Nurse Corps during the war. In 2017, Vashon Island High School retroactively awarded her the diploma she was denied when internment cut short her education.
 - **Related entries:** ww2-002, ww2-005, mod-010
 
+## WWII Era — Japanese American Farming Families
+
+### Sakai Family
+- **Who:** Japanese American farming family on Vashon Island
+- **Period:** Active early 1900s–1942
+- **Significance:** One of several prominent Japanese American families who cultivated strawberries and other crops on Vashon from the early 1900s through 1942. Like the Mukai and Matsuda families, the Sakais were forcibly removed during Executive Order 9066 and sent to internment camps. Their farms were never fully recovered after the war.
+- **Related entries:** ww2-001, ww2-008
+
+### Hoshi Family
+- **Who:** Japanese American farming family on Vashon Island
+- **Period:** Active early 1900s–1942
+- **Significance:** Part of the thriving agricultural community that made Vashon Island one of the leading strawberry producers in Washington state. Forcibly removed during the 1942 internment of Japanese Americans. Their story is part of the broader narrative of loss and resilience that shaped the island's WWII history.
+- **Related entries:** ww2-001, ww2-008
+
+### August M. Takatsuka
+- **Who:** Vashon-born son of Japanese immigrant farmers; WWII veteran
+- **Period:** Active 1945–1980s
+- **Significance:** Returned from military service in WWII to resume strawberry farming on Vashon Island. Later transitioned to Christmas tree cultivation in the 1970s. His persistence in farming after the devastation of internment represented the resilience of the Japanese American agricultural community on Vashon.
+- **Related entries:** ww2-008
+
 ## WWII Era — Mukai Family
 
 ### Chiyeko Mukai
@@ -427,6 +513,24 @@
 - **Related entries:** ww2-003
 
 ## State Ferry Era
+
+### Captain Alexander M. Peabody
+- **Who:** President of the Black Ball Line (Puget Sound Navigation Company)
+- **Period:** Active 1930s–1951
+- **Significance:** Operated ferry service to Vashon Island before the state takeover. His contentious relationship with the Washington Toll Bridge Authority over fares and subsidies led to the dramatic 1951 state purchase of the Black Ball fleet for $4.97 million, creating Washington State Ferries — now the largest ferry system in the United States.
+- **Related entries:** fer-006
+
+### Homer Hadley
+- **Who:** Engineer and bridge designer
+- **Period:** Active 1930s–1950s
+- **Significance:** Proposed a cross-sound bridge connecting Vashon Island to the mainland. Known for designing the Mercer Island floating bridge (Lacey V. Murrow Memorial Bridge). His Vashon bridge proposal sparked decades of debate about the island's future character — whether to remain ferry-dependent and rural or become connected and suburban.
+- **Related entries:** fer-009
+
+### Alex Anderson
+- **Who:** Chairman of the Vashon Island anti-bridge committee
+- **Period:** Active late 1950s
+- **Significance:** Led the successful grassroots campaign that defeated the 1959 Cross-Sound Bridge proposal. The campaign's victory preserved the island's rural character and ferry-dependent identity, a decision that continues to define Vashon's relationship with the mainland.
+- **Related entries:** fer-009
 
 ### John Cherberg
 - **Who:** Lieutenant Governor of Washington State; Senate president
@@ -464,6 +568,14 @@
 - **Significance:** A 17-year-old who was held down by three loggers who forcibly cut his hair during the cultural tensions surrounding the counterculture influx to Vashon Island around 1970. The incident exemplified the friction between long-time residents and the incoming counterculture movement.
 - **Related entries:** fer-005
 
+## Modern Era — Literature
+
+### Betty MacDonald
+- **Who:** Author and humorist
+- **Period:** Active on Vashon 1940s–1958
+- **Significance:** Author of "The Egg and I" (1945), a bestselling memoir of rural life that inspired the Ma and Pa Kettle film series. While that book was set on the Olympic Peninsula, MacDonald later lived on Vashon Island with her second husband Donald MacDonald from the 1940s through 1958. Her book "Onions in the Stew" (1955) is a witty portrait of island life, ferry commutes, and raising teenage daughters on Vashon. She also created the beloved children's series "Mrs. Piggle-Wiggle." Her presence cemented Vashon's literary reputation.
+- **Related entries:** mod-016
+
 ## Modern Era — Industry
 
 ### Bill Kirschner
@@ -484,11 +596,37 @@
 - **Significance:** His garage on Vashon Island served as the original workshop where Bill Kirschner experimented with fiberglass ski prototypes in the 1950s, leading to the founding of K2 Corporation.
 - **Related entries:** mod-003
 
+### John de Groen
+- **Who:** Co-founder and early leader of K2 Corporation
+- **Period:** Active 1960s–1980s
+- **Significance:** Partnered with the Kirschner brothers to transform K2 from a small island ski manufacturer into a major sporting goods company. K2 became Vashon's largest employer with approximately 750 workers at its peak, and its economic anchor for decades.
+- **Related entries:** mod-003
+
+### Bill Knox
+- **Who:** Artist, designer, and engineer at K2 Corporation
+- **Period:** Active 1960s–1990s
+- **Significance:** Created the iconic color schemes for K2 skis and built the original prototype for the K2 ski boot. As a painter, he specialized in watercolor landscapes and wildlife, with work selected for U.S. postage stamps. His combination of artistic talent and engineering skill was central to K2's distinctive visual identity during its growth years.
+- **Related entries:** mod-003
+
 ### Jim Stewart
 - **Who:** Coffee entrepreneur and founder of Seattle's Best Coffee
 - **Period:** Active 1982 onward
 - **Significance:** Moved his coffee roasting operation to Vashon Island in 1982, purchasing a historic building in the town of Vashon. After winning a regional tasting competition, the company changed its name from Stewart Brothers Coffee to Seattle's Best Coffee. Starbucks acquired SBC in 2003 and closed the Vashon facility. The building was later reopened as The Vashon Island Coffee Roasterie.
 - **Related entries:** mod-004
+
+## Modern Era — Heritage and History
+
+### Jean Findlay
+- **Who:** Founding member of the Vashon-Maury Island Heritage Association
+- **Period:** Active 1970s–1990s
+- **Significance:** Instrumental in establishing what became the Vashon Heritage Museum. Led early efforts to preserve island historical records, oral histories, and artifacts, and to document pioneer-era structures before they were lost to demolition or neglect.
+- **Related entries:** fer-011
+
+### Bruce Haulman
+- **Who:** Vashon Island's preeminent modern historian
+- **Period:** Active 1990s–present
+- **Significance:** Creator of vashonhistory.com, the most comprehensive online resource for island history. Author of multiple books on Vashon history and regular columnist for the Vashon-Maury Island Beachcomber. His work has synthesized scattered primary sources into accessible narratives, making island history available to researchers and the general public alike.
+- **Related entries:** mod-015
 
 ## Modern Era — Heritage and Arts
 
@@ -522,7 +660,31 @@
 - **Significance:** Maintained the "Bike in the Tree" landmark by replacing handlebars and wheels when vandals stripped them, helping preserve one of the island's most quirky and beloved attractions.
 - **Related entries:** mod-011
 
+### Norie Sato
+- **Who:** Japanese American artist
+- **Period:** Active 1990s–present
+- **Significance:** Vashon Island-based artist known for large-scale public art installations throughout the Pacific Northwest. Her work explores themes of memory, landscape, and cultural identity. Recipient of numerous public art commissions including works for Sound Transit and the Seattle Art Museum.
+- **Related entries:** mod-007
+
+### Kara Jones
+- **Who:** Poet and independent publisher
+- **Period:** Active 1990s–present
+- **Significance:** Founded Soulstice Press, a small literary press based on Vashon Island. Representative of the vibrant independent publishing and poetry community that flourished on Vashon from the 1990s onward, reflecting the island's enduring identity as a haven for creative artists and writers.
+- **Related entries:** mod-016
+
 ## Modern Era — Activism and Community
+
+### Bill Moyer
+- **Who:** Activist and founder of the Backbone Campaign
+- **Period:** Active 2003–present
+- **Significance:** Fourth-generation Washingtonian and Vashon Island resident who founded the Backbone Campaign in 2003. Pioneered "artful activism" combining creative arts with environmental and social justice advocacy. Led campaigns including opposition to Lower Snake River dams for salmon and orca protection. His annual Action Camp on Vashon became a national model for activist training.
+- **Related entries:** mod-013
+
+### Glenda Pearson
+- **Who:** Community organizer and land use advocate
+- **Period:** Active 1980s–2000s
+- **Significance:** Longtime Vashon Island community organizer who was instrumental in land use planning debates that shaped the island's identity. Advocated for rural character preservation and small-scale agriculture rather than suburban development, helping define the vision of Vashon that persists today.
+- **Related entries:** mod-014
 
 ### Sharon Nelson
 - **Who:** Environmentalist and grassroots organizer
@@ -541,3 +703,23 @@
 - **Period:** Active 2020–2022
 - **Significance:** Led the Vashon Medical Reserve Corps (VMRC) in a volunteer-driven pandemic response that achieved the lowest COVID-19 case rate in King County. The program delivered over 19,000 vaccine doses, conducted 7,500+ PCR tests, and was recognized by the New York Times as a model for rural communities.
 - **Related entries:** mod-012
+
+## Modern Era — Sustainable Farming
+
+### Rayna Holtz
+- **Who:** Pioneer of organic farming on Vashon Island
+- **Period:** Active 1970s–2000s
+- **Significance:** Helped establish the Vashon Island Growers Association and the Saturday Farmers Market, which became central to the island's identity as an organic agriculture community. Part of the back-to-the-land movement that drew young farmers to the island in the 1970s-80s.
+- **Related entries:** mod-014
+
+### Henning Sehmsdorf
+- **Who:** Professor Emeritus, University of Washington; organic farmer
+- **Period:** Active 1980s–present
+- **Significance:** Co-founded S&S Homestead Farm on Vashon, a model for sustainable biodynamic agriculture. Author of works on sustainable farming practices. His farm became an educational center for regenerative agriculture, hosting workshops and programs for decades.
+- **Related entries:** mod-014
+
+### Elizabeth Simpson
+- **Who:** Co-founder of S&S Homestead Farm
+- **Period:** Active 1980s–present
+- **Significance:** Built S&S Homestead Farm with Henning Sehmsdorf into one of the Pacific Northwest's premier demonstrations of biodynamic and sustainable farming practices, hosting workshops and educational programs that influenced a generation of organic farmers on Vashon and beyond.
+- **Related entries:** mod-014

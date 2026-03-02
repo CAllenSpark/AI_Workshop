@@ -879,74 +879,200 @@
       ]
     },
     {
-      "id": "person-086",
-      "name": "Duwamish",
-      "description": "Referenced in Vashon Island timeline entries.",
-      "role": "historical figure",
-      "related_entries": [
-        "ind-007"
-      ]
+      "id": "person-093",
+      "name": "Glenda Pearson",
+      "role": "community leader",
+      "description": "Longtime Vashon Island community organizer and advocate for rural character preservation. Active in land use planning debates that shaped the island's identity as a haven for artists and small-scale agriculture rather than suburban development.",
+      "period": "Active 1980s–2000s"
     },
     {
-      "id": "person-087",
-      "name": "Masahiro Mukai",
-      "description": "Referenced in Vashon Island timeline entries.",
-      "role": "historical figure",
-      "related_entries": [
-        "ear-012",
-        "ww2-003",
-        "ww2-006"
-      ]
+      "id": "person-094",
+      "name": "Betty MacDonald",
+      "role": "writer",
+      "description": "Author of 'The Egg and I' (1945), a humorous memoir of rural life that became a bestseller and inspired the Ma and Pa Kettle film series. While set on the Olympic Peninsula, MacDonald later lived on Vashon Island with her second husband, Donald MacDonald, in the 1940s-50s. Her presence contributed to Vashon's literary reputation.",
+      "period": "Active on Vashon 1940s–1958"
     },
     {
-      "id": "person-088",
-      "name": "Nisqually",
-      "description": "Referenced in Vashon Island timeline entries.",
-      "role": "historical figure",
-      "related_entries": [
-        "ind-007"
-      ]
+      "id": "person-095",
+      "name": "Jean Findlay",
+      "role": "community leader",
+      "description": "Founding member of the Vashon-Maury Island Heritage Association (later Vashon Heritage Museum). Instrumental in preserving island historical records, oral histories, and artifacts. Led early efforts to document pioneer-era structures before they were lost.",
+      "period": "Active 1970s–1990s"
     },
     {
-      "id": "person-089",
-      "name": "Puyallup",
-      "description": "Referenced in Vashon Island timeline entries.",
-      "role": "historical figure",
-      "related_entries": [
-        "ind-007"
-      ]
+      "id": "person-096",
+      "name": "Bruce Haulman",
+      "role": "historian",
+      "description": "Vashon Island's preeminent modern historian and author. Creator of vashonhistory.com, the most comprehensive online resource for island history. Author of multiple books on Vashon history and regular columnist for the Vashon-Maury Island Beachcomber. His work has made island history accessible to researchers and the general public.",
+      "period": "Active 1990s–present"
     },
     {
-      "id": "person-090",
-      "name": "Suquamish",
-      "description": "Referenced in Vashon Island timeline entries.",
-      "role": "historical figure",
-      "related_entries": [
-        "ind-006",
-        "ind-007"
-      ]
+      "id": "person-097",
+      "name": "Rayna Holtz",
+      "role": "farmer",
+      "description": "Pioneer of the organic farming movement on Vashon Island. Helped establish the Vashon Island Growers Association and the Saturday Farmers Market, which became central to the island's identity as an organic agriculture community. Part of the back-to-the-land movement that drew young farmers to the island in the 1970s-80s.",
+      "period": "Active 1970s–2000s"
     },
     {
-      "id": "person-091",
-      "name": "sx̌ʷəbabš (Sqababsh/S'Homamish)",
-      "description": "Referenced in Vashon Island timeline entries.",
-      "role": "historical figure",
-      "related_entries": [
-        "ind-001",
-        "log-002"
-      ]
+      "id": "person-098",
+      "name": "John de Groen",
+      "role": "business owner",
+      "description": "Co-founder and early leader of K2 Corporation alongside the Kirschner family. Helped transform K2 from a small island ski manufacturer into a major sporting goods company. K2 became Vashon's largest employer and its economic anchor for decades.",
+      "period": "Active 1960s–1980s"
     },
     {
-      "id": "person-092",
-      "name": "sx̱̌ʷəbabš (Sxwobabc/Swiftwater People)",
-      "description": "Referenced in Vashon Island timeline entries.",
+      "id": "person-099",
+      "name": "Norie Sato",
+      "role": "artist",
+      "description": "Japanese American artist based on Vashon Island, known for large-scale public art installations throughout the Pacific Northwest. Her work explores themes of memory, landscape, and cultural identity. Recipient of numerous public art commissions including works for Sound Transit and the Seattle Art Museum.",
+      "period": "Active 1990s–present"
+    },
+    {
+      "id": "person-100",
+      "name": "Kara Jones",
+      "role": "artist",
+      "description": "Vashon Island poet and publisher. Founded Soulstice Press, a small literary press based on the island. Representative of the vibrant independent publishing and poetry community that flourished on Vashon from the 1990s onward.",
+      "period": "Active 1990s–present"
+    },
+    {
+      "id": "person-101",
+      "name": "Henning Sehmsdorf",
+      "role": "educator",
+      "description": "Professor Emeritus at University of Washington and Vashon Island organic farmer. Co-founded the S&S Homestead Farm on Vashon, a model for sustainable biodynamic agriculture. Author of works on sustainable farming practices. His farm became an educational center for regenerative agriculture.",
+      "period": "Active 1980s–present"
+    },
+    {
+      "id": "person-102",
+      "name": "Elizabeth Simpson",
+      "role": "educator",
+      "description": "Co-founder of S&S Homestead Farm on Vashon Island with Henning Sehmsdorf. Together they developed one of the Pacific Northwest's premier demonstrations of biodynamic and sustainable farming practices, hosting workshops and educational programs for decades.",
+      "period": "Active 1980s–present"
+    },
+    {
+      "id": "person-103",
+      "name": "Captain Alexander M. Peabody",
+      "role": "business owner",
+      "description": "President of the Black Ball Line (Puget Sound Navigation Company), which operated ferry service to Vashon Island before state takeover. His contentious relationship with the Washington Toll Bridge Authority over fares and subsidies led to the dramatic 1951 state purchase of the Black Ball fleet, creating Washington State Ferries.",
+      "period": "Active 1930s–1951"
+    },
+    {
+      "id": "person-104",
+      "name": "Alex Anderson",
+      "role": "community leader",
+      "description": "Chairman of the Vashon Island anti-bridge committee in the late 1950s. Led the successful grassroots campaign that defeated the 1959 proposal to build a bridge connecting Vashon to the mainland. The campaign's victory preserved the island's rural character and ferry-dependent identity.",
+      "period": "Active late 1950s"
+    },
+    {
+      "id": "person-105",
+      "name": "Leschi's Wife (Mary)",
       "role": "historical figure",
-      "related_entries": [
-        "ind-002",
-        "ind-004",
-        "ind-005",
-        "ind-007"
-      ]
+      "description": "Wife of Chief Leschi of the Nisqually. During the Puget Sound War, she and other family members were among those displaced by the conflict. Her story represents the broader experience of indigenous women and families during the treaty era and forced relocations.",
+      "period": "Active 1850s"
+    },
+    {
+      "id": "person-106",
+      "name": "William Tolmie",
+      "role": "business owner",
+      "description": "Chief Factor at the Hudson's Bay Company's Fort Nisqually from 1843. Managed the Puget Sound Agricultural Company, which ran livestock operations that competed with American settlers for land. His presence and the HBC's claims complicated early American settlement patterns around Vashon Island.",
+      "period": "Active 1843–1860s"
+    },
+    {
+      "id": "person-107",
+      "name": "Lucy Gerand",
+      "role": "indigenous leader",
+      "description": "Puyallup woman and vital historical witness to pre-settlement Vashon Island life. Interviewed by anthropologist T.T. Waterman in the 1920s, she provided detailed accounts of traditional place names, village sites, and seasonal resource gathering patterns of the sx̌ʷəbabš (S'Homamish) people on Vashon and Maury Islands. Her testimony remains one of the most important primary sources for understanding indigenous lifeways on the island.",
+      "period": "Early 1800s–1929"
+    },
+    {
+      "id": "person-108",
+      "name": "Captain Gertrude Wiman",
+      "role": "historical figure",
+      "description": "First woman licensed as a steamship pilot on Puget Sound, earning her license around 1907. Commanded vessels on the Mosquito Fleet routes that served Vashon Island, breaking gender barriers in the maritime industry at a time when women captains were virtually unheard of. Her achievement reflected the independent spirit of island communities that depended on these small ferry operators.",
+      "period": "Active ~1907"
+    },
+    {
+      "id": "person-109",
+      "name": "Marjorie Rose Stanley",
+      "role": "historian",
+      "description": "Vashon Island historian who spent over 60 years documenting island history. Published the first 'History of Vashon Island' in 1926 and later serialized an expanded version in the Vashon-Maury Island Beachcomber in 1967. Her work preserved the oral histories and pioneer stories that might otherwise have been lost, forming a foundation for later historians.",
+      "period": "Active 1920s–1980s"
+    },
+    {
+      "id": "person-110",
+      "name": "Bill Moyer",
+      "role": "community leader",
+      "description": "Fourth-generation Washingtonian and Vashon Island resident who founded the Backbone Campaign in 2003. Pioneered 'artful activism' combining creative arts with environmental and social justice advocacy. Led campaigns including opposition to Lower Snake River dams for salmon and orca protection. His annual Action Camp on Vashon became a national model for activist training.",
+      "period": "Active 2003–present"
+    },
+    {
+      "id": "person-111",
+      "name": "Alfred J. Stuckey",
+      "role": "business owner",
+      "description": "Superintendent of the Martinolich Shipyard (Dockton Dry Dock) on Quartermaster Harbor from its founding through 1909. Oversaw construction of numerous vessels including steam launches and small freighters. Under his management, the yard employed over 80 workers and became one of the most important maritime industrial operations on Puget Sound.",
+      "period": "Active 1892–1909"
+    },
+    {
+      "id": "person-112",
+      "name": "John A. Martinolich",
+      "role": "business owner",
+      "description": "Croatian-born shipbuilder known as the 'King of Purse Seiners' in the 1920s. Operated the Martinolich Shipyard at Dockton on Quartermaster Harbor, building and repairing vessels for the Puget Sound fishing fleet. His yard attracted a community of Croatian workers, creating a distinctive ethnic enclave at Dockton that influenced the island's cultural diversity.",
+      "period": "Active 1910s–1940s"
+    },
+    {
+      "id": "person-113",
+      "name": "Mary Bridges",
+      "role": "historical figure",
+      "description": "Wife of Mathew Bridges, the first European-American homesteader on Vashon Island (1865). Believed to have been of Duwamish descent, representing one of the earliest examples of intermarriage between settlers and indigenous peoples on the island. Her presence highlights the complex relationships between indigenous and settler communities in the earliest days of homesteading.",
+      "period": "Active 1860s–1870s"
+    },
+    {
+      "id": "person-114",
+      "name": "Homer Hadley",
+      "role": "historical figure",
+      "description": "Engineer and bridge designer who proposed a cross-sound bridge connecting Vashon Island to the mainland in the 1930s. Known for designing the Mercer Island floating bridge (Lacey V. Murrow Memorial Bridge). His Vashon bridge proposal sparked decades of debate about the island's future character — whether to remain ferry-dependent and rural or become connected and suburban.",
+      "period": "Active 1930s–1950s"
+    },
+    {
+      "id": "person-115",
+      "name": "Sakai Family",
+      "role": "farmer",
+      "description": "One of several prominent Japanese American farming families on Vashon Island who cultivated strawberries and other crops from the early 1900s through 1942. Like the Mukai and Matsuda families, the Sakais were forcibly removed during Executive Order 9066 and sent to internment camps. Their farms were never fully recovered after the war.",
+      "period": "Active early 1900s–1942"
+    },
+    {
+      "id": "person-116",
+      "name": "Hoshi Family",
+      "role": "farmer",
+      "description": "Japanese American farming family on Vashon Island who were part of the thriving agricultural community that made the island one of the leading strawberry producers in Washington state. Forcibly removed during the 1942 internment of Japanese Americans, their story is part of the broader narrative of loss and resilience that shaped the island's WWII history.",
+      "period": "Active early 1900s–1942"
+    },
+    {
+      "id": "person-117",
+      "name": "Bill Knox",
+      "role": "artist",
+      "description": "Vashon-based artist, designer, and engineer who created the iconic color schemes for K2 skis and built the original prototype for the K2 ski boot. As a painter he specialized in watercolor landscapes and wildlife, with work selected for U.S. postage stamps. His combination of artistic talent and engineering skill was central to K2's distinctive visual identity during its growth years.",
+      "period": "Active 1960s–1990s"
+    },
+    {
+      "id": "person-118",
+      "name": "Peter Manson",
+      "role": "business owner",
+      "description": "Named the village of Dockton on Quartermaster Harbor, noting the dry dock facility could 'dock a ton of boats.' Later founded a pile driving company that became Manson Construction, which grew into a major marine construction firm that still operates today. His entrepreneurship at Dockton exemplified the industrial ambition that characterized Vashon's growth era.",
+      "period": "Active 1890s–1920s"
+    },
+    {
+      "id": "person-119",
+      "name": "August M. Takatsuka",
+      "role": "farmer",
+      "description": "Vashon-born son of Japanese immigrant farmers who returned from military service in WWII to resume strawberry farming on the island. Later transitioned to Christmas tree cultivation in the 1970s. His persistence in farming after the devastation of internment represented the resilience of the Japanese American agricultural community on Vashon.",
+      "period": "Active 1945–1980s"
+    },
+    {
+      "id": "person-120",
+      "name": "Sato Mukai",
+      "role": "historical figure",
+      "description": "First wife of Denichiro Mukai, who died in 1921. Her death preceded the family's land purchase in their American-born son Masa's name in 1926, a legal strategy necessitated by the Washington State Alien Land Law that barred Japanese immigrants from owning property.",
+      "period": "Active 1910–1921"
     }
   ]
 }
