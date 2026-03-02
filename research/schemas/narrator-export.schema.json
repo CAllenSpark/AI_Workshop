@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "narrator-export.schema.json",
+  "title": "AI Narrator Export",
+  "description": "Self-contained JSON export for consumption by AI narrators, language models, and game engines",
+  "type": "object",
+  "required": ["export_metadata", "eras", "entries", "people", "places", "environment_features"],
+  "properties": {
+    "export_metadata": {
+      "type": "object",
+      "required": ["setting", "generated_at", "entry_count", "version"],
+      "properties": {
+        "setting": { "type": "string" },
+        "generated_at": { "type": "string", "format": "date-time" },
+        "entry_count": { "type": "integer", "minimum": 0 },
+        "version": { "type": "string" }
+      }
+    },
+    "eras": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "name", "start", "end", "context_summary"],
+        "properties": {
+          "key": { "type": "string" },
+          "name": { "type": "string" },
+          "start": { "type": "string" },
+          "end": { "type": "string" },
+          "context_summary": { "type": "string" }
+        }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "date_start", "era", "layers", "description"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "date_start": { "type": "string" },
+          "date_end": { "type": "string" },
+          "era": { "type": "string" },
+          "layers": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "description": { "type": "string" },
+          "details": { "type": "string" },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "people": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "role"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "role": { "type": "string" },
+                "description": { "type": "string" }
+              }
+            }
+          },
+          "places": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "type"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "type": { "type": "string" },
+                "coordinates": {
+                  "type": "object",
+                  "properties": {
+                    "lat": { "type": "number" },
+                    "lng": { "type": "number" }
+                  }
+                },
+                "description": { "type": "string" }
+              }
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["title", "type"],
+              "properties": {
+                "title": { "type": "string" },
+                "url": { "type": "string" },
+                "type": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "role"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "birth_year": { "type": "string" },
+          "death_year": { "type": "string" },
+          "description": { "type": "string" },
+          "role": { "type": "string" },
+          "related_entry_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "places": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "type", "description"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "coordinates": {
+            "type": "object",
+            "properties": {
+              "lat": { "type": "number" },
+              "lng": { "type": "number" }
+            }
+          },
+          "description": { "type": "string" },
+          "related_entry_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "environment_features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "type", "description", "time_relevance"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "description": { "type": "string" },
+          "time_relevance": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

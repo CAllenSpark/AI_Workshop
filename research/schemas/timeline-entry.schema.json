@@ -9,7 +9,7 @@
     "id": {
       "type": "string",
       "description": "Unique identifier (format: era-prefix + sequential number, e.g., 'pre-001')",
-      "pattern": "^[a-z]+-[0-9]{3}$"
+      "pattern": "^[a-z][a-z0-9]*-[0-9]{3}$"
     },
     "title": {
       "type": "string",

@@ -12,16 +12,16 @@
 
 ```
 M0 Foundation    [####################] 100%
-M1 Research      [################....]  80%  << CURRENT
-M2 Data Model    [....................]   0%
-M3 Core UI       [....................]   0%
+M1 Research      [####################] 100%
+M2 Data Model    [####################] 100%  << COMPLETE
+M3 Core UI       [....................]   0%  << NEXT
 M4 Search/Filter [....................]   0%
 M5 Polish/Export [....................]   0%
 M6 Validation    [....................]   0%
 ```
 
-**Current Milestone:** M1 — Research
-**Overall:** 1 of 7 milestones complete; M1 nearing completion
+**Current Milestone:** M2 complete; M3 — Core UI next
+**Overall:** 3 of 7 milestones complete
 
 ---
 
@@ -30,8 +30,8 @@ M6 Validation    [....................]   0%
 | Milestone | Goal | Status | Quality Gate |
 |-----------|------|--------|-------------|
 | **M0 Foundation** | Project scaffolding, team setup, initial research | Complete | All 23 files created. JSON validates. Team configured. |
-| **M1 Research** | Complete Vashon Island knowledge base (80-120 entries) | In Progress | 93 entries (target met). 100% source citations. 5+ entries per era. Supporting files being expanded. |
-| **M2 Data Model** | Finalize schemas, build import pipeline | Not Started | Pending: Schema validation, export format spec |
+| **M1 Research** | Complete Vashon Island knowledge base (80-120 entries) | Complete | 93 entries. 85 people. 67 places. 137 sources. 100% citations. All eras 5+. |
+| **M2 Data Model** | Finalize schemas, build import pipeline | Complete | 4 schemas. Transform pipeline. Validation script (0 errors). Search index (264 records). Narrator export (350KB). |
 | **M3 Core UI** | Timeline component with scrubbing and data display | Not Started | Pending: 60fps scrubbing, unit tests, E2E smoke |
 | **M4 Search & Filter** | Full-text search, layer toggles, date range filter | Not Started | Pending: <100ms search, filter combinations |
 | **M5 Polish & Export** | AI narrator export, responsive, accessibility | Not Started | Pending: WCAG AA, export validation |
@@ -43,12 +43,12 @@ M6 Validation    [....................]   0%
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | Awaiting M1 coverage review | None |
-| Engineer | Idle | Awaiting M2 start | None |
-| Researcher | Active | Expanding people, places, sources, environment files | None |
-| Designer | Idle | Awaiting M1 completion | None |
-| Tester | Pending | Will validate cross-references after research expansion | None |
-| UI/UX | Idle | Awaiting M1 completion | None |
+| Product Manager | Idle | M2 complete; ready for M3 planning | None |
+| Engineer | Active | M2 complete; ready for M3 implementation | None |
+| Researcher | Idle | Data finalized; available for M3 content review | None |
+| Designer | Ready | M3: Will provide visual specs for timeline components | None |
+| Tester | Ready | M2 validation passed; will define M3 test cases | None |
+| UI/UX | Ready | M3: Will review timeline interaction design | None |
 
 ---
 
@@ -109,11 +109,21 @@ Environment        26   ██████                28%
 | [Coordination Board](docs/coordination.md) | All | Active | — | — |
 | [Research README](research/README.md) | Researcher | Done | — | — |
 | [Timeline Schema](research/schemas/timeline-entry.schema.json) | Eng | Done | — | 1.0 |
-| [Timeline Data](research/vashon-island/timeline.json) | Researcher | M1 Expanded | ~93 entries | 1.0 |
-| [People Directory](research/vashon-island/people.md) | Researcher | Expanding | — | — |
-| [Places Directory](research/vashon-island/places.md) | Researcher | Expanding | — | — |
-| [Environment](research/vashon-island/environment.md) | Researcher | M1 Expanded | — | — |
-| [Bibliography](research/vashon-island/sources.md) | Researcher | Expanding | — | — |
+| [Timeline Data](research/vashon-island/timeline.json) | Researcher | M1 Complete | 93 entries | 1.0 |
+| [People Directory](research/vashon-island/people.md) | Researcher | M1 Complete | 85 people | 1.0 |
+| [Places Directory](research/vashon-island/places.md) | Researcher | M1 Complete | 67 places | 1.0 |
+| [Environment](research/vashon-island/environment.md) | Researcher | M1 Complete | — | 1.0 |
+| [Bibliography](research/vashon-island/sources.md) | Researcher | M1 Complete | 137 sources | 1.0 |
+| [Person Schema](research/schemas/person.schema.json) | Eng | M2 Complete | — | 1.0 |
+| [Place Schema](research/schemas/place.schema.json) | Eng | M2 Complete | — | 1.0 |
+| [Environment Schema](research/schemas/environment-feature.schema.json) | Eng | M2 Complete | — | 1.0 |
+| [Export Schema](research/schemas/narrator-export.schema.json) | Eng | M2 Complete | — | 1.0 |
+| [People JSON](research/vashon-island/people.json) | Eng | M2 Complete | 92 records | 1.0 |
+| [Places JSON](research/vashon-island/places.json) | Eng | M2 Complete | 67 records | 1.0 |
+| [Environment JSON](research/vashon-island/environment.json) | Eng | M2 Complete | 12 features | 1.0 |
+| [Search Index](research/vashon-island/search-index.json) | Eng | M2 Complete | 264 records | 1.0 |
+| [Narrator Export](research/vashon-island/narrator-export.json) | Eng | M2 Complete | 93 entries | 1.0 |
+| [ID Mapping](research/vashon-island/id-mapping.json) | Eng | M2 Complete | 159 mappings | 1.0 |
 
 ---
 
@@ -150,12 +160,11 @@ Environment        26   ██████                28%
 
 ## Next Steps
 
-1. **Researcher** — Complete people.md, places.md, sources.md expansion; run cross-reference validation
-2. **Tester** — Validate cross-references and data quality after M1 files complete
-3. **PM** — Review M1 coverage and approve milestone completion
-4. **Engineer** — Begin M2: evaluate timeline library, finalize data schemas, build validation pipeline
-5. **Designer** — Refine component specs based on research data richness (93 entries)
-6. **UI/UX** — Detail user flows for timeline interaction with real data volume
+1. **Engineer** — Begin M3: React + TypeScript scaffold with Vite; evaluate D3.js vs Vis-timeline
+2. **Designer** — Deliver component specs for TimelineTrack, EntryCard, DetailPanel
+3. **UI/UX** — Detail user flows for timeline scrubbing and zoom levels
+4. **Tester** — Define M3 acceptance criteria: 60fps scrubbing, unit tests, E2E smoke
+5. **PM** — Review M2 deliverables and approve M3 start
 
 ---
 

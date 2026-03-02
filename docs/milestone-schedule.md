@@ -45,7 +45,7 @@ This schedule defines the phased delivery plan from project scaffolding through 
 
 **Quality Gate:** 100% of entries have at least one source citation. No orphaned cross-references. All eras have minimum 5 entries.
 
-**Status:** Not Started
+**Status:** Complete (2026-03-02) — 93 entries, 85 people, 67 places, 137 sources, all quality gates passed
 
 ---
 
@@ -64,7 +64,7 @@ This schedule defines the phased delivery plan from project scaffolding through 
 
 **Quality Gate:** Schema validation passes on all data. Import pipeline runs without errors. Export format matches specification.
 
-**Status:** Not Started
+**Status:** Complete (2026-03-02) — 4 schemas, transform pipeline, validation script, search index (264 records), narrator export (350KB)
 
 ---
 

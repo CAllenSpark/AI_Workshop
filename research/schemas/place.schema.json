@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "place.schema.json",
+  "title": "Place",
+  "description": "A location or landmark referenced in the Writer's Research Companion knowledge base",
+  "type": "object",
+  "required": ["id", "name", "type", "description"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (format: place-NNN)",
+      "pattern": "^place-[0-9]{3}$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name of the place",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "description": "Place classification",
+      "enum": [
+        "island",
+        "body-of-water",
+        "waterway",
+        "harbor",
+        "peninsula",
+        "beach",
+        "geographic-point",
+        "geographic-area",
+        "wetland",
+        "settlement",
+        "heritage-site",
+        "youth-camp",
+        "public-park",
+        "community-space",
+        "business",
+        "historic-site",
+        "gathering-point",
+        "ferry-terminal",
+        "road",
+        "internment-site",
+        "military-site",
+        "school",
+        "mill-town",
+        "fort",
+        "territory",
+        "region"
+      ]
+    },
+    "coordinates": {
+      "type": "object",
+      "description": "Geographic coordinates",
+      "properties": {
+        "lat": { "type": "number" },
+        "lng": { "type": "number" }
+      },
+      "required": ["lat", "lng"]
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the place and its significance"
+    },
+    "related_entries": {
+      "type": "array",
+      "description": "Array of TimelineEntry IDs associated with this place",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*-[0-9]{3}$"
+      }
+    }
+  },
+  "additionalProperties": false
+}

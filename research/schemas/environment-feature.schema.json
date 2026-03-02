@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "environment-feature.schema.json",
+  "title": "EnvironmentFeature",
+  "description": "A geological, ecological, or climatic feature in the Writer's Research Companion knowledge base",
+  "type": "object",
+  "required": ["id", "name", "type", "description", "time_relevance"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (format: env-NNN)",
+      "pattern": "^env-[0-9]{3}$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Feature name (e.g., 'Glacial till deposits', 'Old-growth Douglas fir forest')",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "description": "Feature classification",
+      "enum": ["geology", "ecology", "climate", "hydrology", "soil", "conservation"]
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the feature and its characteristics"
+    },
+    "time_relevance": {
+      "type": "string",
+      "description": "When this feature is/was relevant (e.g., '~15000 BCE to present', '1890-1950')"
+    },
+    "related_entries": {
+      "type": "array",
+      "description": "Array of TimelineEntry IDs related to this feature",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*-[0-9]{3}$"
+      }
+    }
+  },
+  "additionalProperties": false
+}

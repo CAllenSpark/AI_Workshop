@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "person.schema.json",
+  "title": "Person",
+  "description": "A historical figure referenced in the Writer's Research Companion knowledge base",
+  "type": "object",
+  "required": ["id", "name", "description", "role"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (format: person-NNN)",
+      "pattern": "^person-[0-9]{3}$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full display name",
+      "minLength": 1
+    },
+    "birth_year": {
+      "type": "string",
+      "description": "Birth year in ISO 8601 or approximate format (e.g., '1845', '~1800')"
+    },
+    "death_year": {
+      "type": "string",
+      "description": "Death year in ISO 8601 or approximate format"
+    },
+    "description": {
+      "type": "string",
+      "description": "Biographical summary (1-3 sentences)"
+    },
+    "role": {
+      "type": "string",
+      "description": "Primary role or significance (e.g., 'homesteader', 'chief', 'naturalist')"
+    },
+    "period": {
+      "type": "string",
+      "description": "Time period of primary activity (e.g., '1880s-1920s', 'pre-contact')"
+    },
+    "related_entries": {
+      "type": "array",
+      "description": "Array of TimelineEntry IDs this person appears in",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*-[0-9]{3}$"
+      }
+    }
+  },
+  "additionalProperties": false
+}
