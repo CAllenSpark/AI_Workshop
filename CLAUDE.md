@@ -21,7 +21,19 @@ This project uses 6 persistent agent personas. Invoke them by name to engage the
 | Tester | `/tester` | Test plan, QA strategy, acceptance criteria | `docs/test-plan.md` |
 | UI/UX | `/ui-ux` | Interaction design, user flows, accessibility | `docs/design-bible.md` (interaction sections) |
 
-All agents share access to `docs/coordination.md` (the team status board).
+All agents share access to `docs/coordination.md` (the team status board) and `docs/dashboard.md` (the project dashboard).
+
+## Dashboard
+
+The project dashboard at `docs/dashboard.md` provides a consolidated view of:
+- Overall milestone progress with visual progress bars
+- Team status across all 6 agents
+- Research coverage metrics (entries per era, layer distribution)
+- Document status and word counts
+- Key decisions, open questions, and risk register
+- Next steps for each agent
+
+**Update the dashboard** whenever milestone status changes, documents are revised, or research data is added. Any agent can update their section.
 
 ## Coordination Protocol
 

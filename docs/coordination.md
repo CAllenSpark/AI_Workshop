@@ -1,15 +1,17 @@
 # Team Coordination Board
 
-## Current Sprint: M0 — Foundation
+## Current Sprint: M0 — Foundation (COMPLETE)
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | PRD initial draft | None |
-| Engineer | Active | FRD initial draft, JSON schema design | None |
-| Researcher | Active | Vashon Island skeleton research (10-20 entries) | None |
-| Designer | Active | Design Bible initial draft | None |
-| Tester | Active | Test Plan initial draft | None |
-| UI/UX | Active | Wireframes and user flow definitions | None |
+| Product Manager | Idle | M0 complete — PRD and milestone schedule delivered | None |
+| Engineer | Idle | M0 complete — FRD, JSON schema, and architecture delivered | None |
+| Researcher | Idle | M0 complete — 18 skeleton entries across all 10 eras | None |
+| Designer | Idle | M0 complete — Design Bible with visual system and wireframes | None |
+| Tester | Idle | M0 complete — Test plan with 30+ test cases and quality gates | None |
+| UI/UX | Idle | M0 complete — User flows and interaction specs in Design Bible | None |
+
+**Next Sprint:** M1 — Research (expand Vashon Island knowledge base to 80-120 entries)
 
 ## Decisions Log
 
@@ -31,3 +33,12 @@
 - [x] Project directory structure created (2026-03-02)
 - [x] Team agent personas defined and configured (2026-03-02)
 - [x] CLAUDE.md project configuration established (2026-03-02)
+- [x] PRD initial draft complete — 10 user stories, 3 personas (2026-03-02)
+- [x] FRD initial draft complete — full data model, component specs (2026-03-02)
+- [x] Design Bible initial draft complete — color palette, typography, wireframes (2026-03-02)
+- [x] Test Plan initial draft complete — 30+ test cases, quality gates (2026-03-02)
+- [x] Milestone Schedule defined — M0 through M6 with dependency graph (2026-03-02)
+- [x] Vashon Island skeleton research — 18 entries across all 10 eras (2026-03-02)
+- [x] Timeline entry JSON schema created and validated (2026-03-02)
+- [x] Project dashboard created (2026-03-02)
+- [x] **M0 Foundation milestone complete** (2026-03-02)
