@@ -1,0 +1,82 @@
+.entry-card {
+  background: white;
+  border: 1px solid var(--stone);
+  border-left: 4px solid var(--warm-amber);
+  border-radius: 8px;
+  padding: var(--sp-md) var(--sp-base);
+  cursor: pointer;
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.entry-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.entry-card.selected {
+  box-shadow: 0 0 0 2px var(--slate-blue);
+  background: #FAFAF7;
+}
+
+.entry-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--sp-xs);
+}
+
+.entry-date {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  font-feature-settings: 'tnum';
+}
+
+.entry-layers {
+  display: flex;
+  gap: 4px;
+}
+
+.layer-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.entry-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: var(--sp-xs);
+  color: var(--charcoal);
+}
+
+.entry-desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--warm-gray);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: var(--sp-sm);
+}
+
+.entry-meta {
+  display: flex;
+  gap: var(--sp-xs);
+  flex-wrap: wrap;
+}
+
+.meta-badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.meta-badge.people { background: var(--layer-person-bg); color: var(--layer-person); }
+.meta-badge.places { background: var(--layer-place-bg); color: var(--layer-place); }
+.meta-badge.sources { background: var(--soft-gray); color: var(--warm-gray); }

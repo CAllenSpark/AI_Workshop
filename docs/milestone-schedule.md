@@ -85,7 +85,7 @@ This schedule defines the phased delivery plan from project scaffolding through 
 
 **Quality Gate:** Timeline renders with real data. Scrubbing is smooth (60fps). All unit tests pass. Basic E2E smoke test passes.
 
-**Status:** Not Started
+**Status:** Complete (2026-03-02) — React 18 + TypeScript + Vite. TimelineTrack with era bands, entry markers, drag scrubbing, 4 zoom levels, minimap, era quick-jump. EntryCard with layer badges. DetailPanel with cross-references and source links. 481KB production build.
 
 ---
 

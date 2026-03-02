@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400&display=swap');
+
+:root {
+  --forest-green: #2D5F3E;
+  --slate-blue: #4A6D8C;
+  --warm-amber: #C8913A;
+  --parchment: #F5F0E8;
+  --soft-gray: #E8E4DD;
+  --charcoal: #2C2C2C;
+  --warm-gray: #6B6560;
+  --stone: #D1CCC4;
+
+  --layer-event: #C8913A;
+  --layer-event-bg: #FBF3E4;
+  --layer-person: #3A8C8C;
+  --layer-person-bg: #E4F3F3;
+  --layer-place: #2D5F3E;
+  --layer-place-bg: #E4F0E8;
+  --layer-env: #8C6B4A;
+  --layer-env-bg: #F0EBE4;
+
+  --panel-bg: #3A3835;
+  --panel-surface: #4A4744;
+  --panel-text: #F5F0E8;
+  --panel-text-muted: #A8A29E;
+
+  --sp-xs: 4px;
+  --sp-sm: 8px;
+  --sp-md: 12px;
+  --sp-base: 16px;
+  --sp-lg: 24px;
+  --sp-xl: 32px;
+  --sp-2xl: 48px;
+
+  --font-heading: 'Merriweather', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: var(--parchment);
+  line-height: 1.625;
+  min-height: 100vh;
+}
+
+h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; }
+h1 { font-size: 32px; line-height: 1.25; letter-spacing: -0.02em; }
+h2 { font-size: 26px; line-height: 1.31; letter-spacing: -0.01em; }
+h3 { font-size: 20px; line-height: 1.40; }
+h4 { font-size: 16px; line-height: 1.50; font-weight: 600; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--soft-gray); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: var(--stone); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--warm-gray); }
+
+:focus-visible { outline: 2px solid var(--slate-blue); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 0ms !important; animation-duration: 0ms !important; }
+}

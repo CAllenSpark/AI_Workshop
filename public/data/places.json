@@ -1,0 +1,775 @@
+{
+  "places": [
+    {
+      "id": "place-001",
+      "name": "Vashon Island",
+      "type": "island",
+      "description": "Referenced in 86 timeline entries spanning early-20th-century, exploration, growth-industry, indigenous, logging-treaty, modern, pioneer, prehistory, state-ferry, wwii eras.",
+      "related_entries": [
+        "ear-001",
+        "ear-002",
+        "ear-003",
+        "ear-004",
+        "ear-005",
+        "ear-006",
+        "ear-007",
+        "ear-008",
+        "ear-009",
+        "ear-010",
+        "ear-011",
+        "ear-012",
+        "ear-013",
+        "ear-014",
+        "exp-001",
+        "exp-005",
+        "exp-007",
+        "fer-001",
+        "fer-002",
+        "fer-003",
+        "fer-004",
+        "fer-005",
+        "gro-001",
+        "gro-003",
+        "gro-004",
+        "gro-005",
+        "gro-006",
+        "gro-007",
+        "gro-008",
+        "gro-009",
+        "gro-010",
+        "gro-011",
+        "gro-012",
+        "ind-001",
+        "ind-002",
+        "ind-003",
+        "ind-004",
+        "ind-005",
+        "ind-006",
+        "ind-007",
+        "ind-008",
+        "log-001",
+        "log-002",
+        "log-003",
+        "log-004",
+        "log-005",
+        "log-006",
+        "mod-001",
+        "mod-002",
+        "mod-003",
+        "mod-004",
+        "mod-005",
+        "mod-006",
+        "mod-007",
+        "mod-009",
+        "mod-010",
+        "mod-011",
+        "mod-012",
+        "pio-001",
+        "pio-002",
+        "pio-004",
+        "pio-005",
+        "pio-006",
+        "pio-007",
+        "pio-008",
+        "pio-009",
+        "pio-010",
+        "pio-011",
+        "pio-012",
+        "pio-013",
+        "pre-001",
+        "pre-002",
+        "pre-003",
+        "pre-004",
+        "pre-005",
+        "pre-006",
+        "pre-007",
+        "pre-008",
+        "pre-009",
+        "ww2-001",
+        "ww2-002",
+        "ww2-003",
+        "ww2-004",
+        "ww2-005",
+        "ww2-006",
+        "ww2-007"
+      ]
+    },
+    {
+      "id": "place-002",
+      "name": "Maury Island",
+      "type": "island",
+      "description": "Referenced in 14 timeline entries spanning early-20th-century, exploration, growth-industry, indigenous, modern, pioneer, prehistory eras.",
+      "related_entries": [
+        "ear-002",
+        "ear-006",
+        "ear-009",
+        "exp-002",
+        "exp-007",
+        "gro-002",
+        "gro-003",
+        "ind-001",
+        "ind-002",
+        "mod-006",
+        "mod-008",
+        "pio-003",
+        "pre-001",
+        "pre-008"
+      ]
+    },
+    {
+      "id": "place-003",
+      "name": "Puget Sound",
+      "type": "body-of-water",
+      "description": "Referenced in 19 timeline entries spanning exploration, indigenous, logging-treaty, modern, prehistory, wwii eras.",
+      "related_entries": [
+        "exp-001",
+        "exp-002",
+        "exp-003",
+        "exp-004",
+        "exp-005",
+        "exp-006",
+        "exp-007",
+        "ind-004",
+        "ind-005",
+        "ind-007",
+        "log-005",
+        "mod-008",
+        "pre-001",
+        "pre-003",
+        "pre-004",
+        "pre-007",
+        "pre-008",
+        "pre-009",
+        "ww2-004"
+      ]
+    },
+    {
+      "id": "place-004",
+      "name": "Strait of Juan de Fuca",
+      "type": "waterway",
+      "description": "Referenced in 2 timeline entries spanning exploration, prehistory eras.",
+      "related_entries": [
+        "exp-003",
+        "pre-003"
+      ]
+    },
+    {
+      "id": "place-005",
+      "name": "Colvos Passage",
+      "type": "waterway",
+      "description": "Referenced in 3 timeline entries spanning early-20th-century, pioneer, state-ferry eras.",
+      "related_entries": [
+        "ear-010",
+        "fer-003",
+        "pio-009"
+      ]
+    },
+    {
+      "id": "place-006",
+      "name": "Admiralty Inlet",
+      "type": "body-of-water",
+      "description": "Referenced in 2 timeline entries spanning exploration eras.",
+      "related_entries": [
+        "exp-003",
+        "exp-004"
+      ]
+    },
+    {
+      "id": "place-007",
+      "name": "Quartermaster Harbor",
+      "type": "harbor",
+      "description": "Referenced in 12 timeline entries spanning exploration, growth-industry, indigenous, pioneer, prehistory eras.",
+      "related_entries": [
+        "exp-007",
+        "gro-003",
+        "gro-007",
+        "gro-010",
+        "gro-012",
+        "ind-002",
+        "ind-003",
+        "ind-005",
+        "pio-004",
+        "pio-010",
+        "pio-012",
+        "pre-008"
+      ]
+    },
+    {
+      "id": "place-008",
+      "name": "Tramp Harbor",
+      "type": "harbor",
+      "description": "Referenced in 2 timeline entries spanning growth-industry, pioneer eras.",
+      "related_entries": [
+        "gro-004",
+        "pio-008"
+      ]
+    },
+    {
+      "id": "place-009",
+      "name": "Elliott Bay",
+      "type": "body-of-water",
+      "description": "Referenced in the context of: Chinese Fishing Community Established at Manzanita (~1875)",
+      "related_entries": [
+        "pio-003"
+      ]
+    },
+    {
+      "id": "place-010",
+      "name": "Commencement Bay",
+      "type": "body-of-water",
+      "description": "Referenced in the context of: Peter Puget Surveys Southern Sound Past Vashon Island (1792-05-20)",
+      "related_entries": [
+        "exp-005"
+      ]
+    },
+    {
+      "id": "place-011",
+      "name": "Nisqually River",
+      "type": "waterway",
+      "description": "Referenced in the context of: Hudson's Bay Company Establishes Fort Nisqually (1833)",
+      "related_entries": [
+        "exp-006"
+      ]
+    },
+    {
+      "id": "place-012",
+      "name": "Kitsap Peninsula",
+      "type": "peninsula",
+      "description": "Referenced in 2 timeline entries spanning indigenous, state-ferry eras.",
+      "related_entries": [
+        "fer-003",
+        "ind-006"
+      ]
+    },
+    {
+      "id": "place-013",
+      "name": "Blake Island",
+      "type": "island",
+      "description": "Referenced in the context of: Camp Sealth Founded by Camp Fire Girls (1920)",
+      "related_entries": [
+        "ear-010"
+      ]
+    },
+    {
+      "id": "place-014",
+      "name": "Fox Island",
+      "type": "island",
+      "description": "Referenced in 3 timeline entries spanning exploration, logging-treaty eras.",
+      "related_entries": [
+        "exp-005",
+        "log-002",
+        "log-005"
+      ]
+    },
+    {
+      "id": "place-015",
+      "name": "Judd Creek",
+      "type": "waterway",
+      "description": "Referenced in 2 timeline entries spanning modern, prehistory eras.",
+      "related_entries": [
+        "mod-006",
+        "pre-006"
+      ]
+    },
+    {
+      "id": "place-016",
+      "name": "Shinglemill Creek",
+      "type": "waterway",
+      "description": "Referenced in 2 timeline entries spanning modern, prehistory eras.",
+      "related_entries": [
+        "mod-006",
+        "pre-006"
+      ]
+    },
+    {
+      "id": "place-017",
+      "name": "Whispering Firs Bog",
+      "type": "wetland",
+      "description": "Referenced in the context of: Vashon-Maury Island Land Trust Founded (1989)",
+      "related_entries": [
+        "mod-006"
+      ]
+    },
+    {
+      "id": "place-018",
+      "name": "Gold Beach",
+      "type": "beach",
+      "description": "Referenced in the context of: Glacier Northwest Gravel Mine Controversy on Maury Island (1998)",
+      "related_entries": [
+        "mod-008"
+      ]
+    },
+    {
+      "id": "place-019",
+      "name": "Dilworth Point",
+      "type": "geographic-point",
+      "description": "Referenced in 2 timeline entries spanning growth-industry, pioneer eras.",
+      "related_entries": [
+        "gro-004",
+        "pio-008"
+      ]
+    },
+    {
+      "id": "place-020",
+      "name": "Burton Acres",
+      "type": "geographic-area",
+      "description": "Referenced in the context of: Burton Acres Shell Midden Accumulation (~500 BCE)",
+      "related_entries": [
+        "ind-003"
+      ]
+    },
+    {
+      "id": "place-021",
+      "name": "Burton Peninsula",
+      "type": "geographic-area",
+      "description": "Referenced in the context of: Sawmills and Steamer Routes Serve the Island Economy (~1890)",
+      "related_entries": [
+        "gro-012"
+      ]
+    },
+    {
+      "id": "place-022",
+      "name": "Vashon",
+      "type": "settlement",
+      "description": "Referenced in the context of: Island Population Triples: 944 to 2,810 (1900)",
+      "related_entries": [
+        "ear-009"
+      ]
+    },
+    {
+      "id": "place-023",
+      "name": "Town of Vashon",
+      "type": "settlement",
+      "description": "Referenced in the context of: Frank Gorsuch Opens First Store in the Town of Vashon (1890)",
+      "related_entries": [
+        "pio-011"
+      ]
+    },
+    {
+      "id": "place-024",
+      "name": "Burton",
+      "type": "settlement",
+      "description": "Referenced in 8 timeline entries spanning early-20th-century, growth-industry, pioneer eras.",
+      "related_entries": [
+        "ear-009",
+        "ear-013",
+        "gro-003",
+        "gro-005",
+        "gro-007",
+        "gro-010",
+        "pio-010",
+        "pio-012"
+      ]
+    },
+    {
+      "id": "place-025",
+      "name": "Dockton",
+      "type": "settlement",
+      "description": "Referenced in 3 timeline entries spanning early-20th-century, growth-industry eras.",
+      "related_entries": [
+        "ear-007",
+        "ear-009",
+        "gro-002"
+      ]
+    },
+    {
+      "id": "place-026",
+      "name": "Center",
+      "type": "settlement",
+      "description": "Referenced in 3 timeline entries spanning early-20th-century, growth-industry, pioneer eras.",
+      "related_entries": [
+        "ear-011",
+        "gro-006",
+        "pio-013"
+      ]
+    },
+    {
+      "id": "place-027",
+      "name": "Ellisport",
+      "type": "settlement",
+      "description": "Referenced in 4 timeline entries spanning early-20th-century, growth-industry, pioneer eras.",
+      "related_entries": [
+        "ear-007",
+        "ear-013",
+        "gro-004",
+        "pio-005"
+      ]
+    },
+    {
+      "id": "place-028",
+      "name": "Vashon Heights",
+      "type": "settlement",
+      "description": "Referenced in the context of: First Paved Road and Automobile Era Transform the Island (1907)",
+      "related_entries": [
+        "ear-011"
+      ]
+    },
+    {
+      "id": "place-029",
+      "name": "Manzanita",
+      "type": "settlement",
+      "description": "Referenced in 2 timeline entries spanning growth-industry, pioneer eras.",
+      "related_entries": [
+        "gro-006",
+        "pio-003"
+      ]
+    },
+    {
+      "id": "place-030",
+      "name": "Magnolia Beach",
+      "type": "beach",
+      "description": "Referenced in the context of: Spring Beach Resort and Summer Tourism Flourish (1905)",
+      "related_entries": [
+        "ear-008"
+      ]
+    },
+    {
+      "id": "place-031",
+      "name": "Vashon Landing",
+      "type": "settlement",
+      "description": "Referenced in 3 timeline entries spanning growth-industry, pioneer eras.",
+      "related_entries": [
+        "gro-003",
+        "pio-005",
+        "pio-009"
+      ]
+    },
+    {
+      "id": "place-032",
+      "name": "Spring Beach",
+      "type": "beach",
+      "description": "Referenced in the context of: Spring Beach Resort and Summer Tourism Flourish (1905)",
+      "related_entries": [
+        "ear-008"
+      ]
+    },
+    {
+      "id": "place-033",
+      "name": "Chautauqua Beach",
+      "type": "beach",
+      "description": "Referenced in the context of: First Chautauqua Assembly on Puget Sound Held on Vashon (1885-08-03)",
+      "related_entries": [
+        "pio-008"
+      ]
+    },
+    {
+      "id": "place-034",
+      "name": "Mileta",
+      "type": "settlement",
+      "description": "Referenced in the context of: Burton Emerges as the Island's Social and Commercial Center (1892)",
+      "related_entries": [
+        "gro-010"
+      ]
+    },
+    {
+      "id": "place-035",
+      "name": "Portage",
+      "type": "settlement",
+      "description": "Referenced in 3 timeline entries spanning early-20th-century eras.",
+      "related_entries": [
+        "ear-002",
+        "ear-003",
+        "ear-011"
+      ]
+    },
+    {
+      "id": "place-036",
+      "name": "Paradise Valley",
+      "type": "settlement",
+      "description": "Referenced in 2 timeline entries spanning growth-industry, state-ferry eras.",
+      "related_entries": [
+        "fer-005",
+        "gro-012"
+      ]
+    },
+    {
+      "id": "place-037",
+      "name": "Paradise Ridge",
+      "type": "settlement",
+      "description": "Referenced in the context of: Nike Missile Base S-61 Established on Vashon Island (1953)",
+      "related_entries": [
+        "fer-002"
+      ]
+    },
+    {
+      "id": "place-038",
+      "name": "Sunrise Ridge",
+      "type": "settlement",
+      "description": "Referenced in the context of: Nike Missile Base S-61 Established on Vashon Island (1953)",
+      "related_entries": [
+        "fer-002"
+      ]
+    },
+    {
+      "id": "place-039",
+      "name": "Oakwood Terrace",
+      "type": "settlement",
+      "description": "Referenced in the context of: Nike Missile Base S-61 Established on Vashon Island (1953)",
+      "related_entries": [
+        "fer-002"
+      ]
+    },
+    {
+      "id": "place-040",
+      "name": "Des Moines",
+      "type": "settlement",
+      "description": "Referenced in the context of: First Auto Ferry to Vashon Island (1916)",
+      "related_entries": [
+        "ear-003"
+      ]
+    },
+    {
+      "id": "place-041",
+      "name": "Seattle",
+      "type": "settlement",
+      "description": "Referenced in 2 timeline entries spanning logging-treaty, pioneer eras.",
+      "related_entries": [
+        "log-005",
+        "pio-009"
+      ]
+    },
+    {
+      "id": "place-042",
+      "name": "Tacoma",
+      "type": "settlement",
+      "description": "Referenced in 3 timeline entries spanning pioneer eras.",
+      "related_entries": [
+        "pio-003",
+        "pio-009",
+        "pio-010"
+      ]
+    },
+    {
+      "id": "place-043",
+      "name": "Southworth",
+      "type": "settlement",
+      "description": "Referenced in the context of: Washington State Ferries Begins Service (1951-06-01)",
+      "related_entries": [
+        "fer-001"
+      ]
+    },
+    {
+      "id": "place-044",
+      "name": "Tahlequah",
+      "type": "settlement",
+      "description": "Referenced in the context of: Puget Mill Company Logs 10 Square Miles of the Island (1910)",
+      "related_entries": [
+        "ear-006"
+      ]
+    },
+    {
+      "id": "place-045",
+      "name": "Mukai Farm",
+      "type": "heritage-site",
+      "description": "Referenced in 4 timeline entries spanning early-20th-century, wwii eras.",
+      "related_entries": [
+        "ear-001",
+        "ear-012",
+        "ww2-003",
+        "ww2-006"
+      ]
+    },
+    {
+      "id": "place-046",
+      "name": "Mukai Farm and Garden",
+      "type": "heritage-site",
+      "description": "Referenced in the context of: Mukai Farm Listed on National Register of Historic Places (1994)",
+      "related_entries": [
+        "mod-007"
+      ]
+    },
+    {
+      "id": "place-047",
+      "name": "Camp Sealth",
+      "type": "youth-camp",
+      "description": "Referenced in the context of: Camp Sealth Founded by Camp Fire Girls (1920)",
+      "related_entries": [
+        "ear-010"
+      ]
+    },
+    {
+      "id": "place-048",
+      "name": "Ober Park",
+      "type": "public-park",
+      "description": "Referenced in 2 timeline entries spanning state-ferry, wwii eras.",
+      "related_entries": [
+        "fer-004",
+        "ww2-002"
+      ]
+    },
+    {
+      "id": "place-049",
+      "name": "Village Green",
+      "type": "community-space",
+      "description": "Referenced in the context of: Vashon Island Farmers Market Established (~1985)",
+      "related_entries": [
+        "mod-005"
+      ]
+    },
+    {
+      "id": "place-050",
+      "name": "Vashon Island Coffee Roasterie",
+      "type": "business",
+      "description": "Referenced in the context of: Stewart Brothers Coffee Opens Roastery on Vashon Island (1982)",
+      "related_entries": [
+        "mod-004"
+      ]
+    },
+    {
+      "id": "place-051",
+      "name": "Old Man House",
+      "type": "historic-site",
+      "description": "Referenced in the context of: Suquamish Seasonal Use of Vashon Island (~1000)",
+      "related_entries": [
+        "ind-006"
+      ]
+    },
+    {
+      "id": "place-052",
+      "name": "Assembly Point",
+      "type": "gathering-point",
+      "description": "Referenced in 2 timeline entries spanning growth-industry eras.",
+      "related_entries": [
+        "gro-010",
+        "gro-012"
+      ]
+    },
+    {
+      "id": "place-053",
+      "name": "Fauntleroy",
+      "type": "ferry-terminal",
+      "description": "Referenced in the context of: Vashon Bridge Proposal Defeated in State Legislature (1959-03-12)",
+      "related_entries": [
+        "fer-003"
+      ]
+    },
+    {
+      "id": "place-054",
+      "name": "Fauntleroy Terminal",
+      "type": "ferry-terminal",
+      "description": "Referenced in the context of: Washington State Ferries Begins Service (1951-06-01)",
+      "related_entries": [
+        "fer-001"
+      ]
+    },
+    {
+      "id": "place-055",
+      "name": "Point Defiance",
+      "type": "geographic-point",
+      "description": "Referenced in the context of: Spring Beach Resort and Summer Tourism Flourish (1905)",
+      "related_entries": [
+        "ear-008"
+      ]
+    },
+    {
+      "id": "place-056",
+      "name": "Vashon Highway",
+      "type": "road",
+      "description": "Referenced in 2 timeline entries spanning modern eras.",
+      "related_entries": [
+        "mod-003",
+        "mod-009"
+      ]
+    },
+    {
+      "id": "place-057",
+      "name": "Vashon Highway SW",
+      "type": "road",
+      "description": "Referenced in the context of: The Bike in the Tree: Vashon's Accidental Landmark (~1954)",
+      "related_entries": [
+        "mod-011"
+      ]
+    },
+    {
+      "id": "place-058",
+      "name": "Heart Mountain",
+      "type": "internment-site",
+      "description": "Referenced in 2 timeline entries spanning wwii eras.",
+      "related_entries": [
+        "ww2-002",
+        "ww2-005"
+      ]
+    },
+    {
+      "id": "place-059",
+      "name": "Pinedale Assembly Center",
+      "type": "internment-site",
+      "description": "Referenced in the context of: Day of Exile: Vashon Japanese Americans Forcibly Removed (1942-05-16)",
+      "related_entries": [
+        "ww2-002"
+      ]
+    },
+    {
+      "id": "place-060",
+      "name": "Tule Lake",
+      "type": "internment-site",
+      "description": "Referenced in the context of: Day of Exile: Vashon Japanese Americans Forcibly Removed (1942-05-16)",
+      "related_entries": [
+        "ww2-002"
+      ]
+    },
+    {
+      "id": "place-061",
+      "name": "Minidoka",
+      "type": "internment-site",
+      "description": "Referenced in the context of: Day of Exile: Vashon Japanese Americans Forcibly Removed (1942-05-16)",
+      "related_entries": [
+        "ww2-002"
+      ]
+    },
+    {
+      "id": "place-062",
+      "name": "Dead Ox Flat, Oregon",
+      "type": "internment-site",
+      "description": "Referenced in the context of: Mukai Family Self-Exiles to Oregon Before Internment Order (1942-03)",
+      "related_entries": [
+        "ww2-003"
+      ]
+    },
+    {
+      "id": "place-063",
+      "name": "Center School",
+      "type": "school",
+      "description": "Referenced in the context of: Army Units Stationed on Vashon for Puget Sound Defense (1942)",
+      "related_entries": [
+        "ww2-004"
+      ]
+    },
+    {
+      "id": "place-064",
+      "name": "Port Gamble",
+      "type": "mill-town",
+      "description": "Referenced in the context of: Pope and Talbot File First Land Claim on Vashon Island (1864-08-01)",
+      "related_entries": [
+        "log-006"
+      ]
+    },
+    {
+      "id": "place-065",
+      "name": "Fort Nisqually",
+      "type": "fort",
+      "description": "Referenced in the context of: Hudson's Bay Company Establishes Fort Nisqually (1833)",
+      "related_entries": [
+        "exp-006"
+      ]
+    },
+    {
+      "id": "place-066",
+      "name": "Oregon Territory",
+      "type": "territory",
+      "description": "Referenced in the context of: Donation Land Claim Act Opens Vashon Island to Settlement (1850-09-27)",
+      "related_entries": [
+        "log-003"
+      ]
+    },
+    {
+      "id": "place-067",
+      "name": "Nootka Sound",
+      "type": "territory",
+      "description": "Referenced in the context of: Spanish Expedition Misses Puget Sound (1791)",
+      "related_entries": [
+        "exp-004"
+      ]
+    }
+  ]
+}

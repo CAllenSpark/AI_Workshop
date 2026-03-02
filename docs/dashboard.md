@@ -13,15 +13,15 @@
 ```
 M0 Foundation    [####################] 100%
 M1 Research      [####################] 100%
-M2 Data Model    [####################] 100%  << COMPLETE
-M3 Core UI       [....................]   0%  << NEXT
-M4 Search/Filter [....................]   0%
+M2 Data Model    [####################] 100%
+M3 Core UI       [####################] 100%  << COMPLETE
+M4 Search/Filter [....................]   0%  << NEXT
 M5 Polish/Export [....................]   0%
 M6 Validation    [....................]   0%
 ```
 
-**Current Milestone:** M2 complete; M3 — Core UI next
-**Overall:** 3 of 7 milestones complete
+**Current Milestone:** M3 complete; M4 — Search & Filter next
+**Overall:** 4 of 7 milestones complete
 
 ---
 
@@ -32,7 +32,7 @@ M6 Validation    [....................]   0%
 | **M0 Foundation** | Project scaffolding, team setup, initial research | Complete | All 23 files created. JSON validates. Team configured. |
 | **M1 Research** | Complete Vashon Island knowledge base (80-120 entries) | Complete | 93 entries. 85 people. 67 places. 137 sources. 100% citations. All eras 5+. |
 | **M2 Data Model** | Finalize schemas, build import pipeline | Complete | 4 schemas. Transform pipeline. Validation script (0 errors). Search index (264 records). Narrator export (350KB). |
-| **M3 Core UI** | Timeline component with scrubbing and data display | Not Started | Pending: 60fps scrubbing, unit tests, E2E smoke |
+| **M3 Core UI** | Timeline component with scrubbing and data display | Complete | React+TS+Vite scaffold. TimelineTrack with era bands, markers, scrubbing, zoom (4 levels). EntryCard, DetailPanel. 481KB build. |
 | **M4 Search & Filter** | Full-text search, layer toggles, date range filter | Not Started | Pending: <100ms search, filter combinations |
 | **M5 Polish & Export** | AI narrator export, responsive, accessibility | Not Started | Pending: WCAG AA, export validation |
 | **M6 Validation** | End-to-end testing, user testing, refinement | Not Started | Pending: All test categories green |
@@ -43,12 +43,12 @@ M6 Validation    [....................]   0%
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | M2 complete; ready for M3 planning | None |
-| Engineer | Active | M2 complete; ready for M3 implementation | None |
-| Researcher | Idle | Data finalized; available for M3 content review | None |
-| Designer | Ready | M3: Will provide visual specs for timeline components | None |
-| Tester | Ready | M2 validation passed; will define M3 test cases | None |
-| UI/UX | Ready | M3: Will review timeline interaction design | None |
+| Product Manager | Idle | M3 complete; ready for M4 planning | None |
+| Engineer | Active | M3 complete; ready for M4 search/filter | None |
+| Researcher | Idle | Data finalized | None |
+| Designer | Idle | Design Bible applied to M3 components | None |
+| Tester | Ready | Will validate M4 search performance (<100ms) | None |
+| UI/UX | Ready | Will review M4 filter interaction design | None |
 
 ---
 
@@ -160,11 +160,11 @@ Environment        26   ██████                28%
 
 ## Next Steps
 
-1. **Engineer** — Begin M3: React + TypeScript scaffold with Vite; evaluate D3.js vs Vis-timeline
-2. **Designer** — Deliver component specs for TimelineTrack, EntryCard, DetailPanel
-3. **UI/UX** — Detail user flows for timeline scrubbing and zoom levels
-4. **Tester** — Define M3 acceptance criteria: 60fps scrubbing, unit tests, E2E smoke
-5. **PM** — Review M2 deliverables and approve M3 start
+1. **Engineer** — Begin M4: Integrate Fuse.js for full-text search; build filter panel
+2. **Engineer** — Add layer toggles, era filter, date range slider
+3. **UI/UX** — Review filter interaction patterns and combined filter logic
+4. **Tester** — Validate search returns <100ms; test all filter combinations
+5. **PM** — Review M3 deliverables and approve M4 start
 
 ---
 

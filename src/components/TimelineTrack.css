@@ -1,0 +1,220 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-sm);
+  width: 100%;
+}
+
+.timeline-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
+  justify-content: center;
+  padding: var(--sp-sm) 0;
+}
+
+.timeline-controls button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--stone);
+  border-radius: 6px;
+  background: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--charcoal);
+  transition: background var(--transition-fast);
+}
+
+.timeline-controls button:hover:not(:disabled) {
+  background: var(--soft-gray);
+}
+
+.timeline-controls button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.zoom-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--warm-gray);
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Main track */
+.timeline-track {
+  position: relative;
+  height: 180px;
+  background: white;
+  border: 1px solid var(--stone);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.timeline-track.dragging {
+  cursor: grabbing;
+}
+
+/* Era bands */
+.era-bands {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.era-band {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--sp-xs) var(--sp-sm);
+  transition: opacity var(--transition-fast);
+}
+
+.era-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+
+/* Tick marks */
+.tick-marks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  pointer-events: none;
+}
+
+.tick {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tick-line {
+  width: 1px;
+  height: 16px;
+  background: var(--stone);
+}
+
+.tick-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--warm-gray);
+  white-space: nowrap;
+  transform: translateX(-50%);
+  padding-top: 2px;
+}
+
+/* Entry markers */
+.entry-markers {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 36px;
+  pointer-events: none;
+}
+
+.entry-marker {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  pointer-events: all;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  padding: 0;
+}
+
+.entry-marker:hover {
+  transform: translateX(-50%) scale(1.3) !important;
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+}
+
+.entry-marker.selected {
+  box-shadow: 0 0 0 3px rgba(74, 109, 140, 0.4);
+  z-index: 20;
+}
+
+/* Minimap */
+.timeline-minimap {
+  height: 20px;
+  padding: 0 2px;
+}
+
+.minimap-track {
+  position: relative;
+  height: 100%;
+  background: var(--soft-gray);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.minimap-era {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.minimap-viewport {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: rgba(74, 109, 140, 0.3);
+  border: 1px solid var(--slate-blue);
+  border-radius: 2px;
+  min-width: 4px;
+}
+
+/* Era jump buttons */
+.era-jumps {
+  display: flex;
+  gap: var(--sp-xs);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--sp-xs) 0;
+}
+
+.era-jump-btn {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border: 1px solid;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  white-space: nowrap;
+}
+
+.era-jump-btn:hover {
+  background: var(--soft-gray);
+}
