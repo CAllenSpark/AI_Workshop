@@ -1,15 +1,15 @@
 # Team Coordination Board
 
-## Current Sprint: M1 — Research
+## Current Sprint: M5 — Polish & Export
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | Awaiting M1 coverage review | None |
-| Engineer | Idle | Awaiting M2 start | None |
-| Researcher | Active | Sources.md expanded to 137 entries (12 primary, 102 secondary, 23 tertiary) covering all 139 timeline URLs; 41 total timeline entries across 5 eras | None |
-| Designer | Idle | Awaiting M1 completion | None |
-| Tester | Pending | Will validate cross-references after research expansion | None |
-| UI/UX | Idle | Awaiting M1 completion | None |
+| Product Manager | Idle | M4 complete; ready for M5 planning | None |
+| Engineer | Active | M4 complete; ready for M5 polish/export | None |
+| Researcher | Idle | Data finalized | None |
+| Designer | Ready | Will review M5 visual polish | None |
+| Tester | Ready | Will audit M5 accessibility (WCAG AA) | None |
+| UI/UX | Ready | Will review M5 responsive + keyboard nav | None |
 
 ## Decisions Log
 
@@ -47,3 +47,7 @@
 - [x] Logging & Treaty era expanded: 4 new entries (log-003 through log-006) (2026-03-02)
 - [x] Pioneer era expanded: 11 new entries (pio-003 through pio-013) (2026-03-02)
 - [x] Sources.md expanded to 137 entries covering all 139 timeline.json source URLs (2026-03-02)
+- [x] **M1 Research milestone complete** (2026-03-02)
+- [x] **M2 Data Model milestone complete** (2026-03-02)
+- [x] **M3 Core UI milestone complete** (2026-03-02)
+- [x] **M4 Search & Filter milestone complete** (2026-03-02)
