@@ -4,16 +4,94 @@
   "schema_version": "1.0.0",
   "entries": [
     {
+      "id": "pre-003",
+      "title": "Puget Sound Becomes a Saltwater Body",
+      "date_start": "~14000 BCE",
+      "era": "prehistory",
+      "layers": [
+        "environment",
+        "event"
+      ],
+      "description": "As the Vashon glacier retreats north of the Strait of Juan de Fuca, the freshwater proglacial lakes filling the Puget Sound basin reconnect with the Pacific Ocean, transforming the basin into a saltwater inland sea.",
+      "details": "During glacial retreat, a series of proglacial lakes formed in the trough left by the Puget Lobe, including Glacial Lake Russell. By approximately 16,000 BP, the glacier had retreated far enough north that these lakes connected with the Strait of Juan de Fuca, allowing saltwater to re-enter the basin and creating the modern Puget Sound. The resulting fjord system of flooded glacial valleys averages 450 feet in depth, with a maximum depth of 930 feet off Jefferson Point. The deep channels surrounding Vashon Island -- some as deep as the island is high (over 600 feet) -- were carved by subglacial meltwater during the Vashon Stade. This transformation from freshwater lake to marine estuary was the foundational event for the rich marine ecosystem that would later sustain indigenous populations for millennia.",
+      "people": [],
+      "places": [
+        "Puget Sound",
+        "Vashon Island",
+        "Strait of Juan de Fuca"
+      ],
+      "sources": [
+        {
+          "title": "Vashon glacier begins to melt and recede from Puget Sound region -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5087",
+          "type": "secondary"
+        },
+        {
+          "title": "Puget Sound -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Puget_Sound",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "geology",
+        "puget-sound",
+        "glaciation",
+        "marine",
+        "fjord"
+      ]
+    },
+    {
+      "id": "pre-004",
+      "title": "Salmon Colonize Puget Sound Waterways",
+      "date_start": "~13000 BCE",
+      "era": "prehistory",
+      "layers": [
+        "environment"
+      ],
+      "description": "Pacific salmon colonize the newly formed Puget Sound waterways, likely arriving in two pulses -- from the south via the Chehalis River and from the north through the Strait of Juan de Fuca.",
+      "details": "As Puget Sound transitioned from freshwater proglacial lakes to a saltwater estuary, anadromous salmon species began colonizing its rivers and streams approximately 14,900 years ago. Biologists believe colonization occurred in two pulses: an early wave of steelhead and other salmonids arriving from the south via the Chehalis River while the Sound was still freshwater, and a later wave entering from the north after the Strait of Juan de Fuca reopened. Genetic studies show that modern Puget Sound salmon have close relationships to populations on the Olympic Peninsula and Vancouver Island, suggesting the northern route was ultimately more successful. This colonization event established the salmon runs that would become the ecological and cultural cornerstone of the entire region. All five species of Pacific salmon -- Chinook, coho, sockeye, chum, and pink -- eventually established runs in Puget Sound tributaries.",
+      "people": [],
+      "places": [
+        "Puget Sound",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Salmon colonize the Puget lowland about 14,900 years ago -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/20263",
+          "type": "secondary"
+        },
+        {
+          "title": "Importance of Salmon - Puget Sound Region -- Smithsonian National Museum of the American Indian",
+          "url": "https://americanindian.si.edu/nk360/pnw-history-culture-regions/puget-sound",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "ecology",
+        "salmon",
+        "marine-ecosystem",
+        "colonization"
+      ]
+    },
+    {
       "id": "pre-001",
       "title": "Glacial Retreat Exposes Vashon Island",
       "date_start": "~12000 BCE",
       "date_end": "~10000 BCE",
       "era": "prehistory",
-      "layers": ["environment", "event"],
+      "layers": [
+        "environment",
+        "event"
+      ],
       "description": "The Vashon glaciation recedes, exposing the landmass that will become Vashon and Maury Islands in the Central Puget Sound Basin.",
       "details": "The Vashon Stade of the Fraser Glaciation, named after the island itself, was the last major glacial advance in the Puget Sound region. As the ice sheet retreated, it carved the deep waterways of Puget Sound and left behind the glacial till that forms the island's terrain. The island's bluffs, ravines, and clay soils are direct artifacts of this glacial history.",
       "people": [],
-      "places": ["Vashon Island", "Maury Island", "Puget Sound"],
+      "places": [
+        "Vashon Island",
+        "Maury Island",
+        "Puget Sound"
+      ],
       "sources": [
         {
           "title": "Vashon-Maury Island -- Thumbnail History",
@@ -21,18 +99,62 @@
           "type": "secondary"
         }
       ],
-      "tags": ["geology", "glaciation", "formation"]
+      "tags": [
+        "geology",
+        "glaciation",
+        "formation"
+      ]
+    },
+    {
+      "id": "pre-005",
+      "title": "Post-Glacial Ecological Succession on Vashon Island",
+      "date_start": "~12000 BCE",
+      "date_end": "~8000 BCE",
+      "era": "prehistory",
+      "layers": [
+        "environment"
+      ],
+      "description": "Over several thousand years, Vashon Island transitions from barren glacial till to open lodgepole pine woodland and then to closed mixed-conifer forest, establishing the temperate rainforest ecosystem.",
+      "details": "After the ice sheet retreated, the bare glacial landscape of Vashon Island underwent a classic post-glacial ecological succession. Pollen data from regional sites shows that between 16,000 and 15,000 BP, temperatures were about 4 degrees C colder than present and the landscape was largely barren. From about 14,000 to 12,000 BP, lodgepole pine (Pinus contorta) became established in open parkland conditions. Between 12,000 and 10,000 BP, the area developed a wider variety of trees and transitioned to closed forest, with western hemlock (Tsuga heterophylla) and alder joining the mix. By approximately 8,000 BCE, the signature Pacific Northwest species -- Douglas fir, western red cedar, and western hemlock -- had come to dominate, establishing the old-growth temperate rainforest that would blanket the island until 19th-century logging. The entire transition from ice-covered landscape to closed forest took roughly 5,000 to 7,000 years.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Vashon glacier begins to melt and recede from Puget Sound region -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5087",
+          "type": "secondary"
+        },
+        {
+          "title": "Your Woods, Part One -- Vashon-Maury Island Land Trust",
+          "url": "https://www.vashonlandtrust.org/landowner-resources/your-woods-part-one",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "ecology",
+        "forest",
+        "succession",
+        "vegetation",
+        "old-growth"
+      ]
     },
     {
       "id": "pre-002",
       "title": "First Human Activity on Vashon Island",
       "date_start": "~10000 BCE",
       "era": "prehistory",
-      "layers": ["event", "person"],
+      "layers": [
+        "event",
+        "person"
+      ],
       "description": "Evidence of human presence on Vashon Island dates back 10,000 to 12,000 years, among the earliest in the Puget Sound region.",
       "details": "Archaeological evidence suggests that humans were present on Vashon Island shortly after the glacial retreat. These early inhabitants were likely part of broader Paleo-Indian migrations into the Pacific Northwest, taking advantage of the rich marine and terrestrial resources of the newly formed Puget Sound basin.",
       "people": [],
-      "places": ["Vashon Island"],
+      "places": [
+        "Vashon Island"
+      ],
       "sources": [
         {
           "title": "Vashon Heritage Museum — Vashon History",
@@ -40,7 +162,476 @@
           "type": "secondary"
         }
       ],
-      "tags": ["archaeology", "paleo-indian", "migration"]
+      "tags": [
+        "archaeology",
+        "paleo-indian",
+        "migration"
+      ]
+    },
+    {
+      "id": "pre-006",
+      "title": "Vashon Island Bluffs, Ravines, and Creek Systems Form",
+      "date_start": "~10000 BCE",
+      "era": "prehistory",
+      "layers": [
+        "environment",
+        "place"
+      ],
+      "description": "Post-glacial water erosion begins carving the characteristic bluffs, ravines, and creek systems of Vashon Island through the layered glacial deposits of till, outwash sand, and clay.",
+      "details": "The retreating Vashon glacier left behind a distinctive layered stratigraphy on the island: Vashon Till (a dense, unsorted mixture of clay, silt, sand, and gravel) capping the surface, underlain by Esperance Sand (porous advance outwash deposited by meltwater streams ahead of the glacier), and below that, Lawton Clay (fine sediment deposited in proglacial lakes). Over the following millennia, surface water exploited the contrast between these layers -- percolating through permeable till and outwash until hitting impermeable clay, then emerging as springs and seeps along the island's coastal bluffs. These seeps and streams carved hundreds of small ravines and creek valleys through the erodible glacial sediments. Shinglemill Creek and Judd Creek cut entirely through the outwash layer. This interplay of geology and hydrology created the island's characteristic landscape of steep coastal bluffs, forested ravines, and spring-fed creeks that would later provide freshwater to both indigenous and settler communities. About 80 percent of the island's drinking water today still comes from the Vashon Advance Outwash aquifer.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Shinglemill Creek",
+        "Judd Creek"
+      ],
+      "sources": [
+        {
+          "title": "Going Under Ground: Geology of 'The Rock' -- King County",
+          "url": "https://your.kingcounty.gov/dnrp/library/water-and-land/groundwater/liquid-assets-brochure/p4-going-under-ground-geology-of-the-rock.pdf",
+          "type": "secondary"
+        },
+        {
+          "title": "Geologic Map of the Vashon 7.5' Quadrangle -- USGS",
+          "url": "https://pubs.usgs.gov/sim/3328/downloads/sim_3328_pamphlet.pdf",
+          "type": "primary"
+        },
+        {
+          "title": "Meet Your Local Aquifers -- Vashon Nature Center",
+          "url": "https://vashonnaturecenter.org/meet-your-local-aquifers/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "geology",
+        "hydrology",
+        "bluffs",
+        "ravines",
+        "creeks",
+        "glacial-till",
+        "aquifer"
+      ]
+    },
+    {
+      "id": "pre-007",
+      "title": "Holocene Climatic Optimum Warms the Puget Sound Region",
+      "date_start": "~7500 BCE",
+      "date_end": "~2500 BCE",
+      "era": "prehistory",
+      "layers": [
+        "environment"
+      ],
+      "description": "The Hypsithermal warm period brings temperatures approximately 2 degrees C warmer than present and 45% less precipitation to the Puget Sound region, altering vegetation and shoreline patterns around Vashon Island.",
+      "details": "The Holocene Climatic Optimum (also called the Hypsithermal or Altithermal) was a prolonged warm period lasting from roughly 9,500 to 4,500 BP. In the Puget Sound area, temperatures averaged about 2 degrees C warmer than the modern baseline, with approximately 45% less precipitation. The Pacific Northwest initially experienced warm, dry conditions during the Early Holocene (11,700-8,200 years ago), then shifted to cooler and wetter conditions during the Middle Holocene (8,200-4,200 years ago). This warm period would have affected vegetation patterns on Vashon Island, potentially expanding prairie-like openings and oak woodland at the expense of dense conifer forest. The drier conditions also influenced fire regimes and the distribution of plant foods important to early human inhabitants. By the Late Holocene (after 4,200 years ago), the modern cool, wet climate pattern of the Pacific Northwest became established, supporting the dense temperate rainforest for which the region is known.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Holocene climatic optimum -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Holocene_climatic_optimum",
+          "type": "tertiary"
+        },
+        {
+          "title": "20,000 YEARS AGO -- University of Washington",
+          "url": "https://a.atmos.washington.edu/academics/classes/2001Q1/211/Group_projects/group_D_F00/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "climate",
+        "hypsithermal",
+        "holocene",
+        "ecology",
+        "temperature"
+      ]
+    },
+    {
+      "id": "pre-008",
+      "title": "Shellfish Beds Establish Along Vashon Island Shores",
+      "date_start": "~6000 BCE",
+      "era": "prehistory",
+      "layers": [
+        "environment"
+      ],
+      "description": "As post-glacial sea levels stabilize and the marine ecosystem matures, productive shellfish beds of clams, oysters, and mussels become established in the intertidal zones around Vashon and Maury Islands.",
+      "details": "Following the stabilization of Puget Sound's sea level after post-glacial rebound and eustatic sea-level rise reached a rough equilibrium, productive intertidal shellfish beds became established around the shorelines of Vashon and Maury Islands. The gravelly beaches and protected coves -- particularly in Quartermaster Harbor -- created ideal habitat for native species including littleneck clams, butter clams, horse clams, and the native Olympia oyster. These shellfish beds would become a critical food resource for indigenous peoples for thousands of years, as evidenced by the large shell middens later found at Burton Acres and along Quartermaster Harbor. The Salish Sea as a whole became one of the leading shellfish-producing regions in North America. In some areas of Puget Sound, First Peoples later constructed rock-walled terraces to elevate stretches of intertidal clam beaches -- a form of ancient mariculture known as clam gardens.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Maury Island",
+        "Quartermaster Harbor",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Gifts from the sea: shellfish as an ecosystem service -- Encyclopedia of Puget Sound",
+          "url": "https://www.eopugetsound.org/magazine/shellfish",
+          "type": "secondary"
+        },
+        {
+          "title": "The Edible Seascape -- Archaeology Magazine",
+          "url": "https://archive.archaeology.org/1109/features/coast_salish_clam_gardens_salmon.html",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "ecology",
+        "shellfish",
+        "marine-ecosystem",
+        "intertidal",
+        "clam-gardens"
+      ]
+    },
+    {
+      "id": "pre-009",
+      "title": "Marpole Cultural Tradition Influences the Puget Sound Region",
+      "date_start": "~400 BCE",
+      "date_end": "~1000",
+      "era": "prehistory",
+      "layers": [
+        "event"
+      ],
+      "description": "The Marpole cultural tradition, characterized by social stratification, plank longhouses, intensive salmon preservation, and elaborate carving, flourishes across the Salish Sea region and shapes the ancestral Coast Salish way of life.",
+      "details": "The Marpole period (approximately 2,400-1,000 BP) represents a watershed in the cultural development of the peoples who would become the Coast Salish. Named after the c'esna'em (Marpole Midden) site in present-day Vancouver, this cultural tradition was marked by the emergence of clear social classes, permanent winter settlements in cedar-plank longhouses, intensive salmon fishing and preservation, and rich artistic expression including elaborate carvings. Around 400 BCE, a society developed that favored individual acquisition of prestige through peer-elite exchange networks. Archaeological evidence from sites like False Narrows shows that by this period, ascribed (inherited) status was replacing purely achieved status, as evidenced by richly furnished burials of sub-adults. Dentalia shells and copper -- extremely rare and valuable -- appear in high-status graves. By approximately 1000 CE, an elite class had consolidated control over inherited prestige, means of power, and key resources. The Marpole tradition appears to have developed in place rather than arriving from elsewhere, and its cultural patterns form the direct ancestral foundation for the Coast Salish peoples who would inhabit Vashon Island.",
+      "people": [],
+      "places": [
+        "Puget Sound",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "History of the Coast Salish peoples -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/History_of_the_Coast_Salish_peoples",
+          "type": "tertiary"
+        },
+        {
+          "title": "Native Americans of Puget Sound -- A Brief History of the First People and Their Cultures -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/1506",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "coast-salish",
+        "marpole",
+        "culture",
+        "social-stratification",
+        "longhouse"
+      ]
+    },
+    {
+      "id": "ind-002",
+      "title": "Permanent Indigenous Villages on Quartermaster Harbor",
+      "date_start": "~500 BCE",
+      "era": "indigenous",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "description": "Archaeological evidence indicates that Native people established permanent year-round villages on Vashon Island at least 2,500 years ago, concentrated along the protected shores of Quartermaster Harbor.",
+      "details": "Contrary to the long-held misconception that Vashon Island was used only as a seasonal food-harvesting camp, archaeological evidence demonstrates permanent indigenous habitation dating back at least 2,500 years. The sx̱̌ʷəbabš (Swiftwater People), a band of the Puyallup, established their primary villages along the sheltered shoreline of Quartermaster Harbor, where the combination of protected anchorage, productive shellfish beds, salmon runs, and freshwater streams provided reliable year-round subsistence. By approximately 250 years ago, an estimated 650 Native people lived in six permanent village sites on the island. The permanent villages consisted of communal cedar longhouses averaging 100 feet in length and 20-40 feet wide, housing several extended families, each with their own fire pit. Some villages also included pit houses measuring 40-45 feet square and dug 6-8 feet into the ground for protection from storms. This evidence of permanent settlement was corroborated by Lucy Gerand's testimony in the U.S. Court of Claims in 1927, archaeological excavations, and tribal oral history.",
+      "people": [
+        "sx̱̌ʷəbabš (Sxwobabc/Swiftwater People)"
+      ],
+      "places": [
+        "Vashon Island",
+        "Maury Island",
+        "Quartermaster Harbor"
+      ],
+      "sources": [
+        {
+          "title": "Vashon Island's Native People: Navigating Seas of Change -- AASLH",
+          "url": "https://aaslh.org/vashon-islands-native-people-navigating-seas-of-change/",
+          "type": "secondary"
+        },
+        {
+          "title": "Time&Again - Native People on Vashon Island -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Publications/time_and_again/native_people.pdf",
+          "type": "secondary"
+        },
+        {
+          "title": "Destination Vashon - The Native People of Vashon Island -- Bruce Haulman",
+          "url": "https://www.vashonhistory.com/Publications/Commentaries/destination_vashon_native_people.pdf",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "settlement",
+        "villages",
+        "longhouse",
+        "quartermaster-harbor",
+        "permanent-habitation"
+      ]
+    },
+    {
+      "id": "ind-003",
+      "title": "Burton Acres Shell Midden Accumulation",
+      "date_start": "~500 BCE",
+      "date_end": "~1800",
+      "era": "indigenous",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "description": "Indigenous inhabitants deposit a large shell midden at Burton Acres on the shore of Quartermaster Harbor over centuries, leaving a rich archaeological record of diet, tools, and daily life.",
+      "details": "The Burton Acres Shell Midden, located at a public boat launch on the shore of Quartermaster Harbor, accumulated over centuries as generations of Native inhabitants discarded shells, animal bones, stone tools, fire-cracked rocks, charcoal, and other materials. Shell middens like this one served as communal waste sites and are crucial to understanding the diets and lifestyles of the island's indigenous residents. The site was officially recorded in 1994 by Joan Robinson on behalf of the King County Landmarks Commission. When a severe winter storm in 1995 caused erosion that exposed the midden's contents, a collaborative two-week excavation was organized involving the Burke Museum, University of Washington, King County Landmarks and Heritage Commission, the Puyallup Tribe of Indians, Vashon Park District, and McMurray Middle School, with 375 volunteers participating. The findings were published in 'Vashon Island Archaeology: A View from Burton Acres Shell Midden' (2003), edited by Julie K. Stein and Laura S. Phillips. A separate shell midden discovered on Maury Island in 2009 when a section of Manzanita Beach Road washed away may be connected to a Puyallup fort or village described in 1930s tribal claims court testimony.",
+      "people": [
+        "Julie K. Stein",
+        "Laura S. Phillips",
+        "Judy Wright"
+      ],
+      "places": [
+        "Burton Acres",
+        "Quartermaster Harbor",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Vashon Island Archaeology: A View from Burton Acres Shell Midden -- UW Press",
+          "url": "https://uwapress.uw.edu/book/9780295982878/vashon-island-archaeology/",
+          "type": "secondary"
+        },
+        {
+          "title": "A dig on Maury promises a window into the past -- Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/life/a-dig-on-maury-promises-a-window-into-the-past/",
+          "type": "secondary"
+        },
+        {
+          "title": "Shell Middens -- Vashon Adventures",
+          "url": "https://www.vashonadventures.com/talesandtidbits/2020/2/25/gyquwdarwzbpxpj52ot9xens4fi4z0",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "archaeology",
+        "shell-midden",
+        "burton-acres",
+        "excavation",
+        "burke-museum"
+      ]
+    },
+    {
+      "id": "ind-004",
+      "title": "Coast Salish Cedar Culture on Vashon Island",
+      "date_start": "~500 BCE",
+      "date_end": "1855",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "The western red cedar, revered as the 'Tree of Life,' becomes the foundation of material culture on Vashon Island, used for longhouses, canoes, clothing, baskets, mats, and medicine.",
+      "details": "For thousands of years, the indigenous inhabitants of Vashon Island built their material culture around the western red cedar (Thuja plicata), which they called the 'Tree of Life.' The cedar's straight, lightweight, rot-resistant wood was the primary material for constructing communal longhouses -- some reaching hundreds of feet in length -- and for carving dugout canoes used for fishing, trade, and travel across the waterways of Puget Sound. Canoes were among the most prized possessions, as the heavily timbered landscape made water the primary means of transportation between villages. The inner bark of the cedar was stripped and pounded into a pliable material that was woven into clothing, mats, ropes, and baskets using checkerwork techniques. Cedar roots were also used in basket weaving alongside grasses and other plant fibers. Weavers additionally used the wool of mountain goats and the now-extinct Salish woolly dog to create blankets featuring abstract designs and geometric patterns that served as status markers, ceremonial regalia, and valuable trade items. The Coast Salish approach to cedar harvest was rooted in sustainability, ensuring the trees' survival for future generations.",
+      "people": [
+        "sx̱̌ʷəbabš (Sxwobabc/Swiftwater People)"
+      ],
+      "places": [
+        "Vashon Island",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Salish Use of Timber -- University of Washington Tacoma",
+          "url": "https://www.tacoma.uw.edu/advancement/timber/salish-use-timber",
+          "type": "secondary"
+        },
+        {
+          "title": "Coast Salish -- American Museum of Natural History",
+          "url": "https://www.amnh.org/exhibitions/permanent/northwest-coast/coast-salish",
+          "type": "secondary"
+        },
+        {
+          "title": "Northwest Coast Indian - Art, Technology, Culture -- Britannica",
+          "url": "https://www.britannica.com/topic/Northwest-Coast-Indian/Technology-and-the-visual-arts",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "cedar",
+        "canoes",
+        "longhouse",
+        "weaving",
+        "material-culture",
+        "tree-of-life"
+      ]
+    },
+    {
+      "id": "ind-005",
+      "title": "Coast Salish Seasonal Round of Resource Gathering",
+      "date_start": "~500 BCE",
+      "date_end": "1855",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "The sx̱̌ʷəbabš people of Vashon Island follow an annual seasonal round of food gathering, with salmon fishing, shellfish harvesting, berry gathering, root digging, and hunting timed to natural cycles.",
+      "details": "The indigenous inhabitants of Vashon Island organized their subsistence activities around a detailed annual seasonal round, adapted to the natural cycles of the Central Puget Sound. In spring and summer, families moved to temporary camps for harvesting specific resources: camas and other root vegetables were dug, berries (including salal, huckleberry, and salmonberry) were gathered, and shellfish -- clams, oysters, mussels, and crabs -- were harvested from the productive intertidal zones. Summer and fall brought the critical salmon runs, when Chinook, coho, chum, and other species returned to nearby rivers. Although salmon was central, recent archaeological evidence shows that herring, smelt, anchovies, waterfowl, and marine mammals also formed important parts of the diet, countering the 'salmonopia' that long dominated scholarly understanding of Northwest Coast subsistence. In autumn, acorns were collected from the Nisqually Flats and foods were preserved for winter through smoking and drying. Winter was the time for communal life in the longhouses, where social and religious ceremonies took place. The Vashon Heritage Museum's 'Coast Salish Seasonal Round' poster, created for their 2014-15 exhibit and updated in 2023, illustrates this cycle for the native people of Vashon Island and South Puget Sound.",
+      "people": [
+        "sx̱̌ʷəbabš (Sxwobabc/Swiftwater People)"
+      ],
+      "places": [
+        "Vashon Island",
+        "Quartermaster Harbor",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Coast Salish Seasonal Round Poster, revised 2023 -- Vashon Heritage Museum",
+          "url": "https://www.vashonheritagemuseum.org/shop/p/coast-salish-seasonal-round-poster-revised-2023",
+          "type": "secondary"
+        },
+        {
+          "title": "Importance of Salmon - Puget Sound Region -- Smithsonian National Museum of the American Indian",
+          "url": "https://americanindian.si.edu/nk360/pnw-history-culture-regions/puget-sound",
+          "type": "secondary"
+        },
+        {
+          "title": "Ancient harvests: A history of Salish Sea herring -- Encyclopedia of Puget Sound",
+          "url": "https://www.eopugetsound.org/magazine/herring-history",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "seasonal-round",
+        "subsistence",
+        "salmon",
+        "shellfish",
+        "gathering",
+        "food-preservation"
+      ]
+    },
+    {
+      "id": "ind-006",
+      "title": "Suquamish Seasonal Use of Vashon Island",
+      "date_start": "~1000",
+      "date_end": "1855",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "The Suquamish people, based on the Kitsap Peninsula across the Sound, use Vashon Island as a seasonal encampment for fishing, hunting, and gathering, part of their annual cycle between winter villages and summer resource camps.",
+      "details": "While the sx̱̌ʷəbabš maintained permanent year-round villages on Vashon Island, the Suquamish people from the Kitsap Peninsula also utilized the island as part of their seasonal resource-gathering cycle. The Suquamish maintained winter villages at numerous locations including Suquamish, Point Bolin, Poulsbo, Silverdale, Eagle Harbor, and Port Madison. Their most famous winter village was Old Man House (Oleman House), an enormous longhouse estimated at 500-1,000 feet in length that was home to Chief Si'ahl (Seattle) and Chief Kitsap. During warm months, Suquamish families traveled by cedar canoe to temporary camps throughout central Puget Sound, including on Vashon Island, to harvest fish, shellfish, berries, and other seasonal resources. This pattern of shared use of the island by multiple Coast Salish groups reflects the interconnected kinship networks and territorial arrangements characteristic of the broader Puget Sound Salish world. The yearly cycle was divided between food harvesting from temporary warm-weather camps and communal life in substantial winter longhouses for social and religious observances.",
+      "people": [
+        "Suquamish"
+      ],
+      "places": [
+        "Vashon Island",
+        "Kitsap Peninsula",
+        "Old Man House"
+      ],
+      "sources": [
+        {
+          "title": "History & Culture -- The Suquamish Tribe",
+          "url": "https://suquamish.nsn.us/home/about-us/history-culture/",
+          "type": "primary"
+        },
+        {
+          "title": "Delve into the Fascinating History of Vashon Island",
+          "url": "https://vashon-maury.com/vashon-island-history/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "suquamish",
+        "seasonal-camps",
+        "fishing",
+        "inter-tribal",
+        "old-man-house"
+      ]
+    },
+    {
+      "id": "ind-007",
+      "title": "Coast Salish Trade Networks Across Puget Sound",
+      "date_start": "~1000",
+      "date_end": "1833",
+      "era": "indigenous",
+      "layers": [
+        "event"
+      ],
+      "description": "Vashon Island's inhabitants participate in extensive waterway-based trade networks connecting Coast Salish peoples across Puget Sound, the Strait of Juan de Fuca, and overland to the Columbia Plateau.",
+      "details": "The waterways of the Salish Sea served as major trade routes connecting the Coast Salish peoples in an extensive exchange network. The sx̱̌ʷəbabš of Vashon Island, positioned in the center of Puget Sound, were linked by canoe to neighboring groups including the Puyallup and Nisqually to the south, the Suquamish and Duwamish across the Sound, and more distant peoples throughout the Salish Sea watershed. The kinship-based trade system was facilitated by exogamous marriage -- tribal law required marrying outside one's own group, and marriages between high-ranking families were often arranged at trade centers, creating the kinship ties that made commerce possible. Goods exchanged included ocean products (whale oil, shells, dried fish), mountain resources, camas and wapato roots, berries, cedar products, dentalia shells (used as currency), and rare copper. Overland routes through Snoqualmie Pass connected Puget Sound communities to eastern plateau peoples for exchange of dried salmon, root vegetables, and other goods. All tribes from present-day Olympia to Anacortes spoke dialects of the Puget Sound Salish language, Lushootseed, facilitating communication across these networks.",
+      "people": [
+        "sx̱̌ʷəbabš (Sxwobabc/Swiftwater People)",
+        "Puyallup",
+        "Suquamish",
+        "Nisqually",
+        "Duwamish"
+      ],
+      "places": [
+        "Vashon Island",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Outside the Ethnographic Box: Native Trade Networks -- The Quartux Journal",
+          "url": "https://ndnhistoryresearch.com/2016/06/03/outside-the-ethnographic-box-native-trade-networks/",
+          "type": "secondary"
+        },
+        {
+          "title": "Native Americans of Puget Sound -- A Brief History of the First People and Their Cultures -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/1506",
+          "type": "secondary"
+        },
+        {
+          "title": "Coast Salish peoples -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Coast_Salish",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "trade",
+        "kinship",
+        "canoe",
+        "lushootseed",
+        "exchange",
+        "exogamy"
+      ]
+    },
+    {
+      "id": "ind-008",
+      "title": "Guardian Spirit Practices and Winter Ceremonies",
+      "date_start": "~1000",
+      "date_end": "1855",
+      "era": "indigenous",
+      "layers": [
+        "event"
+      ],
+      "description": "Coast Salish spiritual life on Vashon Island centers on the guardian spirit tradition, with vision quests for individual spiritual power and communal winter spirit dance ceremonies held in the longhouses.",
+      "details": "The spiritual life of Vashon Island's indigenous inhabitants was rooted in the Coast Salish guardian spirit tradition. Individuals sought personal spirit power through vision quests involving fasting, bathing in cold water, and spending time alone in sacred places. Spirits -- often taking the form of animals such as ravens, bears, woodpeckers, or seals -- conferred specific powers for hunting, healing, leadership, or artistic skill. These spirit encounters were deeply personal, and the songs, dances, and teachings received from the spirit world became part of an individual's identity and family heritage. Winter, when families gathered in the longhouses, was the season for communal spirit dance ceremonies in which members of the community displayed their spirit powers through song and dance on the longhouse floor. The potlatch, another central institution, was a sacred act of giving that maintained social balance, honored ancestors, and reaffirmed community bonds. These ceremonies, along with shamanic healing practices, reinforced the Coast Salish worldview of deep interconnection between the human, animal, and spirit realms. Following European colonization, these practices were suppressed by church and government authorities, but spirit dancing has experienced revival in the modern era.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Coast Salish -- New World Encyclopedia",
+          "url": "https://www.newworldencyclopedia.org/entry/Coast_Salish",
+          "type": "tertiary"
+        },
+        {
+          "title": "Psychohygienic and therapeutic aspects of the Salish guardian spirit ceremonial -- UBC Library",
+          "url": "https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/831/items/1.0101719",
+          "type": "secondary"
+        },
+        {
+          "title": "Indians 101: The Coast Salish vision quest -- Daily Kos",
+          "url": "https://www.dailykos.com/stories/2020/12/22/2003300/-Indians-101-The-Coast-Salish-vision-quest",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "spiritual",
+        "guardian-spirit",
+        "vision-quest",
+        "spirit-dance",
+        "potlatch",
+        "ceremony",
+        "winter"
+      ]
     },
     {
       "id": "ind-001",
@@ -48,11 +639,20 @@
       "date_start": "~1500",
       "date_end": "1855",
       "era": "indigenous",
-      "layers": ["event", "person", "place"],
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
       "description": "The sx̌ʷəbabš (Swiftwater People), also known as the Sqababsh or S'Homamish, establish five main village sites on Vashon and Maury Islands.",
       "details": "About 500 years ago, the Sqababsh people settled permanently on the islands, building longhouses at five principal village sites. They were part of the broader Coast Salish cultural group and relied on fishing (particularly salmon), shellfish gathering, hunting, and plant harvesting. The Suquamish and other tribes also used the islands seasonally. Today, many descendants are enrolled members of the Puyallup Tribe of Indians.",
-      "people": ["sx̌ʷəbabš (Sqababsh/S'Homamish)"],
-      "places": ["Vashon Island", "Maury Island"],
+      "people": [
+        "sx̌ʷəbabš (Sqababsh/S'Homamish)"
+      ],
+      "places": [
+        "Vashon Island",
+        "Maury Island"
+      ],
       "sources": [
         {
           "title": "A Brief History of Vashon Island",
@@ -65,18 +665,113 @@
           "type": "secondary"
         }
       ],
-      "tags": ["coast-salish", "indigenous", "settlement", "villages"]
+      "tags": [
+        "coast-salish",
+        "indigenous",
+        "settlement",
+        "villages"
+      ]
+    },
+    {
+      "id": "exp-003",
+      "title": "Spanish Explorers Approach Puget Sound Entrance",
+      "date_start": "1790",
+      "era": "exploration",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Manuel Quimper sails the Princesa Real into the Strait of Juan de Fuca, discovering Admiralty Inlet -- the entrance to Puget Sound -- but does not enter.",
+      "details": "In 1790, Peruvian-born Manuel Quimper was ordered by Francisco de Eliza to explore the Strait of Juan de Fuca aboard the sloop Princesa Real with a crew of forty-one. Quimper charted the strait's interior, discovering the San Juan Islands and many inlets, and was the first European to report seeing Mount Baker. His pilot Juan Carrasco identified the entrance to Admiralty Inlet (which leads to Puget Sound and the waters around Vashon Island), but the expedition did not proceed south into it. Most of Quimper's place names were later overwritten by George Vancouver in 1792, though Port Angeles, Rosario Strait, Quimper Peninsula, and Fidalgo Island retain vestiges of their Spanish origins.",
+      "people": [
+        "Manuel Quimper",
+        "Juan Carrasco",
+        "Francisco de Eliza"
+      ],
+      "places": [
+        "Strait of Juan de Fuca",
+        "Admiralty Inlet",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Exploration in the Pacific Northwest Before the American Presence -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/5449",
+          "type": "secondary"
+        },
+        {
+          "title": "Manuel Quimper -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Manuel_Quimper",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "exploration",
+        "spanish",
+        "strait-of-juan-de-fuca",
+        "admiralty-inlet"
+      ]
+    },
+    {
+      "id": "exp-004",
+      "title": "Spanish Expedition Misses Puget Sound",
+      "date_start": "1791",
+      "era": "exploration",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Jose Maria Narvaez, sailing under Francisco de Eliza, passes by Admiralty Inlet but returns to Nootka Sound without exploring Puget Sound, leaving the waterway for British discovery the following year.",
+      "details": "In 1791, Francisco de Eliza ordered a continuation of the exploration of the Strait of Juan de Fuca. Pilot Jose Maria Narvaez aboard the Santa Saturnina passed by Admiralty Inlet (which the Spanish called Ensenada de Caamano), noting it as an entrance to be explored on his return. However, running low on provisions, Narvaez returned directly to Eliza's San Carlos at Port Discovery. By the time he was resupplied, Eliza -- who was ill along with many of his sailors -- decided to return to Nootka Sound. This missed opportunity left Puget Sound and the waters surrounding Vashon Island uncharted by Europeans until George Vancouver's expedition arrived the next year.",
+      "people": [
+        "Jose Maria Narvaez",
+        "Francisco de Eliza"
+      ],
+      "places": [
+        "Admiralty Inlet",
+        "Puget Sound",
+        "Nootka Sound"
+      ],
+      "sources": [
+        {
+          "title": "Spanish expeditions to the Pacific Northwest -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Spanish_expeditions_to_the_Pacific_Northwest",
+          "type": "tertiary"
+        },
+        {
+          "title": "Exploration in the Pacific Northwest Before the American Presence -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/5449",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "exploration",
+        "spanish",
+        "missed-opportunity",
+        "nootka"
+      ]
     },
     {
       "id": "exp-001",
       "title": "Captain Vancouver Names Vashon Island",
       "date_start": "1792",
       "era": "exploration",
-      "layers": ["event", "person", "place"],
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
       "description": "During British exploratory missions on Puget Sound, Captain George Vancouver names the island after his friend Captain James Vashon of the Royal Navy.",
       "details": "In 1792, Captain George Vancouver led a British expedition surveying the Pacific Northwest coastline. While charting Puget Sound, he named the island after Captain James Vashon, a fellow Royal Navy officer who had served with distinction. Vancouver's expedition produced the first European maps of the area, though indigenous peoples had inhabited the region for millennia.",
-      "people": ["George Vancouver", "James Vashon"],
-      "places": ["Vashon Island", "Puget Sound"],
+      "people": [
+        "George Vancouver",
+        "James Vashon"
+      ],
+      "places": [
+        "Vashon Island",
+        "Puget Sound"
+      ],
       "sources": [
         {
           "title": "Vashon, Washington — Wikipedia",
@@ -89,18 +784,123 @@
           "type": "secondary"
         }
       ],
-      "tags": ["exploration", "naming", "british", "royal-navy"]
+      "tags": [
+        "exploration",
+        "naming",
+        "british",
+        "royal-navy"
+      ]
+    },
+    {
+      "id": "exp-005",
+      "title": "Peter Puget Surveys Southern Sound Past Vashon Island",
+      "date_start": "1792-05-20",
+      "date_end": "1792-05-26",
+      "era": "exploration",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Lieutenant Peter Puget and Master Joseph Whidbey depart HMS Discovery at 4 a.m. in two rowing craft to conduct a week-long survey of the southern Puget Sound, sailing past Vashon Island and charting the waterway's farthest inlets.",
+      "details": "On May 20, 1792, Lieutenant Peter Puget and Master Joseph Whidbey departed the HMS Discovery, anchored between Bainbridge and Blake Islands, in two small rowing craft. Over the next six days they surveyed the southern reaches of Puget Sound, passing landmarks now known as Vashon Island, Commencement Bay, Fox Island, and Carr Inlet, and reaching Budd, Case, Eld, Hammersly, and Totten Inlets at the Sound's farthest extremities. Along the way they met and traded with Coast Salish peoples, who knew the waterway as whulge (salt water). Puget observed signs of a recent smallpox epidemic among the indigenous residents. On May 29, Vancouver honored Puget's work by naming the southern portion of the waterway 'Puget's Sound,' a name that eventually expanded to encompass the entire body of water.",
+      "people": [
+        "Peter Puget",
+        "Joseph Whidbey",
+        "George Vancouver"
+      ],
+      "places": [
+        "Vashon Island",
+        "Puget Sound",
+        "Commencement Bay",
+        "Fox Island"
+      ],
+      "sources": [
+        {
+          "title": "Explorer George Vancouver names Puget's Sound for naval officer Peter Puget on May 29, 1792 -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/20969",
+          "type": "secondary"
+        },
+        {
+          "title": "George Vancouver begins British survey of Puget Sound on May 19, 1792 -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/5230",
+          "type": "secondary"
+        },
+        {
+          "title": "Peter Puget -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Peter_Puget",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "exploration",
+        "british",
+        "puget-sound",
+        "survey",
+        "royal-navy",
+        "indigenous-contact"
+      ]
+    },
+    {
+      "id": "exp-006",
+      "title": "Hudson's Bay Company Establishes Fort Nisqually",
+      "date_start": "1833",
+      "era": "exploration",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "The Hudson's Bay Company builds Fort Nisqually on southern Puget Sound, establishing the first European settlement in the region and a fur trade hub within sight of the waters around Vashon Island.",
+      "details": "In the spring of 1833, Chief Trader Archibald McDonald established Fort Nisqually for the Hudson's Bay Company near the mouth of Sequalitchew Creek on the plains north of the Nisqually River delta, in present-day DuPont, Washington. It was the first European settlement on Puget Sound. The HBC crew built cedar houses, a store, and protective walls, trading guns, blankets, and clothing with Coast Salish peoples for beaver, otter, and other furs. The fort served as a principal port for domestic and foreign trade and later expanded into agriculture through the Puget Sound Agricultural Company subsidiary. Fort Nisqually's presence drew European and American attention to the broader Puget Sound region, including the islands, and operated until 1869.",
+      "people": [
+        "Archibald McDonald"
+      ],
+      "places": [
+        "Fort Nisqually",
+        "Puget Sound",
+        "Nisqually River"
+      ],
+      "sources": [
+        {
+          "title": "Hudson's Bay Company builds Fort Nisqually in spring 1833 -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/20999",
+          "type": "secondary"
+        },
+        {
+          "title": "Fort Nisqually -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fort_Nisqually",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "fur-trade",
+        "hudsons-bay-company",
+        "fort-nisqually",
+        "european-settlement",
+        "trade"
+      ]
     },
     {
       "id": "exp-002",
       "title": "Lt. Wilkes Names Maury Island",
       "date_start": "1841",
       "era": "exploration",
-      "layers": ["event", "person", "place"],
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
       "description": "Lt. Charles Wilkes of the United States Exploring Expedition surveys Puget Sound and names Maury Island after crew member William A. Maury.",
       "details": "The Wilkes Expedition (1838-1842) was the first U.S. naval expedition to survey the Pacific Northwest. When Lt. Wilkes charted the waters around Vashon Island, he named the smaller adjacent island after William A. Maury, a member of his crew. At this time, Vashon and Maury Islands were separated at high tide but connected by a natural sandbar at low tide.",
-      "people": ["Charles Wilkes", "William A. Maury"],
-      "places": ["Maury Island", "Puget Sound"],
+      "people": [
+        "Charles Wilkes",
+        "William A. Maury"
+      ],
+      "places": [
+        "Maury Island",
+        "Puget Sound"
+      ],
       "sources": [
         {
           "title": "Vashon-Maury Island -- Thumbnail History",
@@ -108,18 +908,106 @@
           "type": "secondary"
         }
       ],
-      "tags": ["exploration", "naming", "wilkes-expedition", "us-navy"]
+      "tags": [
+        "exploration",
+        "naming",
+        "wilkes-expedition",
+        "us-navy"
+      ]
+    },
+    {
+      "id": "exp-007",
+      "title": "Wilkes Expedition Names Quartermaster Harbor Features",
+      "date_start": "1841",
+      "era": "exploration",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "During the U.S. Exploring Expedition, Lt. Charles Wilkes names Quartermaster Harbor and nearly all of Vashon-Maury Island's coastal points after quartermasters on his voyage.",
+      "details": "When the United States Exploring Expedition (1838-1842) under Lt. Charles Wilkes surveyed Puget Sound in 1841, Wilkes produced the first American charts of the Vashon-Maury Island area. In addition to naming Maury Island after crew member William A. Maury, Wilkes named Quartermaster Harbor -- the sheltered harbor between Vashon and Maury Islands -- and nearly all of the islands' coastal points (including Point Beals, Point Heyer, and others) after quartermasters serving on the expedition. These names reflected American claims to the region, which was then jointly occupied by the United States and Britain under the 1818 convention, and many of these place names persist to the present day.",
+      "people": [
+        "Charles Wilkes"
+      ],
+      "places": [
+        "Vashon Island",
+        "Maury Island",
+        "Quartermaster Harbor",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/3909",
+          "type": "secondary"
+        },
+        {
+          "title": "Delve into the Fascinating History of Vashon Island",
+          "url": "https://vashon-maury.com/vashon-island-history/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "exploration",
+        "naming",
+        "wilkes-expedition",
+        "quartermaster-harbor",
+        "us-navy"
+      ]
+    },
+    {
+      "id": "log-003",
+      "title": "Donation Land Claim Act Opens Vashon Island to Settlement",
+      "date_start": "1850-09-27",
+      "era": "logging-treaty",
+      "layers": [
+        "event"
+      ],
+      "description": "Congress passes the Donation Land Claim Act, granting up to 640 acres of Oregon Territory land to married settlers, providing the legal mechanism under which Vashon Island will be claimed starting in the 1860s.",
+      "details": "The Donation Land Claim Act, which took effect September 27, 1850, granted 320 acres of federal land to white male citizens who resided on and cultivated the land for four years, and 640 acres to married couples. Authored by Samuel Royal Thurston, it was designed to encourage settlement of the Oregon Territory, which then included present-day Washington. The act explicitly excluded Black and Hawaiian settlers. By the time it expired in 1855, approximately 30,000 white immigrants had entered Oregon Territory, claiming 2.5 million acres. Land on Vashon Island did not begin to be claimed under this act until the mid-1860s, after the Medicine Creek Treaty had removed indigenous land claims and the S'Homamish people had been displaced. The act provided the legal framework for Pope and Talbot's 1864 logging claim and Arthur Phinney's 592-acre claim the same year.",
+      "people": [
+        "Samuel Royal Thurston"
+      ],
+      "places": [
+        "Vashon Island",
+        "Oregon Territory"
+      ],
+      "sources": [
+        {
+          "title": "Donation Land Claim Act, spur to American settlement of Oregon Territory, takes effect on September 27, 1850 -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/9501",
+          "type": "secondary"
+        },
+        {
+          "title": "Donation Land Claim Act -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Donation_Land_Claim_Act",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "legislation",
+        "donation-land-act",
+        "settlement",
+        "land-claim",
+        "oregon-territory"
+      ]
     },
     {
       "id": "log-001",
       "title": "Logging Begins on Vashon Island",
       "date_start": "1852",
       "era": "logging-treaty",
-      "layers": ["event", "environment"],
+      "layers": [
+        "event",
+        "environment"
+      ],
       "description": "Commercial logging operations begin on Vashon Island, marking the start of European-American economic activity on the island.",
       "details": "Logging was the first major industry on Vashon Island, exploiting the dense old-growth forests of Douglas fir, western red cedar, and hemlock that covered the island. The timber was transported by water to mills around Puget Sound. This activity preceded permanent European-American settlement by over a decade.",
       "people": [],
-      "places": ["Vashon Island"],
+      "places": [
+        "Vashon Island"
+      ],
       "sources": [
         {
           "title": "Vashon-Maury Island -- Thumbnail History",
@@ -127,7 +1015,49 @@
           "type": "secondary"
         }
       ],
-      "tags": ["logging", "industry", "old-growth", "timber"]
+      "tags": [
+        "logging",
+        "industry",
+        "old-growth",
+        "timber"
+      ]
+    },
+    {
+      "id": "log-004",
+      "title": "Early Logging Camps Operate on Vashon Island",
+      "date_start": "1852",
+      "date_end": "~1865",
+      "era": "logging-treaty",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "Transient logging camps with crews of about eight men each cut old-growth timber along Vashon Island's shorelines, dragging logs by ox-team to the beach where they are boomed and towed to mainland mills.",
+      "details": "From the early 1850s through the mid-1860s, before permanent settlement, Vashon Island was worked by small logging crews who operated camps near the shoreline. A typical camp consisted of a bunkhouse and a cook shack, with an ox-team skid road leading down to the beach. An estimated 200 million board feet of timber remained on the island as of the mid-1880s. The logging camps lacked any semblance of family life -- most workers were single men who migrated from camp to camp. The dense forests of Douglas fir, western red cedar, and hemlock were the island's first commercially exploited resource, and the cost of overland transport confined all operations to within a mile or two of the water's edge. This pre-settlement logging was the only significant non-indigenous economic activity on the island for over a decade.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Settlements 1865-1890 -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "logging",
+        "old-growth",
+        "timber",
+        "ox-team",
+        "camps",
+        "pre-settlement"
+      ]
     },
     {
       "id": "log-002",
@@ -135,11 +1065,20 @@
       "date_start": "1854",
       "date_end": "1856",
       "era": "logging-treaty",
-      "layers": ["event", "person"],
+      "layers": [
+        "event",
+        "person"
+      ],
       "description": "The Medicine Creek Treaty cedes indigenous land claims to the U.S. government. By 1855-1856, the S'Homamish people are relocated to Fox Island.",
       "details": "The Medicine Creek Treaty of 1854, negotiated by Territorial Governor Isaac Stevens, required indigenous peoples to cede their lands in exchange for reservation territory and fishing rights. The Sqababsh/S'Homamish of Vashon Island were removed to Fox Island by 1855-1856, ending thousands of years of continuous habitation. This displacement opened the island to European-American homesteading.",
-      "people": ["Isaac Stevens", "sx̌ʷəbabš (Sqababsh/S'Homamish)"],
-      "places": ["Vashon Island", "Fox Island"],
+      "people": [
+        "Isaac Stevens",
+        "sx̌ʷəbabš (Sqababsh/S'Homamish)"
+      ],
+      "places": [
+        "Vashon Island",
+        "Fox Island"
+      ],
       "sources": [
         {
           "title": "A Brief History of Vashon Island",
@@ -152,18 +1091,121 @@
           "type": "secondary"
         }
       ],
-      "tags": ["treaty", "displacement", "indigenous-rights", "medicine-creek"]
+      "tags": [
+        "treaty",
+        "displacement",
+        "indigenous-rights",
+        "medicine-creek"
+      ]
+    },
+    {
+      "id": "log-005",
+      "title": "Puget Sound Indian War and Fox Island Internment",
+      "date_start": "1855-10",
+      "date_end": "1856-08",
+      "era": "logging-treaty",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "The Puget Sound War erupts following the Treaty of Medicine Creek; nearly 5,000 indigenous people, including the S'Homamish from Vashon Island, are forcibly interned on Fox Island under devastating conditions.",
+      "details": "In October 1855, armed conflict broke out between U.S. forces and Nisqually, Muckleshoot, Puyallup, and Klickitat warriors angered by the Treaty of Medicine Creek's unfair terms. To separate 'non-hostile' indigenous people from combatants, Acting Governor Mason ordered the collection and disarming of all Native peoples east of Puget Sound. Nearly 5,000 men, women, and children -- including the S'Homamish formerly of Vashon Island -- were forcibly interned on Fox Island under guard of John Swan. Exposed to winter weather with no shelter and inadequate food, over one-third of the internees fell ill by May 1856. On January 26, 1856, a coalition of tribes attacked the settlement of Seattle in the war's most dramatic battle. The war ended after Nisqually Chief Leschi retreated east; he was later captured, controversially convicted of murder, and hanged in 1858. Leschi was posthumously exonerated in 2004.",
+      "people": [
+        "Chief Leschi",
+        "John Swan",
+        "Isaac Stevens"
+      ],
+      "places": [
+        "Fox Island",
+        "Vashon Island",
+        "Puget Sound",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Tears of Internment: The Indian History of Fox Island and the Puget Sound Indian War -- Pacific Lutheran University Archives",
+          "url": "https://archives.plu.edu/tears-of-internment-the-indian-history-of-fox-island-and-the-puget-sound-indian-war",
+          "type": "secondary"
+        },
+        {
+          "title": "Puget Sound War -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Puget_Sound_War",
+          "type": "tertiary"
+        },
+        {
+          "title": "Native Americans attack Seattle on January 26, 1856 -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5208",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "puget-sound-war",
+        "fox-island",
+        "internment",
+        "indigenous-rights",
+        "leschi",
+        "battle-of-seattle"
+      ]
+    },
+    {
+      "id": "log-006",
+      "title": "Pope and Talbot File First Land Claim on Vashon Island",
+      "date_start": "1864-08-01",
+      "era": "logging-treaty",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Andrew J. Pope and William C. Talbot of the Puget Mill Company at Port Gamble claim 80 acres on the west side of Vashon Island for logging, marking the first non-indigenous land claim on the island.",
+      "details": "On August 1, 1864, Andrew J. Pope and William C. Talbot -- principals in the Puget Mill Company at Port Gamble -- filed a claim for 80 acres on the west side of Vashon Island under the Donation Land Claim Act. This was the first formal land claim on the island. Pope and Talbot, both from Maine sawmill families, had built their Port Gamble mill in 1853 and were expanding their timber operations throughout the Sound. The Vashon claim was used for logging, with timber dragged to the shore, boomed, and towed by tug to their mill. The same year, Arthur Phinney made claims totaling 592 acres in the area that would later become the town of Vashon.",
+      "people": [
+        "Andrew J. Pope",
+        "William C. Talbot",
+        "Arthur Phinney"
+      ],
+      "places": [
+        "Vashon Island",
+        "Port Gamble"
+      ],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        },
+        {
+          "title": "Settlements 1865-1890 -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "land-claim",
+        "logging",
+        "donation-land-act",
+        "puget-mill-company",
+        "pope-talbot"
+      ]
     },
     {
       "id": "pio-001",
       "title": "First European-American Settler on Vashon",
       "date_start": "1865",
       "era": "pioneer",
-      "layers": ["event", "person", "place"],
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
       "description": "Mathew Bridges files the first homestead claim on Vashon Island, becoming the island's first permanent European-American settler.",
       "details": "Mathew Bridges arrived on Vashon Island and filed a land claim, beginning the era of European-American settlement. In the years following, other homesteaders followed, drawn by available land and the island's natural resources. The early settlers relied on fishing and logging as primary occupations.",
-      "people": ["Mathew Bridges"],
-      "places": ["Vashon Island"],
+      "people": [
+        "Mathew Bridges"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
       "sources": [
         {
           "title": "Settlements 1865-1890",
@@ -171,18 +1213,231 @@
           "type": "secondary"
         }
       ],
-      "tags": ["homestead", "settlement", "pioneer"]
+      "tags": [
+        "homestead",
+        "settlement",
+        "pioneer"
+      ]
+    },
+    {
+      "id": "pio-003",
+      "title": "Chinese Fishing Community Established at Manzanita",
+      "date_start": "~1875",
+      "date_end": "1885-11",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Chinese settlers establish a thriving fishing colony locally called 'Hong Kong' at Manzanita on Maury Island, among the first non-indigenous communities on Vashon-Maury Island, until the anti-Chinese expulsions of November 1885.",
+      "details": "In the mid-1870s, Chinese settlers established a fishing colony at Manzanita on the southwest shore of Maury Island -- well before any organized European-American community existed on the island. Vashon's first historian, Oliver Van Olinda, described 'a very large and busy colony, with a wide wharf extending over four hundred feet along the shore,' where the principal occupation was fishing and fish-drying, with thousands of tons of dried fish shipped from the site. Using enormous seine nets measuring 900 feet long and 240 feet deep, the Chinese fishermen worked Elliott Bay, Port Madison, and local waters. It is likely the first Chinese fishing boat on Puget Sound was built at Manzanita. The community was destroyed in November 1885 when anti-Chinese violence erupted across the region; on November 3, Tacoma forcibly expelled all its Chinese residents in what became known as 'The Tacoma Method,' and the Manzanita colony simultaneously disappeared.",
+      "people": [
+        "Oliver Van Olinda"
+      ],
+      "places": [
+        "Manzanita",
+        "Maury Island",
+        "Elliott Bay",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Time and Again: From Vashon's early Chinese settlers to today -- Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/time-and-again-from-vashons-early-chinese-settlers-to-today/",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "chinese-american",
+        "fishing",
+        "manzanita",
+        "anti-chinese-violence",
+        "pioneer"
+      ]
+    },
+    {
+      "id": "pio-004",
+      "title": "Sherman Family Becomes First Permanent Settlers",
+      "date_start": "1877",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Salmon and Eliza Sherman, along with the Price and Gilman families, settle along Quartermaster Harbor, taking shelter in an abandoned logger's shack they nickname 'Fort Necessity' -- the first permanent family settlement on Vashon Island.",
+      "details": "In 1877, Salmon Sherman (born 1836 in New York) and his wife Eliza (born 1846 in Wisconsin), lured from Minnesota by the promise of free land, arrived at Vashon Island with their relatives the Prices and the Gilmans. They settled along present-day Quartermaster Drive, taking shelter in an abandoned logger's shack they dubbed 'Fort Necessity.' While Mathew Bridges had filed a homestead claim in 1865, the Shermans are considered the first permanent family settlers, establishing a continuous presence that persists to the present day -- descendants of the Sherman family, now in their sixth generation, still live on the island. S.D. Sherman later rowed mail from Tacoma to Quartermaster Harbor before converting a lifeboat into the schooner Old Black Joe to provide the island's first semi-regular ferry service.",
+      "people": [
+        "Salmon Sherman",
+        "Eliza Sherman",
+        "S.D. Sherman"
+      ],
+      "places": [
+        "Vashon Island",
+        "Quartermaster Harbor"
+      ],
+      "sources": [
+        {
+          "title": "Settlements 1865-1890 -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Gene Sherman, 'a man of history,' leaves a legacy -- Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/gene-sherman-a-man-of-history-leaves-a-legacy/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "homestead",
+        "settlement",
+        "pioneer",
+        "sherman-family",
+        "quartermaster-harbor"
+      ]
+    },
+    {
+      "id": "pio-005",
+      "title": "First County Roads Established on Vashon Island",
+      "date_start": "1883",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "King County establishes its first official roads on Vashon Island -- Roads No. 116 and 117 (now SW Cemetery Road and SW Bank Road) -- connecting the island's interior settlements to the coast.",
+      "details": "In 1883, King County formally established its first roads on Vashon Island. Road No. 116 (today's SW Cemetery Road) was petitioned by Edwin Broadway and others, running from the center of the island to the Ellisport dock. Road No. 117 (today's SW Bank Road) was petitioned by T.D. Soper and others, leading from the island's center to the brickyard and post office at Vashon Landing. Road No. 118 (today's Vashon Highway SW) was petitioned by Mason Holmes and others, running south from Road No. 117. Maury Island pioneer Bill Rendall described the roads of this era as 'hardly justified the name, as the greater part of it was only a little wider than a wagon.' These primitive tracks through heavy timber were nonetheless essential for connecting the island's scattered homesteads and enabling overland commerce.",
+      "people": [
+        "T.D. Soper",
+        "Edwin Broadway",
+        "Mason Holmes"
+      ],
+      "places": [
+        "Vashon Island",
+        "Vashon Landing",
+        "Ellisport"
+      ],
+      "sources": [
+        {
+          "title": "Settlements 1865-1890 -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "First County Roads & Docks -- My Vashon Island Blog",
+          "url": "https://myvashonislandblog.com/2019/05/28/first-county-roads-docks/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "infrastructure",
+        "roads",
+        "king-county",
+        "transportation",
+        "pioneer"
+      ]
+    },
+    {
+      "id": "pio-006",
+      "title": "Vashon Post Office Opens",
+      "date_start": "1883-04-12",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "The island's first post office opens on April 12, 1883, with Samuel C. Herriott as postmaster, establishing an official U.S. government presence and regularizing mail delivery on Vashon Island.",
+      "details": "On April 12, 1883, the Vashon Post Office -- the island's first -- opened with Samuel C. Herriott appointed as postmaster. Before this, S.D. Sherman had rowed mail from Tacoma to the Quartermaster Harbor area by hand, later delivering it aboard his converted lifeboat Old Black Joe. The post office formalized the island's connection to the broader communication network and signaled growing federal recognition of the settlement. By 1887, Captain John Vanderhoef's steamer Iola held the mail contract for the east side of Vashon-Maury, picking up and delivering mail at Adelaide, Maury, Chautauqua, and Vashon Landing. Additional post offices followed at Chautauqua and Maury in 1888, reflecting the island's growing population and multiple community centers.",
+      "people": [
+        "Samuel C. Herriott",
+        "S.D. Sherman"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Vashon Island beginnings: Vashon Post Office opens on April 12, 1883 -- HistoryLink.org",
+          "url": "https://historylink.org/File/453",
+          "type": "secondary"
+        },
+        {
+          "title": "Settlements 1865-1890 -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "post-office",
+        "mail",
+        "government",
+        "communication",
+        "pioneer"
+      ]
+    },
+    {
+      "id": "pio-007",
+      "title": "Methodist Church Organized -- First Church on Vashon",
+      "date_start": "1884-04-04",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Rev. Albert Atwood organizes the first Methodist class on Vashon Island on April 4, 1884, and a log church is built the following year -- the first church building on the island.",
+      "details": "On April 4, 1884, at the request of island residents, John N. Dennison of Seattle's Methodist Church sent Rev. Albert Atwood to organize a Methodist class on Vashon Island. As early as 1881, a log schoolhouse on the island had provided a shared worship space for both Baptists and Methodists. The cornerstone of the Vashon Methodist Church was laid in 1885 on the Ward property, and the building was constructed from hand-hewn logs. At the dedication, the sermon topic was 'Happy is that people whose God is the Lord.' The church was recognized as the first on Vashon Island. Early conditions were rugged -- the organist walked two miles each way to play for services -- but the church quickly became central to community life. A Presbyterian church and Baptist church at Center followed in subsequent years.",
+      "people": [
+        "Albert Atwood",
+        "John N. Dennison"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "VUMC History -- Vashon United Methodist Church",
+          "url": "https://www.vashonmethodist.org/vumc-history",
+          "type": "secondary"
+        },
+        {
+          "title": "Settlements 1865-1890 -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "church",
+        "methodist",
+        "religion",
+        "community",
+        "pioneer"
+      ]
     },
     {
       "id": "pio-002",
       "title": "First Ferry Service Established",
       "date_start": "~1885",
       "era": "pioneer",
-      "layers": ["event", "place"],
+      "layers": [
+        "event",
+        "place"
+      ],
       "description": "S.D. Sherman purchases a lifeboat and refits it as a schooner to provide semi-regular ferry service to Vashon Island.",
       "details": "By the 1880s, enough settlers had arrived that regular transportation to the mainland became essential. S.D. Sherman converted a lifeboat into a small schooner to provide the first semi-regular service. This modest beginning eventually led to established ferry routes at both the north and south ends of the island, which in turn attracted more homesteaders. Early settlers also built the first school, stores, and crude roads during this period.",
-      "people": ["S.D. Sherman"],
-      "places": ["Vashon Island"],
+      "people": [
+        "S.D. Sherman"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
       "sources": [
         {
           "title": "Settlements 1865-1890",
@@ -190,18 +1445,368 @@
           "type": "secondary"
         }
       ],
-      "tags": ["ferry", "transportation", "maritime"]
+      "tags": [
+        "ferry",
+        "transportation",
+        "maritime"
+      ]
+    },
+    {
+      "id": "pio-008",
+      "title": "First Chautauqua Assembly on Puget Sound Held on Vashon",
+      "date_start": "1885-08-03",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "On August 3, 1885, the first Chautauqua assembly on Puget Sound is held at Dilworth Point on Vashon Island, launching a cultural education movement that will draw thousands to the island for the next three decades.",
+      "details": "On August 3, 1885, the first Chautauqua on Puget Sound was held at Dilworth Point on Vashon Island, organized by Rev. R.B. Dilworth, who had been active in the original Chautauqua assembly in New York since 1874. Named after Chautauqua, New York, the movement offered summertime lectures, discussions, and cultural activities in a resort atmosphere. The inaugural program included devotional services, Sunday school, German language instruction, roundtable discussions, and music; round-trip fare from Seattle on the steamer Zephyr cost 75 cents. In 1888, the Puget Sound Chautauqua Assembly chose Tramp Harbor on Vashon as its permanent home, platting Chautauqua Beach -- the first town platted on the island -- with streets named for writers like Bryant, Emerson, and Hawthorne. The site grew to 600 acres with a 1,200-seat pavilion, hotel, dock, and hundreds of cottages, hosting speakers reportedly including Mark Twain and Theodore Roosevelt before declining in the 1920s.",
+      "people": [
+        "R.B. Dilworth"
+      ],
+      "places": [
+        "Vashon Island",
+        "Dilworth Point",
+        "Tramp Harbor",
+        "Chautauqua Beach"
+      ],
+      "sources": [
+        {
+          "title": "Chautauqua comes to Vashon Island on August 3, 1885 -- HistoryLink.org",
+          "url": "https://historylink.org/File/2260",
+          "type": "secondary"
+        },
+        {
+          "title": "Settlements 1865-1890 -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "chautauqua",
+        "culture",
+        "education",
+        "lectures",
+        "tourism",
+        "dilworth"
+      ]
+    },
+    {
+      "id": "pio-009",
+      "title": "Steamer Iola Begins Regular Service to Vashon Island",
+      "date_start": "1887",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Captain John Vanderhoef takes command of the steamer Iola and establishes six weekly round trips between Tacoma, Seattle, and Vashon Island landings, creating the island's first reliable Mosquito Fleet connection.",
+      "details": "In June 1887, Captain John F. Vanderhoef became master and agent of the steamer Iola, a small steamship built at Hammersley Inlet in 1885. Vanderhoef rebuilt the cabins to serve as living quarters for himself and his wife, and established a schedule of six round trips per week serving Vashon Island: Monday, Wednesday, and Friday via East Passage (stopping at Adelaide, Maury, Chautauqua, and Vashon Landing) and Tuesday, Thursday, and Saturday via Colvos Passage on the west side. This was a major step up from S.D. Sherman's earlier converted-lifeboat service. The Iola held the mail contract for the east side of Vashon-Maury Island and was part of the broader 'Mosquito Fleet' -- the armada of small steamships that connected Puget Sound communities from the 1880s through the 1920s, serving an estimated 350 or more destinations. By 1889, Vanderhoef had concentrated entirely on the Vashon Island route.",
+      "people": [
+        "John F. Vanderhoef"
+      ],
+      "places": [
+        "Vashon Island",
+        "Tacoma",
+        "Seattle",
+        "Colvos Passage",
+        "Vashon Landing"
+      ],
+      "sources": [
+        {
+          "title": "Settlements 1865-1890 -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Iola (1885 steamboat) -- Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Iola_(steamboat_1885)",
+          "type": "tertiary"
+        },
+        {
+          "title": "Mosquito Fleet -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/869",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "mosquito-fleet",
+        "steamboat",
+        "transportation",
+        "mail",
+        "iola"
+      ]
+    },
+    {
+      "id": "pio-010",
+      "title": "Brick Manufacturing Boom at Quartermaster Harbor",
+      "date_start": "~1888",
+      "date_end": "~1895",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "description": "Brickyards proliferate around Quartermaster Harbor, exploiting the island's accessible clay deposits; at peak operation there are five yards employing 200 men, with the Bleeker Brickyard at Burton being the largest.",
+      "details": "Easily accessible clay deposits along Vashon Island's shorelines made clay-mining and brick-making one of the island's most significant early industries. By the late 1880s, as many as ten to twelve brickyards had operated on the island at various times, with five concentrated around Quartermaster Harbor employing approximately 200 men. The Bleeker Brickyard at Burton was the largest; the steam barge 'Molly Bleeker' ferried bricks to Tacoma and doubled as living quarters for the Bleeker family. Lucian Cook ran a separate brickyard on Quartermaster Harbor, bought the steamer Estella, and ran it between Tacoma and the harbor to transport bricks and workmen. In 1889, Cook had six barges built for hauling bricks and purchased the steamer Seaside as a towboat. The Fairfowld Brick Yard alone employed 100 men, with most bricks used in Tacoma for buildings and streets. The industry declined sharply after the 1893 financial panic devastated Puget Sound construction markets.",
+      "people": [
+        "Lucian Cook"
+      ],
+      "places": [
+        "Quartermaster Harbor",
+        "Burton",
+        "Vashon Island",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Settlements 1865-1890 -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "brick",
+        "industry",
+        "manufacturing",
+        "quartermaster-harbor",
+        "burton",
+        "clay"
+      ]
+    },
+    {
+      "id": "pio-011",
+      "title": "Frank Gorsuch Opens First Store in the Town of Vashon",
+      "date_start": "1890",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Frank Gorsuch builds and opens the first store at the crossroads that will become the town of Vashon, establishing the commercial nucleus that eventually supersedes Center and Burton as the island's primary hub.",
+      "details": "In 1890, Frank Gorsuch built a general store at the crossroads formed by the island's earliest farm roads, where the Livesley, Blackburn, and Ward properties met near the north end ferry route. The store carried everything a frontier community needed -- spices, coffee, tobacco, oils, feed, hardware, kerosene, groceries, cloth, sewing supplies, and clothing. Island pioneer Ira Thompson recalled that 'although overland travel was tough and the mud deep, Gorsuch was soon doing business with people throughout the Island.' The building, which still stands, was later sold to Fred and Henry Weiss (who renamed it Weiss Bros. General Merchandise in 1913) and then became Vashon Hardware Company in 1929. The structure was added to the National Register of Historic Places in 2000. Gorsuch's store at this location effectively founded the town of Vashon, which gradually eclipsed Center and Burton as the island's commercial heart once automobiles and the north-end ferry dock shifted transportation patterns.",
+      "people": [
+        "Frank Gorsuch",
+        "Ira Thompson"
+      ],
+      "places": [
+        "Vashon Island",
+        "Town of Vashon"
+      ],
+      "sources": [
+        {
+          "title": "King County Landmarks: Vashon Hardware Store (1890) -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/2354",
+          "type": "secondary"
+        },
+        {
+          "title": "Town of Vashon 1890-1921 -- My Vashon Island Blog",
+          "url": "https://myvashonislandblog.com/2019/02/01/town-of-vashon-1890-1921/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "commerce",
+        "general-store",
+        "town-of-vashon",
+        "pioneer",
+        "national-register"
+      ]
+    },
+    {
+      "id": "pio-012",
+      "title": "Vashon College Opens at Burton",
+      "date_start": "1892",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Miles Hatch spearheads the founding of Vashon College near Burton as a non-denominational Christian institution; its first building, Old Main, is four stories with 46 rooms, and the school fields teams that compete against the University of Washington.",
+      "details": "In 1892, Vashon College opened near the town of Burton on Quartermaster Harbor. Miles Hatch, an early island entrepreneur who founded and named Burton after his birthplace of Burton Township, Illinois, led the effort and donated the hilltop campus land. A.C. Jones was hired as the first president. The first building, Old Main, was an impressive four-story structure with 46 rooms serving as classrooms, offices, a dining hall, and student residences. A three-story commercial building for 90 male students was added in 1894, expanded in 1898, and in 1901 the Armory -- the largest drill hall in Washington state at the time -- was constructed. The college offered classical and scientific four-year programs, a pharmacy school, conservatory of music, and school of commerce. Assuring parents that 'there was not a drop of alcohol on the island,' the school required daily chapel attendance. The football team competed against the University of Washington and Tacoma Athletic Club. A fire in 1910 dealt a fatal blow; the campus sat largely empty until a second fire in 1930 led to its demolition.",
+      "people": [
+        "Miles Hatch",
+        "A.C. Jones"
+      ],
+      "places": [
+        "Burton",
+        "Vashon Island",
+        "Quartermaster Harbor"
+      ],
+      "sources": [
+        {
+          "title": "Vashon College -- lostcolleges.com",
+          "url": "https://www.lostcolleges.com/vashon-college",
+          "type": "secondary"
+        },
+        {
+          "title": "Time & Again: Learning at Vashon College and Vashon 101 -- Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/time-again-learning-at-vashon-college-and-vashon-101/",
+          "type": "secondary"
+        },
+        {
+          "title": "Revisiting Washington -- Burton",
+          "url": "https://revisitwa.org/waypoint/burton/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "education",
+        "college",
+        "burton",
+        "miles-hatch",
+        "pioneer"
+      ]
+    },
+    {
+      "id": "pio-013",
+      "title": "Great Fire and Financial Panic Devastate the Island",
+      "date_start": "1893-08",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "In August 1893, a massive wildfire sweeps through the center of Vashon Island while a nationwide financial panic simultaneously collapses the Puget Sound economy, destroying homes and devastating island industries.",
+      "details": "August 1893 brought a devastating one-two blow to Vashon Island. A wildfire that began in a logged-off area near the site of the present high school (where the first sawmill had been located) raged for two days and nights. Nearly a hundred volunteers fought desperately with shovels, hoes, and rakes to save the new Baptist Church and the Presbyterian Church at Center, and the Fuller store across the street. With flames within two hundred yards of Center, the wind shifted north on the evening of the second day, allowing firefighters to gain control. Many families lost their homes and property. Compounding the disaster, a nationwide financial panic had already hit the Puget Sound region hard -- 14 Tacoma banks failed, and the construction market that sustained the island's brick industry collapsed. The combined effect stalled the island's development for several years, though the cleared land ultimately became available for farming as the community rebuilt.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Center"
+      ],
+      "sources": [
+        {
+          "title": "The Boom -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/boom.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "fire",
+        "disaster",
+        "financial-panic",
+        "1893",
+        "center",
+        "recovery"
+      ]
+    },
+    {
+      "id": "gro-004",
+      "title": "Chautauqua Assembly Established at Tramp Harbor",
+      "date_start": "1888",
+      "date_end": "1912",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Puget Sound Chautauqua Assembly selects Tramp Harbor on Vashon Island as its permanent home, creating a 600-acre cultural and educational resort with a 1,200-seat pavilion.",
+      "details": "After the first Puget Sound Chautauqua was held at Dilworth Point on Vashon Island in 1885, the assembly incorporated in 1887 and selected Tramp Harbor for a permanent site in 1888. Islanders McClintock Ellis, Fuller, and Judd donated 115 acres. The site grew to 600 acres with two miles of shoreline, a hotel, dozens of cottages, parks, a steamer dock, and a 1,200-seat pavilion. Roads were named after writers (Bryant, Emerson, Hawthorne) and trees (Alder, Fir, Cedar). Programs included lectures, concerts, clambakes, art instruction, Biblical sermons, and talks on science and temperance. Speakers included Mark Twain and Theodore Roosevelt. Round-trip steamer fare from Seattle cost 75 cents. The site was renamed Ellisport in 1912, but the movement declined with the rise of electricity, telephones, and radio, vanishing by the 1920s.",
+      "people": [
+        "Mark Twain",
+        "Theodore Roosevelt"
+      ],
+      "places": [
+        "Vashon Island",
+        "Tramp Harbor",
+        "Ellisport",
+        "Dilworth Point"
+      ],
+      "sources": [
+        {
+          "title": "Chautauqua comes to Vashon Island on August 3, 1885 (HistoryLink.org)",
+          "url": "https://www.historylink.org/file/2260",
+          "type": "secondary"
+        },
+        {
+          "title": "Chautauqua Assembly (Vashon Heritage Museum)",
+          "url": "https://vashonheritagemuseum.org/chautauqua-assembly/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "culture",
+        "education",
+        "chautauqua",
+        "resort",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "gro-003",
+      "title": "Vashon Island Brick Industry Supplies Seattle and Tacoma",
+      "date_start": "~1889",
+      "date_end": "~1900",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "description": "Eight or more brickyards operate on Vashon and Maury Islands, employing over 200 men and supplying bricks for the rebuilding of Seattle after the Great Fire of 1889.",
+      "details": "The growth of Seattle and Tacoma, fires in Tacoma during the 1880s, and the Great Seattle Fire of 1889 created enormous demand for bricks. Vashon Island's glacial clay soils proved ideal for brick manufacturing. The Fairfowld Brick Yard employed 100 men producing bricks mostly for Tacoma buildings and streets. Five brickyards around Quartermaster Harbor employed 200 men, with the Bleeker Yard at Burton being the largest. Lucian Cook ran a brickyard on Quartermaster and bought the steamer Estella to ferry bricks and workmen to Tacoma, later commissioning six barges and buying the steamer Seaside as a towboat. The brick industry was so central to island life that infrastructure was built around it: T.D. Soper petitioned for a road (now Bank and Soper Roads) from the island's center to the brickyard at Vashon Landing. By the early 1900s the brickyards were in decline, and the island transitioned to agriculture.",
+      "people": [
+        "Lucian Cook"
+      ],
+      "places": [
+        "Vashon Island",
+        "Maury Island",
+        "Quartermaster Harbor",
+        "Burton",
+        "Vashon Landing"
+      ],
+      "sources": [
+        {
+          "title": "Settlements 1865-1890 (vashonhistory.com)",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History (HistoryLink.org)",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "industry",
+        "brick-making",
+        "seattle-fire",
+        "manufacturing",
+        "clay"
+      ]
     },
     {
       "id": "gro-001",
       "title": "Japanese American Strawberry Farming Begins",
       "date_start": "1890",
       "era": "growth-industry",
-      "layers": ["event", "person", "environment"],
+      "layers": [
+        "event",
+        "person",
+        "environment"
+      ],
       "description": "Japanese Americans begin growing strawberries on Vashon Island, establishing an industry that will define the island's agriculture for 50 years.",
       "details": "Starting around 1890, Japanese American families began cultivating strawberries on Vashon Island. The island's mild maritime climate and rich glacial soils proved ideal for berry production. This industry grew to become a major part of the island economy and a defining cultural feature of Vashon life until the forced internment during WWII.",
       "people": [],
-      "places": ["Vashon Island"],
+      "places": [
+        "Vashon Island"
+      ],
       "sources": [
         {
           "title": "Vashon-Maury Island -- Thumbnail History",
@@ -209,18 +1814,109 @@
           "type": "secondary"
         }
       ],
-      "tags": ["agriculture", "strawberries", "japanese-american", "farming"]
+      "tags": [
+        "agriculture",
+        "strawberries",
+        "japanese-american",
+        "farming"
+      ]
+    },
+    {
+      "id": "gro-012",
+      "title": "Sawmills and Steamer Routes Serve the Island Economy",
+      "date_start": "~1890",
+      "date_end": "~1902",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Multiple sawmills operate on Vashon Island while daily steamer service on the Sophia connects mills, brickyards, and docks to Tacoma markets.",
+      "details": "By 1890, M.F. Hatch operated a sawmill at Assembly Point on the Burton Peninsula, and the steamer Sophia began making daily trips to Tacoma, stopping at Sherman's Dock, Hatch's Sawmill, Dockton Dry Dock, Bleeker's brickyard, and Burrow's brickyard. By 1892, the Sophia ran three daily trips with fares of fifteen cents round trip. Six mills, a gravel bunker, a brickyard, a cannery, and a creamery were in operation. Frances Sherman ran a sawmill in Paradise Valley and won a contract to supply lumber for the Luna Park amusement park at Alki Point. The Steen Mill, founded in 1902, later joined by the Fuller, Pankratz, Covey, and Vashon Island mill companies, continued the logging tradition. Helmar Steen built a logging railroad along what is now Cove Road, and his mill provided his home with an early luxury: electric light.",
+      "people": [
+        "Miles F. Hatch",
+        "Frances Sherman",
+        "Helmar Steen"
+      ],
+      "places": [
+        "Vashon Island",
+        "Assembly Point",
+        "Burton Peninsula",
+        "Paradise Valley",
+        "Quartermaster Harbor"
+      ],
+      "sources": [
+        {
+          "title": "The Boom (vashonhistory.com)",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/boom.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Town of Vashon 1890-1921 (My Vashon Island Blog)",
+          "url": "https://myvashonislandblog.com/2019/02/01/town-of-vashon-1890-1921/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "industry",
+        "lumber",
+        "sawmill",
+        "steamer",
+        "transportation"
+      ]
+    },
+    {
+      "id": "gro-011",
+      "title": "First Telephone Lines on Vashon Island",
+      "date_start": "1891",
+      "date_end": "1904",
+      "era": "growth-industry",
+      "layers": [
+        "event"
+      ],
+      "description": "Vashon Island's first telephone line -- a half-mile acoustic wire between a newspaper office and the J.T. Thompson household -- is strung in 1891, with organized telephone service arriving via the Farmers Mutual Company in 1904.",
+      "details": "In 1891, the first telephone line on Vashon Island ran half a mile between the local newspaper office and the J.T. Thompson household -- little more than an acoustic wire system. Legend holds that islanders J. Jacobs and Mr. Webber had already rigged a tin-can-and-string system between their homes in 1892. The push for real telephone service gained momentum when the Tacoma Times reported in 1903 that islanders were 'very enthusiastic about establishing communication.' In 1904, the Farmers Mutual Independent Telephone Company secured a franchise and set up an exchange in the town of Vashon serving the north part of the island. Lines were strung on trees rather than poles. Service was connected to Seattle in June 1904 and to Tacoma in July, though the undersea cable gave persistent trouble -- by 1907, 80 of 125 customers signed a petition threatening to cancel service if the cable was not fixed within two months.",
+      "people": [
+        "J.T. Thompson"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "History of Vashon's Independent Telephone Companies (My Vashon Island Blog)",
+          "url": "https://myvashonislandblog.com/2015/09/14/history-of-vashons-independent-telephone-companies/",
+          "type": "secondary"
+        },
+        {
+          "title": "Early Vashon Town 1890-1914 (My Vashon Island Blog)",
+          "url": "https://myvashonislandblog.com/2016/12/23/early-vashon-town-1890-1914/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "technology",
+        "communication",
+        "telephone",
+        "infrastructure"
+      ]
     },
     {
       "id": "gro-002",
       "title": "Dockton Drydock Built",
       "date_start": "~1892",
       "era": "growth-industry",
-      "layers": ["event", "place"],
+      "layers": [
+        "event",
+        "place"
+      ],
       "description": "A drydock is constructed at Dockton on Maury Island, the only facility of its kind on Puget Sound at the time.",
       "details": "The drydock at Dockton was a significant industrial facility, serving the maritime industry of Puget Sound. Located on the southwestern shore of Maury Island, it represented the island's participation in the broader regional economy beyond agriculture and logging. The facility attracted workers and contributed to the growth of the Dockton community.",
       "people": [],
-      "places": ["Dockton", "Maury Island"],
+      "places": [
+        "Dockton",
+        "Maury Island"
+      ],
       "sources": [
         {
           "title": "Vashon-Maury Island -- Thumbnail History",
@@ -228,18 +1924,483 @@
           "type": "secondary"
         }
       ],
-      "tags": ["industry", "maritime", "drydock", "dockton"]
+      "tags": [
+        "industry",
+        "maritime",
+        "drydock",
+        "dockton"
+      ]
+    },
+    {
+      "id": "gro-005",
+      "title": "Vashon College Founded at Burton",
+      "date_start": "1892",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Miles Hatch and community leaders establish Vashon College near Burton as a non-denominational Christian co-educational school, with Oliver Scott Van Olinda joining the founding faculty.",
+      "details": "In 1892, Miles F. Hatch spearheaded the founding of Vashon College as a non-denominational Christian college for 'young people of both sexes of good moral character.' A.C. Jones was hired as the first president, and construction began on land west of Burton donated by Hatch. The first building, Old Main, was a four-story structure with 46 rooms serving as classrooms, offices, dining hall, and residences. A three-story commercial building was added in 1894, and the Armory -- then the largest drill hall in the state -- was added in 1901. Oliver Scott Van Olinda, the island's first historian, taught stenography and typing on the founding faculty and also edited the weekly Vashon Island Press. Tuition for a 15-week semester in 1896 cost $22.50. The college could accommodate 200 students. Fires in 1906 and 1910 damaged the campus, and a final fire in 1930 led to the remaining buildings being razed.",
+      "people": [
+        "Miles F. Hatch",
+        "Oliver Scott Van Olinda",
+        "A.C. Jones"
+      ],
+      "places": [
+        "Burton",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Time & Again: Learning at Vashon College and Vashon 101 (Vashon Beachcomber)",
+          "url": "https://www.vashonbeachcomber.com/news/time-again-learning-at-vashon-college-and-vashon-101/",
+          "type": "secondary"
+        },
+        {
+          "title": "Main building, Vashon College, 1892 (UW Digital Collections)",
+          "url": "https://digitalcollections.lib.washington.edu/digital/collection/vanolinda/id/16/",
+          "type": "primary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History (HistoryLink.org)",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "education",
+        "college",
+        "burton",
+        "community-institution"
+      ]
+    },
+    {
+      "id": "gro-010",
+      "title": "Burton Emerges as the Island's Social and Commercial Center",
+      "date_start": "1892",
+      "date_end": "~1920",
+      "era": "growth-industry",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "description": "Burton, founded by Miles and Mrs. M.F. Hatch at Quartermaster Harbor, becomes the dominant town on Vashon Island with the college, daily steamer service, the post office, churches, and commercial enterprises.",
+      "details": "In 1892, Miles Hatch built a two-story store at the west end of the Burton Peninsula, and his wife named the settlement after her birthplace in England (Burton-In-Kendall). Hatch also claimed much of the Burton Peninsula as his homestead, started Vashon College, developed the Mileta Farm dairy, and ran a sawmill at Assembly Point. With daily steamer service to Tacoma and its college, Burton quickly surpassed other island communities. The Baptist Missionary Children's Home opened in 1895, and the First Baptist Church of Burton opened in 1897. Residents exchanged used magazines on a roadside log, inspiring the Women's Club to found the Burton Rental Library in 1916. Burton remained the island's major town until automobiles, improved roads, and the north-end ferry dock shifted the commercial center to Vashon town in the 1920s.",
+      "people": [
+        "Miles F. Hatch"
+      ],
+      "places": [
+        "Burton",
+        "Quartermaster Harbor",
+        "Assembly Point",
+        "Mileta",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Burton Town (vashonhistory.com)",
+          "url": "https://www.vashonhistory.com/Publications/time_and_again/burton_town.pdf",
+          "type": "secondary"
+        },
+        {
+          "title": "Revisiting Washington -- Burton",
+          "url": "https://revisitwa.org/waypoint/burton/",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon Library, King County Library System (HistoryLink.org)",
+          "url": "https://www.historylink.org/File/20308",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "community",
+        "burton",
+        "commerce",
+        "social-center",
+        "steamer"
+      ]
+    },
+    {
+      "id": "gro-006",
+      "title": "The Panic of 1893 and Great Fire Strike Vashon Island",
+      "date_start": "1893",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "A nationwide financial collapse and a devastating wildfire in August 1893 combine to halt Vashon Island's boom-era growth, destroying homes and collapsing the brick and lumber markets.",
+      "details": "In 1893, Vashon Island was struck by twin calamities. The national Panic of 1893 caused bank failures across Puget Sound -- 14 of Tacoma's 21 banks collapsed -- crushing demand for the island's brick and lumber products and depressing agricultural prices. Then in August 1893, a wildfire broke out in the logged-off area near the first sawmill (near the present high school site) and raged for two days and nights. Nearly a hundred volunteers fought desperately with shovels, hoes, and rakes to save the Baptist and Presbyterian Churches at Center and the Fuller store. With the flames within two hundred yards of Center, a wind shift on the evening of the second day allowed firefighters to gain control. The Tacoma Yacht Club at Manzanita went bankrupt in 1894 as a direct result of the depression. Population growth on the island slowed significantly for the remainder of the decade.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Center",
+        "Manzanita"
+      ],
+      "sources": [
+        {
+          "title": "The Boom (vashonhistory.com)",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/boom.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Panic of 1893: Seattle's First Great Depression (HistoryLink.org)",
+          "url": "https://www.historylink.org/file/2030",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History (HistoryLink.org)",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "economic-crisis",
+        "wildfire",
+        "panic-of-1893",
+        "depression",
+        "disaster"
+      ]
+    },
+    {
+      "id": "gro-009",
+      "title": "Commercial Strawberry Cultivation Begins",
+      "date_start": "~1893",
+      "date_end": "~1896",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "person",
+        "environment"
+      ],
+      "description": "John Cage Gorsuch plants the first commercial strawberry operation on Vashon Island, harvesting 6,120 pounds per acre by 1896 and launching the island's signature agricultural industry.",
+      "details": "John Cage Gorsuch likely started the first commercial strawberry operation on Vashon Island in the early 1890s, planting strawberries on his property just north of Vashon town. By 1896, Gorsuch was harvesting 6,120 pounds of strawberries from each of his three acres. Other farmers quickly followed suit, drawn by the island's mild maritime climate and rich glacial soils. By 1901, 15,000 crates were shipped off island, and by 1909, the number had grown to 120,000 crates. The Vashon Island News proclaimed Vashon the 'Home of the Big Red Strawberry.' This commercial success laid the foundation for the Japanese American farming community that would come to dominate strawberry production in the following decades.",
+      "people": [
+        "John Cage Gorsuch"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Japanese Presence Project (vashonhistory.com)",
+          "url": "https://www.vashonhistory.com/japanese_presence_main_2.html",
+          "type": "secondary"
+        },
+        {
+          "title": "Island Festivals (Bruce Haulman and Terry Donnelly)",
+          "url": "https://www.vashonhistory.com/Publications/time_and_again/strawberry_festival.pdf",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "agriculture",
+        "strawberries",
+        "farming",
+        "pioneer"
+      ]
+    },
+    {
+      "id": "gro-007",
+      "title": "Burton Masonic Hall Built by Woodmen of the World",
+      "date_start": "1894",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Woodmen of the World fraternal order constructs a two-story lodge hall at Burton, the island's first fraternal building, which still stands as a King County landmark.",
+      "details": "In 1894, the Woodmen of the World -- a fraternal benefit society -- commissioned local carpenter Howard C. Stone to build a two-story gable-front lodge building in Burton overlooking Quartermaster Harbor. The first floor housed commercial uses while the upstairs was reserved for lodge meetings and social gatherings. This was the island's first fraternal building, reflecting Burton's status as the social center of the island. In 1925, Mark P. Waterman Lodge #177, Free and Accepted Masons, took over the building. The hall is now a designated King County landmark and represents the fraternal organizations that shaped island community life in the 1890s.",
+      "people": [
+        "Howard C. Stone"
+      ],
+      "places": [
+        "Burton",
+        "Quartermaster Harbor",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "King County Landmarks: Burton Masonic Hall (1894) (HistoryLink.org)",
+          "url": "https://www.historylink.org/File/2343",
+          "type": "secondary"
+        },
+        {
+          "title": "Burton Masonic Hall (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Burton_Masonic_Hall",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "architecture",
+        "fraternal-organization",
+        "burton",
+        "community",
+        "landmark"
+      ]
+    },
+    {
+      "id": "gro-008",
+      "title": "Opium Washes Ashore on Vashon Island",
+      "date_start": "1895",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Resident J.E. Mace discovers bags of smuggled opium on a Vashon Island beach, revealing the island's position along Pacific Northwest maritime smuggling routes.",
+      "details": "In the spring of 1895, pioneer J.E. Mace found a heavy canvas sack on the beach during his regular Sunday beachcombing. Inside were small tin cans of opium, part of the extensive maritime smuggling trade between Victoria, British Columbia -- then home to 13 opium refining factories -- and Puget Sound ports. Mace showed the substance to a well-traveled neighbor named Hopkins, who identified it as opium. Mace buried it on neighbor Asa Start's property, left a map with his wife, and traveled to Seattle to report his find to the Customs Office. Government agents had already been on the island posing as land buyers. By court order of Judge Hanford in June 1895, Mace received $175 for turning in the opium, which sold for $564. When Mace found a second bag weeks later, he fell under suspicion, and agents used his son Ed's cap to try to lead tracking dogs to a larger cache, but nothing was found.",
+      "people": [
+        "J.E. Mace",
+        "Asa Start"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Bags of opium wash up on Vashon Island in the spring of 1895 (HistoryLink.org)",
+          "url": "https://www.historylink.org/File/3732",
+          "type": "secondary"
+        },
+        {
+          "title": "Dope -- Legends of Vashon, 1895 (The Vashon Loop)",
+          "url": "https://vashonloop.com/wordpress/index.php/2024/04/08/dope-legends-of-vashon-1895/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "smuggling",
+        "opium",
+        "maritime",
+        "law-enforcement",
+        "crime"
+      ]
+    },
+    {
+      "id": "ear-004",
+      "title": "Harrington-Beall Greenhouse Company Established",
+      "date_start": "~1888",
+      "date_end": "~1970",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place",
+        "person"
+      ],
+      "description": "The Harrington-Beall Greenhouse Company grows from an 1888 start into the nation's largest grower of roses and an orchid establishment of international renown, becoming the island's largest employer.",
+      "details": "The Harrington-Beall Greenhouse Company began on a 23-acre site southeast of Vashon's business center in 1888 and operated for 101 years. Partnered with Tom Beall Jr (grandson of founder Lewis Cass Beall Sr), the business grew into a 150,000-square-foot operation with over 50 greenhouses constructed with window glass imported from Belgium. By 1923, it was described as 'without a doubt the largest industry on the Island,' employing 25 to 30 men year-round. The complex contained 59 greenhouses spanning 100 years of greenhouse technology evolution. During World War II, rare orchids from England were shipped to Vashon for safekeeping. Operations were relocated to Bogota, Colombia in the 1970s, and the property was sold in 1989. The district, including the 1885 Hilen Harrington Log House, is a designated King County landmark.",
+      "people": [
+        "Tom Beall Jr",
+        "Lewis Cass Beall Sr"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "King County Landmarks: Harrington-Beall Greenhouse Company Historic District (HistoryLink.org)",
+          "url": "https://www.historylink.org/File/2346",
+          "type": "secondary"
+        },
+        {
+          "title": "Reclaiming the Beall Greenhouses (Vashon Beachcomber)",
+          "url": "https://www.vashonbeachcomber.com/news/reclaiming-the-beall-greenhouses/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "industry",
+        "agriculture",
+        "greenhouse",
+        "roses",
+        "orchids",
+        "employer",
+        "landmark"
+      ]
+    },
+    {
+      "id": "ear-009",
+      "title": "Island Population Triples: 944 to 2,810",
+      "date_start": "1900",
+      "date_end": "1920",
+      "era": "early-20th-century",
+      "layers": [
+        "event"
+      ],
+      "description": "The population of Vashon-Maury Island nearly triples in twenty years, growing from 944 residents in 1900 to 2,423 in 1910 (a 156% increase) and reaching 2,810 by 1920.",
+      "details": "The early 20th century brought the fastest population growth in Vashon Island's history. The 1900 census recorded 944 residents; by 1910 the population had surged 156% to 2,423, driven by expanding agriculture, the arrival of Japanese American farmers, and the island's growing reputation as both a farming community and recreational retreat. By the 1920 census, the population reached 2,810 across nine precincts: Burton, Cove, Dockton, Dolphin, Island, Lisabuela, Maury, Quartermaster, and Vashon. Home ownership rates dropped from 76.4% in 1900 to 66.1% by 1920, reflecting the influx of young single men on the 'Wageworker's Frontier' and rising land costs. Growth slowed sharply during the 1920s agricultural depression, and by 1940 the population had increased only 11% above the 1920 level.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Maury Island",
+        "Burton",
+        "Dockton",
+        "Vashon"
+      ],
+      "sources": [
+        {
+          "title": "Census Project (vashonhistory.com)",
+          "url": "https://www.vashonhistory.com/V%20Census%20Files/census_main.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Population Graph 1880-2010 (vashonhistory.com)",
+          "url": "https://www.vashonhistory.com/V%20Census%20Files/graph_1880_2010_ap_25_14.pdf",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "demographics",
+        "population",
+        "census",
+        "growth"
+      ]
+    },
+    {
+      "id": "ear-008",
+      "title": "Spring Beach Resort and Summer Tourism Flourish",
+      "date_start": "1905",
+      "date_end": "~1920",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Miramar Lodge opens at Spring Beach in 1905, and by 1915 over 8,000 visitors arrive from Tacoma each summer season, making Vashon Island a popular Puget Sound resort destination.",
+      "details": "In 1905, the Miramar Lodge was built at the Spring Beach resort on the southwest shore of Vashon Island, less than three miles from Tacoma's Point Defiance Park. The lodge served as the resort manager's residence, dining room, general store, and post office. A small boat called the Tourist ran back and forth from Point Defiance. By 1915, over 8,000 visitors per summer arrived from Tacoma. The resort offered 50 cabins and many tents for rent, along with hiking trails, boat rentals, clambakes, and fishing. A water fountain shot into the air and landed in an agate-lined pool. Other resorts included the Magnolia Beach community (platted in 1902 by Tacoma resident Charles A. Cook) and the Luseta Beach Resort. Advertisements promised visitors could 'escape the noxious vapors and immoral influences of a crowded city.'",
+      "people": [
+        "Charles A. Cook"
+      ],
+      "places": [
+        "Spring Beach",
+        "Vashon Island",
+        "Magnolia Beach",
+        "Point Defiance"
+      ],
+      "sources": [
+        {
+          "title": "Time and Again: Inn at Magnolia Beach attracted early Vashon tourists (Vashon Beachcomber)",
+          "url": "https://www.vashonbeachcomber.com/news/time-and-again-inn-at-magnolia-beach-attracted-early-vashon-tourists/",
+          "type": "secondary"
+        },
+        {
+          "title": "Private Steamer Docks (My Vashon Island Blog)",
+          "url": "https://myvashonislandblog.com/2019/08/29/resort-community-docks/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "tourism",
+        "resort",
+        "recreation",
+        "summer-destination",
+        "steamer"
+      ]
+    },
+    {
+      "id": "ear-011",
+      "title": "First Paved Road and Automobile Era Transform the Island",
+      "date_start": "1907",
+      "date_end": "1922",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "The first automobiles arrive on Vashon Island in 1907, and by 1921 the island's first paved road -- a cement highway from Center to the Heights ferry dock -- becomes the first paved road on any Puget Sound island.",
+      "details": "The first automobiles reached Vashon Island in 1907, beginning a transformation that historian O.S. Van Olinda called 'the most powerful influence' on island life alongside the telephone. The Vashon Island Auto Club formed to advocate for road improvements and signage. The first auto ferry arrived in 1916, connecting Portage to Des Moines. In 1921, using the Donahue Act (which split road costs between property owners and the state), residents paved the road from Center to the Heights ferry dock with cement laid by Kaiser Corporation -- the first paved road on a Puget Sound island. Named the Leif Hamilton Scenic Highway after a King County councilman, this concrete highway soon linked to other paved roads traversing the island. The Portage-Des Moines ferry route was abandoned in 1922 in favor of the more convenient Vashon Heights-Harper route, and the island's center of gravity shifted from south-facing Burton to the north end.",
+      "people": [
+        "Oliver Scott Van Olinda"
+      ],
+      "places": [
+        "Vashon Island",
+        "Center",
+        "Vashon Heights",
+        "Portage"
+      ],
+      "sources": [
+        {
+          "title": "Town of Vashon 1890-1921 (My Vashon Island Blog)",
+          "url": "https://myvashonislandblog.com/2019/02/01/town-of-vashon-1890-1921/",
+          "type": "secondary"
+        },
+        {
+          "title": "Town of Vashon 1922-1960 (My Vashon Island Blog)",
+          "url": "https://myvashonislandblog.com/2019/03/13/town-of-vashon-1922-1960/",
+          "type": "secondary"
+        },
+        {
+          "title": "Road Map Vashon-Maury Islands (Barry Lawrence Ruderman Antique Maps)",
+          "url": "https://www.raremaps.com/gallery/detail/101043/road-map-vashon-maury-islands-van-olinda",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "transportation",
+        "automobile",
+        "roads",
+        "infrastructure",
+        "paved-road"
+      ]
+    },
+    {
+      "id": "ear-005",
+      "title": "First Strawberry Festival Held on Vashon Island",
+      "date_start": "1909",
+      "era": "early-20th-century",
+      "layers": [
+        "event"
+      ],
+      "description": "The inaugural Vashon Island Strawberry Festival celebrates the island's booming berry industry, with 120,000 crates shipped off-island that year.",
+      "details": "By 1909, strawberry production on Vashon Island had grown from John Cage Gorsuch's pioneering three acres in the 1890s to an industry shipping 120,000 crates annually. The Vashon Island News proclaimed the island the 'Home of the Big Red Strawberry,' and the first Strawberry Festival was organized to celebrate. The festival became annual in 1912, sponsored by the Vashon Federation of Clubs. By the 1910s and 1920s, Japanese American farmers had come to dominate strawberry production. In 1923, 101-year-old Melissa Jaynes was crowned Vashon's first Strawberry Queen. The festival was suspended during WWII and changed names several times (Peach Festival in 1946, Harvest Festival, Island Festival) before reverting to the Strawberry Festival name. It continues today as the island's most anticipated annual event, drawing tens of thousands.",
+      "people": [
+        "Melissa Jaynes"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Island Festivals (Bruce Haulman and Terry Donnelly, vashonhistory.com)",
+          "url": "https://www.vashonhistory.com/Publications/time_and_again/strawberry_festival.pdf",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon Island Strawberry Festival (vashon-maury.com)",
+          "url": "https://vashon-maury.com/strawberry-festival/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "culture",
+        "festival",
+        "strawberries",
+        "agriculture",
+        "community"
+      ]
     },
     {
       "id": "ear-001",
       "title": "Denichiro Mukai's Strawberry Barreling Innovation",
       "date_start": "1910",
       "era": "early-20th-century",
-      "layers": ["event", "person"],
+      "layers": [
+        "event",
+        "person"
+      ],
       "description": "Denichiro Mukai arrives on Vashon Island and develops a renowned method for barreling fresh strawberries that concentrates flavor and moisture.",
       "details": "Denichiro Mukai came to Vashon Island in 1910 and became one of the island's most prominent Japanese American farmers. His innovation in strawberry preservation — a special barreling method that concentrated flavor and moisture — earned him widespread recognition. The Mukai farmstead, including a cold-process fruit barreling plant built in 1926, still stands and is now a heritage site.",
-      "people": ["Denichiro Mukai"],
-      "places": ["Vashon Island", "Mukai Farm"],
+      "people": [
+        "Denichiro Mukai"
+      ],
+      "places": [
+        "Vashon Island",
+        "Mukai Farm"
+      ],
       "sources": [
         {
           "title": "Delve into the Fascinating History of Vashon Island",
@@ -247,18 +2408,70 @@
           "type": "secondary"
         }
       ],
-      "tags": ["agriculture", "innovation", "japanese-american", "strawberries", "preservation"]
+      "tags": [
+        "agriculture",
+        "innovation",
+        "japanese-american",
+        "strawberries",
+        "preservation"
+      ]
+    },
+    {
+      "id": "ear-006",
+      "title": "Puget Mill Company Logs 10 Square Miles of the Island",
+      "date_start": "1910",
+      "date_end": "1915",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "The Puget Mill Company logs 10 sections (10 square miles) of Vashon-Maury Island's 33 total square miles between 1910 and 1915, transforming the island's landscape from forest to open farmland.",
+      "details": "Between 1910 and 1915, the Puget Mill Company conducted intensive industrial-scale logging operations, clearing roughly 30% of Vashon-Maury Island's total land area. This massive deforestation, combined with earlier logging and fires -- including a 1922 blaze that burned the width of the south end from Tahlequah northward for two miles -- gave the island a clearcut appearance. A few large trees were spared in the deepest ravines and can still be seen today. The removal of the old-growth forest permanently altered the island's ecology and directly enabled its transition to an agricultural economy, particularly strawberry farming. By 1994, a WSU Extension forestry assessment found that over 60% of the island had been reforested with second-growth timber.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Maury Island",
+        "Tahlequah"
+      ],
+      "sources": [
+        {
+          "title": "The Boom (vashonhistory.com)",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/boom.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History (HistoryLink.org)",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "logging",
+        "deforestation",
+        "environment",
+        "land-use-change",
+        "puget-mill"
+      ]
     },
     {
       "id": "ear-002",
       "title": "Tombolo Connects Vashon and Maury Islands",
       "date_start": "1913",
       "era": "early-20th-century",
-      "layers": ["event", "environment", "place"],
+      "layers": [
+        "event",
+        "environment",
+        "place"
+      ],
       "description": "A permanent land connection (tombolo) is constructed between Vashon Island and Maury Island, replacing the tidal sandbar.",
       "details": "Before 1913, Vashon and Maury Islands were only connected during low tide by a natural sandbar. The construction of a permanent tombolo created a year-round land bridge between the two islands, fundamentally changing transportation and settlement patterns. This engineering project unified what had been two separate island communities.",
       "people": [],
-      "places": ["Vashon Island", "Maury Island", "Portage"],
+      "places": [
+        "Vashon Island",
+        "Maury Island",
+        "Portage"
+      ],
       "sources": [
         {
           "title": "Vashon, Washington — Wikipedia",
@@ -266,18 +2479,69 @@
           "type": "tertiary"
         }
       ],
-      "tags": ["infrastructure", "engineering", "tombolo", "portage"]
+      "tags": [
+        "infrastructure",
+        "engineering",
+        "tombolo",
+        "portage"
+      ]
+    },
+    {
+      "id": "ear-007",
+      "title": "Vashon Island Electrification Begins at Ellisport",
+      "date_start": "1913",
+      "date_end": "1923",
+      "era": "early-20th-century",
+      "layers": [
+        "event"
+      ],
+      "description": "G.A. Collins builds a steam electric generating plant at Ellisport, bringing the first electric lights to Vashon Island; Governor Lister inaugurates the system in November 1913.",
+      "details": "The Vashon Electric Co. received a franchise to construct a steam electric plant on the island, and G.A. Collins built the facility at Ellisport. The system was inaugurated on November 24, 1913, with Governor Ernest Lister pressing the button. The generator charged 15 cents per kilowatt hour. Power lines were extended to Dockton in 1917. The Vashon Electric Railroad Company was also formed with a 40-year franchise to build an electric railroad from the north to south end of the island, with $50,000 pledged by island farmers, though the railroad was never completed. In 1923, Puget Sound Power & Light Co. purchased the holdings of Washington Coast Utilities, including Vashon's electric and telephone systems, connecting the island to hydroelectric power from the Dieringer plant between Sumner and Auburn.",
+      "people": [
+        "G.A. Collins",
+        "Ernest Lister"
+      ],
+      "places": [
+        "Vashon Island",
+        "Ellisport",
+        "Dockton"
+      ],
+      "sources": [
+        {
+          "title": "Town of Vashon 1890-1921 (My Vashon Island Blog)",
+          "url": "https://myvashonislandblog.com/2019/02/01/town-of-vashon-1890-1921/",
+          "type": "secondary"
+        },
+        {
+          "title": "1923 Vashon Island News-Record Summary (vashonhistory.com)",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Newspaaper/newspaper_1923.html",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "technology",
+        "electrification",
+        "infrastructure",
+        "utility"
+      ]
     },
     {
       "id": "ear-003",
       "title": "First Auto Ferry to Vashon Island",
       "date_start": "1916",
       "era": "early-20th-century",
-      "layers": ["event", "place"],
+      "layers": [
+        "event",
+        "place"
+      ],
       "description": "The King County Ferry System begins auto ferry service with the M.V. Vashon running between Des Moines and Portage.",
       "details": "The arrival of the automobile ferry in 1916 marked a transformative moment for Vashon Island. The M.V. Vashon, operated by the King County Ferry System, connected the island to the mainland at Des Moines via the Portage landing. This made the island far more accessible and accelerated its development as both a farming community and a retreat from urban Seattle.",
       "people": [],
-      "places": ["Vashon Island", "Des Moines", "Portage"],
+      "places": [
+        "Vashon Island",
+        "Des Moines",
+        "Portage"
+      ],
       "sources": [
         {
           "title": "Vashon-Maury Island -- Thumbnail History",
@@ -285,7 +2549,182 @@
           "type": "secondary"
         }
       ],
-      "tags": ["ferry", "transportation", "automobile", "king-county"]
+      "tags": [
+        "ferry",
+        "transportation",
+        "automobile",
+        "king-county"
+      ]
+    },
+    {
+      "id": "ear-010",
+      "title": "Camp Sealth Founded by Camp Fire Girls",
+      "date_start": "1920",
+      "date_end": "1921",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Ruth A. Brown founds Camp Sealth, the first permanent resident camp for girls in Washington State, on Blake Island in 1920; it moves to a 150-acre site on Vashon Island's southwest corner in 1921.",
+      "details": "Camp Sealth was founded in 1920 by Ruth A. Brown as the first permanent resident camp for girls in Washington State, beginning on Blake Island for its inaugural season. In 1921, Camp Fire leaders found an attractive site on the southwest corner of Vashon Island -- 180 acres of former Luseta Beach Resort land with five streams, one mile of beach, an orchard, wharf, and seventeen cottages. A campaign raised $8,585 to purchase the land. Contractor E.J. Rounds volunteered his services, Kiwanis members helped carry lumber and erect posts, and Camp Fire Girls applied paint and hammers to the cottages. On June 26, 1921, seventy-five girls arrived on the Virginia IV to start the first summer at the Vashon site. A south-end forest fire burned part of the camp in 1922, and campers helped fight the blaze. The camp has expanded to nearly 400 acres and has operated for over 100 continuous summers.",
+      "people": [
+        "Ruth A. Brown"
+      ],
+      "places": [
+        "Vashon Island",
+        "Camp Sealth",
+        "Blake Island",
+        "Colvos Passage"
+      ],
+      "sources": [
+        {
+          "title": "Camp Sealth (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Camp_Sealth",
+          "type": "tertiary"
+        },
+        {
+          "title": "Camp Sealth -- Memories we Cherish (Camp Fire Girls Camp Histories)",
+          "url": "https://campfiregirlscamphistories.wordpress.com/tag/camp-sealth/",
+          "type": "secondary"
+        },
+        {
+          "title": "Camp Sealth (vashon-maury.com)",
+          "url": "https://vashon-maury.com/local/camp-sealth/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "camp",
+        "youth",
+        "camp-fire",
+        "recreation",
+        "outdoor-education"
+      ]
+    },
+    {
+      "id": "ear-012",
+      "title": "Mukai Cold Process Fruit Barreling Plant Built",
+      "date_start": "1926",
+      "date_end": "1927",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "The Mukai family purchases 40 acres in their American-born son Masa's name and builds the Cold Process Fruit Barreling Plant, employing over 400 seasonal workers and shipping 200 tons of strawberries annually.",
+      "details": "Unable to own land under Washington's 1921 Alien Land Law, Denichiro 'B.D.' Mukai and his wife purchased 40 acres in 1926 in the name of their American-born son Masahiro 'Masa' Mukai (born 1911 on Vashon Island). They built a one-story wood-frame barreling plant designed by Masa and constructed by local contractor Deb Harrington. Strawberries were packed into wooden barrels using a 2-to-1 ratio of berries to sugar -- 300 pounds of strawberries and 150 pounds of sugar per barrel -- then sent to Spokane Street Cold Storage in Seattle for freezing. In 1928, the family built a Craftsman bungalow with Colonial Revival details, and B.D.'s second wife Kuni created a formal Japanese stroll garden. Throughout the Depression years, the farm prospered, employing over 400 workers annually, including Native Americans who traveled from Vancouver Island by canoe. The company was renamed the Vashon Island Packing Company (VIPCO) in 1938. The plant became a King County landmark in 1993 and was listed on the National Register of Historic Places in 1994.",
+      "people": [
+        "Denichiro Mukai",
+        "Masahiro Mukai",
+        "Kuni Mukai",
+        "Deb Harrington"
+      ],
+      "places": [
+        "Vashon Island",
+        "Mukai Farm"
+      ],
+      "sources": [
+        {
+          "title": "Mukai Cold Process Fruit Barrelling Plant (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Mukai_Cold_Process_Fruit_Barrelling_Plant",
+          "type": "tertiary"
+        },
+        {
+          "title": "1926 to 1942: Success (Mukai Farm & Garden)",
+          "url": "https://mukaifarmandgarden.org/blending-two-cultures/1926-to-1942-success/",
+          "type": "secondary"
+        },
+        {
+          "title": "Mukai, Masahiro (1911-1999) (HistoryLink.org)",
+          "url": "https://www.historylink.org/file/3736",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "agriculture",
+        "japanese-american",
+        "strawberries",
+        "food-processing",
+        "landmark",
+        "alien-land-law"
+      ]
+    },
+    {
+      "id": "ear-014",
+      "title": "The Great Depression Stalls Island Growth",
+      "date_start": "1929",
+      "date_end": "~1940",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "The agricultural depression of the late 1920s and the Great Depression of the 1930s collapse farming and chicken ranching on Vashon Island, leaving many islanders dependent on government construction jobs.",
+      "details": "An agricultural depression in the late 1920s foreshadowed harder times to come. Decreased demand, falling prices, and increased costs hit the island's farming and chicken ranching industries, and the population began to decline before the national Depression even began. During the 1930s, many islanders were unemployed and dependent on government-created construction jobs. New home construction slowed, and the use of seasonal pickers increased as farm families grew smaller and jobs became scarce. Depression-era homes were built with minimal skills from materials obtained at little or no cost -- the Schwartz-Bell house (1930), a pole-frame building sheathed in cedar log slabs, exemplifies this approach. A devastating fire struck the town of Vashon in the middle of the Depression; most buildings were rebuilt within six weeks, with only two remaining unrestored. By 1940, the population had grown only 11% above the 1920 level of 2,810.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Town of Vashon 1922-1960 (My Vashon Island Blog)",
+          "url": "https://myvashonislandblog.com/2019/03/13/town-of-vashon-1922-1960/",
+          "type": "secondary"
+        },
+        {
+          "title": "King County Landmarks: Schwartz-Bell House (1930) (HistoryLink.org)",
+          "url": "https://www.historylink.org/File/2351",
+          "type": "secondary"
+        },
+        {
+          "title": "Time and Again: A History of Housing on Vashon (Vashon Beachcomber)",
+          "url": "https://www.vashonbeachcomber.com/news/time-and-again-a-history-of-housing-on-vashon/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "great-depression",
+        "economic-crisis",
+        "agriculture",
+        "population-decline"
+      ]
+    },
+    {
+      "id": "ear-013",
+      "title": "Filipino Farmworkers Face Anti-Filipino Backlash",
+      "date_start": "1930",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Filipino farmworkers on Vashon Island face harassment, death threats, and violence from white workers fearful of losing jobs in the first year of the Great Depression.",
+      "details": "In the spring of 1930, roughly 50 Filipino workers were expected on Vashon Island to work the fruit ranges around Burton. But as the Great Depression set in, Filipino farmworkers -- already paid roughly half of white workers' wages -- became targets of hateful treatment. Dynamite was exploded outside their living quarters, their jobs were limited to those unwanted by others, and white farm owners who hired Filipinos received death threats. On the night of May 12, 1930, Filipino farmworker Louis Modaranga, employed at the Steen Mill box factory in Ellisport, was attacked by four white men. Modaranga (possibly Pedro Modaranga in census records, a 29-year-old fruit-farm laborer from the Philippines) was charged with felony assault despite testimony from King County Deputy Sheriff F.J. Shattuck that the assault was provoked. None of the white attackers were arrested. The King County prosecutor said Modaranga was unjustly held. Similar anti-Filipino violence occurred in nearby Kent and Auburn.",
+      "people": [
+        "Louis Modaranga"
+      ],
+      "places": [
+        "Vashon Island",
+        "Burton",
+        "Ellisport"
+      ],
+      "sources": [
+        {
+          "title": "Filipino workers face backlash on Vashon Island (HistoryLink.org)",
+          "url": "https://www.historylink.org/File/23198",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "labor",
+        "discrimination",
+        "filipino-american",
+        "great-depression",
+        "racial-violence"
+      ]
     },
     {
       "id": "ww2-001",
@@ -293,11 +2732,18 @@
       "date_start": "1942",
       "date_end": "1945",
       "era": "wwii",
-      "layers": ["event", "person"],
+      "layers": [
+        "event",
+        "person"
+      ],
       "description": "Vashon Island's Japanese American community is forcibly relocated to internment camps under Executive Order 9066, ending 50 years of strawberry farming.",
       "details": "Following the attack on Pearl Harbor and Executive Order 9066, the Japanese American families of Vashon Island were forced to leave their homes and farms for internment camps. This devastated the island's strawberry industry, which had been a cornerstone of the local economy for half a century. Most families lost their land and property. Few returned after the war, and the agricultural landscape of the island was permanently altered.",
-      "people": ["Denichiro Mukai"],
-      "places": ["Vashon Island"],
+      "people": [
+        "Denichiro Mukai"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
       "sources": [
         {
           "title": "Vashon-Maury Island -- Thumbnail History",
@@ -310,18 +2756,276 @@
           "type": "secondary"
         }
       ],
-      "tags": ["internment", "wwii", "japanese-american", "executive-order-9066", "injustice"]
+      "tags": [
+        "internment",
+        "wwii",
+        "japanese-american",
+        "executive-order-9066",
+        "injustice"
+      ]
+    },
+    {
+      "id": "ww2-002",
+      "title": "Day of Exile: Vashon Japanese Americans Forcibly Removed",
+      "date_start": "1942-05-16",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "On May 16, 1942, 111 Japanese Americans are gathered at Ober Park under armed guard and forcibly removed from Vashon Island, ending decades of community life.",
+      "details": "On May 16, 1942, U.S. armed soldiers rounded up 111 islanders of Japanese ancestry at Ober Park in the town of Vashon. Before the war, 132 Japanese Americans lived in 31 households on the island; 17 had already departed for college, military service, or jobs elsewhere. The remaining residents were shipped to Seattle and forced onto rail cars with blackened windows. They were sent first to the Pinedale Assembly Center in the California desert, a temporary holding facility, then transferred to Tule Lake Relocation Center. From Tule Lake, families were eventually scattered across seven of the nine West Coast concentration camps, including Heart Mountain in Wyoming and Minidoka in Idaho. The day is now commemorated annually on Vashon as the 'Day of Exile.'",
+      "people": [
+        "Heisuke Matsuda",
+        "Mitsuno Matsuda",
+        "Mary Matsuda Gruenewald",
+        "Yoneichi Matsuda"
+      ],
+      "places": [
+        "Vashon Island",
+        "Ober Park",
+        "Pinedale Assembly Center",
+        "Tule Lake",
+        "Heart Mountain",
+        "Minidoka"
+      ],
+      "sources": [
+        {
+          "title": "Ceremony will commemorate Day of Exile at Ober Park - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/ceremony-will-commemorate-day-of-exile-at-ober-park/",
+          "type": "secondary"
+        },
+        {
+          "title": "1942 to 1945 | Exile - Mukai Farm & Garden",
+          "url": "https://mukaifarmandgarden.org/blending-two-cultures/exile/",
+          "type": "secondary"
+        },
+        {
+          "title": "Man remembers family, island struggles 74 years after Japanese internment - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/man-remembers-family-island-struggles-74-years-after-japanese-internment/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "internment",
+        "wwii",
+        "japanese-american",
+        "day-of-exile",
+        "ober-park",
+        "forced-removal"
+      ]
+    },
+    {
+      "id": "ww2-003",
+      "title": "Mukai Family Self-Exiles to Oregon Before Internment Order",
+      "date_start": "1942-03",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Tipped off by a military friend, Masahiro (Masa) Mukai moves his family from Vashon to Dead Ox Flat, Oregon, becoming voluntary evacuees who avoid the internment camps.",
+      "details": "Masa Mukai received advance warning of the coming internment from a friend in the U.S. military. Rather than wait for the forced removal, he left the family's strawberry farm and cold-process fruit barreling business in the hands of trusted neighbors and moved his family -- wife Chiyeko, mother Kuni, and son Milton -- to Dead Ox Flat (also known as Dead Ox Flats) in eastern Oregon, where Chiyeko had relatives. Although they avoided imprisonment, they encountered hostility and prejudice nonetheless. Masa purchased 100 acres and farmed row crops, even inventing his own seed harvester. The four Mukai family members were the only Vashon Japanese Americans to avoid the concentration camps.",
+      "people": [
+        "Masahiro Mukai",
+        "Chiyeko Mukai",
+        "Kuni Mukai",
+        "Milton Mukai"
+      ],
+      "places": [
+        "Vashon Island",
+        "Dead Ox Flat, Oregon",
+        "Mukai Farm"
+      ],
+      "sources": [
+        {
+          "title": "Masahiro Mukai (1911-1999) - HistoryLink.org",
+          "url": "https://www.historylink.org/file/3736",
+          "type": "secondary"
+        },
+        {
+          "title": "Chapter 3 - Overcoming Adversity: Masa Mukai's Remarkable Story - Discover Nikkei",
+          "url": "https://discovernikkei.org/en/journal/2025/6/18/vashon-mukai-story-3/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "internment",
+        "wwii",
+        "japanese-american",
+        "mukai-family",
+        "voluntary-evacuee"
+      ]
+    },
+    {
+      "id": "ww2-004",
+      "title": "Army Units Stationed on Vashon for Puget Sound Defense",
+      "date_start": "1942",
+      "date_end": "1945",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "U.S. Army units are deployed to Vashon Island as part of the Puget Sound defense system, with headquarters at Center School.",
+      "details": "In early 1942, Army units were assigned to Vashon as part of the broader Puget Sound defense system following the attack on Pearl Harbor and fears of Japanese naval attacks on the Pacific coast. The Army established its headquarters at the Center School, located at the southeast corner of Vashon Highway and S.W. 204th Street. This military presence marked the beginning of decades of defense installations on the island, which would later include Nike missile sites during the Cold War.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Center School",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Time&Again: Vestiges of Vashon's military past remain - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/life/timeagain-vestiges-of-vashons-military-past-remain/",
+          "type": "secondary"
+        },
+        {
+          "title": "Transformation 1920-1945 - Vashon History",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/transfornations.htm",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "wwii",
+        "military",
+        "defense",
+        "puget-sound"
+      ]
+    },
+    {
+      "id": "ww2-007",
+      "title": "Collapse of Vashon Strawberry Industry After Internment",
+      "date_start": "1942",
+      "date_end": "1950",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "The forced removal of Japanese American farmers devastates Vashon's strawberry industry, which had been a cornerstone of the island economy for over 50 years.",
+      "details": "Before the internment, Japanese American families were the backbone of Vashon's strawberry industry, which had thrived since the 1890s. When 111 Japanese Americans were forcibly removed in May 1942, their farms were abandoned or taken over by others. The specialized knowledge, labor networks, and farming infrastructure built over decades were lost almost overnight. The Mukai cold-process fruit barreling plant, which had been a significant agricultural enterprise, ceased operations. After the war, only a fraction of the Japanese American farmers returned, and the industry never recovered its former scale. This agricultural collapse contributed to the island's economic transition away from farming toward other industries and eventually toward its identity as a bedroom community and arts enclave.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Time and Again: Roots and Branches of Island Agriculture - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/life/time-and-again-roots-and-branches-of-island-agriculture/",
+          "type": "secondary"
+        },
+        {
+          "title": "Digging into Japanese American Farming History on Vashon Island - Discover Nikkei",
+          "url": "https://discovernikkei.org/en/journal/2018/5/7/vashon-island/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "agriculture",
+        "strawberries",
+        "japanese-american",
+        "economic-decline",
+        "internment-impact"
+      ]
+    },
+    {
+      "id": "ww2-005",
+      "title": "Yoneichi Matsuda Joins 442nd Regimental Combat Team",
+      "date_start": "1943",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Yoneichi Matsuda, from a Vashon Island strawberry farming family, volunteers from Heart Mountain internment camp to serve in the U.S. Army's legendary 442nd Regimental Combat Team.",
+      "details": "While interned at Heart Mountain War Relocation Center in Wyoming, Yoneichi Matsuda -- whose family had farmed strawberries on Vashon Island since 1927 -- volunteered to serve in the U.S. Army's 442nd Regimental Combat Team. The 442nd was composed almost entirely of Japanese American men and became the most decorated unit for its size and length of service in U.S. military history, fighting in the European theater against Nazi forces. His sister Mary Matsuda later described his departure from camp as one of the saddest days of the family's life. Mary herself would eventually leave the camps to join the U.S. Cadet Nurse Corps.",
+      "people": [
+        "Yoneichi Matsuda",
+        "Mary Matsuda Gruenewald"
+      ],
+      "places": [
+        "Heart Mountain",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Book Review: Looking Like The Enemy - Discover Nikkei",
+          "url": "https://discovernikkei.org/en/journal/2010/9/1/looking-like-the-enemy/",
+          "type": "secondary"
+        },
+        {
+          "title": "Mary Matsuda Gruenewald - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mary_Matsuda_Gruenewald",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "wwii",
+        "japanese-american",
+        "442nd",
+        "military-service",
+        "matsuda-family"
+      ]
+    },
+    {
+      "id": "ww2-006",
+      "title": "Partial Return of Japanese Americans to Vashon",
+      "date_start": "1945",
+      "date_end": "1947",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Only about one-third of Vashon's exiled Japanese Americans return to the island after the war; many find their property lost or destroyed.",
+      "details": "After the war ended and the camps were closed, only about one-third of the 111 Japanese Americans forcibly removed from Vashon on May 16, 1942, returned to the island. Many families had lost all their belongings except what they could carry in two suitcases. Some learned that homes belonging to Japanese residents had been burned during the war. Political hostility toward returning Japanese Americans in Washington State discouraged others from coming back. The Sakaharas, for example, chose not to return and rebuilt their lives elsewhere. The Mukai family did return from self-exile in Oregon, reopened their home and garden, resumed strawberry farming, and restarted their cold-process fruit barreling plant. The once-thriving Japanese American farming community on Vashon was permanently diminished.",
+      "people": [
+        "Masahiro Mukai",
+        "Kuni Mukai"
+      ],
+      "places": [
+        "Vashon Island",
+        "Mukai Farm"
+      ],
+      "sources": [
+        {
+          "title": "1945 - When Once Exiled, Imprisoned Families Returned Home - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/1945-when-once-exiled-imprisoned-families-returned-home/",
+          "type": "secondary"
+        },
+        {
+          "title": "Japanese family farm reflects a troubled time in our history - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/japanese-family-farm-reflects-a-troubled-time-in-our-history/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "wwii",
+        "japanese-american",
+        "return",
+        "post-war",
+        "property-loss"
+      ]
     },
     {
       "id": "fer-001",
       "title": "Washington State Ferries Begins Service",
       "date_start": "1951-06-01",
       "era": "state-ferry",
-      "layers": ["event", "place"],
+      "layers": [
+        "event",
+        "place"
+      ],
       "description": "Washington State Ferries takes over island ferry service on June 1, 1951, replacing the private Vashon Ferry System.",
       "details": "After the private Vashon Ferry System operated for three years, Washington State Ferries assumed control of the route on June 1, 1951. This transition brought the island into the state transportation network. Around this time, state officials proposed connecting Vashon-Maury Island to the mainland with bridges, but islanders increasingly opposed the idea, fearing it would destroy the island's rural character and invite urban sprawl.",
       "people": [],
-      "places": ["Vashon Island", "Fauntleroy Terminal", "Southworth"],
+      "places": [
+        "Vashon Island",
+        "Fauntleroy Terminal",
+        "Southworth"
+      ],
       "sources": [
         {
           "title": "Vashon-Maury Island -- Thumbnail History",
@@ -329,7 +3033,206 @@
           "type": "secondary"
         }
       ],
-      "tags": ["ferry", "state-ferry", "transportation", "bridge-debate"]
+      "tags": [
+        "ferry",
+        "state-ferry",
+        "transportation",
+        "bridge-debate"
+      ]
+    },
+    {
+      "id": "fer-002",
+      "title": "Nike Missile Base S-61 Established on Vashon Island",
+      "date_start": "1953",
+      "date_end": "1974",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The U.S. Army establishes Nike missile site S-61 on Vashon Island as part of a twelve-site defense ring protecting Seattle during the Cold War.",
+      "details": "In 1953, as Cold War fears of Soviet atomic attacks on Seattle grew, the U.S. Army deployed the 513th Air Defense Battalion's Battery C ('Charlie Battery') on Vashon with anti-aircraft guns. Between 1956 and 1957, the government purchased land through eminent domain for three sites: Sunrise Ridge (administration and fire control), Paradise Ridge (missile launch area with underground silos), and Oakwood Terrace (housing). The base was designated S-61 in the twelve-site Metropolitan Defense Ring surrounding Seattle. Initially armed with Nike Ajax missiles, the site was upgraded to Nike Hercules in June 1960 -- one of only three Seattle-area bases to receive the more powerful missiles. The 433rd Anti-Aircraft Artillery Missile Battalion, Battery A, operated the base until its closure in 1974. The Sunrise Ridge site, ironically, had been a strawberry farm owned by the Matsumoto family before the government condemned the land.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Sunrise Ridge",
+        "Paradise Ridge",
+        "Oakwood Terrace"
+      ],
+      "sources": [
+        {
+          "title": "The Nike Base - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/the-nike-base/",
+          "type": "secondary"
+        },
+        {
+          "title": "Nike Missile Bases: Washington State Cold War Defenses - HistoryLink.org",
+          "url": "https://www.historylink.org/file/9711",
+          "type": "secondary"
+        },
+        {
+          "title": "Sunrise Ridge - Vashon History",
+          "url": "https://www.vashonhistory.com/Publications/time_and_again/sunrise_ridge.pdf",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "cold-war",
+        "military",
+        "nike-missile",
+        "defense",
+        "nuclear"
+      ]
+    },
+    {
+      "id": "fer-003",
+      "title": "Vashon Bridge Proposal Defeated in State Legislature",
+      "date_start": "1959-03-12",
+      "era": "state-ferry",
+      "layers": [
+        "event"
+      ],
+      "description": "A bill to fund a bridge connecting Vashon Island to the mainland dies in the Washington State Senate after Lt. Governor John Cherberg's procedural ruling, effectively killing the most serious bridge proposal in island history.",
+      "details": "By the late 1950s, the Washington Toll Bridge Authority had advanced an ambitious plan to build a cross-sound highway: a floating bridge from Fauntleroy to Vashon (which would have been the largest floating structure ever built at 11,666 feet), a superhighway across the island, and a suspension bridge across Colvos Passage to the Kitsap Peninsula. Engineers estimated 3-4 million vehicle crossings in the first year, with construction costs of approximately $100 million. On March 12, 1959, after the state legislature struggled for nearly three months during a second special session, the House passed the appropriations bill. However, Lt. Governor John Cherberg, who served as Senate president, ruled that the House bill had broadened the original scope and must return to committee. A vote to override Cherberg's ruling failed 21 to 28. The bill died in the Highways Committee and the bridge was never built. Opponents included the Pilots Association, the Port of Tacoma, and Eastern Washington legislators, along with a growing number of Vashon residents who feared becoming 'another Mercer Island.'",
+      "people": [
+        "John Cherberg"
+      ],
+      "places": [
+        "Vashon Island",
+        "Fauntleroy",
+        "Colvos Passage",
+        "Kitsap Peninsula"
+      ],
+      "sources": [
+        {
+          "title": "TIME & AGAIN: Vashon's unlikely hero - the man who prevented the building of a bridge - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/time-s-unlikely-hero-the-man-who-prevented-the-building-of-a-bridge/",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon Island residents object to a proposed bridge from Seattle at a public meeting on March 9, 1992 - HistoryLink.org",
+          "url": "https://www.historylink.org/File/3911",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "bridge-debate",
+        "transportation",
+        "legislation",
+        "community-identity"
+      ]
+    },
+    {
+      "id": "fer-004",
+      "title": "Vashon Allied Arts Becomes Oldest Private Nonprofit Arts Organization in Washington",
+      "date_start": "1966",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Vashon Allied Arts (formerly the Vashon Arts League, founded 1949) receives its 501(c)(3) nonprofit status, becoming the oldest private nonprofit community arts organization in Washington State.",
+      "details": "The Vashon arts community traces its institutional roots to 1949, when island artists Fred Eernisse, Norman Edson, and Art Hansen formed the Vashon Arts League to show art created by islanders. After moving through several temporary homes -- the Lisabuela schoolhouse and the Cove Road Church -- the organization was revitalized by Shirley Speidel and others who found a home in the old Boy Scout Cabin at Ober Park. In 1966, the organization received 501(c)(3) status under the name Vashon Associated Arts, making it the oldest private nonprofit community arts organization in the state. The organization would eventually become Vashon Center for the Arts (VCA), growing into the island's largest nonprofit with programs in visual arts, performing arts, arts education, and dance.",
+      "people": [
+        "Fred Eernisse",
+        "Norman Edson",
+        "Art Hansen",
+        "Shirley Speidel"
+      ],
+      "places": [
+        "Vashon Island",
+        "Ober Park"
+      ],
+      "sources": [
+        {
+          "title": "VCA History - Vashon Center for the Arts",
+          "url": "https://vashoncenterforthearts.org/about/vca-history/",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "arts",
+        "nonprofit",
+        "community",
+        "culture"
+      ]
+    },
+    {
+      "id": "fer-005",
+      "title": "Counterculture Influx Transforms Vashon Island",
+      "date_start": "~1970",
+      "date_end": "~1975",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "An estimated 200-700 counterculture migrants settle on Vashon Island during the Boeing Bust era, fundamentally reshaping the island's cultural identity.",
+      "details": "The Boeing Bust and economic downturn of the early 1970s created an opening for counterculture and alternative-lifestyle individuals to find affordable housing on Vashon. As island families left to seek employment, small abandoned farms became available at low rents. By 1971, an estimated 200-700 'hippies' lived on the island alongside about 6,500 existing residents. A planned Memorial Day Weekend Rock Festival in Paradise Valley in 1970 sparked community tensions -- three loggers held down and forcibly cut the hair of 17-year-old Tony Grant, shops posted 'No Shoes, No Shirts, No Service' signs, and some called for an armed 'Sheriff's Deputy Auxiliary' to control the supposed invasion. Over 700 people attended a hearing and shouted down the armed patrol idea. Cannabis cultivation became widespread, earning Vashon the lasting nickname 'Weed Island' for the high-quality 'Vashon Gold' strain sold across the West Coast. Despite early friction, the counterculture movement permanently transformed Vashon from a quiet agricultural community into the progressive, arts-oriented enclave celebrated by the bumper sticker 'Keep Vashon Weird.'",
+      "people": [
+        "Tony Grant"
+      ],
+      "places": [
+        "Vashon Island",
+        "Paradise Valley"
+      ],
+      "sources": [
+        {
+          "title": "Time & Again: Remembering Vashon's Woodstock - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/time-again-remembering-vashons-woodstock/",
+          "type": "secondary"
+        },
+        {
+          "title": "Time and Again: A History of Housing on Vashon - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/time-and-again-a-history-of-housing-on-vashon/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "counterculture",
+        "hippie",
+        "cultural-change",
+        "boeing-bust",
+        "weed-island"
+      ]
+    },
+    {
+      "id": "mod-011",
+      "title": "The Bike in the Tree: Vashon's Accidental Landmark",
+      "date_start": "~1954",
+      "era": "modern",
+      "layers": [
+        "place"
+      ],
+      "description": "A child's red bicycle left in the woods by Don Puz in 1954 is gradually absorbed by a growing fir tree, becoming one of Vashon Island's most iconic and quirky landmarks.",
+      "details": "In 1954, the Puz family suffered a devastating house fire that killed Don Puz's father and destroyed all their possessions. In true 'Vashon fashion,' neighbors donated household items to help the family rebuild, including a red bicycle for young Don. At some point, Don left the bicycle leaning against a small fir tree in the woods near what is now Vashon Highway SW and SW 204th Street, behind the building called Sound Food. Over the decades, the tree grew around the bicycle, gradually absorbing it into the trunk. The sight became a beloved local attraction and the inspiration for Berkeley Breathed's children's book 'Red Ranger Came Calling.' A widely circulated but false internet story claims the bike belonged to a boy who left it to fight in World War I and never returned. Jeff Ammon, who owned Vashon's only bike shop, maintained the landmark by replacing handlebars and wheels when vandals stripped them. Don Puz, who grew up to become a King County Sheriff's deputy, confirmed his ownership when he returned to see the tree decades later.",
+      "people": [
+        "Don Puz",
+        "Jeff Ammon",
+        "Berkeley Breathed"
+      ],
+      "places": [
+        "Vashon Island",
+        "Vashon Highway SW"
+      ],
+      "sources": [
+        {
+          "title": "Vashon Island's 'Bike in the Tree' - HistoryLink.org",
+          "url": "https://www.historylink.org/File/10917",
+          "type": "secondary"
+        },
+        {
+          "title": "Islander sets the record straight about Vashon's bike in a tree - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/life/islander-sets-the-record-straight-about-vashons-bike-in-a-tree/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "landmark",
+        "quirky",
+        "local-legend",
+        "community-character"
+      ]
     },
     {
       "id": "mod-001",
@@ -337,11 +3240,15 @@
       "date_start": "~1960",
       "date_end": "~2000",
       "era": "modern",
-      "layers": ["event"],
+      "layers": [
+        "event"
+      ],
       "description": "Vashon Island residents successfully resist repeated proposals to build a fixed bridge to the mainland, preserving the island's rural isolation.",
       "details": "Over several decades, various proposals to connect Vashon Island to the mainland via bridge were debated and ultimately rejected. Islanders recognized that a bridge would fundamentally alter the character of their community, making it a suburb of Seattle rather than a distinct island community. The ferry-dependent isolation became a defining and deliberately preserved feature of island life.",
       "people": [],
-      "places": ["Vashon Island"],
+      "places": [
+        "Vashon Island"
+      ],
       "sources": [
         {
           "title": "Vashon, Washington — Wikipedia",
@@ -349,7 +3256,59 @@
           "type": "tertiary"
         }
       ],
-      "tags": ["preservation", "bridge-debate", "rural-character", "community-identity"]
+      "tags": [
+        "preservation",
+        "bridge-debate",
+        "rural-character",
+        "community-identity"
+      ]
+    },
+    {
+      "id": "mod-003",
+      "title": "K2 Corporation Founded on Vashon Island",
+      "date_start": "1962",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Brothers Bill and Don Kirschner found K2 Corporation on Vashon Island, pioneering fiberglass ski technology that revolutionizes the ski industry.",
+      "details": "Bill Kirschner, a University of Washington engineering graduate, had been experimenting with fiberglass skis in his grandfather Otto's garage on Vashon Island since the 1950s while running Kirschner Manufacturing, which produced veterinary splints and research cages from fiberglass. After years of prototypes that broke apart during testing at Crystal Mountain, Bill perfected a wet-wrap fiberglass process in 1961. In 1962, he and brother Don formally founded K2 -- named for both the world's second-highest mountain and the two Kirschner brothers. Only 250 pairs shipped in 1964, but by 1967 the business was separated from Kirschner Manufacturing, and by 1968, K2 was selling 21,000 pairs annually with 83 employees. The company's racing program brought instant success with U.S. Ski Team adoption. At its peak, the Vashon factory employed approximately 750 islanders, making K2 the largest private employer on the island.",
+      "people": [
+        "Bill Kirschner",
+        "Don Kirschner",
+        "Otto Kirschner"
+      ],
+      "places": [
+        "Vashon Island",
+        "Vashon Highway"
+      ],
+      "sources": [
+        {
+          "title": "K2 Corporation (K2 Sports) -- a History - HistoryLink.org",
+          "url": "https://www.historylink.org/File/3901",
+          "type": "secondary"
+        },
+        {
+          "title": "K2's Impactful History on Vashon Island",
+          "url": "https://vashon-maury.com/vashon-island-history/k2-vashon-island/",
+          "type": "secondary"
+        },
+        {
+          "title": "Time&Again: K2 Skis began an illustrious career here on Vashon Island - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/life/timeagain-k2-skis-began-an-illustrious-career-here-on-vashon-island/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "industry",
+        "manufacturing",
+        "k2-sports",
+        "skiing",
+        "innovation",
+        "fiberglass"
+      ]
     },
     {
       "id": "mod-002",
@@ -357,11 +3316,16 @@
       "date_start": "~1970",
       "date_end": "~2005",
       "era": "modern",
-      "layers": ["event", "place"],
+      "layers": [
+        "event",
+        "place"
+      ],
       "description": "K2 Sports operates a major ski and sporting goods manufacturing facility on Vashon Island before eventually moving production to China.",
       "details": "K2 Sports was one of Vashon Island's largest employers, manufacturing skis and other sporting equipment on the island for decades. The company's eventual decision to move manufacturing to China represented a significant economic shift for the island, as it lost one of its few major industrial employers. Similarly, Seattle's Best Coffee operated a roastery on the island until it was acquired by Starbucks and the operation was closed.",
       "people": [],
-      "places": ["Vashon Island"],
+      "places": [
+        "Vashon Island"
+      ],
       "sources": [
         {
           "title": "Vashon, Washington — Wikipedia",
@@ -369,7 +3333,351 @@
           "type": "tertiary"
         }
       ],
-      "tags": ["industry", "manufacturing", "economic-change", "k2-sports"]
+      "tags": [
+        "industry",
+        "manufacturing",
+        "economic-change",
+        "k2-sports"
+      ]
+    },
+    {
+      "id": "mod-004",
+      "title": "Stewart Brothers Coffee Opens Roastery on Vashon Island",
+      "date_start": "1982",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Jim Stewart moves his coffee roasting operation to Vashon Island, establishing the roastery that would become Seattle's Best Coffee.",
+      "details": "In 1982, coffee entrepreneur Jim Stewart moved his roasting facilities to Vashon Island, purchasing a historic building constructed from old-growth island fir in the town of Vashon. The building featured an expansive covered porch, high ceilings, wooden floors, and an underground cellar perfect for storing rare coffee beans. Stewart had started in the coffee business in 1969 with the Wet Whisker ice cream and coffee shop on Whidbey Island. After winning first place in a regional coffee tasting competition judged by the area's top chefs, the company changed its name from Stewart Brothers Coffee to Seattle's Best Coffee (SBC). The Vashon roastery became the birthplace and production center for one of the Pacific Northwest's most iconic coffee brands. Starbucks acquired SBC in July 2003 and closed the Vashon facility on October 23, 2003, moving production to their Kent, Washington roastery. The historic building was later reopened as The Vashon Island Coffee Roasterie, still roasting coffee with the original equipment.",
+      "people": [
+        "Jim Stewart"
+      ],
+      "places": [
+        "Vashon Island",
+        "Vashon Island Coffee Roasterie"
+      ],
+      "sources": [
+        {
+          "title": "Birthplace of Seattle's Best Coffee - The Vashon Island Coffee Roasterie",
+          "url": "https://tvicr.com/sbc/",
+          "type": "primary"
+        },
+        {
+          "title": "Seattle's Best Coffee - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Seattle%27s_Best_Coffee",
+          "type": "tertiary"
+        },
+        {
+          "title": "The original Seattle's Best Coffee is on Vashon Island - Seattle Refined",
+          "url": "https://seattlerefined.com/eat-drink/the-original-seattles-best-coffee-is-on-vashon-island",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "coffee",
+        "industry",
+        "seattles-best",
+        "small-business",
+        "roastery"
+      ]
+    },
+    {
+      "id": "mod-005",
+      "title": "Vashon Island Farmers Market Established",
+      "date_start": "~1985",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "description": "The Vashon Island Growers Association (VIGA) establishes a farmers market, sparking a revival of sustainable agriculture on the island.",
+      "details": "In the mid-1980s, a group of islanders formed the Vashon Island Growers Association (VIGA) with the goal of creating on-island farming jobs. They started a small farmers market near the Post Office and joined Washington Tilth, a statewide organization promoting local organic agriculture. By 1990, the market moved to its current site at the Village Green. In 1998, VIGA received a grant to build a permanent shed structure, and the following year led a community-wide effort that raised over $200,000 to purchase the Village Green property. The market became a catalyst for the fifth stage of island agricultural history: a revival of sustainable and organic farming methods after decades of agricultural decline following the WWII internment and postwar economic shifts. VIGA also developed educational programs including a horticulture curriculum at Vashon High School. The Saturday market now runs April through October, featuring farm produce, local crafts, prepared foods, and live music.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Village Green"
+      ],
+      "sources": [
+        {
+          "title": "About - Vashon Island Growers Association",
+          "url": "https://www.vigavashon.org/what-we-do",
+          "type": "primary"
+        },
+        {
+          "title": "Time and Again: Roots and Branches of Island Agriculture - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/life/time-and-again-roots-and-branches-of-island-agriculture/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "agriculture",
+        "organic-farming",
+        "farmers-market",
+        "community",
+        "sustainable"
+      ]
+    },
+    {
+      "id": "mod-006",
+      "title": "Vashon-Maury Island Land Trust Founded",
+      "date_start": "1989",
+      "era": "modern",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "Islanders establish the Vashon-Maury Island Land Trust to preserve natural areas, beginning with the purchase of Whispering Firs Bog.",
+      "details": "In 1989, a dedicated group of islanders concerned about preserving Vashon's natural character informally organized to purchase Whispering Firs Bog, a fragile and unique wetland ecosystem near the Episcopal Church. The organization formally incorporated in 1990 as the Vashon-Maury Island Land Trust. Since its founding, the Land Trust has permanently protected over 2,000 acres of land, built 10 miles of public trails, and preserved key natural features including salmon-bearing streams, major ponds, diverse forests, and shoreline areas. Notable preserves include Shinglemill Creek, Judd Creek, Fisher Pond, and Christensen Pond. The Land Trust also permanently protected the remaining 12 acres of the historic Matsuda Farm, linking conservation with Japanese American heritage preservation. The organization launched programs like 'Seven over Seventy' to conserve large private holdings and 'The Four Creeks Campaign' to protect the island's major watersheds. Vashon carries half of all King County's shorelines, giving the Land Trust an outsized role in Puget Sound aquatic habitat protection.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Maury Island",
+        "Whispering Firs Bog",
+        "Shinglemill Creek",
+        "Judd Creek"
+      ],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island Land Trust",
+          "url": "https://www.vashonlandtrust.org/",
+          "type": "primary"
+        },
+        {
+          "title": "New Land Trust director looks to the future of conservation - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/new-land-trust-director-looks-to-the-future-of-conservation/",
+          "type": "secondary"
+        },
+        {
+          "title": "Land Trust makes big gains in 2023 - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/land-trust-makes-big-gains-in-2023/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "conservation",
+        "land-trust",
+        "environment",
+        "preservation",
+        "shoreline"
+      ]
+    },
+    {
+      "id": "mod-007",
+      "title": "Mukai Farm Listed on National Register of Historic Places",
+      "date_start": "1994",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place",
+        "person"
+      ],
+      "description": "The Mukai Farm and Garden on Vashon Island is listed on the National Register of Historic Places, preserving one of the last intact pre-WWII Japanese American farmsteads in America.",
+      "details": "In 1993, the Mukai house, Japanese garden, and cold-process fruit barreling plant -- along with the five acres remaining of the original 60-acre farm -- were designated a King County Landmark. The following year, 1994, the site was included on the National Register of Historic Places. The property was founded by Issei pioneer B.D. (Denichiro) Mukai in 1926 as a strawberry farm. The Japanese garden was designed and installed in the 1930s by Kuni Mukai, a Japanese immigrant woman -- making it the only known Japanese garden of that era designed by a woman. The nonprofit Friends of Mukai maintains the property as a heritage site and cultural center, hosting the annual Japan Festival, Day of Exile commemorations, and public tours. The 'Nisei Trilogy,' a collaborative artwork by poet Lawrence Matsuda and artist Roger Shimomura depicting the Japanese American wartime experience, is on permanent display in the Mukai house.",
+      "people": [
+        "Denichiro Mukai",
+        "Kuni Mukai",
+        "Lawrence Matsuda",
+        "Roger Shimomura"
+      ],
+      "places": [
+        "Vashon Island",
+        "Mukai Farm and Garden"
+      ],
+      "sources": [
+        {
+          "title": "About Mukai Farm and Garden - Mukai Farm & Garden",
+          "url": "https://mukaifarmandgarden.org/about/",
+          "type": "primary"
+        },
+        {
+          "title": "Revisiting Washington - Japanese American Heritage on Vashon Island",
+          "url": "https://revisitwa.org/local_theme/japanese-american-heritage-on-vashon-island/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "heritage",
+        "national-register",
+        "japanese-american",
+        "mukai-family",
+        "preservation"
+      ]
+    },
+    {
+      "id": "mod-008",
+      "title": "Glacier Northwest Gravel Mine Controversy on Maury Island",
+      "date_start": "1998",
+      "date_end": "2010-12-30",
+      "era": "modern",
+      "layers": [
+        "event",
+        "environment",
+        "place"
+      ],
+      "description": "A 13-year battle over Glacier Northwest's proposed gravel mine expansion on Maury Island ends when King County purchases the 200-acre site for $36 million, creating a new county park.",
+      "details": "Glacier Northwest had operated a gravel mine on the southern tip of Maury Island since the 1940s. In 1998, the company announced plans to dramatically expand operations to approximately 7.5 million tons of gravel per year, including construction of a 305-foot pier for barge transport. The proposal ignited fierce community opposition led by Preserve Our Islands, a grassroots organization founded by Sharon Nelson. Environmental concerns included arsenic contamination from decades of ASARCO smelter fallout, threats to an aquatic reserve surrounding the site (one of only four in Washington), potential harm to endangered Southern Resident orca whales from barge noise, and drinking water contamination. Over 500 islanders rallied at Gold Beach in one of Vashon's largest protests. After Glacier Northwest won multiple legal battles and began pier construction, a federal judge blocked further work in 2009, ruling the Army Corps of Engineers had acted 'arbitrarily and capriciously' in violation of the Endangered Species Act. On December 30, 2010, King County Executive Dow Constantine completed the purchase of the site for $36 million, funded through the Asarco settlement, Conservation Futures fund, and a CalPortland lease extension. The parcel became a county park, protecting a mile of shoreline and over 200 acres of madrone forest adjacent to the 320-acre Maury Island Regional Marine Park.",
+      "people": [
+        "Sharon Nelson",
+        "Dow Constantine"
+      ],
+      "places": [
+        "Maury Island",
+        "Gold Beach",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Environmental issues on Maury Island - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Environmental_issues_on_Maury_Island",
+          "type": "tertiary"
+        },
+        {
+          "title": "County gets the keys to Maury Island Property - King County",
+          "url": "https://kingcounty.gov/en/dept/executive/governance-leadership/king-county-executive/news/archive/2010/december/30maury",
+          "type": "primary"
+        },
+        {
+          "title": "County announces deal to purchase Glacier Northwest mine site for $36 million - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/county-announces-deal-to-purchase-glacier-northwest-mine-site-for-36-million/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "environment",
+        "gravel-mining",
+        "conservation",
+        "community-activism",
+        "maury-island",
+        "orca"
+      ]
+    },
+    {
+      "id": "mod-009",
+      "title": "K2 Sports Moves Manufacturing Off Vashon Island",
+      "date_start": "2001",
+      "date_end": "2006-06-22",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "K2 Sports relocates manufacturing from Vashon Island to Guangdong, China in 2001, and moves its business offices to Seattle's Industrial District in 2006, ending over 40 years on the island.",
+      "details": "In 2001, facing pressure to remain financially competitive in a globalizing market, K2 Sports moved its manufacturing operations from Vashon Island to Guangdong, China. At its peak, the Vashon factory had employed approximately 750 local people, making K2 one of the island's largest private employers. On June 22, 2006, K2 announced it was also relocating its business offices from Vashon Island to Seattle's Industrial District. The original factory building on Vashon Highway remained vacant for over a decade until its sale in July 2018 to Sound Properties, LLC. The departure of K2 represented a significant economic blow to Vashon, accelerating the island's transition from a place with industrial employment to primarily a residential and arts community.",
+      "people": [],
+      "places": [
+        "Vashon Island",
+        "Vashon Highway"
+      ],
+      "sources": [
+        {
+          "title": "K2 Corporation (K2 Sports) -- a History - HistoryLink.org",
+          "url": "https://www.historylink.org/File/3901",
+          "type": "secondary"
+        },
+        {
+          "title": "K2 Sports - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/K2_Sports",
+          "type": "tertiary"
+        }
+      ],
+      "tags": [
+        "industry",
+        "manufacturing",
+        "k2-sports",
+        "economic-change",
+        "globalization"
+      ]
+    },
+    {
+      "id": "mod-010",
+      "title": "Mary Matsuda Gruenewald Publishes 'Looking Like the Enemy'",
+      "date_start": "2005",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "At age 80, former Vashon Island resident Mary Matsuda Gruenewald publishes her memoir of wartime internment, preserving the story of the island's Japanese American community.",
+      "details": "Mary Matsuda Gruenewald, born on Vashon Island in 1925 to Japanese immigrant strawberry farmers Heisuke and Mitsuno Matsuda, published 'Looking Like the Enemy: My Story of Imprisonment in Japanese American Internment Camps' in 2005. The memoir recounts her family's forced removal from Vashon on May 16, 1942, and her experiences at the Pinedale Assembly Center, Tule Lake, and Heart Mountain camps. It also tells the story of her brother Yoneichi's service with the 442nd Regimental Combat Team and her own enlistment in the U.S. Cadet Nurse Corps. David Guterson, author of 'Snow Falling on Cedars,' described it as 'a painfully honest narrative of imprisonment.' A Young Readers edition was published in 2010. In 2017, Vashon Island High School retroactively awarded Gruenewald the diploma she was denied when internment cut short her education. She died on February 11, 2021, at age 96. The memoir is now widely used in university and high school curricula.",
+      "people": [
+        "Mary Matsuda Gruenewald",
+        "Yoneichi Matsuda",
+        "Heisuke Matsuda",
+        "Mitsuno Matsuda"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Mary Matsuda Gruenewald - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mary_Matsuda_Gruenewald",
+          "type": "tertiary"
+        },
+        {
+          "title": "Mary Matsuda Gruenewald, Lauded Author and Nurse, Dies at 96 - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/mary-matsuda-gruenewald-lauded-author-and-nurse-dies-at-96/",
+          "type": "secondary"
+        },
+        {
+          "title": "Book Review: Looking Like The Enemy - Discover Nikkei",
+          "url": "https://discovernikkei.org/en/journal/2010/9/1/looking-like-the-enemy/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "memoir",
+        "japanese-american",
+        "internment",
+        "literature",
+        "matsuda-family"
+      ]
+    },
+    {
+      "id": "mod-012",
+      "title": "Vashon Island COVID-19 Community Response",
+      "date_start": "2020-03",
+      "date_end": "2022",
+      "era": "modern",
+      "layers": [
+        "event"
+      ],
+      "description": "Vashon Island mounts a volunteer-led pandemic response that achieves the lowest COVID-19 case rate in King County, earning national recognition as a model for rural communities.",
+      "details": "When the Seattle area became the nation's first COVID-19 hotspot in March 2020, Vashon Island faced unique vulnerabilities: an older-than-average population (median age 53), no hospital, limited clinic capacity, and ferry-dependent access to testing and medical care. Unemployment on the island quickly reached 22%, with four out of ten businesses going dark. The Vashon Medical Reserve Corps (VMRC) and VashonBePrepared launched an integrated response program that included community education (200+ situation reports, bilingual English-Spanish materials), free SARS-CoV-2 testing (7,500+ PCR tests), rapid contact tracing (560 index cases investigated), and an aggressive vaccination campaign (19,000+ doses delivered in partnership with Vashon Pharmacy). A community fundraising drive raised $325,000, later supplemented by $413,000 in government reimbursements. Volunteers contributed over 31,500 hours, and the relief fund subsidized over 4,400 bags of groceries and 28,000 meals. Over the first 22 months, Vashon achieved the lowest cumulative COVID-19 case rate in King County: 11.2 cases per 1,000 residents versus the countywide 49.6. The New York Times recognized VMRC's approach as a model for rural and tribal communities. A peer-reviewed study published in PLOS ONE confirmed the response's effectiveness.",
+      "people": [
+        "Jim Bristow"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Interplay of demographics, geography and COVID-19 pandemic responses in the Puget Sound region - PLOS ONE",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0274345",
+          "type": "primary"
+        },
+        {
+          "title": "A Year Like None Other: A Pandemic Changes Everything on Vashon - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/a-year-like-none-other-a-pandemic-changes-everything-on-vashon/",
+          "type": "secondary"
+        },
+        {
+          "title": "VashonBePrepared: Island's strong COVID response informs plans for future - Vashon-Maury Island Beachcomber",
+          "url": "https://www.vashonbeachcomber.com/news/vashonbeprepared-islands-strong-covid-response-informs-plans-for-future/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "covid-19",
+        "pandemic",
+        "community-response",
+        "volunteer",
+        "public-health"
+      ]
     }
   ]
 }

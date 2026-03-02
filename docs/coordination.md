@@ -1,17 +1,15 @@
 # Team Coordination Board
 
-## Current Sprint: M0 — Foundation (COMPLETE)
+## Current Sprint: M1 — Research
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | M0 complete — PRD and milestone schedule delivered | None |
-| Engineer | Idle | M0 complete — FRD, JSON schema, and architecture delivered | None |
-| Researcher | Idle | M0 complete — 18 skeleton entries across all 10 eras | None |
-| Designer | Idle | M0 complete — Design Bible with visual system and wireframes | None |
-| Tester | Idle | M0 complete — Test plan with 30+ test cases and quality gates | None |
-| UI/UX | Idle | M0 complete — User flows and interaction specs in Design Bible | None |
-
-**Next Sprint:** M1 — Research (expand Vashon Island knowledge base to 80-120 entries)
+| Product Manager | Idle | Awaiting M1 coverage review | None |
+| Engineer | Idle | Awaiting M2 start | None |
+| Researcher | Active | Exploration, Logging & Treaty, and Pioneer eras complete (20 new entries); 41 total new entries across 5 eras | None |
+| Designer | Idle | Awaiting M1 completion | None |
+| Tester | Pending | Will validate cross-references after research expansion | None |
+| UI/UX | Idle | Awaiting M1 completion | None |
 
 ## Decisions Log
 
@@ -21,6 +19,7 @@
 | 2026-03-02 | Skeleton research seed (10-20 entries) for M0 | PM | Enough to validate schema and test UI; full research expansion in M1. |
 | 2026-03-02 | Professional neutral voice for all agents | PM | Consistency and clarity over personality. |
 | 2026-03-02 | Vashon Island, WA as prototype setting | PM | Rich history spanning 10,000+ years; well-documented; diverse eras and data types. |
+| 2026-03-02 | Camp Sealth associated with Camp Fire (not YMCA/YWCA) | Researcher | Web research confirmed Camp Sealth was founded by Camp Fire Girls, not YMCA/YWCA as originally assumed. |
 
 ## Open Questions
 
@@ -42,3 +41,8 @@
 - [x] Timeline entry JSON schema created and validated (2026-03-02)
 - [x] Project dashboard created (2026-03-02)
 - [x] **M0 Foundation milestone complete** (2026-03-02)
+- [x] Growth & Industry era expanded: 10 new entries (gro-003 through gro-012) (2026-03-02)
+- [x] Early 20th Century era expanded: 11 new entries (ear-004 through ear-014) (2026-03-02)
+- [x] Exploration era expanded: 5 new entries (exp-003 through exp-007) (2026-03-02)
+- [x] Logging & Treaty era expanded: 4 new entries (log-003 through log-006) (2026-03-02)
+- [x] Pioneer era expanded: 11 new entries (pio-003 through pio-013) (2026-03-02)
