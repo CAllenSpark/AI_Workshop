@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "timeline-entry.schema.json",
+  "title": "Timeline Entry",
+  "description": "A single entry in the Writer's Research Companion timeline database",
+  "type": "object",
+  "required": ["id", "title", "date_start", "era", "layers", "description", "sources"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (format: era-prefix + sequential number, e.g., 'pre-001')",
+      "pattern": "^[a-z]+-[0-9]{3}$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Brief title for the entry",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "date_start": {
+      "type": "string",
+      "description": "Start date in ISO 8601 or era descriptor (e.g., '1792', '~10000 BCE', '1865-03-15')"
+    },
+    "date_end": {
+      "type": "string",
+      "description": "End date (optional). Same format as date_start."
+    },
+    "era": {
+      "type": "string",
+      "description": "Historical era classification",
+      "enum": [
+        "prehistory",
+        "indigenous",
+        "exploration",
+        "logging-treaty",
+        "pioneer",
+        "growth-industry",
+        "early-20th-century",
+        "wwii",
+        "state-ferry",
+        "modern"
+      ]
+    },
+    "layers": {
+      "type": "array",
+      "description": "Data categories this entry belongs to",
+      "items": {
+        "type": "string",
+        "enum": ["event", "person", "place", "environment"]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief summary (1-2 sentences)"
+    },
+    "details": {
+      "type": "string",
+      "description": "Extended narrative with full context (optional)"
+    },
+    "people": {
+      "type": "array",
+      "description": "Names of people involved or referenced",
+      "items": { "type": "string" }
+    },
+    "places": {
+      "type": "array",
+      "description": "Place names referenced",
+      "items": { "type": "string" }
+    },
+    "sources": {
+      "type": "array",
+      "description": "Reference sources for this entry",
+      "items": {
+        "type": "object",
+        "required": ["title", "type"],
+        "properties": {
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "type": {
+            "type": "string",
+            "enum": ["primary", "secondary", "tertiary"]
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "tags": {
+      "type": "array",
+      "description": "Freeform tags for additional categorization",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

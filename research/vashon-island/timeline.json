@@ -1,0 +1,375 @@
+{
+  "setting": "Vashon Island, WA",
+  "description": "Timeline database for Vashon Island, covering prehistory through the present day",
+  "schema_version": "1.0.0",
+  "entries": [
+    {
+      "id": "pre-001",
+      "title": "Glacial Retreat Exposes Vashon Island",
+      "date_start": "~12000 BCE",
+      "date_end": "~10000 BCE",
+      "era": "prehistory",
+      "layers": ["environment", "event"],
+      "description": "The Vashon glaciation recedes, exposing the landmass that will become Vashon and Maury Islands in the Central Puget Sound Basin.",
+      "details": "The Vashon Stade of the Fraser Glaciation, named after the island itself, was the last major glacial advance in the Puget Sound region. As the ice sheet retreated, it carved the deep waterways of Puget Sound and left behind the glacial till that forms the island's terrain. The island's bluffs, ravines, and clay soils are direct artifacts of this glacial history.",
+      "people": [],
+      "places": ["Vashon Island", "Maury Island", "Puget Sound"],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["geology", "glaciation", "formation"]
+    },
+    {
+      "id": "pre-002",
+      "title": "First Human Activity on Vashon Island",
+      "date_start": "~10000 BCE",
+      "era": "prehistory",
+      "layers": ["event", "person"],
+      "description": "Evidence of human presence on Vashon Island dates back 10,000 to 12,000 years, among the earliest in the Puget Sound region.",
+      "details": "Archaeological evidence suggests that humans were present on Vashon Island shortly after the glacial retreat. These early inhabitants were likely part of broader Paleo-Indian migrations into the Pacific Northwest, taking advantage of the rich marine and terrestrial resources of the newly formed Puget Sound basin.",
+      "people": [],
+      "places": ["Vashon Island"],
+      "sources": [
+        {
+          "title": "Vashon Heritage Museum — Vashon History",
+          "url": "https://www.vashonheritagemuseum.org/vashon-history",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["archaeology", "paleo-indian", "migration"]
+    },
+    {
+      "id": "ind-001",
+      "title": "Sqababsh (S'Homamish) Settlement",
+      "date_start": "~1500",
+      "date_end": "1855",
+      "era": "indigenous",
+      "layers": ["event", "person", "place"],
+      "description": "The sx̌ʷəbabš (Swiftwater People), also known as the Sqababsh or S'Homamish, establish five main village sites on Vashon and Maury Islands.",
+      "details": "About 500 years ago, the Sqababsh people settled permanently on the islands, building longhouses at five principal village sites. They were part of the broader Coast Salish cultural group and relied on fishing (particularly salmon), shellfish gathering, hunting, and plant harvesting. The Suquamish and other tribes also used the islands seasonally. Today, many descendants are enrolled members of the Puyallup Tribe of Indians.",
+      "people": ["sx̌ʷəbabš (Sqababsh/S'Homamish)"],
+      "places": ["Vashon Island", "Maury Island"],
+      "sources": [
+        {
+          "title": "A Brief History of Vashon Island",
+          "url": "https://www.vashonhistory.com/Publications/brief_history.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["coast-salish", "indigenous", "settlement", "villages"]
+    },
+    {
+      "id": "exp-001",
+      "title": "Captain Vancouver Names Vashon Island",
+      "date_start": "1792",
+      "era": "exploration",
+      "layers": ["event", "person", "place"],
+      "description": "During British exploratory missions on Puget Sound, Captain George Vancouver names the island after his friend Captain James Vashon of the Royal Navy.",
+      "details": "In 1792, Captain George Vancouver led a British expedition surveying the Pacific Northwest coastline. While charting Puget Sound, he named the island after Captain James Vashon, a fellow Royal Navy officer who had served with distinction. Vancouver's expedition produced the first European maps of the area, though indigenous peoples had inhabited the region for millennia.",
+      "people": ["George Vancouver", "James Vashon"],
+      "places": ["Vashon Island", "Puget Sound"],
+      "sources": [
+        {
+          "title": "Vashon, Washington — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vashon,_Washington",
+          "type": "tertiary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["exploration", "naming", "british", "royal-navy"]
+    },
+    {
+      "id": "exp-002",
+      "title": "Lt. Wilkes Names Maury Island",
+      "date_start": "1841",
+      "era": "exploration",
+      "layers": ["event", "person", "place"],
+      "description": "Lt. Charles Wilkes of the United States Exploring Expedition surveys Puget Sound and names Maury Island after crew member William A. Maury.",
+      "details": "The Wilkes Expedition (1838-1842) was the first U.S. naval expedition to survey the Pacific Northwest. When Lt. Wilkes charted the waters around Vashon Island, he named the smaller adjacent island after William A. Maury, a member of his crew. At this time, Vashon and Maury Islands were separated at high tide but connected by a natural sandbar at low tide.",
+      "people": ["Charles Wilkes", "William A. Maury"],
+      "places": ["Maury Island", "Puget Sound"],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["exploration", "naming", "wilkes-expedition", "us-navy"]
+    },
+    {
+      "id": "log-001",
+      "title": "Logging Begins on Vashon Island",
+      "date_start": "1852",
+      "era": "logging-treaty",
+      "layers": ["event", "environment"],
+      "description": "Commercial logging operations begin on Vashon Island, marking the start of European-American economic activity on the island.",
+      "details": "Logging was the first major industry on Vashon Island, exploiting the dense old-growth forests of Douglas fir, western red cedar, and hemlock that covered the island. The timber was transported by water to mills around Puget Sound. This activity preceded permanent European-American settlement by over a decade.",
+      "people": [],
+      "places": ["Vashon Island"],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["logging", "industry", "old-growth", "timber"]
+    },
+    {
+      "id": "log-002",
+      "title": "Medicine Creek Treaty and S'Homamish Removal",
+      "date_start": "1854",
+      "date_end": "1856",
+      "era": "logging-treaty",
+      "layers": ["event", "person"],
+      "description": "The Medicine Creek Treaty cedes indigenous land claims to the U.S. government. By 1855-1856, the S'Homamish people are relocated to Fox Island.",
+      "details": "The Medicine Creek Treaty of 1854, negotiated by Territorial Governor Isaac Stevens, required indigenous peoples to cede their lands in exchange for reservation territory and fishing rights. The Sqababsh/S'Homamish of Vashon Island were removed to Fox Island by 1855-1856, ending thousands of years of continuous habitation. This displacement opened the island to European-American homesteading.",
+      "people": ["Isaac Stevens", "sx̌ʷəbabš (Sqababsh/S'Homamish)"],
+      "places": ["Vashon Island", "Fox Island"],
+      "sources": [
+        {
+          "title": "A Brief History of Vashon Island",
+          "url": "https://www.vashonhistory.com/Publications/brief_history.htm",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["treaty", "displacement", "indigenous-rights", "medicine-creek"]
+    },
+    {
+      "id": "pio-001",
+      "title": "First European-American Settler on Vashon",
+      "date_start": "1865",
+      "era": "pioneer",
+      "layers": ["event", "person", "place"],
+      "description": "Mathew Bridges files the first homestead claim on Vashon Island, becoming the island's first permanent European-American settler.",
+      "details": "Mathew Bridges arrived on Vashon Island and filed a land claim, beginning the era of European-American settlement. In the years following, other homesteaders followed, drawn by available land and the island's natural resources. The early settlers relied on fishing and logging as primary occupations.",
+      "people": ["Mathew Bridges"],
+      "places": ["Vashon Island"],
+      "sources": [
+        {
+          "title": "Settlements 1865-1890",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["homestead", "settlement", "pioneer"]
+    },
+    {
+      "id": "pio-002",
+      "title": "First Ferry Service Established",
+      "date_start": "~1885",
+      "era": "pioneer",
+      "layers": ["event", "place"],
+      "description": "S.D. Sherman purchases a lifeboat and refits it as a schooner to provide semi-regular ferry service to Vashon Island.",
+      "details": "By the 1880s, enough settlers had arrived that regular transportation to the mainland became essential. S.D. Sherman converted a lifeboat into a small schooner to provide the first semi-regular service. This modest beginning eventually led to established ferry routes at both the north and south ends of the island, which in turn attracted more homesteaders. Early settlers also built the first school, stores, and crude roads during this period.",
+      "people": ["S.D. Sherman"],
+      "places": ["Vashon Island"],
+      "sources": [
+        {
+          "title": "Settlements 1865-1890",
+          "url": "https://www.vashonhistory.com/Vashon%20History/Timeline/settlement.htm",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["ferry", "transportation", "maritime"]
+    },
+    {
+      "id": "gro-001",
+      "title": "Japanese American Strawberry Farming Begins",
+      "date_start": "1890",
+      "era": "growth-industry",
+      "layers": ["event", "person", "environment"],
+      "description": "Japanese Americans begin growing strawberries on Vashon Island, establishing an industry that will define the island's agriculture for 50 years.",
+      "details": "Starting around 1890, Japanese American families began cultivating strawberries on Vashon Island. The island's mild maritime climate and rich glacial soils proved ideal for berry production. This industry grew to become a major part of the island economy and a defining cultural feature of Vashon life until the forced internment during WWII.",
+      "people": [],
+      "places": ["Vashon Island"],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["agriculture", "strawberries", "japanese-american", "farming"]
+    },
+    {
+      "id": "gro-002",
+      "title": "Dockton Drydock Built",
+      "date_start": "~1892",
+      "era": "growth-industry",
+      "layers": ["event", "place"],
+      "description": "A drydock is constructed at Dockton on Maury Island, the only facility of its kind on Puget Sound at the time.",
+      "details": "The drydock at Dockton was a significant industrial facility, serving the maritime industry of Puget Sound. Located on the southwestern shore of Maury Island, it represented the island's participation in the broader regional economy beyond agriculture and logging. The facility attracted workers and contributed to the growth of the Dockton community.",
+      "people": [],
+      "places": ["Dockton", "Maury Island"],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["industry", "maritime", "drydock", "dockton"]
+    },
+    {
+      "id": "ear-001",
+      "title": "Denichiro Mukai's Strawberry Barreling Innovation",
+      "date_start": "1910",
+      "era": "early-20th-century",
+      "layers": ["event", "person"],
+      "description": "Denichiro Mukai arrives on Vashon Island and develops a renowned method for barreling fresh strawberries that concentrates flavor and moisture.",
+      "details": "Denichiro Mukai came to Vashon Island in 1910 and became one of the island's most prominent Japanese American farmers. His innovation in strawberry preservation — a special barreling method that concentrated flavor and moisture — earned him widespread recognition. The Mukai farmstead, including a cold-process fruit barreling plant built in 1926, still stands and is now a heritage site.",
+      "people": ["Denichiro Mukai"],
+      "places": ["Vashon Island", "Mukai Farm"],
+      "sources": [
+        {
+          "title": "Delve into the Fascinating History of Vashon Island",
+          "url": "https://vashon-maury.com/vashon-island-history/",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["agriculture", "innovation", "japanese-american", "strawberries", "preservation"]
+    },
+    {
+      "id": "ear-002",
+      "title": "Tombolo Connects Vashon and Maury Islands",
+      "date_start": "1913",
+      "era": "early-20th-century",
+      "layers": ["event", "environment", "place"],
+      "description": "A permanent land connection (tombolo) is constructed between Vashon Island and Maury Island, replacing the tidal sandbar.",
+      "details": "Before 1913, Vashon and Maury Islands were only connected during low tide by a natural sandbar. The construction of a permanent tombolo created a year-round land bridge between the two islands, fundamentally changing transportation and settlement patterns. This engineering project unified what had been two separate island communities.",
+      "people": [],
+      "places": ["Vashon Island", "Maury Island", "Portage"],
+      "sources": [
+        {
+          "title": "Vashon, Washington — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vashon,_Washington",
+          "type": "tertiary"
+        }
+      ],
+      "tags": ["infrastructure", "engineering", "tombolo", "portage"]
+    },
+    {
+      "id": "ear-003",
+      "title": "First Auto Ferry to Vashon Island",
+      "date_start": "1916",
+      "era": "early-20th-century",
+      "layers": ["event", "place"],
+      "description": "The King County Ferry System begins auto ferry service with the M.V. Vashon running between Des Moines and Portage.",
+      "details": "The arrival of the automobile ferry in 1916 marked a transformative moment for Vashon Island. The M.V. Vashon, operated by the King County Ferry System, connected the island to the mainland at Des Moines via the Portage landing. This made the island far more accessible and accelerated its development as both a farming community and a retreat from urban Seattle.",
+      "people": [],
+      "places": ["Vashon Island", "Des Moines", "Portage"],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["ferry", "transportation", "automobile", "king-county"]
+    },
+    {
+      "id": "ww2-001",
+      "title": "Japanese American Internment",
+      "date_start": "1942",
+      "date_end": "1945",
+      "era": "wwii",
+      "layers": ["event", "person"],
+      "description": "Vashon Island's Japanese American community is forcibly relocated to internment camps under Executive Order 9066, ending 50 years of strawberry farming.",
+      "details": "Following the attack on Pearl Harbor and Executive Order 9066, the Japanese American families of Vashon Island were forced to leave their homes and farms for internment camps. This devastated the island's strawberry industry, which had been a cornerstone of the local economy for half a century. Most families lost their land and property. Few returned after the war, and the agricultural landscape of the island was permanently altered.",
+      "people": ["Denichiro Mukai"],
+      "places": ["Vashon Island"],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        },
+        {
+          "title": "Vashon Heritage Museum — Vashon History",
+          "url": "https://www.vashonheritagemuseum.org/vashon-history",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["internment", "wwii", "japanese-american", "executive-order-9066", "injustice"]
+    },
+    {
+      "id": "fer-001",
+      "title": "Washington State Ferries Begins Service",
+      "date_start": "1951-06-01",
+      "era": "state-ferry",
+      "layers": ["event", "place"],
+      "description": "Washington State Ferries takes over island ferry service on June 1, 1951, replacing the private Vashon Ferry System.",
+      "details": "After the private Vashon Ferry System operated for three years, Washington State Ferries assumed control of the route on June 1, 1951. This transition brought the island into the state transportation network. Around this time, state officials proposed connecting Vashon-Maury Island to the mainland with bridges, but islanders increasingly opposed the idea, fearing it would destroy the island's rural character and invite urban sprawl.",
+      "people": [],
+      "places": ["Vashon Island", "Fauntleroy Terminal", "Southworth"],
+      "sources": [
+        {
+          "title": "Vashon-Maury Island -- Thumbnail History",
+          "url": "https://www.historylink.org/file/3909",
+          "type": "secondary"
+        }
+      ],
+      "tags": ["ferry", "state-ferry", "transportation", "bridge-debate"]
+    },
+    {
+      "id": "mod-001",
+      "title": "Island Resists Bridge Construction",
+      "date_start": "~1960",
+      "date_end": "~2000",
+      "era": "modern",
+      "layers": ["event"],
+      "description": "Vashon Island residents successfully resist repeated proposals to build a fixed bridge to the mainland, preserving the island's rural isolation.",
+      "details": "Over several decades, various proposals to connect Vashon Island to the mainland via bridge were debated and ultimately rejected. Islanders recognized that a bridge would fundamentally alter the character of their community, making it a suburb of Seattle rather than a distinct island community. The ferry-dependent isolation became a defining and deliberately preserved feature of island life.",
+      "people": [],
+      "places": ["Vashon Island"],
+      "sources": [
+        {
+          "title": "Vashon, Washington — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vashon,_Washington",
+          "type": "tertiary"
+        }
+      ],
+      "tags": ["preservation", "bridge-debate", "rural-character", "community-identity"]
+    },
+    {
+      "id": "mod-002",
+      "title": "K2 Sports Manufacturing on Vashon",
+      "date_start": "~1970",
+      "date_end": "~2005",
+      "era": "modern",
+      "layers": ["event", "place"],
+      "description": "K2 Sports operates a major ski and sporting goods manufacturing facility on Vashon Island before eventually moving production to China.",
+      "details": "K2 Sports was one of Vashon Island's largest employers, manufacturing skis and other sporting equipment on the island for decades. The company's eventual decision to move manufacturing to China represented a significant economic shift for the island, as it lost one of its few major industrial employers. Similarly, Seattle's Best Coffee operated a roastery on the island until it was acquired by Starbucks and the operation was closed.",
+      "people": [],
+      "places": ["Vashon Island"],
+      "sources": [
+        {
+          "title": "Vashon, Washington — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vashon,_Washington",
+          "type": "tertiary"
+        }
+      ],
+      "tags": ["industry", "manufacturing", "economic-change", "k2-sports"]
+    }
+  ]
+}
