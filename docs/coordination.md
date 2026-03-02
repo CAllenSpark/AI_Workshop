@@ -6,7 +6,7 @@
 |-------|--------|-------------|----------|
 | Product Manager | Idle | Awaiting M1 coverage review | None |
 | Engineer | Idle | Awaiting M2 start | None |
-| Researcher | Active | Exploration, Logging & Treaty, and Pioneer eras complete (20 new entries); 41 total new entries across 5 eras | None |
+| Researcher | Active | Sources.md expanded to 137 entries (12 primary, 102 secondary, 23 tertiary) covering all 139 timeline URLs; 41 total timeline entries across 5 eras | None |
 | Designer | Idle | Awaiting M1 completion | None |
 | Tester | Pending | Will validate cross-references after research expansion | None |
 | UI/UX | Idle | Awaiting M1 completion | None |
@@ -46,3 +46,4 @@
 - [x] Exploration era expanded: 5 new entries (exp-003 through exp-007) (2026-03-02)
 - [x] Logging & Treaty era expanded: 4 new entries (log-003 through log-006) (2026-03-02)
 - [x] Pioneer era expanded: 11 new entries (pio-003 through pio-013) (2026-03-02)
+- [x] Sources.md expanded to 137 entries covering all 139 timeline.json source URLs (2026-03-02)
