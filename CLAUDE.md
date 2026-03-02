@@ -10,12 +10,13 @@ The knowledge base is designed for dual use:
 
 ## Team
 
-This project uses 7 persistent agent personas. Invoke them by name to engage their expertise:
+This project uses 8 persistent agent personas. Invoke them by name to engage their expertise:
 
 | Agent | Invoke | Owns | Primary Files |
 |-------|--------|------|---------------|
 | Product Manager | `/product-manager` | PRD, prioritization, user stories | `docs/PRD.md`, `docs/milestone-schedule.md` |
 | Engineer | `/engineer` | FRD, architecture, data schemas | `docs/FRD.md`, `research/schemas/`, `src/` |
+| Database Engineer | `/database-engineer` | Data optimization, indexing, caching, scalability | `src/data/`, `src/hooks/useSearch.ts` |
 | Researcher | `/researcher` | Research content, fact-checking, sources | `research/vashon-island/*`, `research/README.md` |
 | Designer | `/designer` | Visual design, information architecture | `docs/design-bible.md` |
 | Tester | `/tester` | Test plan, QA strategy, acceptance criteria | `docs/test-plan.md` |

@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-02 (M5 complete)
+**Last Updated:** 2026-03-02 (Hardening sprint complete)
 **Setting:** Vashon Island, WA (prehistory to present)
 **Branch:** `claude/writers-research-companion-zTnuE`
 
@@ -43,8 +43,9 @@ M6 Validation    [....................]   0%  << NEXT
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | M5 complete; ready for M6 review | None |
-| Engineer | Active | M5 complete; ready for M6 validation | None |
+| Product Manager | Idle | Hardening complete; ready for M6 review | None |
+| Engineer | Active | Hardening sprint complete | None |
+| Database Engineer | Active | Code review complete; optimizations deployed | None |
 | Researcher | Idle | Data finalized | None |
 | Designer | Ready | Will review M6 visual regression | None |
 | Tester | Ready | Will run full E2E and accessibility audits | None |

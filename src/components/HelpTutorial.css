@@ -1,0 +1,143 @@
+.tutorial-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 250;
+  pointer-events: none;
+}
+
+.tutorial-highlight {
+  position: fixed;
+  border: 3px solid var(--warm-amber);
+  border-radius: 12px;
+  box-shadow: 0 0 0 4000px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  transition: all 300ms ease;
+  z-index: 251;
+}
+
+.tutorial-card {
+  position: fixed;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  padding: var(--sp-lg) var(--sp-xl);
+  width: 380px;
+  max-width: calc(100vw - 32px);
+  z-index: 252;
+  pointer-events: all;
+}
+
+/* Center the card when no highlight target */
+.tutorial-card:not([style*="top"]) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tutorial-step-indicator {
+  display: flex;
+  gap: 6px;
+  margin-bottom: var(--sp-base);
+}
+
+.step-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--soft-gray);
+  transition: background var(--transition-fast);
+}
+
+.step-dot.active {
+  background: var(--forest-green);
+  width: 20px;
+  border-radius: 4px;
+}
+
+.step-dot.done {
+  background: var(--slate-blue);
+}
+
+.tutorial-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  color: var(--forest-green);
+  margin-bottom: var(--sp-sm);
+}
+
+.tutorial-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--charcoal);
+  margin-bottom: var(--sp-lg);
+}
+
+.tutorial-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tutorial-skip {
+  font-size: 13px;
+  color: var(--warm-gray);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.tutorial-skip:hover {
+  color: var(--charcoal);
+}
+
+.tutorial-nav {
+  display: flex;
+  gap: var(--sp-sm);
+}
+
+.tutorial-prev {
+  padding: 6px 16px;
+  border: 1px solid var(--stone-light);
+  border-radius: 8px;
+  background: white;
+  color: var(--charcoal);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+.tutorial-prev:hover {
+  background: var(--soft-gray);
+}
+
+.tutorial-next {
+  padding: 6px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--forest-green);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+.tutorial-next:hover {
+  background: #245232;
+}
+
+@media (max-width: 768px) {
+  .tutorial-card {
+    bottom: 16px !important;
+    top: auto !important;
+    left: 16px !important;
+    right: 16px;
+    width: auto;
+    transform: none !important;
+  }
+}

@@ -148,6 +148,29 @@
   gap: var(--sp-sm);
 }
 
+/* Add entry button */
+.add-entry-btn {
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid var(--forest-green);
+  border-radius: 8px;
+  background: white;
+  color: var(--forest-green);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  line-height: 1;
+}
+
+.add-entry-btn:hover {
+  background: var(--forest-green);
+  color: white;
+}
+
 /* Export button */
 .export-btn {
   padding: 6px 16px;
@@ -196,6 +219,56 @@
   color: var(--warm-gray);
   font-feature-settings: 'tnum';
   white-space: nowrap;
+}
+
+/* Data warnings */
+.data-warnings {
+  padding: var(--sp-xs) var(--sp-xl);
+  background: #FFF8E1;
+  border-bottom: 1px solid #E6D5A0;
+  font-size: 12px;
+  color: #7A6520;
+}
+
+.data-warnings summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.data-warnings ul {
+  margin-top: var(--sp-xs);
+  padding-left: var(--sp-lg);
+}
+
+.data-warnings li {
+  margin: 2px 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+/* Load more button */
+.load-more-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  padding: var(--sp-base);
+}
+
+.load-more-btn {
+  padding: var(--sp-sm) var(--sp-xl);
+  border: 1.5px solid var(--slate-blue);
+  border-radius: 8px;
+  background: white;
+  color: var(--slate-blue);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background var(--transition-fast);
+}
+
+.load-more-btn:hover {
+  background: rgba(74, 109, 140, 0.05);
 }
 
 /* Empty state */

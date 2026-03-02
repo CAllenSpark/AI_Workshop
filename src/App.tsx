@@ -2,19 +2,22 @@ import { useState, useCallback, useEffect, useMemo } from 'react';
 import type { TimelineEntry, LayerKey, EraKey, ZoomLevel } from './types';
 import { useTimelineData } from './hooks/useTimelineData';
 import { useSearch } from './hooks/useSearch';
-import { parseDate } from './data/loader';
+import { addEntry } from './data/loader';
 import TimelineTrack from './components/TimelineTrack';
 import EntryCard from './components/EntryCard';
 import DetailPanel from './components/DetailPanel';
 import FilterPanel from './components/FilterPanel';
 import ExportDialog from './components/ExportDialog';
 import KeyboardHelp from './components/KeyboardHelp';
+import AddEntryDialog from './components/AddEntryDialog';
+import HelpTutorial, { useTutorialState } from './components/HelpTutorial';
 import './App.css';
 
 const ALL_LAYERS = new Set<LayerKey>(['event', 'person', 'place', 'environment']);
+const PAGE_SIZE = 50;
 
 export default function App() {
-  const { data, loading, error } = useTimelineData();
+  const { data, loading, error, setData } = useTimelineData();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [zoomLevel, setZoomLevel] = useState<ZoomLevel>(1);
   const [activeLayers, setActiveLayers] = useState<Set<LayerKey>>(new Set(ALL_LAYERS));
@@ -22,12 +25,21 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [showExport, setShowExport] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
+  const [showAddEntry, setShowAddEntry] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
-  // Compute the full date range from data
+  const { showTutorial, dismissTutorial } = useTutorialState();
+
+  // Compute the full date range from pre-cached dates
   const fullDateRange = useMemo<[number, number]>(() => {
     if (!data || data.entries.length === 0) return [-15000, 2026];
-    const years = data.entries.map((e) => parseDate(e.date_start));
-    return [Math.min(...years), Math.max(...years)];
+    let min = Infinity, max = -Infinity;
+    for (const entry of data.entries) {
+      const year = data.parsedDates.get(entry.id) ?? 0;
+      if (year < min) min = year;
+      if (year > max) max = year;
+    }
+    return [min, max];
   }, [data]);
 
   const [dateRange, setDateRange] = useState<[number, number]>(fullDateRange);
@@ -49,6 +61,7 @@ export default function App() {
       if (e.key === 'Escape') {
         if (showExport) { setShowExport(false); return; }
         if (showHelp) { setShowHelp(false); return; }
+        if (showAddEntry) { setShowAddEntry(false); return; }
         setSelectedId(null);
       }
       if (e.key === '/' && !isInput) {
@@ -59,14 +72,23 @@ export default function App() {
         e.preventDefault();
         setShowHelp((prev) => !prev);
       }
-      if ((e.key === 'e' || e.key === 'E') && !isInput && !showExport && !showHelp) {
+      if ((e.key === 'e' || e.key === 'E') && !isInput && !showExport && !showHelp && !showAddEntry) {
         e.preventDefault();
         setShowExport(true);
+      }
+      if ((e.key === 'n' || e.key === 'N') && !isInput && !showExport && !showHelp && !showAddEntry) {
+        e.preventDefault();
+        setShowAddEntry(true);
       }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [showExport, showHelp]);
+  }, [showExport, showHelp, showAddEntry]);
+
+  // Reset visible count when filters change
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [searchQuery, activeLayers, selectedEras, dateRange]);
 
   const handleEntrySelect = useCallback((id: string) => {
     setSelectedId((prev) => (prev === id ? null : id));
@@ -97,7 +119,12 @@ export default function App() {
     setSearchQuery('');
   }, [fullDateRange]);
 
-  // Combined AND filter: search + layers + eras + date range
+  const handleAddEntry = useCallback((entry: TimelineEntry) => {
+    if (!data) return;
+    setData(addEntry(data, entry));
+  }, [data, setData]);
+
+  // Combined AND filter using pre-computed dates
   const filteredEntries = useMemo(() => {
     if (!data) return [];
 
@@ -115,22 +142,30 @@ export default function App() {
       e.layers.some((l) => activeLayers.has(l as LayerKey))
     );
 
-    // Filter by selected eras (if any selected; empty = show all)
+    // Filter by selected eras using pre-built index
     if (selectedEras.size > 0) {
       result = result.filter((e) => selectedEras.has(e.era));
     }
 
-    // Filter by date range
+    // Filter by date range using pre-computed dates
     result = result.filter((e) => {
-      const year = parseDate(e.date_start);
+      const year = data.parsedDates.get(e.id) ?? 0;
       return year >= dateRange[0] && year <= dateRange[1];
     });
 
     return result;
   }, [data, searchQuery, search, activeLayers, selectedEras, dateRange]);
 
+  // Paginated entries for rendering
+  const paginatedEntries = useMemo(
+    () => filteredEntries.slice(0, visibleCount),
+    [filteredEntries, visibleCount]
+  );
+
+  const hasMore = visibleCount < filteredEntries.length;
+
   const selectedEntry = useMemo<TimelineEntry | null>(
-    () => data?.entries.find((e) => e.id === selectedId) ?? null,
+    () => (selectedId && data) ? (data.entriesById.get(selectedId) ?? null) : null,
     [data, selectedId]
   );
 
@@ -179,6 +214,14 @@ export default function App() {
         </div>
         <div className="header-right">
           <button
+            className="add-entry-btn"
+            onClick={() => setShowAddEntry(true)}
+            aria-label="Add new entry"
+            title="Add Entry (N)"
+          >
+            +
+          </button>
+          <button
             className="export-btn"
             onClick={() => setShowExport(true)}
             aria-label="Export knowledge base"
@@ -197,6 +240,21 @@ export default function App() {
           <span className="entry-count">{filteredEntries.length} / {data.entries.length} entries</span>
         </div>
       </header>
+
+      {/* Data validation warnings (dev info) */}
+      {data.warnings.length > 0 && (
+        <div className="data-warnings" role="status">
+          <details>
+            <summary>{data.warnings.length} data warning{data.warnings.length !== 1 ? 's' : ''}</summary>
+            <ul>
+              {data.warnings.slice(0, 20).map((w, i) => (
+                <li key={i}>{w.message}</li>
+              ))}
+              {data.warnings.length > 20 && <li>...and {data.warnings.length - 20} more</li>}
+            </ul>
+          </details>
+        </div>
+      )}
 
       {/* Filter panel with layer toggles, era chips, date range */}
       <nav aria-label="Filters">
@@ -230,7 +288,7 @@ export default function App() {
           onZoomChange={setZoomLevel}
         />
 
-        {/* Entry list */}
+        {/* Entry list (paginated) */}
         <div className="entry-list" role="list" aria-label="Timeline entries">
           {filteredEntries.length === 0 ? (
             <div className="empty-state" role="status">
@@ -240,14 +298,26 @@ export default function App() {
               </button>
             </div>
           ) : (
-            filteredEntries.map((entry) => (
-              <EntryCard
-                key={entry.id}
-                entry={entry}
-                isSelected={entry.id === selectedId}
-                onClick={() => handleEntrySelect(entry.id)}
-              />
-            ))
+            <>
+              {paginatedEntries.map((entry) => (
+                <EntryCard
+                  key={entry.id}
+                  entry={entry}
+                  isSelected={entry.id === selectedId}
+                  onClick={() => handleEntrySelect(entry.id)}
+                />
+              ))}
+              {hasMore && (
+                <div className="load-more-container">
+                  <button
+                    className="load-more-btn"
+                    onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+                  >
+                    Show More ({filteredEntries.length - visibleCount} remaining)
+                  </button>
+                </div>
+              )}
+            </>
           )}
         </div>
       </main>
@@ -274,6 +344,19 @@ export default function App() {
       {/* Keyboard help */}
       {showHelp && (
         <KeyboardHelp onClose={() => setShowHelp(false)} />
+      )}
+
+      {/* Add entry dialog */}
+      {showAddEntry && (
+        <AddEntryDialog
+          onAdd={handleAddEntry}
+          onClose={() => setShowAddEntry(false)}
+        />
+      )}
+
+      {/* Tutorial overlay (first visit) */}
+      {showTutorial && !loading && (
+        <HelpTutorial onDismiss={dismissTutorial} />
       )}
     </div>
   );

@@ -80,12 +80,30 @@ export interface Era {
 /** Zoom levels for the timeline */
 export type ZoomLevel = 1 | 2 | 3 | 4;
 
-/** Complete loaded dataset */
+/** Data validation warning */
+export interface DataWarning {
+  type: 'missing_reference' | 'orphaned_entry' | 'invalid_date' | 'missing_field';
+  entityType: string;
+  entityId: string;
+  message: string;
+}
+
+/** Complete loaded dataset with indexed lookups */
 export interface DataStore {
   entries: TimelineEntry[];
   people: Person[];
   places: Place[];
   environment: EnvironmentFeature[];
+  // O(1) lookup maps
+  entriesById: Map<string, TimelineEntry>;
+  peopleById: Map<string, Person>;
+  placesById: Map<string, Place>;
   peopleByName: Map<string, Person>;
   placesByName: Map<string, Place>;
+  // Pre-computed date cache (entry.id -> numeric year)
+  parsedDates: Map<string, number>;
+  // Entries grouped by era for fast era filtering
+  entriesByEra: Map<string, TimelineEntry[]>;
+  // Data validation warnings
+  warnings: DataWarning[];
 }

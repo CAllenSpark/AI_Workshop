@@ -73,7 +73,7 @@ export default function DetailPanel({ entry, data, onClose, onEntrySelect }: Pro
                           .filter((eid) => eid !== entry.id)
                           .slice(0, 3)
                           .map((eid) => {
-                            const related = data.entries.find((e) => e.id === eid);
+                            const related = data.entriesById.get(eid);
                             return related ? (
                               <button
                                 key={eid}

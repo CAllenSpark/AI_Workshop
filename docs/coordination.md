@@ -1,11 +1,12 @@
 # Team Coordination Board
 
-## Current Sprint: M6 — Validation
+## Current Sprint: M6 — Validation (Hardening Complete)
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | M5 complete; ready for M6 review | None |
-| Engineer | Active | M5 complete; ready for M6 validation | None |
+| Product Manager | Idle | Hardening complete; ready for M6 review | None |
+| Engineer | Active | Hardening sprint complete | None |
+| Database Engineer | Active | Code review complete; optimizations deployed | None |
 | Researcher | Idle | Data finalized | None |
 | Designer | Ready | Will review M6 visual regression | None |
 | Tester | Ready | Will run full E2E and accessibility audits | None |
@@ -22,6 +23,11 @@
 | 2026-03-02 | Vashon Island, WA as prototype setting | PM | Rich history spanning 10,000+ years; well-documented; diverse eras and data types. |
 | 2026-03-02 | Camp Sealth associated with Camp Fire (not YMCA/YWCA) | Researcher | Web research confirmed Camp Sealth was founded by Camp Fire Girls, not YMCA/YWCA as originally assumed. |
 | 2026-03-02 | Darken warm-amber (#C8913A -> #9E7430), teal (#3A8C8C -> #2B7A7A), stone (#D1CCC4 -> #9E9890) for WCAG AA | Eng + Designer | Color contrast audit found 5 failures; darkened colors to meet 4.5:1 for normal text. |
+| 2026-03-02 | Add Database Engineer agent to team | PM + Eng | Data layer needs dedicated optimization ownership as dataset grows toward 500+ entries. |
+| 2026-03-02 | Implement localStorage caching for data | DB Eng | Reduces repeat-visit load time from ~500ms to near-instant. Background refresh keeps data fresh. |
+| 2026-03-02 | Add O(1) ID-based lookup maps | DB Eng | entriesById, peopleById, placesById eliminate O(n) find() calls in DetailPanel cross-references. |
+| 2026-03-02 | Pre-compute parsed dates | DB Eng | parsedDates Map eliminates redundant parseDate() calls during every filter cycle. |
+| 2026-03-02 | Paginate entry list (50 per page) | DB Eng | Prevents rendering 500+ cards in DOM at once; "Show More" button loads next batch. |
 
 ## Open Questions
 
@@ -60,3 +66,12 @@
 - [x] WCAG AA color contrast audit — 5 failures fixed (warm-amber, stone, teal, era labels, inactive toggles) (2026-03-02)
 - [x] Responsive improvements: mobile entry-count hidden, export button compact, proper breakpoints (2026-03-02)
 - [x] **M5 Polish & Export milestone complete** (2026-03-02)
+- [x] Database Engineer agent persona created (2026-03-02)
+- [x] DB Engineer code review: identified 7 scalability issues (2026-03-02)
+- [x] Data layer optimizations: O(1) lookup maps, pre-computed dates, localStorage caching, entry pagination (2026-03-02)
+- [x] AddEntryDialog for on-demand research (N key shortcut) with validation (2026-03-02)
+- [x] ErrorBoundary wrapping entire app with graceful recovery (2026-03-02)
+- [x] Data integrity validation on load with console warnings (2026-03-02)
+- [x] Interactive help tutorial for first-time users (9 steps, localStorage persistence) (2026-03-02)
+- [x] CRUD operations: addEntry/removeEntry with immutable store updates (2026-03-02)
+- [x] **Hardening sprint complete** (2026-03-02) — 252KB JS, 29KB CSS production build

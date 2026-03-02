@@ -10,6 +10,7 @@ const SHORTCUTS = [
   { keys: ['Esc'], label: 'Close panel / Clear search' },
   { keys: ['?'], label: 'Toggle this help' },
   { keys: ['E'], label: 'Open export dialog' },
+  { keys: ['N'], label: 'Add new entry' },
   { keys: ['\u2190', '\u2192'], label: 'Scrub timeline left / right' },
   { keys: ['+'], label: 'Zoom in' },
   { keys: ['\u2212'], label: 'Zoom out' },
