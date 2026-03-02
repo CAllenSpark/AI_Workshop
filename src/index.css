@@ -3,16 +3,17 @@
 :root {
   --forest-green: #2D5F3E;
   --slate-blue: #4A6D8C;
-  --warm-amber: #C8913A;
+  --warm-amber: #9E7430;
   --parchment: #F5F0E8;
   --soft-gray: #E8E4DD;
   --charcoal: #2C2C2C;
   --warm-gray: #6B6560;
-  --stone: #D1CCC4;
+  --stone: #9E9890;
+  --stone-light: #D1CCC4;
 
-  --layer-event: #C8913A;
+  --layer-event: #9E7430;
   --layer-event-bg: #FBF3E4;
-  --layer-person: #3A8C8C;
+  --layer-person: #2B7A7A;
   --layer-person-bg: #E4F3F3;
   --layer-place: #2D5F3E;
   --layer-place-bg: #E4F0E8;
@@ -67,7 +68,7 @@ h4 { font-size: 16px; line-height: 1.50; font-weight: 600; }
 
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: var(--soft-gray); border-radius: 4px; }
-::-webkit-scrollbar-thumb { background: var(--stone); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: var(--stone-light); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--warm-gray); }
 
 :focus-visible { outline: 2px solid var(--slate-blue); outline-offset: 2px; }

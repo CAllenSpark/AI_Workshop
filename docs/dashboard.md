@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-02 (M4 complete)
+**Last Updated:** 2026-03-02 (M5 complete)
 **Setting:** Vashon Island, WA (prehistory to present)
 **Branch:** `claude/writers-research-companion-zTnuE`
 
@@ -15,13 +15,13 @@ M0 Foundation    [####################] 100%
 M1 Research      [####################] 100%
 M2 Data Model    [####################] 100%
 M3 Core UI       [####################] 100%
-M4 Search/Filter [####################] 100%  << COMPLETE
-M5 Polish/Export [....................]   0%  << NEXT
-M6 Validation    [....................]   0%
+M4 Search/Filter [####################] 100%
+M5 Polish/Export [####################] 100%  << COMPLETE
+M6 Validation    [....................]   0%  << NEXT
 ```
 
-**Current Milestone:** M4 complete; M5 — Polish & Export next
-**Overall:** 5 of 7 milestones complete
+**Current Milestone:** M5 complete; M6 — Validation next
+**Overall:** 6 of 7 milestones complete
 
 ---
 
@@ -34,7 +34,7 @@ M6 Validation    [....................]   0%
 | **M2 Data Model** | Finalize schemas, build import pipeline | Complete | 4 schemas. Transform pipeline. Validation script (0 errors). Search index (264 records). Narrator export (350KB). |
 | **M3 Core UI** | Timeline component with scrubbing and data display | Complete | React+TS+Vite scaffold. TimelineTrack with era bands, markers, scrubbing, zoom (4 levels). EntryCard, DetailPanel. 481KB build. |
 | **M4 Search & Filter** | Full-text search, layer toggles, date range filter | Complete | Fuse.js search <100ms. FilterPanel with layers/eras/date range. Combined AND logic. Empty state UX. 228KB build. |
-| **M5 Polish & Export** | AI narrator export, responsive, accessibility | Not Started | Pending: WCAG AA, export validation |
+| **M5 Polish & Export** | AI narrator export, responsive, accessibility | Complete | ExportDialog with 3 scopes. WCAG AA contrast fixes. Skip link, aria-live, focus trap. Keyboard help (?). 237KB build. |
 | **M6 Validation** | End-to-end testing, user testing, refinement | Not Started | Pending: All test categories green |
 
 ---
@@ -43,13 +43,13 @@ M6 Validation    [....................]   0%
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | M4 complete; ready for M5 planning | None |
-| Engineer | Active | M4 complete; ready for M5 polish/export | None |
+| Product Manager | Idle | M5 complete; ready for M6 review | None |
+| Engineer | Active | M5 complete; ready for M6 validation | None |
 | Researcher | Idle | Data finalized | None |
-| Designer | Ready | Will review M5 visual polish | None |
-| Tester | Ready | Will audit M5 accessibility (WCAG AA) | None |
-| UI/UX | Ready | Will review M5 responsive + keyboard nav | None |
-| AI Narrator | Active | Auditing narrator export for adventure-readiness | None |
+| Designer | Ready | Will review M6 visual regression | None |
+| Tester | Ready | Will run full E2E and accessibility audits | None |
+| UI/UX | Ready | Will verify responsive + keyboard nav in M6 | None |
+| AI Narrator | Ready | Export validated; ready for M6 integration testing | None |
 
 ---
 
@@ -125,6 +125,8 @@ Environment        26   ██████                28%
 | [Search Index](research/vashon-island/search-index.json) | Eng | M2 Complete | 264 records | 1.0 |
 | [Narrator Export](research/vashon-island/narrator-export.json) | Eng | M2 Complete | 93 entries | 1.0 |
 | [ID Mapping](research/vashon-island/id-mapping.json) | Eng | M2 Complete | 159 mappings | 1.0 |
+| ExportDialog component | Eng | M5 Complete | — | 1.0 |
+| KeyboardHelp component | Eng | M5 Complete | — | 1.0 |
 
 ---
 
@@ -137,6 +139,7 @@ Environment        26   ██████                28%
 | 2026-03-02 | Professional neutral voice for agents | Consistency and clarity over personality |
 | 2026-03-02 | Vashon Island, WA as prototype setting | Rich 10,000+ year history; well-documented; diverse data types |
 | 2026-03-02 | Camp Sealth associated with Camp Fire (not YMCA/YWCA) | Web research confirmed Camp Sealth was founded by Camp Fire Girls |
+| 2026-03-02 | WCAG AA color contrast fixes | Darkened warm-amber, teal, stone; raised opacity on inactive toggles/chips; removed era label opacity |
 
 ---
 
@@ -161,11 +164,11 @@ Environment        26   ██████                28%
 
 ## Next Steps
 
-1. **Engineer** — Begin M5: AI narrator JSON export UI; responsive layout refinement
-2. **Designer** — Visual polish per Design Bible; color contrast audit
-3. **UI/UX** — Responsive breakpoints review; keyboard navigation audit; screen reader support
-4. **Tester** — WCAG 2.1 AA accessibility audit; export schema validation
-5. **PM** — Review M4 deliverables and approve M5 start
+1. **Tester** — Begin M6: Full E2E test suite; accessibility audit with axe-core
+2. **Engineer** — Support M6 bug fixes and performance benchmarks
+3. **UI/UX** — Screen reader testing; keyboard nav verification
+4. **Designer** — Visual regression review across breakpoints
+5. **PM** — Review M5 deliverables and approve M6 start
 
 ---
 

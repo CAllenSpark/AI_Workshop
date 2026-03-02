@@ -1,16 +1,16 @@
 # Team Coordination Board
 
-## Current Sprint: M5 — Polish & Export
+## Current Sprint: M6 — Validation
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | M4 complete; ready for M5 planning | None |
-| Engineer | Active | M4 complete; ready for M5 polish/export | None |
+| Product Manager | Idle | M5 complete; ready for M6 review | None |
+| Engineer | Active | M5 complete; ready for M6 validation | None |
 | Researcher | Idle | Data finalized | None |
-| Designer | Ready | Will review M5 visual polish | None |
-| Tester | Ready | Will audit M5 accessibility (WCAG AA) | None |
-| UI/UX | Ready | Will review M5 responsive + keyboard nav | None |
-| AI Narrator | Active | Auditing narrator-export.json for fantasy-meets-reality adventure hosting | None |
+| Designer | Ready | Will review M6 visual regression | None |
+| Tester | Ready | Will run full E2E and accessibility audits | None |
+| UI/UX | Ready | Will verify responsive + keyboard nav in M6 | None |
+| AI Narrator | Ready | Export validated; ready for M6 integration testing | None |
 
 ## Decisions Log
 
@@ -21,6 +21,7 @@
 | 2026-03-02 | Professional neutral voice for all agents | PM | Consistency and clarity over personality. |
 | 2026-03-02 | Vashon Island, WA as prototype setting | PM | Rich history spanning 10,000+ years; well-documented; diverse eras and data types. |
 | 2026-03-02 | Camp Sealth associated with Camp Fire (not YMCA/YWCA) | Researcher | Web research confirmed Camp Sealth was founded by Camp Fire Girls, not YMCA/YWCA as originally assumed. |
+| 2026-03-02 | Darken warm-amber (#C8913A -> #9E7430), teal (#3A8C8C -> #2B7A7A), stone (#D1CCC4 -> #9E9890) for WCAG AA | Eng + Designer | Color contrast audit found 5 failures; darkened colors to meet 4.5:1 for normal text. |
 
 ## Open Questions
 
@@ -52,3 +53,10 @@
 - [x] **M2 Data Model milestone complete** (2026-03-02)
 - [x] **M3 Core UI milestone complete** (2026-03-02)
 - [x] **M4 Search & Filter milestone complete** (2026-03-02)
+- [x] ExportDialog component with scope options (all/filtered/era), include toggles, file download (2026-03-02)
+- [x] Export button added to header with keyboard shortcut (E) (2026-03-02)
+- [x] KeyboardHelp dialog with all shortcuts (? to toggle) (2026-03-02)
+- [x] Accessibility: skip link, aria-live regions, focus trap in dialogs, screen reader support (2026-03-02)
+- [x] WCAG AA color contrast audit — 5 failures fixed (warm-amber, stone, teal, era labels, inactive toggles) (2026-03-02)
+- [x] Responsive improvements: mobile entry-count hidden, export button compact, proper breakpoints (2026-03-02)
+- [x] **M5 Polish & Export milestone complete** (2026-03-02)

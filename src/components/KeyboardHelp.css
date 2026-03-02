@@ -1,0 +1,114 @@
+.help-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  animation: fadeIn 150ms ease;
+}
+
+.help-dialog {
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  width: 380px;
+  max-width: calc(100vw - 32px);
+}
+
+.help-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-lg) var(--sp-xl) var(--sp-base);
+  border-bottom: 1px solid var(--stone-light);
+}
+
+.help-header h2 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  color: var(--forest-green);
+}
+
+.help-close {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--stone-light);
+  border-radius: 6px;
+  background: white;
+  color: var(--charcoal);
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast);
+}
+
+.help-close:hover {
+  background: var(--soft-gray);
+}
+
+.help-body {
+  padding: var(--sp-base) var(--sp-xl);
+}
+
+.shortcuts-table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.shortcuts-table tr + tr td {
+  padding-top: var(--sp-sm);
+}
+
+.shortcut-keys {
+  width: 100px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.shortcut-keys kbd {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--parchment);
+  border: 1px solid var(--stone-light);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--charcoal);
+  box-shadow: 0 1px 0 var(--stone-light);
+  min-width: 24px;
+  text-align: center;
+}
+
+.key-separator {
+  display: inline-block;
+  width: 4px;
+}
+
+.shortcut-label {
+  font-size: 14px;
+  color: var(--charcoal);
+  padding-left: var(--sp-base);
+  vertical-align: middle;
+}
+
+.help-footer {
+  padding: var(--sp-sm) var(--sp-xl) var(--sp-base);
+  border-top: 1px solid var(--soft-gray);
+  text-align: center;
+  font-size: 12px;
+  color: var(--warm-gray);
+}
+
+.help-footer kbd {
+  display: inline-block;
+  padding: 1px 5px;
+  background: var(--parchment);
+  border: 1px solid var(--stone-light);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}

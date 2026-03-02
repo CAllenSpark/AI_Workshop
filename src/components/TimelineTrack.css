@@ -16,7 +16,7 @@
 .timeline-controls button {
   width: 32px;
   height: 32px;
-  border: 1px solid var(--stone);
+  border: 1px solid var(--stone-light);
   border-radius: 6px;
   background: white;
   font-size: 18px;
@@ -51,7 +51,7 @@
   position: relative;
   height: 180px;
   background: white;
-  border: 1px solid var(--stone);
+  border: 1px solid var(--stone-light);
   border-radius: 8px;
   overflow: hidden;
   cursor: grab;
@@ -90,7 +90,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  opacity: 0.7;
+  opacity: 1;
   position: absolute;
   bottom: 8px;
   left: 8px;
@@ -117,7 +117,7 @@
 .tick-line {
   width: 1px;
   height: 16px;
-  background: var(--stone);
+  background: var(--stone-light);
 }
 
 .tick-label {

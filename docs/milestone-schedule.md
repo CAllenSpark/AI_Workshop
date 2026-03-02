@@ -127,7 +127,7 @@ This schedule defines the phased delivery plan from project scaffolding through 
 
 **Quality Gate:** Export validates against schema. Accessibility audit passes WCAG 2.1 AA. Responsive breakpoints work correctly.
 
-**Status:** Not Started
+**Status:** Complete (2026-03-02) — ExportDialog with 3 scope options (all/filtered/era), include toggles (details, sources, coordinates), file download. WCAG AA color contrast audit: 5 failures fixed (warm-amber, stone, teal, era labels, inactive toggles). Skip link, aria-live regions, focus trap in modals. KeyboardHelp dialog (? key). Responsive mobile improvements. 237KB JS production build.
 
 ---
 

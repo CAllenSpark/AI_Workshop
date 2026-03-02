@@ -3,11 +3,12 @@ import type { TimelineEntry, LayerKey, EraKey, ZoomLevel } from './types';
 import { useTimelineData } from './hooks/useTimelineData';
 import { useSearch } from './hooks/useSearch';
 import { parseDate } from './data/loader';
-import { ERAS } from './data/eras';
 import TimelineTrack from './components/TimelineTrack';
 import EntryCard from './components/EntryCard';
 import DetailPanel from './components/DetailPanel';
 import FilterPanel from './components/FilterPanel';
+import ExportDialog from './components/ExportDialog';
+import KeyboardHelp from './components/KeyboardHelp';
 import './App.css';
 
 const ALL_LAYERS = new Set<LayerKey>(['event', 'person', 'place', 'environment']);
@@ -19,6 +20,8 @@ export default function App() {
   const [activeLayers, setActiveLayers] = useState<Set<LayerKey>>(new Set(ALL_LAYERS));
   const [selectedEras, setSelectedEras] = useState<Set<EraKey>>(new Set());
   const [searchQuery, setSearchQuery] = useState('');
+  const [showExport, setShowExport] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
 
   // Compute the full date range from data
   const fullDateRange = useMemo<[number, number]>(() => {
@@ -37,18 +40,33 @@ export default function App() {
   // Initialize Fuse.js search
   const { search } = useSearch(data?.entries ?? []);
 
-  // Keyboard shortcut: Escape to close detail panel, / to focus search
+  // Keyboard shortcuts
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setSelectedId(null);
-      if (e.key === '/' && !(e.target instanceof HTMLInputElement)) {
+      const target = e.target as HTMLElement;
+      const isInput = target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target instanceof HTMLSelectElement;
+
+      if (e.key === 'Escape') {
+        if (showExport) { setShowExport(false); return; }
+        if (showHelp) { setShowHelp(false); return; }
+        setSelectedId(null);
+      }
+      if (e.key === '/' && !isInput) {
         e.preventDefault();
         document.getElementById('search-input')?.focus();
+      }
+      if (e.key === '?' && !isInput) {
+        e.preventDefault();
+        setShowHelp((prev) => !prev);
+      }
+      if ((e.key === 'e' || e.key === 'E') && !isInput && !showExport && !showHelp) {
+        e.preventDefault();
+        setShowExport(true);
       }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, []);
+  }, [showExport, showHelp]);
 
   const handleEntrySelect = useCallback((id: string) => {
     setSelectedId((prev) => (prev === id ? null : id));
@@ -118,8 +136,8 @@ export default function App() {
 
   if (loading) {
     return (
-      <div className="app-loading">
-        <div className="loading-spinner" />
+      <div className="app-loading" role="status">
+        <div className="loading-spinner" aria-hidden="true" />
         <p>Loading Vashon Island knowledge base...</p>
       </div>
     );
@@ -127,7 +145,7 @@ export default function App() {
 
   if (error || !data) {
     return (
-      <div className="app-error">
+      <div className="app-error" role="alert">
         <h2>Failed to load data</h2>
         <p>{error}</p>
       </div>
@@ -136,6 +154,9 @@ export default function App() {
 
   return (
     <div className={`app ${selectedEntry ? 'panel-open' : ''}`}>
+      {/* Skip link for accessibility */}
+      <a href="#main-content" className="skip-link">Skip to main content</a>
+
       {/* Header */}
       <header className="app-header">
         <div className="header-left">
@@ -153,30 +174,53 @@ export default function App() {
             aria-label="Search the knowledge base"
           />
           {searchQuery && (
-            <span className="search-count">{filteredEntries.length} results</span>
+            <span className="search-count" aria-live="polite">{filteredEntries.length} results</span>
           )}
         </div>
         <div className="header-right">
+          <button
+            className="export-btn"
+            onClick={() => setShowExport(true)}
+            aria-label="Export knowledge base"
+            title="Export (E)"
+          >
+            Export
+          </button>
+          <button
+            className="help-btn"
+            onClick={() => setShowHelp(true)}
+            aria-label="Keyboard shortcuts"
+            title="Keyboard shortcuts (?)"
+          >
+            ?
+          </button>
           <span className="entry-count">{filteredEntries.length} / {data.entries.length} entries</span>
         </div>
       </header>
 
       {/* Filter panel with layer toggles, era chips, date range */}
-      <FilterPanel
-        activeLayers={activeLayers}
-        selectedEras={selectedEras}
-        dateRange={dateRange}
-        fullDateRange={fullDateRange}
-        totalCount={data.entries.length}
-        filteredCount={filteredEntries.length}
-        onLayerToggle={toggleLayer}
-        onEraToggle={toggleEra}
-        onDateRangeChange={setDateRange}
-        onClearAll={handleClearAll}
-      />
+      <nav aria-label="Filters">
+        <FilterPanel
+          activeLayers={activeLayers}
+          selectedEras={selectedEras}
+          dateRange={dateRange}
+          fullDateRange={fullDateRange}
+          totalCount={data.entries.length}
+          filteredCount={filteredEntries.length}
+          onLayerToggle={toggleLayer}
+          onEraToggle={toggleEra}
+          onDateRangeChange={setDateRange}
+          onClearAll={handleClearAll}
+        />
+      </nav>
 
-      {/* Timeline */}
-      <main className="app-main">
+      {/* Live region for filter count announcements */}
+      <div className="sr-only" aria-live="polite" aria-atomic="true">
+        Showing {filteredEntries.length} of {data.entries.length} entries
+      </div>
+
+      {/* Timeline and entries */}
+      <main id="main-content" className="app-main">
         <TimelineTrack
           entries={data.entries}
           zoomLevel={zoomLevel}
@@ -187,9 +231,9 @@ export default function App() {
         />
 
         {/* Entry list */}
-        <div className="entry-list">
+        <div className="entry-list" role="list" aria-label="Timeline entries">
           {filteredEntries.length === 0 ? (
-            <div className="empty-state">
+            <div className="empty-state" role="status">
               <p>No entries match your current filters.</p>
               <button className="clear-filters-btn" onClick={handleClearAll}>
                 Clear All Filters
@@ -216,6 +260,20 @@ export default function App() {
           onClose={() => setSelectedId(null)}
           onEntrySelect={handleEntrySelect}
         />
+      )}
+
+      {/* Export dialog */}
+      {showExport && (
+        <ExportDialog
+          data={data}
+          filteredEntries={filteredEntries}
+          onClose={() => setShowExport(false)}
+        />
+      )}
+
+      {/* Keyboard help */}
+      {showHelp && (
+        <KeyboardHelp onClose={() => setShowHelp(false)} />
       )}
     </div>
   );

@@ -1,5 +1,5 @@
 import { useRef, useCallback, useEffect, useState } from 'react';
-import type { TimelineEntry, EraKey, LayerKey, ZoomLevel } from '../types';
+import type { TimelineEntry, LayerKey, ZoomLevel } from '../types';
 import { ERAS, LAYER_COLORS } from '../data/eras';
 import { parseDate } from '../data/loader';
 import './TimelineTrack.css';

@@ -15,7 +15,7 @@ export const ERAS: Era[] = [
     name: 'Indigenous Peoples',
     start: -10000,
     end: 1850,
-    color: '#3A8C8C',
+    color: '#2B7A7A',
     colorLight: '#E4F3F3',
   },
   {
@@ -39,7 +39,7 @@ export const ERAS: Era[] = [
     name: 'Pioneer Settlement',
     start: 1865,
     end: 1900,
-    color: '#C8913A',
+    color: '#9E7430',
     colorLight: '#FBF3E4',
   },
   {
@@ -71,7 +71,7 @@ export const ERAS: Era[] = [
     name: 'State Ferry Era',
     start: 1951,
     end: 1970,
-    color: '#3A8C8C',
+    color: '#2B7A7A',
     colorLight: '#E4F3F3',
   },
   {
@@ -91,8 +91,8 @@ export function getEra(key: EraKey): Era | undefined {
 
 /** Layer colors from Design Bible */
 export const LAYER_COLORS: Record<string, { color: string; bg: string; label: string }> = {
-  event: { color: '#C8913A', bg: '#FBF3E4', label: 'Event' },
-  person: { color: '#3A8C8C', bg: '#E4F3F3', label: 'People' },
+  event: { color: '#9E7430', bg: '#FBF3E4', label: 'Event' },
+  person: { color: '#2B7A7A', bg: '#E4F3F3', label: 'People' },
   place: { color: '#2D5F3E', bg: '#E4F0E8', label: 'Place' },
   environment: { color: '#8C6B4A', bg: '#F0EBE4', label: 'Environment' },
 };

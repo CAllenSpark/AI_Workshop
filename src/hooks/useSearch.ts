@@ -1,8 +1,8 @@
 import { useMemo, useRef } from 'react';
-import Fuse from 'fuse.js';
+import Fuse, { type IFuseOptions, type FuseResultMatch } from 'fuse.js';
 import type { TimelineEntry } from '../types';
 
-const FUSE_OPTIONS: Fuse.IFuseOptions<TimelineEntry> = {
+const FUSE_OPTIONS: IFuseOptions<TimelineEntry> = {
   keys: [
     { name: 'title', weight: 2.0 },
     { name: 'description', weight: 1.0 },
@@ -21,7 +21,7 @@ const FUSE_OPTIONS: Fuse.IFuseOptions<TimelineEntry> = {
 export interface SearchResult {
   entry: TimelineEntry;
   score: number;
-  matches: Fuse.FuseResultMatch[];
+  matches: readonly FuseResultMatch[];
 }
 
 export function useSearch(entries: TimelineEntry[]) {

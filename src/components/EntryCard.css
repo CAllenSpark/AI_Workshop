@@ -1,6 +1,6 @@
 .entry-card {
   background: white;
-  border: 1px solid var(--stone);
+  border: 1px solid var(--stone-light);
   border-left: 4px solid var(--warm-amber);
   border-radius: 8px;
   padding: var(--sp-md) var(--sp-base);
