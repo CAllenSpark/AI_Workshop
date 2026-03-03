@@ -1,17 +1,17 @@
 # Team Coordination Board
 
-## Current Sprint: Post-M7 — Planning M8 Creative UI
+## Current Sprint: M8 Creative UI — Complete. Planning M9.
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | PRD Addendum + M7 code merged; scoping M8 Creative UI | None |
-| Engineer | Complete | M7 schemas v2, types, loader, AddEntryDialog, tests — all implemented | None |
+| Product Manager | Active | M8 complete; scoping M9 Multi-Setting | None |
+| Engineer | Complete | M8: ViewModeToggle, TabNav, PeopleTimeline, creative card styles, narrative metadata | None |
 | Database Engineer | Complete | entriesByScope/entriesByType indexes, cache v3 | None |
-| Researcher | Queued | Regional research sprint (Seattle, Tacoma) — awaiting M9 | None |
-| Designer | Complete | Visual strategy (docs/planning/designer-visual-strategy.md) + Design Bible v2 | None |
-| Tester | Complete | 142 tests (up from 122), 10 fantasy tests, all green | None |
-| UI/UX | Pending | People timeline interaction design, view mode toggle placement | None |
-| AI Narrator | Complete | Worldbuilding recommendations (docs/planning/narrator-worldbuilding-recommendations.md) | None |
+| Researcher | Queued | Regional research sprint (Seattle, Tacoma) | Awaiting M9 |
+| Designer | Complete | Visual strategy implemented — violet palette, four-signal distinction | None |
+| Tester | Complete | 172 tests (up from 142), 30 new M8 tests, 14 files, all green | None |
+| UI/UX | Complete | People timeline, view mode toggle, tab navigation — all implemented | None |
+| AI Narrator | Complete | Narrative metadata displayed in detail panel; recommendations implemented | None |
 
 ## Decisions Log
 
@@ -96,3 +96,14 @@
   - AddEntryDialog: entry type selector, scope dropdown, universe field, fantasy colors
   - 142 tests (up from 122), all green. TypeScript clean.
 - [x] Parallel branch `claude/add-fantasy-dates-iTNHa` merged into main branch (2026-03-03)
+- [x] **M8 Creative Layer UI milestone complete** (2026-03-03)
+  - ViewModeToggle: 3-mode switcher (Historical/Creative/All) with entry counts, radiogroup a11y
+  - TabNav: Timeline | People tabs with keyboard shortcuts (1, 2), ARIA tablist pattern
+  - PeopleTimeline: lifespan bars, period parsing, sort by date/name, hover entry dots, view mode filtering
+  - EntryCard: dashed borders for fantasy, dotted for speculative, entry type badges, diamond layer dots, scope badges
+  - DetailPanel: entry type badge, narrative metadata (arc, beat, anchors with cross-refs)
+  - TimelineTrack: diamond markers for creative entries (45deg rotation)
+  - FilterPanel: view mode indicator banner
+  - App.tsx: view mode state, tab panels, entry type filter pipeline, keyboard shortcuts (1/2 for tabs)
+  - CSS: 11 new creative layer custom properties, responsive treatment
+  - 172 tests (up from 142), 14 files, all green. TypeScript clean. Build: 264KB JS, 37KB CSS.

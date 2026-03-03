@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-03 (M7 Fantasy Data Model complete + Creative Layer planning sprint merged)
+**Last Updated:** 2026-03-03 (M8 Creative Layer UI complete)
 **Setting:** Vashon Island, WA (prehistory to present)
 **Branch:** `claude/writers-research-companion-zTnuE`
 
@@ -18,15 +18,15 @@ M3 Core UI       [####################] 100%
 M4 Search/Filter [####################] 100%
 M5 Polish/Export [####################] 100%
 M6 Validation    [####################] 100%
-M7 Fantasy Data  [####################] 100%  << COMPLETE
-M8 Creative UI   [                    ]   0%  << NEXT
-M9 Multi-Setting [                    ]   0%
+M7 Fantasy Data  [####################] 100%
+M8 Creative UI   [####################] 100%  << COMPLETE
+M9 Multi-Setting [                    ]   0%  << NEXT
 M10 Polish/Export[                    ]   0%
 M11 Validation   [                    ]   0%
 ```
 
-**Current Milestone:** M7 complete. Planning sprint merged. M8 next.
-**Overall:** 8 of 12 milestones complete. M8-M11 in planning.
+**Current Milestone:** M8 complete. M9 Multi-Setting next.
+**Overall:** 9 of 12 milestones complete. M9-M11 in planning.
 
 ---
 
@@ -42,7 +42,7 @@ M11 Validation   [                    ]   0%
 | **M5 Polish & Export** | AI narrator export, responsive, accessibility | Complete | ExportDialog with 3 scopes. WCAG AA contrast fixes. Skip link, aria-live, focus trap. Keyboard help (?). 237KB build. |
 | **M6 Validation** | End-to-end testing, user testing, refinement | Complete | 122 tests, 10 files, all green. TypeScript clean. 252KB JS build. |
 | **M7 Fantasy Data** | Fantasy data model — schemas, types, loader, UI | Complete | 142 tests, 10 files, all green. 4 schemas v2. TypeScript clean. |
-| **M8 Creative UI** | Creative layer visual design — colors, markers, toggles, people timeline | Not Started | — |
+| **M8 Creative UI** | Creative layer visual design — colors, markers, toggles, people timeline | Complete | 172 tests, 14 files, all green. 3 new components. TypeScript clean. 264KB JS, 37KB CSS. |
 | **M9 Multi-Setting** | Multi-setting support + narrative dashboard | Not Started | — |
 | **M10 Polish/Export** | Creative export, narrator prompt, connection insights | Not Started | — |
 | **M11 Validation** | Full QA, performance, accessibility for creative layer | Not Started | — |
@@ -53,14 +53,14 @@ M11 Validation   [                    ]   0%
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | PRD Addendum drafted; M7 code merged; planning M8 scope | None |
-| Engineer | Complete | M7 schemas v2, types, loader, AddEntryDialog, tests — all implemented | None |
+| Product Manager | Active | M8 complete; scoping M9 Multi-Setting | None |
+| Engineer | Complete | M8: ViewModeToggle, TabNav, PeopleTimeline, creative card styles, narrative metadata | None |
 | Database Engineer | Complete | entriesByScope/entriesByType indexes, cache v3 | None |
-| Researcher | Queued | Regional research sprint (Seattle, Tacoma) ready | Awaiting M9 |
-| Designer | Complete | Visual strategy drafted (docs/planning/designer-visual-strategy.md) | None |
-| Tester | Complete | 142 tests (up from 122), 10 fantasy tests added, all green | None |
-| UI/UX | Pending | People timeline interaction design, view mode toggle | None |
-| AI Narrator | Complete | Worldbuilding recommendations drafted (docs/planning/narrator-worldbuilding-recommendations.md) | None |
+| Researcher | Queued | Regional research sprint (Seattle, Tacoma) | Awaiting M9 |
+| Designer | Complete | Visual strategy implemented — violet palette, four-signal distinction, people timeline | None |
+| Tester | Complete | 172 tests (up from 142), 30 new M8 tests, 14 files, all green | None |
+| UI/UX | Complete | People timeline interaction, view mode toggle, tab navigation — all implemented | None |
+| AI Narrator | Complete | Worldbuilding recommendations; narrative metadata displayed in detail panel | None |
 
 ---
 
@@ -174,23 +174,28 @@ Environment        28   █████                 25%
 
 ---
 
-## Test Results (M7)
+## Test Results (M8)
 
 ```
-Category                Files  Tests  Status
-─────────────────────────────────────────────
-Unit: Data Layer           2     36   PASS
-Unit: Components           4     42   PASS
-Unit: Search               1      9   PASS
-Integration: Pipeline      1      8   PASS
-Integration: Export        1     11   PASS
-Integration: Validation    1     26   PASS  (+10 fantasy tests)
-─────────────────────────────────────────────
-TOTAL                     10    142   ALL GREEN
+Category                     Files  Tests  Status
+──────────────────────────────────────────────────
+Unit: Data Layer                2     36   PASS
+Unit: Components (existing)     4     42   PASS
+Unit: Components (M8 new)       4     30   PASS
+  - ViewModeToggle              1      6   PASS
+  - TabNav                      1      5   PASS
+  - PeopleTimeline              1      9   PASS
+  - EntryCard.creative          1     10   PASS
+Unit: Search                    1      9   PASS
+Integration: Pipeline           1      8   PASS
+Integration: Export             1     11   PASS
+Integration: Validation         1     26   PASS
+──────────────────────────────────────────────────
+TOTAL                          14    172   ALL GREEN
 ```
 
-**Build:** TypeScript clean (0 errors).
-**Duration:** ~4.7s test suite execution.
+**Build:** TypeScript clean (0 errors). 264KB JS, 37KB CSS.
+**Duration:** ~8s test suite execution.
 
 ## Next Steps
 
@@ -208,11 +213,21 @@ TOTAL                     10    142   ALL GREEN
 - Engineer Schema Evolution: additive architecture, migration strategy
 - Narrator Worldbuilding Recommendations: creative entry types, export v3, Mixed Reality Protocol
 
-**Next: M8 Creative UI**
-1. Implement visual distinction for fantasy entries (violet palette, dashed borders, badges)
-2. Add view mode toggle (Historical / Fantasy / Combined)
-3. Build people timeline tab with lifespan bars
-4. Fantasy entries hidden by default with opt-in toggle
+**M8 Creative Layer UI (Complete — 2026-03-03):**
+- ViewModeToggle: 3-mode switcher (Historical/Creative/All) with counts
+- TabNav: Timeline | People tabs with keyboard shortcuts (1, 2)
+- PeopleTimeline: lifespan bars, period parsing, sort by date/name, hover entry dots
+- EntryCard creative treatment: dashed borders, type badges, diamond dots, scope badges
+- DetailPanel narrative metadata: arc, beat, anchors with cross-references
+- TimelineTrack: diamond markers for creative entries
+- FilterPanel: view mode indicator
+- App.tsx: view mode state, tab panels, entry type filter pipeline
+
+**Next: M9 Multi-Setting**
+1. Regional context data (Seattle, Tacoma skeleton research)
+2. Setting toggle in filter panel
+3. Narrative dashboard tab (third tab)
+4. Cross-setting connection visualization
 
 ---
 
