@@ -11,7 +11,7 @@
 | Designer | Complete | Creative layer visual strategy drafted (docs/planning/designer-visual-strategy.md) — classification language, palette extension, timeline layering, people timeline, narrative dashboard, card evolution | Awaiting Engineer review for schema additions; UI/UX review for interaction patterns |
 | Tester | Pending Review | Extend test plan with creative layer test cases | None |
 | UI/UX | Pending Review | People timeline interaction design, view mode toggle placement | None |
-| AI Narrator | Pending Review | Review updated export requirements, draft system prompt for fact/fiction boundary | None |
+| AI Narrator | Complete | Worldbuilding recommendations drafted (docs/planning/narrator-worldbuilding-recommendations.md) -- 9 sections covering provenance system, creative entry types, people timeline, multi-setting, narrative dashboard, export evolution | Awaiting Engineer review for schema changes; PM review for scope alignment |
 
 ## Decisions Log
 
@@ -28,6 +28,9 @@
 | 2026-03-03 | PRD Creative Layer Addendum drafted | PM | 13 user stories (5 P0, 4 P1, 4 P2), 5 milestones (M7-M11), 2 new personas. Addendum at docs/planning/prd-creative-layer-addendum.md. |
 | 2026-03-03 | Creative layer visual strategy: "Different Pen" metaphor — violet/purple palette, dashed borders, diagonal texture, provenance badges (HIST/FICTION/HYBRID) | Designer | Violet family chosen for creative layer because it occupies the unused hue region relative to existing amber/teal/green/brown layers, carries cultural associations with imagination, and exists naturally in PNW twilight skies. All proposed colors pass WCAG AA at 4.5:1 against Parchment. |
 | 2026-03-03 | People Timeline as separate tab view (not panel overlay) | Designer | Lifespan bars require full horizontal width for temporal legibility; cannot coexist with the main timeline in a stacked layout without severe vertical compression. Tab approach keeps both views at full resolution. |
+| 2026-03-03 | Five-level provenance system for mixed history/fiction entries | AI Narrator | historical, historical-inferential, creative-grounded, creative-speculative, creative-fantastical. Binary classification insufficient -- narrator needs granular provenance to modulate confidence and framing. See docs/planning/narrator-worldbuilding-recommendations.md Section 1.2. |
+| 2026-03-03 | Eight new creative entry types proposed | AI Narrator | narrative-arc, relationship, world-rule, artifact, legend, faction, scene, theme. Existing four types (event, person, place, environment) serve history but not story structure. See docs/planning/narrator-worldbuilding-recommendations.md Section 2.2. |
+| 2026-03-03 | Multi-setting depth hierarchy: primary/secondary/tertiary | AI Narrator | Vashon=primary (full depth), Seattle+Tacoma=secondary (30-60 entries), Bainbridge+Puyallup+Olympia=tertiary (5-15 entries). Prevents scope creep while enabling cross-setting narration. See Section 4.2. |
 | 2026-03-03 | Narrative Dashboard as third tab view alongside Timeline and People | Designer | Dashboard serves a fundamentally different task (story structure overview) than the timeline (temporal exploration). Embedding it in a panel would force too much compression. Three-tab navigation keeps each view focused on its purpose. |
 | 2026-03-02 | Implement localStorage caching for data | DB Eng | Reduces repeat-visit load time from ~500ms to near-instant. Background refresh keeps data fresh. |
 | 2026-03-02 | Add O(1) ID-based lookup maps | DB Eng | entriesById, peopleById, placesById eliminate O(n) find() calls in DetailPanel cross-references. |
@@ -44,7 +47,9 @@
 - [ ] How should the people timeline handle characters whose lifespans span multiple eras? — **UI/UX, to be resolved in M8**
 - [ ] Should context settings (Seattle, Tacoma) support creative content, or only historical? — **PM, proposed: both, since characters travel between settings**
 - [x] Should the narrative dashboard be a separate route or a panel within the main view? — **Resolved by Designer (2026-03-03):** Separate tab view (third tab: Timeline | People | Narrative Dashboard). Rationale: dashboard serves a different task than timeline; panel embedding would over-compress. See docs/planning/designer-visual-strategy.md Section 6
-- [ ] How does the AI narrator system prompt handle creative vs. historical content during gameplay? — **AI Narrator, to be resolved in M10**
+- [x] How does the AI narrator system prompt handle creative vs. historical content during gameplay? — **Resolved by AI Narrator (2026-03-03):** Mixed Reality Protocol and Cross-Boundary Narration Rules defined in docs/planning/narrator-worldbuilding-recommendations.md Section 6.7. Key principle: narrator modulates confidence based on provenance field; fictional characters may witness but not alter real events.
+- [ ] Should the five-level provenance system be simplified to three levels (historical, creative-grounded, creative-fantastical) for the prototype? — **PM + AI Narrator to discuss**
+- [ ] How should the narrator export handle multiple creative properties sharing the same historical base? Inline all, or separate export per property? — **Engineer + AI Narrator to resolve in M10**
 
 ## Completed Items
 
@@ -103,3 +108,4 @@
 - [x] All 122 tests still passing after enrichment (2026-03-02)
 - [x] PRD Creative Layer Addendum drafted — 13 user stories, 5 milestones (M7-M11), 2 new personas (2026-03-03)
 - [x] Creative layer visual design strategy drafted — classification language, color palette extension, timeline layering, people timeline, narrative dashboard, card evolution, CSS tokens (2026-03-03)
+- [x] AI Narrator worldbuilding recommendations drafted — 5-level provenance system, 8 new creative entry types, people timeline spec, multi-setting hierarchy, 7 dashboard views, export format v3 evolution plan, 5-phase implementation roadmap (2026-03-03)
