@@ -316,6 +316,23 @@ async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Per
   }
 }
 
+/** Build a DataStore from raw arrays (used for project data loaded from localStorage) */
+export function buildDataStore(
+  entries: TimelineEntry[],
+  people: Person[],
+  places: Place[],
+  environment: EnvironmentFeature[],
+  universes: Universe[],
+  props: NarrativeProp[],
+): DataStore {
+  entries = entries.map(applyEntryDefaults);
+  people = people.map(applyPersonDefaults);
+  entries.sort((a, b) => parseDate(a.date_start) - parseDate(b.date_start));
+  const indexes = buildIndexes(entries, people, places);
+  const warnings = validateData(entries, people, places, universes);
+  return { entries, people, places, environment, universes, props, warnings, ...indexes };
+}
+
 /** Add a new entry to the data store (in-memory only for prototype) */
 export function addEntry(store: DataStore, entry: TimelineEntry): DataStore {
   const withDefaults = applyEntryDefaults(entry);

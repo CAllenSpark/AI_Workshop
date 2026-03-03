@@ -1,8 +1,16 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
-import type { TimelineEntry, LayerKey, EraKey, ZoomLevel, EntryType, ScopeKey } from './types';
+import type { TimelineEntry, LayerKey, EraKey, ZoomLevel, EntryType, ScopeKey, Project, DataStore } from './types';
 import { useTimelineData } from './hooks/useTimelineData';
 import { useSearch } from './hooks/useSearch';
-import { addEntry } from './data/loader';
+import { addEntry, buildDataStore } from './data/loader';
+import {
+  getActiveProjectId,
+  setActiveProjectId,
+  getProject,
+  loadProjectData,
+  DEFAULT_PROJECT_ID,
+  DEFAULT_PROJECT,
+} from './data/project-manager';
 import TimelineTrack from './components/TimelineTrack';
 import EntryCard from './components/EntryCard';
 import DetailPanel from './components/DetailPanel';
@@ -13,6 +21,7 @@ import TabNav from './components/TabNav';
 import type { TabKey } from './components/TabNav';
 import PeopleTimeline from './components/PeopleTimeline';
 import NarrativeDashboard from './components/NarrativeDashboard';
+import ProjectSelector from './components/ProjectSelector';
 import ExportDialog from './components/ExportDialog';
 import KeyboardHelp from './components/KeyboardHelp';
 import AddEntryDialog from './components/AddEntryDialog';
@@ -24,7 +33,56 @@ const ALL_SCOPES = new Set<ScopeKey>(['vashon', 'seattle', 'tacoma', 'national']
 const PAGE_SIZE = 50;
 
 export default function App() {
-  const { data, loading, error, setData } = useTimelineData();
+  // Project state
+  const [activeProject, setActiveProject] = useState<Project>(() => {
+    const id = getActiveProjectId();
+    return getProject(id) ?? DEFAULT_PROJECT;
+  });
+
+  // Default project uses static file loader; user projects use localStorage
+  const { data: defaultData, loading, error, setData: setDefaultData } = useTimelineData();
+  const [userProjectData, setUserProjectData] = useState<DataStore | null>(null);
+
+  const isDefaultProject = activeProject.id === DEFAULT_PROJECT_ID;
+  const data = isDefaultProject ? defaultData : userProjectData;
+
+  const setData = useCallback((store: DataStore) => {
+    if (isDefaultProject) {
+      setDefaultData(store);
+    } else {
+      setUserProjectData(store);
+    }
+  }, [isDefaultProject, setDefaultData]);
+
+  // Load user project data when switching to a non-default project
+  const handleProjectChange = useCallback((projectId: string) => {
+    const project = getProject(projectId) ?? DEFAULT_PROJECT;
+    setActiveProjectId(projectId);
+    setActiveProject(project);
+    setSelectedId(null);
+    setSearchQuery('');
+    setVisibleCount(PAGE_SIZE);
+    setSelectedEras(new Set());
+    setActiveLayers(new Set(ALL_LAYERS));
+    setActiveScopes(new Set(ALL_SCOPES));
+
+    if (projectId === DEFAULT_PROJECT_ID) {
+      setUserProjectData(null);
+    } else {
+      const pd = loadProjectData(projectId);
+      if (pd) {
+        setUserProjectData(
+          buildDataStore(pd.entries, pd.people, pd.places, pd.environment, pd.universes, pd.props)
+        );
+      } else {
+        // Empty project
+        setUserProjectData(
+          buildDataStore([], [], [], [], [], [])
+        );
+      }
+    }
+  }, []);
+
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [zoomLevel, setZoomLevel] = useState<ZoomLevel>(1);
   const [activeLayers, setActiveLayers] = useState<Set<LayerKey>>(new Set(ALL_LAYERS));
@@ -225,20 +283,29 @@ export default function App() {
     [data, selectedId]
   );
 
-  if (loading) {
+  if (loading && isDefaultProject) {
     return (
       <div className="app-loading" role="status">
         <div className="loading-spinner" aria-hidden="true" />
-        <p>Loading Vashon Island knowledge base...</p>
+        <p>Loading {activeProject.setting} knowledge base...</p>
       </div>
     );
   }
 
-  if (error || !data) {
+  if (error && isDefaultProject) {
     return (
       <div className="app-error" role="alert">
         <h2>Failed to load data</h2>
         <p>{error}</p>
+      </div>
+    );
+  }
+
+  if (!data) {
+    return (
+      <div className="app-loading" role="status">
+        <div className="loading-spinner" aria-hidden="true" />
+        <p>Loading {activeProject.setting} knowledge base...</p>
       </div>
     );
   }
@@ -252,7 +319,10 @@ export default function App() {
       <header className="app-header">
         <div className="header-left">
           <h1>Writer's Research Companion</h1>
-          <span className="header-setting">Vashon Island, WA</span>
+          <ProjectSelector
+            activeProject={activeProject}
+            onProjectChange={handleProjectChange}
+          />
         </div>
         <div className="header-center">
           <input
@@ -407,6 +477,7 @@ export default function App() {
             <NarrativeDashboard
               data={data}
               viewMode={viewMode}
+              books={activeProject.books}
               onEntrySelect={handleEntrySelect}
             />
           </div>

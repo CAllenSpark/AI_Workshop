@@ -8,10 +8,11 @@ import NarrativeDashboard from './NarrativeDashboard';
 import { buildTestStore, TEST_ENTRIES } from '../__fixtures__/test-data';
 import type { DataStore } from '../types';
 
-function renderDashboard(overrides: { data?: DataStore; viewMode?: 'all' | 'historical' | 'creative' } = {}) {
+function renderDashboard(overrides: { data?: DataStore; viewMode?: 'all' | 'historical' | 'creative'; books?: import('../types').Book[] } = {}) {
   const defaultProps = {
     data: buildTestStore(),
     viewMode: 'all' as const,
+    books: [] as import('../types').Book[],
     onEntrySelect: vi.fn(),
     ...overrides,
   };

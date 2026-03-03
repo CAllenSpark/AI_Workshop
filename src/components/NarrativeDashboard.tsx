@@ -1,5 +1,5 @@
-import { useMemo } from 'react';
-import type { DataStore, TimelineEntry, NarrativeBeat } from '../types';
+import { useMemo, useState } from 'react';
+import type { DataStore, TimelineEntry, NarrativeBeat, Book } from '../types';
 import { ENTRY_TYPE_COLORS } from '../data/eras';
 import type { ViewMode } from './ViewModeToggle';
 import './NarrativeDashboard.css';
@@ -7,6 +7,7 @@ import './NarrativeDashboard.css';
 interface Props {
   data: DataStore;
   viewMode: ViewMode;
+  books: Book[];
   onEntrySelect: (id: string) => void;
 }
 
@@ -34,14 +35,20 @@ const BEAT_LABELS: Record<NarrativeBeat, string> = {
   'epilogue': 'Epilogue',
 };
 
-export default function NarrativeDashboard({ data, viewMode, onEntrySelect }: Props) {
-  // Gather all creative entries
+export default function NarrativeDashboard({ data, viewMode, books, onEntrySelect }: Props) {
+  const [activeBook, setActiveBook] = useState<string | null>(null);
+
+  // Gather all creative entries, optionally filtered by book
   const creativeEntries = useMemo(() => {
     return data.entries.filter((e) => {
       const t = e.entry_type ?? 'historical';
-      return t === 'fantasy' || t === 'speculative';
+      if (t !== 'fantasy' && t !== 'speculative') return false;
+      if (activeBook !== null) {
+        return (e.narrative?.book ?? null) === activeBook;
+      }
+      return true;
     });
-  }, [data.entries]);
+  }, [data.entries, activeBook]);
 
   // Build arc summaries
   const arcs = useMemo<ArcSummary[]>(() => {
@@ -125,6 +132,34 @@ export default function NarrativeDashboard({ data, viewMode, onEntrySelect }: Pr
         </div>
       </div>
 
+      {/* Book/Season filter (when books exist) */}
+      {books.length > 0 && (
+        <div className="book-filter">
+          <span className="book-filter-label">Book / Season:</span>
+          <div className="book-chips">
+            <button
+              className={`book-chip ${activeBook === null ? 'active' : ''}`}
+              onClick={() => setActiveBook(null)}
+            >
+              All
+            </button>
+            {books.map((book) => (
+              <button
+                key={book.id}
+                className={`book-chip ${activeBook === book.id ? 'active' : ''}`}
+                style={{
+                  borderColor: book.color,
+                  ...(activeBook === book.id ? { backgroundColor: book.colorLight, color: book.color } : {}),
+                }}
+                onClick={() => setActiveBook(activeBook === book.id ? null : book.id)}
+              >
+                {book.name}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       {creativeEntries.length === 0 ? (
         <div className="narrative-empty">
           <p>No creative entries yet. Add fantasy or speculative entries to see narrative structure here.</p>
@@ -171,6 +206,14 @@ export default function NarrativeDashboard({ data, viewMode, onEntrySelect }: Pr
                           style={{ backgroundColor: ENTRY_TYPE_COLORS[entry.entry_type ?? 'historical']?.color }}
                         />
                         <span className="arc-entry-title">{entry.title}</span>
+                        {entry.narrative?.book && books.length > 0 && (() => {
+                          const book = books.find((b) => b.id === entry.narrative?.book);
+                          return book ? (
+                            <span className="arc-entry-book" style={{ color: book.color, backgroundColor: book.colorLight }}>
+                              {book.name}
+                            </span>
+                          ) : null;
+                        })()}
                         {entry.narrative?.beat && (
                           <span className="arc-entry-beat">
                             {BEAT_LABELS[entry.narrative.beat]}

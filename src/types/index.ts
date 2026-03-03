@@ -44,6 +44,8 @@ export interface NarrativeMetadata {
   arc?: string;
   beat?: NarrativeBeat;
   anchors?: NarrativeAnchor[];
+  /** Book/season/volume this entry belongs to (for multi-book narratives) */
+  book?: string;
 }
 
 /** A single timeline entry — the core entity */
@@ -161,6 +163,53 @@ export interface Universe {
   themes?: string[];
   created_by?: string;
   created_at?: string;
+}
+
+/**
+ * A book, season, or volume within a project.
+ * Allows multiple narrative threads on a shared timeline.
+ */
+export interface Book {
+  id: string;
+  name: string;
+  description?: string;
+  /** Sort order (lower = earlier) */
+  order: number;
+  /** Display color for badges and filters */
+  color: string;
+  colorLight: string;
+}
+
+/**
+ * A project — a fully isolated creative workspace.
+ * Each project has its own entries, people, places, etc.
+ */
+export interface Project {
+  id: string;
+  name: string;
+  description: string;
+  /** The real-world or fictional setting (e.g., "Vashon Island, WA", "Modern New York") */
+  setting: string;
+  /** Genre tag for display */
+  genre?: string;
+  /** Books/seasons/volumes within this project */
+  books: Book[];
+  created_at: string;
+  updated_at: string;
+}
+
+/**
+ * Full project data — everything needed for a self-contained project.
+ * Used for import/export between projects.
+ */
+export interface ProjectData {
+  project: Project;
+  entries: TimelineEntry[];
+  people: Person[];
+  places: Place[];
+  environment: EnvironmentFeature[];
+  universes: Universe[];
+  props: NarrativeProp[];
 }
 
 /** Valid era keys matching the schema */
