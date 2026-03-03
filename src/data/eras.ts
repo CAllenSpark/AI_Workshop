@@ -89,10 +89,42 @@ export function getEra(key: EraKey): Era | undefined {
   return ERAS.find((e) => e.key === key);
 }
 
-/** Layer colors from Design Bible */
+/** Layer colors from Design Bible — historical entries */
 export const LAYER_COLORS: Record<string, { color: string; bg: string; label: string }> = {
   event: { color: '#9E7430', bg: '#FBF3E4', label: 'Event' },
   person: { color: '#2B7A7A', bg: '#E4F3F3', label: 'People' },
   place: { color: '#2D5F3E', bg: '#E4F0E8', label: 'Place' },
   environment: { color: '#8C6B4A', bg: '#F0EBE4', label: 'Environment' },
+};
+
+/** Fantasy layer colors from Design Bible v2 Section 9.2 */
+export const FANTASY_LAYER_COLORS: Record<string, { color: string; bg: string; label: string }> = {
+  event: { color: '#7B4BAA', bg: '#F3EBF9', label: 'Fantasy Event' },
+  person: { color: '#9E3A6E', bg: '#F9EBF2', label: 'Fantasy People' },
+  place: { color: '#2A6B7C', bg: '#E4F0F4', label: 'Fantasy Place' },
+  environment: { color: '#4A4E8C', bg: '#ECEDF5', label: 'Fantasy Environment' },
+};
+
+/** Fantasy core UI colors */
+export const FANTASY_COLORS = {
+  primary: '#7B4BAA',     // Amethyst
+  accent: '#A67BC5',      // Soft Violet
+  muted: '#8B7FA0',       // Dusty Lavender
+  surface: '#F3EBF9',     // Pale Orchid
+  panelHeader: '#2E2840', // Night Purple
+} as const;
+
+/** Regional scope colors from Design Bible v2 Section 10 */
+export const SCOPE_COLORS: Record<string, { color: string; bg: string; label: string }> = {
+  vashon: { color: '#2D5F3E', bg: '#E4F0E8', label: 'Vashon Island' },
+  seattle: { color: '#5C6B78', bg: '#EBF0F3', label: 'Seattle' },
+  tacoma: { color: '#5E6B5C', bg: '#EDF1EC', label: 'Tacoma' },
+  national: { color: '#4A5570', bg: '#ECEDF2', label: 'United States' },
+};
+
+/** Entry type display metadata */
+export const ENTRY_TYPE_COLORS: Record<string, { color: string; bg: string; label: string }> = {
+  historical: { color: '#2D5F3E', bg: '#E4F0E8', label: 'Historical' },
+  fantasy: { color: '#7B4BAA', bg: '#F3EBF9', label: 'Fantasy' },
+  speculative: { color: '#9E7430', bg: '#FBF3E4', label: 'Speculative' },
 };

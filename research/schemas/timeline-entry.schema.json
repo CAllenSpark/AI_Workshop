@@ -1,14 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "timeline-entry.schema.json",
-  "title": "Timeline Entry",
-  "description": "A single entry in the Writer's Research Companion timeline database",
+  "title": "Timeline Entry v2",
+  "description": "A single entry in the Writer's Research Companion timeline database. Supports historical, fantasy, and speculative entry types with optional narrative metadata.",
   "type": "object",
-  "required": ["id", "title", "date_start", "era", "layers", "description", "sources"],
+  "required": ["id", "title", "date_start", "era", "layers", "description"],
   "properties": {
     "id": {
       "type": "string",
-      "description": "Unique identifier (format: era-prefix + sequential number, e.g., 'pre-001')",
+      "description": "Unique identifier (format: era-prefix + sequential number, e.g., 'pre-001', 'fan-001', 'sea-001')",
       "pattern": "^[a-z][a-z0-9]*-[0-9]{3}$"
     },
     "title": {
@@ -51,6 +51,77 @@
       "minItems": 1,
       "uniqueItems": true
     },
+    "entry_type": {
+      "type": "string",
+      "description": "Classification of entry factuality. Defaults to 'historical' if omitted.",
+      "enum": ["historical", "fantasy", "speculative"],
+      "default": "historical"
+    },
+    "scope": {
+      "type": "string",
+      "description": "Geographic scope of this entry. Defaults to 'vashon' if omitted.",
+      "enum": ["vashon", "seattle", "tacoma", "national"],
+      "default": "vashon"
+    },
+    "universe_id": {
+      "type": "string",
+      "description": "Fantasy universe/campaign identifier. Required for fantasy and speculative entries, absent for historical.",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "narrative": {
+      "type": "object",
+      "description": "Narrative metadata for fantasy and speculative entries",
+      "properties": {
+        "arc": {
+          "type": "string",
+          "description": "Named narrative arc this entry belongs to"
+        },
+        "beat": {
+          "type": "string",
+          "description": "Story beat classification within the arc",
+          "enum": [
+            "setup",
+            "inciting-incident",
+            "rising-action",
+            "midpoint",
+            "climax",
+            "falling-action",
+            "resolution",
+            "epilogue",
+            "foreshadowing"
+          ]
+        },
+        "anchors": {
+          "type": "array",
+          "description": "Relationships between this fantasy entry and historical entries",
+          "items": {
+            "type": "object",
+            "required": ["entry_id", "relationship"],
+            "properties": {
+              "entry_id": {
+                "type": "string",
+                "description": "ID of the related historical entry"
+              },
+              "relationship": {
+                "type": "string",
+                "enum": [
+                  "divergence_point",
+                  "parallel_event",
+                  "consequence_of",
+                  "backdrop",
+                  "inspired_by",
+                  "contradiction"
+                ]
+              },
+              "description": {
+                "type": "string",
+                "description": "Brief explanation of the relationship"
+              }
+            }
+          }
+        }
+      }
+    },
     "description": {
       "type": "string",
       "description": "Brief summary (1-2 sentences)"
@@ -71,7 +142,7 @@
     },
     "sources": {
       "type": "array",
-      "description": "Reference sources for this entry",
+      "description": "Reference sources for this entry. Required for historical entries; optional for fantasy.",
       "items": {
         "type": "object",
         "required": ["title", "type"],
@@ -83,8 +154,7 @@
             "enum": ["primary", "secondary", "tertiary"]
           }
         }
-      },
-      "minItems": 1
+      }
     },
     "tags": {
       "type": "array",

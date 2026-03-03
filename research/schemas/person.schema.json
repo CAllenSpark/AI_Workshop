@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "person.schema.json",
-  "title": "Person",
-  "description": "A historical figure referenced in the Writer's Research Companion knowledge base",
+  "title": "Person v2",
+  "description": "A historical or fantasy figure referenced in the Writer's Research Companion knowledge base",
   "type": "object",
   "required": ["id", "name", "description", "role"],
   "properties": {
@@ -30,7 +30,7 @@
     },
     "role": {
       "type": "string",
-      "description": "Primary role or significance (e.g., 'homesteader', 'chief', 'naturalist')"
+      "description": "Primary role or significance (e.g., 'homesteader', 'chief', 'naturalist', 'spirit entity')"
     },
     "period": {
       "type": "string",
@@ -40,9 +40,31 @@
       "type": "array",
       "description": "Array of TimelineEntry IDs this person appears in",
       "items": {
-        "type": "string",
-        "pattern": "^[a-z][a-z0-9]*-[0-9]{3}$"
+        "type": "string"
       }
+    },
+    "entry_type": {
+      "type": "string",
+      "description": "Whether this person is historical or fantasy. Defaults to 'historical' if omitted.",
+      "enum": ["historical", "fantasy"],
+      "default": "historical"
+    },
+    "universe_id": {
+      "type": "string",
+      "description": "Fantasy universe/campaign this person belongs to. Only for fantasy persons.",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "personality": {
+      "type": "string",
+      "description": "Personality traits and behavioral patterns (for AI narrator use). Fantasy persons only."
+    },
+    "motivation": {
+      "type": "string",
+      "description": "Core motivation or driving goal (for AI narrator use). Fantasy persons only."
+    },
+    "speech_style": {
+      "type": "string",
+      "description": "How this character speaks (for AI narrator dialogue generation). Fantasy persons only."
     }
   },
   "additionalProperties": false

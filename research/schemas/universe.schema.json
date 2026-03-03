@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "universe.schema.json",
+  "title": "Universe / Campaign",
+  "description": "A fantasy universe or campaign that groups related fictional entries in the Writer's Research Companion",
+  "type": "object",
+  "required": ["id", "name", "description"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (lowercase with hyphens)",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name for the universe/campaign",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of the universe's premise and themes"
+    },
+    "genre": {
+      "type": "string",
+      "description": "Genre classification (e.g., 'dark fantasy', 'alternate history', 'urban fantasy')"
+    },
+    "themes": {
+      "type": "array",
+      "description": "Thematic tags for the universe",
+      "items": { "type": "string" }
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Author or creator name"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Creation date in ISO 8601 format",
+      "format": "date"
+    }
+  },
+  "additionalProperties": false
+}

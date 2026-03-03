@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-03 (Creative Layer planning sprint initiated)
+**Last Updated:** 2026-03-03 (M7 Fantasy Data Model complete + Creative Layer planning sprint merged)
 **Setting:** Vashon Island, WA (prehistory to present)
 **Branch:** `claude/writers-research-companion-zTnuE`
 
@@ -17,16 +17,16 @@ M2 Data Model    [####################] 100%
 M3 Core UI       [####################] 100%
 M4 Search/Filter [####################] 100%
 M5 Polish/Export [####################] 100%
-M6 Validation    [####################] 100%  << COMPLETE
-M7 Creative Data [                    ]   0%  << PLANNING
-M8 Creative UI   [                    ]   0%
+M6 Validation    [####################] 100%
+M7 Fantasy Data  [####################] 100%  << COMPLETE
+M8 Creative UI   [                    ]   0%  << NEXT
 M9 Multi-Setting [                    ]   0%
 M10 Polish/Export[                    ]   0%
 M11 Validation   [                    ]   0%
 ```
 
-**Current Milestone:** Creative Layer Planning Sprint (pre-M7)
-**Overall:** 7 of 12 milestones complete. M7-M11 in planning.
+**Current Milestone:** M7 complete. Planning sprint merged. M8 next.
+**Overall:** 8 of 12 milestones complete. M8-M11 in planning.
 
 ---
 
@@ -41,6 +41,11 @@ M11 Validation   [                    ]   0%
 | **M4 Search & Filter** | Full-text search, layer toggles, date range filter | Complete | Fuse.js search <100ms. FilterPanel with layers/eras/date range. Combined AND logic. Empty state UX. 228KB build. |
 | **M5 Polish & Export** | AI narrator export, responsive, accessibility | Complete | ExportDialog with 3 scopes. WCAG AA contrast fixes. Skip link, aria-live, focus trap. Keyboard help (?). 237KB build. |
 | **M6 Validation** | End-to-end testing, user testing, refinement | Complete | 122 tests, 10 files, all green. TypeScript clean. 252KB JS build. |
+| **M7 Fantasy Data** | Fantasy data model — schemas, types, loader, UI | Complete | 142 tests, 10 files, all green. 4 schemas v2. TypeScript clean. |
+| **M8 Creative UI** | Creative layer visual design — colors, markers, toggles, people timeline | Not Started | — |
+| **M9 Multi-Setting** | Multi-setting support + narrative dashboard | Not Started | — |
+| **M10 Polish/Export** | Creative export, narrator prompt, connection insights | Not Started | — |
+| **M11 Validation** | Full QA, performance, accessibility for creative layer | Not Started | — |
 
 ---
 
@@ -48,14 +53,14 @@ M11 Validation   [                    ]   0%
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | Creative Layer PRD Addendum drafted; awaiting team review | None |
-| Engineer | Pending Review | Review addendum data model (Section 5), estimate M7-M11 | None |
-| Database Engineer | Pending Review | Review search index + multi-setting performance impact | None |
-| Researcher | Pending Review | Plan Seattle/Tacoma skeleton research | None |
-| Designer | Pending Review | Propose creative vs. historical visual treatment | None |
-| Tester | Pending Review | Extend test plan with creative layer cases | None |
-| UI/UX | Pending Review | People timeline interaction, view mode toggle | None |
-| AI Narrator | Pending Review | Review export changes, draft fact/fiction system prompt | None |
+| Product Manager | Active | PRD Addendum drafted; M7 code merged; planning M8 scope | None |
+| Engineer | Complete | M7 schemas v2, types, loader, AddEntryDialog, tests — all implemented | None |
+| Database Engineer | Complete | entriesByScope/entriesByType indexes, cache v3 | None |
+| Researcher | Queued | Regional research sprint (Seattle, Tacoma) ready | Awaiting M9 |
+| Designer | Complete | Visual strategy drafted (docs/planning/designer-visual-strategy.md) | None |
+| Tester | Complete | 142 tests (up from 122), 10 fantasy tests added, all green | None |
+| UI/UX | Pending | People timeline interaction design, view mode toggle | None |
+| AI Narrator | Complete | Worldbuilding recommendations drafted (docs/planning/narrator-worldbuilding-recommendations.md) | None |
 
 ---
 
@@ -110,34 +115,34 @@ Environment        28   █████                 25%
 |----------|-------|--------|-------|---------|
 | [PRD](docs/PRD.md) | PM | Draft | 2,874 | 1.0 |
 | [FRD](docs/FRD.md) | Eng | Draft | 4,969 | 1.0 |
-| [Design Bible](docs/design-bible.md) | Des + UX | Draft | 4,122 | 1.0 |
+| [Design Bible](docs/design-bible.md) | Des + UX | v2 Complete | 4,122+ | 2.0 |
 | [Test Plan](docs/test-plan.md) | Tester | Draft | 3,489 | 1.0 |
 | [Milestone Schedule](docs/milestone-schedule.md) | PM + Eng | Draft | 747 | 1.0 |
 | [Creative Layer Addendum](docs/planning/prd-creative-layer-addendum.md) | PM | Planning Draft | ~3,500 | 0.1 |
+| [Designer Visual Strategy](docs/planning/designer-visual-strategy.md) | Designer | Complete | — | 1.0 |
+| [Engineer Schema Evolution](docs/planning/engineer-schema-evolution.md) | Eng | Complete | — | 1.0 |
+| [Narrator Recommendations](docs/planning/narrator-worldbuilding-recommendations.md) | Narrator | Complete | — | 1.0 |
+| [Fantasy Proposal](docs/fantasy-expansion-proposal.md) | PM + Eng | Complete | — | 1.0 |
 | [Coordination Board](docs/coordination.md) | All | Active | — | — |
 | [Research README](research/README.md) | Researcher | Done | — | — |
-| [Timeline Schema](research/schemas/timeline-entry.schema.json) | Eng | Done | — | 1.0 |
+| [Timeline Schema](research/schemas/timeline-entry.schema.json) | Eng | v2 Complete | — | 2.0 |
+| [Person Schema](research/schemas/person.schema.json) | Eng | v2 Complete | — | 2.0 |
+| [Place Schema](research/schemas/place.schema.json) | Eng | v2 Complete | — | 2.0 |
+| [Universe Schema](research/schemas/universe.schema.json) | Eng | New (M7) | — | 1.0 |
 | [Timeline Data](research/vashon-island/timeline.json) | Researcher | Enriched | 111 entries | 1.1 |
 | [People Directory](research/vashon-island/people.md) | Researcher | Enriched | 113 people | 1.1 |
 | [Places Directory](research/vashon-island/places.md) | Researcher | M1 Complete | 67 places | 1.0 |
 | [Environment](research/vashon-island/environment.md) | Researcher | M1 Complete | — | 1.0 |
 | [Bibliography](research/vashon-island/sources.md) | Researcher | M1 Complete | 137 sources | 1.0 |
-| [Person Schema](research/schemas/person.schema.json) | Eng | M2 Complete | — | 1.0 |
-| [Place Schema](research/schemas/place.schema.json) | Eng | M2 Complete | — | 1.0 |
-| [Environment Schema](research/schemas/environment-feature.schema.json) | Eng | M2 Complete | — | 1.0 |
-| [Export Schema](research/schemas/narrator-export.schema.json) | Eng | M2 Complete | — | 1.0 |
 | [People JSON](research/vashon-island/people.json) | Eng | Enriched | 113 records | 1.1 |
 | [Places JSON](research/vashon-island/places.json) | Eng | M2 Complete | 67 records | 1.0 |
 | [Environment JSON](research/vashon-island/environment.json) | Eng | Cross-refs fixed | 12 features | 1.1 |
 | [Search Index](research/vashon-island/search-index.json) | Eng | Regenerated | 303 records | 1.1 |
 | [Narrator Export](research/vashon-island/narrator-export.json) | Eng | Regenerated | 111 entries | 1.1 |
 | [ID Mapping](research/vashon-island/id-mapping.json) | Eng | Regenerated | 303 mappings | 1.1 |
-| ExportDialog component | Eng | M5 Complete | — | 1.0 |
-| KeyboardHelp component | Eng | M5 Complete | — | 1.0 |
-| Test Setup (vite.config, setup.ts) | Tester | M6 Complete | — | 1.0 |
-| Test Fixtures (test-data.ts) | Tester | M6 Complete | 7 entries, 4 people | 1.0 |
-| Unit Tests (loader, eras, components) | Tester | M6 Complete | 87 tests | 1.0 |
-| Integration Tests (pipeline, export, validation) | Tester | M6 Complete | 35 tests | 1.0 |
+| Test Fixtures (test-data.ts) | Tester | M7 Updated | 9 entries, 5 people, 1 universe | 2.0 |
+| Unit Tests | Tester | M7 Updated | 87 tests | 2.0 |
+| Integration Tests | Tester | M7 Updated | 55 tests (+10 fantasy) | 2.0 |
 
 ---
 
@@ -146,36 +151,30 @@ Environment        28   █████                 25%
 | Date | Decision | Rationale |
 |------|----------|-----------|
 | 2026-03-02 | JSON flat files as data layer | Simpler for prototype; portable, hand-editable, version-controlled |
-| 2026-03-02 | Skeleton research (10-20 entries) for M0 | Validate schema and test UI first; expand in M1 |
-| 2026-03-02 | Professional neutral voice for agents | Consistency and clarity over personality |
 | 2026-03-02 | Vashon Island, WA as prototype setting | Rich 10,000+ year history; well-documented; diverse data types |
-| 2026-03-02 | Camp Sealth associated with Camp Fire (not YMCA/YWCA) | Web research confirmed Camp Sealth was founded by Camp Fire Girls |
-| 2026-03-02 | WCAG AA color contrast fixes | Darkened warm-amber, teal, stone; raised opacity on inactive toggles/chips; removed era label opacity |
-| 2026-03-03 | Creative Layer evolution initiated | User vision: worldbuilding platform with fact/fiction distinction, people timeline, narrative dashboard, multi-setting support |
-| 2026-03-03 | 5 new milestones (M7-M11) proposed | Phased delivery: data model, UI, multi-setting, polish, validation |
+| 2026-03-02 | WCAG AA color contrast fixes | Darkened warm-amber, teal, stone for 4.5:1 ratio |
+| 2026-03-03 | Creative Layer evolution initiated | Worldbuilding platform with fact/fiction distinction, people timeline, narrative dashboard, multi-setting |
+| 2026-03-03 | 3-level classification: historical / fantasy / speculative | User decision: 3 levels (not 5). Maps to implemented `entry_type` field. |
+| 2026-03-03 | Violet/purple palette for creative layer | Twilight Violet #7B5EA7 / Amethyst #7B4BAA family; WCAG AA compliant; distinct from historical earth tones |
+| 2026-03-03 | People Timeline as separate tab view | Lifespan bars need full width; three-tab nav: Timeline / People / Narrative Dashboard |
+| 2026-03-03 | Multi-setting depth hierarchy | Vashon=primary, Seattle+Tacoma=secondary (30-60 entries), tertiary settings (5-15 entries) |
+| 2026-03-03 | Fantasy entries hidden by default, opt-in toggle | Historical accuracy is primary; fantasy must not contaminate researcher view |
 
 ---
 
 ## Open Questions
 
-- [ ] **Timeline library:** D3.js (flexible, complex) vs Vis-timeline (simpler, purpose-built)? — Engineer to evaluate in M2
-- [ ] **Approximate date handling:** How should the AI narrator export format represent "~10000 BCE"? — Engineer + Researcher in M2
-- [ ] **Map view source:** Historical maps or modern satellite for P2 map feature? — Designer + Researcher in M1
+- [ ] **Timeline library:** D3.js vs Vis-timeline? — Engineer to evaluate
+- [ ] **Map view source:** Historical maps or modern satellite? — Designer + Researcher
+- [x] **Visual treatment for creative entries** — Resolved: four-signal system (border, tint, badge, marker fill)
+- [x] **Narrative dashboard placement** — Resolved: separate tab view
+- [x] **AI narrator system prompt for fact/fiction** — Resolved: Mixed Reality Protocol
+- [ ] **Narrator export for multiple creative properties** — Engineer + Narrator in M10
+- [ ] **Regional context data sources** — Researcher to scope in M9
 
 ---
 
-## Risk Register
-
-| Risk | Impact | Likelihood | Mitigation | Status |
-|------|--------|-----------|------------|--------|
-| Insufficient sources for some eras | Gaps in timeline | Medium | Prioritize well-documented eras; flag gaps | Mitigated — all eras at 5+ entries |
-| Timeline rendering performance | Poor UX at scale | Low | Virtualization; test with 500+ entries early | Not Started |
-| JSON file exceeds 1MB | Slow initial load | Low | Split by era; lazy loading | Monitoring — timeline.json growing |
-| D3.js learning curve | Delays M3 | Medium | Vis-timeline as fallback | Open question |
-
----
-
-## Test Results (M6)
+## Test Results (M7)
 
 ```
 Category                Files  Tests  Status
@@ -185,41 +184,36 @@ Unit: Components           4     42   PASS
 Unit: Search               1      9   PASS
 Integration: Pipeline      1      8   PASS
 Integration: Export        1     11   PASS
-Integration: Validation    1     16   PASS
+Integration: Validation    1     26   PASS  (+10 fantasy tests)
 ─────────────────────────────────────────────
-TOTAL                     10    122   ALL GREEN
+TOTAL                     10    142   ALL GREEN
 ```
 
-**Build:** TypeScript clean (0 errors). Production: 252KB JS, 29KB CSS.
-**Duration:** ~7.5s test suite execution.
+**Build:** TypeScript clean (0 errors).
+**Duration:** ~4.7s test suite execution.
 
 ## Next Steps
 
-**Creative Layer Planning Sprint (Active -- 2026-03-03):**
+**M7 Fantasy Data Model (Complete — 2026-03-03):**
+- Schemas v2: timeline-entry, person, place (entry_type, scope, universe_id, narrative)
+- Universe schema (new)
+- TypeScript types: EntryType, ScopeKey, NarrativeBeat, AnchorRelationship, Universe
+- Data loader: backward-compatible defaults, fantasy validation, new indexes
+- AddEntryDialog: entry type selector, scope dropdown, universe field
+- 142 tests, all green
 
-The project is evolving from a research companion into a worldbuilding platform that interleaves real history with creative/fictional content.
+**Planning Sprint (Complete — 2026-03-03):**
+- PRD Creative Layer Addendum: 13 user stories, 5 milestones, 2 new personas
+- Designer Visual Strategy: violet palette, four-signal classification, people timeline wireframes
+- Engineer Schema Evolution: additive architecture, migration strategy
+- Narrator Worldbuilding Recommendations: creative entry types, export v3, Mixed Reality Protocol
 
-**PRD Addendum drafted:** `docs/planning/prd-creative-layer-addendum.md`
-- 5 new personas (2 updated, 2 new human, 1 new AI)
-- 13 user stories: 5 P0, 4 P1, 4 P2
-- 5 new milestones: M7 (Creative Data Model), M8 (Creative Layer UI), M9 (Multi-Setting + Dashboard), M10 (Polish + Export), M11 (Validation)
-- Key new capabilities: content classification (historical/creative), fictional characters, narrative events, people lifespan timeline, view mode toggle, multi-setting support, narrative dashboard
-
-**Immediate next actions:**
-1. All agents review the PRD addendum and provide feedback
-2. Engineer: assess data model feasibility and estimate M7 effort
-3. Designer: propose creative vs. historical visual treatment
-4. Researcher: begin Seattle/Tacoma high-level research
-5. AI Narrator: review updated export requirements and system prompt needs
-
-**Post-M6 Research Enrichment (Complete):**
-- Added 18 new timeline entries (93 -> 111) filling thin eras
-- Added 28 new people (85 -> 113)
-- Enriched 4 existing entries with deeper details
-- Fixed all 12 environment feature cross-references
-- Regenerated search index (303 records), narrator export (292KB), ID mapping (303 mappings)
-- All 122 tests still passing
+**Next: M8 Creative UI**
+1. Implement visual distinction for fantasy entries (violet palette, dashed borders, badges)
+2. Add view mode toggle (Historical / Fantasy / Combined)
+3. Build people timeline tab with lifespan bars
+4. Fantasy entries hidden by default with opt-in toggle
 
 ---
 
-*This dashboard should be updated at each milestone transition or when significant progress occurs. Any agent can update their section. Run `/product-manager` to request a full status review.*
+*This dashboard should be updated at each milestone transition or when significant progress occurs. Any agent can update their section.*

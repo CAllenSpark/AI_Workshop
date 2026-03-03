@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "place.schema.json",
-  "title": "Place",
-  "description": "A location or landmark referenced in the Writer's Research Companion knowledge base",
+  "title": "Place v2",
+  "description": "A real or fantasy location referenced in the Writer's Research Companion knowledge base",
   "type": "object",
   "required": ["id", "name", "type", "description"],
   "properties": {
@@ -45,7 +45,10 @@
         "mill-town",
         "fort",
         "territory",
-        "region"
+        "region",
+        "city",
+        "fantasy-landmark",
+        "fantasy-realm"
       ]
     },
     "coordinates": {
@@ -65,9 +68,19 @@
       "type": "array",
       "description": "Array of TimelineEntry IDs associated with this place",
       "items": {
-        "type": "string",
-        "pattern": "^[a-z][a-z0-9]*-[0-9]{3}$"
+        "type": "string"
       }
+    },
+    "entry_type": {
+      "type": "string",
+      "description": "Whether this place is historical or fantasy. Defaults to 'historical' if omitted.",
+      "enum": ["historical", "fantasy"],
+      "default": "historical"
+    },
+    "universe_id": {
+      "type": "string",
+      "description": "Fantasy universe/campaign this place belongs to. Only for fantasy places.",
+      "pattern": "^[a-z][a-z0-9-]*$"
     }
   },
   "additionalProperties": false

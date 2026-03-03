@@ -5,6 +5,47 @@ export interface Source {
   type: 'primary' | 'secondary' | 'tertiary';
 }
 
+/** Entry factuality classification */
+export type EntryType = 'historical' | 'fantasy' | 'speculative';
+
+/** Geographic scope of an entry */
+export type ScopeKey = 'vashon' | 'seattle' | 'tacoma' | 'national';
+
+/** Narrative story beat classification */
+export type NarrativeBeat =
+  | 'setup'
+  | 'inciting-incident'
+  | 'rising-action'
+  | 'midpoint'
+  | 'climax'
+  | 'falling-action'
+  | 'resolution'
+  | 'epilogue'
+  | 'foreshadowing';
+
+/** Relationship between a fantasy entry and a historical anchor */
+export type AnchorRelationship =
+  | 'divergence_point'
+  | 'parallel_event'
+  | 'consequence_of'
+  | 'backdrop'
+  | 'inspired_by'
+  | 'contradiction';
+
+/** A narrative anchor linking a fantasy entry to a historical entry */
+export interface NarrativeAnchor {
+  entry_id: string;
+  relationship: AnchorRelationship;
+  description?: string;
+}
+
+/** Narrative metadata for fantasy/speculative entries */
+export interface NarrativeMetadata {
+  arc?: string;
+  beat?: NarrativeBeat;
+  anchors?: NarrativeAnchor[];
+}
+
 /** A single timeline entry — the core entity */
 export interface TimelineEntry {
   id: string;
@@ -19,6 +60,14 @@ export interface TimelineEntry {
   places: string[];
   sources: Source[];
   tags: string[];
+  /** Entry factuality: historical (default), fantasy, or speculative */
+  entry_type?: EntryType;
+  /** Geographic scope: vashon (default), seattle, tacoma, national */
+  scope?: ScopeKey;
+  /** Fantasy universe/campaign ID (required for fantasy/speculative entries) */
+  universe_id?: string;
+  /** Narrative metadata: arc, beat, anchors (fantasy/speculative only) */
+  narrative?: NarrativeMetadata;
 }
 
 /** Person entity */
@@ -29,6 +78,16 @@ export interface Person {
   role: string;
   period?: string;
   related_entries?: string[];
+  /** Whether this person is historical or fantasy */
+  entry_type?: 'historical' | 'fantasy';
+  /** Fantasy universe this person belongs to */
+  universe_id?: string;
+  /** Personality traits (for AI narrator use with fantasy characters) */
+  personality?: string;
+  /** Core motivation or goal (for AI narrator use) */
+  motivation?: string;
+  /** Speech patterns (for AI narrator dialogue generation) */
+  speech_style?: string;
 }
 
 /** Place entity */
@@ -39,6 +98,10 @@ export interface Place {
   description: string;
   coordinates?: { lat: number; lng: number };
   related_entries?: string[];
+  /** Whether this place is historical or fantasy */
+  entry_type?: 'historical' | 'fantasy';
+  /** Fantasy universe this place belongs to */
+  universe_id?: string;
 }
 
 /** Environment feature entity */
@@ -49,6 +112,17 @@ export interface EnvironmentFeature {
   description: string;
   time_relevance: string;
   related_entries?: string[];
+}
+
+/** Fantasy universe / campaign definition */
+export interface Universe {
+  id: string;
+  name: string;
+  description: string;
+  genre?: string;
+  themes?: string[];
+  created_by?: string;
+  created_at?: string;
 }
 
 /** Valid era keys matching the schema */
@@ -82,7 +156,7 @@ export type ZoomLevel = 1 | 2 | 3 | 4;
 
 /** Data validation warning */
 export interface DataWarning {
-  type: 'missing_reference' | 'orphaned_entry' | 'invalid_date' | 'missing_field';
+  type: 'missing_reference' | 'orphaned_entry' | 'invalid_date' | 'missing_field' | 'invalid_fantasy';
   entityType: string;
   entityId: string;
   message: string;
@@ -94,6 +168,7 @@ export interface DataStore {
   people: Person[];
   places: Place[];
   environment: EnvironmentFeature[];
+  universes: Universe[];
   // O(1) lookup maps
   entriesById: Map<string, TimelineEntry>;
   peopleById: Map<string, Person>;
@@ -104,6 +179,10 @@ export interface DataStore {
   parsedDates: Map<string, number>;
   // Entries grouped by era for fast era filtering
   entriesByEra: Map<string, TimelineEntry[]>;
+  // Entries grouped by scope for fast scope filtering
+  entriesByScope: Map<string, TimelineEntry[]>;
+  // Entries grouped by entry_type for fast type filtering
+  entriesByType: Map<string, TimelineEntry[]>;
   // Data validation warnings
   warnings: DataWarning[];
 }

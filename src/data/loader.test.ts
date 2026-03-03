@@ -1,6 +1,7 @@
 /**
  * Unit tests for data loader: parseDate, validateData, buildIndexes, addEntry, removeEntry
  * Covers: UT-T001, UT-T002, UT-T004, UT-T005, UT-D001, UT-D002, UT-D003, UT-D004
+ * Fantasy: entry_type defaults, scope indexing, universe validation, narrative anchors
  */
 import { describe, it, expect, beforeEach } from 'vitest';
 import { parseDate, addEntry, removeEntry } from './loader';
@@ -86,7 +87,7 @@ describe('addEntry', () => {
 
     const updated = addEntry(store, newEntry);
     expect(updated.entries).toHaveLength(store.entries.length + 1);
-    expect(updated.entriesById.get('e-new')).toBe(newEntry);
+    expect(updated.entriesById.get('e-new')).toBeDefined();
     expect(updated.parsedDates.get('e-new')).toBe(1900);
   });
 
@@ -146,6 +147,69 @@ describe('addEntry', () => {
     expect(store.entries).toHaveLength(origLength);
     expect(store.entriesById.has('e-immut')).toBe(false);
   });
+
+  it('applies entry_type default when not specified', () => {
+    const newEntry: TimelineEntry = {
+      id: 'e-nodefaults',
+      title: 'No Defaults Entry',
+      date_start: '1900',
+      era: 'growth-industry',
+      layers: ['event'],
+      description: 'Entry without explicit entry_type.',
+      people: [],
+      places: [],
+      sources: [],
+      tags: [],
+    };
+
+    const updated = addEntry(store, newEntry);
+    const added = updated.entriesById.get('e-nodefaults');
+    expect(added?.entry_type).toBe('historical');
+    expect(added?.scope).toBe('vashon');
+  });
+
+  it('adds fantasy entry to entriesByType index', () => {
+    const fantasyEntry: TimelineEntry = {
+      id: 'e-fan-new',
+      title: 'A Fantasy Event',
+      date_start: '1900',
+      era: 'growth-industry',
+      layers: ['event'],
+      description: 'Fantasy test.',
+      people: [],
+      places: [],
+      sources: [],
+      tags: ['fantasy'],
+      entry_type: 'fantasy',
+      scope: 'vashon',
+      universe_id: 'test-campaign',
+    };
+
+    const updated = addEntry(store, fantasyEntry);
+    const fantasyEntries = updated.entriesByType.get('fantasy') ?? [];
+    expect(fantasyEntries.some((e) => e.id === 'e-fan-new')).toBe(true);
+  });
+
+  it('adds regional entry to entriesByScope index', () => {
+    const seattleEntry: TimelineEntry = {
+      id: 'e-sea-new',
+      title: 'A Seattle Event',
+      date_start: '1900',
+      era: 'growth-industry',
+      layers: ['event'],
+      description: 'Seattle test.',
+      people: [],
+      places: [],
+      sources: [],
+      tags: [],
+      entry_type: 'historical',
+      scope: 'seattle',
+    };
+
+    const updated = addEntry(store, seattleEntry);
+    const seattleEntries = updated.entriesByScope.get('seattle') ?? [];
+    expect(seattleEntries.some((e) => e.id === 'e-sea-new')).toBe(true);
+  });
 });
 
 // ── removeEntry ─────────────────────────────────────────
@@ -180,6 +244,18 @@ describe('removeEntry', () => {
     removeEntry(store, 'e-001');
     expect(store.entries).toHaveLength(origLength);
     expect(store.entriesById.has('e-001')).toBe(true);
+  });
+
+  it('removes fantasy entry from entriesByType index', () => {
+    const updated = removeEntry(store, 'e-fan-001');
+    const fantasyEntries = updated.entriesByType.get('fantasy') ?? [];
+    expect(fantasyEntries.some((e) => e.id === 'e-fan-001')).toBe(false);
+  });
+
+  it('removes regional entry from entriesByScope index', () => {
+    const updated = removeEntry(store, 'e-sea-001');
+    const seattleEntries = updated.entriesByScope.get('seattle') ?? [];
+    expect(seattleEntries.some((e) => e.id === 'e-sea-001')).toBe(false);
   });
 });
 
@@ -229,13 +305,12 @@ describe('buildTestStore', () => {
   });
 
   it('UT-D004: handles empty dataset gracefully', () => {
-    // Directly test with empty arrays via the buildIndexes/validate path
-    // by constructing a minimal store
     const emptyStore: DataStore = {
       entries: [],
       people: [],
       places: [],
       environment: [],
+      universes: [],
       entriesById: new Map(),
       peopleById: new Map(),
       placesById: new Map(),
@@ -243,10 +318,60 @@ describe('buildTestStore', () => {
       placesByName: new Map(),
       parsedDates: new Map(),
       entriesByEra: new Map(),
+      entriesByScope: new Map(),
+      entriesByType: new Map(),
       warnings: [],
     };
 
     expect(emptyStore.entries).toHaveLength(0);
     expect(emptyStore.entriesById.size).toBe(0);
+  });
+
+  it('includes universes in the store', () => {
+    const store = buildTestStore();
+    expect(store.universes).toHaveLength(1);
+    expect(store.universes[0].id).toBe('test-campaign');
+  });
+
+  it('entriesByScope indexes entries by geographic scope', () => {
+    const store = buildTestStore();
+    const vashonEntries = store.entriesByScope.get('vashon') ?? [];
+    const seattleEntries = store.entriesByScope.get('seattle') ?? [];
+    expect(vashonEntries.length).toBeGreaterThan(0);
+    expect(seattleEntries.length).toBe(1);
+    expect(seattleEntries[0].id).toBe('e-sea-001');
+  });
+
+  it('entriesByType indexes entries by factuality type', () => {
+    const store = buildTestStore();
+    const historical = store.entriesByType.get('historical') ?? [];
+    const fantasy = store.entriesByType.get('fantasy') ?? [];
+    expect(historical.length).toBeGreaterThan(0);
+    expect(fantasy.length).toBe(1);
+    expect(fantasy[0].id).toBe('e-fan-001');
+  });
+
+  it('fantasy entry has narrative metadata', () => {
+    const store = buildTestStore();
+    const fantasyEntry = store.entriesById.get('e-fan-001');
+    expect(fantasyEntry).toBeDefined();
+    expect(fantasyEntry!.entry_type).toBe('fantasy');
+    expect(fantasyEntry!.universe_id).toBe('test-campaign');
+    expect(fantasyEntry!.narrative?.arc).toBe('tidewalker-awakening');
+    expect(fantasyEntry!.narrative?.beat).toBe('inciting-incident');
+    expect(fantasyEntry!.narrative?.anchors).toHaveLength(1);
+    expect(fantasyEntry!.narrative?.anchors![0].entry_id).toBe('e-005');
+    expect(fantasyEntry!.narrative?.anchors![0].relationship).toBe('consequence_of');
+  });
+
+  it('fantasy person has narrator fields', () => {
+    const store = buildTestStore();
+    const tidewalker = store.peopleByName.get('The Tidewalker');
+    expect(tidewalker).toBeDefined();
+    expect(tidewalker!.entry_type).toBe('fantasy');
+    expect(tidewalker!.universe_id).toBe('test-campaign');
+    expect(tidewalker!.personality).toBe('Ancient and patient');
+    expect(tidewalker!.motivation).toBe('Restore ecological memory');
+    expect(tidewalker!.speech_style).toBe('Archaic, rhythmic');
   });
 });
