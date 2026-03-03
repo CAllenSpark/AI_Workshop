@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
-import type { EraKey, LayerKey } from '../types';
-import { ERAS, LAYER_COLORS } from '../data/eras';
+import type { EraKey, LayerKey, EntryType } from '../types';
+import { ERAS, LAYER_COLORS, ENTRY_TYPE_COLORS } from '../data/eras';
+import type { ViewMode } from './ViewModeToggle';
 import './FilterPanel.css';
 
 interface Props {
@@ -10,11 +11,14 @@ interface Props {
   fullDateRange: [number, number];
   totalCount: number;
   filteredCount: number;
+  viewMode: ViewMode;
   onLayerToggle: (layer: LayerKey) => void;
   onEraToggle: (era: EraKey) => void;
   onDateRangeChange: (range: [number, number]) => void;
   onClearAll: () => void;
 }
+
+const ENTRY_TYPE_KEYS: EntryType[] = ['historical', 'fantasy', 'speculative'];
 
 export default function FilterPanel({
   activeLayers,
@@ -23,6 +27,7 @@ export default function FilterPanel({
   fullDateRange,
   totalCount,
   filteredCount,
+  viewMode,
   onLayerToggle,
   onEraToggle,
   onDateRangeChange,
@@ -75,6 +80,17 @@ export default function FilterPanel({
           )}
         </div>
       </div>
+
+      {/* Active view mode indicator (shows when not in 'all' mode) */}
+      {viewMode !== 'all' && (
+        <div className="filter-section filter-active-mode">
+          <span className="filter-active-mode-label">
+            Viewing: <strong style={{ color: viewMode === 'creative' ? 'var(--creative-primary)' : ENTRY_TYPE_COLORS.historical.color }}>
+              {viewMode === 'historical' ? 'Historical entries only' : 'Creative entries only'}
+            </strong>
+          </span>
+        </div>
+      )}
 
       {/* Era filter */}
       <div className="filter-section">

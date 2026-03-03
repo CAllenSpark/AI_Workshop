@@ -1,0 +1,229 @@
+.people-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-sm);
+}
+
+.people-timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--sp-sm);
+}
+
+.people-timeline-header h3 {
+  font-size: 16px;
+  color: var(--charcoal);
+}
+
+.people-timeline-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-md);
+}
+
+.people-count {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--warm-gray);
+  font-feature-settings: 'tnum';
+}
+
+.sort-toggle {
+  display: flex;
+  gap: 2px;
+  background: var(--soft-gray);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.sort-toggle button {
+  padding: 3px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-body);
+  background: transparent;
+  color: var(--warm-gray);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.sort-toggle button.active {
+  background: white;
+  color: var(--charcoal);
+  box-shadow: var(--shadow-sm);
+  font-weight: 600;
+}
+
+/* Timeline axis */
+.people-timeline-axis {
+  position: relative;
+  height: 24px;
+  margin: 0 var(--sp-sm);
+  margin-left: 180px;
+  border-bottom: 1px solid var(--stone-light);
+}
+
+.people-tick {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-left: 1px solid var(--stone-light);
+}
+
+.people-tick-label {
+  position: absolute;
+  bottom: 2px;
+  left: 4px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--stone);
+  font-feature-settings: 'tnum';
+  white-space: nowrap;
+}
+
+/* Bars area */
+.people-bars {
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.people-empty {
+  padding: var(--sp-2xl) var(--sp-lg);
+  text-align: center;
+  color: var(--warm-gray);
+  font-size: 14px;
+}
+
+/* Individual person row */
+.person-row {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 var(--sp-sm);
+  transition: background var(--transition-fast);
+}
+
+.person-row:nth-child(even) {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.person-row.hovered {
+  background: rgba(74, 109, 140, 0.06);
+}
+
+/* Person label (left side) */
+.person-label {
+  width: 170px;
+  min-width: 170px;
+  display: flex;
+  flex-direction: column;
+  padding-right: var(--sp-sm);
+  overflow: hidden;
+}
+
+.person-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--charcoal);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.person-role {
+  font-size: 10px;
+  color: var(--warm-gray);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+/* Bar track */
+.person-bar-track {
+  flex: 1;
+  position: relative;
+  height: 16px;
+}
+
+.person-bar {
+  position: absolute;
+  height: 12px;
+  top: 2px;
+  border-radius: 3px;
+  opacity: 0.8;
+  transition: opacity var(--transition-fast), height var(--transition-fast);
+  min-width: 3px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.person-row.hovered .person-bar {
+  opacity: 1;
+  height: 14px;
+  top: 1px;
+}
+
+/* Creative person bars get dashed outline */
+.person-bar.creative {
+  opacity: 0.75;
+  border: 1px dashed var(--creative-primary);
+  background: var(--creative-surface) !important;
+}
+
+.person-row.hovered .person-bar.creative {
+  opacity: 1;
+}
+
+.bar-period {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: white;
+  padding: 0 4px;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Related entry dots */
+.entry-dot {
+  position: absolute;
+  top: -1px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--warm-amber);
+  border: 1.5px solid white;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 2;
+  transition: transform var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.entry-dot:hover {
+  transform: translateX(-50%) scale(1.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .person-label {
+    width: 120px;
+    min-width: 120px;
+  }
+
+  .people-timeline-axis {
+    margin-left: 130px;
+  }
+
+  .people-timeline-header {
+    flex-wrap: wrap;
+    gap: var(--sp-sm);
+  }
+}

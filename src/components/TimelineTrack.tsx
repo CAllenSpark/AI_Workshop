@@ -1,6 +1,6 @@
 import { useRef, useCallback, useEffect, useState } from 'react';
 import type { TimelineEntry, LayerKey, ZoomLevel } from '../types';
-import { ERAS, LAYER_COLORS } from '../data/eras';
+import { ERAS, LAYER_COLORS, FANTASY_LAYER_COLORS } from '../data/eras';
 import { parseDate } from '../data/loader';
 import './TimelineTrack.css';
 
@@ -235,23 +235,28 @@ export default function TimelineTrack({
           {entryPositions
             .filter(({ x }) => x >= -20 && x <= trackWidth + 20)
             .map(({ entry, x }) => {
+              const entryType = entry.entry_type ?? 'historical';
+              const isCreative = entryType === 'fantasy' || entryType === 'speculative';
+              const colorSet = isCreative ? FANTASY_LAYER_COLORS : LAYER_COLORS;
               const primaryLayer = entry.layers[0] || 'event';
-              const lc = LAYER_COLORS[primaryLayer] || LAYER_COLORS.event;
+              const lc = colorSet[primaryLayer] || colorSet.event;
               const isSelected = entry.id === selectedEntryId;
               return (
                 <button
                   key={entry.id}
-                  className={`entry-marker ${isSelected ? 'selected' : ''}`}
+                  className={`entry-marker ${isSelected ? 'selected' : ''} ${isCreative ? 'creative' : ''}`}
                   style={{
                     left: `${x}px`,
                     backgroundColor: lc.color,
-                    transform: isSelected ? 'translateX(-50%) scale(1.4)' : 'translateX(-50%)',
+                    transform: isSelected
+                      ? `translateX(-50%) scale(1.4)${isCreative ? ' rotate(45deg)' : ''}`
+                      : `translateX(-50%)${isCreative ? ' rotate(45deg)' : ''}`,
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
                     onEntrySelect(entry.id);
                   }}
-                  aria-label={`${entry.title} (${entry.date_start})`}
+                  aria-label={`${entry.title} (${entry.date_start})${isCreative ? ` [${entryType}]` : ''}`}
                   title={entry.title}
                 />
               );

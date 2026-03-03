@@ -1,5 +1,5 @@
-import type { TimelineEntry } from '../types';
-import { LAYER_COLORS } from '../data/eras';
+import type { TimelineEntry, EntryType } from '../types';
+import { LAYER_COLORS, FANTASY_LAYER_COLORS, ENTRY_TYPE_COLORS } from '../data/eras';
 import './EntryCard.css';
 
 interface Props {
@@ -8,37 +8,62 @@ interface Props {
   onClick: () => void;
 }
 
+/** Get the appropriate layer color set based on entry type */
+function getLayerColors(entryType: EntryType | undefined) {
+  return (entryType === 'fantasy' || entryType === 'speculative')
+    ? FANTASY_LAYER_COLORS
+    : LAYER_COLORS;
+}
+
 export default function EntryCard({ entry, isSelected, onClick }: Props) {
+  const entryType = entry.entry_type ?? 'historical';
+  const isCreative = entryType === 'fantasy' || entryType === 'speculative';
+  const colorSet = getLayerColors(entry.entry_type);
   const primaryLayer = entry.layers[0] || 'event';
-  const lc = LAYER_COLORS[primaryLayer] || LAYER_COLORS.event;
+  const lc = colorSet[primaryLayer] || colorSet.event;
+  const typeMeta = ENTRY_TYPE_COLORS[entryType];
 
   return (
     <article
-      className={`entry-card ${isSelected ? 'selected' : ''}`}
-      style={{ borderLeftColor: lc.color }}
+      className={`entry-card ${isSelected ? 'selected' : ''} ${isCreative ? 'creative' : ''} ${entryType === 'speculative' ? 'speculative' : ''}`}
+      style={{
+        borderLeftColor: lc.color,
+        ...(isCreative ? { backgroundColor: 'var(--creative-surface)' } : {}),
+      }}
       onClick={onClick}
       role="button"
       tabIndex={0}
-      aria-label={`${entry.title}, ${entry.date_start}`}
+      aria-label={`${entry.title}, ${entry.date_start}${isCreative ? `, ${entryType}` : ''}`}
       onKeyDown={(e) => e.key === 'Enter' && onClick()}
+      data-entry-type={entryType}
     >
       <div className="entry-card-header">
         <span className="entry-date" style={{ color: lc.color }}>
           {entry.date_start}
           {entry.date_end ? ` – ${entry.date_end}` : ''}
         </span>
-        <div className="entry-layers">
-          {entry.layers.map((layer) => {
-            const l = LAYER_COLORS[layer];
-            return l ? (
-              <span
-                key={layer}
-                className="layer-dot"
-                style={{ backgroundColor: l.color }}
-                title={l.label}
-              />
-            ) : null;
-          })}
+        <div className="entry-card-badges">
+          {isCreative && typeMeta && (
+            <span
+              className="entry-type-badge"
+              style={{ backgroundColor: typeMeta.color, color: '#fff' }}
+            >
+              {typeMeta.label}
+            </span>
+          )}
+          <div className="entry-layers">
+            {entry.layers.map((layer) => {
+              const l = colorSet[layer];
+              return l ? (
+                <span
+                  key={layer}
+                  className={`layer-dot ${isCreative ? 'creative' : ''}`}
+                  style={{ backgroundColor: l.color }}
+                  title={l.label}
+                />
+              ) : null;
+            })}
+          </div>
         </div>
       </div>
       <h4 className="entry-title">{entry.title}</h4>
@@ -57,6 +82,11 @@ export default function EntryCard({ entry, isSelected, onClick }: Props) {
         {entry.sources.length > 0 && (
           <span className="meta-badge sources">
             {entry.sources.length} {entry.sources.length === 1 ? 'source' : 'sources'}
+          </span>
+        )}
+        {entry.scope && entry.scope !== 'vashon' && (
+          <span className="meta-badge scope">
+            {entry.scope === 'seattle' ? 'Seattle' : entry.scope === 'tacoma' ? 'Tacoma' : 'National'}
           </span>
         )}
       </div>

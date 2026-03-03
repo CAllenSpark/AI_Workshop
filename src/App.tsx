@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
-import type { TimelineEntry, LayerKey, EraKey, ZoomLevel } from './types';
+import type { TimelineEntry, LayerKey, EraKey, ZoomLevel, EntryType } from './types';
 import { useTimelineData } from './hooks/useTimelineData';
 import { useSearch } from './hooks/useSearch';
 import { addEntry } from './data/loader';
@@ -7,6 +7,11 @@ import TimelineTrack from './components/TimelineTrack';
 import EntryCard from './components/EntryCard';
 import DetailPanel from './components/DetailPanel';
 import FilterPanel from './components/FilterPanel';
+import ViewModeToggle from './components/ViewModeToggle';
+import type { ViewMode } from './components/ViewModeToggle';
+import TabNav from './components/TabNav';
+import type { TabKey } from './components/TabNav';
+import PeopleTimeline from './components/PeopleTimeline';
 import ExportDialog from './components/ExportDialog';
 import KeyboardHelp from './components/KeyboardHelp';
 import AddEntryDialog from './components/AddEntryDialog';
@@ -27,6 +32,8 @@ export default function App() {
   const [showHelp, setShowHelp] = useState(false);
   const [showAddEntry, setShowAddEntry] = useState(false);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [viewMode, setViewMode] = useState<ViewMode>('all');
+  const [activeTab, setActiveTab] = useState<TabKey>('timeline');
 
   const { showTutorial, dismissTutorial } = useTutorialState();
 
@@ -80,6 +87,13 @@ export default function App() {
         e.preventDefault();
         setShowAddEntry(true);
       }
+      // Tab switching: 1 = timeline, 2 = people
+      if (e.key === '1' && !isInput && !showExport && !showHelp && !showAddEntry) {
+        setActiveTab('timeline');
+      }
+      if (e.key === '2' && !isInput && !showExport && !showHelp && !showAddEntry) {
+        setActiveTab('people');
+      }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
@@ -88,7 +102,7 @@ export default function App() {
   // Reset visible count when filters change
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [searchQuery, activeLayers, selectedEras, dateRange]);
+  }, [searchQuery, activeLayers, selectedEras, dateRange, viewMode]);
 
   const handleEntrySelect = useCallback((id: string) => {
     setSelectedId((prev) => (prev === id ? null : id));
@@ -124,6 +138,17 @@ export default function App() {
     setData(addEntry(data, entry));
   }, [data, setData]);
 
+  // Entry type counts for the view mode toggle
+  const entryTypeCounts = useMemo<Record<EntryType | 'all', number>>(() => {
+    if (!data) return { historical: 0, fantasy: 0, speculative: 0, all: 0 };
+    const counts = { historical: 0, fantasy: 0, speculative: 0, all: data.entries.length };
+    for (const entry of data.entries) {
+      const t = entry.entry_type ?? 'historical';
+      if (t in counts) counts[t as EntryType]++;
+    }
+    return counts;
+  }, [data]);
+
   // Combined AND filter using pre-computed dates
   const filteredEntries = useMemo(() => {
     if (!data) return [];
@@ -135,6 +160,16 @@ export default function App() {
       result = searchResults.map((r) => r.entry);
     } else {
       result = data.entries;
+    }
+
+    // Filter by view mode (entry type)
+    if (viewMode === 'historical') {
+      result = result.filter((e) => (e.entry_type ?? 'historical') === 'historical');
+    } else if (viewMode === 'creative') {
+      result = result.filter((e) => {
+        const t = e.entry_type ?? 'historical';
+        return t === 'fantasy' || t === 'speculative';
+      });
     }
 
     // Filter by active layers
@@ -154,7 +189,7 @@ export default function App() {
     });
 
     return result;
-  }, [data, searchQuery, search, activeLayers, selectedEras, dateRange]);
+  }, [data, searchQuery, search, activeLayers, selectedEras, dateRange, viewMode]);
 
   // Paginated entries for rendering
   const paginatedEntries = useMemo(
@@ -237,9 +272,17 @@ export default function App() {
           >
             ?
           </button>
+          <ViewModeToggle
+            viewMode={viewMode}
+            onChange={setViewMode}
+            counts={entryTypeCounts}
+          />
           <span className="entry-count">{filteredEntries.length} / {data.entries.length} entries</span>
         </div>
       </header>
+
+      {/* Tab navigation */}
+      <TabNav activeTab={activeTab} onChange={setActiveTab} />
 
       {/* Data validation warnings (dev info) */}
       {data.warnings.length > 0 && (
@@ -265,6 +308,7 @@ export default function App() {
           fullDateRange={fullDateRange}
           totalCount={data.entries.length}
           filteredCount={filteredEntries.length}
+          viewMode={viewMode}
           onLayerToggle={toggleLayer}
           onEraToggle={toggleEra}
           onDateRangeChange={setDateRange}
@@ -277,49 +321,63 @@ export default function App() {
         Showing {filteredEntries.length} of {data.entries.length} entries
       </div>
 
-      {/* Timeline and entries */}
+      {/* Main content — tab panels */}
       <main id="main-content" className="app-main">
-        <TimelineTrack
-          entries={data.entries}
-          zoomLevel={zoomLevel}
-          activeLayers={activeLayers}
-          selectedEntryId={selectedId}
-          onEntrySelect={handleEntrySelect}
-          onZoomChange={setZoomLevel}
-        />
+        {activeTab === 'timeline' && (
+          <div id="panel-timeline" role="tabpanel" aria-label="Timeline view">
+            <TimelineTrack
+              entries={filteredEntries}
+              zoomLevel={zoomLevel}
+              activeLayers={activeLayers}
+              selectedEntryId={selectedId}
+              onEntrySelect={handleEntrySelect}
+              onZoomChange={setZoomLevel}
+            />
 
-        {/* Entry list (paginated) */}
-        <div className="entry-list" role="list" aria-label="Timeline entries">
-          {filteredEntries.length === 0 ? (
-            <div className="empty-state" role="status">
-              <p>No entries match your current filters.</p>
-              <button className="clear-filters-btn" onClick={handleClearAll}>
-                Clear All Filters
-              </button>
-            </div>
-          ) : (
-            <>
-              {paginatedEntries.map((entry) => (
-                <EntryCard
-                  key={entry.id}
-                  entry={entry}
-                  isSelected={entry.id === selectedId}
-                  onClick={() => handleEntrySelect(entry.id)}
-                />
-              ))}
-              {hasMore && (
-                <div className="load-more-container">
-                  <button
-                    className="load-more-btn"
-                    onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
-                  >
-                    Show More ({filteredEntries.length - visibleCount} remaining)
+            {/* Entry list (paginated) */}
+            <div className="entry-list" role="list" aria-label="Timeline entries">
+              {filteredEntries.length === 0 ? (
+                <div className="empty-state" role="status">
+                  <p>No entries match your current filters.</p>
+                  <button className="clear-filters-btn" onClick={handleClearAll}>
+                    Clear All Filters
                   </button>
                 </div>
+              ) : (
+                <>
+                  {paginatedEntries.map((entry) => (
+                    <EntryCard
+                      key={entry.id}
+                      entry={entry}
+                      isSelected={entry.id === selectedId}
+                      onClick={() => handleEntrySelect(entry.id)}
+                    />
+                  ))}
+                  {hasMore && (
+                    <div className="load-more-container">
+                      <button
+                        className="load-more-btn"
+                        onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+                      >
+                        Show More ({filteredEntries.length - visibleCount} remaining)
+                      </button>
+                    </div>
+                  )}
+                </>
               )}
-            </>
-          )}
-        </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'people' && (
+          <div id="panel-people" role="tabpanel" aria-label="People timeline view">
+            <PeopleTimeline
+              data={data}
+              viewMode={viewMode}
+              onEntrySelect={handleEntrySelect}
+            />
+          </div>
+        )}
       </main>
 
       {/* Detail panel */}

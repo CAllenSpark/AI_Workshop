@@ -80,3 +80,59 @@
 .meta-badge.people { background: var(--layer-person-bg); color: var(--layer-person); }
 .meta-badge.places { background: var(--layer-place-bg); color: var(--layer-place); }
 .meta-badge.sources { background: var(--soft-gray); color: var(--warm-gray); }
+.meta-badge.scope { background: #ECEDF2; color: #4A5570; }
+
+/* Creative entry visual treatment — "Different Pen" */
+.entry-card.creative {
+  border-left-style: dashed;
+  border-left-width: 4px;
+  background: var(--creative-surface);
+  border-color: var(--creative-border);
+  border-top: 1px dashed var(--creative-border);
+  border-right: 1px dashed var(--creative-border);
+  border-bottom: 1px dashed var(--creative-border);
+}
+
+.entry-card.creative:hover {
+  box-shadow: 0 4px 12px rgba(123, 94, 167, 0.15);
+}
+
+.entry-card.creative.selected {
+  box-shadow: 0 0 0 2px var(--creative-primary);
+}
+
+/* Speculative entries get a subtler treatment */
+.entry-card.speculative {
+  border-left-style: dotted;
+  background: var(--speculative-surface);
+  border-color: var(--stone-light);
+  border-top: 1px dotted var(--stone-light);
+  border-right: 1px dotted var(--stone-light);
+  border-bottom: 1px dotted var(--stone-light);
+}
+
+/* Entry type badge */
+.entry-card-badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.entry-type-badge {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 1px 6px;
+  border-radius: 4px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+/* Diamond-shaped dots for creative entries */
+.layer-dot.creative {
+  border-radius: 1px;
+  transform: rotate(45deg);
+  width: 7px;
+  height: 7px;
+}

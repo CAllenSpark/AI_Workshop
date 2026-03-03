@@ -20,6 +20,19 @@
   --layer-env: #8C6B4A;
   --layer-env-bg: #F0EBE4;
 
+  /* Creative layer — violet "Different Pen" palette */
+  --creative-primary: #7B5EA7;
+  --creative-accent: #A67BC5;
+  --creative-muted: #8B7FA0;
+  --creative-surface: #F3EBF9;
+  --creative-border: #C5B3D9;
+  --creative-badge-bg: #7B5EA7;
+  --creative-badge-text: #FFFFFF;
+  --speculative-primary: #9E7430;
+  --speculative-surface: #FBF3E4;
+  --speculative-badge-bg: #9E7430;
+  --speculative-badge-text: #FFFFFF;
+
   --panel-bg: #3A3835;
   --panel-surface: #4A4744;
   --panel-text: #F5F0E8;
