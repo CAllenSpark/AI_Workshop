@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-02 (Research enrichment pass complete)
+**Last Updated:** 2026-03-03 (Creative Layer planning sprint initiated)
 **Setting:** Vashon Island, WA (prehistory to present)
 **Branch:** `claude/writers-research-companion-zTnuE`
 
@@ -18,10 +18,15 @@ M3 Core UI       [####################] 100%
 M4 Search/Filter [####################] 100%
 M5 Polish/Export [####################] 100%
 M6 Validation    [####################] 100%  << COMPLETE
+M7 Creative Data [                    ]   0%  << PLANNING
+M8 Creative UI   [                    ]   0%
+M9 Multi-Setting [                    ]   0%
+M10 Polish/Export[                    ]   0%
+M11 Validation   [                    ]   0%
 ```
 
-**Current Milestone:** M6 Validation complete
-**Overall:** 7 of 7 milestones complete
+**Current Milestone:** Creative Layer Planning Sprint (pre-M7)
+**Overall:** 7 of 12 milestones complete. M7-M11 in planning.
 
 ---
 
@@ -43,14 +48,14 @@ M6 Validation    [####################] 100%  << COMPLETE
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | All milestones complete | None |
-| Engineer | Complete | M6 test suite delivered | None |
-| Database Engineer | Idle | Optimizations validated by tests | None |
-| Researcher | Complete | Research enrichment: +18 entries, +28 people, 4 entries enriched | None |
-| Designer | Idle | Visual consistency confirmed | None |
-| Tester | Complete | 122 tests passing, all categories green | None |
-| UI/UX | Idle | Accessibility verified in tests | None |
-| AI Narrator | Idle | Export integration tested | None |
+| Product Manager | Active | Creative Layer PRD Addendum drafted; awaiting team review | None |
+| Engineer | Pending Review | Review addendum data model (Section 5), estimate M7-M11 | None |
+| Database Engineer | Pending Review | Review search index + multi-setting performance impact | None |
+| Researcher | Pending Review | Plan Seattle/Tacoma skeleton research | None |
+| Designer | Pending Review | Propose creative vs. historical visual treatment | None |
+| Tester | Pending Review | Extend test plan with creative layer cases | None |
+| UI/UX | Pending Review | People timeline interaction, view mode toggle | None |
+| AI Narrator | Pending Review | Review export changes, draft fact/fiction system prompt | None |
 
 ---
 
@@ -108,6 +113,7 @@ Environment        28   █████                 25%
 | [Design Bible](docs/design-bible.md) | Des + UX | Draft | 4,122 | 1.0 |
 | [Test Plan](docs/test-plan.md) | Tester | Draft | 3,489 | 1.0 |
 | [Milestone Schedule](docs/milestone-schedule.md) | PM + Eng | Draft | 747 | 1.0 |
+| [Creative Layer Addendum](docs/planning/prd-creative-layer-addendum.md) | PM | Planning Draft | ~3,500 | 0.1 |
 | [Coordination Board](docs/coordination.md) | All | Active | — | — |
 | [Research README](research/README.md) | Researcher | Done | — | — |
 | [Timeline Schema](research/schemas/timeline-entry.schema.json) | Eng | Done | — | 1.0 |
@@ -145,6 +151,8 @@ Environment        28   █████                 25%
 | 2026-03-02 | Vashon Island, WA as prototype setting | Rich 10,000+ year history; well-documented; diverse data types |
 | 2026-03-02 | Camp Sealth associated with Camp Fire (not YMCA/YWCA) | Web research confirmed Camp Sealth was founded by Camp Fire Girls |
 | 2026-03-02 | WCAG AA color contrast fixes | Darkened warm-amber, teal, stone; raised opacity on inactive toggles/chips; removed era label opacity |
+| 2026-03-03 | Creative Layer evolution initiated | User vision: worldbuilding platform with fact/fiction distinction, people timeline, narrative dashboard, multi-setting support |
+| 2026-03-03 | 5 new milestones (M7-M11) proposed | Phased delivery: data model, UI, multi-setting, polish, validation |
 
 ---
 
@@ -187,14 +195,29 @@ TOTAL                     10    122   ALL GREEN
 
 ## Next Steps
 
-All 7 milestones complete. The project is feature-complete for the prototype phase.
+**Creative Layer Planning Sprint (Active -- 2026-03-03):**
+
+The project is evolving from a research companion into a worldbuilding platform that interleaves real history with creative/fictional content.
+
+**PRD Addendum drafted:** `docs/planning/prd-creative-layer-addendum.md`
+- 5 new personas (2 updated, 2 new human, 1 new AI)
+- 13 user stories: 5 P0, 4 P1, 4 P2
+- 5 new milestones: M7 (Creative Data Model), M8 (Creative Layer UI), M9 (Multi-Setting + Dashboard), M10 (Polish + Export), M11 (Validation)
+- Key new capabilities: content classification (historical/creative), fictional characters, narrative events, people lifespan timeline, view mode toggle, multi-setting support, narrative dashboard
+
+**Immediate next actions:**
+1. All agents review the PRD addendum and provide feedback
+2. Engineer: assess data model feasibility and estimate M7 effort
+3. Designer: propose creative vs. historical visual treatment
+4. Researcher: begin Seattle/Tacoma high-level research
+5. AI Narrator: review updated export requirements and system prompt needs
 
 **Post-M6 Research Enrichment (Complete):**
-- Added 18 new timeline entries (93 -> 111) filling thin eras (state-ferry +6, logging-treaty +4, modern +4, wwii +1, indigenous +1, early-20th-century +1, growth-industry +1)
-- Added 28 new people (85 -> 113) including Betty MacDonald, Lucy Gerand, Captain Gertrude Wiman, Bruce Haulman, Bill Moyer, Japanese American farming families, Martinolich, Peabody, and sustainable farming pioneers
-- Enriched 4 existing entries with deeper research-backed details (Mukai Barreling Plant, Dockton Dry Dock, Strawberry Industry, Mukai Historic Places)
-- Fixed all 12 environment feature cross-references (were all pointing to pre-007)
-- Regenerated search index (303 records), narrator export (292KB), and ID mapping (303 mappings)
+- Added 18 new timeline entries (93 -> 111) filling thin eras
+- Added 28 new people (85 -> 113)
+- Enriched 4 existing entries with deeper details
+- Fixed all 12 environment feature cross-references
+- Regenerated search index (303 records), narrator export (292KB), ID mapping (303 mappings)
 - All 122 tests still passing
 
 ---

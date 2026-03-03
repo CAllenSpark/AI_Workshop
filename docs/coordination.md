@@ -1,17 +1,17 @@
 # Team Coordination Board
 
-## Current Sprint: M6 — Validation (Complete)
+## Current Sprint: Creative Layer Planning Sprint
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | M6 validated; all milestones complete | None |
-| Engineer | Complete | M6 test suite written and passing | None |
-| Database Engineer | Idle | Optimizations validated by tests | None |
-| Researcher | Complete | Research enrichment: +18 entries, +28 people, 4 entries enriched, env cross-refs fixed | None |
-| Designer | Idle | Visual consistency confirmed | None |
-| Tester | Complete | 122 tests passing across 10 files | None |
-| UI/UX | Idle | Accessibility verified in tests | None |
-| AI Narrator | Idle | Export integration tested | None |
+| Product Manager | Active | PRD Creative Layer Addendum drafted (docs/planning/prd-creative-layer-addendum.md) | Awaiting team review |
+| Engineer | Pending Review | Review data model changes (addendum Section 5), estimate M7-M11 effort | None |
+| Database Engineer | Pending Review | Review search index updates for content_class facet, multi-setting perf | None |
+| Researcher | Pending Review | Plan Seattle/Tacoma skeleton research (20-30 entries each) | None |
+| Designer | Complete | Creative layer visual strategy drafted (docs/planning/designer-visual-strategy.md) — classification language, palette extension, timeline layering, people timeline, narrative dashboard, card evolution | Awaiting Engineer review for schema additions; UI/UX review for interaction patterns |
+| Tester | Pending Review | Extend test plan with creative layer test cases | None |
+| UI/UX | Pending Review | People timeline interaction design, view mode toggle placement | None |
+| AI Narrator | Pending Review | Review updated export requirements, draft system prompt for fact/fiction boundary | None |
 
 ## Decisions Log
 
@@ -24,6 +24,8 @@
 | 2026-03-02 | Camp Sealth associated with Camp Fire (not YMCA/YWCA) | Researcher | Web research confirmed Camp Sealth was founded by Camp Fire Girls, not YMCA/YWCA as originally assumed. |
 | 2026-03-02 | Darken warm-amber (#C8913A -> #9E7430), teal (#3A8C8C -> #2B7A7A), stone (#D1CCC4 -> #9E9890) for WCAG AA | Eng + Designer | Color contrast audit found 5 failures; darkened colors to meet 4.5:1 for normal text. |
 | 2026-03-02 | Add Database Engineer agent to team | PM + Eng | Data layer needs dedicated optimization ownership as dataset grows toward 500+ entries. |
+| 2026-03-03 | Initiate Creative Layer planning sprint | PM | User vision: evolve from research tool to worldbuilding platform with fact/fiction distinction, people timeline, narrative dashboard, and multi-setting support. |
+| 2026-03-03 | PRD Creative Layer Addendum drafted | PM | 13 user stories (5 P0, 4 P1, 4 P2), 5 milestones (M7-M11), 2 new personas. Addendum at docs/planning/prd-creative-layer-addendum.md. |
 | 2026-03-02 | Implement localStorage caching for data | DB Eng | Reduces repeat-visit load time from ~500ms to near-instant. Background refresh keeps data fresh. |
 | 2026-03-02 | Add O(1) ID-based lookup maps | DB Eng | entriesById, peopleById, placesById eliminate O(n) find() calls in DetailPanel cross-references. |
 | 2026-03-02 | Pre-compute parsed dates | DB Eng | parsedDates Map eliminates redundant parseDate() calls during every filter cycle. |
@@ -34,6 +36,12 @@
 - [ ] Which timeline visualization library to use: D3.js (flexible, complex) vs Vis-timeline (simpler, purpose-built)? — **Engineer to evaluate in M2**
 - [ ] How should the AI narrator export format handle approximate dates (e.g., "~10000 BCE")? — **Engineer + Researcher to define in M2**
 - [ ] Should the map view (P2 feature) use a historical map or modern satellite? — **Designer + Researcher to discuss in M1**
+- [ ] What visual treatment best distinguishes creative from historical entries on the timeline? — **Designer + UI/UX, to be resolved in M8**
+- [ ] Should historical-inspired entries appear in both historical-only and creative-only views? — **PM, proposed: yes, they appear in both**
+- [ ] How should the people timeline handle characters whose lifespans span multiple eras? — **UI/UX, to be resolved in M8**
+- [ ] Should context settings (Seattle, Tacoma) support creative content, or only historical? — **PM, proposed: both, since characters travel between settings**
+- [ ] Should the narrative dashboard be a separate route or a panel within the main view? — **UI/UX + Designer, to be resolved in M9**
+- [ ] How does the AI narrator system prompt handle creative vs. historical content during gameplay? — **AI Narrator, to be resolved in M10**
 
 ## Completed Items
 
