@@ -2,9 +2,9 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-02 (Research enrichment pass complete)
+**Last Updated:** 2026-03-03 (Fantasy expansion planning sprint)
 **Setting:** Vashon Island, WA (prehistory to present)
-**Branch:** `claude/writers-research-companion-zTnuE`
+**Branch:** `claude/add-fantasy-dates-iTNHa`
 
 ---
 
@@ -43,14 +43,14 @@ M6 Validation    [####################] 100%  << COMPLETE
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | All milestones complete | None |
-| Engineer | Complete | M6 test suite delivered | None |
-| Database Engineer | Idle | Optimizations validated by tests | None |
-| Researcher | Complete | Research enrichment: +18 entries, +28 people, 4 entries enriched | None |
-| Designer | Idle | Visual consistency confirmed | None |
-| Tester | Complete | 122 tests passing, all categories green | None |
-| UI/UX | Idle | Accessibility verified in tests | None |
-| AI Narrator | Idle | Export integration tested | None |
+| Product Manager | Active | Fantasy expansion proposal drafted; M7-M12 milestones defined | None |
+| Engineer | Active | Data integrity fixes complete (46→0 warnings); schema extensions designed | None |
+| Database Engineer | Reviewing | Reviewing data model changes for indexing impact | None |
+| Researcher | Queued | Regional research sprint (Seattle, Tacoma, US events) ready | Awaiting M7 |
+| Designer | Complete | Fantasy color palette, visual distinction system, Design Bible v2 (Sections 9-11) | None |
+| Tester | Queued | Test plan expansion for fantasy features ready | Awaiting M7 |
+| UI/UX | Reviewing | Reviewing fantasy mode toggle and narrative flow UX | None |
+| AI Narrator | Active | World-building tools and narrator export format consultation | None |
 
 ---
 
@@ -187,15 +187,30 @@ TOTAL                     10    122   ALL GREEN
 
 ## Next Steps
 
-All 7 milestones complete. The project is feature-complete for the prototype phase.
+**Fantasy Expansion Planning Sprint (In Progress — 2026-03-03):**
 
-**Post-M6 Research Enrichment (Complete):**
-- Added 18 new timeline entries (93 -> 111) filling thin eras (state-ferry +6, logging-treaty +4, modern +4, wwii +1, indigenous +1, early-20th-century +1, growth-industry +1)
-- Added 28 new people (85 -> 113) including Betty MacDonald, Lucy Gerand, Captain Gertrude Wiman, Bruce Haulman, Bill Moyer, Japanese American farming families, Martinolich, Peabody, and sustainable farming pioneers
-- Enriched 4 existing entries with deeper research-backed details (Mukai Barreling Plant, Dockton Dry Dock, Strawberry Industry, Mukai Historic Places)
-- Fixed all 12 environment feature cross-references (were all pointing to pre-007)
-- Regenerated search index (303 records), narrator export (292KB), and ID mapping (303 mappings)
-- All 122 tests still passing
+### Data Integrity Fixes (Complete)
+- Fixed 46 data validation warnings → 0 remaining
+- Resolved 27 person reference mismatches (name variants, missing titles, Unicode differences)
+- Linked 12 orphaned people records to relevant timeline entries
+- Added 4 new tribal people records (Suquamish, Puyallup, Nisqually, Duwamish)
+- People count: 113 → 117 (all cross-referenced, 0 orphans)
+
+### Fantasy Expansion Proposal (In Progress)
+- `docs/fantasy-expansion-proposal.md` drafted with 6 new milestones (M7–M12)
+- Designer consultation complete: fantasy color palette (Amethyst/purple family), four-signal visual distinction system, regional context layer design — integrated into Design Bible v2
+- AI Narrator consultation: world-building tools, narrator export format extensions, narrative flow review features
+- Milestones: M7 (Data Model) → M8 (Regional Research) → M9 (Fantasy UI) → M10 (Add Entry) → M11 (Narrative Tools) → M12 (Integration)
+
+### Proposed New Milestones
+| Milestone | Goal |
+|-----------|------|
+| **M7** | Fantasy data model — schema extensions, TypeScript types, data migration |
+| **M8** | Regional context research — Seattle, Tacoma, US events (~50 entries) |
+| **M9** | Fantasy visual design — colors, markers, toggles, cards |
+| **M10** | Add Fantasy Entry — dialog updates, universe management |
+| **M11** | Narrative flow tools — arc visualization, story review mode |
+| **M12** | Integration testing — full QA, performance, accessibility |
 
 ---
 

@@ -1,17 +1,17 @@
 # Team Coordination Board
 
-## Current Sprint: M6 — Validation (Complete)
+## Current Sprint: Planning & Research — Fantasy Expansion
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Idle | M6 validated; all milestones complete | None |
-| Engineer | Complete | M6 test suite written and passing | None |
-| Database Engineer | Idle | Optimizations validated by tests | None |
-| Researcher | Complete | Research enrichment: +18 entries, +28 people, 4 entries enriched, env cross-refs fixed | None |
-| Designer | Idle | Visual consistency confirmed | None |
-| Tester | Complete | 122 tests passing across 10 files | None |
-| UI/UX | Idle | Accessibility verified in tests | None |
-| AI Narrator | Idle | Export integration tested | None |
+| Product Manager | Active | Fantasy expansion proposal drafted; milestones M7-M12 defined | None |
+| Engineer | Active | Data integrity fixes complete (46 warnings → 0); schema extensions designed | None |
+| Database Engineer | Reviewing | Reviewing data model changes for indexing and performance | None |
+| Researcher | Queued | Regional research sprint (Seattle, Tacoma, US events) ready to begin | Awaiting M7 approval |
+| Designer | Active | Fantasy color palette and visual design system consultation in progress | None |
+| Tester | Queued | Test plan expansion for fantasy features ready to begin | Awaiting M7 approval |
+| UI/UX | Reviewing | Reviewing narrative flow tools and fantasy mode toggle UX | None |
+| AI Narrator | Active | World-building tools and narrator export format consultation in progress | None |
 
 ## Decisions Log
 
@@ -24,6 +24,10 @@
 | 2026-03-02 | Camp Sealth associated with Camp Fire (not YMCA/YWCA) | Researcher | Web research confirmed Camp Sealth was founded by Camp Fire Girls, not YMCA/YWCA as originally assumed. |
 | 2026-03-02 | Darken warm-amber (#C8913A -> #9E7430), teal (#3A8C8C -> #2B7A7A), stone (#D1CCC4 -> #9E9890) for WCAG AA | Eng + Designer | Color contrast audit found 5 failures; darkened colors to meet 4.5:1 for normal text. |
 | 2026-03-02 | Add Database Engineer agent to team | PM + Eng | Data layer needs dedicated optimization ownership as dataset grows toward 500+ entries. |
+| 2026-03-03 | Fantasy palette uses purple/violet family (Amethyst #7B4BAA anchor) to avoid overlap with historical PNW palette | Designer | Purple occupies a distinct color-wheel region from green/blue/amber/brown; carries cultural association with imagination; all values pass WCAG AA 4.5:1. |
+| 2026-03-03 | Fantasy entries hidden by default, opt-in via master toggle | Designer | Historical accuracy is the primary value prop; fantasy must never contaminate a researcher's view without explicit consent. |
+| 2026-03-03 | Regional context layers use desaturated gray family, reduced visual weight (6px markers, 60% opacity) | Designer | Regional events are subordinate context, not primary research data. Visual hierarchy must communicate this. |
+| 2026-03-03 | Fantasy visual vocabulary: diamond shapes, dashed borders, striped indicators, glow effects | Designer | Four-signal system (color + shape + texture + badge) ensures no single signal bears full responsibility for distinction. |
 | 2026-03-02 | Implement localStorage caching for data | DB Eng | Reduces repeat-visit load time from ~500ms to near-instant. Background refresh keeps data fresh. |
 | 2026-03-02 | Add O(1) ID-based lookup maps | DB Eng | entriesById, peopleById, placesById eliminate O(n) find() calls in DetailPanel cross-references. |
 | 2026-03-02 | Pre-compute parsed dates | DB Eng | parsedDates Map eliminates redundant parseDate() calls during every filter cycle. |
@@ -34,6 +38,10 @@
 - [ ] Which timeline visualization library to use: D3.js (flexible, complex) vs Vis-timeline (simpler, purpose-built)? — **Engineer to evaluate in M2**
 - [ ] How should the AI narrator export format handle approximate dates (e.g., "~10000 BCE")? — **Engineer + Researcher to define in M2**
 - [ ] Should the map view (P2 feature) use a historical map or modern satellite? — **Designer + Researcher to discuss in M1**
+- [ ] Fantasy entry data model: needs `entry_type: "historical" | "fantasy"`, `universe`, `narrative_arc`, and `historical_anchor` fields — **Engineer to extend TimelineEntry type and schema**
+- [ ] Regional context data sources: where do Seattle/Tacoma/US event entries come from? — **Researcher to scope regional data collection**
+- [ ] Fantasy layer keys: should LayerKey union be extended or should a separate FantasyLayerKey type be created? — **Engineer + Designer to align**
+- [ ] AI Narrator export: should fantasy entries be included in narrator exports, and if so how should they be flagged? — **AI Narrator to evaluate**
 
 ## Completed Items
 
@@ -90,3 +98,7 @@
 - [x] Search index, narrator export, and ID mapping regenerated with enriched data (303 records, 292KB, 303 mappings) (2026-03-02)
 - [x] people.md narrative updated with all 28 new figures (2026-03-02)
 - [x] All 122 tests still passing after enrichment (2026-03-02)
+- [x] Data integrity fixes: 46 validation warnings → 0 (27 name mismatches, 12 orphaned people, 4 new tribal records, 3 name simplifications) (2026-03-03)
+- [x] Fantasy expansion proposal drafted: `docs/fantasy-expansion-proposal.md` with milestones M7-M12 (2026-03-03)
+- [x] Designer consultation complete: fantasy color palette (Amethyst #7B4BAA family), four-signal visual distinction, Design Bible v2 Sections 9-11 (2026-03-03)
+- [x] AI Narrator consultation initiated: world-building tools, narrator export extensions, narrative flow features (2026-03-03)

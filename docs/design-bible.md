@@ -1,8 +1,8 @@
 # Design Bible — Writer's Research Companion
 
-**Version:** 1.0
+**Version:** 2.0
 **Owner:** Designer, UI/UX
-**Last updated:** 2026-03-02
+**Last updated:** 2026-03-03
 
 ---
 
@@ -16,6 +16,9 @@
 6. [Iconography](#6-iconography)
 7. [Responsive Behavior](#7-responsive-behavior)
 8. [ASCII Wireframe](#8-ascii-wireframe)
+9. [Fantasy Layer System](#9-fantasy-layer-system)
+10. [Regional Context Layers](#10-regional-context-layers)
+11. [Fantasy Entry Dialog](#11-fantasy-entry-dialog)
 
 ---
 
@@ -687,6 +690,780 @@ For implementation reference, the design tokens translate to the following CSS c
   --shadow-lg:  0 4px 16px rgba(0, 0, 0, 0.12);
 
   /* Border Radius */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-full: 9999px;
+}
+```
+
+---
+
+## 9. Fantasy Layer System
+
+This section defines the visual language for fantasy (fictional) entries that coexist with historical data on the timeline. The design goal is to make fantasy entries immediately recognizable as non-historical while maintaining visual harmony with the existing palette. Fantasy entries should feel like they belong to the same interface — not bolted on — but should never be confused with verified historical content.
+
+### 9.1 Design Rationale
+
+The existing historical palette is rooted in the Pacific Northwest landscape: greens, blues, ambers, and earth tones. These are desaturated, grounded colors. The fantasy palette shifts toward cooler, more luminous hues — purples, magentas, and blue-violets — that evoke an "other" quality without clashing. The choice of purple/violet as the fantasy anchor color is deliberate: purple occupies a region of the color wheel with no overlap to the existing layer colors, and it carries longstanding cultural associations with imagination, mystery, and the supernatural.
+
+### 9.2 Fantasy Color Palette
+
+#### Fantasy Layer Colors
+
+| Layer              | Name              | Hex       | Light Variant (bg) | Contrast vs White | Contrast vs Parchment | Usage                                |
+|--------------------|-------------------|-----------|---------------------|-------------------|------------------------|---------------------------------------|
+| Fantasy Events     | Amethyst          | `#7B4BAA` | `#F3EBF9`           | 4.68:1            | 4.51:1                 | Fictional events, plot milestones     |
+| Fantasy People     | Deep Rose         | `#9E3A6E` | `#F9EBF2`           | 5.72:1            | 5.51:1                 | Fictional characters, groups          |
+| Fantasy Places     | Mystic Teal       | `#2A6B7C` | `#E4F0F4`           | 5.08:1            | 4.89:1                 | Fictional locations, landmarks        |
+| Fantasy Environment| Twilight Indigo   | `#4A4E8C` | `#ECEDF5`           | 6.12:1            | 5.90:1                 | Fictional climate, magical landscapes |
+
+All primary colors exceed the WCAG AA threshold of 4.5:1 against both `White (#FFFFFF)` and `Parchment (#F5F0E8)`. Light variants are used as card backgrounds, badge fills, and filter chip active states, mirroring the existing historical layer pattern.
+
+#### Fantasy Core Colors
+
+| Role             | Name            | Hex       | Usage                                                |
+|------------------|-----------------|-----------|------------------------------------------------------|
+| Fantasy Primary  | Amethyst        | `#7B4BAA` | Primary fantasy UI accents, header highlights        |
+| Fantasy Accent   | Soft Violet     | `#A67BC5` | Secondary highlights, glow effects (decorative only) |
+| Fantasy Muted    | Dusty Lavender  | `#8B7FA0` | Fantasy metadata text, muted labels                  |
+| Fantasy Surface  | Pale Orchid     | `#F3EBF9` | Card backgrounds when in fantasy-focused mode        |
+
+#### Fantasy Dark Panel Colors
+
+For the detail panel when displaying a fantasy entry:
+
+| Role                    | Hex       | Usage                                      |
+|-------------------------|-----------|---------------------------------------------|
+| Fantasy Panel Header BG | `#2E2840` | Header band behind the entry title          |
+| Fantasy Panel Accent    | `#A67BC5` | Cross-reference links, source highlights    |
+| Fantasy Panel Text      | `#F5F0E8` | Same as historical — consistency is key     |
+
+### 9.3 Visual Distinction System
+
+Fantasy entries must be visually distinct from historical entries across every component where both can appear. The distinction system uses four complementary signals: **color**, **shape**, **texture**, and **badge**. No single signal is solely responsible — each reinforces the others.
+
+#### 9.3.1 Timeline Track Markers
+
+| Property                | Historical                              | Fantasy                                            |
+|-------------------------|-----------------------------------------|----------------------------------------------------|
+| Shape                   | Circle (point), horizontal bar (span)   | Diamond/rhombus (point), dashed bar (span)         |
+| Size                    | 10px diameter                           | 10px diagonal (diamond rotated 45 degrees)         |
+| Border                  | None                                    | 1px solid, same layer color                        |
+| Fill                    | Solid layer color                       | Layer color at 70% opacity                         |
+| Glow                    | None                                    | `0 0 6px {layer-color}40` (subtle outer glow)      |
+| Hover state             | Scale 1.4x, tooltip                     | Scale 1.4x, tooltip with "Fantasy" prefix          |
+| Selected state          | Scale 1.6x, white 2px ring             | Scale 1.6x, white 2px ring, persistent glow        |
+
+CSS for fantasy marker:
+
+```css
+.entry-marker.fantasy {
+  width: 10px;
+  height: 10px;
+  transform: translateX(-50%) rotate(45deg);
+  border: 1px solid currentColor;
+  opacity: 0.85;
+  box-shadow: 0 0 6px rgba(123, 75, 170, 0.25);
+}
+
+.entry-marker.fantasy.selected {
+  transform: translateX(-50%) rotate(45deg) scale(1.4);
+  box-shadow: 0 0 0 2px white, 0 0 10px rgba(123, 75, 170, 0.4);
+}
+```
+
+The diamond shape provides instant visual differentiation from the circular historical markers without requiring the user to read any label. The subtle glow reinforces the "otherworldly" quality without being distracting.
+
+#### 9.3.2 Timeline Lane Allocation
+
+When fantasy layers are active alongside historical layers, fantasy markers occupy additional lanes below the historical lanes:
+
+```
+  Era Label              Era Label
+  |---------------------|
+  o  o    o              o          <-- Historical Events (top lane)
+     A        A    A                <-- Historical People (second lane)
+  ................................................................................  <-- divider (1px dashed, #D1CCC4, 50% opacity)
+  <>    <>       <>                 <-- Fantasy Events (third lane, diamonds)
+     <>      <>                     <-- Fantasy People (fourth lane, diamonds)
+```
+
+The 1px dashed divider between historical and fantasy lanes provides a clear boundary. When only historical or only fantasy layers are active, the divider is hidden and lanes expand to fill the available space.
+
+#### 9.3.3 Entry Cards
+
+| Property                | Historical                              | Fantasy                                            |
+|-------------------------|-----------------------------------------|----------------------------------------------------|
+| Left indicator          | 4px solid bar, layer color              | 4px bar with diagonal stripe pattern               |
+| Background              | `White (#FFFFFF)`                       | `White (#FFFFFF)` with 1px left inset gradient     |
+| Border                  | 1px solid `Border (#D1CCC4)`           | 1px solid fantasy layer color at 40% opacity       |
+| Title prefix            | None                                    | None (badge handles identification)                |
+| Fantasy badge           | Not present                             | Pill badge: "Fantasy" in caption style             |
+| Corner treatment        | border-radius 8px                       | border-radius 8px (same)                           |
+| Hover elevation         | `--shadow-md`                           | `--shadow-md` with faint color tint                |
+
+The left indicator stripe pattern for fantasy cards:
+
+```css
+.entry-card.fantasy .card-indicator {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--fantasy-layer-color),
+    var(--fantasy-layer-color) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+}
+```
+
+Fantasy badge specification:
+
+| Property        | Value                                              |
+|-----------------|-----------------------------------------------------|
+| Text            | "Fantasy"                                            |
+| Font            | Caption style (12px, 500 weight, Body font)          |
+| Letter spacing  | 0.04em                                               |
+| Text color      | `Amethyst (#7B4BAA)`                                 |
+| Background      | `Pale Orchid (#F3EBF9)`                              |
+| Border          | 1px solid `Amethyst` at 30% opacity                  |
+| Padding         | 2px 8px                                              |
+| Border radius   | 10px (pill)                                          |
+| Position        | Inline after layer badge in the card header          |
+
+#### 9.3.4 Detail Panel
+
+When a fantasy entry is selected and displayed in the detail panel:
+
+| Property                | Historical                              | Fantasy                                            |
+|-------------------------|-----------------------------------------|----------------------------------------------------|
+| Header background       | `Panel BG (#3A3835)`                    | `Fantasy Panel Header (#2E2840)`                   |
+| Layer overline color    | Historical layer color                  | Fantasy layer color                                |
+| Overline text           | "EVENT" / "PERSON" / etc.              | "FANTASY EVENT" / "FANTASY PERSON" / etc.          |
+| Title font              | Merriweather 700                        | Merriweather 700 Italic                            |
+| Source section heading  | "SOURCES"                               | "NARRATIVE SOURCES" (to distinguish from citations) |
+| Cross-reference chips   | Standard compact cards                  | Chips with diamond icon prefix for fantasy refs    |
+| Relationship section    | "CROSS-REFERENCES"                      | "CONNECTIONS" (includes both historical and fantasy)|
+
+The italic title treatment for fantasy entries in the detail panel provides a subtle typographic signal. Combined with the overline prefix and header color shift, it creates a clear "this is fiction" signal without being heavy-handed.
+
+#### 9.3.5 Filter Panel
+
+Fantasy layers appear as a second row of toggle chips below the historical layer toggles, visually grouped under a "Fantasy Layers" subheading.
+
+```
+LAYERS
+[● Events] [● People] [● Places] [● Env]
+
+FANTASY LAYERS
+[◆ F-Events] [◆ F-People] [◆ F-Places] [◆ F-Env]
+```
+
+| Property                | Historical Chip                         | Fantasy Chip                                       |
+|-------------------------|-----------------------------------------|----------------------------------------------------|
+| Dot shape               | Circle (8px)                            | Diamond (8px, rotated 45deg)                       |
+| Active background       | Layer color at 15%                      | Fantasy layer color at 15%                         |
+| Border style            | Solid                                   | Dashed (1px)                                       |
+| Label                   | "Events" / "People" / etc.             | "F-Events" / "F-People" / etc.                     |
+
+The dashed border on fantasy filter chips echoes the dashed divider on the timeline and the stripe pattern on cards, building a consistent "fantasy = non-solid" visual vocabulary.
+
+#### 9.3.6 Search Results
+
+In the search type-ahead dropdown:
+
+| Property                | Historical                              | Fantasy                                            |
+|-------------------------|-----------------------------------------|----------------------------------------------------|
+| Left indicator          | Solid color bar (3px)                   | Diagonal stripe bar (3px)                          |
+| Title treatment         | Normal weight                           | Normal weight + "Fantasy" pill badge after title   |
+| Layer badge color       | Historical layer color                  | Fantasy layer color                                |
+| Sort order              | Historical results first by default     | Fantasy results grouped below historical           |
+
+When the user's search query matches both historical and fantasy entries, results are presented in two groups with a thin divider and group labels:
+
+```
+HISTORICAL MATCHES
+  [result 1]
+  [result 2]
+------------------
+FANTASY MATCHES
+  [result 3]
+```
+
+### 9.4 Fantasy/Historical Toggle
+
+#### 9.4.1 Master Toggle Design
+
+The master "Fantasy Mode" toggle sits in the filter panel header, positioned to the right of the "Layers" label. It controls whether fantasy entries are visible system-wide.
+
+```
+LAYERS                                    [Fantasy ◆ ON/OFF]
+[● Events] [● People] [● Places] [● Env]
+```
+
+| Property                | Value                                                |
+|-------------------------|------------------------------------------------------|
+| Type                    | Slide toggle with label                              |
+| Width                   | 40px (track) + label                                 |
+| Track height            | 22px                                                 |
+| Track border-radius     | 11px                                                 |
+| Track OFF color         | `Surface (#E8E4DD)`                                  |
+| Track ON color          | `Amethyst (#7B4BAA)` at 30%                          |
+| Thumb size              | 18px circle                                          |
+| Thumb OFF color         | `Warm Gray (#6B6560)`                                |
+| Thumb ON color          | `Amethyst (#7B4BAA)`                                 |
+| Label text              | "Fantasy" in Caption style                           |
+| Diamond icon            | 8px diamond before label, filled when ON             |
+| Transition              | 200ms ease-out                                       |
+| Keyboard                | Space to toggle, Tab to focus                        |
+| ARIA                    | `role="switch"`, `aria-checked`, `aria-label="Toggle fantasy entries"` |
+
+#### 9.4.2 Default State
+
+Fantasy entries are **hidden by default**. The master toggle is OFF on initial load. This preserves the core experience for writers who are using the tool purely for historical research. The fantasy layer is an opt-in overlay.
+
+Rationale: Historical accuracy is the primary value proposition. Fantasy content must never contaminate a researcher's view unless they explicitly request it. Defaulting to OFF also prevents confusion for new users who might not understand the distinction.
+
+When the user activates the master toggle:
+1. Fantasy layer chips appear (with a 200ms slide-down animation).
+2. Fantasy markers appear on the timeline (with a 150ms fade-in).
+3. Fantasy entries appear in the card list (inserted in chronological position with a 150ms fade-in).
+4. The filter footer count updates to include fantasy entries.
+
+When deactivated, the reverse: fantasy elements fade out and collapse, leaving the historical view intact.
+
+#### 9.4.3 Mixed View Treatment
+
+When both historical and fantasy entries are visible simultaneously:
+
+**Timeline Track:**
+- Historical markers appear in the upper lanes, fantasy markers in the lower lanes (separated by the dashed divider described in Section 9.3.2).
+- The density strip at the bottom of the timeline uses a split-color approach: historical density in the standard layer colors, fantasy density in the fantasy layer colors, rendered as a stacked bar.
+
+**Card List:**
+- Cards are interleaved chronologically. Historical and fantasy cards at the same date appear adjacent, with historical cards first.
+- The visual distinction signals (solid vs. stripe indicator, badge) are sufficient to differentiate at a glance.
+
+**Overlap Regions:**
+- Where a fantasy event is anchored to the same date as a historical event, the timeline shows both markers at the same horizontal position in their respective lanes.
+- An optional "connection line" (1px dashed, `Amethyst` at 30%) can be drawn between a fantasy marker and the historical marker it references, visible on hover.
+
+```css
+.timeline-connection-line {
+  position: absolute;
+  border-left: 1px dashed rgba(123, 75, 170, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 150ms ease;
+}
+
+.entry-marker.fantasy:hover ~ .timeline-connection-line,
+.entry-marker.historical:hover ~ .timeline-connection-line {
+  opacity: 1;
+}
+```
+
+### 9.5 Fantasy Typography
+
+#### Font Treatment
+
+Fantasy entries do **not** use a different base font family. Introducing a display or script font for fantasy entries would violate the Minimal principle and create visual noise. Instead, the distinction is achieved through targeted style variations:
+
+| Element                    | Historical Treatment                    | Fantasy Treatment                            |
+|----------------------------|-----------------------------------------|----------------------------------------------|
+| Card title (H4)           | Inter 600, normal                       | Inter 600, normal (same)                     |
+| Detail panel title (H2)   | Merriweather 700, normal                | Merriweather 700, **italic**                 |
+| Layer overline             | Uppercase, normal                       | Uppercase, normal + "FANTASY" prefix         |
+| Date label                 | JetBrains Mono 400                      | JetBrains Mono 400 (same)                    |
+| Description body           | Inter 400                               | Inter 400 (same)                             |
+| Fantasy badge              | Inter 500, 12px, letter-spacing 0.04em  | (unique to fantasy)                          |
+
+The italic Merriweather treatment on the detail panel title is the only typographic divergence, and it is intentionally restrained. Italic serif in a detail context reads as "literary" or "narrative" without introducing a separate design language.
+
+### 9.6 Fantasy Iconography
+
+All icons use Lucide Icons to maintain consistency with the existing system. Fantasy layer icons are distinct from their historical counterparts but follow the same stroke-based, 24px canvas, 1.5px stroke conventions.
+
+#### Fantasy Layer Icons
+
+| Layer              | Icon              | Lucide Name       | Description                                |
+|--------------------|-------------------|--------------------|---------------------------------------------|
+| Fantasy Events     | `sparkles`        | sparkles           | Three-star burst — magical occurrence       |
+| Fantasy People     | `ghost`           | ghost              | Ghost silhouette — fictional character      |
+| Fantasy Places     | `castle`          | castle             | Castle tower — fictional location           |
+| Fantasy Environment| `flame`           | flame              | Flame — otherworldly landscape/element      |
+
+These icons intentionally pair with the historical equivalents (`calendar`, `user`, `map-pin`, `leaf`) while signaling their fictional nature.
+
+#### Additional Fantasy Icons
+
+| Action             | Icon              | Lucide Name       | Usage                                      |
+|--------------------|-------------------|--------------------|---------------------------------------------|
+| Fantasy toggle     | `wand-2`          | wand-2             | Master fantasy toggle icon (optional)       |
+| Fantasy badge      | `diamond`         | diamond            | Inline badge icon in fantasy pills          |
+| Fantasy link       | `link-2`          | link-2             | Connection between fantasy and history      |
+| Universe/campaign  | `book-open`       | book-open          | Universe or campaign selector               |
+
+### 9.7 Fantasy CSS Custom Properties
+
+```css
+:root {
+  /* Fantasy Layer Colors */
+  --color-fantasy-events:       #7B4BAA;
+  --color-fantasy-events-bg:    #F3EBF9;
+  --color-fantasy-people:       #9E3A6E;
+  --color-fantasy-people-bg:    #F9EBF2;
+  --color-fantasy-places:       #2A6B7C;
+  --color-fantasy-places-bg:    #E4F0F4;
+  --color-fantasy-env:          #4A4E8C;
+  --color-fantasy-env-bg:       #ECEDF5;
+
+  /* Fantasy Core */
+  --color-fantasy-primary:      #7B4BAA;
+  --color-fantasy-accent:       #A67BC5;
+  --color-fantasy-muted:        #8B7FA0;
+  --color-fantasy-surface:      #F3EBF9;
+
+  /* Fantasy Dark Panel */
+  --color-fantasy-panel-header: #2E2840;
+  --color-fantasy-panel-accent: #A67BC5;
+
+  /* Fantasy Effects */
+  --fantasy-glow-sm:  0 0 6px rgba(123, 75, 170, 0.25);
+  --fantasy-glow-md:  0 0 10px rgba(123, 75, 170, 0.35);
+  --fantasy-glow-lg:  0 0 16px rgba(123, 75, 170, 0.45);
+
+  /* Fantasy Stripe Pattern (used in backgrounds) */
+  --fantasy-stripe: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 3px,
+    rgba(123, 75, 170, 0.08) 3px,
+    rgba(123, 75, 170, 0.08) 6px
+  );
+}
+```
+
+---
+
+## 10. Regional Context Layers
+
+Regional context layers display key events from surrounding areas (Seattle, Tacoma, United States) alongside Vashon Island entries. These provide temporal context — a writer can see that a Vashon event occurred during the same year as a major Seattle fire or a national policy change — without cluttering the primary research view.
+
+### 10.1 Design Rationale
+
+Regional context entries are **subordinate** to Vashon Island entries. They exist to provide temporal anchoring, not to be researched in their own right. The visual treatment must communicate this hierarchy: regional events are visible but visually lighter, occupying less visual weight than primary Vashon entries.
+
+### 10.2 Regional Color Palette
+
+Regional layers use a muted, desaturated color family that does not compete with either the historical or fantasy palettes:
+
+| Region         | Name            | Hex       | Light Variant (bg) | Contrast vs White | Contrast vs Parchment | Usage                  |
+|----------------|-----------------|-----------|---------------------|-------------------|------------------------|------------------------|
+| Seattle        | Steel Gray      | `#5C6B78` | `#ECEEF0`           | 4.69:1            | 4.52:1                 | Seattle metro events   |
+| Tacoma         | Slate Olive     | `#5E6B5C` | `#ECEFEB`           | 4.52:1            | 4.36:1                 | Tacoma area events     |
+| United States  | Muted Navy      | `#4A5570` | `#EBEDF2`           | 5.24:1            | 5.05:1                 | National US events     |
+
+These grayed-out tones intentionally lack the saturation of the Vashon layer colors. They read as "background context" rather than "primary data."
+
+### 10.3 Visual Weight Hierarchy
+
+The interface establishes a three-tier visual hierarchy:
+
+```
+TIER 1 (Full weight)  — Vashon Historical entries (existing)
+TIER 2 (Medium weight) — Vashon Fantasy entries (Section 9)
+TIER 3 (Low weight)    — Regional Context entries (this section)
+```
+
+#### Timeline Markers
+
+| Property                | Vashon (Tier 1)                         | Regional (Tier 3)                                  |
+|-------------------------|-----------------------------------------|----------------------------------------------------|
+| Shape                   | Circle (10px) / Diamond (fantasy)       | Small circle (6px)                                 |
+| Opacity                 | 100%                                    | 60%                                                |
+| Vertical position       | Standard lanes                          | Dedicated "context lane" below all Vashon lanes    |
+| Hover behavior          | Scale 1.4x, full tooltip               | Scale 1.3x, tooltip with region prefix             |
+| Selected behavior       | Opens detail panel                      | Opens compact tooltip (not full detail panel)       |
+
+#### Entry Cards
+
+Regional context entries do **not** appear in the main card list by default. They are surfaced in two ways:
+
+1. **Tooltip on timeline hover:** A compact tooltip showing title, date, and region tag.
+2. **Context sidebar section:** When the detail panel is open for a Vashon entry, a "Regional Context" section at the bottom shows any regional events within +/- 5 years. These appear as minimal inline items (date + title), not full cards.
+
+If the user explicitly opts to show regional cards in the list (via a settings toggle), they appear as compact, single-line entries with reduced visual weight:
+
+| Property                | Vashon Card                             | Regional Card                                      |
+|-------------------------|-----------------------------------------|----------------------------------------------------|
+| Height                  | Auto (multi-line)                       | Single line, 40px fixed height                     |
+| Left indicator          | 4px bar, layer color                    | 2px bar, regional color at 60%                     |
+| Background              | `White (#FFFFFF)`                       | `Surface (#E8E4DD)`                                |
+| Title style             | H4 (16px, 600)                          | Body Small (14px, 400)                             |
+| Description             | Visible (2-line truncation)             | Hidden (tooltip on hover)                          |
+| Region badge            | Not present                             | Pill: "Seattle" / "Tacoma" / "US" in regional color|
+
+### 10.4 Regional Toggle UI
+
+Regional layers are controlled by a collapsible "Context Layers" section in the filter panel, positioned below the fantasy toggles:
+
+```
+LAYERS
+[● Events] [● People] [● Places] [● Env]
+
+FANTASY LAYERS                            [Fantasy ◆ ON/OFF]
+[◆ F-Events] [◆ F-People] [◆ F-Places] [◆ F-Env]
+
+REGIONAL CONTEXT                          [Context ▸ ON/OFF]
+[○ Seattle] [○ Tacoma] [○ US National]
+```
+
+| Property                | Value                                                |
+|-------------------------|------------------------------------------------------|
+| Toggle type             | Master toggle for all context + individual region toggles |
+| Chip shape              | Pill, matching historical chip style                 |
+| Chip dot                | Open circle (2px stroke, no fill) to signal "context" weight |
+| Default state           | OFF (all regional layers hidden)                     |
+| Collapse behavior       | Section header collapses/expands the chip row        |
+
+### 10.5 Regional CSS Custom Properties
+
+```css
+:root {
+  /* Regional Context Colors */
+  --color-region-seattle:       #5C6B78;
+  --color-region-seattle-bg:    #ECEEF0;
+  --color-region-tacoma:        #5E6B5C;
+  --color-region-tacoma-bg:     #ECEFEB;
+  --color-region-us:            #4A5570;
+  --color-region-us-bg:         #EBEDF2;
+
+  /* Regional Visual Weight */
+  --region-marker-size:         6px;
+  --region-marker-opacity:      0.6;
+  --region-card-height:         40px;
+  --region-indicator-width:     2px;
+}
+```
+
+---
+
+## 11. Fantasy Entry Dialog
+
+This section specifies the modifications to the AddEntryDialog component for creating fantasy entries.
+
+### 11.1 Entry Type Selector
+
+At the top of the dialog, before all other fields, a segmented control allows the user to select the entry type:
+
+```
+┌─────────────────────────────────────────┐
+│  [  Historical  |  Fantasy  ]           │
+│                                         │
+│  Title *                                │
+│  [________________________________]     │
+│  ...                                    │
+└─────────────────────────────────────────┘
+```
+
+| Property                | Value                                                |
+|-------------------------|------------------------------------------------------|
+| Type                    | Segmented control (two segments)                     |
+| Width                   | 100% of dialog body                                  |
+| Height                  | 40px                                                 |
+| Border                  | 1px solid `Border (#D1CCC4)`                         |
+| Border radius           | 8px                                                  |
+| Segment radius          | 6px (inner)                                          |
+| Historical active       | `Forest Green (#2D5F3E)` bg, white text              |
+| Fantasy active          | `Amethyst (#7B4BAA)` bg, white text                  |
+| Inactive                | Transparent bg, `Warm Gray (#6B6560)` text           |
+| Transition              | Background 150ms ease                                |
+| Default                 | "Historical" selected                                |
+
+When the user selects "Fantasy":
+1. The dialog header color shifts from `Forest Green` to `Amethyst`.
+2. The layer picker shows fantasy layers instead of historical layers.
+3. Additional fantasy-specific fields appear below the standard fields.
+4. The submit button changes from `Forest Green` to `Amethyst`.
+
+### 11.2 Fantasy-Specific Fields
+
+These fields appear only when "Fantasy" is selected:
+
+#### Universe / Campaign Name
+
+| Property                | Value                                                |
+|-------------------------|------------------------------------------------------|
+| Label                   | "Universe / Campaign"                                |
+| Type                    | Text input with autocomplete from existing universes |
+| Placeholder             | "e.g., Ravenstone Chronicles, Vashon Dark"           |
+| Required                | No (but strongly recommended)                        |
+| Position                | Immediately after the Era selector                   |
+
+#### Narrative Arc
+
+| Property                | Value                                                |
+|-------------------------|------------------------------------------------------|
+| Label                   | "Narrative Arc"                                      |
+| Type                    | Select dropdown                                      |
+| Options                 | "Setup", "Rising Action", "Climax", "Falling Action", "Resolution", "Standalone" |
+| Default                 | "Standalone"                                         |
+| Required                | No                                                   |
+| Position                | Below Universe/Campaign                              |
+
+#### Historical Anchor
+
+| Property                | Value                                                |
+|-------------------------|------------------------------------------------------|
+| Label                   | "Anchored to Historical Entry"                       |
+| Type                    | Search input (autocomplete from existing entries)    |
+| Placeholder             | "Search for a historical entry to anchor this to..." |
+| Required                | No                                                   |
+| Position                | Below Narrative Arc                                  |
+| Purpose                 | Creates a visual connection line on the timeline     |
+
+### 11.3 Visual Preview
+
+The dialog includes a live preview strip at the bottom of the form (above the footer buttons) showing how the entry will appear:
+
+```
+┌─────────────────────────────────────────┐
+│  PREVIEW                                │
+│  ┌─────────────────────────────────┐    │
+│  │▌▌ Title of Entry        Fantasy │    │
+│  │▌▌ ~1890 · Fantasy Events        │    │
+│  │▌▌ Description preview text...   │    │
+│  └─────────────────────────────────┘    │
+└─────────────────────────────────────────┘
+```
+
+The preview card uses the actual fantasy card styling (striped left indicator, fantasy badge, fantasy layer colors) so the user sees exactly how their entry will look in the interface before saving.
+
+| Property                | Value                                                |
+|-------------------------|------------------------------------------------------|
+| Container background    | `Surface (#E8E4DD)`                                  |
+| Container padding       | 16px                                                 |
+| Container border-radius | 8px                                                  |
+| Preview card            | Full EntryCard component in read-only mode           |
+| Heading                 | "PREVIEW" in Overline style                          |
+| Visibility              | Always visible; updates live as fields are filled    |
+| Empty state             | Grayed-out placeholder card with "Fill in fields to see preview" |
+
+### 11.4 Submit Button Variants
+
+| State                   | Historical                              | Fantasy                                            |
+|-------------------------|-----------------------------------------|----------------------------------------------------|
+| Background              | `Forest Green (#2D5F3E)`                | `Amethyst (#7B4BAA)`                               |
+| Hover background        | `#245232`                               | `#643A8C`                                          |
+| Text                    | "Add Entry"                             | "Add Fantasy Entry"                                |
+| Icon                    | None                                    | `sparkles` (16px) before text (optional)           |
+
+### 11.5 Dialog CSS Custom Properties
+
+```css
+/* Fantasy dialog state — applied when .add-entry-dialog.fantasy */
+.add-entry-dialog.fantasy .add-entry-header h2 {
+  color: var(--color-fantasy-primary);
+}
+
+.add-entry-dialog.fantasy .add-entry-submit {
+  background: var(--color-fantasy-primary);
+}
+
+.add-entry-dialog.fantasy .add-entry-submit:hover {
+  background: #643A8C;
+}
+
+.add-entry-dialog.fantasy .field-input:focus,
+.add-entry-dialog.fantasy .field-textarea:focus,
+.add-entry-dialog.fantasy .field-select:focus {
+  border-color: var(--color-fantasy-primary);
+  box-shadow: 0 0 0 3px rgba(123, 75, 170, 0.15);
+}
+```
+
+---
+
+## Appendix B: Fantasy Feature ASCII Wireframe
+
+### Desktop View with Fantasy Mode Active
+
+```
++================================================================+===================+
+|  Writer's Research Companion                [Fantasy (diamond) ON]                  |
++================================================================+                   |
+|                                                                 |                   |
+|  [Search entries...              (search)]                      |                   |
+|                                                                 |                   |
+|  LAYERS                                                         |  DETAIL PANEL     |
+|  [* Events] [* People] [* Places] [* Env]                      |                   |
+|                                                                 |  -- close [x] --  |
+|  FANTASY LAYERS                                                 |                   |
+|  [<> F-Events] [<> F-People] [<> F-Places] [<> F-Env]          |  <>FANTASY EVENT  |
+|                                                                 |                   |
+|  [Prehistory] [Indigenous] [Pioneer] [Modern] [All]             |  The Whispering   |
+|  Date: [*================*]                                     |  Stones Appear    |
+|                                                                 |                   |
++================================================================+  ~1890 (Fantasy)  |
+|                                                                 |                   |
+|  [+][-][fit]  Prehistory   | Indigenous | Pioneer  | Modern    |  ----------------  |
+|  +------------------------------------------------------+      |                   |
+|  |        o                |            |           |    |      |  In the Ravenstone|
+|  |  o          o           |  o     o   | o  o  o   |    |      |  universe, the    |
+|  |     A    A              |     A      |  A        |    |      |  ancient standing |
+|  |............................FANTASY.LANE..........|....|      |  stones on the    |
+|  |     <>       <>         |  <>   <>   | <>  <>    |    |      |  south bluff      |
+|  |  <>      <>             |     <>     |  <>       |    |      |  begin to glow... |
+|  |                         |       v    |           |    |      |                   |
+|  +------------------------------------------------------+      |  ----------------  |
+|  |  ::::##:::::::::::::::::::####:::::::########:::::::::|      |                   |
+|  +------------------------------------------------------+      |  NARRATIVE SOURCES|
+|                                                                 |  1. Ravenstone    |
++================================================================+     Campaign Bible |
+|                                                                 |                   |
+|  +--------------------+  +--------------------+                 |  ----------------  |
+|  |/  Mosquito Fleet   |  |// Whispering Stones| Fantasy        |                   |
+|  |/  c. 1890 . Event  |  |// ~1890 . F-Event  |                |  CONNECTIONS      |
+|  |/  Network of small |  |// Ancient standing  |                |  -> Mosquito Fleet|
+|  |/  steamboats...    |  |// stones begin...   |                |     (Historical)  |
+|  +--------------------+  +--------------------+                 |  -> Burton Wharf  |
+|                                                                 |     (Historical)  |
+|  +--------------------+  +--------------------+                 |  -> The Keeper    |
+|  |/  Vashon College   |  |// The Keeper       | Fantasy        |     (Fantasy)     |
+|  |/  c. 1892 . Place  |  |// ~1892 . F-Person |                |                   |
+|  |/  Short-lived      |  |// A mysterious     |                |                   |
+|  |/  educational...   |  |// figure who...    |                |                   |
+|  +--------------------+  +--------------------+                 |                   |
+|                                                                 |                   |
++================================================================+===================+
+
+LEGEND:
+  o  = Historical event marker (circle)    A = Historical people marker (triangle)
+  <> = Fantasy marker (diamond)            v = Playhead / scrub handle
+  /  = Solid left indicator (historical)   // = Striped left indicator (fantasy)
+  :  = Low density     # = High density
+  .... = Fantasy lane divider (dashed)
+```
+
+---
+
+## Appendix C: Complete Updated CSS Custom Properties
+
+This appendix consolidates all CSS custom properties including the new fantasy and regional systems. It supersedes the original Appendix A for implementation reference.
+
+```css
+:root {
+  /* ===== Core Colors ===== */
+  --color-primary:        #2D5F3E;
+  --color-secondary:      #4A6D8C;
+  --color-accent:         #C8913A;
+  --color-background:     #F5F0E8;
+  --color-surface:        #E8E4DD;
+  --color-text:           #2C2C2C;
+  --color-text-muted:     #6B6560;
+  --color-border:         #D1CCC4;
+
+  /* ===== Historical Layer Colors ===== */
+  --color-layer-events:       #C8913A;
+  --color-layer-events-bg:    #FBF3E4;
+  --color-layer-people:       #3A8C8C;
+  --color-layer-people-bg:    #E4F3F3;
+  --color-layer-places:       #2D5F3E;
+  --color-layer-places-bg:    #E4F0E8;
+  --color-layer-env:          #8C6B4A;
+  --color-layer-env-bg:       #F0EBE4;
+
+  /* ===== Fantasy Layer Colors ===== */
+  --color-fantasy-events:       #7B4BAA;
+  --color-fantasy-events-bg:    #F3EBF9;
+  --color-fantasy-people:       #9E3A6E;
+  --color-fantasy-people-bg:    #F9EBF2;
+  --color-fantasy-places:       #2A6B7C;
+  --color-fantasy-places-bg:    #E4F0F4;
+  --color-fantasy-env:          #4A4E8C;
+  --color-fantasy-env-bg:       #ECEDF5;
+
+  /* ===== Fantasy Core ===== */
+  --color-fantasy-primary:      #7B4BAA;
+  --color-fantasy-accent:       #A67BC5;
+  --color-fantasy-muted:        #8B7FA0;
+  --color-fantasy-surface:      #F3EBF9;
+
+  /* ===== Fantasy Dark Panel ===== */
+  --color-fantasy-panel-header: #2E2840;
+  --color-fantasy-panel-accent: #A67BC5;
+
+  /* ===== Fantasy Effects ===== */
+  --fantasy-glow-sm:  0 0 6px rgba(123, 75, 170, 0.25);
+  --fantasy-glow-md:  0 0 10px rgba(123, 75, 170, 0.35);
+  --fantasy-glow-lg:  0 0 16px rgba(123, 75, 170, 0.45);
+
+  --fantasy-stripe: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 3px,
+    rgba(123, 75, 170, 0.08) 3px,
+    rgba(123, 75, 170, 0.08) 6px
+  );
+
+  /* ===== Regional Context Colors ===== */
+  --color-region-seattle:       #5C6B78;
+  --color-region-seattle-bg:    #ECEEF0;
+  --color-region-tacoma:        #5E6B5C;
+  --color-region-tacoma-bg:     #ECEFEB;
+  --color-region-us:            #4A5570;
+  --color-region-us-bg:         #EBEDF2;
+
+  /* ===== Regional Visual Weight ===== */
+  --region-marker-size:         6px;
+  --region-marker-opacity:      0.6;
+  --region-card-height:         40px;
+  --region-indicator-width:     2px;
+
+  /* ===== Dark Panel ===== */
+  --color-panel-bg:         #3A3835;
+  --color-panel-surface:    #4A4744;
+  --color-panel-text:       #F5F0E8;
+  --color-panel-text-muted: #A8A29E;
+
+  /* ===== Semantic ===== */
+  --color-error:    #B84233;
+  --color-warning:  #C8913A;
+  --color-success:  #3E7A4F;
+  --color-info:     #4A6D8C;
+
+  /* ===== Typography ===== */
+  --font-heading: 'Merriweather', Georgia, 'Times New Roman', serif;
+  --font-body:    'Inter', -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace;
+
+  /* ===== Spacing ===== */
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   12px;
+  --space-base: 16px;
+  --space-lg:   24px;
+  --space-xl:   32px;
+  --space-2xl:  48px;
+  --space-3xl:  64px;
+
+  /* ===== Layout ===== */
+  --content-max-width: 1280px;
+  --detail-panel-width: 400px;
+  --timeline-height: 120px;
+
+  /* ===== Transitions ===== */
+  --transition-fast:   150ms ease;
+  --transition-normal: 200ms ease-out;
+  --transition-slow:   300ms ease-in-out;
+
+  /* ===== Elevation ===== */
+  --shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md:  0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lg:  0 4px 16px rgba(0, 0, 0, 0.12);
+
+  /* ===== Border Radius ===== */
   --radius-sm:   4px;
   --radius-md:   8px;
   --radius-lg:   16px;

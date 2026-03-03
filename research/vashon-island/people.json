@@ -380,7 +380,7 @@
     },
     {
       "id": "person-038",
-      "name": "Miles F. Hatch (also Miles Hatch)",
+      "name": "Miles F. Hatch",
       "description": "Founded and named the town of Burton after his birthplace. Donated the hilltop campus land for Vashon College and spearheaded its founding in 1892. Operated a sawmill at Assembly Point, developed the Mileta Farm dairy, and built a store at the Burton Peninsula. Burton became the island's dominant town under his leadership.",
       "role": "business owner",
       "period": "Active 1890s–1900s",
@@ -622,7 +622,7 @@
     },
     {
       "id": "person-061",
-      "name": "Oliver Scott Van Olinda (also Oliver Van Olinda)",
+      "name": "Oliver Scott Van Olinda",
       "description": "Became the community's first historian, documenting early island life and settlement patterns. Taught stenography and typing on the founding faculty of Vashon College and also edited the weekly Vashon Island Press. Described the first automobiles arriving on the island in 1907 as \"the most powerful influence\" on island life alongside the telephone.",
       "role": "historian",
       "period": "1890s onward",
@@ -883,7 +883,10 @@
       "name": "Glenda Pearson",
       "role": "community leader",
       "description": "Longtime Vashon Island community organizer and advocate for rural character preservation. Active in land use planning debates that shaped the island's identity as a haven for artists and small-scale agriculture rather than suburban development.",
-      "period": "Active 1980s–2000s"
+      "period": "Active 1980s–2000s",
+      "related_entries": [
+        "mod-006"
+      ]
     },
     {
       "id": "person-094",
@@ -918,21 +921,30 @@
       "name": "John de Groen",
       "role": "business owner",
       "description": "Co-founder and early leader of K2 Corporation alongside the Kirschner family. Helped transform K2 from a small island ski manufacturer into a major sporting goods company. K2 became Vashon's largest employer and its economic anchor for decades.",
-      "period": "Active 1960s–1980s"
+      "period": "Active 1960s–1980s",
+      "related_entries": [
+        "mod-003"
+      ]
     },
     {
       "id": "person-099",
       "name": "Norie Sato",
       "role": "artist",
       "description": "Japanese American artist based on Vashon Island, known for large-scale public art installations throughout the Pacific Northwest. Her work explores themes of memory, landscape, and cultural identity. Recipient of numerous public art commissions including works for Sound Transit and the Seattle Art Museum.",
-      "period": "Active 1990s–present"
+      "period": "Active 1990s–present",
+      "related_entries": [
+        "mod-010"
+      ]
     },
     {
       "id": "person-100",
       "name": "Kara Jones",
       "role": "artist",
       "description": "Vashon Island poet and publisher. Founded Soulstice Press, a small literary press based on the island. Representative of the vibrant independent publishing and poetry community that flourished on Vashon from the 1990s onward.",
-      "period": "Active 1990s–present"
+      "period": "Active 1990s–present",
+      "related_entries": [
+        "mod-010"
+      ]
     },
     {
       "id": "person-101",
@@ -967,7 +979,10 @@
       "name": "Leschi's Wife (Mary)",
       "role": "historical figure",
       "description": "Wife of Chief Leschi of the Nisqually. During the Puget Sound War, she and other family members were among those displaced by the conflict. Her story represents the broader experience of indigenous women and families during the treaty era and forced relocations.",
-      "period": "Active 1850s"
+      "period": "Active 1850s",
+      "related_entries": [
+        "log-002"
+      ]
     },
     {
       "id": "person-106",
@@ -988,14 +1003,20 @@
       "name": "Captain Gertrude Wiman",
       "role": "historical figure",
       "description": "First woman licensed as a steamship pilot on Puget Sound, earning her license around 1907. Commanded vessels on the Mosquito Fleet routes that served Vashon Island, breaking gender barriers in the maritime industry at a time when women captains were virtually unheard of. Her achievement reflected the independent spirit of island communities that depended on these small ferry operators.",
-      "period": "Active ~1907"
+      "period": "Active ~1907",
+      "related_entries": [
+        "gro-004"
+      ]
     },
     {
       "id": "person-109",
       "name": "Marjorie Rose Stanley",
       "role": "historian",
       "description": "Vashon Island historian who spent over 60 years documenting island history. Published the first 'History of Vashon Island' in 1926 and later serialized an expanded version in the Vashon-Maury Island Beachcomber in 1967. Her work preserved the oral histories and pioneer stories that might otherwise have been lost, forming a foundation for later historians.",
-      "period": "Active 1920s–1980s"
+      "period": "Active 1920s–1980s",
+      "related_entries": [
+        "mod-015"
+      ]
     },
     {
       "id": "person-110",
@@ -1023,7 +1044,10 @@
       "name": "Mary Bridges",
       "role": "historical figure",
       "description": "Wife of Mathew Bridges, the first European-American homesteader on Vashon Island (1865). Believed to have been of Duwamish descent, representing one of the earliest examples of intermarriage between settlers and indigenous peoples on the island. Her presence highlights the complex relationships between indigenous and settler communities in the earliest days of homesteading.",
-      "period": "Active 1860s–1870s"
+      "period": "Active 1860s–1870s",
+      "related_entries": [
+        "pio-001"
+      ]
     },
     {
       "id": "person-114",
@@ -1051,28 +1075,81 @@
       "name": "Bill Knox",
       "role": "artist",
       "description": "Vashon-based artist, designer, and engineer who created the iconic color schemes for K2 skis and built the original prototype for the K2 ski boot. As a painter he specialized in watercolor landscapes and wildlife, with work selected for U.S. postage stamps. His combination of artistic talent and engineering skill was central to K2's distinctive visual identity during its growth years.",
-      "period": "Active 1960s–1990s"
+      "period": "Active 1960s–1990s",
+      "related_entries": [
+        "mod-003"
+      ]
     },
     {
       "id": "person-118",
       "name": "Peter Manson",
       "role": "business owner",
       "description": "Named the village of Dockton on Quartermaster Harbor, noting the dry dock facility could 'dock a ton of boats.' Later founded a pile driving company that became Manson Construction, which grew into a major marine construction firm that still operates today. His entrepreneurship at Dockton exemplified the industrial ambition that characterized Vashon's growth era.",
-      "period": "Active 1890s–1920s"
+      "period": "Active 1890s–1920s",
+      "related_entries": [
+        "gro-003"
+      ]
     },
     {
       "id": "person-119",
       "name": "August M. Takatsuka",
       "role": "farmer",
       "description": "Vashon-born son of Japanese immigrant farmers who returned from military service in WWII to resume strawberry farming on the island. Later transitioned to Christmas tree cultivation in the 1970s. His persistence in farming after the devastation of internment represented the resilience of the Japanese American agricultural community on Vashon.",
-      "period": "Active 1945–1980s"
+      "period": "Active 1945–1980s",
+      "related_entries": [
+        "ww2-006"
+      ]
     },
     {
       "id": "person-120",
       "name": "Sato Mukai",
       "role": "historical figure",
       "description": "First wife of Denichiro Mukai, who died in 1921. Her death preceded the family's land purchase in their American-born son Masa's name in 1926, a legal strategy necessitated by the Washington State Alien Land Law that barred Japanese immigrants from owning property.",
-      "period": "Active 1910–1921"
+      "period": "Active 1910–1921",
+      "related_entries": [
+        "ear-012"
+      ]
+    },
+    {
+      "id": "person-121",
+      "name": "Suquamish",
+      "description": "Coast Salish people whose traditional territory included the western shores of Puget Sound. The Suquamish made seasonal use of Vashon Island for fishing, hunting, and gathering, and participated in extensive trade networks with neighboring tribes.",
+      "role": "indigenous people",
+      "period": "~3000 BCE–present",
+      "related_entries": [
+        "ind-006",
+        "ind-007"
+      ]
+    },
+    {
+      "id": "person-122",
+      "name": "Puyallup",
+      "description": "Coast Salish people of southern Puget Sound. The Puyallup traded extensively with other tribes across the Sound, including through waterways adjacent to Vashon Island. Today, the Puyallup Tribe of Indians includes enrolled descendants of the S'Homamish who inhabited Vashon Island.",
+      "role": "indigenous people",
+      "period": "~3000 BCE–present",
+      "related_entries": [
+        "ind-007"
+      ]
+    },
+    {
+      "id": "person-123",
+      "name": "Nisqually",
+      "description": "Coast Salish people whose traditional territory centered on the Nisqually River delta in southern Puget Sound. The Nisqually participated in regional trade networks that connected communities across the Sound, including those around Vashon Island.",
+      "role": "indigenous people",
+      "period": "~3000 BCE–present",
+      "related_entries": [
+        "ind-007"
+      ]
+    },
+    {
+      "id": "person-124",
+      "name": "Duwamish",
+      "description": "Coast Salish people of the central Puget Sound whose traditional territory included the Duwamish River and Elliott Bay area (modern Seattle). The Duwamish traded with neighboring peoples across the Sound and shared cultural and kinship ties with the S'Homamish of Vashon Island.",
+      "role": "indigenous people",
+      "period": "~3000 BCE–present",
+      "related_entries": [
+        "ind-007"
+      ]
     }
   ]
 }
