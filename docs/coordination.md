@@ -26,6 +26,9 @@
 | 2026-03-02 | Add Database Engineer agent to team | PM + Eng | Data layer needs dedicated optimization ownership as dataset grows toward 500+ entries. |
 | 2026-03-03 | Initiate Creative Layer planning sprint | PM | User vision: evolve from research tool to worldbuilding platform with fact/fiction distinction, people timeline, narrative dashboard, and multi-setting support. |
 | 2026-03-03 | PRD Creative Layer Addendum drafted | PM | 13 user stories (5 P0, 4 P1, 4 P2), 5 milestones (M7-M11), 2 new personas. Addendum at docs/planning/prd-creative-layer-addendum.md. |
+| 2026-03-03 | Creative layer visual strategy: "Different Pen" metaphor — violet/purple palette, dashed borders, diagonal texture, provenance badges (HIST/FICTION/HYBRID) | Designer | Violet family chosen for creative layer because it occupies the unused hue region relative to existing amber/teal/green/brown layers, carries cultural associations with imagination, and exists naturally in PNW twilight skies. All proposed colors pass WCAG AA at 4.5:1 against Parchment. |
+| 2026-03-03 | People Timeline as separate tab view (not panel overlay) | Designer | Lifespan bars require full horizontal width for temporal legibility; cannot coexist with the main timeline in a stacked layout without severe vertical compression. Tab approach keeps both views at full resolution. |
+| 2026-03-03 | Narrative Dashboard as third tab view alongside Timeline and People | Designer | Dashboard serves a fundamentally different task (story structure overview) than the timeline (temporal exploration). Embedding it in a panel would force too much compression. Three-tab navigation keeps each view focused on its purpose. |
 | 2026-03-02 | Implement localStorage caching for data | DB Eng | Reduces repeat-visit load time from ~500ms to near-instant. Background refresh keeps data fresh. |
 | 2026-03-02 | Add O(1) ID-based lookup maps | DB Eng | entriesById, peopleById, placesById eliminate O(n) find() calls in DetailPanel cross-references. |
 | 2026-03-02 | Pre-compute parsed dates | DB Eng | parsedDates Map eliminates redundant parseDate() calls during every filter cycle. |
@@ -36,11 +39,11 @@
 - [ ] Which timeline visualization library to use: D3.js (flexible, complex) vs Vis-timeline (simpler, purpose-built)? — **Engineer to evaluate in M2**
 - [ ] How should the AI narrator export format handle approximate dates (e.g., "~10000 BCE")? — **Engineer + Researcher to define in M2**
 - [ ] Should the map view (P2 feature) use a historical map or modern satellite? — **Designer + Researcher to discuss in M1**
-- [ ] What visual treatment best distinguishes creative from historical entries on the timeline? — **Designer + UI/UX, to be resolved in M8**
+- [x] What visual treatment best distinguishes creative from historical entries on the timeline? — **Resolved by Designer (2026-03-03):** Four-signal system (border style, background tint, provenance badge, marker fill) detailed in docs/planning/designer-visual-strategy.md Section 2
 - [ ] Should historical-inspired entries appear in both historical-only and creative-only views? — **PM, proposed: yes, they appear in both**
 - [ ] How should the people timeline handle characters whose lifespans span multiple eras? — **UI/UX, to be resolved in M8**
 - [ ] Should context settings (Seattle, Tacoma) support creative content, or only historical? — **PM, proposed: both, since characters travel between settings**
-- [ ] Should the narrative dashboard be a separate route or a panel within the main view? — **UI/UX + Designer, to be resolved in M9**
+- [x] Should the narrative dashboard be a separate route or a panel within the main view? — **Resolved by Designer (2026-03-03):** Separate tab view (third tab: Timeline | People | Narrative Dashboard). Rationale: dashboard serves a different task than timeline; panel embedding would over-compress. See docs/planning/designer-visual-strategy.md Section 6
 - [ ] How does the AI narrator system prompt handle creative vs. historical content during gameplay? — **AI Narrator, to be resolved in M10**
 
 ## Completed Items
@@ -98,3 +101,5 @@
 - [x] Search index, narrator export, and ID mapping regenerated with enriched data (303 records, 292KB, 303 mappings) (2026-03-02)
 - [x] people.md narrative updated with all 28 new figures (2026-03-02)
 - [x] All 122 tests still passing after enrichment (2026-03-02)
+- [x] PRD Creative Layer Addendum drafted — 13 user stories, 5 milestones (M7-M11), 2 new personas (2026-03-03)
+- [x] Creative layer visual design strategy drafted — classification language, color palette extension, timeline layering, people timeline, narrative dashboard, card evolution, CSS tokens (2026-03-03)
