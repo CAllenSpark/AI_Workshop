@@ -151,6 +151,82 @@ This schedule defines the phased delivery plan from project scaffolding through 
 
 ---
 
+## M7 — Fantasy Data Model
+
+**Goal:** Extend the data model to support creative/fantasy content alongside historical facts
+
+**Deliverables:**
+- Schemas v2: entry_type, scope, universe_id, narrative metadata
+- Universe schema and management
+- TypeScript types: EntryType, ScopeKey, NarrativeBeat, AnchorRelationship, Universe
+- Backward-compatible data loader with fantasy validation
+
+**Status:** Complete (2026-03-03) — 142 tests, 10 files, all green. 4 schemas v2.
+
+---
+
+## M8 — Creative Layer UI
+
+**Goal:** Visual design system for creative content — colors, markers, toggles, people timeline
+
+**Deliverables:**
+- ViewModeToggle (Historical/Creative/All)
+- TabNav with Timeline, People, Narrative tabs
+- PeopleTimeline with lifespan bars
+- Creative entry visual treatment (dashed borders, diamond markers, badges)
+
+**Status:** Complete (2026-03-03) — 172 tests, 14 files, all green. 264KB JS, 37KB CSS.
+
+---
+
+## M9 — Multi-Setting + Narrative Dashboard
+
+**Goal:** Multiple geographic scopes and narrative arc visualization
+
+**Deliverables:**
+- Scope filtering (Vashon/Seattle/Tacoma/National)
+- NarrativeDashboard with arc breakdown, beat track, historical connections
+- 30 regional context entries (15 Seattle, 15 Tacoma)
+
+**Status:** Complete (2026-03-03) — 197 tests, 15 files, all green. 141 entries.
+
+---
+
+## M10 — Writer Export + Multi-Project
+
+**Goal:** Writer-focused export formats and multi-project isolation
+
+**Deliverables:**
+- Character Dossiers, Location Guides, Props Catalog, Combined Writer Export
+- NarrativeProp type (10 function categories)
+- Multi-project management with localStorage isolation
+- ProjectSelector component (create/import/delete)
+- Multi-book/season support with NarrativeDashboard filter
+
+**Status:** Complete (2026-03-03) — 268 tests, 18 files, all green. 285KB JS, 47KB CSS.
+
+---
+
+## M11 — Creative Layer Validation
+
+**Goal:** End-to-end validation of the complete creative layer, multi-project system, and narrator integration
+
+**Deliverables:**
+- Multi-project integration tests (isolation, switching, data integrity, book management)
+- Writer export integration tests (all 4 formats validated)
+- Worldbuilding workflow walkthrough (Room 33 end-to-end scenario)
+- Cross-reference integrity tests (narrative anchors, prop references)
+- Narrator system prompt template (context-aware, project-specific)
+- Performance benchmarks documented
+
+**Responsible:** Tester (lead), all agents (fixes and review)
+
+**Quality Gate:** All test categories green. Worldbuilding workflow completes without errors. No critical bugs. Documentation current.
+
+**Status:** Complete (2026-03-03) — 315 tests, 22 files, all green. TypeScript clean. Build: 285KB JS, 47KB CSS (87KB gzipped).
+
+---
+
 ## Dependency Graph
 
 ```
@@ -161,6 +237,11 @@ M2 (Data Model) --> M3 (Core UI)
 M3 (Core UI) --> M4 (Search & Filter)
 M4 (Search & Filter) --> M5 (Polish & Export)
 M5 (Polish & Export) --> M6 (Validation)
+M6 (Validation) --> M7 (Fantasy Data Model)
+M7 (Fantasy Data) --> M8 (Creative Layer UI)
+M8 (Creative UI) --> M9 (Multi-Setting + Narrative Dashboard)
+M9 (Multi-Setting) --> M10 (Writer Export + Multi-Project)
+M10 (Writer Export) --> M11 (Creative Layer Validation)
 ```
 
 ## Risk Register
