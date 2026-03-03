@@ -2,8 +2,8 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-03 (M10 Writer Export & Narrative Props complete)
-**Setting:** Vashon Island, WA (prehistory to present)
+**Last Updated:** 2026-03-03 (Multi-project & multi-book support complete)
+**Setting:** Vashon Island, WA (prehistory to present) — now supports multiple projects
 **Branch:** `claude/writers-research-companion-zTnuE`
 
 ---
@@ -21,12 +21,13 @@ M6 Validation    [####################] 100%
 M7 Fantasy Data  [####################] 100%
 M8 Creative UI   [####################] 100%
 M9 Multi-Setting [####################] 100%
-M10 Writer Export[####################] 100%  << COMPLETE
+M10 Writer Export[####################] 100%
+M10b Multi-Proj  [####################] 100%  << COMPLETE
 M11 Validation   [                    ]   0%  << NEXT
 ```
 
-**Current Milestone:** M10 complete. M11 Validation next.
-**Overall:** 11 of 12 milestones complete. M11 remaining.
+**Current Milestone:** M10b Multi-Project complete. M11 Validation next.
+**Overall:** 12 of 13 milestones complete. M11 remaining.
 
 ---
 
@@ -45,6 +46,7 @@ M11 Validation   [                    ]   0%  << NEXT
 | **M8 Creative UI** | Creative layer visual design — colors, markers, toggles, people timeline | Complete | 172 tests, 14 files, all green. 3 new components. TypeScript clean. 264KB JS, 37KB CSS. |
 | **M9 Multi-Setting** | Multi-setting support + narrative dashboard | Complete | 197 tests, 15 files, all green. NarrativeDashboard + scope filtering. 141 entries (111 Vashon + 15 Seattle + 15 Tacoma). |
 | **M10 Writer Export** | Writer exports (characters, locations, props) + narrative prop data model | Complete | 229 tests, 16 files, all green. 4 export formats. NarrativeProp type. |
+| **M10b Multi-Project** | Multi-project isolation + multi-book/season support | Complete | 268 tests, 18 files, all green. Project CRUD, import/export, book filter. |
 | **M11 Validation** | Full QA, performance, accessibility for creative layer | Not Started | — |
 
 ---
@@ -53,13 +55,13 @@ M11 Validation   [                    ]   0%  << NEXT
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | M10 complete; scoping M11 Validation | None |
-| Engineer | Complete | M10: Writer exports (4 formats), NarrativeProp type, ExportDialog multi-format | None |
-| Database Engineer | Complete | Cache v4 with props support, all indexes | None |
+| Product Manager | Active | M10b complete; scoping M11 Validation | None |
+| Engineer | Complete | M10b: Multi-project isolation, ProjectSelector, book filter, buildDataStore | None |
+| Database Engineer | Complete | localStorage project storage, buildDataStore utility | None |
 | Researcher | Complete | 30 regional entries (15 Seattle, 15 Tacoma) researched and integrated | None |
-| Designer | Complete | Visual strategy implemented — violet palette, four-signal distinction | None |
-| Tester | Complete | 229 tests (up from 197), 32 new M10 tests, 16 files, all green | None |
-| UI/UX | Complete | Export format selector, narrative dashboard, scope toggles, 3-tab nav | None |
+| Designer | Complete | ProjectSelector dropdown, book filter chips UI | None |
+| Tester | Complete | 268 tests (up from 229), 39 new M10b tests, 18 files, all green | None |
+| UI/UX | Complete | ProjectSelector (create/import/delete), NarrativeDashboard book chips | None |
 | AI Narrator | Complete | Worldbuilding recommendations; narrative metadata in detail panel and exports | None |
 
 ---
@@ -185,50 +187,48 @@ Environment        30   █████                 21%
 
 ---
 
-## Test Results (M10)
+## Test Results (M10b)
 
 ```
 Category                     Files  Tests  Status
 ──────────────────────────────────────────────────
 Unit: Data Layer                2     36   PASS
 Unit: Eras                      1     10   PASS
-Unit: Writer Export             1     32   PASS  (new in M10)
-  - Character Dossiers          -     11   PASS
-  - Location Guides             -     10   PASS
-  - Props Catalog               -      7   PASS
-  - Combined Export             -      4   PASS
+Unit: Writer Export             1     32   PASS
+Unit: Project Manager           1     30   PASS  (new in M10b)
 Unit: Components (existing)     4     42   PASS
 Unit: Components (M8)           4     30   PASS
 Unit: Components (M9)           2     22   PASS
+Unit: ProjectSelector           1      9   PASS  (new in M10b)
 Unit: FilterPanel               1     20   PASS
 Unit: Search                    1      9   PASS
 Integration: Pipeline           1      8   PASS
 Integration: Export             1     11   PASS
 Integration: Validation         1     26   PASS
 ──────────────────────────────────────────────────
-TOTAL                          16    229   ALL GREEN
+TOTAL                          18    268   ALL GREEN
 ```
 
 **Build:** TypeScript clean (0 errors).
-**Duration:** ~10s test suite execution.
+**Duration:** ~12s test suite execution.
 
 ## Next Steps
 
-**M10 Writer Export (Complete — 2026-03-03):**
-- NarrativeProp type: 10 narrative function categories (macguffin, key, clue, weapon, symbol, catalyst, heirloom, evidence, transport, other)
-- Writer export generators: Character Dossiers, Location Guides, Props Catalog, Combined Writer Full Export
-- ExportDialog: 5 export format options (AI Narrator JSON, Character Dossiers, Location Guides, Props Catalog, Writer Full Export)
-- Character Dossiers: person + all appearances sorted chronologically + arc grouping + associated props + associated places
-- Location Guides: place + era-by-era change timeline + associated props + associated people
-- Props Catalog: narrative devices with plot function, appearances, people, places
-- Data loader: cache v4 with props support, backward-compatible props.json loading
-- 229 tests (up from 197), 16 files, all green. TypeScript clean.
+**M10b Multi-Project (Complete — 2026-03-03):**
+- Book, Project, ProjectData types added to type system
+- Project manager: localStorage CRUD, import/export, book management
+- ProjectSelector: dropdown with create/import/delete flows, project switching
+- NarrativeDashboard: book/season filter chips, per-book entry filtering
+- App.tsx: project state, dynamic data loading, project-aware header
+- buildDataStore utility exported from loader for project switching
+- 268 tests (up from 229), 18 files, all green. TypeScript clean.
 
 **Next: M11 Validation**
 1. End-to-end validation of all export formats
 2. Cross-reference integrity checks for props
-3. Narrator system prompt template
-4. Final polish and documentation
+3. Multi-project integration testing
+4. Narrator system prompt template
+5. Final polish and documentation
 
 ---
 

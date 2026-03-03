@@ -1,16 +1,16 @@
 # Team Coordination Board
 
-## Current Sprint: M10 Writer Export — Complete. Planning M11.
+## Current Sprint: M10b Multi-Project — Complete. Planning M11.
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | M10 complete; scoping M11 Validation | None |
-| Engineer | Complete | M10: Writer exports (4 formats), NarrativeProp type, ExportDialog multi-format | None |
-| Database Engineer | Complete | Cache v4 with props, all indexes | None |
+| Product Manager | Active | M10b complete; scoping M11 Validation | None |
+| Engineer | Complete | M10b: Multi-project isolation, ProjectSelector, book filter, buildDataStore | None |
+| Database Engineer | Complete | localStorage project storage, buildDataStore utility | None |
 | Researcher | Complete | 30 regional entries (15 Seattle, 15 Tacoma) researched and integrated | None |
-| Designer | Complete | Visual strategy implemented — violet palette, four-signal distinction | None |
-| Tester | Complete | 229 tests (up from 197), 32 new M10 tests, 16 files, all green | None |
-| UI/UX | Complete | Export format selector with 5 options, narrative dashboard | None |
+| Designer | Complete | ProjectSelector dropdown, book filter chips UI | None |
+| Tester | Complete | 268 tests (up from 229), 39 new M10b tests, 18 files, all green | None |
+| UI/UX | Complete | ProjectSelector (create/import/delete), NarrativeDashboard book chips | None |
 | AI Narrator | Complete | Export formats include narrative metadata, character dossiers, props | None |
 
 ## Decisions Log
@@ -125,3 +125,11 @@
   - ExportDialog: 5 format options (narrator, characters, locations, props, writer-full)
   - Data loader: cache v4, backward-compatible props.json loading
   - 229 tests (up from 197), 16 files, all green. TypeScript clean.
+- [x] **M10b Multi-Project milestone complete** (2026-03-03)
+  - Book, Project, ProjectData types in type system
+  - Project manager: localStorage-based CRUD with full data isolation
+  - Import: accepts full ProjectData or raw research JSON
+  - ProjectSelector: dropdown with create/import/delete, project switching
+  - NarrativeDashboard: book/season filter chips, per-book entry filtering
+  - App.tsx: project state, handleProjectChange, dynamic data loading via buildDataStore
+  - 268 tests (up from 229), 18 files, all green. TypeScript clean.
