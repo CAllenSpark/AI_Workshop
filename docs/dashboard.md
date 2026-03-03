@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-03 (M9 Multi-Setting & Narrative Dashboard complete)
+**Last Updated:** 2026-03-03 (M10 Writer Export & Narrative Props complete)
 **Setting:** Vashon Island, WA (prehistory to present)
 **Branch:** `claude/writers-research-companion-zTnuE`
 
@@ -20,13 +20,13 @@ M5 Polish/Export [####################] 100%
 M6 Validation    [####################] 100%
 M7 Fantasy Data  [####################] 100%
 M8 Creative UI   [####################] 100%
-M9 Multi-Setting [####################] 100%  << COMPLETE
-M10 Polish/Export[                    ]   0%  << NEXT
-M11 Validation   [                    ]   0%
+M9 Multi-Setting [####################] 100%
+M10 Writer Export[####################] 100%  << COMPLETE
+M11 Validation   [                    ]   0%  << NEXT
 ```
 
-**Current Milestone:** M9 complete. M10 Polish/Export next.
-**Overall:** 10 of 12 milestones complete. M10-M11 remaining.
+**Current Milestone:** M10 complete. M11 Validation next.
+**Overall:** 11 of 12 milestones complete. M11 remaining.
 
 ---
 
@@ -44,7 +44,7 @@ M11 Validation   [                    ]   0%
 | **M7 Fantasy Data** | Fantasy data model — schemas, types, loader, UI | Complete | 142 tests, 10 files, all green. 4 schemas v2. TypeScript clean. |
 | **M8 Creative UI** | Creative layer visual design — colors, markers, toggles, people timeline | Complete | 172 tests, 14 files, all green. 3 new components. TypeScript clean. 264KB JS, 37KB CSS. |
 | **M9 Multi-Setting** | Multi-setting support + narrative dashboard | Complete | 197 tests, 15 files, all green. NarrativeDashboard + scope filtering. 141 entries (111 Vashon + 15 Seattle + 15 Tacoma). |
-| **M10 Polish/Export** | Creative export, narrator prompt, connection insights | Not Started | — |
+| **M10 Writer Export** | Writer exports (characters, locations, props) + narrative prop data model | Complete | 229 tests, 16 files, all green. 4 export formats. NarrativeProp type. |
 | **M11 Validation** | Full QA, performance, accessibility for creative layer | Not Started | — |
 
 ---
@@ -53,14 +53,14 @@ M11 Validation   [                    ]   0%
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | M9 complete; scoping M10 Polish/Export | None |
-| Engineer | Complete | M9: NarrativeDashboard, scope filtering, narrative tab, regional data integration | None |
-| Database Engineer | Complete | entriesByScope/entriesByType indexes, cache v3 | None |
+| Product Manager | Active | M10 complete; scoping M11 Validation | None |
+| Engineer | Complete | M10: Writer exports (4 formats), NarrativeProp type, ExportDialog multi-format | None |
+| Database Engineer | Complete | Cache v4 with props support, all indexes | None |
 | Researcher | Complete | 30 regional entries (15 Seattle, 15 Tacoma) researched and integrated | None |
-| Designer | Complete | Visual strategy implemented — violet palette, four-signal distinction, people timeline | None |
-| Tester | Complete | 197 tests (up from 172), 25 new M9 tests, 15 files, all green | None |
-| UI/UX | Complete | Narrative dashboard, scope toggles, 3-tab navigation implemented | None |
-| AI Narrator | Complete | Worldbuilding recommendations; narrative metadata displayed in detail panel | None |
+| Designer | Complete | Visual strategy implemented — violet palette, four-signal distinction | None |
+| Tester | Complete | 229 tests (up from 197), 32 new M10 tests, 16 files, all green | None |
+| UI/UX | Complete | Export format selector, narrative dashboard, scope toggles, 3-tab nav | None |
+| AI Narrator | Complete | Worldbuilding recommendations; narrative metadata in detail panel and exports | None |
 
 ---
 
@@ -185,48 +185,50 @@ Environment        30   █████                 21%
 
 ---
 
-## Test Results (M9)
+## Test Results (M10)
 
 ```
 Category                     Files  Tests  Status
 ──────────────────────────────────────────────────
 Unit: Data Layer                2     36   PASS
+Unit: Eras                      1     10   PASS
+Unit: Writer Export             1     32   PASS  (new in M10)
+  - Character Dossiers          -     11   PASS
+  - Location Guides             -     10   PASS
+  - Props Catalog               -      7   PASS
+  - Combined Export             -      4   PASS
 Unit: Components (existing)     4     42   PASS
 Unit: Components (M8)           4     30   PASS
-  - ViewModeToggle              1      6   PASS
-  - PeopleTimeline              1      9   PASS
-  - EntryCard.creative          1     10   PASS
 Unit: Components (M9)           2     22   PASS
-  - TabNav                      1      8   PASS  (+3 narrative)
-  - NarrativeDashboard          1     14   PASS  (new)
-Unit: FilterPanel               1     20   PASS  (+8 scope/viewmode)
+Unit: FilterPanel               1     20   PASS
 Unit: Search                    1      9   PASS
 Integration: Pipeline           1      8   PASS
 Integration: Export             1     11   PASS
 Integration: Validation         1     26   PASS
 ──────────────────────────────────────────────────
-TOTAL                          15    197   ALL GREEN
+TOTAL                          16    229   ALL GREEN
 ```
 
 **Build:** TypeScript clean (0 errors).
-**Duration:** ~7s test suite execution.
+**Duration:** ~10s test suite execution.
 
 ## Next Steps
 
-**M9 Multi-Setting (Complete — 2026-03-03):**
-- NarrativeDashboard: arc breakdown, beat progress track, historical connections, stats cards, empty state
-- Scope filtering: Vashon/Seattle/Tacoma/National toggles in FilterPanel
-- TabNav: Timeline | People | Narrative tabs with keyboard shortcuts (1, 2, 3)
-- 30 regional context entries: 15 Seattle (founding to Amazon), 15 Tacoma (Treaty of Medicine Creek to ASARCO cleanup)
-- 9 of 30 regional entries tagged vashon-connection (ferry, smelter, internment)
-- App.tsx: scope state, scope filtering pipeline, narrative tab panel
-- 197 tests (up from 172), 15 files, all green. TypeScript clean.
+**M10 Writer Export (Complete — 2026-03-03):**
+- NarrativeProp type: 10 narrative function categories (macguffin, key, clue, weapon, symbol, catalyst, heirloom, evidence, transport, other)
+- Writer export generators: Character Dossiers, Location Guides, Props Catalog, Combined Writer Full Export
+- ExportDialog: 5 export format options (AI Narrator JSON, Character Dossiers, Location Guides, Props Catalog, Writer Full Export)
+- Character Dossiers: person + all appearances sorted chronologically + arc grouping + associated props + associated places
+- Location Guides: place + era-by-era change timeline + associated props + associated people
+- Props Catalog: narrative devices with plot function, appearances, people, places
+- Data loader: cache v4 with props support, backward-compatible props.json loading
+- 229 tests (up from 197), 16 files, all green. TypeScript clean.
 
-**Next: M10 Polish/Export**
-1. Creative export format (narrator export v3 with universe/narrative metadata)
-2. Narrator prompt template for mixed reality
-3. Connection insights visualization
-4. Cross-setting relationship exploration
+**Next: M11 Validation**
+1. End-to-end validation of all export formats
+2. Cross-reference integrity checks for props
+3. Narrator system prompt template
+4. Final polish and documentation
 
 ---
 

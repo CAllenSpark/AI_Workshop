@@ -1,17 +1,17 @@
 # Team Coordination Board
 
-## Current Sprint: M9 Multi-Setting — Complete. Planning M10.
+## Current Sprint: M10 Writer Export — Complete. Planning M11.
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | M9 complete; scoping M10 Polish/Export | None |
-| Engineer | Complete | M9: NarrativeDashboard, scope filtering, narrative tab, regional data integration | None |
-| Database Engineer | Complete | entriesByScope/entriesByType indexes, cache v3 | None |
+| Product Manager | Active | M10 complete; scoping M11 Validation | None |
+| Engineer | Complete | M10: Writer exports (4 formats), NarrativeProp type, ExportDialog multi-format | None |
+| Database Engineer | Complete | Cache v4 with props, all indexes | None |
 | Researcher | Complete | 30 regional entries (15 Seattle, 15 Tacoma) researched and integrated | None |
 | Designer | Complete | Visual strategy implemented — violet palette, four-signal distinction | None |
-| Tester | Complete | 197 tests (up from 172), 25 new M9 tests, 15 files, all green | None |
-| UI/UX | Complete | Narrative dashboard, scope toggles, 3-tab navigation implemented | None |
-| AI Narrator | Complete | Narrative metadata displayed in detail panel; recommendations implemented | None |
+| Tester | Complete | 229 tests (up from 197), 32 new M10 tests, 16 files, all green | None |
+| UI/UX | Complete | Export format selector with 5 options, narrative dashboard | None |
+| AI Narrator | Complete | Export formats include narrative metadata, character dossiers, props | None |
 
 ## Decisions Log
 
@@ -50,7 +50,7 @@
 - [ ] Should historical-inspired entries appear in both historical-only and creative-only views? — **PM, proposed: yes**
 - [ ] How should the people timeline handle characters spanning multiple eras? — **UI/UX, M8**
 - [ ] Should context settings (Seattle, Tacoma) support creative content? — **PM, proposed: yes**
-- [ ] How should the narrator export handle multiple creative properties? — **Engineer + Narrator, M10**
+- [x] How should the narrator export handle multiple creative properties? — **Resolved: NarrativeProp type with 10 function categories, writer export generators**
 - [x] Regional context data sources for Seattle/Tacoma — **Resolved: 30 entries with HistoryLink.org and primary sources**
 
 ## Completed Items
@@ -116,3 +116,12 @@
   - App.tsx: scope state, scope filtering pipeline, narrative tab panel, keyboard shortcut 3
   - FilterPanel: scope filter section, view mode indicator, scope count display
   - 197 tests (up from 172), 15 files, all green. TypeScript clean.
+- [x] **M10 Writer Export milestone complete** (2026-03-03)
+  - NarrativeProp type: 10 narrative function categories (macguffin, key, clue, weapon, symbol, catalyst, heirloom, evidence, transport, other)
+  - Writer export generators: Character Dossiers, Location Guides, Props Catalog, Combined Writer Full Export
+  - Character Dossiers: person + appearances + arc grouping + props + associated places
+  - Location Guides: place + era-by-era change timeline + props + associated people
+  - Props Catalog: devices with narrative function, plot significance, appearances, people, places
+  - ExportDialog: 5 format options (narrator, characters, locations, props, writer-full)
+  - Data loader: cache v4, backward-compatible props.json loading
+  - 229 tests (up from 197), 16 files, all green. TypeScript clean.
