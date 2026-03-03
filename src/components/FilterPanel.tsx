@@ -1,12 +1,13 @@
 import { useMemo } from 'react';
-import type { EraKey, LayerKey, EntryType } from '../types';
-import { ERAS, LAYER_COLORS, ENTRY_TYPE_COLORS } from '../data/eras';
+import type { EraKey, LayerKey, EntryType, ScopeKey } from '../types';
+import { ERAS, LAYER_COLORS, ENTRY_TYPE_COLORS, SCOPE_COLORS } from '../data/eras';
 import type { ViewMode } from './ViewModeToggle';
 import './FilterPanel.css';
 
 interface Props {
   activeLayers: Set<LayerKey>;
   selectedEras: Set<EraKey>;
+  activeScopes: Set<ScopeKey>;
   dateRange: [number, number];
   fullDateRange: [number, number];
   totalCount: number;
@@ -14,15 +15,17 @@ interface Props {
   viewMode: ViewMode;
   onLayerToggle: (layer: LayerKey) => void;
   onEraToggle: (era: EraKey) => void;
+  onScopeToggle: (scope: ScopeKey) => void;
   onDateRangeChange: (range: [number, number]) => void;
   onClearAll: () => void;
 }
 
-const ENTRY_TYPE_KEYS: EntryType[] = ['historical', 'fantasy', 'speculative'];
+const ALL_SCOPES: ScopeKey[] = ['vashon', 'seattle', 'tacoma', 'national'];
 
 export default function FilterPanel({
   activeLayers,
   selectedEras,
+  activeScopes,
   dateRange,
   fullDateRange,
   totalCount,
@@ -30,6 +33,7 @@ export default function FilterPanel({
   viewMode,
   onLayerToggle,
   onEraToggle,
+  onScopeToggle,
   onDateRangeChange,
   onClearAll,
 }: Props) {
@@ -37,10 +41,11 @@ export default function FilterPanel({
     return (
       activeLayers.size < 4 ||
       selectedEras.size > 0 ||
+      activeScopes.size < ALL_SCOPES.length ||
       dateRange[0] !== fullDateRange[0] ||
       dateRange[1] !== fullDateRange[1]
     );
-  }, [activeLayers, selectedEras, dateRange, fullDateRange]);
+  }, [activeLayers, selectedEras, activeScopes, dateRange, fullDateRange]);
 
   const formatYear = (year: number): string => {
     if (year < 0) return `${Math.abs(year)} BCE`;
@@ -78,6 +83,43 @@ export default function FilterPanel({
               </button>
             )
           )}
+        </div>
+      </div>
+
+      {/* Scope filter */}
+      <div className="filter-section">
+        <div className="filter-section-header">
+          <span className="filter-label">Settings</span>
+          {activeScopes.size < ALL_SCOPES.length && (
+            <span className="filter-count">{activeScopes.size} of {ALL_SCOPES.length}</span>
+          )}
+        </div>
+        <div className="layer-toggles-row">
+          {ALL_SCOPES.map((scope) => {
+            const sc = SCOPE_COLORS[scope];
+            const isActive = activeScopes.has(scope);
+            return (
+              <button
+                key={scope}
+                className={`layer-toggle ${isActive ? 'active' : ''}`}
+                style={{
+                  borderColor: sc.color,
+                  backgroundColor: isActive ? sc.bg : 'transparent',
+                  color: sc.color,
+                }}
+                onClick={() => onScopeToggle(scope)}
+                aria-pressed={isActive}
+              >
+                <span
+                  className="toggle-dot"
+                  style={{
+                    backgroundColor: isActive ? sc.color : 'transparent',
+                  }}
+                />
+                {sc.label}
+              </button>
+            );
+          })}
         </div>
       </div>
 

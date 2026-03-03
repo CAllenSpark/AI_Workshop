@@ -1,6 +1,6 @@
 {
   "setting": "Vashon Island, WA",
-  "description": "Timeline database for Vashon Island, covering prehistory through the present day",
+  "description": "Timeline database for the Puget Sound region, centered on Vashon Island with regional context from Seattle and Tacoma",
   "schema_version": "1.0.0",
   "entries": [
     {
@@ -157,7 +157,7 @@
       ],
       "sources": [
         {
-          "title": "Vashon Heritage Museum — Vashon History",
+          "title": "Vashon Heritage Museum \u2014 Vashon History",
           "url": "https://www.vashonheritagemuseum.org/vashon-history",
           "type": "secondary"
         }
@@ -331,9 +331,9 @@
         "event"
       ],
       "description": "Archaeological evidence indicates that Native people established permanent year-round villages on Vashon Island at least 2,500 years ago, concentrated along the protected shores of Quartermaster Harbor.",
-      "details": "Contrary to the long-held misconception that Vashon Island was used only as a seasonal food-harvesting camp, archaeological evidence demonstrates permanent indigenous habitation dating back at least 2,500 years. The sx̱̌ʷəbabš (Swiftwater People), a band of the Puyallup, established their primary villages along the sheltered shoreline of Quartermaster Harbor, where the combination of protected anchorage, productive shellfish beds, salmon runs, and freshwater streams provided reliable year-round subsistence. By approximately 250 years ago, an estimated 650 Native people lived in six permanent village sites on the island. The permanent villages consisted of communal cedar longhouses averaging 100 feet in length and 20-40 feet wide, housing several extended families, each with their own fire pit. Some villages also included pit houses measuring 40-45 feet square and dug 6-8 feet into the ground for protection from storms. This evidence of permanent settlement was corroborated by Lucy Gerand's testimony in the U.S. Court of Claims in 1927, archaeological excavations, and tribal oral history.",
+      "details": "Contrary to the long-held misconception that Vashon Island was used only as a seasonal food-harvesting camp, archaeological evidence demonstrates permanent indigenous habitation dating back at least 2,500 years. The sx\u0331\u030c\u02b7\u0259bab\u0161 (Swiftwater People), a band of the Puyallup, established their primary villages along the sheltered shoreline of Quartermaster Harbor, where the combination of protected anchorage, productive shellfish beds, salmon runs, and freshwater streams provided reliable year-round subsistence. By approximately 250 years ago, an estimated 650 Native people lived in six permanent village sites on the island. The permanent villages consisted of communal cedar longhouses averaging 100 feet in length and 20-40 feet wide, housing several extended families, each with their own fire pit. Some villages also included pit houses measuring 40-45 feet square and dug 6-8 feet into the ground for protection from storms. This evidence of permanent settlement was corroborated by Lucy Gerand's testimony in the U.S. Court of Claims in 1927, archaeological excavations, and tribal oral history.",
       "people": [
-        "sx̌ʷəbabš (Sqababsh / S'Homamish)"
+        "sx\u030c\u02b7\u0259bab\u0161 (Sqababsh / S'Homamish)"
       ],
       "places": [
         "Vashon Island",
@@ -425,7 +425,7 @@
       "description": "The western red cedar, revered as the 'Tree of Life,' becomes the foundation of material culture on Vashon Island, used for longhouses, canoes, clothing, baskets, mats, and medicine.",
       "details": "For thousands of years, the indigenous inhabitants of Vashon Island built their material culture around the western red cedar (Thuja plicata), which they called the 'Tree of Life.' The cedar's straight, lightweight, rot-resistant wood was the primary material for constructing communal longhouses -- some reaching hundreds of feet in length -- and for carving dugout canoes used for fishing, trade, and travel across the waterways of Puget Sound. Canoes were among the most prized possessions, as the heavily timbered landscape made water the primary means of transportation between villages. The inner bark of the cedar was stripped and pounded into a pliable material that was woven into clothing, mats, ropes, and baskets using checkerwork techniques. Cedar roots were also used in basket weaving alongside grasses and other plant fibers. Weavers additionally used the wool of mountain goats and the now-extinct Salish woolly dog to create blankets featuring abstract designs and geometric patterns that served as status markers, ceremonial regalia, and valuable trade items. The Coast Salish approach to cedar harvest was rooted in sustainability, ensuring the trees' survival for future generations.",
       "people": [
-        "sx̌ʷəbabš (Sqababsh / S'Homamish)"
+        "sx\u030c\u02b7\u0259bab\u0161 (Sqababsh / S'Homamish)"
       ],
       "places": [
         "Vashon Island",
@@ -467,10 +467,10 @@
         "event",
         "environment"
       ],
-      "description": "The sx̱̌ʷəbabš people of Vashon Island follow an annual seasonal round of food gathering, with salmon fishing, shellfish harvesting, berry gathering, root digging, and hunting timed to natural cycles.",
+      "description": "The sx\u0331\u030c\u02b7\u0259bab\u0161 people of Vashon Island follow an annual seasonal round of food gathering, with salmon fishing, shellfish harvesting, berry gathering, root digging, and hunting timed to natural cycles.",
       "details": "The indigenous inhabitants of Vashon Island organized their subsistence activities around a detailed annual seasonal round, adapted to the natural cycles of the Central Puget Sound. In spring and summer, families moved to temporary camps for harvesting specific resources: camas and other root vegetables were dug, berries (including salal, huckleberry, and salmonberry) were gathered, and shellfish -- clams, oysters, mussels, and crabs -- were harvested from the productive intertidal zones. Summer and fall brought the critical salmon runs, when Chinook, coho, chum, and other species returned to nearby rivers. Although salmon was central, recent archaeological evidence shows that herring, smelt, anchovies, waterfowl, and marine mammals also formed important parts of the diet, countering the 'salmonopia' that long dominated scholarly understanding of Northwest Coast subsistence. In autumn, acorns were collected from the Nisqually Flats and foods were preserved for winter through smoking and drying. Winter was the time for communal life in the longhouses, where social and religious ceremonies took place. The Vashon Heritage Museum's 'Coast Salish Seasonal Round' poster, created for their 2014-15 exhibit and updated in 2023, illustrates this cycle for the native people of Vashon Island and South Puget Sound.",
       "people": [
-        "sx̌ʷəbabš (Sqababsh / S'Homamish)"
+        "sx\u030c\u02b7\u0259bab\u0161 (Sqababsh / S'Homamish)"
       ],
       "places": [
         "Vashon Island",
@@ -514,7 +514,7 @@
         "person"
       ],
       "description": "The Suquamish people, based on the Kitsap Peninsula across the Sound, use Vashon Island as a seasonal encampment for fishing, hunting, and gathering, part of their annual cycle between winter villages and summer resource camps.",
-      "details": "While the sx̱̌ʷəbabš maintained permanent year-round villages on Vashon Island, the Suquamish people from the Kitsap Peninsula also utilized the island as part of their seasonal resource-gathering cycle. The Suquamish maintained winter villages at numerous locations including Suquamish, Point Bolin, Poulsbo, Silverdale, Eagle Harbor, and Port Madison. Their most famous winter village was Old Man House (Oleman House), an enormous longhouse estimated at 500-1,000 feet in length that was home to Chief Si'ahl (Seattle) and Chief Kitsap. During warm months, Suquamish families traveled by cedar canoe to temporary camps throughout central Puget Sound, including on Vashon Island, to harvest fish, shellfish, berries, and other seasonal resources. This pattern of shared use of the island by multiple Coast Salish groups reflects the interconnected kinship networks and territorial arrangements characteristic of the broader Puget Sound Salish world. The yearly cycle was divided between food harvesting from temporary warm-weather camps and communal life in substantial winter longhouses for social and religious observances.",
+      "details": "While the sx\u0331\u030c\u02b7\u0259bab\u0161 maintained permanent year-round villages on Vashon Island, the Suquamish people from the Kitsap Peninsula also utilized the island as part of their seasonal resource-gathering cycle. The Suquamish maintained winter villages at numerous locations including Suquamish, Point Bolin, Poulsbo, Silverdale, Eagle Harbor, and Port Madison. Their most famous winter village was Old Man House (Oleman House), an enormous longhouse estimated at 500-1,000 feet in length that was home to Chief Si'ahl (Seattle) and Chief Kitsap. During warm months, Suquamish families traveled by cedar canoe to temporary camps throughout central Puget Sound, including on Vashon Island, to harvest fish, shellfish, berries, and other seasonal resources. This pattern of shared use of the island by multiple Coast Salish groups reflects the interconnected kinship networks and territorial arrangements characteristic of the broader Puget Sound Salish world. The yearly cycle was divided between food harvesting from temporary warm-weather camps and communal life in substantial winter longhouses for social and religious observances.",
       "people": [
         "Suquamish"
       ],
@@ -553,9 +553,9 @@
         "event"
       ],
       "description": "Vashon Island's inhabitants participate in extensive waterway-based trade networks connecting Coast Salish peoples across Puget Sound, the Strait of Juan de Fuca, and overland to the Columbia Plateau.",
-      "details": "The waterways of the Salish Sea served as major trade routes connecting the Coast Salish peoples in an extensive exchange network. The sx̱̌ʷəbabš of Vashon Island, positioned in the center of Puget Sound, were linked by canoe to neighboring groups including the Puyallup and Nisqually to the south, the Suquamish and Duwamish across the Sound, and more distant peoples throughout the Salish Sea watershed. The kinship-based trade system was facilitated by exogamous marriage -- tribal law required marrying outside one's own group, and marriages between high-ranking families were often arranged at trade centers, creating the kinship ties that made commerce possible. Goods exchanged included ocean products (whale oil, shells, dried fish), mountain resources, camas and wapato roots, berries, cedar products, dentalia shells (used as currency), and rare copper. Overland routes through Snoqualmie Pass connected Puget Sound communities to eastern plateau peoples for exchange of dried salmon, root vegetables, and other goods. All tribes from present-day Olympia to Anacortes spoke dialects of the Puget Sound Salish language, Lushootseed, facilitating communication across these networks.",
+      "details": "The waterways of the Salish Sea served as major trade routes connecting the Coast Salish peoples in an extensive exchange network. The sx\u0331\u030c\u02b7\u0259bab\u0161 of Vashon Island, positioned in the center of Puget Sound, were linked by canoe to neighboring groups including the Puyallup and Nisqually to the south, the Suquamish and Duwamish across the Sound, and more distant peoples throughout the Salish Sea watershed. The kinship-based trade system was facilitated by exogamous marriage -- tribal law required marrying outside one's own group, and marriages between high-ranking families were often arranged at trade centers, creating the kinship ties that made commerce possible. Goods exchanged included ocean products (whale oil, shells, dried fish), mountain resources, camas and wapato roots, berries, cedar products, dentalia shells (used as currency), and rare copper. Overland routes through Snoqualmie Pass connected Puget Sound communities to eastern plateau peoples for exchange of dried salmon, root vegetables, and other goods. All tribes from present-day Olympia to Anacortes spoke dialects of the Puget Sound Salish language, Lushootseed, facilitating communication across these networks.",
       "people": [
-        "sx̌ʷəbabš (Sqababsh / S'Homamish)",
+        "sx\u030c\u02b7\u0259bab\u0161 (Sqababsh / S'Homamish)",
         "Puyallup",
         "Suquamish",
         "Nisqually",
@@ -644,10 +644,10 @@
         "person",
         "place"
       ],
-      "description": "The sx̌ʷəbabš (Swiftwater People), also known as the Sqababsh or S'Homamish, establish five main village sites on Vashon and Maury Islands.",
+      "description": "The sx\u030c\u02b7\u0259bab\u0161 (Swiftwater People), also known as the Sqababsh or S'Homamish, establish five main village sites on Vashon and Maury Islands.",
       "details": "About 500 years ago, the Sqababsh people settled permanently on the islands, building longhouses at five principal village sites. They were part of the broader Coast Salish cultural group and relied on fishing (particularly salmon), shellfish gathering, hunting, and plant harvesting. The Suquamish and other tribes also used the islands seasonally. Today, many descendants are enrolled members of the Puyallup Tribe of Indians.",
       "people": [
-        "sx̌ʷəbabš (Sqababsh / S'Homamish)"
+        "sx\u030c\u02b7\u0259bab\u0161 (Sqababsh / S'Homamish)"
       ],
       "places": [
         "Vashon Island",
@@ -774,7 +774,7 @@
       ],
       "sources": [
         {
-          "title": "Vashon, Washington — Wikipedia",
+          "title": "Vashon, Washington \u2014 Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Vashon,_Washington",
           "type": "tertiary"
         },
@@ -1073,7 +1073,7 @@
       "details": "The Medicine Creek Treaty of 1854, negotiated by Territorial Governor Isaac Stevens, required indigenous peoples to cede their lands in exchange for reservation territory and fishing rights. The Sqababsh/S'Homamish of Vashon Island were removed to Fox Island by 1855-1856, ending thousands of years of continuous habitation. This displacement opened the island to European-American homesteading.",
       "people": [
         "Isaac Stevens",
-        "sx̌ʷəbabš (Sqababsh / S'Homamish)",
+        "sx\u030c\u02b7\u0259bab\u0161 (Sqababsh / S'Homamish)",
         "Leschi's Wife (Mary)"
       ],
       "places": [
@@ -1763,7 +1763,7 @@
         "environment"
       ],
       "description": "Eight or more brickyards operate on Vashon and Maury Islands, employing over 200 men and supplying bricks for the rebuilding of Seattle after the Great Fire of 1889.",
-      "details": "In 1891, a group of Tacoma businessmen including M.F. Hatch of Vashon Island formed The Puget Sound Drydock Company. They purchased an unfinished dry dock originally built for Port Townsend (whose real estate market had collapsed) and towed it from Port Hadlock to the sheltered cove at the mouth of Quartermaster Harbor. The drydock measured 325 feet long by 102 feet wide — one of the largest on the Pacific Coast. Peter Manson, noting the facility could 'dock a ton of boats,' named the new village Dockton. By June 1892, the dock employed more than 80 workers. Alfred J. Stuckey served as superintendent until 1909. John A. Martinolich, a Croatian-born shipbuilder who arrived in 1896, founded his own yard in 1904 and became known as the 'King of Purse Seiners' for his fishing boat designs. Many workers came from the Dalmatian Coast; Croatian surnames were so common that Dockton was nicknamed 'Ichville.' Workers lived in a large three-story hotel; managers lived in 'Piano Row' — the only island homes large enough to hold a piano.",
+      "details": "In 1891, a group of Tacoma businessmen including M.F. Hatch of Vashon Island formed The Puget Sound Drydock Company. They purchased an unfinished dry dock originally built for Port Townsend (whose real estate market had collapsed) and towed it from Port Hadlock to the sheltered cove at the mouth of Quartermaster Harbor. The drydock measured 325 feet long by 102 feet wide \u2014 one of the largest on the Pacific Coast. Peter Manson, noting the facility could 'dock a ton of boats,' named the new village Dockton. By June 1892, the dock employed more than 80 workers. Alfred J. Stuckey served as superintendent until 1909. John A. Martinolich, a Croatian-born shipbuilder who arrived in 1896, founded his own yard in 1904 and became known as the 'King of Purse Seiners' for his fishing boat designs. Many workers came from the Dalmatian Coast; Croatian surnames were so common that Dockton was nicknamed 'Ichville.' Workers lived in a large three-story hotel; managers lived in 'Piano Row' \u2014 the only island homes large enough to hold a piano.",
       "people": [
         "Lucian Cook",
         "Peter Manson"
@@ -2478,7 +2478,7 @@
       ],
       "sources": [
         {
-          "title": "Vashon, Washington — Wikipedia",
+          "title": "Vashon, Washington \u2014 Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Vashon,_Washington",
           "type": "tertiary"
         }
@@ -2756,7 +2756,7 @@
           "type": "secondary"
         },
         {
-          "title": "Vashon Heritage Museum — Vashon History",
+          "title": "Vashon Heritage Museum \u2014 Vashon History",
           "url": "https://www.vashonheritagemuseum.org/vashon-history",
           "type": "secondary"
         }
@@ -3257,7 +3257,7 @@
       ],
       "sources": [
         {
-          "title": "Vashon, Washington — Wikipedia",
+          "title": "Vashon, Washington \u2014 Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Vashon,_Washington",
           "type": "tertiary"
         }
@@ -3336,7 +3336,7 @@
       ],
       "sources": [
         {
-          "title": "Vashon, Washington — Wikipedia",
+          "title": "Vashon, Washington \u2014 Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Vashon,_Washington",
           "type": "tertiary"
         }
@@ -3486,7 +3486,7 @@
         "person"
       ],
       "description": "The Mukai Farm and Garden on Vashon Island is listed on the National Register of Historic Places, preserving one of the last intact pre-WWII Japanese American farmsteads in America.",
-      "details": "The Mukai House, Garden, and Barreling Plant (5 acres remaining of the original 40+) was designated a King County Landmark in 1993 — the first site associated with Japanese American history to receive that designation. It was listed on the National Register of Historic Places in 1994. Masahiro Mukai died in 1999. In 2000, the nonprofit Island Landmarks purchased the property with $500,000 in public funds from King County, the National Park Service, and the State of Washington. The garden, designed by Kuni Mukai in 1928, survives as a rare intact example of Japanese stroll garden design in the Pacific Northwest — the only known Japanese stroll garden of that era designed by a woman. Ongoing restoration of the Barreling Plant, supported by a $150,000 NEH Challenge Grant, aims to convert it into a Vashon Food Hub. In 2021, King County Executive held an honorary street designation ceremony naming a road 'Mukai Way.'",
+      "details": "The Mukai House, Garden, and Barreling Plant (5 acres remaining of the original 40+) was designated a King County Landmark in 1993 \u2014 the first site associated with Japanese American history to receive that designation. It was listed on the National Register of Historic Places in 1994. Masahiro Mukai died in 1999. In 2000, the nonprofit Island Landmarks purchased the property with $500,000 in public funds from King County, the National Park Service, and the State of Washington. The garden, designed by Kuni Mukai in 1928, survives as a rare intact example of Japanese stroll garden design in the Pacific Northwest \u2014 the only known Japanese stroll garden of that era designed by a woman. Ongoing restoration of the Barreling Plant, supported by a $150,000 NEH Challenge Grant, aims to convert it into a Vashon Food Hub. In 2021, King County Executive held an honorary street designation ceremony naming a road 'Mukai Way.'",
       "people": [
         "Denichiro Mukai",
         "Kuni Mukai",
@@ -3791,7 +3791,7 @@
         "event"
       ],
       "description": "The Cross-Sound Bridge Bill proposed a bridge connecting Vashon Island to the mainland, sparking years of passionate debate about the island's future identity.",
-      "details": "The bridge proposal divided the island community. Proponents argued it would boost economic development and eliminate ferry dependence. Opponents, led by Alex Anderson and the anti-bridge committee, warned it would destroy the island's rural character and lead to 'Mercerization' — the rapid suburbanization that had transformed nearby Mercer Island after bridge construction. At a pivotal 1959 legislative session, Lt. Governor John Cherberg's procedural ruling effectively killed the bill, preserving Vashon's ferry-dependent identity for generations to come.",
+      "details": "The bridge proposal divided the island community. Proponents argued it would boost economic development and eliminate ferry dependence. Opponents, led by Alex Anderson and the anti-bridge committee, warned it would destroy the island's rural character and lead to 'Mercerization' \u2014 the rapid suburbanization that had transformed nearby Mercer Island after bridge construction. At a pivotal 1959 legislative session, Lt. Governor John Cherberg's procedural ruling effectively killed the bill, preserving Vashon's ferry-dependent identity for generations to come.",
       "people": [
         "John Cherberg",
         "Alex Anderson",
@@ -3888,7 +3888,7 @@
         "environment"
       ],
       "description": "Logging crews built ox-team skid roads across Vashon Island to drag felled timber from interior forests to shoreline loading points.",
-      "details": "The earliest logging on Vashon Island relied on teams of oxen pulling logs along 'skid roads' — paths of greased logs laid perpendicular to the route of travel. These primitive roads cut through dense old-growth forest, creating the first significant human-made pathways across the island's interior. The ecological impact was substantial: the roads cleared corridors through ancient forest, altered drainage patterns, and created the first large-scale disturbance of the island's forest canopy since the last glacial period.",
+      "details": "The earliest logging on Vashon Island relied on teams of oxen pulling logs along 'skid roads' \u2014 paths of greased logs laid perpendicular to the route of travel. These primitive roads cut through dense old-growth forest, creating the first significant human-made pathways across the island's interior. The ecological impact was substantial: the roads cleared corridors through ancient forest, altered drainage patterns, and created the first large-scale disturbance of the island's forest canopy since the last glacial period.",
       "people": [],
       "places": [
         "Vashon Island"
@@ -3917,7 +3917,7 @@
         "event"
       ],
       "description": "The Puget Mill Company at Port Gamble, owned by Maine lumber barons Pope and Talbot, systematically harvested Vashon Island's old-growth timber for the Pacific lumber trade.",
-      "details": "Andrew J. Pope and William C. Talbot's Port Gamble mill had been operating since 1853 when they filed their first Vashon Island land claim in 1864. Their operations represented the extension of east-coast industrial capitalism to the Pacific Northwest. Massive Douglas fir, western red cedar, and Sitka spruce — some over 500 years old — were felled and towed in log rafts to the Port Gamble mill for processing. The timber was shipped to San Francisco, the Hawaiian Islands, and markets throughout the Pacific. By the 1890s, much of the island's accessible old-growth forest had been cut.",
+      "details": "Andrew J. Pope and William C. Talbot's Port Gamble mill had been operating since 1853 when they filed their first Vashon Island land claim in 1864. Their operations represented the extension of east-coast industrial capitalism to the Pacific Northwest. Massive Douglas fir, western red cedar, and Sitka spruce \u2014 some over 500 years old \u2014 were felled and towed in log rafts to the Port Gamble mill for processing. The timber was shipped to San Francisco, the Hawaiian Islands, and markets throughout the Pacific. By the 1890s, much of the island's accessible old-growth forest had been cut.",
       "people": [
         "Andrew J. Pope",
         "William C. Talbot"
@@ -3952,7 +3952,7 @@
       "layers": [
         "event"
       ],
-      "description": "The Donation Land Claim Act of 1850, authored by Oregon Territory delegate Samuel Royal Thurston, provided the legal framework for claiming Vashon Island land — while explicitly excluding Black and Hawaiian settlers.",
+      "description": "The Donation Land Claim Act of 1850, authored by Oregon Territory delegate Samuel Royal Thurston, provided the legal framework for claiming Vashon Island land \u2014 while explicitly excluding Black and Hawaiian settlers.",
       "details": "The act granted up to 320 acres to single white male settlers and 640 acres to married couples who could demonstrate residence and cultivation of the land. It was a cornerstone of Manifest Destiny policy, designed to encourage American settlement of the Oregon Territory (which then included present-day Washington). Its racial exclusions reflected the era's systemic discrimination. On Vashon Island, the first claims under this act would not be filed until the 1860s, after logging operations had begun to open the dense forest.",
       "people": [
         "Samuel Royal Thurston"
@@ -4119,8 +4119,8 @@
       "layers": [
         "event"
       ],
-      "description": "During the forced internment of Japanese Americans, Vashon Island's Japanese farming families lost their lands, crops, equipment, and livelihoods — devastating losses from which the community never fully recovered.",
-      "details": "When Executive Order 9066 forced the removal of all Japanese Americans from the West Coast, Vashon Island's Japanese farming families — including the Mukais, Matsudas, Sakais, and Hoshis — were given only days to dispose of property accumulated over decades. Most farms were sold at fire-sale prices or simply abandoned. Equipment, livestock, and stored crops were lost. The island's strawberry industry, which Japanese American farmers had built into a nationally significant operation, collapsed. After the war, only a handful of families returned to Vashon, and the community's agricultural legacy was largely erased from the landscape.",
+      "description": "During the forced internment of Japanese Americans, Vashon Island's Japanese farming families lost their lands, crops, equipment, and livelihoods \u2014 devastating losses from which the community never fully recovered.",
+      "details": "When Executive Order 9066 forced the removal of all Japanese Americans from the West Coast, Vashon Island's Japanese farming families \u2014 including the Mukais, Matsudas, Sakais, and Hoshis \u2014 were given only days to dispose of property accumulated over decades. Most farms were sold at fire-sale prices or simply abandoned. Equipment, livestock, and stored crops were lost. The island's strawberry industry, which Japanese American farmers had built into a nationally significant operation, collapsed. After the war, only a handful of families returned to Vashon, and the community's agricultural legacy was largely erased from the landscape.",
       "people": [
         "Sakai Family",
         "Hoshi Family",
@@ -4160,8 +4160,8 @@
         "event",
         "person"
       ],
-      "description": "Puyallup elder Lucy Gerand provided anthropologist T.T. Waterman with detailed accounts of traditional sx̌ʷəbabš place names, village locations, and seasonal gathering patterns on Vashon and Maury Islands.",
-      "details": "Lucy Gerand's interviews with Waterman in the 1920s preserved knowledge of indigenous place names and resource gathering sites that would otherwise have been lost. She described the seasonal round — spring fish camps, summer berry gathering, fall salmon runs, and winter village life — that had sustained the S'Homamish people for millennia. Her testimony documented at least five major village sites on Vashon and Maury Islands, including sites at Quartermaster Harbor, Burton, and the island's western shore. These accounts remain among the most important primary sources for understanding the island's pre-contact indigenous geography.",
+      "description": "Puyallup elder Lucy Gerand provided anthropologist T.T. Waterman with detailed accounts of traditional sx\u030c\u02b7\u0259bab\u0161 place names, village locations, and seasonal gathering patterns on Vashon and Maury Islands.",
+      "details": "Lucy Gerand's interviews with Waterman in the 1920s preserved knowledge of indigenous place names and resource gathering sites that would otherwise have been lost. She described the seasonal round \u2014 spring fish camps, summer berry gathering, fall salmon runs, and winter village life \u2014 that had sustained the S'Homamish people for millennia. Her testimony documented at least five major village sites on Vashon and Maury Islands, including sites at Quartermaster Harbor, Burton, and the island's western shore. These accounts remain among the most important primary sources for understanding the island's pre-contact indigenous geography.",
       "people": [
         "Lucy Gerand"
       ],
@@ -4199,7 +4199,7 @@
         "person"
       ],
       "description": "Author Betty MacDonald published 'Onions in the Stew,' a humorous memoir of island life on Vashon that introduced the island to a national audience.",
-      "details": "Betty MacDonald (born Anne Elizabeth Campbell Bard, 1907) moved to Vashon Island on April 24, 1942, after marrying Donald C. MacDonald. She had already achieved fame with 'The Egg and I' (1945), which was serialized in The Atlantic before publication and became a bestseller inspiring the Ma and Pa Kettle film series. 'Onions in the Stew' (1955) was a direct memoir of her Vashon years — a humorous account of ferry dependency, eccentric neighbors, gardening misadventures, and raising teenage daughters on the island. She also wrote the beloved Mrs. Piggle-Wiggle children's series while living on Vashon. U.S. Senator Richard Neuberger compared her humor to Mark Twain. Her Vashon home was approximately a quarter-mile south of Dolphin Point on the east side of the island. She died of cancer in Seattle on February 7, 1958, age 50.",
+      "details": "Betty MacDonald (born Anne Elizabeth Campbell Bard, 1907) moved to Vashon Island on April 24, 1942, after marrying Donald C. MacDonald. She had already achieved fame with 'The Egg and I' (1945), which was serialized in The Atlantic before publication and became a bestseller inspiring the Ma and Pa Kettle film series. 'Onions in the Stew' (1955) was a direct memoir of her Vashon years \u2014 a humorous account of ferry dependency, eccentric neighbors, gardening misadventures, and raising teenage daughters on the island. She also wrote the beloved Mrs. Piggle-Wiggle children's series while living on Vashon. U.S. Senator Richard Neuberger compared her humor to Mark Twain. Her Vashon home was approximately a quarter-mile south of Dolphin Point on the east side of the island. She died of cancer in Seattle on February 7, 1958, age 50.",
       "people": [
         "Betty MacDonald"
       ],
@@ -4268,7 +4268,7 @@
         "person"
       ],
       "description": "Croatian-born shipbuilder John A. Martinolich founded his own shipyard at Dockton, launching a career that would make him the 'King of Purse Seiners' and establish Dockton as a major Pacific Coast shipbuilding center.",
-      "details": "John A. Martinolich was born on the island of Mali Lussin, Croatia, and began working in his father's shipyard at age 10. He emigrated in 1896 and settled in Dockton, finding work as a shipwright at the existing dry dock. In 1904, he left the main yard and founded the John A. Martinolich Shipbuilding Company. His first vessel was the steamer Vashon, completed in 1905. Over the following decades he built dozens of vessels: Verona (1910), Nisqually (1911), Calista (1911), Florence J. (1914), F.G. Reeves (1916), Vashona (1921), and the ferry Whidby (1923). By the 1920s, he was known as the 'King of Purse Seiners' for developing the West Coast purse seiner — a deep-draft fishing boat design that became the standard for the Pacific fishing fleet.",
+      "details": "John A. Martinolich was born on the island of Mali Lussin, Croatia, and began working in his father's shipyard at age 10. He emigrated in 1896 and settled in Dockton, finding work as a shipwright at the existing dry dock. In 1904, he left the main yard and founded the John A. Martinolich Shipbuilding Company. His first vessel was the steamer Vashon, completed in 1905. Over the following decades he built dozens of vessels: Verona (1910), Nisqually (1911), Calista (1911), Florence J. (1914), F.G. Reeves (1916), Vashona (1921), and the ferry Whidby (1923). By the 1920s, he was known as the 'King of Purse Seiners' for developing the West Coast purse seiner \u2014 a deep-draft fishing boat design that became the standard for the Pacific fishing fleet.",
       "people": [
         "John A. Martinolich",
         "Alfred J. Stuckey"
@@ -4295,6 +4295,1055 @@
         "croatian",
         "immigration"
       ]
+    },
+    {
+      "id": "sea-001",
+      "title": "Duwamish People Establish Villages on Elliott Bay",
+      "date_start": "~1000",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Duwamish establish permanent winter villages along the Duwamish River and Elliott Bay, including a major longhouse site at what is now Pioneer Square.",
+      "people": [
+        "Chief Si'ahl"
+      ],
+      "places": [
+        "Elliott Bay",
+        "Duwamish River",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "History of the Duwamish People -- Duwamish Tribe",
+          "url": "https://www.duwamishtribe.org/history",
+          "type": "primary"
+        },
+        {
+          "title": "Chief Seattle (Si'ahl) -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5071",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "indigenous",
+        "duwamish"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-002",
+      "title": "Denny Party Lands at Alki Point",
+      "date_start": "1851-11-13",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Twenty-four members of the Denny Party arrive at Alki Point aboard the schooner Exact, founding the settlement that would become Seattle.",
+      "people": [
+        "Arthur A. Denny",
+        "David Denny",
+        "Doc Maynard"
+      ],
+      "places": [
+        "Alki Point",
+        "Elliott Bay",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Denny Party lands at Alki Point -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5392",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "founding",
+        "pioneer"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-003",
+      "title": "Great Seattle Fire Destroys Downtown",
+      "date_start": "1889-06-06",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "An overturned glue pot ignites a fire that destroys 120 acres of Seattle's central business district and waterfront. The city rebuilds in brick and stone.",
+      "people": [
+        "Robert Moran"
+      ],
+      "places": [
+        "Pioneer Square",
+        "Seattle",
+        "Elliott Bay"
+      ],
+      "sources": [
+        {
+          "title": "The Great Seattle Fire -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/5115",
+          "type": "secondary"
+        },
+        {
+          "title": "Great Seattle Fire of 1889 -- Seattle City Archives",
+          "url": "https://www.seattle.gov/cityarchives/exhibits-and-education/digital-document-libraries/the-great-seattle-fire-of-1889",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "fire",
+        "rebuilding"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-004",
+      "title": "Mosquito Fleet Era on Puget Sound",
+      "date_start": "~1890",
+      "date_end": "~1930",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "A network of privately operated steamboats becomes the primary transportation system across Puget Sound, connecting Seattle, Tacoma, and Vashon Island.",
+      "people": [],
+      "places": [
+        "Puget Sound",
+        "Seattle",
+        "Tacoma",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Mosquito Fleet -- HistoryLink.org",
+          "url": "https://historylink.org/File/869",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "transportation",
+        "steamboat",
+        "mosquito-fleet",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-005",
+      "title": "Klondike Gold Rush Transforms Seattle",
+      "date_start": "1897-07-17",
+      "date_end": "1899",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The steamship Portland arrives in Seattle carrying Klondike gold, igniting a rush that transforms Seattle into the primary outfitting port for Alaska-bound prospectors.",
+      "people": [],
+      "places": [
+        "Seattle",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Klondike Gold Rush begins -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/699",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "gold-rush",
+        "economy",
+        "maritime"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-006",
+      "title": "Pike Place Market Opens",
+      "date_start": "1907-08-17",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Seattle's Pike Place Market opens as a public farmers' market. Japanese American farmers operate 70-80% of stalls in the early years.",
+      "people": [],
+      "places": [
+        "Pike Place Market",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Seattle's Pike Place Market opens -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/1949",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "market",
+        "agriculture",
+        "japanese-american"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-007",
+      "title": "Seattle Shipyards Boom During World War I",
+      "date_start": "1916",
+      "date_end": "1920",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Skinner & Eddy Corporation and other Seattle shipyards produce warships and cargo vessels at record pace, employing tens of thousands of workers.",
+      "people": [
+        "David E. Skinner"
+      ],
+      "places": [
+        "Seattle",
+        "Harbor Island",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Skinner & Eddy Corporation -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/23081",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "shipbuilding",
+        "wwi",
+        "industry"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-008",
+      "title": "Seattle General Strike",
+      "date_start": "1919-02-06",
+      "date_end": "1919-02-11",
+      "era": "early-20th-century",
+      "layers": [
+        "event"
+      ],
+      "description": "Sixty-five thousand workers walk off the job in the first large-scale general strike in United States history, growing out of a shipyard workers' wage dispute.",
+      "people": [
+        "Anna Louise Strong",
+        "Ole Hanson"
+      ],
+      "places": [
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Seattle General Strike, 1919 -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/861",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "labor",
+        "strike"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-009",
+      "title": "Boeing Plant 2 Wartime Bomber Production",
+      "date_start": "1941",
+      "date_end": "1945",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Boeing's Plant 2 mass-produces B-17 and B-29 bombers, building 6,981 B-17s and employing nearly 50,000 workers at peak. The factory roof is camouflaged as a suburban neighborhood.",
+      "people": [],
+      "places": [
+        "Boeing Plant 2",
+        "Duwamish River",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Remembering Boeing's Plant 2 -- Flying Magazine",
+          "url": "https://www.flyingmag.com/remembering-boeings-plant-2-the-birthplace-of-the-b-17/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "wwii",
+        "boeing",
+        "industry",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-010",
+      "title": "Washington State Ferries Begins Operations",
+      "date_start": "1951-06-01",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Washington State purchases the Black Ball Line's Puget Sound ferry fleet and begins operating Washington State Ferries, the largest ferry system in the United States.",
+      "people": [
+        "Arthur Langlie"
+      ],
+      "places": [
+        "Puget Sound",
+        "Colman Dock",
+        "Seattle",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Washington State Ferries begins operations -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/5081",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "ferry",
+        "transportation",
+        "state-ferry",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-011",
+      "title": "Century 21 Exposition (Seattle World's Fair)",
+      "date_start": "1962-04-21",
+      "date_end": "1962-10-21",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Century 21 Exposition draws nearly 10 million visitors, producing the Space Needle and establishing Seattle as a modern metropolis.",
+      "people": [],
+      "places": [
+        "Seattle Center",
+        "Space Needle",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Century 21 -- The 1962 Seattle World's Fair -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/2290",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "worlds-fair",
+        "space-needle",
+        "culture"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-012",
+      "title": "Microsoft Moves to Bellevue",
+      "date_start": "1979-01-01",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place",
+        "person"
+      ],
+      "description": "Microsoft relocates from Albuquerque to Bellevue, Washington, beginning the Puget Sound region's transformation into a global technology hub.",
+      "people": [
+        "Bill Gates",
+        "Paul Allen"
+      ],
+      "places": [
+        "Bellevue",
+        "Seattle",
+        "Redmond"
+      ],
+      "sources": [
+        {
+          "title": "Microsoft moves to Bellevue -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/21161",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "technology",
+        "microsoft"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-013",
+      "title": "Amazon Founded in Bellevue",
+      "date_start": "1994-07-05",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Jeff Bezos founds Amazon as an online bookstore in a Bellevue garage, eventually reshaping Seattle's economy and urban landscape.",
+      "people": [
+        "Jeff Bezos"
+      ],
+      "places": [
+        "Bellevue",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Amazon: The Early Years -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/23230",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "technology",
+        "amazon",
+        "economy"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-014",
+      "title": "Puget Sound Navigation Company Dominates Ferry Service",
+      "date_start": "1900",
+      "date_end": "1951",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Puget Sound Navigation Company (Black Ball Line) consolidates the Mosquito Fleet into a single dominant ferry system serving Puget Sound, including routes to Vashon Island.",
+      "people": [
+        "Charles Enoch Peabody"
+      ],
+      "places": [
+        "Puget Sound",
+        "Colman Dock",
+        "Seattle",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Puget Sound Navigation Company -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/22662",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "ferry",
+        "transportation",
+        "black-ball-line",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-015",
+      "title": "Colman Dock Serves as Seattle Ferry Hub",
+      "date_start": "1882",
+      "era": "growth-industry",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "description": "James Colman builds a wharf that becomes Seattle's primary ferry terminal, anchoring the city's connection to Puget Sound island communities.",
+      "people": [
+        "James Colman"
+      ],
+      "places": [
+        "Colman Dock",
+        "Seattle",
+        "Elliott Bay"
+      ],
+      "sources": [
+        {
+          "title": "Seattle -- A Brief History of Its Founding -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/303",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "ferry",
+        "waterfront",
+        "transportation"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "tac-001",
+      "title": "Treaty of Medicine Creek Signed",
+      "date_start": "1854-12-26",
+      "era": "logging-treaty",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Governor Isaac Stevens and leaders of the Nisqually, Puyallup, and Squaxin Island tribes sign the Treaty of Medicine Creek, ceding 2.5 million acres of tribal land.",
+      "people": [
+        "Isaac Stevens",
+        "Chief Leschi"
+      ],
+      "places": [
+        "Medicine Creek",
+        "Nisqually River",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "South Puget Sound tribes sign Treaty of Medicine Creek -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5254",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "treaty",
+        "indigenous",
+        "puyallup",
+        "nisqually"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-002",
+      "title": "Northern Pacific Railroad Selects Tacoma as Terminus",
+      "date_start": "1873-07-14",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Northern Pacific Railroad announces Commencement Bay in Tacoma as the western terminus of its transcontinental line, transforming Tacoma into the 'City of Destiny.'",
+      "people": [],
+      "places": [
+        "Commencement Bay",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Northern Pacific Railroad announces Tacoma terminus -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/922",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "railroad",
+        "founding",
+        "city-of-destiny"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-003",
+      "title": "Tacoma Anti-Chinese Expulsion",
+      "date_start": "1885-11-03",
+      "era": "growth-industry",
+      "layers": [
+        "event"
+      ],
+      "description": "A mob forcibly expels Tacoma's entire Chinese community of approximately 200 people. The systematic expulsion becomes known as 'The Tacoma Method.'",
+      "people": [
+        "Jacob Weisbach"
+      ],
+      "places": [
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma expels the entire Chinese community -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5063",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "anti-chinese",
+        "civil-rights"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-004",
+      "title": "Point Defiance Park Established",
+      "date_start": "1888-12",
+      "era": "growth-industry",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "description": "Congress grants the former Point Defiance military reservation to Tacoma for use as a public park, later home to the ferry terminal for the Vashon Island route.",
+      "people": [],
+      "places": [
+        "Point Defiance Park",
+        "Tacoma",
+        "Puget Sound",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Point Defiance Park (Tacoma) -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/23005",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "park",
+        "vashon-connection",
+        "ferry"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-005",
+      "title": "Tacoma Smelter Begins Operations",
+      "date_start": "1889-09-12",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "description": "A lead smelter begins operating near Tacoma. Later acquired by ASARCO, it disperses arsenic and lead across a 1,000-square-mile area including Vashon Island via its 562-foot smokestack.",
+      "people": [],
+      "places": [
+        "Ruston",
+        "Commencement Bay",
+        "Tacoma",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma Smelter: A Toxic Legacy -- Collaborative for Health & Environment",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "asarco",
+        "smelter",
+        "pollution",
+        "environment",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-006",
+      "title": "St. Paul & Tacoma Lumber Company Founded",
+      "date_start": "1888",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The St. Paul & Tacoma Lumber Company is founded in partnership with the Northern Pacific Railway. Tacoma becomes known as the 'Lumber Capital of the World.'",
+      "people": [
+        "Chauncey Griggs",
+        "Henry Hewitt Jr."
+      ],
+      "places": [
+        "Commencement Bay",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "St. Paul & Tacoma Lumber Company -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/21129",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "lumber",
+        "industry",
+        "railroad"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-007",
+      "title": "Stadium High School Opens in Converted Hotel",
+      "date_start": "1906-09-10",
+      "era": "early-20th-century",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "description": "Tacoma High School opens in a building originally constructed as a luxury chateau-style hotel for the Northern Pacific Railroad.",
+      "people": [],
+      "places": [
+        "Stadium High School",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma High School opens -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5069",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "architecture",
+        "education"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-008",
+      "title": "Weyerhaeuser Timber Company Incorporated in Tacoma",
+      "date_start": "1900-01-18",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Frederick Weyerhaeuser purchases 900,000 acres of Washington timberland from Northern Pacific Railway, the largest private land transaction in U.S. history at the time.",
+      "people": [
+        "Frederick Weyerhaeuser",
+        "James J. Hill"
+      ],
+      "places": [
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Weyerhaeuser Timber Company incorporates -- HistoryLink.org",
+          "url": "https://historylink.org/File/7617",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "lumber",
+        "weyerhaeuser",
+        "industry"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-009",
+      "title": "Tahlequah-Point Defiance Ferry Service Begins",
+      "date_start": "1920-05-15",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Ferry service begins between Point Defiance in Tacoma and Tahlequah at the southern tip of Vashon Island, becoming the island's primary connection to the Tacoma area.",
+      "people": [],
+      "places": [
+        "Point Defiance",
+        "Tahlequah",
+        "Vashon Island",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tahlequah Dock -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Publications/time_and_again/tahlequah_dock.pdf",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "ferry",
+        "transportation",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-010",
+      "title": "Tacoma Narrows Bridge ('Galloping Gertie') Collapses",
+      "date_start": "1940-11-07",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Tacoma Narrows Bridge collapses into Puget Sound in 42 mph winds due to aeroelastic flutter, becoming the most famous structural failure in engineering history.",
+      "people": [
+        "Leonard Coatsworth"
+      ],
+      "places": [
+        "Tacoma Narrows",
+        "Puget Sound",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma Narrows Bridge collapses -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5048",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "bridge",
+        "engineering",
+        "galloping-gertie"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-011",
+      "title": "Camp Harmony Interns Japanese Americans",
+      "date_start": "1942-04",
+      "date_end": "1942-09",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Approximately 7,390 Japanese Americans are confined at the Puyallup Assembly Center ('Camp Harmony'). Vashon Island's Japanese American strawberry farming families are among those removed.",
+      "people": [],
+      "places": [
+        "Puyallup Fairgrounds",
+        "Puyallup",
+        "Tacoma",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Camp Harmony (Puyallup Assembly Center), 1942 -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/8748",
+          "type": "secondary"
+        },
+        {
+          "title": "Puyallup (detention facility) -- Densho Encyclopedia",
+          "url": "https://encyclopedia.densho.org/Puyallup_(detention_facility)/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "wwii",
+        "japanese-internment",
+        "civil-rights",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-012",
+      "title": "Todd Shipyards Wartime Production in Tacoma",
+      "date_start": "1939",
+      "date_end": "1945",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Todd Shipyards produces 45 destroyers and services 576 ships for the war effort, establishing Puget Sound as a major naval shipbuilding center.",
+      "people": [],
+      "places": [
+        "Commencement Bay",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Harbor Island: Hub of WWII Shipwork -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/22852",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "wwii",
+        "shipbuilding",
+        "industry"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-013",
+      "title": "Replacement Tacoma Narrows Bridge Opens",
+      "date_start": "1950-10-14",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "A redesigned Tacoma Narrows Bridge opens, incorporating deep stiffening trusses learned from the 1940 collapse.",
+      "people": [],
+      "places": [
+        "Tacoma Narrows",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma Narrows Bridge history -- WSDOT",
+          "url": "https://www.wsdot.wa.gov/tnbhistory/",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "bridge",
+        "engineering",
+        "transportation"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-014",
+      "title": "Tacoma Dome Opens",
+      "date_start": "1983-04-21",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Tacoma Dome opens as the largest wooden-domed structure in the world, symbolizing Tacoma's timber heritage.",
+      "people": [],
+      "places": [
+        "Tacoma Dome",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma Dome opens -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5154",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "architecture",
+        "timber",
+        "culture"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-015",
+      "title": "ASARCO Smelter Smokestack Demolished",
+      "date_start": "1993-01-17",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "description": "The 562-foot ASARCO smelter smokestack in Ruston is demolished. Cleanup of contaminated soils, including on Vashon Island, continues for decades.",
+      "people": [],
+      "places": [
+        "Ruston",
+        "Tacoma",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma Smelter Plume Program -- Tacoma-Pierce County Health Department",
+          "url": "https://tpchd.org/homes/dirt-alert-tacoma-smelter-plume/",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "asarco",
+        "environment",
+        "pollution",
+        "superfund",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
     }
   ]
 }

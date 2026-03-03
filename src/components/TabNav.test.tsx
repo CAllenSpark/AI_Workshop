@@ -45,4 +45,28 @@ describe('TabNav', () => {
 
     expect(screen.getByRole('tablist')).toBeInTheDocument();
   });
+
+  // M9: Narrative tab
+  it('renders Narrative tab', () => {
+    render(<TabNav activeTab="timeline" onChange={() => {}} />);
+    expect(screen.getByText('Narrative')).toBeInTheDocument();
+  });
+
+  it('calls onChange with narrative when Narrative tab is clicked', () => {
+    const onChange = vi.fn();
+    render(<TabNav activeTab="timeline" onChange={onChange} />);
+
+    fireEvent.click(screen.getByText('Narrative'));
+    expect(onChange).toHaveBeenCalledWith('narrative');
+  });
+
+  it('marks Narrative tab as active when selected', () => {
+    render(<TabNav activeTab="narrative" onChange={() => {}} />);
+
+    const narrativeTab = screen.getByRole('tab', { name: /narrative/i });
+    expect(narrativeTab).toHaveAttribute('aria-selected', 'true');
+
+    const timelineTab = screen.getByRole('tab', { name: /timeline/i });
+    expect(timelineTab).toHaveAttribute('aria-selected', 'false');
+  });
 });

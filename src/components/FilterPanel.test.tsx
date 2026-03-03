@@ -5,18 +5,21 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import FilterPanel from './FilterPanel';
-import type { LayerKey, EraKey } from '../types';
+import type { LayerKey, EraKey, ScopeKey } from '../types';
 
 function renderFilterPanel(overrides: Partial<Parameters<typeof FilterPanel>[0]> = {}) {
   const defaultProps = {
     activeLayers: new Set<LayerKey>(['event', 'person', 'place', 'environment']),
     selectedEras: new Set<EraKey>(),
+    activeScopes: new Set<ScopeKey>(['vashon', 'seattle', 'tacoma', 'national']),
     dateRange: [-15000, 2026] as [number, number],
     fullDateRange: [-15000, 2026] as [number, number],
     totalCount: 20,
     filteredCount: 20,
+    viewMode: 'all' as const,
     onLayerToggle: vi.fn(),
     onEraToggle: vi.fn(),
+    onScopeToggle: vi.fn(),
     onDateRangeChange: vi.fn(),
     onClearAll: vi.fn(),
     ...overrides,
@@ -115,5 +118,57 @@ describe('FilterPanel', () => {
     });
 
     expect(screen.getByText('2 selected')).toBeInTheDocument();
+  });
+
+  // Scope filter tests (M9)
+  it('renders all 4 scope toggles', () => {
+    renderFilterPanel();
+    expect(screen.getByText('Vashon Island')).toBeInTheDocument();
+    expect(screen.getByText('Seattle')).toBeInTheDocument();
+    expect(screen.getByText('Tacoma')).toBeInTheDocument();
+    expect(screen.getByText('United States')).toBeInTheDocument();
+  });
+
+  it('scope toggle calls onScopeToggle with correct key', () => {
+    const { props } = renderFilterPanel();
+    fireEvent.click(screen.getByText('Seattle'));
+    expect(props.onScopeToggle).toHaveBeenCalledWith('seattle');
+  });
+
+  it('scope toggle has aria-pressed=true when active', () => {
+    renderFilterPanel({ activeScopes: new Set<ScopeKey>(['vashon']) });
+
+    const vashonBtn = screen.getByText('Vashon Island').closest('button');
+    expect(vashonBtn).toHaveAttribute('aria-pressed', 'true');
+
+    const seattleBtn = screen.getByText('Seattle').closest('button');
+    expect(seattleBtn).toHaveAttribute('aria-pressed', 'false');
+  });
+
+  it('shows scope count when not all are active', () => {
+    renderFilterPanel({ activeScopes: new Set<ScopeKey>(['vashon', 'seattle']) });
+    expect(screen.getByText('2 of 4')).toBeInTheDocument();
+  });
+
+  it('shows Clear All Filters when scopes are filtered', () => {
+    renderFilterPanel({ activeScopes: new Set<ScopeKey>(['vashon']) });
+    expect(screen.getByText('Clear All Filters')).toBeInTheDocument();
+  });
+
+  // View mode indicator tests (M9)
+  it('shows view mode indicator when not in "all" mode', () => {
+    renderFilterPanel({ viewMode: 'historical' });
+    expect(screen.getByText('Historical entries only')).toBeInTheDocument();
+  });
+
+  it('shows creative mode indicator', () => {
+    renderFilterPanel({ viewMode: 'creative' });
+    expect(screen.getByText('Creative entries only')).toBeInTheDocument();
+  });
+
+  it('does not show view mode indicator in "all" mode', () => {
+    renderFilterPanel({ viewMode: 'all' });
+    expect(screen.queryByText('Historical entries only')).not.toBeInTheDocument();
+    expect(screen.queryByText('Creative entries only')).not.toBeInTheDocument();
   });
 });

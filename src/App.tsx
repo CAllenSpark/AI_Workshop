@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
-import type { TimelineEntry, LayerKey, EraKey, ZoomLevel, EntryType } from './types';
+import type { TimelineEntry, LayerKey, EraKey, ZoomLevel, EntryType, ScopeKey } from './types';
 import { useTimelineData } from './hooks/useTimelineData';
 import { useSearch } from './hooks/useSearch';
 import { addEntry } from './data/loader';
@@ -12,6 +12,7 @@ import type { ViewMode } from './components/ViewModeToggle';
 import TabNav from './components/TabNav';
 import type { TabKey } from './components/TabNav';
 import PeopleTimeline from './components/PeopleTimeline';
+import NarrativeDashboard from './components/NarrativeDashboard';
 import ExportDialog from './components/ExportDialog';
 import KeyboardHelp from './components/KeyboardHelp';
 import AddEntryDialog from './components/AddEntryDialog';
@@ -19,6 +20,7 @@ import HelpTutorial, { useTutorialState } from './components/HelpTutorial';
 import './App.css';
 
 const ALL_LAYERS = new Set<LayerKey>(['event', 'person', 'place', 'environment']);
+const ALL_SCOPES = new Set<ScopeKey>(['vashon', 'seattle', 'tacoma', 'national']);
 const PAGE_SIZE = 50;
 
 export default function App() {
@@ -34,6 +36,7 @@ export default function App() {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [viewMode, setViewMode] = useState<ViewMode>('all');
   const [activeTab, setActiveTab] = useState<TabKey>('timeline');
+  const [activeScopes, setActiveScopes] = useState<Set<ScopeKey>>(new Set(ALL_SCOPES));
 
   const { showTutorial, dismissTutorial } = useTutorialState();
 
@@ -87,12 +90,15 @@ export default function App() {
         e.preventDefault();
         setShowAddEntry(true);
       }
-      // Tab switching: 1 = timeline, 2 = people
+      // Tab switching: 1 = timeline, 2 = people, 3 = narrative
       if (e.key === '1' && !isInput && !showExport && !showHelp && !showAddEntry) {
         setActiveTab('timeline');
       }
       if (e.key === '2' && !isInput && !showExport && !showHelp && !showAddEntry) {
         setActiveTab('people');
+      }
+      if (e.key === '3' && !isInput && !showExport && !showHelp && !showAddEntry) {
+        setActiveTab('narrative');
       }
     };
     window.addEventListener('keydown', handler);
@@ -102,7 +108,7 @@ export default function App() {
   // Reset visible count when filters change
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [searchQuery, activeLayers, selectedEras, dateRange, viewMode]);
+  }, [searchQuery, activeLayers, selectedEras, activeScopes, dateRange, viewMode]);
 
   const handleEntrySelect = useCallback((id: string) => {
     setSelectedId((prev) => (prev === id ? null : id));
@@ -126,9 +132,19 @@ export default function App() {
     });
   }, []);
 
+  const toggleScope = useCallback((scope: ScopeKey) => {
+    setActiveScopes((prev) => {
+      const next = new Set(prev);
+      if (next.has(scope)) next.delete(scope);
+      else next.add(scope);
+      return next;
+    });
+  }, []);
+
   const handleClearAll = useCallback(() => {
     setActiveLayers(new Set(ALL_LAYERS));
     setSelectedEras(new Set());
+    setActiveScopes(new Set(ALL_SCOPES));
     setDateRange(fullDateRange);
     setSearchQuery('');
   }, [fullDateRange]);
@@ -172,6 +188,11 @@ export default function App() {
       });
     }
 
+    // Filter by scope
+    if (activeScopes.size < ALL_SCOPES.size) {
+      result = result.filter((e) => activeScopes.has((e.scope ?? 'vashon') as ScopeKey));
+    }
+
     // Filter by active layers
     result = result.filter((e) =>
       e.layers.some((l) => activeLayers.has(l as LayerKey))
@@ -189,7 +210,7 @@ export default function App() {
     });
 
     return result;
-  }, [data, searchQuery, search, activeLayers, selectedEras, dateRange, viewMode]);
+  }, [data, searchQuery, search, activeLayers, selectedEras, activeScopes, dateRange, viewMode]);
 
   // Paginated entries for rendering
   const paginatedEntries = useMemo(
@@ -304,6 +325,7 @@ export default function App() {
         <FilterPanel
           activeLayers={activeLayers}
           selectedEras={selectedEras}
+          activeScopes={activeScopes}
           dateRange={dateRange}
           fullDateRange={fullDateRange}
           totalCount={data.entries.length}
@@ -311,6 +333,7 @@ export default function App() {
           viewMode={viewMode}
           onLayerToggle={toggleLayer}
           onEraToggle={toggleEra}
+          onScopeToggle={toggleScope}
           onDateRangeChange={setDateRange}
           onClearAll={handleClearAll}
         />
@@ -372,6 +395,16 @@ export default function App() {
         {activeTab === 'people' && (
           <div id="panel-people" role="tabpanel" aria-label="People timeline view">
             <PeopleTimeline
+              data={data}
+              viewMode={viewMode}
+              onEntrySelect={handleEntrySelect}
+            />
+          </div>
+        )}
+
+        {activeTab === 'narrative' && (
+          <div id="panel-narrative" role="tabpanel" aria-label="Narrative dashboard view">
+            <NarrativeDashboard
               data={data}
               viewMode={viewMode}
               onEntrySelect={handleEntrySelect}
