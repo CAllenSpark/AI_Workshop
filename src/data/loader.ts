@@ -1,8 +1,8 @@
-import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, DataStore, DataWarning } from '../types';
+import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, NarrativeProp, DataStore, DataWarning } from '../types';
 
 const BASE_PATH = import.meta.env.BASE_URL + 'data/';
 const CACHE_KEY = 'wrc_data_cache';
-const CACHE_VERSION = '3';
+const CACHE_VERSION = '4';
 const CACHE_VERSION_KEY = 'wrc_cache_version';
 
 async function fetchJson<T>(filename: string): Promise<T> {
@@ -194,7 +194,7 @@ function buildIndexes(
 }
 
 /** Try to load data from localStorage cache */
-function loadFromCache(): { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[] } | null {
+function loadFromCache(): { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[]; props: NarrativeProp[] } | null {
   try {
     const version = localStorage.getItem(CACHE_VERSION_KEY);
     if (version !== CACHE_VERSION) return null;
@@ -209,7 +209,7 @@ function loadFromCache(): { entries: TimelineEntry[]; people: Person[]; places: 
 }
 
 /** Save data to localStorage cache */
-function saveToCache(data: { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[] }): void {
+function saveToCache(data: { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[]; props: NarrativeProp[] }): void {
   try {
     localStorage.setItem(CACHE_VERSION_KEY, CACHE_VERSION);
     localStorage.setItem(CACHE_KEY, JSON.stringify(data));
@@ -227,6 +227,7 @@ export async function loadData(): Promise<DataStore> {
   let places: Place[];
   let environment: EnvironmentFeature[];
   let universes: Universe[];
+  let props: NarrativeProp[];
 
   if (cached) {
     entries = cached.entries;
@@ -234,6 +235,7 @@ export async function loadData(): Promise<DataStore> {
     places = cached.places;
     environment = cached.environment;
     universes = cached.universes ?? [];
+    props = cached.props ?? [];
 
     // Background refresh: fetch fresh data and update cache
     fetchFreshData().then((fresh) => {
@@ -247,6 +249,7 @@ export async function loadData(): Promise<DataStore> {
     places = fresh.places;
     environment = fresh.environment;
     universes = fresh.universes;
+    props = fresh.props;
     saveToCache(fresh);
   }
 
@@ -269,11 +272,11 @@ export async function loadData(): Promise<DataStore> {
     }
   }
 
-  return { entries, people, places, environment, universes, warnings, ...indexes };
+  return { entries, people, places, environment, universes, props, warnings, ...indexes };
 }
 
 /** Fetch all data files from disk */
-async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[] } | null> {
+async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[]; props: NarrativeProp[] } | null> {
   try {
     const [timelineData, peopleData, placesData, envData] = await Promise.all([
       fetchJson<{ entries: TimelineEntry[] }>('timeline.json'),
@@ -291,12 +294,22 @@ async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Per
       // universes.json may not exist yet — that's fine
     }
 
+    // Try loading narrative props (may not exist yet)
+    let propsData: NarrativeProp[] = [];
+    try {
+      const pData = await fetchJson<{ props: NarrativeProp[] }>('props.json');
+      propsData = pData.props ?? [];
+    } catch {
+      // props.json may not exist yet — that's fine
+    }
+
     return {
       entries: timelineData.entries,
       people: peopleData.people,
       places: placesData.places,
       environment: envData.environment_features,
       universes: universesData,
+      props: propsData,
     };
   } catch {
     return null;

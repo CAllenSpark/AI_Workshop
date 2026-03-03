@@ -4,7 +4,7 @@
  * fantasy entries, regional entries, universe management.
  * Does NOT duplicate production data.
  */
-import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, DataStore } from '../types';
+import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, NarrativeProp, DataStore } from '../types';
 import { parseDate } from '../data/loader';
 
 export const TEST_UNIVERSES: Universe[] = [
@@ -192,6 +192,22 @@ export const TEST_ENTRIES: TimelineEntry[] = [
   },
 ];
 
+export const TEST_PROPS: NarrativeProp[] = [
+  {
+    id: 'prop-001',
+    name: 'Glacial Memory Stone',
+    description: 'A smooth basalt stone etched with patterns that resemble tidal charts, found in the glacial deposits near the harbor.',
+    narrative_function: 'key',
+    plot_significance: 'The stone unlocks the Tidewalker\'s memory and must be returned to the harbor to advance the plot.',
+    appears_in: ['e-fan-001', 'e-005'],
+    associated_people: ['p-005'],
+    associated_places: ['pl-002'],
+    arc: 'tidewalker-awakening',
+    entry_type: 'fantasy',
+    universe_id: 'test-campaign',
+  },
+];
+
 /** Build a complete DataStore from test fixtures */
 export function buildTestStore(): DataStore {
   const entries = [...TEST_ENTRIES].sort((a, b) => parseDate(a.date_start) - parseDate(b.date_start));
@@ -199,6 +215,7 @@ export function buildTestStore(): DataStore {
   const places = TEST_PLACES;
   const environment = TEST_ENVIRONMENT;
   const universes = TEST_UNIVERSES;
+  const props = TEST_PROPS;
 
   const entriesById = new Map(entries.map((e) => [e.id, e]));
   const peopleById = new Map(people.map((p) => [p.id, p]));
@@ -232,7 +249,7 @@ export function buildTestStore(): DataStore {
   }
 
   return {
-    entries, people, places, environment, universes,
+    entries, people, places, environment, universes, props,
     entriesById, peopleById, placesById, peopleByName, placesByName,
     parsedDates, entriesByEra, entriesByScope, entriesByType,
     warnings: [],

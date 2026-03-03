@@ -114,6 +114,44 @@ export interface EnvironmentFeature {
   related_entries?: string[];
 }
 
+/**
+ * Narrative prop / device — a key item that serves a critical
+ * function in moving the plot forward (e.g., a map, a key, an artifact).
+ */
+export type PropFunction =
+  | 'macguffin'       // Object everyone is after
+  | 'key'             // Opens/unlocks the next sequence
+  | 'clue'            // Reveals information to advance the plot
+  | 'weapon'          // Used to resolve conflict
+  | 'symbol'          // Carries thematic meaning
+  | 'catalyst'        // Triggers a change or event
+  | 'heirloom'        // Connects characters across time
+  | 'evidence'        // Proves or disproves something
+  | 'transport'       // Enables movement or access
+  | 'other';
+
+export interface NarrativeProp {
+  id: string;
+  name: string;
+  description: string;
+  /** Critical narrative function */
+  narrative_function: PropFunction;
+  /** How this prop advances the plot — plain-language explanation */
+  plot_significance: string;
+  /** Entry IDs where this prop appears or is referenced */
+  appears_in: string[];
+  /** Person IDs who possess or interact with this prop */
+  associated_people?: string[];
+  /** Place IDs where this prop can be found */
+  associated_places?: string[];
+  /** Which arc this prop belongs to (matches narrative.arc) */
+  arc?: string;
+  /** Historical or fantasy */
+  entry_type?: EntryType;
+  /** Universe this prop belongs to */
+  universe_id?: string;
+}
+
 /** Fantasy universe / campaign definition */
 export interface Universe {
   id: string;
@@ -169,6 +207,7 @@ export interface DataStore {
   places: Place[];
   environment: EnvironmentFeature[];
   universes: Universe[];
+  props: NarrativeProp[];
   // O(1) lookup maps
   entriesById: Map<string, TimelineEntry>;
   peopleById: Map<string, Person>;
