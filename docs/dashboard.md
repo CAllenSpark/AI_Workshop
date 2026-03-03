@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-03 (M8 Creative Layer UI complete)
+**Last Updated:** 2026-03-03 (M9 Multi-Setting & Narrative Dashboard complete)
 **Setting:** Vashon Island, WA (prehistory to present)
 **Branch:** `claude/writers-research-companion-zTnuE`
 
@@ -19,14 +19,14 @@ M4 Search/Filter [####################] 100%
 M5 Polish/Export [####################] 100%
 M6 Validation    [####################] 100%
 M7 Fantasy Data  [####################] 100%
-M8 Creative UI   [####################] 100%  << COMPLETE
-M9 Multi-Setting [                    ]   0%  << NEXT
-M10 Polish/Export[                    ]   0%
+M8 Creative UI   [####################] 100%
+M9 Multi-Setting [####################] 100%  << COMPLETE
+M10 Polish/Export[                    ]   0%  << NEXT
 M11 Validation   [                    ]   0%
 ```
 
-**Current Milestone:** M8 complete. M9 Multi-Setting next.
-**Overall:** 9 of 12 milestones complete. M9-M11 in planning.
+**Current Milestone:** M9 complete. M10 Polish/Export next.
+**Overall:** 10 of 12 milestones complete. M10-M11 remaining.
 
 ---
 
@@ -43,7 +43,7 @@ M11 Validation   [                    ]   0%
 | **M6 Validation** | End-to-end testing, user testing, refinement | Complete | 122 tests, 10 files, all green. TypeScript clean. 252KB JS build. |
 | **M7 Fantasy Data** | Fantasy data model — schemas, types, loader, UI | Complete | 142 tests, 10 files, all green. 4 schemas v2. TypeScript clean. |
 | **M8 Creative UI** | Creative layer visual design — colors, markers, toggles, people timeline | Complete | 172 tests, 14 files, all green. 3 new components. TypeScript clean. 264KB JS, 37KB CSS. |
-| **M9 Multi-Setting** | Multi-setting support + narrative dashboard | Not Started | — |
+| **M9 Multi-Setting** | Multi-setting support + narrative dashboard | Complete | 197 tests, 15 files, all green. NarrativeDashboard + scope filtering. 141 entries (111 Vashon + 15 Seattle + 15 Tacoma). |
 | **M10 Polish/Export** | Creative export, narrator prompt, connection insights | Not Started | — |
 | **M11 Validation** | Full QA, performance, accessibility for creative layer | Not Started | — |
 
@@ -53,36 +53,46 @@ M11 Validation   [                    ]   0%
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | M8 complete; scoping M9 Multi-Setting | None |
-| Engineer | Complete | M8: ViewModeToggle, TabNav, PeopleTimeline, creative card styles, narrative metadata | None |
+| Product Manager | Active | M9 complete; scoping M10 Polish/Export | None |
+| Engineer | Complete | M9: NarrativeDashboard, scope filtering, narrative tab, regional data integration | None |
 | Database Engineer | Complete | entriesByScope/entriesByType indexes, cache v3 | None |
-| Researcher | Queued | Regional research sprint (Seattle, Tacoma) | Awaiting M9 |
+| Researcher | Complete | 30 regional entries (15 Seattle, 15 Tacoma) researched and integrated | None |
 | Designer | Complete | Visual strategy implemented — violet palette, four-signal distinction, people timeline | None |
-| Tester | Complete | 172 tests (up from 142), 30 new M8 tests, 14 files, all green | None |
-| UI/UX | Complete | People timeline interaction, view mode toggle, tab navigation — all implemented | None |
+| Tester | Complete | 197 tests (up from 172), 25 new M9 tests, 15 files, all green | None |
+| UI/UX | Complete | Narrative dashboard, scope toggles, 3-tab navigation implemented | None |
 | AI Narrator | Complete | Worldbuilding recommendations; narrative metadata displayed in detail panel | None |
 
 ---
 
 ## Research Coverage
 
-### Timeline Entries: 111 total
+### Timeline Entries: 141 total (111 Vashon + 15 Seattle + 15 Tacoma)
 
 ```
-Era                    Entries  Target(M1)  Coverage
-------------------------------------------------------
-Modern Era                 16         12     133%
-Early 20th Century         15         12     125%
-Pioneer Settlement         13         10     130%
-Growth & Industry          13         10     130%
-State Ferry Era            11          8     138%
-Logging & Treaty           10          8     125%
-Prehistory                  9          8     112%
-Indigenous                  9          8     112%
-WWII Era                    8          8     100%
-Exploration                 7          8      88%
-------------------------------------------------------
-TOTAL                     111        102     109%
+Scope              Entries
+----------------------------
+Vashon Island         111
+Seattle                15
+Tacoma                 15
+----------------------------
+TOTAL                 141
+```
+
+```
+Era                    Vashon  Seattle  Tacoma  Total
+-------------------------------------------------------
+Growth & Industry          13        4       5     22
+Early 20th Century         15        4       4     23
+Modern Era                 16        2       2     20
+Pioneer Settlement         13        1       1     15
+WWII Era                    8        1       4     13
+State Ferry Era            11        2       1     14
+Logging & Treaty           10        0       1     11
+Prehistory                  9        0       0      9
+Indigenous                  9        1       0     10
+Exploration                 7        0       0      7
+-------------------------------------------------------
+TOTAL                     111       15      15    141
 ```
 
 ### Layer Distribution
@@ -90,21 +100,22 @@ TOTAL                     111        102     109%
 ```
 Layer          Entries   Coverage
 ---------------------------------
-Event             105   ██████████████████    94%
-Place              49   ████████              44%
-Person             45   ████████              40%
-Environment        28   █████                 25%
+Event             135   ██████████████████    96%
+Place              70   ████████████          50%
+Person             57   ██████████            40%
+Environment        30   █████                 21%
 ```
 
 ### Cross-Reference Stats
 
 | Metric | Count |
 |--------|-------|
-| Unique people referenced | 113 |
-| Unique places referenced | 67 |
-| Total source URLs | 223 |
-| Entries with sources | 111/111 (100%) |
+| Unique people referenced | 130+ |
+| Unique places referenced | 90+ |
+| Total source URLs | 260+ |
+| Entries with sources | 141/141 (100%) |
 | All eras with 7+ entries | 10/10 (100%) |
+| Vashon-connection tags | 9 regional entries |
 | Duplicate entry IDs | 0 |
 
 ---
@@ -170,64 +181,52 @@ Environment        28   █████                 25%
 - [x] **Narrative dashboard placement** — Resolved: separate tab view
 - [x] **AI narrator system prompt for fact/fiction** — Resolved: Mixed Reality Protocol
 - [ ] **Narrator export for multiple creative properties** — Engineer + Narrator in M10
-- [ ] **Regional context data sources** — Researcher to scope in M9
+- [x] **Regional context data sources** — Resolved: 30 entries (15 Seattle, 15 Tacoma) with HistoryLink.org and primary sources
 
 ---
 
-## Test Results (M8)
+## Test Results (M9)
 
 ```
 Category                     Files  Tests  Status
 ──────────────────────────────────────────────────
 Unit: Data Layer                2     36   PASS
 Unit: Components (existing)     4     42   PASS
-Unit: Components (M8 new)       4     30   PASS
+Unit: Components (M8)           4     30   PASS
   - ViewModeToggle              1      6   PASS
-  - TabNav                      1      5   PASS
   - PeopleTimeline              1      9   PASS
   - EntryCard.creative          1     10   PASS
+Unit: Components (M9)           2     22   PASS
+  - TabNav                      1      8   PASS  (+3 narrative)
+  - NarrativeDashboard          1     14   PASS  (new)
+Unit: FilterPanel               1     20   PASS  (+8 scope/viewmode)
 Unit: Search                    1      9   PASS
 Integration: Pipeline           1      8   PASS
 Integration: Export             1     11   PASS
 Integration: Validation         1     26   PASS
 ──────────────────────────────────────────────────
-TOTAL                          14    172   ALL GREEN
+TOTAL                          15    197   ALL GREEN
 ```
 
-**Build:** TypeScript clean (0 errors). 264KB JS, 37KB CSS.
-**Duration:** ~8s test suite execution.
+**Build:** TypeScript clean (0 errors).
+**Duration:** ~7s test suite execution.
 
 ## Next Steps
 
-**M7 Fantasy Data Model (Complete — 2026-03-03):**
-- Schemas v2: timeline-entry, person, place (entry_type, scope, universe_id, narrative)
-- Universe schema (new)
-- TypeScript types: EntryType, ScopeKey, NarrativeBeat, AnchorRelationship, Universe
-- Data loader: backward-compatible defaults, fantasy validation, new indexes
-- AddEntryDialog: entry type selector, scope dropdown, universe field
-- 142 tests, all green
+**M9 Multi-Setting (Complete — 2026-03-03):**
+- NarrativeDashboard: arc breakdown, beat progress track, historical connections, stats cards, empty state
+- Scope filtering: Vashon/Seattle/Tacoma/National toggles in FilterPanel
+- TabNav: Timeline | People | Narrative tabs with keyboard shortcuts (1, 2, 3)
+- 30 regional context entries: 15 Seattle (founding to Amazon), 15 Tacoma (Treaty of Medicine Creek to ASARCO cleanup)
+- 9 of 30 regional entries tagged vashon-connection (ferry, smelter, internment)
+- App.tsx: scope state, scope filtering pipeline, narrative tab panel
+- 197 tests (up from 172), 15 files, all green. TypeScript clean.
 
-**Planning Sprint (Complete — 2026-03-03):**
-- PRD Creative Layer Addendum: 13 user stories, 5 milestones, 2 new personas
-- Designer Visual Strategy: violet palette, four-signal classification, people timeline wireframes
-- Engineer Schema Evolution: additive architecture, migration strategy
-- Narrator Worldbuilding Recommendations: creative entry types, export v3, Mixed Reality Protocol
-
-**M8 Creative Layer UI (Complete — 2026-03-03):**
-- ViewModeToggle: 3-mode switcher (Historical/Creative/All) with counts
-- TabNav: Timeline | People tabs with keyboard shortcuts (1, 2)
-- PeopleTimeline: lifespan bars, period parsing, sort by date/name, hover entry dots
-- EntryCard creative treatment: dashed borders, type badges, diamond dots, scope badges
-- DetailPanel narrative metadata: arc, beat, anchors with cross-references
-- TimelineTrack: diamond markers for creative entries
-- FilterPanel: view mode indicator
-- App.tsx: view mode state, tab panels, entry type filter pipeline
-
-**Next: M9 Multi-Setting**
-1. Regional context data (Seattle, Tacoma skeleton research)
-2. Setting toggle in filter panel
-3. Narrative dashboard tab (third tab)
-4. Cross-setting connection visualization
+**Next: M10 Polish/Export**
+1. Creative export format (narrator export v3 with universe/narrative metadata)
+2. Narrator prompt template for mixed reality
+3. Connection insights visualization
+4. Cross-setting relationship exploration
 
 ---
 

@@ -1,16 +1,16 @@
 # Team Coordination Board
 
-## Current Sprint: M8 Creative UI — Complete. Planning M9.
+## Current Sprint: M9 Multi-Setting — Complete. Planning M10.
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | M8 complete; scoping M9 Multi-Setting | None |
-| Engineer | Complete | M8: ViewModeToggle, TabNav, PeopleTimeline, creative card styles, narrative metadata | None |
+| Product Manager | Active | M9 complete; scoping M10 Polish/Export | None |
+| Engineer | Complete | M9: NarrativeDashboard, scope filtering, narrative tab, regional data integration | None |
 | Database Engineer | Complete | entriesByScope/entriesByType indexes, cache v3 | None |
-| Researcher | Queued | Regional research sprint (Seattle, Tacoma) | Awaiting M9 |
+| Researcher | Complete | 30 regional entries (15 Seattle, 15 Tacoma) researched and integrated | None |
 | Designer | Complete | Visual strategy implemented — violet palette, four-signal distinction | None |
-| Tester | Complete | 172 tests (up from 142), 30 new M8 tests, 14 files, all green | None |
-| UI/UX | Complete | People timeline, view mode toggle, tab navigation — all implemented | None |
+| Tester | Complete | 197 tests (up from 172), 25 new M9 tests, 15 files, all green | None |
+| UI/UX | Complete | Narrative dashboard, scope toggles, 3-tab navigation implemented | None |
 | AI Narrator | Complete | Narrative metadata displayed in detail panel; recommendations implemented | None |
 
 ## Decisions Log
@@ -51,7 +51,7 @@
 - [ ] How should the people timeline handle characters spanning multiple eras? — **UI/UX, M8**
 - [ ] Should context settings (Seattle, Tacoma) support creative content? — **PM, proposed: yes**
 - [ ] How should the narrator export handle multiple creative properties? — **Engineer + Narrator, M10**
-- [ ] Regional context data sources for Seattle/Tacoma — **Researcher to scope in M9**
+- [x] Regional context data sources for Seattle/Tacoma — **Resolved: 30 entries with HistoryLink.org and primary sources**
 
 ## Completed Items
 
@@ -107,3 +107,12 @@
   - App.tsx: view mode state, tab panels, entry type filter pipeline, keyboard shortcuts (1/2 for tabs)
   - CSS: 11 new creative layer custom properties, responsive treatment
   - 172 tests (up from 142), 14 files, all green. TypeScript clean. Build: 264KB JS, 37KB CSS.
+- [x] **M9 Multi-Setting milestone complete** (2026-03-03)
+  - NarrativeDashboard: arc breakdown, beat progress track, historical connections, stats cards, empty state
+  - Scope filtering: Vashon/Seattle/Tacoma/National toggles in FilterPanel with SCOPE_COLORS
+  - TabNav: Timeline | People | Narrative tabs with keyboard shortcuts (1, 2, 3)
+  - 30 regional context entries researched: 15 Seattle (Duwamish villages to Amazon), 15 Tacoma (Medicine Creek to ASARCO cleanup)
+  - 9 of 30 regional entries tagged vashon-connection (Mosquito Fleet, Boeing WWII, WSF, Black Ball Line, Point Defiance, ASARCO, Tahlequah ferry, Camp Harmony, ASARCO demolition)
+  - App.tsx: scope state, scope filtering pipeline, narrative tab panel, keyboard shortcut 3
+  - FilterPanel: scope filter section, view mode indicator, scope count display
+  - 197 tests (up from 172), 15 files, all green. TypeScript clean.
