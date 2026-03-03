@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-03 (Fantasy expansion planning sprint)
+**Last Updated:** 2026-03-03 (M7 Fantasy Data Model complete)
 **Setting:** Vashon Island, WA (prehistory to present)
 **Branch:** `claude/add-fantasy-dates-iTNHa`
 
@@ -17,11 +17,17 @@ M2 Data Model    [####################] 100%
 M3 Core UI       [####################] 100%
 M4 Search/Filter [####################] 100%
 M5 Polish/Export [####################] 100%
-M6 Validation    [####################] 100%  << COMPLETE
+M6 Validation    [####################] 100%
+M7 Fantasy Data  [####################] 100%  << COMPLETE
+M8 Regional Rsch [                    ]   0%
+M9 Fantasy UI    [                    ]   0%
+M10 Add Entry    [                    ]   0%
+M11 Narrative    [                    ]   0%
+M12 Integration  [                    ]   0%
 ```
 
-**Current Milestone:** M6 Validation complete
-**Overall:** 7 of 7 milestones complete
+**Current Milestone:** M7 Fantasy Data Model complete
+**Overall:** 8 of 13 milestones complete
 
 ---
 
@@ -36,6 +42,12 @@ M6 Validation    [####################] 100%  << COMPLETE
 | **M4 Search & Filter** | Full-text search, layer toggles, date range filter | Complete | Fuse.js search <100ms. FilterPanel with layers/eras/date range. Combined AND logic. Empty state UX. 228KB build. |
 | **M5 Polish & Export** | AI narrator export, responsive, accessibility | Complete | ExportDialog with 3 scopes. WCAG AA contrast fixes. Skip link, aria-live, focus trap. Keyboard help (?). 237KB build. |
 | **M6 Validation** | End-to-end testing, user testing, refinement | Complete | 122 tests, 10 files, all green. TypeScript clean. 252KB JS build. |
+| **M7 Fantasy Data** | Fantasy data model — schemas, types, loader, UI | Complete | 142 tests, 10 files, all green. 4 schemas v2. TypeScript clean. |
+| **M8 Regional Rsch** | Regional context research — Seattle, Tacoma, US events | Not Started | — |
+| **M9 Fantasy UI** | Fantasy visual design — colors, markers, toggles, cards | Not Started | — |
+| **M10 Add Entry** | Add Fantasy Entry — dialog updates, universe management | Not Started | — |
+| **M11 Narrative** | Narrative flow tools — arc visualization, story review | Not Started | — |
+| **M12 Integration** | Integration testing — full QA, performance, accessibility | Not Started | — |
 
 ---
 
@@ -43,12 +55,12 @@ M6 Validation    [####################] 100%  << COMPLETE
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | Fantasy expansion proposal drafted; M7-M12 milestones defined | None |
-| Engineer | Active | Data integrity fixes complete (46→0 warnings); schema extensions designed | None |
-| Database Engineer | Reviewing | Reviewing data model changes for indexing impact | None |
-| Researcher | Queued | Regional research sprint (Seattle, Tacoma, US events) ready | Awaiting M7 |
-| Designer | Complete | Fantasy color palette, visual distinction system, Design Bible v2 (Sections 9-11) | None |
-| Tester | Queued | Test plan expansion for fantasy features ready | Awaiting M7 |
+| Product Manager | Active | M7 complete; M8 Regional Research sprint ready | None |
+| Engineer | Complete | M7 implemented: schemas, types, loader, eras, AddEntryDialog, tests | None |
+| Database Engineer | Complete | entriesByScope/entriesByType indexes, cache v3 | None |
+| Researcher | Queued | Regional research sprint (Seattle, Tacoma, US events) ready | Awaiting M8 start |
+| Designer | Complete | Fantasy color palette, visual distinction system, Design Bible v2 | None |
+| Tester | Complete | 142 tests (up from 122), 10 fantasy tests added, all green | None |
 | UI/UX | Reviewing | Reviewing fantasy mode toggle and narrative flow UX | None |
 | AI Narrator | Active | World-building tools and narrator export format consultation | None |
 
@@ -110,14 +122,16 @@ Environment        28   █████                 25%
 | [Milestone Schedule](docs/milestone-schedule.md) | PM + Eng | Draft | 747 | 1.0 |
 | [Coordination Board](docs/coordination.md) | All | Active | — | — |
 | [Research README](research/README.md) | Researcher | Done | — | — |
-| [Timeline Schema](research/schemas/timeline-entry.schema.json) | Eng | Done | — | 1.0 |
+| [Fantasy Proposal](docs/fantasy-expansion-proposal.md) | PM + Eng | Complete | — | 1.0 |
+| [Timeline Schema](research/schemas/timeline-entry.schema.json) | Eng | v2 Complete | — | 2.0 |
 | [Timeline Data](research/vashon-island/timeline.json) | Researcher | Enriched | 111 entries | 1.1 |
 | [People Directory](research/vashon-island/people.md) | Researcher | Enriched | 113 people | 1.1 |
 | [Places Directory](research/vashon-island/places.md) | Researcher | M1 Complete | 67 places | 1.0 |
 | [Environment](research/vashon-island/environment.md) | Researcher | M1 Complete | — | 1.0 |
 | [Bibliography](research/vashon-island/sources.md) | Researcher | M1 Complete | 137 sources | 1.0 |
-| [Person Schema](research/schemas/person.schema.json) | Eng | M2 Complete | — | 1.0 |
-| [Place Schema](research/schemas/place.schema.json) | Eng | M2 Complete | — | 1.0 |
+| [Person Schema](research/schemas/person.schema.json) | Eng | v2 Complete | — | 2.0 |
+| [Place Schema](research/schemas/place.schema.json) | Eng | v2 Complete | — | 2.0 |
+| [Universe Schema](research/schemas/universe.schema.json) | Eng | New (M7) | — | 1.0 |
 | [Environment Schema](research/schemas/environment-feature.schema.json) | Eng | M2 Complete | — | 1.0 |
 | [Export Schema](research/schemas/narrator-export.schema.json) | Eng | M2 Complete | — | 1.0 |
 | [People JSON](research/vashon-island/people.json) | Eng | Enriched | 113 records | 1.1 |
@@ -129,9 +143,9 @@ Environment        28   █████                 25%
 | ExportDialog component | Eng | M5 Complete | — | 1.0 |
 | KeyboardHelp component | Eng | M5 Complete | — | 1.0 |
 | Test Setup (vite.config, setup.ts) | Tester | M6 Complete | — | 1.0 |
-| Test Fixtures (test-data.ts) | Tester | M6 Complete | 7 entries, 4 people | 1.0 |
-| Unit Tests (loader, eras, components) | Tester | M6 Complete | 87 tests | 1.0 |
-| Integration Tests (pipeline, export, validation) | Tester | M6 Complete | 35 tests | 1.0 |
+| Test Fixtures (test-data.ts) | Tester | M7 Updated | 9 entries, 5 people, 1 universe | 2.0 |
+| Unit Tests (loader, eras, components) | Tester | M7 Updated | 87 tests | 2.0 |
+| Integration Tests (pipeline, export, validation) | Tester | M7 Updated | 55 tests (+10 fantasy) | 2.0 |
 
 ---
 
@@ -167,7 +181,7 @@ Environment        28   █████                 25%
 
 ---
 
-## Test Results (M6)
+## Test Results (M7)
 
 ```
 Category                Files  Tests  Status
@@ -177,40 +191,35 @@ Unit: Components           4     42   PASS
 Unit: Search               1      9   PASS
 Integration: Pipeline      1      8   PASS
 Integration: Export        1     11   PASS
-Integration: Validation    1     16   PASS
+Integration: Validation    1     26   PASS  (+10 fantasy tests)
 ─────────────────────────────────────────────
-TOTAL                     10    122   ALL GREEN
+TOTAL                     10    142   ALL GREEN
 ```
 
-**Build:** TypeScript clean (0 errors). Production: 252KB JS, 29KB CSS.
-**Duration:** ~7.5s test suite execution.
+**Build:** TypeScript clean (0 errors).
+**Duration:** ~4.7s test suite execution.
 
 ## Next Steps
 
-**Fantasy Expansion Planning Sprint (In Progress — 2026-03-03):**
+**M7 Fantasy Data Model (Complete — 2026-03-03):**
 
-### Data Integrity Fixes (Complete)
-- Fixed 46 data validation warnings → 0 remaining
-- Resolved 27 person reference mismatches (name variants, missing titles, Unicode differences)
-- Linked 12 orphaned people records to relevant timeline entries
-- Added 4 new tribal people records (Suquamish, Puyallup, Nisqually, Duwamish)
-- People count: 113 → 117 (all cross-referenced, 0 orphans)
+### M7 Deliverables
+- **Schemas v2:** timeline-entry (entry_type, scope, universe_id, narrative), person (personality, motivation, speech_style), place (fantasy types), universe (new)
+- **TypeScript types:** EntryType, ScopeKey, NarrativeBeat, AnchorRelationship, NarrativeMetadata, Universe, DataWarning extended
+- **Data loader:** applyEntryDefaults/applyPersonDefaults for backward compat, fantasy validation, entriesByScope/entriesByType indexes, universes.json loading, cache v3
+- **AddEntryDialog:** entry type selector, scope dropdown, universe field, fantasy color switching, validation
+- **eras.ts:** FANTASY_LAYER_COLORS, FANTASY_COLORS, SCOPE_COLORS, ENTRY_TYPE_COLORS
+- **Test fixtures:** fantasy universe, person with narrator fields, entry with narrative metadata, regional entry
+- **Tests:** 142 total (up from 122), 10 new fantasy validation tests, all green
 
-### Fantasy Expansion Proposal (In Progress)
-- `docs/fantasy-expansion-proposal.md` drafted with 6 new milestones (M7–M12)
-- Designer consultation complete: fantasy color palette (Amethyst/purple family), four-signal visual distinction system, regional context layer design — integrated into Design Bible v2
-- AI Narrator consultation: world-building tools, narrator export format extensions, narrative flow review features
-- Milestones: M7 (Data Model) → M8 (Regional Research) → M9 (Fantasy UI) → M10 (Add Entry) → M11 (Narrative Tools) → M12 (Integration)
-
-### Proposed New Milestones
-| Milestone | Goal |
-|-----------|------|
-| **M7** | Fantasy data model — schema extensions, TypeScript types, data migration |
-| **M8** | Regional context research — Seattle, Tacoma, US events (~50 entries) |
-| **M9** | Fantasy visual design — colors, markers, toggles, cards |
-| **M10** | Add Fantasy Entry — dialog updates, universe management |
-| **M11** | Narrative flow tools — arc visualization, story review mode |
-| **M12** | Integration testing — full QA, performance, accessibility |
+### Upcoming Milestones
+| Milestone | Goal | Status |
+|-----------|------|--------|
+| **M8** | Regional context research — Seattle, Tacoma, US events (~50 entries) | Ready |
+| **M9** | Fantasy visual design — colors, markers, toggles, cards | Blocked on M8 |
+| **M10** | Add Fantasy Entry — dialog updates, universe management | Blocked on M9 |
+| **M11** | Narrative flow tools — arc visualization, story review mode | Blocked on M10 |
+| **M12** | Integration testing — full QA, performance, accessibility | Blocked on M11 |
 
 ---
 

@@ -1,17 +1,17 @@
 # Team Coordination Board
 
-## Current Sprint: Planning & Research — Fantasy Expansion
+## Current Sprint: M7 Fantasy Data Model — Complete
 
 | Agent | Status | Current Task | Blockers |
 |-------|--------|-------------|----------|
-| Product Manager | Active | Fantasy expansion proposal drafted; milestones M7-M12 defined | None |
-| Engineer | Active | Data integrity fixes complete (46 warnings → 0); schema extensions designed | None |
-| Database Engineer | Reviewing | Reviewing data model changes for indexing and performance | None |
-| Researcher | Queued | Regional research sprint (Seattle, Tacoma, US events) ready to begin | Awaiting M7 approval |
-| Designer | Active | Fantasy color palette and visual design system consultation in progress | None |
-| Tester | Queued | Test plan expansion for fantasy features ready to begin | Awaiting M7 approval |
-| UI/UX | Reviewing | Reviewing narrative flow tools and fantasy mode toggle UX | None |
-| AI Narrator | Active | World-building tools and narrator export format consultation in progress | None |
+| Product Manager | Active | M7 complete; M8 Regional Research sprint ready | None |
+| Engineer | Complete | M7 schema v2, TypeScript types, data loader, AddEntryDialog, eras colors — all implemented | None |
+| Database Engineer | Complete | New indexes (entriesByScope, entriesByType) implemented, cache version bumped | None |
+| Researcher | Queued | Regional research sprint (Seattle, Tacoma, US events) ready to begin | Awaiting M8 start |
+| Designer | Complete | Fantasy color palette, visual distinction system, Design Bible v2 (Sections 9-11) | None |
+| Tester | Complete | Fantasy test coverage: 142 tests (up from 122), 10 files, all green | None |
+| UI/UX | Reviewing | Reviewing fantasy mode toggle and narrative flow UX | None |
+| AI Narrator | Active | World-building tools and narrator export format consultation | None |
 
 ## Decisions Log
 
@@ -38,9 +38,9 @@
 - [ ] Which timeline visualization library to use: D3.js (flexible, complex) vs Vis-timeline (simpler, purpose-built)? — **Engineer to evaluate in M2**
 - [ ] How should the AI narrator export format handle approximate dates (e.g., "~10000 BCE")? — **Engineer + Researcher to define in M2**
 - [ ] Should the map view (P2 feature) use a historical map or modern satellite? — **Designer + Researcher to discuss in M1**
-- [ ] Fantasy entry data model: needs `entry_type: "historical" | "fantasy"`, `universe`, `narrative_arc`, and `historical_anchor` fields — **Engineer to extend TimelineEntry type and schema**
-- [ ] Regional context data sources: where do Seattle/Tacoma/US event entries come from? — **Researcher to scope regional data collection**
-- [ ] Fantasy layer keys: should LayerKey union be extended or should a separate FantasyLayerKey type be created? — **Engineer + Designer to align**
+- [x] Fantasy entry data model: `entry_type`, `scope`, `universe_id`, `narrative` fields added to TimelineEntry; `universe.schema.json` created — **M7 Complete**
+- [x] Fantasy layer keys: separate FANTASY_LAYER_COLORS constant created alongside existing LAYER_COLORS; AddEntryDialog switches palette by entry_type — **M7 Complete**
+- [ ] Regional context data sources: where do Seattle/Tacoma/US event entries come from? — **Researcher to scope regional data collection in M8**
 - [ ] AI Narrator export: should fantasy entries be included in narrator exports, and if so how should they be flagged? — **AI Narrator to evaluate**
 
 ## Completed Items
@@ -102,3 +102,11 @@
 - [x] Fantasy expansion proposal drafted: `docs/fantasy-expansion-proposal.md` with milestones M7-M12 (2026-03-03)
 - [x] Designer consultation complete: fantasy color palette (Amethyst #7B4BAA family), four-signal visual distinction, Design Bible v2 Sections 9-11 (2026-03-03)
 - [x] AI Narrator consultation initiated: world-building tools, narrator export extensions, narrative flow features (2026-03-03)
+- [x] **M7 Fantasy Data Model milestone complete** (2026-03-03)
+  - Schemas updated: timeline-entry v2, person v2, place v2, universe.schema.json (new)
+  - TypeScript types: EntryType, ScopeKey, NarrativeBeat, AnchorRelationship, NarrativeMetadata, Universe
+  - Data loader: applyEntryDefaults/applyPersonDefaults, fantasy validation, entriesByScope/entriesByType indexes
+  - AddEntryDialog: entry type selector, scope dropdown, universe field, fantasy color switching
+  - eras.ts: FANTASY_LAYER_COLORS, FANTASY_COLORS, SCOPE_COLORS, ENTRY_TYPE_COLORS
+  - Test fixtures: fantasy universe, person, entry with narrative; regional entry
+  - Tests: 142 total (up from 122), all green. TypeScript clean.

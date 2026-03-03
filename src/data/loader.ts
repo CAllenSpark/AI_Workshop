@@ -1,8 +1,8 @@
-import type { TimelineEntry, Person, Place, EnvironmentFeature, DataStore, DataWarning } from '../types';
+import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, DataStore, DataWarning } from '../types';
 
 const BASE_PATH = import.meta.env.BASE_URL + 'data/';
 const CACHE_KEY = 'wrc_data_cache';
-const CACHE_VERSION = '2';
+const CACHE_VERSION = '3';
 const CACHE_VERSION_KEY = 'wrc_cache_version';
 
 async function fetchJson<T>(filename: string): Promise<T> {
@@ -30,16 +30,39 @@ export function parseDate(dateStr: string): number {
   return 0;
 }
 
+/** Apply default values for new v2 fields on entries missing them */
+function applyEntryDefaults(entry: TimelineEntry): TimelineEntry {
+  return {
+    ...entry,
+    entry_type: entry.entry_type ?? 'historical',
+    scope: entry.scope ?? 'vashon',
+    people: entry.people ?? [],
+    places: entry.places ?? [],
+    sources: entry.sources ?? [],
+    tags: entry.tags ?? [],
+  };
+}
+
+/** Apply default values for new v2 fields on persons */
+function applyPersonDefaults(person: Person): Person {
+  return {
+    ...person,
+    entry_type: person.entry_type ?? 'historical',
+  };
+}
+
 /** Validate data integrity and return warnings */
 function validateData(
   entries: TimelineEntry[],
   people: Person[],
   places: Place[],
+  universes: Universe[],
 ): DataWarning[] {
   const warnings: DataWarning[] = [];
   const peopleNames = new Set(people.map((p) => p.name));
   const placeNames = new Set(places.map((p) => p.name));
   const entryIds = new Set(entries.map((e) => e.id));
+  const universeIds = new Set(universes.map((u) => u.id));
 
   for (const entry of entries) {
     // Validate required fields
@@ -69,6 +92,25 @@ function validateData(
         warnings.push({ type: 'missing_reference', entityType: 'entry', entityId: entry.id, message: `Entry "${entry.title}" references unknown place: "${name}"` });
       }
     }
+
+    // Validate fantasy entries have a universe_id
+    if (entry.entry_type === 'fantasy' && !entry.universe_id) {
+      warnings.push({ type: 'invalid_fantasy', entityType: 'entry', entityId: entry.id, message: `Fantasy entry "${entry.title}" missing universe_id` });
+    }
+
+    // Validate universe_id references a known universe (if universes exist)
+    if (entry.universe_id && universes.length > 0 && !universeIds.has(entry.universe_id)) {
+      warnings.push({ type: 'missing_reference', entityType: 'entry', entityId: entry.id, message: `Entry "${entry.title}" references unknown universe: "${entry.universe_id}"` });
+    }
+
+    // Validate narrative anchors reference existing entries
+    if (entry.narrative?.anchors) {
+      for (const anchor of entry.narrative.anchors) {
+        if (!entryIds.has(anchor.entry_id)) {
+          warnings.push({ type: 'missing_reference', entityType: 'entry', entityId: entry.id, message: `Entry "${entry.title}" narrative anchor references unknown entry: "${anchor.entry_id}"` });
+        }
+      }
+    }
   }
 
   // Check for orphaned people (not referenced by any entry)
@@ -90,6 +132,13 @@ function validateData(
     }
   }
 
+  // Validate fantasy person universe_id
+  for (const person of people) {
+    if (person.entry_type === 'fantasy' && !person.universe_id) {
+      warnings.push({ type: 'invalid_fantasy', entityType: 'person', entityId: person.id, message: `Fantasy person "${person.name}" missing universe_id` });
+    }
+  }
+
   return warnings;
 }
 
@@ -102,14 +151,29 @@ function buildIndexes(
   const entriesById = new Map<string, TimelineEntry>();
   const parsedDates = new Map<string, number>();
   const entriesByEra = new Map<string, TimelineEntry[]>();
+  const entriesByScope = new Map<string, TimelineEntry[]>();
+  const entriesByType = new Map<string, TimelineEntry[]>();
 
   for (const entry of entries) {
     entriesById.set(entry.id, entry);
     parsedDates.set(entry.id, parseDate(entry.date_start));
 
+    // Index by era
     const eraList = entriesByEra.get(entry.era);
     if (eraList) eraList.push(entry);
     else entriesByEra.set(entry.era, [entry]);
+
+    // Index by scope
+    const scope = entry.scope ?? 'vashon';
+    const scopeList = entriesByScope.get(scope);
+    if (scopeList) scopeList.push(entry);
+    else entriesByScope.set(scope, [entry]);
+
+    // Index by entry_type
+    const type = entry.entry_type ?? 'historical';
+    const typeList = entriesByType.get(type);
+    if (typeList) typeList.push(entry);
+    else entriesByType.set(type, [entry]);
   }
 
   const peopleById = new Map<string, Person>();
@@ -126,11 +190,11 @@ function buildIndexes(
     placesByName.set(p.name, p);
   }
 
-  return { entriesById, peopleById, placesById, peopleByName, placesByName, parsedDates, entriesByEra };
+  return { entriesById, peopleById, placesById, peopleByName, placesByName, parsedDates, entriesByEra, entriesByScope, entriesByType };
 }
 
 /** Try to load data from localStorage cache */
-function loadFromCache(): { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[] } | null {
+function loadFromCache(): { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[] } | null {
   try {
     const version = localStorage.getItem(CACHE_VERSION_KEY);
     if (version !== CACHE_VERSION) return null;
@@ -145,7 +209,7 @@ function loadFromCache(): { entries: TimelineEntry[]; people: Person[]; places: 
 }
 
 /** Save data to localStorage cache */
-function saveToCache(data: { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[] }): void {
+function saveToCache(data: { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[] }): void {
   try {
     localStorage.setItem(CACHE_VERSION_KEY, CACHE_VERSION);
     localStorage.setItem(CACHE_KEY, JSON.stringify(data));
@@ -162,12 +226,14 @@ export async function loadData(): Promise<DataStore> {
   let people: Person[];
   let places: Place[];
   let environment: EnvironmentFeature[];
+  let universes: Universe[];
 
   if (cached) {
     entries = cached.entries;
     people = cached.people;
     places = cached.places;
     environment = cached.environment;
+    universes = cached.universes ?? [];
 
     // Background refresh: fetch fresh data and update cache
     fetchFreshData().then((fresh) => {
@@ -180,8 +246,13 @@ export async function loadData(): Promise<DataStore> {
     people = fresh.people;
     places = fresh.places;
     environment = fresh.environment;
+    universes = fresh.universes;
     saveToCache(fresh);
   }
+
+  // Apply v2 defaults for backward compatibility
+  entries = entries.map(applyEntryDefaults);
+  people = people.map(applyPersonDefaults);
 
   // Sort entries by pre-computed date
   entries.sort((a, b) => parseDate(a.date_start) - parseDate(b.date_start));
@@ -190,7 +261,7 @@ export async function loadData(): Promise<DataStore> {
   const indexes = buildIndexes(entries, people, places);
 
   // Validate data integrity
-  const warnings = validateData(entries, people, places);
+  const warnings = validateData(entries, people, places, universes);
   if (warnings.length > 0) {
     console.warn(`[DataStore] ${warnings.length} data validation warnings:`);
     for (const w of warnings) {
@@ -198,11 +269,11 @@ export async function loadData(): Promise<DataStore> {
     }
   }
 
-  return { entries, people, places, environment, warnings, ...indexes };
+  return { entries, people, places, environment, universes, warnings, ...indexes };
 }
 
 /** Fetch all data files from disk */
-async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[] } | null> {
+async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[] } | null> {
   try {
     const [timelineData, peopleData, placesData, envData] = await Promise.all([
       fetchJson<{ entries: TimelineEntry[] }>('timeline.json'),
@@ -211,11 +282,21 @@ async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Per
       fetchJson<{ environment_features: EnvironmentFeature[] }>('environment.json'),
     ]);
 
+    // Try loading universes (may not exist yet)
+    let universesData: Universe[] = [];
+    try {
+      const uData = await fetchJson<{ universes: Universe[] }>('universes.json');
+      universesData = uData.universes ?? [];
+    } catch {
+      // universes.json may not exist yet — that's fine
+    }
+
     return {
       entries: timelineData.entries,
       people: peopleData.people,
       places: placesData.places,
       environment: envData.environment_features,
+      universes: universesData,
     };
   } catch {
     return null;
@@ -224,22 +305,35 @@ async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Per
 
 /** Add a new entry to the data store (in-memory only for prototype) */
 export function addEntry(store: DataStore, entry: TimelineEntry): DataStore {
-  const entries = [...store.entries, entry].sort(
+  const withDefaults = applyEntryDefaults(entry);
+  const entries = [...store.entries, withDefaults].sort(
     (a, b) => parseDate(a.date_start) - parseDate(b.date_start)
   );
 
   const entriesById = new Map(store.entriesById);
-  entriesById.set(entry.id, entry);
+  entriesById.set(withDefaults.id, withDefaults);
 
   const parsedDates = new Map(store.parsedDates);
-  parsedDates.set(entry.id, parseDate(entry.date_start));
+  parsedDates.set(withDefaults.id, parseDate(withDefaults.date_start));
 
   const entriesByEra = new Map(store.entriesByEra);
-  const eraList = entriesByEra.get(entry.era);
-  if (eraList) entriesByEra.set(entry.era, [...eraList, entry]);
-  else entriesByEra.set(entry.era, [entry]);
+  const eraList = entriesByEra.get(withDefaults.era);
+  if (eraList) entriesByEra.set(withDefaults.era, [...eraList, withDefaults]);
+  else entriesByEra.set(withDefaults.era, [withDefaults]);
 
-  return { ...store, entries, entriesById, parsedDates, entriesByEra };
+  const entriesByScope = new Map(store.entriesByScope);
+  const scope = withDefaults.scope ?? 'vashon';
+  const scopeList = entriesByScope.get(scope);
+  if (scopeList) entriesByScope.set(scope, [...scopeList, withDefaults]);
+  else entriesByScope.set(scope, [withDefaults]);
+
+  const entriesByType = new Map(store.entriesByType);
+  const type = withDefaults.entry_type ?? 'historical';
+  const typeList = entriesByType.get(type);
+  if (typeList) entriesByType.set(type, [...typeList, withDefaults]);
+  else entriesByType.set(type, [withDefaults]);
+
+  return { ...store, entries, entriesById, parsedDates, entriesByEra, entriesByScope, entriesByType };
 }
 
 /** Remove an entry from the data store (in-memory only) */
@@ -259,5 +353,15 @@ export function removeEntry(store: DataStore, entryId: string): DataStore {
   const eraList = entriesByEra.get(entry.era);
   if (eraList) entriesByEra.set(entry.era, eraList.filter((e) => e.id !== entryId));
 
-  return { ...store, entries, entriesById, parsedDates, entriesByEra };
+  const entriesByScope = new Map(store.entriesByScope);
+  const scope = entry.scope ?? 'vashon';
+  const scopeList = entriesByScope.get(scope);
+  if (scopeList) entriesByScope.set(scope, scopeList.filter((e) => e.id !== entryId));
+
+  const entriesByType = new Map(store.entriesByType);
+  const type = entry.entry_type ?? 'historical';
+  const typeList = entriesByType.get(type);
+  if (typeList) entriesByType.set(type, typeList.filter((e) => e.id !== entryId));
+
+  return { ...store, entries, entriesById, parsedDates, entriesByEra, entriesByScope, entriesByType };
 }

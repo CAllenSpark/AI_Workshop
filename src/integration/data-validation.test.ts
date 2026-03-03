@@ -3,7 +3,7 @@
  * Covers: DV-004 (date ordering), DV-005 (orphaned refs), DV-007 (required fields), DV-008 (unique IDs)
  */
 import { describe, it, expect } from 'vitest';
-import { buildTestStore, TEST_ENTRIES, TEST_PEOPLE, TEST_PLACES } from '../__fixtures__/test-data';
+import { buildTestStore, TEST_ENTRIES, TEST_PEOPLE, TEST_PLACES, TEST_UNIVERSES } from '../__fixtures__/test-data';
 import { parseDate } from '../data/loader';
 
 describe('Data Validation', () => {
@@ -133,6 +133,111 @@ describe('Data Validation', () => {
       for (const layer of entry.layers) {
         expect(validLayers.has(layer)).toBe(true);
       }
+    }
+  });
+});
+
+describe('Fantasy Data Validation', () => {
+  const store = buildTestStore();
+  const universeIds = new Set(TEST_UNIVERSES.map((u) => u.id));
+
+  it('every entry has a valid entry_type', () => {
+    const validTypes = new Set(['historical', 'fantasy', 'speculative']);
+    for (const entry of TEST_ENTRIES) {
+      const type = entry.entry_type ?? 'historical';
+      expect(validTypes.has(type)).toBe(true);
+    }
+  });
+
+  it('fantasy entries have a universe_id', () => {
+    const fantasyEntries = TEST_ENTRIES.filter((e) => e.entry_type === 'fantasy');
+    expect(fantasyEntries.length).toBeGreaterThan(0);
+    for (const entry of fantasyEntries) {
+      expect(entry.universe_id).toBeTruthy();
+    }
+  });
+
+  it('fantasy entry universe_id references a known universe', () => {
+    const fantasyEntries = TEST_ENTRIES.filter((e) => e.entry_type === 'fantasy');
+    for (const entry of fantasyEntries) {
+      expect(universeIds.has(entry.universe_id!)).toBe(true);
+    }
+  });
+
+  it('narrative anchors reference existing entry IDs', () => {
+    const entryIds = new Set(TEST_ENTRIES.map((e) => e.id));
+    const entriesWithAnchors = TEST_ENTRIES.filter((e) => e.narrative?.anchors);
+    expect(entriesWithAnchors.length).toBeGreaterThan(0);
+    for (const entry of entriesWithAnchors) {
+      for (const anchor of entry.narrative!.anchors!) {
+        expect(entryIds.has(anchor.entry_id)).toBe(true);
+      }
+    }
+  });
+
+  it('narrative beats are valid values', () => {
+    const validBeats = new Set([
+      'setup', 'inciting-incident', 'rising-action', 'midpoint',
+      'climax', 'falling-action', 'resolution', 'epilogue', 'foreshadowing',
+    ]);
+    const entriesWithBeats = TEST_ENTRIES.filter((e) => e.narrative?.beat);
+    expect(entriesWithBeats.length).toBeGreaterThan(0);
+    for (const entry of entriesWithBeats) {
+      expect(validBeats.has(entry.narrative!.beat!)).toBe(true);
+    }
+  });
+
+  it('every entry has a valid scope', () => {
+    const validScopes = new Set(['vashon', 'seattle', 'tacoma', 'national']);
+    for (const entry of TEST_ENTRIES) {
+      const scope = entry.scope ?? 'vashon';
+      expect(validScopes.has(scope)).toBe(true);
+    }
+  });
+
+  it('fantasy persons have a universe_id', () => {
+    const fantasyPeople = TEST_PEOPLE.filter((p) => p.entry_type === 'fantasy');
+    expect(fantasyPeople.length).toBeGreaterThan(0);
+    for (const person of fantasyPeople) {
+      expect(person.universe_id).toBeTruthy();
+    }
+  });
+
+  it('fantasy person universe_id references a known universe', () => {
+    const fantasyPeople = TEST_PEOPLE.filter((p) => p.entry_type === 'fantasy');
+    for (const person of fantasyPeople) {
+      expect(universeIds.has(person.universe_id!)).toBe(true);
+    }
+  });
+
+  it('entriesByScope index groups entries correctly', () => {
+    const vashonEntries = store.entriesByScope.get('vashon');
+    const seattleEntries = store.entriesByScope.get('seattle');
+    expect(vashonEntries).toBeDefined();
+    expect(seattleEntries).toBeDefined();
+    expect(vashonEntries!.length).toBeGreaterThan(0);
+    expect(seattleEntries!.length).toBeGreaterThan(0);
+    // All vashon entries have scope vashon (or default)
+    for (const e of vashonEntries!) {
+      expect(e.scope ?? 'vashon').toBe('vashon');
+    }
+    for (const e of seattleEntries!) {
+      expect(e.scope).toBe('seattle');
+    }
+  });
+
+  it('entriesByType index groups entries correctly', () => {
+    const historicalEntries = store.entriesByType.get('historical');
+    const fantasyEntries = store.entriesByType.get('fantasy');
+    expect(historicalEntries).toBeDefined();
+    expect(fantasyEntries).toBeDefined();
+    expect(historicalEntries!.length).toBeGreaterThan(0);
+    expect(fantasyEntries!.length).toBeGreaterThan(0);
+    for (const e of historicalEntries!) {
+      expect(e.entry_type ?? 'historical').toBe('historical');
+    }
+    for (const e of fantasyEntries!) {
+      expect(e.entry_type).toBe('fantasy');
     }
   });
 });
