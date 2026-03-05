@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
-import type { TimelineEntry, LayerKey, EraKey, ZoomLevel, EntryType, ScopeKey, Project, DataStore } from './types';
+import type { TimelineEntry, LayerKey, EraKey, ZoomLevel, EntryType, ScopeKey, Project, DataStore, Universe } from './types';
 import { useTimelineData } from './hooks/useTimelineData';
 import { useSearch } from './hooks/useSearch';
 import { addEntry, buildDataStore } from './data/loader';
@@ -111,6 +111,16 @@ export default function App() {
     return [min, max];
   }, [data]);
 
+  // Universe lookup map for EntryCard
+  const universesById = useMemo(() => {
+    const map = new Map<string, Universe>();
+    if (!data) return map;
+    for (const u of data.universes ?? []) {
+      map.set(u.id, u);
+    }
+    return map;
+  }, [data]);
+
   const [dateRange, setDateRange] = useState<[number, number]>(fullDateRange);
 
   // Sync dateRange with fullDateRange when data first loads
@@ -216,15 +226,18 @@ export default function App() {
     setData(addEntry(data, entry));
   }, [data, setData]);
 
-  // Entry type counts for the view mode toggle
-  const entryTypeCounts = useMemo<Record<EntryType | 'all', number>>(() => {
-    if (!data) return { historical: 0, fantasy: 0, speculative: 0, all: 0 };
-    const counts = { historical: 0, fantasy: 0, speculative: 0, all: data.entries.length };
-    for (const entry of data.entries) {
-      const t = entry.entry_type ?? 'historical';
-      if (t in counts) counts[t as EntryType]++;
-    }
-    return counts;
+  // Entry type counts for the view mode toggle (uses pre-built entriesByType index)
+  const entryTypeCounts = useMemo<Record<EntryType | 'creative' | 'all', number>>(() => {
+    if (!data) return { historical: 0, fantasy: 0, speculative: 0, creative: 0, all: 0 };
+    const fantasyCount = data.entriesByType.get('fantasy')?.length ?? 0;
+    const specCount = data.entriesByType.get('speculative')?.length ?? 0;
+    return {
+      historical: data.entriesByType.get('historical')?.length ?? 0,
+      fantasy: fantasyCount,
+      speculative: specCount,
+      creative: fantasyCount + specCount,
+      all: data.entries.length,
+    };
   }, [data]);
 
   // Combined AND filter using pre-computed dates
@@ -448,6 +461,7 @@ export default function App() {
                       entry={entry}
                       isSelected={entry.id === selectedId}
                       onClick={() => handleEntrySelect(entry.id)}
+                      universesById={universesById}
                     />
                   ))}
                   {hasMore && (

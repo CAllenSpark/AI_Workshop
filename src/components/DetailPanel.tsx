@@ -130,6 +130,30 @@ export default function DetailPanel({ entry, data, onClose, onEntrySelect }: Pro
           </div>
         )}
 
+        {/* Universe info (creative entries) */}
+        {isCreative && entry.universe_id && (() => {
+          const universe = data.universes?.find((u) => u.id === entry.universe_id);
+          return universe ? (
+            <div className="panel-section panel-universe">
+              <h4 style={{ color: 'var(--creative-primary)' }}>Universe</h4>
+              <div className="panel-universe-header">
+                <span className="panel-universe-name">{universe.name}</span>
+                {universe.genre && (
+                  <span className="panel-universe-genre">{universe.genre}</span>
+                )}
+              </div>
+              <p className="panel-universe-desc">{universe.description}</p>
+              {universe.themes && universe.themes.length > 0 && (
+                <div className="panel-universe-themes">
+                  {universe.themes.map((theme) => (
+                    <span key={theme} className="panel-universe-theme">{theme}</span>
+                  ))}
+                </div>
+              )}
+            </div>
+          ) : null;
+        })()}
+
         {/* Narrative metadata (creative entries) */}
         {entry.narrative && (entry.narrative.arc || entry.narrative.beat || anchors.length > 0) && (
           <div className="panel-section panel-narrative">

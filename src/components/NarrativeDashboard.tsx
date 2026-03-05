@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import type { DataStore, TimelineEntry, NarrativeBeat, Book } from '../types';
+import type { DataStore, TimelineEntry, NarrativeBeat, Book, Universe, WorldRule, Lore, NarrativeProp } from '../types';
 import { ENTRY_TYPE_COLORS } from '../data/eras';
 import type { ViewMode } from './ViewModeToggle';
 import './NarrativeDashboard.css';
@@ -17,6 +17,74 @@ interface ArcSummary {
   beats: Map<NarrativeBeat, TimelineEntry[]>;
   anchorCount: number;
 }
+
+/** Collapsible section wrapper for dashboard sections */
+function DashboardSection({ title, subtitle, count, defaultOpen = true, children }: {
+  title: string;
+  subtitle?: string;
+  count?: number;
+  defaultOpen?: boolean;
+  children: React.ReactNode;
+}) {
+  const [open, setOpen] = useState(defaultOpen);
+  return (
+    <div className="narrative-section">
+      <button
+        className="narrative-section-toggle"
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+      >
+        <h4>
+          {title}
+          {count !== undefined && <span className="section-count">{count}</span>}
+        </h4>
+        {subtitle && <span className="section-desc">{subtitle}</span>}
+        <span className={`toggle-chevron ${open ? 'open' : ''}`} aria-hidden="true">&#9662;</span>
+      </button>
+      {open && <div className="narrative-section-content">{children}</div>}
+    </div>
+  );
+}
+
+/** Category labels for world rules */
+const RULE_CATEGORY_LABELS: Record<string, string> = {
+  supernatural: 'Supernatural',
+  physics: 'Physics',
+  social: 'Social',
+  narrative: 'Narrative',
+  setting: 'Setting',
+  magic: 'Magic',
+  technology: 'Technology',
+  other: 'Other',
+};
+
+/** Lore type labels */
+const LORE_TYPE_LABELS: Record<string, string> = {
+  folk_tale: 'Folk Tale',
+  oral_tradition: 'Oral Tradition',
+  legend: 'Legend',
+  myth: 'Myth',
+  superstition: 'Superstition',
+  song: 'Song',
+  proverb: 'Proverb',
+  ritual: 'Ritual',
+  custom: 'Custom',
+  prophecy: 'Prophecy',
+};
+
+/** Prop function labels */
+const PROP_FUNCTION_LABELS: Record<string, string> = {
+  macguffin: 'MacGuffin',
+  key: 'Key',
+  clue: 'Clue',
+  weapon: 'Weapon',
+  symbol: 'Symbol',
+  catalyst: 'Catalyst',
+  heirloom: 'Heirloom',
+  evidence: 'Evidence',
+  transport: 'Transport',
+  other: 'Other',
+};
 
 const BEAT_ORDER: NarrativeBeat[] = [
   'setup', 'foreshadowing', 'inciting-incident', 'rising-action',
@@ -37,18 +105,22 @@ const BEAT_LABELS: Record<NarrativeBeat, string> = {
 
 export default function NarrativeDashboard({ data, viewMode: _viewMode, books, onEntrySelect }: Props) {
   const [activeBook, setActiveBook] = useState<string | null>(null);
+  const [activeUniverse, setActiveUniverse] = useState<string | null>(null);
 
-  // Gather all creative entries, optionally filtered by book
+  // Gather all creative entries, optionally filtered by book and universe
   const creativeEntries = useMemo(() => {
     return data.entries.filter((e) => {
       const t = e.entry_type ?? 'historical';
       if (t !== 'fantasy' && t !== 'speculative') return false;
       if (activeBook !== null) {
-        return (e.narrative?.book ?? null) === activeBook;
+        if ((e.narrative?.book ?? null) !== activeBook) return false;
+      }
+      if (activeUniverse !== null) {
+        if ((e.universe_id ?? null) !== activeUniverse) return false;
       }
       return true;
     });
-  }, [data.entries, activeBook]);
+  }, [data.entries, activeBook, activeUniverse]);
 
   // Build arc summaries
   const arcs = useMemo<ArcSummary[]>(() => {
@@ -84,9 +156,55 @@ export default function NarrativeDashboard({ data, viewMode: _viewMode, books, o
     const historicalCount = data.entries.filter((e) => (e.entry_type ?? 'historical') === 'historical').length;
     const totalAnchors = creativeEntries.reduce((sum, e) => sum + (e.narrative?.anchors?.length ?? 0), 0);
     const universeCount = data.universes?.length ?? 0;
+    const worldRuleCount = data.worldRules?.length ?? 0;
+    const loreCount = data.lore?.length ?? 0;
+    const propCount = data.props?.length ?? 0;
 
-    return { fantasyCount, specCount, historicalCount, totalAnchors, universeCount, totalCreative: creativeEntries.length };
+    return { fantasyCount, specCount, historicalCount, totalAnchors, universeCount, worldRuleCount, loreCount, propCount, totalCreative: creativeEntries.length };
   }, [data, creativeEntries]);
+
+  // Resolve universe lookup
+  const universesById = useMemo(() => {
+    const map = new Map<string, Universe>();
+    for (const u of data.universes ?? []) {
+      map.set(u.id, u);
+    }
+    return map;
+  }, [data.universes]);
+
+  // World rules grouped by category
+  const worldRulesByCategory = useMemo(() => {
+    const map = new Map<string, WorldRule[]>();
+    for (const rule of data.worldRules ?? []) {
+      if (activeUniverse !== null && rule.universe_id !== activeUniverse) continue;
+      const cat = rule.category ?? 'other';
+      const list = map.get(cat) ?? [];
+      list.push(rule);
+      map.set(cat, list);
+    }
+    return map;
+  }, [data.worldRules, activeUniverse]);
+
+  // Lore grouped by type
+  const loreByType = useMemo(() => {
+    const map = new Map<string, Lore[]>();
+    for (const item of data.lore ?? []) {
+      if (activeUniverse !== null && item.universe_id !== activeUniverse) continue;
+      const t = item.type ?? 'legend';
+      const list = map.get(t) ?? [];
+      list.push(item);
+      map.set(t, list);
+    }
+    return map;
+  }, [data.lore, activeUniverse]);
+
+  // Narrative props
+  const filteredProps = useMemo(() => {
+    return (data.props ?? []).filter((p) => {
+      if (activeUniverse !== null && p.universe_id !== activeUniverse) return false;
+      return true;
+    });
+  }, [data.props, activeUniverse]);
 
   // Entries with anchors (connections to historical entries)
   const anchoredEntries = useMemo(() => {
@@ -107,6 +225,47 @@ export default function NarrativeDashboard({ data, viewMode: _viewMode, books, o
         <h3>Narrative Dashboard</h3>
         <span className="narrative-subtitle">Story structure overview for creative entries</span>
       </div>
+
+      {/* Universe cards — always visible when universes exist */}
+      {(data.universes ?? []).length > 0 && (
+        <DashboardSection title="Universes" count={data.universes.length} defaultOpen={true}>
+          <div className="universe-cards">
+            {data.universes.map((universe) => {
+              const isActive = activeUniverse === universe.id;
+              const entryCount = data.entries.filter((e) => e.universe_id === universe.id).length;
+              return (
+                <button
+                  key={universe.id}
+                  className={`universe-card ${isActive ? 'active' : ''}`}
+                  onClick={() => setActiveUniverse(isActive ? null : universe.id)}
+                  aria-pressed={isActive}
+                >
+                  <div className="universe-card-header">
+                    <span className="universe-name">{universe.name}</span>
+                    {universe.genre && (
+                      <span className="universe-genre">{universe.genre}</span>
+                    )}
+                  </div>
+                  <p className="universe-desc">{universe.description}</p>
+                  {universe.themes && universe.themes.length > 0 && (
+                    <div className="universe-themes">
+                      {universe.themes.map((theme) => (
+                        <span key={theme} className="universe-theme">{theme}</span>
+                      ))}
+                    </div>
+                  )}
+                  <div className="universe-meta">
+                    <span className="universe-entry-count">{entryCount} entries</span>
+                    {universe.created_by && (
+                      <span className="universe-creator">by {universe.created_by}</span>
+                    )}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </DashboardSection>
+      )}
 
       {/* Stats cards */}
       <div className="narrative-stats">
@@ -130,6 +289,24 @@ export default function NarrativeDashboard({ data, viewMode: _viewMode, books, o
           <span className="stat-number">{arcs.length}</span>
           <span className="stat-label">Arcs</span>
         </div>
+        {stats.worldRuleCount > 0 && (
+          <div className="stat-card creative">
+            <span className="stat-number">{stats.worldRuleCount}</span>
+            <span className="stat-label">World Rules</span>
+          </div>
+        )}
+        {stats.loreCount > 0 && (
+          <div className="stat-card creative">
+            <span className="stat-number">{stats.loreCount}</span>
+            <span className="stat-label">Lore</span>
+          </div>
+        )}
+        {stats.propCount > 0 && (
+          <div className="stat-card creative">
+            <span className="stat-number">{stats.propCount}</span>
+            <span className="stat-label">Props</span>
+          </div>
+        )}
       </div>
 
       {/* Book/Season filter (when books exist) */}
@@ -167,14 +344,13 @@ export default function NarrativeDashboard({ data, viewMode: _viewMode, books, o
       ) : (
         <>
           {/* Arc breakdown */}
-          <div className="narrative-section">
-            <h4>Story Arcs</h4>
+          <DashboardSection title="Story Arcs" count={arcs.length} defaultOpen={true}>
             <div className="arc-list">
               {arcs.map((arc) => (
                 <div key={arc.name} className="arc-card">
                   <div className="arc-header">
                     <span className="arc-name">{arc.name}</span>
-                    <span className="arc-count">{arc.entries.length} entries</span>
+                    <span className="arc-count">{arc.entries.length} entries | {arc.anchorCount} anchors</span>
                   </div>
                   {/* Beat progress bar */}
                   <div className="beat-track">
@@ -194,44 +370,48 @@ export default function NarrativeDashboard({ data, viewMode: _viewMode, books, o
                   </div>
                   {/* Arc entries */}
                   <div className="arc-entries">
-                    {arc.entries.map((entry) => (
-                      <button
-                        key={entry.id}
-                        className="arc-entry-link"
-                        onClick={() => onEntrySelect(entry.id)}
-                        title={entry.description}
-                      >
-                        <span
-                          className="arc-entry-type"
-                          style={{ backgroundColor: ENTRY_TYPE_COLORS[entry.entry_type ?? 'historical']?.color }}
-                        />
-                        <span className="arc-entry-title">{entry.title}</span>
-                        {entry.narrative?.book && books.length > 0 && (() => {
-                          const book = books.find((b) => b.id === entry.narrative?.book);
-                          return book ? (
-                            <span className="arc-entry-book" style={{ color: book.color, backgroundColor: book.colorLight }}>
-                              {book.name}
+                    {arc.entries.map((entry) => {
+                      const universe = entry.universe_id ? universesById.get(entry.universe_id) : undefined;
+                      return (
+                        <button
+                          key={entry.id}
+                          className="arc-entry-link"
+                          onClick={() => onEntrySelect(entry.id)}
+                          title={entry.description}
+                        >
+                          <span
+                            className="arc-entry-type"
+                            style={{ backgroundColor: ENTRY_TYPE_COLORS[entry.entry_type ?? 'historical']?.color }}
+                          />
+                          <span className="arc-entry-title">{entry.title}</span>
+                          {universe && (
+                            <span className="arc-entry-universe">{universe.name}</span>
+                          )}
+                          {entry.narrative?.book && books.length > 0 && (() => {
+                            const book = books.find((b) => b.id === entry.narrative?.book);
+                            return book ? (
+                              <span className="arc-entry-book" style={{ color: book.color, backgroundColor: book.colorLight }}>
+                                {book.name}
+                              </span>
+                            ) : null;
+                          })()}
+                          {entry.narrative?.beat && (
+                            <span className="arc-entry-beat">
+                              {BEAT_LABELS[entry.narrative.beat]}
                             </span>
-                          ) : null;
-                        })()}
-                        {entry.narrative?.beat && (
-                          <span className="arc-entry-beat">
-                            {BEAT_LABELS[entry.narrative.beat]}
-                          </span>
-                        )}
-                      </button>
-                    ))}
+                          )}
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
               ))}
             </div>
-          </div>
+          </DashboardSection>
 
           {/* Historical anchors */}
           {anchoredEntries.length > 0 && (
-            <div className="narrative-section">
-              <h4>Historical Connections</h4>
-              <p className="section-desc">Creative entries anchored to real historical events</p>
+            <DashboardSection title="Historical Connections" subtitle="Creative entries anchored to real historical events" count={anchoredEntries.length} defaultOpen={true}>
               <div className="anchor-list">
                 {anchoredEntries.map(({ entry, anchors }) => (
                   <div key={entry.id} className="anchor-card">
@@ -261,7 +441,111 @@ export default function NarrativeDashboard({ data, viewMode: _viewMode, books, o
                   </div>
                 ))}
               </div>
-            </div>
+            </DashboardSection>
+          )}
+
+          {/* World Rules */}
+          {worldRulesByCategory.size > 0 && (
+            <DashboardSection title="World Rules" subtitle="Governing laws of the fiction" count={Array.from(worldRulesByCategory.values()).reduce((s, a) => s + a.length, 0)} defaultOpen={false}>
+              <div className="world-rules-list">
+                {Array.from(worldRulesByCategory.entries()).map(([category, rules]) => (
+                  <div key={category} className="world-rule-group">
+                    <span className="world-rule-category">{RULE_CATEGORY_LABELS[category] ?? category}</span>
+                    {rules.map((rule) => (
+                      <div key={rule.id} className="world-rule-card">
+                        <span className="world-rule-name">{rule.name}</span>
+                        <p className="world-rule-desc">{rule.description}</p>
+                        {rule.implications.length > 0 && (
+                          <ul className="world-rule-implications">
+                            {rule.implications.map((imp, i) => (
+                              <li key={i}>{imp}</li>
+                            ))}
+                          </ul>
+                        )}
+                        {rule.exceptions && rule.exceptions.length > 0 && (
+                          <div className="world-rule-exceptions">
+                            <span className="world-rule-exceptions-label">Exceptions:</span>
+                            {rule.exceptions.map((exc, i) => (
+                              <span key={i} className="world-rule-exception">{exc}</span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </DashboardSection>
+          )}
+
+          {/* Lore */}
+          {loreByType.size > 0 && (
+            <DashboardSection title="Lore & Traditions" subtitle="Folk tales, myths, customs, and oral traditions" count={Array.from(loreByType.values()).reduce((s, a) => s + a.length, 0)} defaultOpen={false}>
+              <div className="lore-list">
+                {Array.from(loreByType.entries()).map(([type, items]) => (
+                  <div key={type} className="lore-group">
+                    <span className="lore-type-label">{LORE_TYPE_LABELS[type] ?? type}</span>
+                    {items.map((item) => (
+                      <div key={item.id} className="lore-card">
+                        <span className="lore-name">{item.name}</span>
+                        <p className="lore-desc">{item.description}</p>
+                        {item.origin_culture && (
+                          <span className="lore-origin">Origin: {item.origin_culture}{item.origin_era ? ` (${item.origin_era})` : ''}</span>
+                        )}
+                        {item.themes && item.themes.length > 0 && (
+                          <div className="lore-themes">
+                            {item.themes.map((theme) => (
+                              <span key={theme} className="lore-theme-tag">{theme}</span>
+                            ))}
+                          </div>
+                        )}
+                        {item.narrative_use && (
+                          <p className="lore-narrative-use"><strong>Narrative use:</strong> {item.narrative_use}</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </DashboardSection>
+          )}
+
+          {/* Narrative Props */}
+          {filteredProps.length > 0 && (
+            <DashboardSection title="Narrative Props" subtitle="Key items and devices that drive the story" count={filteredProps.length} defaultOpen={false}>
+              <div className="props-list">
+                {filteredProps.map((prop) => (
+                  <div key={prop.id} className="prop-card">
+                    <div className="prop-header">
+                      <span className="prop-name">{prop.name}</span>
+                      <span className="prop-function">{PROP_FUNCTION_LABELS[prop.narrative_function] ?? prop.narrative_function}</span>
+                    </div>
+                    <p className="prop-desc">{prop.description}</p>
+                    <p className="prop-significance">{prop.plot_significance}</p>
+                    {prop.arc && (
+                      <span className="prop-arc">Arc: {prop.arc}</span>
+                    )}
+                    {prop.appears_in.length > 0 && (
+                      <div className="prop-appearances">
+                        <span className="prop-appearances-label">Appears in:</span>
+                        {prop.appears_in.map((eid) => {
+                          const target = data.entriesById.get(eid);
+                          return target ? (
+                            <button
+                              key={eid}
+                              className="prop-entry-link"
+                              onClick={() => onEntrySelect(eid)}
+                            >
+                              {target.title}
+                            </button>
+                          ) : null;
+                        })}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </DashboardSection>
           )}
         </>
       )}

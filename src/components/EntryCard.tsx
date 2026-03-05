@@ -1,4 +1,4 @@
-import type { TimelineEntry, EntryType } from '../types';
+import type { TimelineEntry, EntryType, Universe } from '../types';
 import { LAYER_COLORS, FANTASY_LAYER_COLORS, ENTRY_TYPE_COLORS } from '../data/eras';
 import './EntryCard.css';
 
@@ -6,6 +6,8 @@ interface Props {
   entry: TimelineEntry;
   isSelected: boolean;
   onClick: () => void;
+  /** Optional universe lookup map for showing universe name on creative entries */
+  universesById?: Map<string, Universe>;
 }
 
 /** Get the appropriate layer color set based on entry type */
@@ -15,7 +17,7 @@ function getLayerColors(entryType: EntryType | undefined) {
     : LAYER_COLORS;
 }
 
-export default function EntryCard({ entry, isSelected, onClick }: Props) {
+export default function EntryCard({ entry, isSelected, onClick, universesById }: Props) {
   const entryType = entry.entry_type ?? 'historical';
   const isCreative = entryType === 'fantasy' || entryType === 'speculative';
   const colorSet = getLayerColors(entry.entry_type);
@@ -69,6 +71,18 @@ export default function EntryCard({ entry, isSelected, onClick }: Props) {
       <h4 className="entry-title">{entry.title}</h4>
       <p className="entry-desc">{entry.description}</p>
       <div className="entry-meta">
+        {isCreative && entry.universe_id && universesById && (() => {
+          const universe = universesById.get(entry.universe_id);
+          return universe ? (
+            <span className="meta-badge universe">{universe.name}</span>
+          ) : null;
+        })()}
+        {isCreative && entry.narrative?.arc && (
+          <span className="meta-badge arc">{entry.narrative.arc}</span>
+        )}
+        {isCreative && entry.narrative?.beat && (
+          <span className="meta-badge beat">{entry.narrative.beat.replace(/-/g, ' ')}</span>
+        )}
         {entry.people.length > 0 && (
           <span className="meta-badge people">
             {entry.people.length} {entry.people.length === 1 ? 'person' : 'people'}

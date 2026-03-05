@@ -7,7 +7,7 @@ export type ViewMode = 'historical' | 'creative' | 'all';
 interface Props {
   viewMode: ViewMode;
   onChange: (mode: ViewMode) => void;
-  counts: Record<EntryType | 'all', number>;
+  counts: Record<EntryType | 'creative' | 'all', number>;
 }
 
 const MODES: { key: ViewMode; label: string; description: string }[] = [
@@ -41,7 +41,7 @@ export default function ViewModeToggle({ viewMode, onChange, counts }: Props) {
             } as React.CSSProperties}
           >
             <span className="view-mode-label">{label}</span>
-            <span className="view-mode-count">{counts[key === 'all' ? 'all' : key as EntryType] ?? 0}</span>
+            <span className="view-mode-count">{counts[key] ?? 0}</span>
           </button>
         );
       })}

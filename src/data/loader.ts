@@ -2,7 +2,7 @@ import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, Narrat
 
 const BASE_PATH = import.meta.env.BASE_URL + 'data/';
 const CACHE_KEY = 'wrc_data_cache';
-const CACHE_VERSION = '5';
+const CACHE_VERSION = '6';
 const CACHE_VERSION_KEY = 'wrc_cache_version';
 
 async function fetchJson<T>(filename: string): Promise<T> {
@@ -280,67 +280,97 @@ function saveToCache(data: { entries: TimelineEntry[]; people: Person[]; places:
   }
 }
 
-/** Load all data files and build the in-memory store with indexes */
-export async function loadData(): Promise<DataStore> {
-  // Try cache first for faster startup
-  const cached = loadFromCache();
-  let entries: TimelineEntry[];
-  let people: Person[];
-  let places: Place[];
-  let environment: EnvironmentFeature[];
-  let universes: Universe[];
-  let props: NarrativeProp[];
-  let lore: Lore[];
-  let worldRules: WorldRule[];
-
-  if (cached) {
-    entries = cached.entries;
-    people = cached.people;
-    places = cached.places;
-    environment = cached.environment;
-    universes = cached.universes ?? [];
-    props = cached.props ?? [];
-    lore = cached.lore ?? [];
-    worldRules = cached.worldRules ?? [];
-
-    // Background refresh: fetch fresh data and update cache
-    fetchFreshData().then((fresh) => {
-      if (fresh) saveToCache(fresh);
-    }).catch(() => { /* ignore background refresh failures */ });
-  } else {
-    const fresh = await fetchFreshData();
-    if (!fresh) throw new Error('Failed to load data files');
-    entries = fresh.entries;
-    people = fresh.people;
-    places = fresh.places;
-    environment = fresh.environment;
-    universes = fresh.universes;
-    props = fresh.props;
-    lore = fresh.lore;
-    worldRules = fresh.worldRules;
-    saveToCache(fresh);
-  }
-
-  // Apply v2 defaults for backward compatibility
-  entries = entries.map(applyEntryDefaults);
-  people = people.map(applyPersonDefaults);
-
-  // Sort entries by pre-computed date
+/** Build a DataStore from raw fetched data (shared by loadData and background refresh) */
+function buildStoreFromRaw(raw: {
+  entries: TimelineEntry[];
+  people: Person[];
+  places: Place[];
+  environment: EnvironmentFeature[];
+  universes: Universe[];
+  props: NarrativeProp[];
+  lore: Lore[];
+  worldRules: WorldRule[];
+}): DataStore {
+  let entries = raw.entries.map(applyEntryDefaults);
+  const people = raw.people.map(applyPersonDefaults);
   entries.sort((a, b) => parseDate(a.date_start) - parseDate(b.date_start));
-
-  // Build all indexes
-  const indexes = buildIndexes(entries, people, places, lore, worldRules);
-
-  // Validate data integrity
-  const warnings = validateData(entries, people, places, universes, lore, worldRules);
+  const indexes = buildIndexes(entries, people, raw.places, raw.lore, raw.worldRules);
+  const warnings = validateData(entries, people, raw.places, raw.universes, raw.lore, raw.worldRules);
   if (warnings.length > 0) {
     console.warn(`[DataStore] ${warnings.length} data validation warnings:`);
     for (const w of warnings) {
       console.warn(`  [${w.type}] ${w.message}`);
     }
   }
+  return {
+    entries,
+    people,
+    places: raw.places,
+    environment: raw.environment,
+    universes: raw.universes,
+    props: raw.props,
+    lore: raw.lore,
+    worldRules: raw.worldRules,
+    warnings,
+    ...indexes,
+  };
+}
 
-  return { entries, people, places, environment, universes, props, lore, worldRules, warnings, ...indexes };
+/**
+ * Load all data files and build the in-memory store with indexes.
+ *
+ * When cached data is available, it is returned immediately for fast startup.
+ * A background refresh then fetches fresh data from the server. If the fresh
+ * data differs from the cache (e.g., new entries were added), the onRefresh
+ * callback is invoked with the updated DataStore so the UI can re-render.
+ */
+export async function loadData(onRefresh?: (store: DataStore) => void): Promise<DataStore> {
+  // Try cache first for faster startup
+  const cached = loadFromCache();
+
+  if (cached) {
+    const raw = {
+      entries: cached.entries,
+      people: cached.people,
+      places: cached.places,
+      environment: cached.environment,
+      universes: cached.universes ?? [],
+      props: cached.props ?? [],
+      lore: cached.lore ?? [],
+      worldRules: cached.worldRules ?? [],
+    };
+    const store = buildStoreFromRaw(raw);
+
+    // Background refresh: fetch fresh data, update cache, and notify caller if data changed
+    fetchFreshData().then((fresh) => {
+      if (!fresh) return;
+      // Detect if fresh data differs from cache (entry count, IDs, or entry_type changes)
+      const cachedById = new Map(cached.entries.map((e: TimelineEntry) => [e.id, e]));
+      const freshIds = new Set(fresh.entries.map((e: TimelineEntry) => e.id));
+      const dataChanged = fresh.entries.length !== cached.entries.length
+        || fresh.entries.some((e: TimelineEntry) => {
+          const cachedEntry = cachedById.get(e.id);
+          // New entry not in cache, or entry_type changed
+          return !cachedEntry || cachedEntry.entry_type !== e.entry_type;
+        })
+        || cached.entries.some((e: TimelineEntry) => !freshIds.has(e.id));
+
+      saveToCache(fresh);
+
+      if (dataChanged && onRefresh) {
+        const freshStore = buildStoreFromRaw(fresh);
+        onRefresh(freshStore);
+      }
+    }).catch(() => { /* ignore background refresh failures */ });
+
+    return store;
+  }
+
+  // No cache — fetch fresh data synchronously
+  const fresh = await fetchFreshData();
+  if (!fresh) throw new Error('Failed to load data files');
+  saveToCache(fresh);
+  return buildStoreFromRaw(fresh);
 }
 
 /** Fetch all data files from disk */
@@ -415,12 +445,7 @@ export function buildDataStore(
   lore: Lore[] = [],
   worldRules: WorldRule[] = [],
 ): DataStore {
-  entries = entries.map(applyEntryDefaults);
-  people = people.map(applyPersonDefaults);
-  entries.sort((a, b) => parseDate(a.date_start) - parseDate(b.date_start));
-  const indexes = buildIndexes(entries, people, places, lore, worldRules);
-  const warnings = validateData(entries, people, places, universes, lore, worldRules);
-  return { entries, people, places, environment, universes, props, lore, worldRules, warnings, ...indexes };
+  return buildStoreFromRaw({ entries, people, places, environment, universes, props, lore, worldRules });
 }
 
 /** Add a new entry to the data store (in-memory only for prototype) */

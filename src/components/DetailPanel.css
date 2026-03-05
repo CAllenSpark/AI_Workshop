@@ -252,6 +252,65 @@
   line-height: 1.4;
 }
 
+/* Universe section */
+.panel-universe {
+  background: var(--creative-surface);
+  border-radius: 8px;
+  padding: var(--sp-base);
+  border-left: 3px solid var(--creative-primary);
+}
+
+.panel-universe h4 {
+  margin-bottom: var(--sp-sm);
+}
+
+.panel-universe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--sp-xs);
+}
+
+.panel-universe-name {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--creative-primary);
+}
+
+.panel-universe-genre {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--creative-muted);
+  padding: 2px 8px;
+  background: rgba(123, 94, 167, 0.12);
+  border-radius: 8px;
+}
+
+.panel-universe-desc {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--panel-text);
+  margin-bottom: var(--sp-sm);
+}
+
+.panel-universe-themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.panel-universe-theme {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: 8px;
+  background: rgba(123, 94, 167, 0.1);
+  color: var(--creative-muted);
+}
+
 /* Narrative section */
 .panel-narrative {
   background: var(--panel-surface);
