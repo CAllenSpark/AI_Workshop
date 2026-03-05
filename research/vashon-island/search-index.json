@@ -4072,6 +4072,1882 @@
       "related_entries": [
         "pre-007"
       ]
+    },
+    {
+      "id": "sea-001",
+      "type": "entry",
+      "title": "Duwamish People Establish Villages on Elliott Bay",
+      "text": "Duwamish People Establish Villages on Elliott Bay The Duwamish establish permanent winter villages along the Duwamish River and Elliott Bay, including a major longhouse site at what is now Pioneer Square.",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "~1000",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "indigenous",
+        "duwamish"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-002",
+      "type": "entry",
+      "title": "Denny Party Lands at Alki Point",
+      "text": "Denny Party Lands at Alki Point Twenty-four members of the Denny Party arrive at Alki Point aboard the schooner Exact, founding the settlement that would become Seattle.",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "date_start": "1851-11-13",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "founding",
+        "pioneer"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-003",
+      "type": "entry",
+      "title": "Great Seattle Fire Destroys Downtown",
+      "text": "Great Seattle Fire Destroys Downtown An overturned glue pot ignites a fire that destroys 120 acres of Seattle's central business district and waterfront. The city rebuilds in brick and stone.",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1889-06-06",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "fire",
+        "rebuilding"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-004",
+      "type": "entry",
+      "title": "Mosquito Fleet Era on Puget Sound",
+      "text": "Mosquito Fleet Era on Puget Sound A network of privately operated steamboats becomes the primary transportation system across Puget Sound, connecting Seattle, Tacoma, and Vashon Island.",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "~1890",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "transportation",
+        "steamboat",
+        "mosquito-fleet",
+        "vashon-connection"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-005",
+      "type": "entry",
+      "title": "Klondike Gold Rush Transforms Seattle",
+      "text": "Klondike Gold Rush Transforms Seattle The steamship Portland arrives in Seattle carrying Klondike gold, igniting a rush that transforms Seattle into the primary outfitting port for Alaska-bound prospectors.",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1897-07-17",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "gold-rush",
+        "economy",
+        "maritime"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-006",
+      "type": "entry",
+      "title": "Pike Place Market Opens",
+      "text": "Pike Place Market Opens Seattle's Pike Place Market opens as a public farmers' market. Japanese American farmers operate 70-80% of stalls in the early years.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1907-08-17",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "market",
+        "agriculture",
+        "japanese-american"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-007",
+      "type": "entry",
+      "title": "Seattle Shipyards Boom During World War I",
+      "text": "Seattle Shipyards Boom During World War I Skinner & Eddy Corporation and other Seattle shipyards produce warships and cargo vessels at record pace, employing tens of thousands of workers.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1916",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "shipbuilding",
+        "wwi",
+        "industry"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-008",
+      "type": "entry",
+      "title": "Seattle General Strike",
+      "text": "Seattle General Strike Sixty-five thousand workers walk off the job in the first large-scale general strike in United States history, growing out of a shipyard workers' wage dispute.",
+      "era": "early-20th-century",
+      "layers": [
+        "event"
+      ],
+      "date_start": "1919-02-06",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "labor",
+        "strike"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-009",
+      "type": "entry",
+      "title": "Boeing Plant 2 Wartime Bomber Production",
+      "text": "Boeing Plant 2 Wartime Bomber Production Boeing's Plant 2 mass-produces B-17 and B-29 bombers, building 6,981 B-17s and employing nearly 50,000 workers at peak. The factory roof is camouflaged as a suburban neighborhood.",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1941",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "wwii",
+        "boeing",
+        "industry",
+        "vashon-connection"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-010",
+      "type": "entry",
+      "title": "Washington State Ferries Begins Operations",
+      "text": "Washington State Ferries Begins Operations Washington State purchases the Black Ball Line's Puget Sound ferry fleet and begins operating Washington State Ferries, the largest ferry system in the United States.",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1951-06-01",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "ferry",
+        "transportation",
+        "state-ferry",
+        "vashon-connection"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-011",
+      "type": "entry",
+      "title": "Century 21 Exposition (Seattle World's Fair)",
+      "text": "Century 21 Exposition (Seattle World's Fair) The Century 21 Exposition draws nearly 10 million visitors, producing the Space Needle and establishing Seattle as a modern metropolis.",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1962-04-21",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "worlds-fair",
+        "space-needle",
+        "culture"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-012",
+      "type": "entry",
+      "title": "Microsoft Moves to Bellevue",
+      "text": "Microsoft Moves to Bellevue Microsoft relocates from Albuquerque to Bellevue, Washington, beginning the Puget Sound region's transformation into a global technology hub.",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place",
+        "person"
+      ],
+      "date_start": "1979-01-01",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "technology",
+        "microsoft"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-013",
+      "type": "entry",
+      "title": "Amazon Founded in Bellevue",
+      "text": "Amazon Founded in Bellevue Jeff Bezos founds Amazon as an online bookstore in a Bellevue garage, eventually reshaping Seattle's economy and urban landscape.",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "date_start": "1994-07-05",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "technology",
+        "amazon",
+        "economy"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-014",
+      "type": "entry",
+      "title": "Puget Sound Navigation Company Dominates Ferry Service",
+      "text": "Puget Sound Navigation Company Dominates Ferry Service The Puget Sound Navigation Company (Black Ball Line) consolidates the Mosquito Fleet into a single dominant ferry system serving Puget Sound, including routes to Vashon Island.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1900",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "ferry",
+        "transportation",
+        "black-ball-line",
+        "vashon-connection"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "sea-015",
+      "type": "entry",
+      "title": "Colman Dock Serves as Seattle Ferry Hub",
+      "text": "Colman Dock Serves as Seattle Ferry Hub James Colman builds a wharf that becomes Seattle's primary ferry terminal, anchoring the city's connection to Puget Sound island communities.",
+      "era": "growth-industry",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "date_start": "1882",
+      "tags": [
+        "regional-context",
+        "seattle",
+        "ferry",
+        "waterfront",
+        "transportation"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-001",
+      "type": "entry",
+      "title": "Treaty of Medicine Creek Signed",
+      "text": "Treaty of Medicine Creek Signed Governor Isaac Stevens and leaders of the Nisqually, Puyallup, and Squaxin Island tribes sign the Treaty of Medicine Creek, ceding 2.5 million acres of tribal land.",
+      "era": "logging-treaty",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "1854-12-26",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "treaty",
+        "indigenous",
+        "puyallup",
+        "nisqually"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-002",
+      "type": "entry",
+      "title": "Northern Pacific Railroad Selects Tacoma as Terminus",
+      "text": "Northern Pacific Railroad Selects Tacoma as Terminus The Northern Pacific Railroad announces Commencement Bay in Tacoma as the western terminus of its transcontinental line, transforming Tacoma into the 'City of Destiny.'",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1873-07-14",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "railroad",
+        "founding",
+        "city-of-destiny"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-003",
+      "type": "entry",
+      "title": "Tacoma Anti-Chinese Expulsion",
+      "text": "Tacoma Anti-Chinese Expulsion A mob forcibly expels Tacoma's entire Chinese community of approximately 200 people. The systematic expulsion becomes known as 'The Tacoma Method.'",
+      "era": "growth-industry",
+      "layers": [
+        "event"
+      ],
+      "date_start": "1885-11-03",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "anti-chinese",
+        "civil-rights"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-004",
+      "type": "entry",
+      "title": "Point Defiance Park Established",
+      "text": "Point Defiance Park Established Congress grants the former Point Defiance military reservation to Tacoma for use as a public park, later home to the ferry terminal for the Vashon Island route.",
+      "era": "growth-industry",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "date_start": "1888-12",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "park",
+        "vashon-connection",
+        "ferry"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-005",
+      "type": "entry",
+      "title": "Tacoma Smelter Begins Operations",
+      "text": "Tacoma Smelter Begins Operations A lead smelter begins operating near Tacoma. Later acquired by ASARCO, it disperses arsenic and lead across a 1,000-square-mile area including Vashon Island via its 562-foot smokestack.",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "date_start": "1889-09-12",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "asarco",
+        "smelter",
+        "pollution",
+        "environment",
+        "vashon-connection"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-006",
+      "type": "entry",
+      "title": "St. Paul & Tacoma Lumber Company Founded",
+      "text": "St. Paul & Tacoma Lumber Company Founded The St. Paul & Tacoma Lumber Company is founded in partnership with the Northern Pacific Railway. Tacoma becomes known as the 'Lumber Capital of the World.'",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1888",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "lumber",
+        "industry",
+        "railroad"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-007",
+      "type": "entry",
+      "title": "Stadium High School Opens in Converted Hotel",
+      "text": "Stadium High School Opens in Converted Hotel Tacoma High School opens in a building originally constructed as a luxury chateau-style hotel for the Northern Pacific Railroad.",
+      "era": "early-20th-century",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "date_start": "1906-09-10",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "architecture",
+        "education"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-008",
+      "type": "entry",
+      "title": "Weyerhaeuser Timber Company Incorporated in Tacoma",
+      "text": "Weyerhaeuser Timber Company Incorporated in Tacoma Frederick Weyerhaeuser purchases 900,000 acres of Washington timberland from Northern Pacific Railway, the largest private land transaction in U.S. history at the time.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "date_start": "1900-01-18",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "lumber",
+        "weyerhaeuser",
+        "industry"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-009",
+      "type": "entry",
+      "title": "Tahlequah-Point Defiance Ferry Service Begins",
+      "text": "Tahlequah-Point Defiance Ferry Service Begins Ferry service begins between Point Defiance in Tacoma and Tahlequah at the southern tip of Vashon Island, becoming the island's primary connection to the Tacoma area.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1920-05-15",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "ferry",
+        "transportation",
+        "vashon-connection"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-010",
+      "type": "entry",
+      "title": "Tacoma Narrows Bridge ('Galloping Gertie') Collapses",
+      "text": "Tacoma Narrows Bridge ('Galloping Gertie') Collapses The Tacoma Narrows Bridge collapses into Puget Sound in 42 mph winds due to aeroelastic flutter, becoming the most famous structural failure in engineering history.",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1940-11-07",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "bridge",
+        "engineering",
+        "galloping-gertie"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-011",
+      "type": "entry",
+      "title": "Camp Harmony Interns Japanese Americans",
+      "text": "Camp Harmony Interns Japanese Americans Approximately 7,390 Japanese Americans are confined at the Puyallup Assembly Center ('Camp Harmony'). Vashon Island's Japanese American strawberry farming families are among those removed.",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1942-04",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "wwii",
+        "japanese-internment",
+        "civil-rights",
+        "vashon-connection"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-012",
+      "type": "entry",
+      "title": "Todd Shipyards Wartime Production in Tacoma",
+      "text": "Todd Shipyards Wartime Production in Tacoma Todd Shipyards produces 45 destroyers and services 576 ships for the war effort, establishing Puget Sound as a major naval shipbuilding center.",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1939",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "wwii",
+        "shipbuilding",
+        "industry"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-013",
+      "type": "entry",
+      "title": "Replacement Tacoma Narrows Bridge Opens",
+      "text": "Replacement Tacoma Narrows Bridge Opens A redesigned Tacoma Narrows Bridge opens, incorporating deep stiffening trusses learned from the 1940 collapse.",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1950-10-14",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "bridge",
+        "engineering",
+        "transportation"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-014",
+      "type": "entry",
+      "title": "Tacoma Dome Opens",
+      "text": "Tacoma Dome Opens The Tacoma Dome opens as the largest wooden-domed structure in the world, symbolizing Tacoma's timber heritage.",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1983-04-21",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "architecture",
+        "timber",
+        "culture"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "tac-015",
+      "type": "entry",
+      "title": "ASARCO Smelter Smokestack Demolished",
+      "text": "ASARCO Smelter Smokestack Demolished The 562-foot ASARCO smelter smokestack in Ruston is demolished. Cleanup of contaminated soils, including on Vashon Island, continues for decades.",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "date_start": "1993-01-17",
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "asarco",
+        "environment",
+        "pollution",
+        "superfund",
+        "vashon-connection"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "fan-001",
+      "type": "entry",
+      "title": "The Lodge Appears at the Crossroads",
+      "text": "The Lodge Appears at the Crossroads The S'Homamish recognize a gathering place at the island's center where the forest opens into a natural clearing. They call it 'the place where stories meet.' Cedar posts mark a structure that seems older than anyone can remember building. Elders speak of a structure that was always there — not built by human hands but grown from the island itself. The clearing where it stands is one of the few places on the island where all five village sites are equidistant. Stories told here have a way of becoming real. Visitors sometimes emerge from the forest claiming to have been gone for minutes, though days have passed.",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "~1000",
+      "tags": [
+        "lodge",
+        "origins",
+        "indigenous",
+        "supernatural",
+        "thin-place"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-002",
+      "type": "entry",
+      "title": "Vancouver's Unnamed Observation",
+      "text": "Vancouver's Unnamed Observation During Peter Puget's survey of the southern Sound, the expedition's log records a curious anomaly: a 'light upon the eastern shore of the large island, steady and unwavering, unlike any campfire.' Vancouver orders the observation struck from the official chart. Puget's personal journal, never published, contains a longer passage: 'We observed from the pinnace a luminescence on Vashon's Island of such constancy as to suggest a lantern or lighthouse, though no European settlement exists there. Upon Mr. Whidbey's suggestion we altered course to investigate but found upon approach only a clearing in the forest and a sensation of profound unease. I ordered the men to return to their oars.' This entry does not appear in Vancouver's published 'Voyage of Discovery.'",
+      "era": "exploration",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "1792-05-21",
+      "tags": [
+        "exploration",
+        "mystery",
+        "lodge",
+        "vancouver",
+        "suppressed-record"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-003",
+      "type": "entry",
+      "title": "The Pioneer Inn Opens with 33 Rooms",
+      "text": "The Pioneer Inn Opens with 33 Rooms A timber lodge is built at the island's center crossroads, positioned on the same clearing the S'Homamish marked with cedar posts. The builder, who arrived on the island six months prior with no apparent history, insists on exactly 33 rooms despite the lodge being far too large for the island's population. The lodge's guest book, leather-bound and embossed with no publisher's mark, begins accepting names on opening night. The first entry is dated 1885. The second is dated 1792. No one notices this for decades. The builder disappears three months after the opening, leaving no forwarding address and no deed. The lodge simply continues operating, maintained by a succession of caretakers who all report the same thing: the building tells you what it needs.",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1885",
+      "tags": [
+        "lodge",
+        "construction",
+        "mystery",
+        "guest-book",
+        "caretaker"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-004",
+      "type": "entry",
+      "title": "The Mukai Jar That Wouldn't Empty",
+      "text": "The Mukai Jar That Wouldn't Empty When the Mukai family self-exiles to Oregon in March 1942, Kuni Mukai buries a sealed strawberry barreling jar in her garden. She tells her grandson Milton it contains 'everything we can't carry.' Decades later, when the jar is unearthed during garden restoration, it is full of fresh strawberries — and a folded letter in handwriting that hasn't been written yet. The jar's contents should have decomposed within weeks. Instead, the strawberries are perfectly preserved, as if picked that morning. The letter, addressed to 'whoever finds this,' describes events on the island through the 1950s, 1970s, and 2020s with uncanny accuracy. Kuni, when asked about it in her old age, simply says: 'The garden keeps what you give it. I gave it our future so it would be safe.' The jar is now in the lodge's keeping, stored in Room 33.",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "1942-03",
+      "tags": [
+        "mukai",
+        "internment",
+        "preservation",
+        "time",
+        "garden",
+        "jar"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-005",
+      "type": "entry",
+      "title": "The Nike Base Picks Up Transmissions from 1854",
+      "text": "The Nike Base Picks Up Transmissions from 1854 Operators at Nike Missile Base S-61 on Vashon Island report intermittent radio interference: voices speaking in Lushootseed, the sound of a treaty negotiation, and a man's voice repeating 'the land does not belong to us — we belong to the land.' The transmissions are logged as atmospheric anomalies and classified. The classified report, declassified in 1998, describes 47 incidents over two years of unexplained audio interference at the Vashon Nike site. Linguists at Fort Lewis identified the language as Southern Lushootseed. One transcript matches almost word-for-word a passage attributed to Chief Leschi's testimony at the Medicine Creek treaty negotiations of 1854. The base's radar operators also reported intermittent returns from objects that appeared to be wooden sailing vessels in Puget Sound. The incidents ceased when the base was decommissioned in 1963.",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1955",
+      "tags": [
+        "nike-base",
+        "cold-war",
+        "temporal-echo",
+        "treaty",
+        "radio",
+        "lushootseed"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-006",
+      "type": "entry",
+      "title": "The Shell Midden Opens at Low Tide",
+      "text": "The Shell Midden Opens at Low Tide At Burton Acres, where the shell midden has accumulated layers of habitation for millennia, there is a tide so low it only comes once a generation. When it does, the midden reveals a deeper layer — not of shells, but of carved bone and obsidian from no known local source. And a doorway. S'Homamish oral tradition speaks of a passage beneath the midden that leads 'to the time before time.' The carved bones depict creatures that match no known Pacific Northwest fauna — or rather, they match fauna from the Pleistocene era. The obsidian has been traced to no volcanic source in the Cascades. Those who enter the passage when the tide is at its lowest report emerging in a landscape of ice and grassland, with the sound of glacier-calving echoing across what will become Puget Sound. They return when the tide rises, but something always comes back with them — a feather, a tooth, a memory that isn't theirs.",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "date_start": "~500 BCE",
+      "tags": [
+        "shell-midden",
+        "temporal-passage",
+        "indigenous",
+        "archaeology",
+        "pleistocene"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-007",
+      "type": "entry",
+      "title": "The Bike in the Tree Begins to Grow",
+      "text": "The Bike in the Tree Begins to Grow When the fir tree absorbing Don Puz's bicycle reaches a certain height, local children report that the bicycle's wheels turn at night — always at the same hour, always pointing toward Room 33. A writer staying at the lodge follows the direction and discovers a path through the forest that shouldn't exist. The bicycle was donated to young Don Puz after a house fire that killed his father in 1954. The tree began growing around it immediately, as if claiming it. By the 1990s, the bike is eight feet off the ground and still rising. Berkeley Breathed wrote a children's book about it. What he didn't write about: the caretaker at the lodge who noticed that on the anniversary of the fire, the bike's shadow on the ground shows a boy riding. The path it points to leads through old-growth ravines to a clearing where the trees are impossibly large — survivors from before the great logging era, or perhaps from before logging was even possible.",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "~1994",
+      "tags": [
+        "bike-in-tree",
+        "landmark",
+        "supernatural",
+        "path",
+        "lodge"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-008",
+      "type": "entry",
+      "title": "The Island Refuses the Bridge",
+      "text": "The Island Refuses the Bridge On the day the Washington State Senate votes on the Vashon bridge proposal, every compass on the island points to the center — toward the lodge. The vote fails by 7 votes. Engineers later discover that soil samples from the proposed bridge footings contain wood fragments carbon-dated to 800 years before the nearest known tree. The bridge proposal of 1959 was the closest Vashon ever came to losing its island identity. John Cherberg's procedural ruling killed it on a technicality, but island lore holds that the vote was never really in doubt. The island itself intervened. Compass readings that day were documented by the US Coast & Geodetic Survey as an 'unexplained magnetic anomaly.' The wood fragments in the soil cores were cedar — the same species the S'Homamish used for their longhouses, but from a tree that would have been growing when the island had no recorded human inhabitants. The lodge's guest book entry for that date reads simply: 'Still here.'",
+      "era": "state-ferry",
+      "layers": [
+        "event"
+      ],
+      "date_start": "1959-03-12",
+      "tags": [
+        "bridge-proposal",
+        "island-agency",
+        "magnetic-anomaly",
+        "preservation"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-009",
+      "type": "entry",
+      "title": "Glacial Formation",
+      "text": "Glacial Formation Glaciers carve Vashon Island and deposit the glacial erratics that form the stone circle. The cave system exists beneath.",
+      "era": "prehistory",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "date_start": "~14000 BCE",
+      "tags": [
+        "geology",
+        "origin"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-010",
+      "type": "entry",
+      "title": "Coast Salish Recognition",
+      "text": "Coast Salish Recognition The Duwamish and Puyallup peoples recognize this land as a place of passage -- not a resource but a relationship. They visit, they listen, they do not build.",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "~1500",
+      "tags": [
+        "indigenous",
+        "pre-colonial"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-011",
+      "type": "entry",
+      "title": "Whispering Pines Lodge Founded",
+      "text": "Whispering Pines Lodge Founded Whispering Pines Lodge built by a consortium of investors. Mrs. Adelaide Hargrove serves as first operator. Workers note 'rooms that weren't there the day before.'",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1910",
+      "tags": [
+        "founding",
+        "construction"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-012",
+      "type": "entry",
+      "title": "Cormac and Siobhan Arrive",
+      "text": "Cormac and Siobhan Arrive Cormac and Siobhan Ni Ceallaigh arrive at the lodge from Ireland. Siobhan plants lavender along the Shore Path.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "1912",
+      "tags": [
+        "siobhan",
+        "arrival"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-013",
+      "type": "entry",
+      "title": "Cormac Lost at Sea",
+      "text": "Cormac Lost at Sea Cormac is lost at sea during a storm. Siobhan's grief becomes the catalyst for the lodge's transformation.",
+      "era": "early-20th-century",
+      "layers": [
+        "event"
+      ],
+      "date_start": "1915-11",
+      "tags": [
+        "death",
+        "grief",
+        "catalyst"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-014",
+      "type": "entry",
+      "title": "Room 33 Created",
+      "text": "Room 33 Created Siobhan performs a ritual in her room -- merging her grief with the land's ancient properties. The room becomes a threshold between times. Room 33 is born.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1915-11",
+      "tags": [
+        "ritual",
+        "threshold",
+        "creation",
+        "supernatural"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-015",
+      "type": "entry",
+      "title": "Foresters of the Eternal Compass Founded",
+      "text": "Foresters of the Eternal Compass Founded Dr. Aldric Voss founds the Foresters, a secret society dedicated to understanding and controlling the lodge's threshold properties.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "1930",
+      "tags": [
+        "foresters",
+        "founding"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-016",
+      "type": "entry",
+      "title": "Art Deco Renovation",
+      "text": "Art Deco Renovation The Foresters fund a major renovation. The Triangle Bar is rebuilt, service corridors expanded, the basement hatch installed, and the compass rose placed in Room 33.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1935",
+      "tags": [
+        "renovation",
+        "foresters",
+        "art-deco"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-017",
+      "type": "entry",
+      "title": "M. Quinn Tends Bar",
+      "text": "M. Quinn Tends Bar A woman named M. Quinn tends bar at the Triangle. She looks exactly like Mixie. She writes in a notebook. She writes a novel about a bartender at a time-shifting lodge.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "1935",
+      "tags": [
+        "m-quinn",
+        "cycle",
+        "bartender"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-018",
+      "type": "entry",
+      "title": "Iris Malone Disappears",
+      "text": "Iris Malone Disappears Iris Malone, identified by the Foresters as an 'Anomaly,' disappears from the lodge. Her fate is connected to the Foresters' increasingly dangerous experiments.",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "1938",
+      "tags": [
+        "disappearance",
+        "foresters",
+        "anomaly"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-019",
+      "type": "entry",
+      "title": "The 1943 Incident -- Voss Dies in Room 33",
+      "text": "The 1943 Incident -- Voss Dies in Room 33 Aldric Voss carries something awakened in the Water Chamber up through the caves and into Room 33. He dies. The Foresters are destroyed. Their final letter ends mid-sentence.",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "1943",
+      "tags": [
+        "death",
+        "foresters",
+        "catastrophe",
+        "room-33"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-020",
+      "type": "entry",
+      "title": "Vivian Cross Tends Bar",
+      "text": "Vivian Cross Tends Bar Another woman who looks like Mixie tends bar at the Triangle during the 1950s. The cycle continues.",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "1950",
+      "tags": [
+        "cycle",
+        "bartender",
+        "lookalike"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-021",
+      "type": "entry",
+      "title": "Family Resort Era",
+      "text": "Family Resort Era The lodge is converted to a family resort. Fluorescent lights, vinyl, institutional pragmatism. Management suppresses the lodge's nature. Room 33 sealed after the 1967 Fink incident.",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "date_start": "1960",
+      "tags": [
+        "suppression",
+        "family-resort"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-022",
+      "type": "entry",
+      "title": "The Fink Incident",
+      "text": "The Fink Incident Harold Fink opens Room 33 during a storm. What he sees is not recorded. He screams. Room 33 is sealed with the compass rose papered over.",
+      "era": "state-ferry",
+      "layers": [
+        "event"
+      ],
+      "date_start": "1967",
+      "tags": [
+        "incident",
+        "room-33",
+        "sealed"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-023",
+      "type": "entry",
+      "title": "Tom Hargrove's Official Hire Date",
+      "text": "Tom Hargrove's Official Hire Date Tom Hargrove is officially hired as groundskeeper. His actual tenure may be far longer -- he appears in photographs from earlier decades.",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "1987",
+      "tags": [
+        "tom",
+        "mystery",
+        "tenure"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-024",
+      "type": "entry",
+      "title": "Season One: The Threshold",
+      "text": "Season One: The Threshold Mixie tends bar. Flynn works beside her. The regulars gather. A storm approaches. The cycle that began with Siobhan in 1915 reaches its current iteration.",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "date_start": "2024",
+      "tags": [
+        "present",
+        "season-one",
+        "cycle"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "fan-025",
+      "type": "entry",
+      "title": "The Convergence Storm",
+      "text": "The Convergence Storm The most powerful storm of the season. Mixie enters Room 33 with the skeleton key. She encounters Siobhan in the wardrobe mirror. She dies and is reborn behind the bar -- transformed from witness to steward.",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "date_start": "2024",
+      "tags": [
+        "convergence",
+        "climax",
+        "room-33",
+        "mirror",
+        "death",
+        "rebirth"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-121",
+      "type": "person",
+      "title": "Suquamish",
+      "text": "Suquamish Coast Salish people whose traditional territory included the western shores of Puget Sound. The Suquamish made seasonal use of Vashon Island for fishing, hunting, and gathering, and participated in extensive trade networks with neighboring tribes. indigenous people",
+      "tags": []
+    },
+    {
+      "id": "person-122",
+      "type": "person",
+      "title": "Puyallup",
+      "text": "Puyallup Coast Salish people of southern Puget Sound. The Puyallup traded extensively with other tribes across the Sound, including through waterways adjacent to Vashon Island. Today, the Puyallup Tribe of Indians includes enrolled descendants of the S'Homamish who inhabited Vashon Island. indigenous people",
+      "tags": []
+    },
+    {
+      "id": "person-123",
+      "type": "person",
+      "title": "Nisqually",
+      "text": "Nisqually Coast Salish people whose traditional territory centered on the Nisqually River delta in southern Puget Sound. The Nisqually participated in regional trade networks that connected communities across the Sound, including those around Vashon Island. indigenous people",
+      "tags": []
+    },
+    {
+      "id": "person-124",
+      "type": "person",
+      "title": "Duwamish",
+      "text": "Duwamish Coast Salish people of the central Puget Sound whose traditional territory included the Duwamish River and Elliott Bay area (modern Seattle). The Duwamish traded with neighboring peoples across the Sound and shared cultural and kinship ties with the S'Homamish of Vashon Island. indigenous people",
+      "tags": []
+    },
+    {
+      "id": "person-125",
+      "type": "person",
+      "title": "Chief Si'ahl",
+      "text": "Chief Si'ahl Leader of the Duwamish and Suquamish peoples, for whom the city of Seattle is named. Known for his eloquent speeches about the relationship between indigenous peoples and settlers. indigenous leader",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-126",
+      "type": "person",
+      "title": "Arthur A. Denny",
+      "text": "Arthur A. Denny Leader of the Denny Party, the founding settlers of Seattle. Arrived at Alki Point in November 1851 and helped establish the city. settler / city founder",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-127",
+      "type": "person",
+      "title": "David Denny",
+      "text": "David Denny Member of the Denny Party and younger brother of Arthur A. Denny. Among the first settlers at Alki Point in 1851. settler",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-128",
+      "type": "person",
+      "title": "Doc Maynard",
+      "text": "Doc Maynard David Swinson 'Doc' Maynard, early Seattle settler and physician who advocated for friendly relations with Native peoples and helped name the city after Chief Si'ahl. settler / physician",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-129",
+      "type": "person",
+      "title": "Robert Moran",
+      "text": "Robert Moran Seattle mayor during the Great Fire of 1889 who led rebuilding efforts. Later became a shipbuilder and industrialist. mayor / industrialist",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-130",
+      "type": "person",
+      "title": "David E. Skinner",
+      "text": "David E. Skinner Seattle shipping magnate who helped develop Harbor Island and expanded Seattle's shipbuilding capacity during World War I. shipping executive",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-131",
+      "type": "person",
+      "title": "Anna Louise Strong",
+      "text": "Anna Louise Strong Seattle labor activist, journalist, and radical who supported the 1919 Seattle General Strike through her writing in the Union Record. journalist / activist",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-132",
+      "type": "person",
+      "title": "Ole Hanson",
+      "text": "Ole Hanson Mayor of Seattle during the 1919 General Strike who took a hard line against the strikers, gaining national attention. mayor",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-133",
+      "type": "person",
+      "title": "Arthur Langlie",
+      "text": "Arthur Langlie Governor of Washington State who oversaw the creation of Washington State Ferries in 1951, transitioning Puget Sound ferry service to state operation. governor",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-134",
+      "type": "person",
+      "title": "Bill Gates",
+      "text": "Bill Gates Co-founder of Microsoft Corporation, which moved to the Puget Sound region in 1979 and transformed the area into a global technology hub. technology entrepreneur",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-135",
+      "type": "person",
+      "title": "Paul Allen",
+      "text": "Paul Allen Co-founder of Microsoft Corporation alongside Bill Gates. Major philanthropist and investor in the Seattle area. technology entrepreneur",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-136",
+      "type": "person",
+      "title": "Jeff Bezos",
+      "text": "Jeff Bezos Founder of Amazon.com, which started in Bellevue in 1994 and grew to become one of the world's largest companies, reshaping Seattle's economy and skyline. technology entrepreneur",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-137",
+      "type": "person",
+      "title": "Charles Enoch Peabody",
+      "text": "Charles Enoch Peabody Captain and executive of the Puget Sound Navigation Company who consolidated the Mosquito Fleet into a dominant ferry operation serving Puget Sound. ferry company executive",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-138",
+      "type": "person",
+      "title": "James Colman",
+      "text": "James Colman Scottish-born engineer and businessman who built Colman Dock in 1882, establishing Seattle's primary waterfront ferry terminal. engineer / businessman",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-139",
+      "type": "person",
+      "title": "Jacob Weisbach",
+      "text": "Jacob Weisbach Mayor of Tacoma during the 1885 anti-Chinese expulsion, who facilitated the forced removal of Chinese residents from the city. mayor",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-140",
+      "type": "person",
+      "title": "Chauncey Griggs",
+      "text": "Chauncey Griggs Co-founder of the St. Paul & Tacoma Lumber Company in 1888, one of the largest lumber operations in the Pacific Northwest. lumber industrialist",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-141",
+      "type": "person",
+      "title": "Henry Hewitt Jr.",
+      "text": "Henry Hewitt Jr. Co-founder of the St. Paul & Tacoma Lumber Company and prominent Tacoma business leader in the late 19th century. lumber industrialist",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-142",
+      "type": "person",
+      "title": "Frederick Weyerhaeuser",
+      "text": "Frederick Weyerhaeuser Timber magnate who incorporated the Weyerhaeuser Timber Company in Tacoma in 1900 after purchasing 900,000 acres of Pacific Northwest timberland. timber industrialist",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-143",
+      "type": "person",
+      "title": "James J. Hill",
+      "text": "James J. Hill Railroad magnate known as the 'Empire Builder' who sold 900,000 acres of Northern Pacific land to Frederick Weyerhaeuser, enabling the Weyerhaeuser Timber Company. railroad magnate",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-144",
+      "type": "person",
+      "title": "Leonard Coatsworth",
+      "text": "Leonard Coatsworth Tacoma News Tribune editor who was the last person to drive across the Tacoma Narrows Bridge before its dramatic collapse on November 7, 1940. newspaper editor",
+      "tags": [],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-creative-001",
+      "type": "person",
+      "title": "Mixie Green",
+      "text": "Mixie Green Mixie is the heart of Whispering Pines — a bartender whose warmth masks a deeper unease. She is writing a novel about a bartender in a time-shifting lodge, unaware that identical drafts exist from the 1930s and 1940s. She remembers every drink she has ever poured but cannot remember why she started. Head Bartender Arrived drawn by impulse she couldn't name. Writing novel about bartender in time-shifting lodge — identical drafts exist from 1930s-1940s.",
+      "tags": [
+        "protagonist",
+        "bartender",
+        "writer",
+        "cycle",
+        "threshold"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-002",
+      "type": "person",
+      "title": "Flynn Callahan",
+      "text": "Flynn Callahan Mixie's partner behind the bar — steady, warm, deeply protective. Lives in Owl cabin. Repairs watches as meditation. Callahan name appears in the Foresters' 1935 membership ledger. Co-Bartender Chose Owl cabin facing forest. Repairs watches obsessively. Callahan appears in Foresters' 1935 membership ledger.",
+      "tags": [
+        "bartender",
+        "grief",
+        "loyalty",
+        "foresters-connection",
+        "watches"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-003",
+      "type": "person",
+      "title": "Siobhan Ni Ceallaigh (The Woman of the Storm)",
+      "text": "Siobhan Ni Ceallaigh (The Woman of the Storm) Born County Kerry ~1889, arrived 1912 with husband Cormac. After Cormac was lost at sea in 1915, her grief-fueled ritual in Room 33 transformed it into a threshold between times. She did not die conventionally — she became part of the lodge. Origin Figure / Supernatural Presence Arrived from Ireland 1912. Cormac lost at sea Nov 1915. Ritual in what became Room 33. Did not die conventionally — became part of the lodge.",
+      "tags": [
+        "origin",
+        "supernatural",
+        "storm",
+        "ritual",
+        "mirror",
+        "cycle"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-004",
+      "type": "person",
+      "title": "Chris Willis",
+      "text": "Chris Willis 54-year-old cynic, Triangle Bar's most reliable presence. Vanishes during mid-season storm and returns with no memory of where he went. Bar Regular",
+      "tags": [
+        "regular",
+        "skeptic",
+        "displacement",
+        "bar-culture"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-005",
+      "type": "person",
+      "title": "Zahra \"Z\" Miranzadeh",
+      "text": "Zahra \"Z\" Miranzadeh High-powered venture capital partner who arrives between deals. The lodge forces her to slow down. Her organizational instincts help decode the Foresters' structure. Venture Capital Partner",
+      "tags": [
+        "visitor",
+        "outsider",
+        "velocity",
+        "foresters-decoder"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-006",
+      "type": "person",
+      "title": "Marie Dorion",
+      "text": "Marie Dorion 67-year-old cultural steward with deep Indigenous roots. Provides perspective the Foresters' records lack — land was a place of passage requiring relationship, not control. Cultural Steward / Lodge Regular",
+      "tags": [
+        "regular",
+        "indigenous-perspective",
+        "cultural-steward",
+        "elder"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-007",
+      "type": "person",
+      "title": "Matt Carlson",
+      "text": "Matt Carlson Warm, genuine guest. First Season One test subject for Room 33. Enters Episode 4 and emerges changed. Recurring Guest",
+      "tags": [
+        "visitor",
+        "room-33",
+        "threshold",
+        "everyman"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-008",
+      "type": "person",
+      "title": "Sam Taylor",
+      "text": "Sam Taylor 44-year-old environmental scientist studying anomalous weather. Instruments detect impossibilities — barometric, electromagnetic, and statistical correlation connecting Room 33 to disappearances. Environmental Scientist",
+      "tags": [
+        "visitor",
+        "scientist",
+        "data",
+        "storms",
+        "investigation"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-009",
+      "type": "person",
+      "title": "Akira Yang",
+      "text": "Akira Yang 26-year-old fashion designer whose entire life is curated performance. The lodge strips away the aesthetic layer by layer. Fashion Designer",
+      "tags": [
+        "visitor",
+        "creative",
+        "identity",
+        "performance",
+        "youth"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-010",
+      "type": "person",
+      "title": "Stefan Shooter",
+      "text": "Stefan Shooter AR engineer whose worldview is that reality can be enhanced, measured, and controlled. The lodge disassembles this belief. A library book that describes events before they happen cracks his empiricism. AR Engineer",
+      "tags": [
+        "visitor",
+        "technology",
+        "empiricism",
+        "worldview-shift"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-011",
+      "type": "person",
+      "title": "Esmerelda",
+      "text": "Esmerelda 59-year-old astrologer and medium who has been visiting the lodge for years. Senses what others cannot. Whispers a blessing as Mixie leaves for Room 33. Astrologer and Medium",
+      "tags": [
+        "regular",
+        "mystic",
+        "intuition",
+        "spiritual"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-012",
+      "type": "person",
+      "title": "Tom Hargrove",
+      "text": "Tom Hargrove 63-year-old groundskeeper whose actual tenure may be far longer than records show. Maintains the boiler, the hatch to the caves, and both the mechanical and supernatural systems of the lodge. His vigil speech is the series' emotional bedrock. Groundskeeper Official hire 1987, appears in earlier photographs. Maintains basement hatch to caves, collects objects from fireplace ash, navigates service corridors without light.",
+      "tags": [
+        "lodge-staff",
+        "groundskeeper",
+        "caves",
+        "boiler",
+        "steward",
+        "mystery"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-013",
+      "type": "person",
+      "title": "Jauncey Pladiym",
+      "text": "Jauncey Pladiym 63-year-old folk singer, Triangle Bar fixture for decades. Plays, listens, remembers. Has knowledge of the Foresters from years of listening. An original song in the finale is Season One's musical resolution. Folk Singer",
+      "tags": [
+        "regular",
+        "musician",
+        "oral-history",
+        "witness",
+        "foresters-knowledge"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-014",
+      "type": "person",
+      "title": "The Mirror",
+      "text": "The Mirror Antique mirror at the Triangle Bar entry that reflects everything a fraction late. The most public supernatural feature of the lodge. Shows reflections from other eras. In Episode 9, serves as the medium for Mixie to see Siobhan. Supernatural Entity",
+      "tags": [
+        "supernatural",
+        "artifact",
+        "time-delay",
+        "portal",
+        "triangle-bar"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-068",
+      "type": "place",
+      "title": "Alki Point",
+      "text": "Alki Point Landing site of the Denny Party in 1851, the founding settlement of what would become Seattle. Located on the western shore of Elliott Bay.",
+      "tags": []
+    },
+    {
+      "id": "place-069",
+      "type": "place",
+      "title": "Duwamish River",
+      "text": "Duwamish River River flowing into Elliott Bay, central to Duwamish tribal life and later industrialized as part of Seattle's harbor development.",
+      "tags": []
+    },
+    {
+      "id": "place-070",
+      "type": "place",
+      "title": "Pioneer Square",
+      "text": "Pioneer Square Seattle's oldest neighborhood, devastated by the Great Fire of 1889 and rebuilt in brick and stone. The heart of early Seattle.",
+      "tags": []
+    },
+    {
+      "id": "place-071",
+      "type": "place",
+      "title": "Pike Place Market",
+      "text": "Pike Place Market Seattle's iconic public farmers market, opened in 1907 to connect consumers directly with farmers. One of the oldest continuously operated public markets in the U.S.",
+      "tags": []
+    },
+    {
+      "id": "place-072",
+      "type": "place",
+      "title": "Harbor Island",
+      "text": "Harbor Island Artificial island at the mouth of the Duwamish River, created in the early 1900s and developed into a major shipbuilding and industrial center.",
+      "tags": []
+    },
+    {
+      "id": "place-073",
+      "type": "place",
+      "title": "Boeing Plant 2",
+      "text": "Boeing Plant 2 Boeing's massive wartime factory along the Duwamish River where B-17 and B-29 bombers were produced during World War II.",
+      "tags": []
+    },
+    {
+      "id": "place-074",
+      "type": "place",
+      "title": "Colman Dock",
+      "text": "Colman Dock Seattle's primary waterfront ferry terminal, built by James Colman in 1882. Served as the hub for Puget Sound ferry service for over a century.",
+      "tags": []
+    },
+    {
+      "id": "place-075",
+      "type": "place",
+      "title": "Seattle Center",
+      "text": "Seattle Center 74-acre civic campus built for the 1962 Century 21 Exposition (Seattle World's Fair). Home to the Space Needle, museums, and performance venues.",
+      "tags": []
+    },
+    {
+      "id": "place-076",
+      "type": "place",
+      "title": "Space Needle",
+      "text": "Space Needle 605-foot observation tower built for the 1962 World's Fair, Seattle's most iconic architectural landmark.",
+      "tags": []
+    },
+    {
+      "id": "place-077",
+      "type": "place",
+      "title": "Bellevue",
+      "text": "Bellevue City east of Seattle across Lake Washington. Became a major technology hub after Microsoft moved there in 1979.",
+      "tags": []
+    },
+    {
+      "id": "place-078",
+      "type": "place",
+      "title": "Redmond",
+      "text": "Redmond City east of Bellevue that became Microsoft's permanent headquarters location, transforming from a rural community to a tech center.",
+      "tags": []
+    },
+    {
+      "id": "place-079",
+      "type": "place",
+      "title": "Medicine Creek",
+      "text": "Medicine Creek Creek near present-day Olympia where the 1854 Treaty of Medicine Creek was signed, ceding tribal lands including Vashon Island to the U.S. government.",
+      "tags": []
+    },
+    {
+      "id": "place-080",
+      "type": "place",
+      "title": "Point Defiance Park",
+      "text": "Point Defiance Park 760-acre park at the northern tip of Tacoma overlooking Puget Sound and Vashon Island, established in 1888. Site of the Tahlequah ferry terminal.",
+      "tags": []
+    },
+    {
+      "id": "place-081",
+      "type": "place",
+      "title": "Ruston",
+      "text": "Ruston Small city adjacent to Tacoma, site of the ASARCO copper smelter that operated from 1889 to 1985. Smelter emissions affected Vashon Island for decades.",
+      "tags": []
+    },
+    {
+      "id": "place-082",
+      "type": "place",
+      "title": "Stadium High School",
+      "text": "Stadium High School Tacoma landmark originally built as a luxury hotel in 1891, converted to a high school in 1906 after a fire. Notable for its French chateau-style architecture.",
+      "tags": []
+    },
+    {
+      "id": "place-083",
+      "type": "place",
+      "title": "Tacoma Narrows",
+      "text": "Tacoma Narrows Strait connecting the main basin of Puget Sound with its southern reaches, between Tacoma and the Kitsap Peninsula. Site of the famous bridge collapse of 1940.",
+      "tags": []
+    },
+    {
+      "id": "place-084",
+      "type": "place",
+      "title": "Puyallup",
+      "text": "Puyallup City southeast of Tacoma, home to the Puyallup Tribe and site of the Western Washington Fairgrounds used as Camp Harmony internment assembly center in 1942.",
+      "tags": []
+    },
+    {
+      "id": "place-085",
+      "type": "place",
+      "title": "Puyallup Fairgrounds",
+      "text": "Puyallup Fairgrounds Western Washington Fairgrounds in Puyallup, used as 'Camp Harmony' temporary assembly center where Japanese Americans were detained in 1942 before transfer to permanent internment camps.",
+      "tags": []
+    },
+    {
+      "id": "place-086",
+      "type": "place",
+      "title": "Tacoma Dome",
+      "text": "Tacoma Dome Large wooden-domed arena in Tacoma, opened in 1983. One of the largest wood-domed structures in the world.",
+      "tags": []
+    },
+    {
+      "id": "place-creative-001",
+      "type": "place",
+      "title": "Whispering Pines Lodge",
+      "text": "Whispering Pines Lodge A remote Pacific Northwest lodge on Vashon Island where time moves differently. Built 1910, renovated 1935 by Foresters, operating continuously. Cedar and wood smoke. Warm light through old windows. Constant whisper of surrounding forest. The lodge is the series' central character — chooses guests, shapes experiences, holds them until ready.",
+      "tags": [
+        "lodge",
+        "central",
+        "character"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-002",
+      "type": "place",
+      "title": "Room 33",
+      "text": "Room 33 The threshold room at the lodge's heart. Created by Siobhan's 1915 ritual. Guests during storms may emerge transformed, terrified, or not at all. Cold and silent. Thick absorptive silence. Compass rose on floor. Wardrobe mirror reflects things not present. Threshold (between eras), reset (returning transformed), selection (choosing who enters).",
+      "tags": [
+        "threshold",
+        "supernatural",
+        "heart",
+        "ritual"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-003",
+      "type": "place",
+      "title": "The Triangle Bar",
+      "text": "The Triangle Bar Emotional center — triangular room where Mixie and Flynn tend bar. Every confession, relationship, and story passes through. Warm amber light. Cedar, whiskey, old wood. Glasses clinking. Piano in corner. Mirror reflecting a beat late. The confessional. Every significant conversation happens here.",
+      "tags": [
+        "bar",
+        "emotional-center",
+        "confession",
+        "community"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-004",
+      "type": "place",
+      "title": "The Great Room",
+      "text": "The Great Room Lodge's communal center with massive stone fireplace burning continuously since 1910. Fire's ash contains objects from other eras, collected by Tom. Wood smoke and cedar. Crackling fire. Vaulted ceiling with visible timber beams. Communal gathering space and anchor point for the lodge's living presence.",
+      "tags": [
+        "communal",
+        "fireplace",
+        "gathering"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-005",
+      "type": "place",
+      "title": "The Lobby & Front Desk",
+      "text": "The Lobby & Front Desk Illusion of normalcy — competent hotel lobby masking lodge's true nature. Guest ledger contains every name since 1910. Grandfather clock ticking. Warm wood and polished brass. Old paper from guest ledger. Threshold between the ordinary world and the lodge's deeper nature.",
+      "tags": [
+        "lobby",
+        "normalcy",
+        "ledger",
+        "clock"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-006",
+      "type": "place",
+      "title": "The Library",
+      "text": "The Library Wood-paneled room with ~2,000 books, Foresters' coded texts, clock synced to boiler. Locked cabinet contains Foresters' records and earlier drafts of Mixie's novel. Old paper, leather, wood polish. Quiet except for clock. Warm, amber-lit, enclosed. Investigation hub and repository of the lodge's documented history.",
+      "tags": [
+        "library",
+        "investigation",
+        "foresters",
+        "knowledge"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-007",
+      "type": "place",
+      "title": "The Dining Room & Kitchen",
+      "text": "The Dining Room & Kitchen Lodge's most practical spaces — grounding supernatural in ordinary. Kitchen resists supernatural influence. Communal table since 1910. Coffee morning, bread afternoon, roasting vegetables evening. Morning light through east windows. Grounding anchor where the mundane resists the supernatural.",
+      "tags": [
+        "dining",
+        "kitchen",
+        "grounding",
+        "practical"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-008",
+      "type": "place",
+      "title": "The Service Corridors",
+      "text": "The Service Corridors Network of narrow passages. Sound travels impossibly. During storms, carry whispers from other eras and rearrange spatially. Narrow, four feet wide. Damp plaster, metallic tang. Sound distortion. Temperature pockets. Liminal connective tissue enabling spatial disorientation and temporal bleed.",
+      "tags": [
+        "corridors",
+        "hidden",
+        "whispers",
+        "liminal"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-009",
+      "type": "place",
+      "title": "The Basement & Boiler Room",
+      "text": "The Basement & Boiler Room Tom's domain. 1935 Kewanee steam boiler modified by Foresters. Concealed hatch to cave system. Boiler accelerates before storms. Steam visions form. Machine oil, warm metal. Boiler's cyclic pulse like heartbeat. Low ceilings. Hatch vibrates faintly. Gateway between the mechanical and the primal; Tom's seat of power and the lodge's heartbeat.",
+      "tags": [
+        "basement",
+        "boiler",
+        "tom",
+        "hatch",
+        "caves-access"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-010",
+      "type": "place",
+      "title": "The Storage Rooms (Lost and Found)",
+      "text": "The Storage Rooms (Lost and Found) Off service corridors — belongings left by guests who vanished. Tom maintains it like a cemetery. Locked Voss steamer trunk is Season Two mystery. Old leather and cedar. Absorbed silence — visitors involuntarily whisper. Voss trunk emits faint perfume and pipe tobacco. Memorial and mystery repository; physical evidence of the lodge's history of disappearances.",
+      "tags": [
+        "storage",
+        "lost-and-found",
+        "vanished-guests",
+        "grief"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-011",
+      "type": "place",
+      "title": "The Whispering Pines (Forest)",
+      "text": "The Whispering Pines (Forest) Old-growth Pacific Northwest rainforest surrounding lodge. Trees produce sustained whisper. Trails shift during storms. Forest is lodge's soft boundary. Every shade of green. Filtered light, perpetual twilight. The whisper — always present, always almost language. Petrichor, cedar, fir sap. The lodge's soft boundary and living perimeter; both protective barrier and testing ground.",
+      "tags": [
+        "forest",
+        "boundary",
+        "old-growth",
+        "whisper"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-012",
+      "type": "place",
+      "title": "The Clearing & Fire Pit",
+      "text": "The Clearing & Fire Pit Natural clearing quarter mile south with fire pit ringed by river stones predating European settlement. Lodge's outdoor confessional. Wood smoke. Fire's crackle. Open sky through canopy like natural oculus. Natural amphitheater acoustics. Outdoor truth-telling space; the lodge's open-air confessional and ritual ground.",
+      "tags": [
+        "clearing",
+        "fire",
+        "ritual",
+        "truth",
+        "outdoor"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-013",
+      "type": "place",
+      "title": "The Stone Circle",
+      "text": "The Stone Circle Twelve glacial erratics in circle deep in forest, thirteenth at center. Oldest intentional structure. Moss grows to perimeter but does not cross. Quietest outdoor space. Forest whisper muted. Diffused light, no proper shadows. Fullness of deep listening. Origin point and sacred anchor; the eye of every storm and the lodge's deepest root.",
+      "tags": [
+        "ancient",
+        "stone-circle",
+        "origin",
+        "sacred"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-014",
+      "type": "place",
+      "title": "The Guest Cabins",
+      "text": "The Guest Cabins Six detached cabins along Shore Path, each with own personality. They drift — shifting position subtly. Named: Cedar, Fern, Owl, Hemlock, Raven, Moss. Owl is Flynn's. Moss retains Siobhan's lavender. Each cabin has distinct character. Salt air from shore. Wood and forest scents. Isolation within community. Individual character spaces providing isolation, privacy, and personal supernatural encounters.",
+      "tags": [
+        "cabins",
+        "drift",
+        "isolation",
+        "shore-path"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-015",
+      "type": "place",
+      "title": "The Caves",
+      "text": "The Caves Branching cave system beneath lodge — oldest space. Three levels: Upper Chambers, Middle Passages, Water Chamber with temporally reflective pool. Deeper you go, less stable time becomes. Absolute darkness. Water everywhere. Carved walls with spirals and wave patterns. Temperature rises with depth. The lodge's deepest source of power; where time itself becomes unstable and the oldest forces reside.",
+      "tags": [
+        "caves",
+        "source",
+        "underground",
+        "temporal"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-016",
+      "type": "place",
+      "title": "The Subterranean Waterways",
+      "text": "The Subterranean Waterways Underground streams threading cave system — lodge's connective tissue. Water carries temporal and memorial properties. Spring emerges in basement at constant 42 degrees. Water is memory. Sound of moving water throughout cave system, basement, and during storms, building's walls. Cold, mineral-scented, rhythmic. The lodge's circulatory system; carrier of memory and temporal properties throughout the structure.",
+      "tags": [
+        "water",
+        "underground",
+        "memory",
+        "rhythm"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-017",
+      "type": "place",
+      "title": "The Hidden Rooms",
+      "text": "The Hidden Rooms Spaces appearing only when conditions are met — during storms, for specific people, at specific emotional states. Known rooms: Writing Room, Memory Room, Mirror Room, Seventh Cabin. Warm. Silent like Room 33. Lit by unidentifiable sources. Subtle vibration, as though lodge expends effort to maintain space. The lodge's most active expressions of agency; spaces created in response to need.",
+      "tags": [
+        "hidden",
+        "conditional",
+        "supernatural",
+        "agency"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-creative-018",
+      "type": "place",
+      "title": "The Shore Path",
+      "text": "The Shore Path Path connecting the guest cabins along the shoreline, serving as the lodge's edge where forest meets water. The boundary between the lodge's domain and the wider island. Salt air and tide sounds. Gravel underfoot. Forest on one side, water on the other. Liminal edge space. Boundary path between the lodge's interior world and the external reality of Vashon Island.",
+      "tags": [
+        "shore",
+        "path",
+        "boundary",
+        "liminal"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
     }
   ]
 }

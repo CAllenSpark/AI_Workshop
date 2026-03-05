@@ -947,6 +947,354 @@
       "related_entries": [
         "tac-014"
       ]
+    },
+    {
+      "id": "place-creative-001",
+      "name": "Whispering Pines Lodge",
+      "type": "lodge",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "interior",
+      "description": "A remote Pacific Northwest lodge on Vashon Island where time moves differently. Built 1910, renovated 1935 by Foresters, operating continuously.",
+      "descriptions": {
+        "1910": "Frontier outpost. Raw timber, oil lamps, wood stoves, single great room.",
+        "1935": "Art Deco transformation by Foresters. Geometric details, hidden passages.",
+        "1965": "Family resort. Fluorescent lighting, vinyl, institutional pragmatism.",
+        "present": "Cozy-luxe restoration. Raw timber, Art Deco details, modern comfort."
+      },
+      "sensoryProfile": "Cedar and wood smoke. Warm light through old windows. Constant whisper of surrounding forest.",
+      "narrativeFunction": "The lodge is the series' central character — chooses guests, shapes experiences, holds them until ready.",
+      "stormBehavior": "Every system activates. Boiler accelerates, mirror delays further, corridors rearrange, deeper architecture revealed.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["lodge", "central", "character"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-002",
+      "name": "Room 33",
+      "type": "guest-room",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "interior",
+      "description": "The threshold room at the lodge's heart. Created by Siobhan's 1915 ritual. Guests during storms may emerge transformed, terrified, or not at all.",
+      "descriptions": {
+        "1910": "Standard guest room. Pine walls, iron bed, oil lamp.",
+        "1935": "Post-ritual, Foresters installed compass rose floor inlay.",
+        "1965": "Sealed after 1967 Fink incident. Compass rose papered over.",
+        "present": "Bed, desk, wardrobe with mirror, compass rose on floor. Always cold."
+      },
+      "sensoryProfile": "Cold and silent. Thick absorptive silence. Compass rose on floor. Wardrobe mirror reflects things not present.",
+      "narrativeFunction": "Threshold (between eras), reset (returning transformed), selection (choosing who enters).",
+      "stormBehavior": "Temperature drops. Compass rose may rotate. Mirror shows other eras. Wallpaper shifts between periods.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["threshold", "supernatural", "heart", "ritual"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-003",
+      "name": "The Triangle Bar",
+      "type": "bar",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "interior",
+      "description": "Emotional center — triangular room where Mixie and Flynn tend bar. Every confession, relationship, and story passes through.",
+      "descriptions": {
+        "present": "Emotional center — triangular room where Mixie and Flynn tend bar. Every confession, relationship, and story passes through."
+      },
+      "sensoryProfile": "Warm amber light. Cedar, whiskey, old wood. Glasses clinking. Piano in corner. Mirror reflecting a beat late.",
+      "narrativeFunction": "The confessional. Every significant conversation happens here.",
+      "stormBehavior": "Mirror delay deepens. Piano plays untouched. Glasses slide. Atmosphere becomes pressure cooker.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["bar", "emotional-center", "confession", "community"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-004",
+      "name": "The Great Room",
+      "type": "communal-hall",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "interior",
+      "description": "Lodge's communal center with massive stone fireplace burning continuously since 1910. Fire's ash contains objects from other eras, collected by Tom.",
+      "descriptions": {
+        "present": "Lodge's communal center with massive stone fireplace burning continuously since 1910. Fire's ash contains objects from other eras, collected by Tom."
+      },
+      "sensoryProfile": "Wood smoke and cedar. Crackling fire. Vaulted ceiling with visible timber beams.",
+      "narrativeFunction": "Communal gathering space and anchor point for the lodge's living presence.",
+      "stormBehavior": "Fire intensifies without fuel. Objects appear in ash — buttons, coins, paper fragments from other eras.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["communal", "fireplace", "gathering"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-005",
+      "name": "The Lobby & Front Desk",
+      "type": "lobby",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "interior",
+      "description": "Illusion of normalcy — competent hotel lobby masking lodge's true nature. Guest ledger contains every name since 1910.",
+      "descriptions": {
+        "present": "Illusion of normalcy — competent hotel lobby masking lodge's true nature. Guest ledger contains every name since 1910."
+      },
+      "sensoryProfile": "Grandfather clock ticking. Warm wood and polished brass. Old paper from guest ledger.",
+      "narrativeFunction": "Threshold between the ordinary world and the lodge's deeper nature.",
+      "stormBehavior": "Clock accelerates. Bell rings unstruck. Ledger pages turn on their own. During severe storms, door appears to Mirror Room.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["lobby", "normalcy", "ledger", "clock"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-006",
+      "name": "The Library",
+      "type": "library",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "interior",
+      "description": "Wood-paneled room with ~2,000 books, Foresters' coded texts, clock synced to boiler. Locked cabinet contains Foresters' records and earlier drafts of Mixie's novel.",
+      "descriptions": {
+        "present": "Wood-paneled room with ~2,000 books, Foresters' coded texts, clock synced to boiler. Locked cabinet contains Foresters' records and earlier drafts of Mixie's novel."
+      },
+      "sensoryProfile": "Old paper, leather, wood polish. Quiet except for clock. Warm, amber-lit, enclosed.",
+      "narrativeFunction": "Investigation hub and repository of the lodge's documented history.",
+      "stormBehavior": "Clock accelerates. Candle lit during storm refuses to go out. Books fall open to relevant pages.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["library", "investigation", "foresters", "knowledge"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-007",
+      "name": "The Dining Room & Kitchen",
+      "type": "dining-hall",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "interior",
+      "description": "Lodge's most practical spaces — grounding supernatural in ordinary. Kitchen resists supernatural influence. Communal table since 1910.",
+      "descriptions": {
+        "present": "Lodge's most practical spaces — grounding supernatural in ordinary. Kitchen resists supernatural influence. Communal table since 1910."
+      },
+      "sensoryProfile": "Coffee morning, bread afternoon, roasting vegetables evening. Morning light through east windows.",
+      "narrativeFunction": "Grounding anchor where the mundane resists the supernatural.",
+      "stormBehavior": "Kitchen resists — largely unaffected. Herb garden grows faster. Menu board occasionally shows dishes in unfamiliar handwriting.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["dining", "kitchen", "grounding", "practical"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-008",
+      "name": "The Service Corridors",
+      "type": "passage",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "interior",
+      "description": "Network of narrow passages. Sound travels impossibly. During storms, carry whispers from other eras and rearrange spatially.",
+      "descriptions": {
+        "present": "Network of narrow passages. Sound travels impossibly. During storms, carry whispers from other eras and rearrange spatially."
+      },
+      "sensoryProfile": "Narrow, four feet wide. Damp plaster, metallic tang. Sound distortion. Temperature pockets.",
+      "narrativeFunction": "Liminal connective tissue enabling spatial disorientation and temporal bleed.",
+      "stormBehavior": "Whispers intensify into full sentences. Spatial rearrangement. Earth-floored section near sub-basement warms.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["corridors", "hidden", "whispers", "liminal"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-009",
+      "name": "The Basement & Boiler Room",
+      "type": "mechanical-room",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "underground",
+      "description": "Tom's domain. 1935 Kewanee steam boiler modified by Foresters. Concealed hatch to cave system. Boiler accelerates before storms. Steam visions form.",
+      "descriptions": {
+        "present": "Tom's domain. 1935 Kewanee steam boiler modified by Foresters. Concealed hatch to cave system. Boiler accelerates before storms. Steam visions form."
+      },
+      "sensoryProfile": "Machine oil, warm metal. Boiler's cyclic pulse like heartbeat. Low ceilings. Hatch vibrates faintly.",
+      "narrativeFunction": "Gateway between the mechanical and the primal; Tom's seat of power and the lodge's heartbeat.",
+      "stormBehavior": "Boiler accelerates before storms. Steam visions form. 1943 death echoes play. Hatch vibrates and warms. Tom's radio tunes to stations from other decades.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["basement", "boiler", "tom", "hatch", "caves-access"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-010",
+      "name": "The Storage Rooms (Lost and Found)",
+      "type": "storage",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "interior",
+      "description": "Off service corridors — belongings left by guests who vanished. Tom maintains it like a cemetery. Locked Voss steamer trunk is Season Two mystery.",
+      "descriptions": {
+        "present": "Off service corridors — belongings left by guests who vanished. Tom maintains it like a cemetery. Locked Voss steamer trunk is Season Two mystery."
+      },
+      "sensoryProfile": "Old leather and cedar. Absorbed silence — visitors involuntarily whisper. Voss trunk emits faint perfume and pipe tobacco.",
+      "narrativeFunction": "Memorial and mystery repository; physical evidence of the lodge's history of disappearances.",
+      "stormBehavior": "Room warms. Sounds from belongings — latches clicking, clothing rustling, pocket watch ticking. Voss trunk vibrates during Convergence Storms.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["storage", "lost-and-found", "vanished-guests", "grief"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-011",
+      "name": "The Whispering Pines (Forest)",
+      "type": "forest",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "outdoor",
+      "description": "Old-growth Pacific Northwest rainforest surrounding lodge. Trees produce sustained whisper. Trails shift during storms. Forest is lodge's soft boundary.",
+      "descriptions": {
+        "present": "Old-growth Pacific Northwest rainforest surrounding lodge. Trees produce sustained whisper. Trails shift during storms. Forest is lodge's soft boundary."
+      },
+      "sensoryProfile": "Every shade of green. Filtered light, perpetual twilight. The whisper — always present, always almost language. Petrichor, cedar, fir sap.",
+      "narrativeFunction": "The lodge's soft boundary and living perimeter; both protective barrier and testing ground.",
+      "stormBehavior": "Whisper becomes roar. Trails shift. Perimeter becomes elastic. Bioluminescence on forest floor. Circle Path becomes visible.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["forest", "boundary", "old-growth", "whisper"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-012",
+      "name": "The Clearing & Fire Pit",
+      "type": "clearing",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "outdoor",
+      "description": "Natural clearing quarter mile south with fire pit ringed by river stones predating European settlement. Lodge's outdoor confessional.",
+      "descriptions": {
+        "present": "Natural clearing quarter mile south with fire pit ringed by river stones predating European settlement. Lodge's outdoor confessional."
+      },
+      "sensoryProfile": "Wood smoke. Fire's crackle. Open sky through canopy like natural oculus. Natural amphitheater acoustics.",
+      "narrativeFunction": "Outdoor truth-telling space; the lodge's open-air confessional and ritual ground.",
+      "stormBehavior": "Fire refuses to die. Sound focuses. Sky occasionally breaks above fire pit. Circle Path becomes obvious.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["clearing", "fire", "ritual", "truth", "outdoor"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-013",
+      "name": "The Stone Circle",
+      "type": "monument",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "outdoor",
+      "description": "Twelve glacial erratics in circle deep in forest, thirteenth at center. Oldest intentional structure. Moss grows to perimeter but does not cross.",
+      "descriptions": {
+        "present": "Twelve glacial erratics in circle deep in forest, thirteenth at center. Oldest intentional structure. Moss grows to perimeter but does not cross."
+      },
+      "sensoryProfile": "Quietest outdoor space. Forest whisper muted. Diffused light, no proper shadows. Fullness of deep listening.",
+      "narrativeFunction": "Origin point and sacred anchor; the eye of every storm and the lodge's deepest root.",
+      "stormBehavior": "Wind produces low harmonic tone. Carvings appear sharper. Central stone warms. Faint warm light. Inside circle: calm, eye of every storm.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["ancient", "stone-circle", "origin", "sacred"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-014",
+      "name": "The Guest Cabins",
+      "type": "cabins",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "outdoor",
+      "description": "Six detached cabins along Shore Path, each with own personality. They drift — shifting position subtly. Named: Cedar, Fern, Owl, Hemlock, Raven, Moss. Owl is Flynn's. Moss retains Siobhan's lavender.",
+      "descriptions": {
+        "present": "Six detached cabins along Shore Path, each with own personality. They drift — shifting position subtly. Named: Cedar, Fern, Owl, Hemlock, Raven, Moss. Owl is Flynn's. Moss retains Siobhan's lavender."
+      },
+      "sensoryProfile": "Each cabin has distinct character. Salt air from shore. Wood and forest scents. Isolation within community.",
+      "narrativeFunction": "Individual character spaces providing isolation, privacy, and personal supernatural encounters.",
+      "stormBehavior": "Subtle positional drift over time. Fern produces vivid dreams. Hemlock becomes harder to find at night.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["cabins", "drift", "isolation", "shore-path"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-015",
+      "name": "The Caves",
+      "type": "cave-system",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "underground",
+      "description": "Branching cave system beneath lodge — oldest space. Three levels: Upper Chambers, Middle Passages, Water Chamber with temporally reflective pool. Deeper you go, less stable time becomes.",
+      "descriptions": {
+        "present": "Branching cave system beneath lodge — oldest space. Three levels: Upper Chambers, Middle Passages, Water Chamber with temporally reflective pool. Deeper you go, less stable time becomes."
+      },
+      "sensoryProfile": "Absolute darkness. Water everywhere. Carved walls with spirals and wave patterns. Temperature rises with depth.",
+      "narrativeFunction": "The lodge's deepest source of power; where time itself becomes unstable and the oldest forces reside.",
+      "stormBehavior": "Water flow intensifies. Voices become distinct. Water Chamber pool shows temporal reflections. Deep passages produce echoes of future and past.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["caves", "source", "underground", "temporal"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-016",
+      "name": "The Subterranean Waterways",
+      "type": "underground-waterway",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "underground",
+      "description": "Underground streams threading cave system — lodge's connective tissue. Water carries temporal and memorial properties. Spring emerges in basement at constant 42 degrees. Water is memory.",
+      "descriptions": {
+        "present": "Underground streams threading cave system — lodge's connective tissue. Water carries temporal and memorial properties. Spring emerges in basement at constant 42 degrees. Water is memory."
+      },
+      "sensoryProfile": "Sound of moving water throughout cave system, basement, and during storms, building's walls. Cold, mineral-scented, rhythmic.",
+      "narrativeFunction": "The lodge's circulatory system; carrier of memory and temporal properties throughout the structure.",
+      "stormBehavior": "Flow increases. Rhythm accelerates synced with boiler. Sound propagates — cave voices audible in basement. Memory echoes surface near water.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["water", "underground", "memory", "rhythm"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-017",
+      "name": "The Hidden Rooms",
+      "type": "conditional-space",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "conditional",
+      "description": "Spaces appearing only when conditions are met — during storms, for specific people, at specific emotional states. Known rooms: Writing Room, Memory Room, Mirror Room, Seventh Cabin.",
+      "descriptions": {
+        "present": "Spaces appearing only when conditions are met — during storms, for specific people, at specific emotional states. Known rooms: Writing Room, Memory Room, Mirror Room, Seventh Cabin."
+      },
+      "sensoryProfile": "Warm. Silent like Room 33. Lit by unidentifiable sources. Subtle vibration, as though lodge expends effort to maintain space.",
+      "narrativeFunction": "The lodge's most active expressions of agency; spaces created in response to need.",
+      "stormBehavior": "Hidden rooms appear when conditions align. Writing Room for writers. Memory Room for unprocessed grief. Mirror Room adjacent to lobby.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["hidden", "conditional", "supernatural", "agency"],
+      "related_entries": []
+    },
+    {
+      "id": "place-creative-018",
+      "name": "The Shore Path",
+      "type": "trail",
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "category": "outdoor",
+      "description": "Path connecting the guest cabins along the shoreline, serving as the lodge's edge where forest meets water. The boundary between the lodge's domain and the wider island.",
+      "descriptions": {
+        "present": "Path connecting the guest cabins along the shoreline, serving as the lodge's edge where forest meets water. The boundary between the lodge's domain and the wider island."
+      },
+      "sensoryProfile": "Salt air and tide sounds. Gravel underfoot. Forest on one side, water on the other. Liminal edge space.",
+      "narrativeFunction": "Boundary path between the lodge's interior world and the external reality of Vashon Island.",
+      "stormBehavior": "Path lengthens or shortens. Tide behaves unusually. Cabins along path shift position. Boundary between lodge domain and island becomes uncertain.",
+      "keyObjects": [],
+      "connectedLocations": [],
+      "tags": ["shore", "path", "boundary", "liminal"],
+      "related_entries": []
     }
   ]
 }

@@ -232,6 +232,34 @@ export interface WorldRule {
   universe_id?: string;
 }
 
+export interface SeasonArc {
+  season: number;
+  title: string;
+  centralQuestion: string;
+}
+
+export interface EpisodeOutline {
+  episode: number;
+  title: string;
+  theme: string;
+  function: string;
+  coldOpen?: string;
+  characterFocus?: string[];
+  mysteryPlanted?: string;
+  majorEvent?: string;
+}
+
+export interface UniverseItem {
+  id: string;
+  name: string;
+  significance: string;
+  era?: string;
+  description: string;
+  connectedCharacters?: string[];
+  connectedLocations?: string[];
+  tags?: string[];
+}
+
 /** Fantasy universe / campaign definition */
 export interface Universe {
   id: string;
@@ -241,6 +269,12 @@ export interface Universe {
   themes?: string[];
   created_by?: string;
   created_at?: string;
+  logline?: string;
+  primeDirective?: string;
+  seasonArcs?: SeasonArc[];
+  episodes?: EpisodeOutline[];
+  worldRules?: { id: string; number: number; title: string; description: string; expanded: string }[];
+  items?: UniverseItem[];
 }
 
 /**

@@ -5675,6 +5675,514 @@
           }
         ]
       }
+    },
+    {
+      "id": "fan-009",
+      "title": "Glacial Formation",
+      "date_start": "~14000 BCE",
+      "era": "prehistory",
+      "layers": [
+        "event",
+        "environment"
+      ],
+      "description": "Glaciers carve Vashon Island and deposit the glacial erratics that form the stone circle. The cave system exists beneath.",
+      "places": [
+        "Stone Circle",
+        "The Caves"
+      ],
+      "sources": [],
+      "tags": [
+        "geology",
+        "origin"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Deep Time",
+        "beat": "setup"
+      }
+    },
+    {
+      "id": "fan-010",
+      "title": "Coast Salish Recognition",
+      "date_start": "~1500",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "The Duwamish and Puyallup peoples recognize this land as a place of passage -- not a resource but a relationship. They visit, they listen, they do not build.",
+      "places": [
+        "Stone Circle",
+        "The Forest"
+      ],
+      "sources": [],
+      "tags": [
+        "indigenous",
+        "pre-colonial"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Deep Time",
+        "beat": "setup"
+      }
+    },
+    {
+      "id": "fan-011",
+      "title": "Whispering Pines Lodge Founded",
+      "date_start": "1910",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Whispering Pines Lodge built by a consortium of investors. Mrs. Adelaide Hargrove serves as first operator. Workers note 'rooms that weren't there the day before.'",
+      "places": [
+        "Whispering Pines Lodge"
+      ],
+      "sources": [],
+      "tags": [
+        "founding",
+        "construction"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Lodge",
+        "beat": "inciting-incident"
+      }
+    },
+    {
+      "id": "fan-012",
+      "title": "Cormac and Siobhan Arrive",
+      "date_start": "1912",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Cormac and Siobhan Ni Ceallaigh arrive at the lodge from Ireland. Siobhan plants lavender along the Shore Path.",
+      "people": [
+        "Siobhan Ni Ceallaigh"
+      ],
+      "places": [
+        "Whispering Pines Lodge",
+        "Guest Cabins"
+      ],
+      "sources": [],
+      "tags": [
+        "siobhan",
+        "arrival"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Lodge",
+        "beat": "setup"
+      }
+    },
+    {
+      "id": "fan-013",
+      "title": "Cormac Lost at Sea",
+      "date_start": "1915-11",
+      "era": "early-20th-century",
+      "layers": [
+        "event"
+      ],
+      "description": "Cormac is lost at sea during a storm. Siobhan's grief becomes the catalyst for the lodge's transformation.",
+      "people": [
+        "Siobhan Ni Ceallaigh"
+      ],
+      "sources": [],
+      "tags": [
+        "death",
+        "grief",
+        "catalyst"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Lodge",
+        "beat": "rising-action"
+      }
+    },
+    {
+      "id": "fan-014",
+      "title": "Room 33 Created",
+      "date_start": "1915-11",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Siobhan performs a ritual in her room -- merging her grief with the land's ancient properties. The room becomes a threshold between times. Room 33 is born.",
+      "people": [
+        "Siobhan Ni Ceallaigh"
+      ],
+      "places": [
+        "Room 33"
+      ],
+      "sources": [],
+      "tags": [
+        "ritual",
+        "threshold",
+        "creation",
+        "supernatural"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Lodge",
+        "beat": "climax"
+      }
+    },
+    {
+      "id": "fan-015",
+      "title": "Foresters of the Eternal Compass Founded",
+      "date_start": "1930",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Dr. Aldric Voss founds the Foresters, a secret society dedicated to understanding and controlling the lodge's threshold properties.",
+      "people": [
+        "Dr. Aldric Voss"
+      ],
+      "places": [
+        "Whispering Pines Lodge"
+      ],
+      "sources": [],
+      "tags": [
+        "foresters",
+        "founding"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Foresters",
+        "beat": "inciting-incident"
+      }
+    },
+    {
+      "id": "fan-016",
+      "title": "Art Deco Renovation",
+      "date_start": "1935",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Foresters fund a major renovation. The Triangle Bar is rebuilt, service corridors expanded, the basement hatch installed, and the compass rose placed in Room 33.",
+      "places": [
+        "Triangle Bar",
+        "Service Corridors",
+        "Basement",
+        "Room 33"
+      ],
+      "sources": [],
+      "tags": [
+        "renovation",
+        "foresters",
+        "art-deco"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Foresters",
+        "beat": "rising-action"
+      }
+    },
+    {
+      "id": "fan-017",
+      "title": "M. Quinn Tends Bar",
+      "date_start": "1935",
+      "date_end": "1942",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "A woman named M. Quinn tends bar at the Triangle. She looks exactly like Mixie. She writes in a notebook. She writes a novel about a bartender at a time-shifting lodge.",
+      "people": [
+        "M. Quinn",
+        "Mixie Green"
+      ],
+      "places": [
+        "Triangle Bar"
+      ],
+      "sources": [],
+      "tags": [
+        "m-quinn",
+        "cycle",
+        "bartender"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Cycle",
+        "beat": "foreshadowing"
+      }
+    },
+    {
+      "id": "fan-018",
+      "title": "Iris Malone Disappears",
+      "date_start": "1938",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Iris Malone, identified by the Foresters as an 'Anomaly,' disappears from the lodge. Her fate is connected to the Foresters' increasingly dangerous experiments.",
+      "people": [
+        "Iris Malone"
+      ],
+      "places": [
+        "Room 33"
+      ],
+      "sources": [],
+      "tags": [
+        "disappearance",
+        "foresters",
+        "anomaly"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Foresters",
+        "beat": "rising-action"
+      }
+    },
+    {
+      "id": "fan-019",
+      "title": "The 1943 Incident -- Voss Dies in Room 33",
+      "date_start": "1943",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Aldric Voss carries something awakened in the Water Chamber up through the caves and into Room 33. He dies. The Foresters are destroyed. Their final letter ends mid-sentence.",
+      "people": [
+        "Dr. Aldric Voss"
+      ],
+      "places": [
+        "Room 33",
+        "The Caves",
+        "Basement"
+      ],
+      "sources": [],
+      "tags": [
+        "death",
+        "foresters",
+        "catastrophe",
+        "room-33"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Foresters",
+        "beat": "climax"
+      }
+    },
+    {
+      "id": "fan-020",
+      "title": "Vivian Cross Tends Bar",
+      "date_start": "1950",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Another woman who looks like Mixie tends bar at the Triangle during the 1950s. The cycle continues.",
+      "people": [
+        "Vivian Cross"
+      ],
+      "places": [
+        "Triangle Bar"
+      ],
+      "sources": [],
+      "tags": [
+        "cycle",
+        "bartender",
+        "lookalike"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Cycle",
+        "beat": "rising-action"
+      }
+    },
+    {
+      "id": "fan-021",
+      "title": "Family Resort Era",
+      "date_start": "1960",
+      "date_end": "1979",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The lodge is converted to a family resort. Fluorescent lights, vinyl, institutional pragmatism. Management suppresses the lodge's nature. Room 33 sealed after the 1967 Fink incident.",
+      "places": [
+        "Whispering Pines Lodge",
+        "Room 33"
+      ],
+      "sources": [],
+      "tags": [
+        "suppression",
+        "family-resort"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Lodge",
+        "beat": "falling-action"
+      }
+    },
+    {
+      "id": "fan-022",
+      "title": "The Fink Incident",
+      "date_start": "1967",
+      "era": "state-ferry",
+      "layers": [
+        "event"
+      ],
+      "description": "Harold Fink opens Room 33 during a storm. What he sees is not recorded. He screams. Room 33 is sealed with the compass rose papered over.",
+      "people": [
+        "Harold Fink"
+      ],
+      "places": [
+        "Room 33"
+      ],
+      "sources": [],
+      "tags": [
+        "incident",
+        "room-33",
+        "sealed"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Lodge",
+        "beat": "foreshadowing"
+      }
+    },
+    {
+      "id": "fan-023",
+      "title": "Tom Hargrove's Official Hire Date",
+      "date_start": "1987",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Tom Hargrove is officially hired as groundskeeper. His actual tenure may be far longer -- he appears in photographs from earlier decades.",
+      "people": [
+        "Tom Hargrove"
+      ],
+      "places": [
+        "Whispering Pines Lodge"
+      ],
+      "sources": [],
+      "tags": [
+        "tom",
+        "mystery",
+        "tenure"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Lodge",
+        "beat": "setup"
+      }
+    },
+    {
+      "id": "fan-024",
+      "title": "Season One: The Threshold",
+      "date_start": "2024",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Mixie tends bar. Flynn works beside her. The regulars gather. A storm approaches. The cycle that began with Siobhan in 1915 reaches its current iteration.",
+      "people": [
+        "Mixie Green",
+        "Flynn Callahan"
+      ],
+      "places": [
+        "Triangle Bar",
+        "Whispering Pines Lodge"
+      ],
+      "sources": [],
+      "tags": [
+        "present",
+        "season-one",
+        "cycle"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Threshold",
+        "beat": "setup"
+      }
+    },
+    {
+      "id": "fan-025",
+      "title": "The Convergence Storm",
+      "date_start": "2024",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "The most powerful storm of the season. Mixie enters Room 33 with the skeleton key. She encounters Siobhan in the wardrobe mirror. She dies and is reborn behind the bar -- transformed from witness to steward.",
+      "people": [
+        "Mixie Green",
+        "Siobhan Ni Ceallaigh",
+        "Flynn Callahan",
+        "Tom Hargrove"
+      ],
+      "places": [
+        "Room 33",
+        "Triangle Bar"
+      ],
+      "sources": [],
+      "tags": [
+        "convergence",
+        "climax",
+        "room-33",
+        "mirror",
+        "death",
+        "rebirth"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Threshold",
+        "beat": "climax"
+      }
     }
   ]
 }

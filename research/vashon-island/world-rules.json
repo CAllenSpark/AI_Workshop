@@ -1,0 +1,154 @@
+{
+  "worldRules": [
+    {
+      "id": "rule-1",
+      "name": "The Lodge Chooses",
+      "description": "The lodge selects its guests through forces beyond coincidence or intent.",
+      "category": "supernatural",
+      "implications": [
+        "Every guest, every worker, every soul who crosses the threshold was summoned by forces older than memory. The lodge is not a trap — it is an invitation."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-2",
+      "name": "Time Is Not Linear Here",
+      "description": "Temporal boundaries inside and around the lodge are fluid and permeable.",
+      "category": "physics",
+      "implications": [
+        "A guest may hear music from 1935 in a 2024 hallway. A storm in the present may reveal the lodge as it was in 1910. Time is the lodge's native language."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-3",
+      "name": "The Storm Is a Character",
+      "description": "Storms are not weather events but narrative forces that respond to emotional states.",
+      "category": "supernatural",
+      "implications": [
+        "Each storm strips away a layer of pretense. The bigger the lie a guest carries, the fiercer the storm that greets them."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-4",
+      "name": "Mixie Remembers Everything",
+      "description": "The bartender has served across all eras and retains memory of every guest and event.",
+      "category": "supernatural",
+      "implications": [
+        "Mixie has served every era, every guest. She does not age. She does not forget. She does not judge. But she remembers."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-5",
+      "name": "No One Leaves Until They're Ready",
+      "description": "The lodge holds guests for exactly as long as they need, no more, no less.",
+      "category": "supernatural",
+      "implications": [
+        "Some guests stay a night. Some stay decades. The lodge does not imprison — it holds, teaches, and waits."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-6",
+      "name": "The Lodge Is Not Evil",
+      "description": "The lodge reflects truth, which can feel painful but is never malicious.",
+      "category": "narrative",
+      "implications": [
+        "The lodge is a mirror, not a monster. What feels like cruelty is clarity. What feels like a cage is a chrysalis."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-7",
+      "name": "Every Object Has Memory",
+      "description": "Physical objects within the lodge retain emotional impressions from those who have touched them.",
+      "category": "supernatural",
+      "implications": [
+        "A glass left on the bar holds the sorrow of the hand that set it down. A key remembers every lock it has opened. Objects are witnesses."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-8",
+      "name": "Music Is a Portal",
+      "description": "Music can transport guests across time and identity within the lodge.",
+      "category": "supernatural",
+      "implications": [
+        "The right melody at the right moment can pull a guest into a different time, a different version of themselves. The jukebox is not random."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-9",
+      "name": "Room 33 Is the Heart",
+      "description": "Room 33 is the lodge's core — a space that manifests differently for every guest.",
+      "category": "supernatural",
+      "implications": [
+        "What happens inside Room 33 is different for every guest. Some emerge transformed. Some emerge terrified. Some do not emerge at all — at least not in the same era they entered."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-10",
+      "name": "Confession Is Currency",
+      "description": "Honesty is rewarded with insight; deception triggers escalation.",
+      "category": "social",
+      "implications": [
+        "The lodge rewards honesty with revelation and punishes deception with escalation. A lie told at the bar may summon a storm."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-11",
+      "name": "The Forest Watches",
+      "description": "The surrounding forest is an extension of the lodge's awareness and will.",
+      "category": "supernatural",
+      "implications": [
+        "Trees that have stood for centuries serve as the lodge's perimeter, its early warning system, its dreamscape. Lost guests find themselves among roots that seem to guide — or mislead."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-12",
+      "name": "Names Have Power",
+      "description": "Naming a fear or truth gives a guest power over it within the lodge.",
+      "category": "magic",
+      "implications": [
+        "Guests who can name their fear begin to master it. The lodge asks each soul: what do you call the thing you carry?"
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-13",
+      "name": "The Fourth Wall Is Thin",
+      "description": "The boundary between the story world and the audience is occasionally breached.",
+      "category": "narrative",
+      "implications": [
+        "Occasional moments of uncanny awareness — a glance at the camera, a line that speaks directly to the viewer — remind us that the lodge exists between worlds, including the one where we sit watching."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-14",
+      "name": "Every Exit Is Also an Entrance",
+      "description": "Leaving the lodge is itself a transformation; the outside world is seen with new eyes.",
+      "category": "physics",
+      "implications": [
+        "Guests who leave are changed. The world they return to has not changed — but they see it differently. Some find they cannot stop hearing the lodge's music."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-15",
+      "name": "The Story Serves the Feeling",
+      "description": "Emotional resonance takes priority over plot cleverness in all narrative decisions.",
+      "category": "narrative",
+      "implications": [
+        "If a plot point is clever but emotionally hollow, it is cut. If a moment is simple but devastating, it stays. The story bows to the heart."
+      ],
+      "universe_id": "room-33"
+    }
+  ]
+}

@@ -1370,6 +1370,460 @@
         "tac-010"
       ],
       "entry_type": "historical"
+    },
+    {
+      "id": "person-creative-001",
+      "name": "Mixie Green",
+      "description": "Mixie is the heart of Whispering Pines — a bartender whose warmth masks a deeper unease. She is writing a novel about a bartender in a time-shifting lodge, unaware that identical drafts exist from the 1930s and 1940s. She remembers every drink she has ever poured but cannot remember why she started.",
+      "role": "Head Bartender",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "The Reluctant Witness",
+      "type": "core",
+      "thematicFunction": "The audience surrogate who becomes the lodge's living memory.",
+      "psychology": {
+        "strengths": [
+          "Emotional intelligence",
+          "Radical presence",
+          "Memory borders on supernatural",
+          "Ability to hold space"
+        ],
+        "flaws": [
+          "Deflects pain with humor",
+          "Avoids own story",
+          "Uses warmth as armor"
+        ],
+        "fears": [
+          "Not original - thoughts/novel/identity inherited",
+          "Lodge chose her"
+        ],
+        "desires": [
+          "Finish novel",
+          "Understand M. Quinn",
+          "Be author of own story"
+        ]
+      },
+      "voice": {
+        "style": "Warm, quick-witted, layered. Bartender shorthand.",
+        "samples": [
+          "You don't order a drink like that unless someone taught you...",
+          "I remember every drink I've ever poured. I just can't remember why I started."
+        ]
+      },
+      "arc": "S1: From avoidance to confrontation. Discovers photograph, matching handwriting, earlier novel drafts, enters Room 33 during Convergence Storm. Dies and is reborn.",
+      "relationships": {
+        "Flynn": "Co-bartender, unspoken romantic tension",
+        "Siobhan": "The pattern she inherits",
+        "Chris": "Loyal regular",
+        "Tom": "Mutual steward respect"
+      },
+      "backstory": "Arrived drawn by impulse she couldn't name. Writing novel about bartender in time-shifting lodge — identical drafts exist from 1930s-1940s.",
+      "tags": ["protagonist", "bartender", "writer", "cycle", "threshold"]
+    },
+    {
+      "id": "person-creative-002",
+      "name": "Flynn Callahan",
+      "description": "Mixie's partner behind the bar — steady, warm, deeply protective. Lives in Owl cabin. Repairs watches as meditation. Callahan name appears in the Foresters' 1935 membership ledger.",
+      "role": "Co-Bartender",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "The Grief-Shaped Loyal",
+      "type": "core",
+      "psychology": {
+        "strengths": [
+          "Steadfast loyalty",
+          "Emotional courage",
+          "Instinctive protectiveness",
+          "Quiet perceptiveness"
+        ],
+        "flaws": [
+          "Buries grief beneath routine",
+          "Deflects with charm",
+          "Avoids own lodge connection"
+        ],
+        "fears": [
+          "Losing Mixie to Room 33",
+          "Family name in Foresters' ledger"
+        ],
+        "desires": [
+          "Keep Mixie safe",
+          "Understand family connection",
+          "Grieve what he's lost"
+        ]
+      },
+      "voice": {
+        "style": "Warm, laconic, Irish-inflected.",
+        "samples": [
+          "I don't fix watches because I understand time. I fix them because I don't.",
+          "It usually does."
+        ]
+      },
+      "arc": "S1: From steadfast companion to terrified witness. Watches Mixie descend toward Room 33. Vigil during Episode 9. 'It usually does' hints at hidden knowledge.",
+      "relationships": {},
+      "backstory": "Chose Owl cabin facing forest. Repairs watches obsessively. Callahan appears in Foresters' 1935 membership ledger.",
+      "tags": ["bartender", "grief", "loyalty", "foresters-connection", "watches"]
+    },
+    {
+      "id": "person-creative-003",
+      "name": "Siobhan Ni Ceallaigh (The Woman of the Storm)",
+      "description": "Born County Kerry ~1889, arrived 1912 with husband Cormac. After Cormac was lost at sea in 1915, her grief-fueled ritual in Room 33 transformed it into a threshold between times. She did not die conventionally — she became part of the lodge.",
+      "role": "Origin Figure / Supernatural Presence",
+      "period": "~1889–present (supernatural)",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "The Origin Point",
+      "type": "core",
+      "psychology": {
+        "strengths": [
+          "Profound emotional depth",
+          "Connection to land",
+          "Patient recognition across time"
+        ],
+        "flaws": [],
+        "fears": [
+          "No one will come to finish what she started"
+        ],
+        "desires": [
+          "To be recognized",
+          "Complete the cycle",
+          "To rest"
+        ]
+      },
+      "voice": {
+        "style": "Appears through silence and gesture. Spare, poetic.",
+        "samples": [
+          "I have been waiting for you specifically."
+        ]
+      },
+      "arc": "S1: Introduced as legend Ep 3, glimpsed in photograph, encountered face-to-face by Mixie in Room 33 mirror Ep 9.",
+      "relationships": {},
+      "backstory": "Arrived from Ireland 1912. Cormac lost at sea Nov 1915. Ritual in what became Room 33. Did not die conventionally — became part of the lodge.",
+      "tags": ["origin", "supernatural", "storm", "ritual", "mirror", "cycle"]
+    },
+    {
+      "id": "person-creative-004",
+      "name": "Chris Willis",
+      "description": "54-year-old cynic, Triangle Bar's most reliable presence. Vanishes during mid-season storm and returns with no memory of where he went.",
+      "role": "Bar Regular",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "Cynicism as Armor",
+      "type": "regular",
+      "psychology": {
+        "strengths": [
+          "Quick intelligence",
+          "Loyalty through presence",
+          "Honesty when it counts"
+        ],
+        "flaws": [
+          "Cynicism avoids vulnerability",
+          "Refuses unexplainable",
+          "Drinks for distance"
+        ],
+        "fears": [
+          "Being seen",
+          "Being changed"
+        ],
+        "desires": [
+          "Belong without admitting need",
+          "Be proven wrong"
+        ]
+      },
+      "voice": {
+        "style": "Sharp, dry, rapid-fire barfly wit.",
+        "samples": [
+          "I don't come here for the ambiance. I come here because the alternatives are worse."
+        ]
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "",
+      "tags": ["regular", "skeptic", "displacement", "bar-culture"]
+    },
+    {
+      "id": "person-creative-005",
+      "name": "Zahra \"Z\" Miranzadeh",
+      "description": "High-powered venture capital partner who arrives between deals. The lodge forces her to slow down. Her organizational instincts help decode the Foresters' structure.",
+      "role": "Venture Capital Partner",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "The Velocity",
+      "type": "visitor",
+      "psychology": {
+        "strengths": [],
+        "flaws": [],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "",
+        "samples": [
+          "This isn't a spiritual society. This is a hostile takeover dressed in robes."
+        ]
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "",
+      "tags": ["visitor", "outsider", "velocity", "foresters-decoder"]
+    },
+    {
+      "id": "person-creative-006",
+      "name": "Marie Dorion",
+      "description": "67-year-old cultural steward with deep Indigenous roots. Provides perspective the Foresters' records lack — land was a place of passage requiring relationship, not control.",
+      "role": "Cultural Steward / Lodge Regular",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "Heritage as Anchor",
+      "type": "regular",
+      "psychology": {
+        "strengths": [],
+        "flaws": [],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "",
+        "samples": [
+          "The Duwamish and Puyallup knew this land as a place of passage. Not a resource to be exploited but a relationship to be honored."
+        ]
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "",
+      "tags": ["regular", "indigenous-perspective", "cultural-steward", "elder"]
+    },
+    {
+      "id": "person-creative-007",
+      "name": "Matt Carlson",
+      "description": "Warm, genuine guest. First Season One test subject for Room 33. Enters Episode 4 and emerges changed.",
+      "role": "Recurring Guest",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "The Warm Front",
+      "type": "visitor",
+      "psychology": {
+        "strengths": [],
+        "flaws": [],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "",
+        "samples": [
+          "I don't know what happened in there. But I know I'm not the same."
+        ]
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "",
+      "tags": ["visitor", "room-33", "threshold", "everyman"]
+    },
+    {
+      "id": "person-creative-008",
+      "name": "Sam Taylor",
+      "description": "44-year-old environmental scientist studying anomalous weather. Instruments detect impossibilities — barometric, electromagnetic, and statistical correlation connecting Room 33 to disappearances.",
+      "role": "Environmental Scientist",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "The Instrument",
+      "type": "visitor",
+      "psychology": {
+        "strengths": [],
+        "flaws": [],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "",
+        "samples": [
+          "I don't use the word supernatural. I use the word statistically significant."
+        ]
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "",
+      "tags": ["visitor", "scientist", "data", "storms", "investigation"]
+    },
+    {
+      "id": "person-creative-009",
+      "name": "Akira Yang",
+      "description": "26-year-old fashion designer whose entire life is curated performance. The lodge strips away the aesthetic layer by layer.",
+      "role": "Fashion Designer",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "The Prodigal",
+      "type": "visitor",
+      "psychology": {
+        "strengths": [],
+        "flaws": [],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "",
+        "samples": [
+          "Everything I design is about making the inside visible. I just never tried it on myself."
+        ]
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "",
+      "tags": ["visitor", "creative", "identity", "performance", "youth"]
+    },
+    {
+      "id": "person-creative-010",
+      "name": "Stefan Shooter",
+      "description": "AR engineer whose worldview is that reality can be enhanced, measured, and controlled. The lodge disassembles this belief. A library book that describes events before they happen cracks his empiricism.",
+      "role": "AR Engineer",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "The Empiricist",
+      "type": "visitor",
+      "psychology": {
+        "strengths": [],
+        "flaws": [],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "",
+        "samples": [
+          "This is interesting."
+        ]
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "",
+      "tags": ["visitor", "technology", "empiricism", "worldview-shift"]
+    },
+    {
+      "id": "person-creative-011",
+      "name": "Esmerelda",
+      "description": "59-year-old astrologer and medium who has been visiting the lodge for years. Senses what others cannot. Whispers a blessing as Mixie leaves for Room 33.",
+      "role": "Astrologer and Medium",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "Mysticism as Meaning-Making",
+      "type": "regular",
+      "psychology": {
+        "strengths": [],
+        "flaws": [],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "Layered, poetic, oracular.",
+        "samples": [
+          "You'll do."
+        ]
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "",
+      "tags": ["regular", "mystic", "intuition", "spiritual"]
+    },
+    {
+      "id": "person-creative-012",
+      "name": "Tom Hargrove",
+      "description": "63-year-old groundskeeper whose actual tenure may be far longer than records show. Maintains the boiler, the hatch to the caves, and both the mechanical and supernatural systems of the lodge. His vigil speech is the series' emotional bedrock.",
+      "role": "Groundskeeper",
+      "period": "1987–present (possibly longer)",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "The Foundation",
+      "type": "lodge",
+      "psychology": {
+        "strengths": [],
+        "flaws": [],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "Minimal, precise, weighted.",
+        "samples": [
+          "She went in because she was ready. Not because the room took her. You understand? She was ready."
+        ]
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "Official hire 1987, appears in earlier photographs. Maintains basement hatch to caves, collects objects from fireplace ash, navigates service corridors without light.",
+      "tags": ["lodge-staff", "groundskeeper", "caves", "boiler", "steward", "mystery"]
+    },
+    {
+      "id": "person-creative-013",
+      "name": "Jauncey Pladiym",
+      "description": "63-year-old folk singer, Triangle Bar fixture for decades. Plays, listens, remembers. Has knowledge of the Foresters from years of listening. An original song in the finale is Season One's musical resolution.",
+      "role": "Folk Singer",
+      "period": "Contemporary",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "Witness as Purpose",
+      "type": "regular",
+      "psychology": {
+        "strengths": [],
+        "flaws": [],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "",
+        "samples": [
+          "They didn't tend the threshold. They tried to own it. There's a difference."
+        ]
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "",
+      "tags": ["regular", "musician", "oral-history", "witness", "foresters-knowledge"]
+    },
+    {
+      "id": "person-creative-014",
+      "name": "The Mirror",
+      "description": "Antique mirror at the Triangle Bar entry that reflects everything a fraction late. The most public supernatural feature of the lodge. Shows reflections from other eras. In Episode 9, serves as the medium for Mixie to see Siobhan.",
+      "role": "Supernatural Entity",
+      "period": "Unknown–present",
+      "related_entries": [],
+      "entry_type": "fantasy",
+      "universe_id": "room-33",
+      "archetype": "The Delayed Reflection",
+      "type": "supernatural",
+      "psychology": {
+        "strengths": [],
+        "flaws": [],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "Silent. Communicates only through what it reflects — and when.",
+        "samples": []
+      },
+      "arc": "",
+      "relationships": {},
+      "backstory": "",
+      "tags": ["supernatural", "artifact", "time-delay", "portal", "triangle-bar"]
     }
   ]
 }
