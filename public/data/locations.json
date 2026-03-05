@@ -1,0 +1,314 @@
+{
+  "locations": [
+    {
+      "id": "whispering-pines-lodge",
+      "name": "Whispering Pines Lodge (Overview)",
+      "category": "interior",
+      "summary": "A remote Pacific Northwest lodge on Vashon Island where time moves differently. Built in 1910, renovated in 1935 by the Foresters, and operating continuously since. The lodge is not a setting — it is a character.",
+      "descriptions": {
+        "1910": "Frontier outpost. Raw timber, oil lamps, wood stoves, a single great room.",
+        "1935": "Art Deco transformation by the Foresters. Geometric details, upgraded infrastructure, hidden passages.",
+        "1965": "Family resort. Fluorescent lighting, vinyl, institutional pragmatism.",
+        "present": "Cozy-luxe restoration. The best of every era preserved — raw timber, Art Deco details, modern comfort."
+      },
+      "sensoryProfile": "Cedar and wood smoke. Warm light through old windows. The constant whisper of the surrounding forest.",
+      "narrativeFunction": "The lodge is the series' central character — it chooses its guests, shapes their experiences, and holds them until they are ready to leave.",
+      "stormBehavior": "Every system activates. The boiler accelerates, the mirror delays further, corridors rearrange, and the lodge reveals its deeper architecture.",
+      "connectedLocations": ["triangle-bar", "great-room", "room-33", "the-forest"],
+      "tags": ["lodge", "central", "character"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "room-33",
+      "name": "Room 33",
+      "category": "interior",
+      "summary": "The threshold room at the lodge's heart. Created by Siobhan's 1915 ritual, Room 33 exists between times — guests who enter during storms may emerge transformed, terrified, or not at all.",
+      "descriptions": {
+        "1910": "A standard guest room before Siobhan's ritual. Pine walls, iron bed, oil lamp.",
+        "1935": "Post-ritual, the Foresters installed the compass rose floor inlay and conducted ceremonies here.",
+        "1965": "Sealed after the 1967 Fink incident. Compass rose papered over, removed from the reservation system.",
+        "present": "Bed, desk, wardrobe with mirror, compass rose visible on the floor. The room is always cold."
+      },
+      "sensoryProfile": "Cold and silent. The silence is thick — absorptive. The compass rose on the floor. The wardrobe mirror that reflects things not present.",
+      "narrativeFunction": "The lodge's deepest mystery. Functions as threshold (between eras), reset (returning the transformed), and selection (choosing who enters).",
+      "stormBehavior": "Temperature drops further, the compass rose may rotate, the mirror shows reflections from other eras, wallpaper shifts between periods.",
+      "connectedLocations": ["lobby-front-desk"],
+      "seasonOneScenes": ["Ep 4: Matt enters Room 33", "Ep 7: Mixie slides letter under the door", "Ep 9: Mixie enters during Convergence Storm"],
+      "tags": ["threshold", "supernatural", "heart", "ritual"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "triangle-bar",
+      "name": "The Triangle Bar",
+      "category": "interior",
+      "summary": "The emotional center of the lodge — a triangular room where Mixie and Flynn tend bar. Every confession, every relationship, and every story passes through this space.",
+      "descriptions": {
+        "1910": "A rough saloon corner of the great room with a plank bar and kerosene lamps.",
+        "1935": "Rebuilt by the Foresters as a proper Art Deco bar with geometric woodwork and the triangular floor plan.",
+        "1965": "Softened with carpet, TVs, a jukebox. The bar resisted.",
+        "present": "Restored to Art Deco bones with warm lighting, the original bar, and the photograph on its shelf."
+      },
+      "sensoryProfile": "Warm amber light. Cedar, whiskey, old wood. Glasses clinking. The piano in the corner. The mirror reflecting everything a beat late.",
+      "narrativeFunction": "The confessional. Every significant conversation happens here. The bar is where truth is spoken and the community gathers.",
+      "stormBehavior": "The mirror's delay deepens. The piano plays notes without being touched. Glasses slide. The atmosphere becomes a pressure cooker of emotion.",
+      "connectedLocations": ["great-room", "lobby-front-desk", "dining-kitchen"],
+      "seasonOneScenes": ["Every episode: primary gathering space", "Ep 6: M. Quinn handwriting discovery", "Ep 8: Foresters symbol found under baseboard"],
+      "tags": ["bar", "emotional-center", "confession", "community"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "great-room",
+      "name": "The Great Room",
+      "category": "interior",
+      "summary": "The lodge's communal center with a massive stone fireplace burning continuously since 1910. The fire's ash contains objects from other eras, collected by Tom.",
+      "descriptions": {
+        "1910": "The entire ground floor: combined dining, socializing, and gathering.",
+        "1935": "Defined as a distinct room. Vaulted ceiling, reading nooks, refined furnishings.",
+        "1965": "Institutional furniture, TV corner, board games.",
+        "present": "Restored with comfortable seating, the original fireplace, warm lighting."
+      },
+      "sensoryProfile": "Wood smoke and cedar. Crackling fire. Vaulted ceiling with visible timber beams. The warmth of a century of gathering.",
+      "narrativeFunction": "The communal space. Morning-after scenes process storm events here. The ensemble functions as a community.",
+      "stormBehavior": "The fire intensifies without fuel. Objects appear in the ash — buttons, coins, paper fragments from other eras.",
+      "connectedLocations": ["triangle-bar", "lobby-front-desk", "library", "dining-kitchen"],
+      "tags": ["communal", "fireplace", "gathering"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lobby-front-desk",
+      "name": "The Lobby & Front Desk",
+      "category": "interior",
+      "summary": "The illusion of normalcy — a competent hotel lobby masking the lodge's true nature. The guest ledger contains every name since 1910, including M. Quinn.",
+      "descriptions": {
+        "1910": "A simple entry hall with a desk, a ledger, and the brass bell.",
+        "1935": "Elegant Art Deco lobby with the grandfather clock and formal front desk.",
+        "1965": "Corporate hotel reception: formica counter, fluorescent lights.",
+        "present": "Restored warmth with original details. The ledger sits open. The clock ticks. The bell waits."
+      },
+      "sensoryProfile": "The grandfather clock's ticking. Warm wood and polished brass. Old paper from the guest ledger.",
+      "narrativeFunction": "First impressions and last exits. The ledger is the series' central investigative object.",
+      "stormBehavior": "The clock accelerates. The bell rings without being struck. Ledger pages turn on their own.",
+      "connectedLocations": ["triangle-bar", "great-room", "room-33"],
+      "tags": ["lobby", "normalcy", "ledger", "clock"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "library",
+      "name": "The Library",
+      "category": "interior",
+      "summary": "A wood-paneled room with roughly 2,000 books, the Foresters' coded texts, and a clock synced to the boiler's rhythm.",
+      "descriptions": {
+        "1910": "A small reading nook with donated books.",
+        "1935": "The Foresters' library with coded texts hidden in the collection.",
+        "1965": "Neglected but intact. Paperbacks added.",
+        "present": "Restored and curated. Deep chairs, warm light, the scent of old paper."
+      },
+      "sensoryProfile": "Old paper, leather, wood polish. Quiet except for the clock. Warm, amber-lit, enclosed.",
+      "narrativeFunction": "The investigative space. Where Mixie discovers the Foresters' records and the earlier novel drafts.",
+      "stormBehavior": "The clock accelerates. A candle lit during a storm refuses to go out. Books fall open to relevant pages.",
+      "connectedLocations": ["great-room", "service-corridors"],
+      "seasonOneScenes": ["Ep 5: Stefan finds self-describing book", "Ep 8: Foresters' records discovered", "Ep 9: Earlier novel drafts found"],
+      "tags": ["library", "investigation", "foresters", "knowledge"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "dining-kitchen",
+      "name": "The Dining Room & Kitchen",
+      "category": "interior",
+      "summary": "The lodge's most practical spaces — grounding the supernatural in the ordinary. The kitchen resists supernatural influence.",
+      "descriptions": {
+        "1910": "Part of the Great Room; trestle tables near the kitchen.",
+        "1935": "Dedicated room with wood-paneled walls and formal table settings.",
+        "1965": "Vinyl tablecloths, breakfast buffet, family-friendly.",
+        "present": "Restored wood paneling, communal table, cloth napkins, candles. Food as care."
+      },
+      "sensoryProfile": "Coffee in the morning, bread in the afternoon, roasting vegetables in the evening. Morning light through east-facing windows.",
+      "narrativeFunction": "Grounding. Post-storm mornings are staged here. The dining room resets the emotional register.",
+      "stormBehavior": "The kitchen resists — largely unaffected. The herb garden grows faster. The menu board occasionally shows dishes in unfamiliar handwriting.",
+      "connectedLocations": ["great-room", "triangle-bar", "service-corridors"],
+      "tags": ["dining", "kitchen", "grounding", "practical"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "service-corridors",
+      "name": "The Service Corridors",
+      "category": "interior",
+      "summary": "A network of narrow passages connecting the lodge's service areas. Sound travels impossibly. During storms, they carry whispers from other eras.",
+      "descriptions": {
+        "1910": "A single back hallway connecting kitchen to storage.",
+        "1935": "Expanded by the Foresters into a full network with hidden passages.",
+        "1965": "Same network with fluorescent lighting.",
+        "present": "Aged plaster and stone, warm LEDs in main corridors, peripheral passages unlit."
+      },
+      "sensoryProfile": "Narrow, four feet wide. Damp plaster, metallic tang. Sound distortion — the bar is audible behind the library.",
+      "narrativeFunction": "Hidden movement and acoustic information. The corridors carry signals between spaces that are not always contemporary.",
+      "stormBehavior": "Whispers intensify into full sentences. Spatial rearrangement — turns lead to unexpected destinations.",
+      "connectedLocations": ["dining-kitchen", "lobby-front-desk", "library", "basement-boiler", "storage-rooms"],
+      "tags": ["corridors", "hidden", "whispers", "liminal"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "basement-boiler",
+      "name": "The Basement & Boiler Room",
+      "category": "underground",
+      "summary": "Tom's domain. Houses a 1935 Kewanee steam boiler modified by the Foresters and the concealed hatch to the cave system.",
+      "descriptions": {
+        "1910": "Shallow cellar with dirt floor, stone walls, coal storage.",
+        "1935": "Expanded with the Foresters' hatch to the caves. Bold symbols carved on the walls.",
+        "1965": "Additional utilities. The hatch was sealed with concrete.",
+        "present": "Layered history. The boiler still runs. Tom reopened the hatch. His workshop occupies the north section."
+      },
+      "sensoryProfile": "Machine oil, warm metal. The boiler's cyclic pulse like a heartbeat. Low ceilings. The hatch vibrates faintly — always.",
+      "narrativeFunction": "Where mechanical and supernatural systems converge. The boiler is the lodge's first storm warning.",
+      "stormBehavior": "Boiler accelerates before storms arrive. Steam visions form. The hatch vibrates and warms.",
+      "connectedLocations": ["service-corridors", "storage-rooms", "the-caves"],
+      "tags": ["basement", "boiler", "tom", "hatch", "caves-access"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "storage-rooms",
+      "name": "The Storage Rooms (Lost and Found)",
+      "category": "interior",
+      "summary": "Includes the \"Lost and Found,\" a room of belongings left by guests who vanished. Tom maintains it like a cemetery.",
+      "descriptions": {
+        "1910": "A single room with a shelf for forgotten items.",
+        "1935": "Dedicated room as guest disappearances accumulated.",
+        "1965": "Growing fuller, items never discarded.",
+        "present": "Full, organized, haunting. Tom adds to it. He never removes."
+      },
+      "sensoryProfile": "Old leather and cedar. Absorbed silence — visitors involuntarily whisper.",
+      "narrativeFunction": "Physical evidence of the vanished. The series' conscience — proof that the lodge takes, even as it gives.",
+      "stormBehavior": "The room warms. Sounds from belongings — latches clicking, clothing rustling, a pocket watch ticking.",
+      "connectedLocations": ["service-corridors", "basement-boiler"],
+      "tags": ["storage", "lost-and-found", "vanished-guests", "grief"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "the-forest",
+      "name": "The Whispering Pines (Forest)",
+      "category": "outdoor",
+      "summary": "Old-growth Pacific Northwest rainforest surrounding the lodge. The trees produce a sustained whisper in the wind. Trails shift during storms.",
+      "descriptions": {
+        "1910": "Wild frontier. The forest was the world outside shelter.",
+        "1935": "Sacred. The Foresters protected the old-growth as a temple precinct.",
+        "1965": "Tamed with gravel paths, signage, and a nature walk brochure.",
+        "present": "Ancient. Trails natural. Signage removed. The forest dictates the path."
+      },
+      "sensoryProfile": "Every shade of green. Filtered light, perpetual twilight beneath the canopy. The whisper — always present, always almost language.",
+      "narrativeFunction": "The boundary. Characters who try to leave without resolution find paths looping back.",
+      "stormBehavior": "The whisper becomes a roar. Trails shift. The perimeter becomes elastic. Bioluminescence on the forest floor.",
+      "connectedLocations": ["whispering-pines-lodge", "clearing-fire-pit", "stone-circle", "guest-cabins", "the-caves"],
+      "tags": ["forest", "boundary", "old-growth", "whisper"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "clearing-fire-pit",
+      "name": "The Clearing & Fire Pit",
+      "category": "outdoor",
+      "summary": "A natural clearing a quarter mile south with a fire pit ringed by river stones predating European settlement. The lodge's outdoor confessional.",
+      "descriptions": {
+        "1910": "Natural clearing, original stone ring for cooking fires.",
+        "1935": "Maintained by the Foresters as a ritual space.",
+        "1965": "Picnic area with tables, grill, horseshoe pit.",
+        "present": "Returned to primal simplicity. Fire pit, log benches, sky."
+      },
+      "sensoryProfile": "Wood smoke. The fire's crackle. Open sky through the canopy like a natural oculus. Natural amphitheater acoustics.",
+      "narrativeFunction": "The truth circle. Characters say things here they would not say indoors.",
+      "stormBehavior": "The fire refuses to die. Sound focuses. The sky occasionally breaks above the fire pit.",
+      "connectedLocations": ["the-forest", "stone-circle"],
+      "tags": ["clearing", "fire", "ritual", "truth", "outdoor"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "stone-circle",
+      "name": "The Stone Circle",
+      "category": "outdoor",
+      "summary": "Twelve glacial erratics in a circle deep in the forest, with a thirteenth at center. The oldest intentional structure on the property.",
+      "descriptions": {
+        "1910": "Known to the builders, left alone.",
+        "1935": "The Foresters documented the carvings and called it \"the Foundation.\"",
+        "1965": "Forgotten. The path overgrew.",
+        "present": "Unchanged. Tom visits monthly. He sits."
+      },
+      "sensoryProfile": "The quietest outdoor space. The forest whisper is muted here. Diffused light with no proper shadows.",
+      "narrativeFunction": "The origin point. Where the land's properties were first recognized.",
+      "stormBehavior": "Wind produces a low harmonic tone. Carvings appear sharper. The central stone warms. Inside the circle: calm, the eye of every storm.",
+      "connectedLocations": ["clearing-fire-pit", "the-forest", "the-caves"],
+      "tags": ["ancient", "stone-circle", "origin", "sacred"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "guest-cabins",
+      "name": "The Guest Cabins",
+      "category": "outdoor",
+      "summary": "Six detached cabins along the Shore Path, each with its own personality. They drift — shifting position subtly over time. Named: Cedar, Fern, Owl, Hemlock, Raven, Moss.",
+      "descriptions": {
+        "1910": "Two rough timber shelters for overflow guests.",
+        "1935": "Six purpose-built cabins matching Art Deco aesthetic.",
+        "1965": "Vinyl siding, electric baseboard heat.",
+        "present": "Restored to period character, each unique and named."
+      },
+      "sensoryProfile": "Cedar shake roofs, moss on foundations. Quieter than the main building but more exposed to forest sounds.",
+      "narrativeFunction": "Independence and exposure. Outside the lodge's concentrated protection, inside the forest's sphere of influence.",
+      "stormBehavior": "Subtle positional drift over time. Fern produces vivid dreams. Hemlock becomes harder to find at night.",
+      "connectedLocations": ["whispering-pines-lodge", "the-forest"],
+      "tags": ["cabins", "drift", "isolation", "shore-path"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "the-caves",
+      "name": "The Caves",
+      "category": "underground",
+      "summary": "A branching cave system beneath the lodge — the oldest space in the ROOM 33 universe. Three levels: Upper Chambers, Middle Passages, and the Water Chamber.",
+      "descriptions": {
+        "1910": "The builders entered the upper chambers and retreated.",
+        "1935": "The Foresters explored three levels and conducted rituals ending in the 1943 catastrophe.",
+        "1965": "Sealed and forgotten.",
+        "present": "Tom maintains the upper chambers. He has heard his own voice from deeper passages, speaking words he has not spoken."
+      },
+      "sensoryProfile": "Absolute darkness. Water everywhere — dripping, trickling, pooling. Carved walls with spirals and wave patterns. Temperature rises with depth.",
+      "narrativeFunction": "The source. Where the land's properties originate. The descent mirrors emotional depth across the five seasons.",
+      "stormBehavior": "Water flow intensifies. Voices become distinct. The Water Chamber pool shows temporal reflections.",
+      "connectedLocations": ["basement-boiler", "the-forest", "stone-circle", "subterranean-waterways"],
+      "tags": ["caves", "source", "underground", "temporal"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "subterranean-waterways",
+      "name": "The Subterranean Waterways",
+      "category": "underground",
+      "summary": "Underground streams threading through the cave system — the lodge's connective tissue. Water carries temporal and memorial properties.",
+      "descriptions": {
+        "1910": "The builders tapped a spring — \"exceptionally pure and cold.\"",
+        "1935": "The Foresters traced the spring to the caves and used the water in rituals.",
+        "1965": "Municipal water connected. The spring was capped (cap has since failed).",
+        "present": "Tom maintains both systems. Uses spring water for the herb garden and his coffee."
+      },
+      "sensoryProfile": "The sound of moving water throughout the cave system, the basement, and during storms, the building's walls. Cold, mineral-scented, rhythmic.",
+      "narrativeFunction": "The connective system. The waterways' rhythmic flow is the lodge's master clock.",
+      "stormBehavior": "Flow increases. Rhythm accelerates in sync with the boiler. Memory echoes surface near water.",
+      "connectedLocations": ["the-caves", "basement-boiler"],
+      "tags": ["water", "underground", "memory", "rhythm"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "hidden-rooms",
+      "name": "The Hidden Rooms",
+      "category": "conditional",
+      "summary": "Spaces that appear only when conditions are met — during storms, for specific people, at specific emotional states. Known rooms: the Writing Room, the Memory Room, the Mirror Room, the Seventh Cabin.",
+      "descriptions": {
+        "1910": "The builders noted \"rooms that weren't there the day before.\"",
+        "1935": "The Foresters documented at least four distinct hidden rooms.",
+        "1965": "Reports dismissed as \"guest confusion.\"",
+        "present": "Tom acknowledges them. Mixie is beginning to notice."
+      },
+      "sensoryProfile": "Warm. Silent like Room 33. Lit by unidentifiable sources. A subtle vibration, as though the lodge expends effort to maintain the space.",
+      "narrativeFunction": "The lodge's agency made architectural. Hidden rooms prove the lodge creates spaces the permanent structure cannot.",
+      "stormBehavior": "Hidden rooms appear when conditions align. The Writing Room for writers. The Memory Room for unprocessed grief.",
+      "connectedLocations": ["whispering-pines-lodge"],
+      "seasonOneScenes": ["Ep 9: Mixie finds the Writing Room", "Ep 9: Mirror Room door glimpsed beside the clock"],
+      "tags": ["hidden", "conditional", "supernatural", "agency"],
+      "universe_id": "room-33"
+    }
+  ]
+}

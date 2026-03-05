@@ -1,0 +1,191 @@
+{
+  "items": [
+    {
+      "id": "the-photograph",
+      "name": "The Photograph",
+      "significance": "A framed photograph behind the bar showing a woman who looks exactly like Mixie, standing in the Triangle Bar in what appears to be the 1930s or 1940s. The central investigative object of Season One.",
+      "connectedCharacters": ["mixie-green", "woman-of-the-storm"],
+      "connectedLocations": ["triangle-bar"],
+      "era": "c. 1935-1942",
+      "description": "A black-and-white photograph in a simple frame. The woman behind the bar is unmistakably Mixie — or someone who shares her face across decades.",
+      "tags": ["photograph", "identity", "cycle", "investigation"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "guest-ledger",
+      "name": "The Guest Ledger",
+      "significance": "A leather-bound guest register at the front desk, continuously maintained since 1910. Contains the names of every guest, including M. Quinn (1935-1942) whose handwriting matches Mixie's.",
+      "connectedCharacters": ["mixie-green"],
+      "connectedLocations": ["lobby-front-desk"],
+      "era": "1910-present",
+      "description": "Heavy leather binding, hand-ruled pages, entries in dozens of different hands spanning over a century. Pages turn on their own during storms.",
+      "tags": ["ledger", "records", "identity", "investigation"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "mixies-notebook",
+      "name": "Mixie's Notebook / Novel",
+      "significance": "Mixie's handwritten novel about a bartender at a time-shifting lodge — which turns out to be inherited memory. Earlier drafts from 1936, 1938, and 1942 exist in the same handwriting.",
+      "connectedCharacters": ["mixie-green"],
+      "connectedLocations": ["triangle-bar", "library"],
+      "era": "Present (with 1930s-1940s precursors)",
+      "description": "A worn notebook that Mixie carries and writes in during quiet moments. The novel she is writing has been written before, by women who shared her face.",
+      "tags": ["novel", "writing", "cycle", "inherited-memory"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "the-piano",
+      "name": "The Piano",
+      "significance": "An upright piano in the Triangle Bar that plays notes without being touched during storms. Music is a portal in the ROOM 33 universe.",
+      "connectedCharacters": ["jauncey-pladiym"],
+      "connectedLocations": ["triangle-bar"],
+      "era": "c. 1935 (installed during renovation)",
+      "description": "A well-maintained upright piano. During storms, it produces melodies that no one is playing — songs from other eras that open emotional doorways.",
+      "tags": ["piano", "music", "portal", "supernatural"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "the-mirror-item",
+      "name": "The Mirror (Triangle Bar)",
+      "significance": "An antique mirror at the bar's entrance that reflects everything a fraction of a second late. The lodge's most visible supernatural artifact and Siobhan's portal.",
+      "connectedCharacters": ["the-mirror", "woman-of-the-storm", "mixie-green"],
+      "connectedLocations": ["triangle-bar"],
+      "era": "Unknown (predates current records)",
+      "description": "A large antique mirror with an ornate frame. Its delay is constant and measurable. During Episode 9, it becomes the medium through which Mixie encounters Siobhan.",
+      "tags": ["mirror", "time-delay", "portal", "supernatural"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "room-33-key",
+      "name": "The Room 33 Key (Skeleton Key)",
+      "significance": "A brass skeleton key that Room 33 returns to Mixie in exchange for her letter. Tarnished, heavy, warm to the touch.",
+      "connectedCharacters": ["mixie-green"],
+      "connectedLocations": ["room-33"],
+      "era": "Unknown",
+      "description": "An old skeleton key, not a modern key. Tarnished brass. Warm when Mixie picks it up. It appeared under Room 33's door after she slid her letter in.",
+      "tags": ["key", "room-33", "threshold", "exchange"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "flynns-pocket-watch",
+      "name": "Flynn's Pocket Watch",
+      "significance": "Flynn repairs watches as meditation. During storms, the parts in Owl cabin rearrange themselves — gears stack, springs coil, faces align.",
+      "connectedCharacters": ["flynn-callahan"],
+      "connectedLocations": ["guest-cabins"],
+      "era": "Present",
+      "description": "A collection of watch parts and tools on Flynn's nightstand. His meditation practice. The parts self-assemble during storms.",
+      "tags": ["watch", "time", "meditation", "supernatural"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "jaunceys-the-sea",
+      "name": "Jauncey's Song: \"The Sea That Held Her\"",
+      "significance": "Jauncey's original song, performed for the first time in the Season One finale. About Siobhan, about Mixie, about the lodge. The season's musical resolution.",
+      "connectedCharacters": ["jauncey-pladiym", "woman-of-the-storm", "mixie-green"],
+      "connectedLocations": ["triangle-bar"],
+      "era": "Present (composed across years)",
+      "description": "A folk song that Jauncey has been composing for years, finally performed in Episode 10. It captures the lodge's truth in music.",
+      "tags": ["music", "song", "siobhan", "resolution"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "foresters-symbols",
+      "name": "The Foresters' Symbols",
+      "significance": "Geometric compass roses and coded marks left throughout the lodge by the Foresters of the Eternal Compass (1935-1943).",
+      "connectedCharacters": [],
+      "connectedLocations": ["triangle-bar", "room-33", "basement-boiler", "the-caves"],
+      "era": "1935-1943",
+      "description": "Compass roses enclosed in circles, geometric patterns, and text in the Foresters' cipher. Bold in the basement, discreet elsewhere.",
+      "tags": ["foresters", "symbols", "compass-rose", "history"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "brass-bell",
+      "name": "The Brass Bell",
+      "significance": "A service bell at the front desk that rings without being struck during storms. One of the lodge's oldest artifacts.",
+      "connectedCharacters": [],
+      "connectedLocations": ["lobby-front-desk"],
+      "era": "1910-present",
+      "description": "A small brass service bell, tarnished with age. It rings on its own during storms — a single clear tone that carries through the lobby.",
+      "tags": ["bell", "supernatural", "lobby"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "toms-tools",
+      "name": "Tom's Tools & Cigar Box",
+      "significance": "Tom's meticulously organized workshop and his cigar box of 37 objects found in the Great Room fireplace ash after storms.",
+      "connectedCharacters": ["tom-hargrove"],
+      "connectedLocations": ["basement-boiler"],
+      "era": "Various (objects span eras)",
+      "description": "A cedar cigar box containing 37 catalogued items: a 1911 penny, a 1930s button, a 1960s guitar pick, and a fragment of paper from Mixie's notebook that has not yet been torn.",
+      "tags": ["tools", "collection", "ash-objects", "temporal"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "foresters-journal",
+      "name": "The Foresters' Journal & Records",
+      "significance": "Partial records from the Foresters found in a locked library cabinet: meeting minutes, ritual notes in coded language, correspondence about \"the Threshold Project,\" and an unfinished 1943 letter.",
+      "connectedCharacters": ["mixie-green", "tom-hargrove"],
+      "connectedLocations": ["library"],
+      "era": "1935-1943",
+      "description": "Coded meeting minutes, ritual notes, membership ledger (containing \"Callahan\"), and a final letter that stops mid-sentence in 1943.",
+      "tags": ["foresters", "records", "investigation", "threshold-project"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "abandoned-belongings",
+      "name": "Abandoned Guest Belongings",
+      "significance": "Suitcases and personal effects in the Lost and Found from guests who vanished — each tagged with name, date, and room number by Tom.",
+      "connectedCharacters": ["tom-hargrove"],
+      "connectedLocations": ["storage-rooms"],
+      "era": "1920s-present",
+      "description": "Shelves of suitcases, hat boxes, and personal items. A child's bear from 1952 with no registered child. An unsent letter to \"Rosemary.\" The locked Voss steamer trunk.",
+      "tags": ["belongings", "vanished", "evidence", "lost-and-found"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "unlabeled-bottle",
+      "name": "The Unlabeled Bottle",
+      "significance": "A bottle behind the bar with no label, containing a spirit of unknown provenance. Mixie pours from it instinctively for certain guests. The liquid level never seems to change.",
+      "connectedCharacters": ["mixie-green"],
+      "connectedLocations": ["triangle-bar"],
+      "era": "Unknown",
+      "description": "A dark glass bottle with no label. The liquid inside is amber, aromatic, and slightly warm. Mixie reaches for it without thinking for certain guests.",
+      "tags": ["bottle", "mystery", "bar", "instinct"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "library-clock",
+      "name": "The Library Clock / Grandfather Clock",
+      "significance": "A clock whose ticking syncs with the boiler's rhythm and the waterways' pulse. Accelerates during storms.",
+      "connectedCharacters": [],
+      "connectedLocations": ["library", "lobby-front-desk"],
+      "era": "c. 1935",
+      "description": "A tall case clock with a brass pendulum. Its rhythm matches the boiler's and the waterways'. It speeds up during storms and slows in calm.",
+      "tags": ["clock", "time", "rhythm", "synchronization"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "landscape-painting",
+      "name": "The Landscape Painting",
+      "significance": "A painting above the Great Room fireplace showing the lodge and surrounding landscape. The scene shifts subtly between viewings.",
+      "connectedCharacters": [],
+      "connectedLocations": ["great-room"],
+      "era": "Unknown",
+      "description": "An oil painting of the lodge from the forest's perspective. Attentive viewers notice the painted season does not always match the real one.",
+      "tags": ["painting", "shifting", "great-room"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "ambers-photograph",
+      "name": "Amber's Photograph",
+      "significance": "A second photograph discovered later in the series — connected to a guest from an earlier era. Details reserved for Season Two.",
+      "connectedCharacters": [],
+      "connectedLocations": ["storage-rooms"],
+      "era": "c. 1939",
+      "description": "A photograph album in the Lost and Found containing images of the lodge from impossible angles — aerial views decades before drones, shots from inside walls.",
+      "tags": ["photograph", "impossible-angles", "season-two"],
+      "universe_id": "room-33"
+    }
+  ]
+}

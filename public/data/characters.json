@@ -1,0 +1,445 @@
+{
+  "characters": [
+    {
+      "id": "mixie-green",
+      "name": "Mixie Green",
+      "role": "Head Bartender, Whispering Pines Lodge",
+      "archetype": "The Reluctant Witness",
+      "type": "core",
+      "thematicFunction": "The audience surrogate who becomes the lodge's living memory. She holds every confession, every secret, every drink order — and writes a novel that turns out to be inherited memory.",
+      "summary": "Mixie is the heart of Whispering Pines — a bartender whose warmth masks a deeper unease. She writes a novel about the lodge that she slowly realizes has been written before, by women who look like her across decades. Her journey in Season One moves from avoidance to confrontation to transformation.",
+      "psychology": {
+        "strengths": ["Emotional intelligence", "Radical presence", "Memory that borders on supernatural", "Ability to hold space for others"],
+        "flaws": ["Deflects personal pain with humor", "Avoids her own story while tending everyone else's", "Uses warmth as armor"],
+        "contradictions": ["Remembers everything but avoids examining her own memories", "Writes a novel about truth while avoiding her own"],
+        "fears": ["That she is not original — that her thoughts, her novel, her identity are inherited", "That the lodge chose her, not the other way around"],
+        "desires": ["To finish her novel", "To understand who M. Quinn was", "To be the author of her own story"]
+      },
+      "voice": {
+        "style": "Warm, quick-witted, layered. Speaks in bartender shorthand — efficient, empathetic, disarming. Her humor is a shield; her silence is where the truth lives.",
+        "samples": [
+          "You don't order a drink like that unless someone taught you, and whoever taught you is the reason you're here.",
+          "I remember every drink I've ever poured. I just can't remember why I started."
+        ]
+      },
+      "arc": {
+        "seasonOne": "From avoidance to confrontation. Mixie discovers the photograph, the matching handwriting, the earlier novel drafts, and ultimately enters Room 33 during the Convergence Storm. She dies and is reborn behind the bar — transformed from witness to steward.",
+        "episodes": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      },
+      "relationships": [
+        {"characterId": "flynn-callahan", "description": "Co-bartender and emotional anchor. Deep trust built over years. Unspoken romantic tension. Flynn is terrified of losing her to Room 33."},
+        {"characterId": "woman-of-the-storm", "description": "The pattern Mixie inherits. Siobhan is the origin point; Mixie is the current iteration. Connected through the mirror, the novel, and Room 33."},
+        {"characterId": "chris-willis", "description": "Her most loyal regular. Their banter is the bar's rhythm section."},
+        {"characterId": "tom-hargrove", "description": "Mutual respect between two stewards. Tom holds the building; Mixie holds the people."}
+      ],
+      "backstory": "Arrived at the lodge drawn by an impulse she couldn't name. Has been writing a novel about a bartender in a time-shifting lodge — only to discover that identical drafts exist from the 1930s and 1940s in handwriting that matches hers.",
+      "tags": ["protagonist", "bartender", "writer", "cycle", "threshold"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "flynn-callahan",
+      "name": "Flynn Callahan",
+      "role": "Co-Bartender, Whispering Pines Lodge",
+      "archetype": "The Grief-Shaped Loyal",
+      "type": "core",
+      "thematicFunction": "The emotional anchor who holds others steady while carrying his own unexamined grief. His loyalty to Mixie and the lodge masks a history he has not yet confronted.",
+      "summary": "Flynn is Mixie's partner behind the bar — steady, warm, and deeply protective. He lives in Owl cabin at the forest's edge and repairs watches as meditation. A Callahan name appears in the Foresters' ledger, connecting him to the lodge's hidden history.",
+      "psychology": {
+        "strengths": ["Steadfast loyalty", "Emotional courage under pressure", "Instinctive protectiveness", "Quiet perceptiveness"],
+        "flaws": ["Buries grief beneath routine", "Deflects vulnerability with charm", "Avoids examining his own connection to the lodge"],
+        "contradictions": ["Repairs broken watches but cannot fix his own sense of stopped time", "Protects Mixie but cannot protect her from her own calling"],
+        "fears": ["Losing Mixie to Room 33", "That his family name in the Foresters' ledger means he is complicit in the lodge's darker history"],
+        "desires": ["To keep Mixie safe", "To understand his family's connection to the lodge", "To grieve what he has lost"]
+      },
+      "voice": {
+        "style": "Warm, laconic, Irish-inflected. Speaks less than Mixie but every word lands. His humor is dry and self-deprecating.",
+        "samples": ["I don't fix watches because I understand time. I fix them because I don't.", "It usually does."]
+      },
+      "arc": {
+        "seasonOne": "From steadfast companion to terrified witness. Flynn watches Mixie descend toward Room 33 and cannot stop her. His vigil during Episode 9 is his defining moment. His slip — \"It usually does\" — hints at knowledge he has not admitted to himself.",
+        "episodes": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      },
+      "relationships": [
+        {"characterId": "mixie-green", "description": "Partner behind the bar and unspoken love. He would do anything to protect her, but her journey is not his to prevent."},
+        {"characterId": "tom-hargrove", "description": "Quiet bond. Tom's speech during Flynn's vigil is the deepest moment of trust between them."},
+        {"characterId": "chris-willis", "description": "Easy camaraderie. Flynn handles Chris's cynicism with patient humor."}
+      ],
+      "backstory": "Arrived at the lodge and chose Owl cabin — the one that faces away from the building, toward the forest. Repairs watches obsessively. A \"Callahan\" appears in the Foresters' 1935 membership ledger.",
+      "tags": ["bartender", "grief", "loyalty", "foresters-connection", "watches"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "woman-of-the-storm",
+      "name": "Siobhan Ni Ceallaigh (The Woman of the Storm)",
+      "role": "Origin Figure / Supernatural Presence",
+      "archetype": "The Origin Point",
+      "type": "core",
+      "thematicFunction": "The foundational myth of the lodge. Her grief, her ritual, and her transformation created Room 33 and the storm cycle. She is the pattern that Mixie and others inherit.",
+      "summary": "Born in County Kerry around 1889, Siobhan arrived at the lodge in 1912 with her husband Cormac. After Cormac was lost at sea in 1915, her grief-fueled ritual in Room 33 transformed the space into a threshold between times. She appears in the mirror, in the storms, and in the pattern of women who tend the lodge across eras.",
+      "psychology": {
+        "strengths": ["Profound emotional depth", "Connection to the land's ancient properties", "Patient recognition across time"],
+        "flaws": ["Her grief was so powerful it rewrote reality", "She could not let go"],
+        "contradictions": ["Created the lodge's greatest gift through its greatest loss", "Is both prisoner and architect of the temporal system"],
+        "fears": ["That no one will come who can finish what she started"],
+        "desires": ["To be recognized", "To complete the cycle", "To rest"]
+      },
+      "voice": {
+        "style": "Appears primarily through silence and gesture. When her words are heard — through echoes, through the storm — they are spare, poetic, and carry the weight of a century of waiting.",
+        "samples": ["I have been waiting for you specifically."]
+      },
+      "arc": {
+        "seasonOne": "Introduced through legend in Episode 3, glimpsed in the photograph, and finally encountered face-to-face by Mixie in Room 33's mirror during Episode 9. She is the answer to the season's central mystery.",
+        "episodes": [3, 6, 9]
+      },
+      "relationships": [
+        {"characterId": "mixie-green", "description": "The current iteration of her pattern. Siobhan recognizes Mixie through the mirror with patient familiarity."},
+        {"characterId": "tom-hargrove", "description": "Tom has tended her lodge for decades. He understands her presence without needing to explain it."}
+      ],
+      "backstory": "Arrived from Ireland in 1912 with her husband Cormac. When Cormac was lost at sea in November 1915, Siobhan performed a ritual in what became Room 33 — merging her grief with the land's ancient properties and creating the threshold system. She did not die in the conventional sense. She became part of the lodge.",
+      "tags": ["origin", "supernatural", "storm", "ritual", "mirror", "cycle"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "chris-willis",
+      "name": "Chris Willis",
+      "role": "Bar Regular",
+      "archetype": "Cynicism as Armor",
+      "type": "regular",
+      "thematicFunction": "The skeptic whose dismissiveness masks deep vulnerability. His displacement during Episode 5 proves the lodge's power is real, even for those who refuse to believe.",
+      "summary": "Chris is the Triangle Bar's most reliable presence — a 54-year-old cynic who uses sharp wit to keep the world at arm's length. During the mid-season storm, he briefly disappears and returns with no memory of the event, shaking the bar's sense of normalcy.",
+      "psychology": {
+        "strengths": ["Quick intelligence", "Loyalty expressed through presence", "Honesty when it counts"],
+        "flaws": ["Uses cynicism to avoid vulnerability", "Refuses to engage with anything he cannot explain", "Drinks to maintain distance"],
+        "contradictions": ["Claims to believe in nothing but returns to the lodge every day", "Dismisses the supernatural while being its most dramatic Season One victim"],
+        "fears": ["Being seen", "Being changed", "The possibility that the lodge understands him better than he understands himself"],
+        "desires": ["To belong without admitting he needs to", "To be proven wrong about everything he dismisses"]
+      },
+      "voice": {
+        "style": "Sharp, dry, rapid-fire. Classic barfly wit — every line is a deflection dressed as a joke.",
+        "samples": ["I don't come here for the ambiance. I come here because the alternatives are worse."]
+      },
+      "arc": {
+        "seasonOne": "From immovable skeptic to unwitting proof. Chris vanishes during Episode 5's storm and returns unchanged — but the audience knows something happened. By Episode 10 he's the same Chris, but the cracks are showing.",
+        "episodes": [1, 2, 3, 4, 5, 7, 8, 10]
+      },
+      "relationships": [
+        {"characterId": "mixie-green", "description": "His bartender and reluctant confessor. Their banter is the bar's emotional rhythm section."},
+        {"characterId": "flynn-callahan", "description": "Easy camaraderie built on shared routine."},
+        {"characterId": "esmerelda", "description": "Antagonistic affection. He mocks her mysticism; she sees through his armor."}
+      ],
+      "backstory": "A fixture of the Triangle Bar for years. What brought him to the lodge and what keeps him there are questions Chris refuses to answer — possibly even to himself.",
+      "tags": ["regular", "skeptic", "displacement", "bar-culture"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "z-miranzadeh",
+      "name": "Zahra \"Z\" Miranzadeh",
+      "role": "Visiting Guest — Venture Capital Partner",
+      "archetype": "The Velocity",
+      "type": "visitor",
+      "thematicFunction": "The outside world incarnate — speed, ambition, control. The lodge forces her to slow down, and what she discovers at rest terrifies and transforms her.",
+      "summary": "Z is a high-powered venture capitalist who arrives at the lodge between deals. She moves at a speed the lodge does not permit, and the friction between her pace and the lodge's patience becomes her arc. Her organizational instincts help decode the Foresters' structure.",
+      "psychology": {
+        "strengths": ["Pattern recognition", "Strategic clarity", "Fearless in professional contexts"],
+        "flaws": ["Cannot stop performing productivity", "Treats stillness as failure", "Mistakes control for safety"],
+        "contradictions": ["Seeks transformation in others (investments) but resists it in herself", "Comes to the lodge repeatedly despite claiming she doesn't need it"],
+        "fears": ["Irrelevance", "The version of herself that exists when she stops moving"],
+        "desires": ["To acquire or understand the lodge's power", "To slow down without feeling like she's dying"]
+      },
+      "voice": {
+        "style": "Precise, fast, corporate vocabulary repurposed for personal insight. Speaks in pitches and assessments even about emotions.",
+        "samples": ["This isn't a spiritual society. This is a hostile takeover dressed in robes."]
+      },
+      "arc": {
+        "seasonOne": "Arrives as an outsider, becomes an unexpected contributor to Mixie's investigation. Her venture capital fluency helps decode the Foresters' organizational structure.",
+        "episodes": [2, 5, 8]
+      },
+      "relationships": [
+        {"characterId": "mixie-green", "description": "Mutual fascination. Mixie sees through Z's performance; Z respects Mixie's intelligence."},
+        {"characterId": "akira-yang", "description": "Generational mirror — both driven, both performing, both hiding vulnerability behind ambition."}
+      ],
+      "backstory": "A venture partner at a major firm. Returns to the lodge periodically, drawn by something she frames as \"decompression\" but cannot fully explain.",
+      "tags": ["visitor", "outsider", "velocity", "foresters-decoder"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "marie-dorion",
+      "name": "Marie Dorion",
+      "role": "Cultural Steward / Lodge Regular",
+      "archetype": "Heritage as Anchor",
+      "type": "regular",
+      "thematicFunction": "The Indigenous perspective the Foresters ignored. Marie connects the lodge to the land's pre-colonial history and provides the cultural context that grounds the supernatural in respect rather than exploitation.",
+      "summary": "Marie is a 67-year-old cultural steward with deep roots in the Pacific Northwest's Indigenous communities. She provides the perspective the Foresters' records entirely lack — that the land was a place of passage long before Europeans arrived, requiring relationship rather than control.",
+      "psychology": {
+        "strengths": ["Deep cultural knowledge", "Patience born of generational perspective", "Ability to hold complexity without needing resolution"],
+        "flaws": ["Carries the weight of being the only one who remembers what was erased", "Sometimes withholds knowledge as a form of protection"],
+        "contradictions": ["Trusts the lodge but distrusts the people who claim to understand it"],
+        "fears": ["That the land's story will be claimed again rather than honored"],
+        "desires": ["To ensure the Indigenous history of this land is not erased", "To see someone tend the threshold properly"]
+      },
+      "voice": {
+        "style": "Measured, warm, authoritative. Speaks from a tradition of oral history — every word is chosen, every silence is intentional.",
+        "samples": ["The Duwamish and Puyallup knew this land as a place of passage. Not a resource to be exploited but a relationship to be honored."]
+      },
+      "arc": {
+        "seasonOne": "Provides crucial cultural context in Episode 8 and offers Mixie a wordless blessing in Episode 10. Her knowledge deepens in later seasons.",
+        "episodes": [2, 4, 8, 10]
+      },
+      "relationships": [
+        {"characterId": "mixie-green", "description": "Mentor-like. Marie recognizes something in Mixie and offers guidance through presence rather than instruction."},
+        {"characterId": "tom-hargrove", "description": "The two longest-tenured presences at the lodge. A deep, quiet mutual understanding."},
+        {"characterId": "jauncey-pladiym", "description": "Fellow keeper of oral history. They share the burden of remembering."}
+      ],
+      "backstory": "Born and raised in the Pacific Northwest with family ties to the region's Indigenous communities. Has been visiting the lodge for decades, carrying knowledge of the land that predates every version of the building.",
+      "tags": ["regular", "indigenous-perspective", "cultural-steward", "elder"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "matt-carlson",
+      "name": "Matt Carlson",
+      "role": "Recurring Guest",
+      "archetype": "The Warm Front",
+      "type": "visitor",
+      "thematicFunction": "The everyman who enters Room 33 and survives — providing the audience's first direct experience of the threshold.",
+      "summary": "Matt is a warm, genuine guest whose openness makes him the lodge's first Season One test subject. In Episode 4, he enters Room 33 during a storm and emerges changed — providing the first concrete evidence of the room's transformative power.",
+      "psychology": {
+        "strengths": ["Genuine warmth", "Openness to experience", "Emotional honesty"],
+        "flaws": ["Trusts too easily", "Does not recognize danger until he is inside it"],
+        "contradictions": ["His simplicity is his protection — the room cannot strip away pretense from someone who carries none"],
+        "fears": ["That the experience in Room 33 was real and not a dream"],
+        "desires": ["To understand what happened to him", "To return"]
+      },
+      "voice": {
+        "style": "Direct, friendly, slightly awed. Speaks like someone perpetually encountering things for the first time.",
+        "samples": ["I don't know what happened in there. But I know I'm not the same."]
+      },
+      "arc": {
+        "seasonOne": "Arrives as an open, uncomplicated guest. Enters Room 33 in Episode 4 and emerges transformed. Returns in later episodes carrying the knowledge of what the room does.",
+        "episodes": [1, 4, 6, 9]
+      },
+      "relationships": [
+        {"characterId": "mixie-green", "description": "Trusting guest-bartender relationship. Mixie watches his transformation with growing recognition."}
+      ],
+      "backstory": "A recurring guest drawn back to the lodge by a pull he cannot articulate. His genuine openness makes him uniquely suited to survive Room 33.",
+      "tags": ["visitor", "room-33", "threshold", "everyman"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "sam-taylor",
+      "name": "Sam Taylor",
+      "role": "Environmental Scientist / Long-Term Resident",
+      "archetype": "The Instrument",
+      "type": "visitor",
+      "thematicFunction": "Science confronting the inexplicable. Sam's instruments measure what the lodge does, giving the supernatural a data trail that validates without explaining.",
+      "summary": "Sam is a 44-year-old environmental scientist studying the island's anomalous weather patterns. Her instruments detect things she cannot explain — barometric impossibilities, electromagnetic anomalies, and a statistical pattern connecting Room 33 check-ins to guest disappearances.",
+      "psychology": {
+        "strengths": ["Rigorous methodology", "Intellectual courage", "Willingness to follow data wherever it leads"],
+        "flaws": ["Struggles when data contradicts her framework", "Can reduce human experience to data points"],
+        "contradictions": ["Studies the lodge scientifically while being increasingly affected by it personally"],
+        "fears": ["That her data is correct and the world is not what she thought"],
+        "desires": ["To understand the storm patterns", "To reconcile measurement with mystery"]
+      },
+      "voice": {
+        "style": "Precise, academic, but increasingly awed. Uses scientific vocabulary that strains under the weight of what she is observing.",
+        "samples": ["I don't use the word supernatural. I use the word statistically significant."]
+      },
+      "arc": {
+        "seasonOne": "Arrives as a scientist and becomes an investigator. Her data reveals the pattern connecting storms, Room 33, and guest disappearances. Partners with Mixie in Episode 7 and provides crucial evidence throughout.",
+        "episodes": [3, 5, 7, 9, 10]
+      },
+      "relationships": [
+        {"characterId": "mixie-green", "description": "Investigative partners. Sam provides data; Mixie provides context. Together they decode the lodge's pattern."},
+        {"characterId": "stefan-shooter", "description": "Scientific counterparts. Stefan's AR engineering and Sam's environmental data converge as both worldviews crack."}
+      ],
+      "backstory": "Came to Vashon Island to study anomalous weather patterns and stayed when her instruments started recording things that shouldn't exist.",
+      "tags": ["visitor", "scientist", "data", "storms", "investigation"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "akira-yang",
+      "name": "Akira Yang",
+      "role": "Visiting Guest — Fashion Designer",
+      "archetype": "The Prodigal",
+      "type": "visitor",
+      "thematicFunction": "The young creative whose performance of identity cracks under the lodge's insistence on authenticity.",
+      "summary": "Akira is a 26-year-old fashion designer whose entire life is a curated performance. The lodge strips away the aesthetic layer by layer, forcing confrontation with the person beneath the brand.",
+      "psychology": {
+        "strengths": ["Creative brilliance", "Visual intelligence", "Capacity for transformation once the performance drops"],
+        "flaws": ["Cannot distinguish between authentic self and curated persona", "Uses aesthetics as emotional armor"],
+        "contradictions": ["Designs clothing that reveals others while hiding behind their own"],
+        "fears": ["Being seen without the aesthetic", "Ordinariness"],
+        "desires": ["To create something real", "To be known rather than admired"]
+      },
+      "voice": {
+        "style": "Sharp, image-conscious, generationally fluent. Speaks in references and curated observations that gradually give way to rawer expression.",
+        "samples": ["Everything I design is about making the inside visible. I just never tried it on myself."]
+      },
+      "arc": {
+        "seasonOne": "Arrives as a polished surface and is gradually stripped to authenticity by the lodge's refusal to be impressed by performance.",
+        "episodes": [2, 5, 8, 10]
+      },
+      "relationships": [
+        {"characterId": "z-miranzadeh", "description": "Generational mirror. Both perform competence; both hide vulnerability behind ambition."},
+        {"characterId": "mixie-green", "description": "Mixie sees through the brand immediately. Akira is unnerved and fascinated."}
+      ],
+      "backstory": "A rising fashion designer who came to the lodge seeking inspiration and found confrontation instead.",
+      "tags": ["visitor", "creative", "identity", "performance", "youth"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "stefan-shooter",
+      "name": "Stefan Shooter",
+      "role": "Visiting Guest — AR Engineer",
+      "archetype": "The Empiricist",
+      "type": "visitor",
+      "thematicFunction": "Technology confronting the numinous. Stefan's augmented reality tools cannot overlay what the lodge already is.",
+      "summary": "Stefan is an AR engineer whose worldview is built on the assumption that reality can be enhanced, measured, and controlled. The lodge systematically disassembles this assumption. A library book that describes events before they happen cracks his empiricism in Episode 5.",
+      "psychology": {
+        "strengths": ["Technical brilliance", "Systematic thinking", "Intellectual honesty when forced to confront evidence"],
+        "flaws": ["Dismisses what he cannot measure", "Confuses models with reality", "Arrogance masked as objectivity"],
+        "contradictions": ["Builds systems to augment reality while being unable to perceive the reality in front of him"],
+        "fears": ["That his entire framework is wrong", "That the unmeasurable is real"],
+        "desires": ["To understand", "To build a model that includes what the lodge does"]
+      },
+      "voice": {
+        "style": "Technical, precise, increasingly rattled. His vocabulary strains as his framework cracks.",
+        "samples": ["This is interesting."]
+      },
+      "arc": {
+        "seasonOne": "Arrives as an empiricist and leaves with his worldview fractured. The self-describing library book in Episode 5 is the crack; by Episode 10, he is reading Sam's field data instead of dismissing it.",
+        "episodes": [3, 5, 7, 10]
+      },
+      "relationships": [
+        {"characterId": "sam-taylor", "description": "Scientific counterparts whose worldviews crack in parallel. Stefan's acceptance of Sam's data in Episode 10 is his revolution."}
+      ],
+      "backstory": "An AR engineer who came to the lodge to test his technology in a remote setting and found a reality his instruments could not overlay.",
+      "tags": ["visitor", "technology", "empiricism", "worldview-shift"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "esmerelda",
+      "name": "Esmerelda",
+      "role": "Lodge Regular — Astrologer and Medium",
+      "archetype": "Mysticism as Meaning-Making",
+      "type": "regular",
+      "thematicFunction": "The believer whose framework is closest to the truth but still incomplete.",
+      "summary": "Esmerelda is a 59-year-old astrologer and self-described medium who has been visiting the lodge for years. She senses what others cannot, speaks in layers of meaning, and serves as the bar's spiritual conscience.",
+      "psychology": {
+        "strengths": ["Intuitive perception", "Comfort with mystery", "Ability to hold the numinous without needing to control it"],
+        "flaws": ["Sometimes mistakes her framework for the truth rather than a map of it", "Can be cryptic when clarity would serve better"],
+        "contradictions": ["Believes in everything but is surprised by what the lodge actually is"],
+        "fears": ["That the real thing is bigger than any system she has built to understand it"],
+        "desires": ["To be useful", "To see clearly", "To be more than a curiosity to others"]
+      },
+      "voice": {
+        "style": "Layered, poetic, oracular. Speaks in statements that sound like riddles but are often precise observations.",
+        "samples": ["You'll do."]
+      },
+      "arc": {
+        "seasonOne": "Present throughout as the bar's spiritual presence. Her quiet moments — eyes closed during the Convergence Storm, her whisper as Mixie leaves, her smile in Episode 10 — carry more weight than dialogue.",
+        "episodes": [1, 2, 4, 7, 9, 10]
+      },
+      "relationships": [
+        {"characterId": "mixie-green", "description": "Recognizes Mixie's role before Mixie does. Her Episode 10 farewell — \"You'll do\" — is a benediction."},
+        {"characterId": "chris-willis", "description": "Antagonistic affection. Chris mocks her; she sees through him completely."}
+      ],
+      "backstory": "A practicing astrologer and medium who has been drawn to the lodge for years. She senses the lodge's deeper nature more clearly than most, though her understanding is filtered through her own mystical framework.",
+      "tags": ["regular", "mystic", "intuition", "spiritual"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "tom-hargrove",
+      "name": "Tom Hargrove",
+      "role": "Groundskeeper / Maintenance",
+      "archetype": "The Foundation",
+      "type": "lodge",
+      "thematicFunction": "The lodge's human infrastructure. Tom holds the building the way Mixie holds the people — through devotion, routine, and a knowledge that goes deeper than he will explain.",
+      "summary": "Tom is the lodge's 63-year-old groundskeeper, though his actual tenure may be far longer than records show. He maintains the boiler, the hatch to the caves, and the building's mechanical and supernatural systems with equal competence.",
+      "psychology": {
+        "strengths": ["Absolute reliability", "Deep knowledge of the lodge's systems", "Calm under any conditions", "Devotion without need for recognition"],
+        "flaws": ["Withholds information as a form of protection", "His silence can be isolating", "May have stayed too long"],
+        "contradictions": ["Knows more than anyone but says less", "His official hire date is 1987 but he appears in photographs from earlier decades"],
+        "fears": ["That the building will need something he cannot provide", "That someone will harm the lodge through ignorance or ambition"],
+        "desires": ["To maintain the lodge until it no longer needs him", "To find someone trustworthy enough to inherit his role"]
+      },
+      "voice": {
+        "style": "Minimal, precise, weighted. Tom speaks rarely, and when he does, every word has been considered.",
+        "samples": ["She went in because she was ready. Not because the room took her. You understand? She was ready."]
+      },
+      "arc": {
+        "seasonOne": "Present throughout as the silent infrastructure. Opens the locked cabinet for Mixie without being asked. His vigil speech in Episode 9 is the season's emotional cornerstone.",
+        "episodes": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      },
+      "relationships": [
+        {"characterId": "mixie-green", "description": "Fellow stewards. Tom holds the building; Mixie holds the people. He recognizes her role and facilitates her investigation without explanation."},
+        {"characterId": "flynn-callahan", "description": "His speech during Flynn's vigil is the deepest trust Tom offers anyone in Season One."},
+        {"characterId": "marie-dorion", "description": "The two longest presences at the lodge. Mutual understanding beyond words."}
+      ],
+      "backstory": "Official hire date is 1987, but his knowledge of the lodge suggests a much longer tenure. He maintains the basement hatch to the caves, collects objects from the fireplace ash after storms, and navigates the service corridors without light.",
+      "tags": ["lodge-staff", "groundskeeper", "caves", "boiler", "steward", "mystery"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "jauncey-pladiym",
+      "name": "Jauncey Pladiym",
+      "role": "Lodge Regular — Folk Singer",
+      "archetype": "Witness as Purpose",
+      "type": "regular",
+      "thematicFunction": "The oral historian. Jauncey carries the lodge's stories in song, preserving what others forget and giving musical form to truths that resist speech.",
+      "summary": "Jauncey is a 63-year-old folk singer who has been a fixture of the Triangle Bar for decades. He plays, he listens, and he remembers. His original song in the finale — about Siobhan, about Mixie, about the lodge — is Season One's musical resolution.",
+      "psychology": {
+        "strengths": ["Deep listening", "Musical memory", "Ability to hold others' stories without judgment"],
+        "flaws": ["Observes rather than acts", "Can be passive when intervention is needed"],
+        "contradictions": ["Has witnessed decades of the lodge's strangeness but chooses to express it only through music"],
+        "fears": ["That the stories will be lost", "That witnessing is not enough"],
+        "desires": ["To write the song that captures the lodge's truth", "To be heard"]
+      },
+      "voice": {
+        "style": "Thoughtful, musical in cadence even when speaking. Communicates as much through nods and silence as through words.",
+        "samples": ["They didn't tend the threshold. They tried to own it. There's a difference."]
+      },
+      "arc": {
+        "seasonOne": "Helps Mixie interpret the Foresters' history in Episode 8. His original song in Episode 10 — performed for the first time — is the season's emotional finale.",
+        "episodes": [1, 2, 3, 5, 8, 9, 10]
+      },
+      "relationships": [
+        {"characterId": "mixie-green", "description": "Fellow keeper of the bar's stories. His nod of recognition is the bar's highest form of validation."},
+        {"characterId": "marie-dorion", "description": "Shared burden of oral history. Both carry stories that others have forgotten."}
+      ],
+      "backstory": "A folk singer who has played at the lodge for decades. His knowledge of the lodge's history comes from years of quiet listening and from older Vashon Island residents who remembered the rumors.",
+      "tags": ["regular", "musician", "oral-history", "witness", "foresters-knowledge"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "the-mirror",
+      "name": "The Mirror",
+      "role": "Supernatural Entity",
+      "archetype": "The Delayed Reflection",
+      "type": "supernatural",
+      "thematicFunction": "The lodge's most visible supernatural artifact. The mirror reflects everything a fraction of a second late — a constant reminder that time here does not obey normal rules.",
+      "summary": "An antique mirror mounted at the entrance to the Triangle Bar that reflects the room on a slight delay. It has shown reflections from other eras and, in Episode 9, serves as the medium through which Mixie sees Siobhan.",
+      "psychology": {
+        "strengths": ["Persistence", "Indifference to belief or disbelief"],
+        "flaws": ["Cannot communicate except through reflection"],
+        "contradictions": ["The most visible supernatural element is the one most easily dismissed"],
+        "fears": [],
+        "desires": []
+      },
+      "voice": {
+        "style": "Silent. Communicates only through what it reflects — and when.",
+        "samples": []
+      },
+      "arc": {
+        "seasonOne": "Present in every bar scene as a background anomaly. In Episode 9, it becomes the portal through which Mixie encounters Siobhan in Room 33.",
+        "episodes": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      },
+      "relationships": [
+        {"characterId": "woman-of-the-storm", "description": "The mirror is Siobhan's primary means of appearing to the living."},
+        {"characterId": "mixie-green", "description": "The mirror connects Mixie to Siobhan and to every version of the woman who has tended the bar."}
+      ],
+      "backstory": "An antique mirror of unknown provenance. It has hung at the Triangle Bar's entrance through every era of the lodge. Its delay is its defining property.",
+      "tags": ["supernatural", "artifact", "time-delay", "portal", "triangle-bar"],
+      "universe_id": "room-33"
+    }
+  ]
+}

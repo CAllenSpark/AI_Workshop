@@ -2,7 +2,7 @@
 
 ## Writer's Research Companion
 
-**Last Updated:** 2026-03-03 (M11 Creative Layer Validation complete)
+**Last Updated:** 2026-03-05 (Room 33 creative bible imported)
 **Setting:** Vashon Island, WA (prehistory to present) — supports multiple projects
 **Branch:** `claude/writers-research-companion-zTnuE`
 
@@ -121,6 +121,78 @@ Environment        30   █████                 21%
 
 ---
 
+## Room 33 Creative Universe
+
+**Universe:** Room 33 — Historical Fantasy / Literary Mystery
+**Logline:** In a remote Pacific Northwest lodge where time moves differently, a bartender named Mixie guides lost souls through storms that strip away everything — except the truth.
+**Seasons Planned:** 5
+
+### Creative Content Inventory
+
+```
+Category            Count  Data File
+─────────────────────────────────────────────────────
+Characters             14  public/data/characters.json
+  Core                  3  (Mixie, Flynn, Siobhan)
+  Regular               4  (Chris, Marie, Esmerelda, Jauncey)
+  Visitor               5  (Z, Matt, Sam, Akira, Stefan)
+  Lodge Staff           1  (Tom)
+  Supernatural          1  (The Mirror)
+Locations              18  public/data/locations.json
+  Interior              8  (Lodge, Room 33, Bar, Great Room, Lobby, Library, Dining, Corridors)
+  Outdoor               4  (Forest, Clearing, Stone Circle, Cabins)
+  Underground           3  (Basement, Caves, Waterways)
+  Conditional           1  (Hidden Rooms)
+Episodes               10  public/data/episodes.json
+  Season 1             10  "The Threshold"
+Items                  17  public/data/items.json
+World Rules            12  public/data/world-rules.json
+Narrative Props        10  public/data/props.json
+Lore Entries           11  public/data/lore.json
+─────────────────────────────────────────────────────
+TOTAL                  97  creative assets
+```
+
+### Season Arcs
+
+| Season | Title | Central Question |
+|--------|-------|-----------------|
+| 1 | The Threshold | What happens when you stop running? |
+| 2 | The Echo | What did you leave behind? |
+| 3 | The Storm | What are you willing to lose? |
+| 4 | The Room | What waits behind the door? |
+| 5 | The Return | Was it worth it? |
+
+### Lore Coverage
+
+```
+Type               Count
+──────────────────────────
+Folk Tales             2  (Tide Keeper, The Logger)
+Legends                2  (Glacier's Memory, Shell Midden Spirits)
+Oral Traditions        1  (Song of the Cedar People)
+Superstitions          2  (Strawberry Fields, Room 33 Warning)
+Prophecy               1  (The Island's Turning)
+Ritual                 1  (Honoring of the Waters)
+Custom                 1  (Never Cut the Last Tree)
+Song                   1  (Counting Song of the Mosquito Fleet)
+──────────────────────────
+TOTAL                 11
+```
+
+### Gap Analysis Status
+
+See `docs/room33-import-gap-analysis.md` for full evaluation.
+
+| Phase | Milestone | Types | Status |
+|-------|-----------|-------|--------|
+| 1 | M12: Lore & World Rules | `Lore`, `WorldRule` | Data files created |
+| 2 | M13: Character Depth | Psychology, voice samples, relationships | Data imported (characters.json) |
+| 3 | M14: Location Depth | Era descriptions, sensory profiles, spatial graph | Data imported (locations.json) |
+| 4 | M15: Narrative Structure | Episodes, threads, setup/payoff | Data imported (episodes.json) |
+
+---
+
 ## Document Status
 
 | Document | Owner | Status | Words | Version |
@@ -152,6 +224,15 @@ Environment        30   █████                 21%
 | [Search Index](research/vashon-island/search-index.json) | Eng | Regenerated | 303 records | 1.1 |
 | [Narrator Export](research/vashon-island/narrator-export.json) | Eng | Regenerated | 111 entries | 1.1 |
 | [ID Mapping](research/vashon-island/id-mapping.json) | Eng | Regenerated | 303 mappings | 1.1 |
+| [Characters JSON](public/data/characters.json) | Writer | New (R33 Import) | 14 characters | 1.0 |
+| [Locations JSON](public/data/locations.json) | Writer | New (R33 Import) | 18 locations | 1.0 |
+| [Episodes JSON](public/data/episodes.json) | Writer | New (R33 Import) | 10 episodes | 1.0 |
+| [Items JSON](public/data/items.json) | Writer | New (R33 Import) | 17 items | 1.0 |
+| [World Rules JSON](public/data/world-rules.json) | Narrator | Created | 12 rules | 1.0 |
+| [Props JSON](public/data/props.json) | Narrator | Created | 10 props | 1.0 |
+| [Lore JSON](public/data/lore.json) | Narrator | Created | 11 entries | 1.0 |
+| [Universes JSON](public/data/universes.json) | Narrator | Created | 1 universe | 1.0 |
+| [Gap Analysis](docs/room33-import-gap-analysis.md) | Writer + Narrator | Complete | — | 1.0 |
 | Test Fixtures (test-data.ts) | Tester | M7 Updated | 9 entries, 5 people, 1 universe | 2.0 |
 | Unit Tests | Tester | M7 Updated | 87 tests | 2.0 |
 | Integration Tests | Tester | M7 Updated | 55 tests (+10 fantasy) | 2.0 |
@@ -225,6 +306,17 @@ All 13 milestones (M0-M11) are complete. The Writer's Research Companion is a fu
 - 5 export formats (AI Narrator, Character Dossiers, Location Guides, Props Catalog, Writer Full)
 - Context-aware narrator system prompt template
 - 315 tests across 22 files, all green
+
+### Room 33 Creative Universe (Imported 2026-03-05)
+- 97 creative assets across 7 data categories
+- 14 characters with full psychology, voice samples, and relationship maps
+- 18 locations with era-specific descriptions and sensory profiles
+- 10 Season 1 episodes with 3-act structure, mystery tracking, and setup/payoff
+- 17 items with narrative significance and cross-references
+- 12 world rules governing supernatural and narrative constraints
+- 11 lore entries (folk tales, legends, rituals, prophecies)
+- 10 narrative props with plot significance
+- 5-season arc planned (Season 1 "The Threshold" fully detailed)
 
 ---
 

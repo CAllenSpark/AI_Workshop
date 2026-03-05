@@ -1,0 +1,245 @@
+{
+  "episodes": [
+    {
+      "id": "ep-01",
+      "number": 1,
+      "title": "Pressure in the Air",
+      "season": 1,
+      "theme": "What happens when something is about to change?",
+      "function": "Introduction. Establishing the lodge, the bar, Mixie, the ensemble, and the approaching storm.",
+      "stormStatus": "Approaching. Barometric pressure dropping. The lodge feels it before anyone else.",
+      "coldOpen": "1910. The lodge is being built. Workers raise the first beam. The foreman pauses, looks at the forest. The trees are whispering. He does not comment.",
+      "acts": {
+        "one": "Present day. Mixie behind the bar, polishing a glass. We meet the regulars — Chris, Esmerelda, Jauncey. Flynn works beside her. The lodge is established as warm, alive, and slightly off. The photograph on the shelf. The mirror reflecting a beat late.",
+        "two": "Matt Carlson arrives — the new guest. Storm warnings. The lodge begins to shift: temperature drops, the boiler accelerates, the clock ticks faster. Mixie notices. The ensemble gathers at the bar as the weather turns.",
+        "three": "The first storm hits. Wind, rain, the power flickers. The bar becomes a shelter. Chris makes a joke that lands wrong. Esmerelda closes her eyes. The photograph falls from its shelf — or is pushed. Mixie catches it. She looks at the woman in the photograph. For the first time, she really looks."
+      },
+      "characterFocus": ["mixie-green", "flynn-callahan", "chris-willis", "matt-carlson"],
+      "mysteryElements": {
+        "planted": ["The photograph", "The mirror's delay", "The approaching storm", "Matt's arrival"],
+        "revealed": []
+      },
+      "summary": "The series premiere establishes the lodge, the bar, Mixie, and the ensemble. A storm approaches. Matt arrives. The photograph falls. Mixie looks at it — really looks — for the first time.",
+      "tags": ["premiere", "introduction", "storm-approaching"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "ep-02",
+      "number": 2,
+      "title": "Regulars",
+      "season": 1,
+      "theme": "What patterns do we build to avoid change?",
+      "function": "World-building. Deepening the ensemble, establishing patterns and rituals.",
+      "stormStatus": "Post-storm calm. The air is washed clean. A second system is forming.",
+      "coldOpen": "1935. The Triangle Bar, newly renovated. A woman in Art Deco dress — M. Quinn — tends bar. She looks exactly like Mixie.",
+      "acts": {
+        "one": "Morning after the first storm. The ensemble gathers at breakfast. We meet the regulars in depth — their routines, their relationships to each other, their reasons for being here. Z and Akira arrive.",
+        "two": "The lodge's patterns are established: the seven-day bar ritual, Tom's rounds, the clock and the boiler syncing. A guest checks into Room 33. Mixie notices the room assignment and feels uneasy without knowing why.",
+        "three": "Evening at the bar. The regulars in their booths. A long, warm scene of conversation, drink-making, and connection. Jauncey plays. Then: the guest from Room 33 appears in the bar, disoriented. Something happened upstairs. The guest cannot describe it. Nobody pushes."
+      },
+      "characterFocus": ["mixie-green", "chris-willis", "z-miranzadeh", "akira-yang", "esmerelda"],
+      "mysteryElements": {
+        "planted": ["M. Quinn (cold open)", "Room 33 guest experience", "Lodge rhythms and patterns"],
+        "revealed": []
+      },
+      "summary": "The ensemble deepens. Routines and rituals become visible. The 1935 cold open introduces M. Quinn — who looks exactly like Mixie. A guest emerges from Room 33 disoriented.",
+      "tags": ["world-building", "ensemble", "patterns"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "ep-03",
+      "number": 3,
+      "title": "The Woman in the Storm",
+      "season": 1,
+      "theme": "What stories do we tell about the things we cannot explain?",
+      "function": "Origin story. Siobhan's legend is told. The first major storm reveals the lodge's deeper nature.",
+      "stormStatus": "Major storm. The first Level 3 event of the season.",
+      "coldOpen": "1915. November. A woman — Siobhan — stands at the window of a room on the second floor, looking at the sea. She is waiting. She has been waiting for days. The door behind her bears the number 33.",
+      "acts": {
+        "one": "Jauncey tells the story of the Woman of the Storm at the bar. How a woman lost her husband to the sea. How she performed a ritual in her room. How the room changed.",
+        "two": "The storm arrives. Sam Taylor's instruments go haywire — readings that should not be possible. Stefan's AR equipment malfunctions. The lodge activates: corridors warm, the mirror shows a reflection from another decade, the piano plays a melody no one recognizes.",
+        "three": "The storm's peak. Time slips. For a moment — brief, deniable — the bar is the 1935 bar. Different furniture, different light, a woman behind the bar who is not Mixie. Then it snaps back. Nobody discusses what they saw. Except Mixie, who knows the woman's face. It was the face in the photograph."
+      },
+      "characterFocus": ["mixie-green", "woman-of-the-storm", "jauncey-pladiym", "sam-taylor", "stefan-shooter"],
+      "mysteryElements": {
+        "planted": ["Siobhan's ritual", "Sam's impossible readings", "The 1935 time slip"],
+        "revealed": ["The Woman of the Storm legend — partial origin story"]
+      },
+      "summary": "Siobhan's origin story is told as legend. A major storm reveals the lodge's true nature — a time slip shows the 1935 bar and a woman who is not Mixie behind the counter.",
+      "tags": ["origin-story", "storm", "time-slip", "siobhan"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "ep-04",
+      "number": 4,
+      "title": "Room 33",
+      "season": 1,
+      "theme": "What happens when you stop resisting?",
+      "function": "Threshold episode. Matt enters Room 33 during a storm. The room's transformative power is demonstrated.",
+      "stormStatus": "Level 2 storm. Intense but contained.",
+      "coldOpen": "1965. A man — Harold Fink — opens Room 33 during a storm. What he sees is not shown. He screams. The door slams. The next morning, Room 33 is sealed.",
+      "acts": {
+        "one": "Matt feels drawn to the second floor. He finds Room 33 — the door is ajar. The number on the door. The cold air from inside. He enters. Marie provides Indigenous context about the land as a place of passage.",
+        "two": "Inside Room 33. Matt experiences the room's properties: the cold, the silence, the compass rose, the wardrobe mirror showing a reflection that is not quite his. Time stretches. He sits on the bed. He closes his eyes.",
+        "three": "Matt emerges. He has been inside for two hours but believes it was twenty minutes. He is calm, different — a subtle shift the bar recognizes. The room is empty when staff check. The compass rose has not moved. Or has it?"
+      },
+      "characterFocus": ["matt-carlson", "mixie-green", "marie-dorion", "esmerelda"],
+      "mysteryElements": {
+        "planted": ["Room 33's interior properties", "The compass rose", "The 1965 Fink incident"],
+        "revealed": ["Room 33 transforms those who enter — Matt is proof"]
+      },
+      "summary": "Matt enters Room 33 and emerges changed. The room's transformative power is demonstrated for the first time. The 1965 cold open shows the incident that led to the room being sealed.",
+      "tags": ["room-33", "threshold", "transformation"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "ep-05",
+      "number": 5,
+      "title": "Static",
+      "season": 1,
+      "theme": "What happens when reality contradicts itself?",
+      "function": "Mid-season escalation. The supernatural becomes undeniable. Chris vanishes and returns.",
+      "stormStatus": "Level 3 storm. The most intense yet.",
+      "coldOpen": "The library. A book falls open. The page describes events that are about to happen — Stefan finding this exact book, reading this exact page. A recursive loop.",
+      "acts": {
+        "one": "Sam's instruments detect a pattern: a correlation between storm intensity, Room 33 activity, and guest behavior. Stefan finds a book in the library that describes current events as they unfold. Mixie's novel writes itself ahead of her.",
+        "two": "The storm peaks. Chris Willis vanishes from the bar mid-sentence. His stool is empty. His drink is still cold. Nobody saw him leave. The bar searches. He is nowhere in the lodge.",
+        "three": "Chris returns. He is at his stool. His drink is cold. He has no memory of leaving. To him, no time has passed. The bar is shaken. Mixie looks at the photograph. The photograph looks back."
+      },
+      "characterFocus": ["chris-willis", "stefan-shooter", "sam-taylor", "mixie-green"],
+      "mysteryElements": {
+        "planted": ["Stefan's self-describing book", "Sam's storm-Room 33 correlation", "Mixie's novel writing ahead"],
+        "revealed": ["The lodge can displace people temporally — Chris is proof"]
+      },
+      "summary": "Mid-season escalation. Stefan finds a self-describing book. Chris vanishes from the bar and returns with no memory. The supernatural becomes undeniable.",
+      "tags": ["escalation", "displacement", "recursion", "mid-season"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "ep-06",
+      "number": 6,
+      "title": "The Photograph",
+      "season": 1,
+      "theme": "What if you are not who you think you are?",
+      "function": "Identity fracture. Mixie discovers M. Quinn in the ledger. The handwriting matches her own.",
+      "stormStatus": "Calm between systems. The quiet is worse.",
+      "coldOpen": "1938. M. Quinn tends bar. She writes in a notebook — the same notebook Mixie uses. She looks up at the mirror. Her reflection delays. She notices. She has always noticed.",
+      "acts": {
+        "one": "Mixie investigates the guest ledger. She finds entries for \"M. Quinn\" spanning 1935-1942. The handwriting matches her own.",
+        "two": "Mixie compares M. Quinn's ledger entries to her own handwriting. They are identical. Not similar — identical. She shows Flynn. He says nothing for a long time.",
+        "three": "Mixie writes a letter to M. Quinn and slides it under Room 33's door. Morning: the letter is gone. In its place, a brass skeleton key, tarnished and warm."
+      },
+      "characterFocus": ["mixie-green", "flynn-callahan", "esmerelda", "stefan-shooter", "sam-taylor"],
+      "mysteryElements": {
+        "planted": ["The skeleton key", "Stefan's self-describing novel", "Sam's statistical pattern"],
+        "revealed": ["M. Quinn's handwriting matches Mixie's — identity loop confirmed", "Room 33 responds to Mixie's letter"]
+      },
+      "summary": "Mixie discovers M. Quinn in the ledger with identical handwriting. Her identity fractures. She writes a letter to Room 33 and receives a skeleton key in return.",
+      "tags": ["identity", "handwriting", "ledger", "skeleton-key"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "ep-07",
+      "number": 7,
+      "title": "What the Storm Took",
+      "season": 1,
+      "theme": "What is the cost of knowing?",
+      "function": "Consequence and loss. The lodge demands something. Characters reckon with what the storms have revealed.",
+      "stormStatus": "Aftermath of the mid-season storms. Damage assessment.",
+      "coldOpen": "A montage: every storm this season, compressed. The escalation is visible. Each storm was stronger. Each one took more.",
+      "acts": {
+        "one": "The aftermath. Characters assess what the storms have cost them — emotionally, psychologically. Sam and Mixie partner to investigate the lodge's pattern.",
+        "two": "Mixie and Sam discover the statistical correlation between Room 33 check-ins during storms and guest disappearances.",
+        "three": "Mixie reads her novel and realizes it is writing the lodge's story — not fiction but transcription. She holds the skeleton key. She knows where it goes."
+      },
+      "characterFocus": ["mixie-green", "sam-taylor", "esmerelda", "stefan-shooter"],
+      "mysteryElements": {
+        "planted": ["The skeleton key's destination", "Mixie's novel as transcription"],
+        "revealed": ["The lodge's cycle of receiving and releasing guests is quantifiable"]
+      },
+      "summary": "Consequence and cost. Sam and Mixie discover the statistical pattern connecting storms, Room 33, and disappearances. Mixie realizes her novel is transcription, not fiction.",
+      "tags": ["consequence", "investigation", "cost", "data"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "ep-08",
+      "number": 8,
+      "title": "The Foresters",
+      "season": 1,
+      "theme": "What happens when people try to own what should be tended?",
+      "function": "Lore expansion. The Foresters of the Eternal Compass are revealed.",
+      "stormStatus": "Brief calm. The eye between storm systems.",
+      "coldOpen": "1935. The Triangle Bar, gleaming and new. The Foresters in formal attire. They move through the lodge, up the stairs, to Room 33. The leader produces a key. They enter. The door closes.",
+      "acts": {
+        "one": "Mixie finds the Foresters' symbol under the bar baseboard. The library's locked cabinet — opened by Tom without being asked — yields partial records, meeting minutes, coded ritual notes.",
+        "two": "The Foresters' story unfolds through records and flashbacks. A secret society operating 1935-1943 that tried to control the lodge's threshold rather than tend it. Marie adds the Indigenous perspective they lacked. Z decodes their organizational structure.",
+        "three": "In the Foresters' membership ledger: the name \"Callahan.\" Mixie looks up at Flynn. She does not tell him. The final document: an unfinished 1943 letter."
+      },
+      "characterFocus": ["mixie-green", "jauncey-pladiym", "marie-dorion", "z-miranzadeh"],
+      "mysteryElements": {
+        "planted": ["Callahan in the Foresters' ledger", "The 1943 incident (deferred)", "The unfinished letter"],
+        "revealed": ["The Foresters' existence, purpose, and failure", "The compass rose's origin"]
+      },
+      "summary": "The Foresters of the Eternal Compass are revealed — a secret society that tried to own the lodge's power and failed. The name Callahan appears in their ledger.",
+      "tags": ["foresters", "lore", "history", "stewardship-vs-control"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "ep-09",
+      "number": 9,
+      "title": "The Other Draft",
+      "season": 1,
+      "theme": "What happens when the author enters the story?",
+      "function": "Meta reveal. Convergence Storm. Mixie enters Room 33 and encounters Siobhan.",
+      "stormStatus": "Convergence Storm — the most powerful of the season. All previous storms were rehearsals.",
+      "coldOpen": "Mixie's novel pages scattered everywhere. Beneath them: older pages, same handwriting, different paper. A novel written by M. Quinn in the 1930s. The same novel. Written before Mixie was born.",
+      "acts": {
+        "one": "Sam finds three earlier drafts of Mixie's novel in the locked cabinet — dated 1936, 1938, 1942, in Mixie's handwriting. Each tells the same story from a different angle. Each stops unfinished. Flynn reads them and says: \"Don't go into that room.\"",
+        "two": "The Convergence Storm arrives. The lodge holds — Tom's doing. At the bar, every regular is present. Mixie takes off her apron, takes out the skeleton key. Flynn: \"Mixie. No.\" She goes.",
+        "three": "Room 33. The wardrobe mirror cycles through reflections — M. Quinn, a woman from 1915, Mixie, then Siobhan. Siobhan reaches out through the glass. Mixie presses her palm to the mirror. Everything collapses into light. She dies. Flynn feels it. Tom appears with coffee and delivers his speech."
+      },
+      "characterFocus": ["mixie-green", "flynn-callahan", "tom-hargrove", "woman-of-the-storm"],
+      "mysteryElements": {
+        "planted": ["The nature of Mixie's death/reset", "The meaning of \"Finished\""],
+        "revealed": ["Mixie's novel is inherited memory", "M. Quinn wrote the same book", "The cycle repeats across decades", "Siobhan is the origin point"]
+      },
+      "setupPayoff": [
+        {"setup": "The skeleton key (Ep 7)", "payoff": "Mixie uses it to enter Room 33"},
+        {"setup": "The photograph (Ep 1)", "payoff": "Mixie sees the woman through the mirror"},
+        {"setup": "Siobhan's story (Ep 3)", "payoff": "Mixie stands where Siobhan stood, completing the echo"}
+      ],
+      "summary": "Earlier novel drafts prove the cycle has repeated for decades. The Convergence Storm arrives. Mixie enters Room 33, encounters Siobhan in the mirror, and dies. Flynn keeps vigil. Tom delivers his speech.",
+      "tags": ["convergence", "climax", "room-33", "mirror", "death", "rebirth"],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "ep-10",
+      "number": 10,
+      "title": "Check-Out Time",
+      "season": 1,
+      "theme": "What does it mean to stop running from who you are?",
+      "function": "Season finale. Resolution through acceptance, not explanation. Rebirth and continuation.",
+      "stormStatus": "Aftermath. Clear sky. The lodge exhales.",
+      "coldOpen": "The Triangle Bar. Early morning light. Mixie is behind the bar, polishing a glass. She does not know how she got here. She remembers the mirror, Siobhan's face, the word \"Finished.\" She is alive.",
+      "acts": {
+        "one": "Flynn is at the bar, unsleeping. He pours Mixie a drink at seven in the morning. \"How long was I gone?\" \"A night.\" \"It felt longer.\" \"It usually does.\" His eyes widen at his own words.",
+        "two": "Mixie writes the final chapter of her novel — quickly, without hesitation. The closing line: \"She did not leave. She arrived.\" Chris is back, unchanged. Stefan reads Sam's data without dismissing it. Jauncey plays an original song about Siobhan and Mixie.",
+        "three": "Evening at the full bar. The ensemble completes their arcs. A new guest arrives — young, uncertain, familiar. \"I don't know why I came here.\" \"That happens here.\" Wide pull-out: the lodge, the island, the sound. Distant thunder. Storms always return."
+      },
+      "characterFocus": ["mixie-green", "flynn-callahan", "jauncey-pladiym", "tom-hargrove"],
+      "mysteryElements": {
+        "planted": ["The new guest (who is she?)", "The approaching storm (Season Two setup)", "Flynn's \"It usually does\""],
+        "revealed": ["Mixie is a steward, not a prisoner", "The novel is finished", "The cycle continues with awareness"]
+      },
+      "setupPayoff": [
+        {"setup": "Flynn's vigil (Ep 9)", "payoff": "\"It usually does\" — suggests hidden knowledge"},
+        {"setup": "Chris's displacement (Ep 5)", "payoff": "Fully returned, unchanged — but we know"},
+        {"setup": "Stefan's empiricism (Ep 3)", "payoff": "Reading Sam's data is his revolution"},
+        {"setup": "The photograph (Ep 1)", "payoff": "Mixie at peace with it behind her"}
+      ],
+      "summary": "Mixie returns behind the bar, transformed from witness to steward. The ensemble completes their arcs. The novel is finished. A new guest arrives. Distant thunder promises Season Two.",
+      "tags": ["finale", "rebirth", "acceptance", "continuation"],
+      "universe_id": "room-33"
+    }
+  ]
+}
