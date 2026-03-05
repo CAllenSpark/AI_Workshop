@@ -1,3 +1,134 @@
 {
-  "props": []
+  "props": [
+    {
+      "id": "prop-r33-001",
+      "name": "The Room 33 Key",
+      "description": "A heavy brass skeleton key, darkened with age to the color of old honey. Its bow is shaped like an abstracted cedar tree, and the bit has teeth that seem to shift subtly when held at different angles -- as though the key remembers every lock it has ever opened. It is warm to the touch, always, regardless of the season. Those who carry it report vivid dreams of places they have never been, and a persistent sense that a door is waiting for them somewhere just out of sight. The key fits no modern lock on the island, but it turns smoothly in thresholds that no longer exist.",
+      "narrative_function": "key",
+      "plot_significance": "The Room 33 Key is the primary mechanism for deliberate temporal transit. While thin points exist naturally across Vashon Island, the key allows its bearer to choose which era they step into -- turning it in any doorframe within the lodge opens that door onto a different time. Without the key, travelers who stumble through thin points arrive at random eras and cannot control their return. The key has passed through many hands since the lodge's earliest incarnation, and each bearer has left some residue of their era in its metal.",
+      "appears_in": ["pio-008", "ind-001", "pre-001"],
+      "associated_people": [],
+      "associated_places": ["place-001", "place-033"],
+      "arc": "The Lodge",
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "prop-r33-002",
+      "name": "Vancouver's Lost Chart",
+      "description": "A single folded sheet of rag paper, stained with salt spray and iron-gall ink, bearing the unmistakable hand of a Royal Navy cartographer. It depicts the western shore of Vashon Island with meticulous accuracy -- except for one addition that appears on no published chart from the Vancouver Expedition. In the interior of the island, rendered in finer strokes than the coastline, is the outline of a structure that should not have existed in 1792: a building with a numbered room. Vancouver's marginal notation reads, in cramped script: 'Observed by Lt. Puget. Not to be recorded in the fair copy. The natives would not speak of it.' The paper smells faintly of cedar smoke, even after two centuries.",
+      "narrative_function": "clue",
+      "plot_significance": "This missing page from Vancouver's 1792 survey is the first European documentation of the lodge's existence. It proves the structure predates settler construction and was known to the S'Homamish, who deliberately kept it from outsiders. The chart also contains subtle navigational marks that, when overlaid on a modern map, pinpoint the locations of the island's temporal thin points. Finding this document forces the player to reckon with the question: what else did the explorers see and choose not to record?",
+      "appears_in": ["exp-001", "exp-005"],
+      "associated_people": ["person-009"],
+      "associated_places": ["place-001", "place-003"],
+      "arc": "The Lodge",
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "prop-r33-003",
+      "name": "The Mukai Barreling Jar",
+      "description": "A half-gallon stoneware crock from the Mukai Cold Process Fruit Barreling Plant, glazed in the distinctive brown-and-cream pattern of Pacific Northwest pottery. The jar bears a faded label reading 'MUKAI -- Island Grown Strawberries -- Vashon, Wash.' in Denichiro's own hand. When opened, the strawberries inside are impossibly fresh -- not preserved, but suspended in the exact moment of their ripeness. The fruit tastes of a June morning in 1926: sun-warmed soil, salt air off the Sound, the distant clatter of the barreling plant machinery. The jar is always slightly cool, as though it holds its own climate inside.",
+      "narrative_function": "heirloom",
+      "plot_significance": "The Mukai Barreling Jar preserves more than fruit -- it preserves a moment in time. Denichiro Mukai's cold-process innovation was, unknowingly, a form of temporal preservation. This particular jar, sealed in 1926, contains strawberries that exist in a perpetual present tense. Eating one anchors the consumer to 1926 for the duration of a single scene, providing a visceral sensory experience of pre-war Vashon. The jar also serves as a painful reminder of what was lost when the Japanese American community was torn from the island during internment -- the taste of a home that was taken.",
+      "appears_in": ["ear-001", "ear-012", "ww2-002", "ww2-003"],
+      "associated_people": ["person-049", "person-050", "person-051"],
+      "associated_places": ["place-045", "place-046"],
+      "arc": "The Mukai Legacy",
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "prop-r33-004",
+      "name": "The Shell Midden Amulet",
+      "description": "A small pendant carved from the leg bone of a deer, found embedded in the deepest stratum of the Burton Acres shell midden -- a layer that predates all known occupation of the site by at least five hundred years. The carving depicts a spiral that tightens to a point, then reverses and opens again, suggesting something collapsing inward and re-emerging. The bone is polished smooth by handling, though no human hands should have touched it in that era. When held near the midden site, the amulet vibrates at a frequency just below hearing, and the bearer sees brief afterimages of people who are not there -- figures gathering shellfish in clothes from no identifiable period.",
+      "narrative_function": "macguffin",
+      "plot_significance": "The Shell Midden Amulet is the oldest artifact connected to the Room 33 phenomenon. Its presence in a geological layer that predates known human habitation suggests that temporal displacement on Vashon Island is not a modern anomaly but a feature of the land itself. Multiple factions seek the amulet: those who believe it can permanently open a thin point, those who believe it can seal one shut, and those who simply want to understand what carved it. The amulet is the key to understanding the island's temporal nature, but possessing it comes with a cost -- the bearer begins to lose their grip on linear time.",
+      "appears_in": ["ind-003", "ind-005", "pre-001"],
+      "associated_people": ["person-001", "person-002", "person-003"],
+      "associated_places": ["place-020", "place-007"],
+      "arc": "The Deep Memory",
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "prop-r33-005",
+      "name": "The Lodge Guest Book",
+      "description": "A massive leather-bound ledger, its spine cracked and re-bound multiple times across more than a century. The earliest entries date to 1885, when the building served as a gathering hall during the first Chautauqua Assembly on Puget Sound. Each guest has signed their name, noted their date of arrival, and -- in the lodge's tradition -- written a single sentence about what brought them there. Most entries are mundane. But scattered throughout the chronological record are anomalies: entries in handwriting that analysis confirms belong to people who had not yet been born, dates that fall on days the lodge was documented as closed, and signatures in languages that were not spoken on the island in the year indicated. The ink in these anomalous entries never fully dries.",
+      "narrative_function": "evidence",
+      "plot_significance": "The Guest Book is the most comprehensive record of temporal displacement events at the lodge. Careful cross-referencing of its entries against census records, ship manifests, and obituaries reveals a pattern: the anomalous entries cluster around specific dates that correspond to geological and astronomical events -- solstices, king tides, seismic activity. The book proves that Room 33 has been receiving visitors from other times for over a century, and that the phenomenon is accelerating. It also contains the only known written accounts from time-displaced visitors describing what they experienced, making it an invaluable research document and a deeply unsettling read.",
+      "appears_in": ["pio-008", "ear-001", "mod-007"],
+      "associated_people": [],
+      "associated_places": ["place-001", "place-033"],
+      "arc": "The Lodge",
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "prop-r33-006",
+      "name": "S'Homamish Cedar Canoe Fragment",
+      "description": "A curved section of red cedar hull, roughly two feet long, split cleanly from a larger dugout canoe. The wood is old -- centuries old -- but has not rotted. The interior surface bears the distinctive adze marks of S'Homamish construction, and faint traces of red ochre pigment cling to the grain. When brought within a hundred yards of a temporal thin point, the fragment begins to hum: a low, resonant tone that rises in pitch as the thin point draws nearer. Pressed against the ear, the hum resolves into what sounds like water lapping against a hull, and the faint rhythm of paddles. The wood smells of smoke, salt water, and something older -- glacial melt, perhaps, or the memory of ice.",
+      "narrative_function": "transport",
+      "plot_significance": "The Canoe Fragment functions as a compass for temporal thin points. The S'Homamish knew the island's waters intimately, including the places where time ran differently -- they navigated not just the physical Sound but the temporal currents beneath it. This fragment retains that knowledge in its grain. A player carrying it can locate thin points by following the hum, and at the water's edge, the fragment can open a passage to the era when the canoe was whole -- roughly 1500 CE, when the S'Homamish village sites were at their peak. The fragment also serves as a cultural touchstone, reminding players that the island's indigenous inhabitants understood things about this place that settlers never learned.",
+      "appears_in": ["ind-001", "ind-005", "pre-001"],
+      "associated_people": ["person-001"],
+      "associated_places": ["place-001", "place-007", "place-003"],
+      "arc": "The Deep Memory",
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "prop-r33-007",
+      "name": "The Nike Base Radio",
+      "description": "A Collins R-390A military receiver, serial number partially filed off, salvaged from the decommissioned Nike missile base S-61 on Paradise Ridge. The radio is heavy -- eighty-five pounds of Cold War engineering in a rack-mounted steel chassis. It should not work. The vacuum tubes are cracked, the power supply capacitors have long since dried out, and the antenna connection is corroded beyond use. But at certain times -- always between 3:00 and 3:33 AM, always during weather changes -- the radio emits sound. Not static. Voices. Transmissions in military radio protocol from dates that span decades: weather reports from 1955, a panicked call about a Soviet submarine contact in 1962, a calm voice reading coordinates that correspond to no known location, and occasionally, a woman speaking in Lushootseed, the S'Homamish language, describing the position of stars.",
+      "narrative_function": "clue",
+      "plot_significance": "The Nike Base Radio receives transmissions that have bled through temporal thin points. The Cold War military installation unknowingly sat atop one of the island's most active zones of temporal instability -- the same ridge where the S'Homamish observed astronomical events. The radio's malfunctioning circuits act as an accidental antenna for signals displaced in time. Decoding the transmissions reveals critical information: coordinates of thin points, warnings from future visitors, and fragments of indigenous astronomical knowledge that suggest the S'Homamish tracked temporal phenomena the way they tracked tides. The radio is too heavy to carry easily, creating a tension between wanting its information and needing to explore the island on foot.",
+      "appears_in": ["fer-002", "ind-001"],
+      "associated_people": [],
+      "associated_places": ["place-037", "place-038", "place-039"],
+      "arc": "The Cold War Echo",
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "prop-r33-008",
+      "name": "Kuni's Garden Stone",
+      "description": "A palm-sized river stone, smoothed by centuries of water and then carved on one face with a single kanji character: 'todomaru' -- to remain, to stay, to stand firm. Kuni Mukai placed this stone at the threshold of her Japanese stroll garden at Mukai Farm sometime in the 1930s, where it served as a fumitsuki-ishi, a stepping stone marking the transition from the everyday world into the contemplative space of the garden. The stone has an unusual weight to it -- heavier than its size suggests, as though it is anchored to something beneath the surface. Those who hold it report a sudden, vivid sense of the present moment: the temperature of the air, the direction of the wind, the exact quality of the light. Intrusive thoughts quiet. The past and future recede. There is only now.",
+      "narrative_function": "catalyst",
+      "plot_significance": "Kuni's Garden Stone is the only known object that can arrest temporal displacement in progress. A time traveler caught in an uncontrolled slide between eras -- losing their grip on when they are -- can hold the stone and be pulled back to the present. Kuni Mukai, whether she knew it or not, created a temporal anchor when she carved and placed this stone with the focused intention of creating a threshold between worlds. The stone embodies her philosophy of mindful presence, and it works because genuine attention to the present moment is the antithesis of temporal drift. The stone is also a symbol of resilience: Kuni placed it before the war, and it remained in the garden through internment, through decades of neglect, through the farm's restoration -- it stayed, as its carving promised.",
+      "appears_in": ["ear-012", "ww2-003", "mod-007"],
+      "associated_people": ["person-050"],
+      "associated_places": ["place-045", "place-046"],
+      "arc": "The Mukai Legacy",
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "prop-r33-009",
+      "name": "The Glacial Erratum",
+      "description": "A fist-sized granite boulder, impossibly smooth on five of its six faces, with the sixth face bearing a pattern of striations that do not match any known glacial scoring. The rock was found in the rubble of a landslide on the island's western bluff, in a stratum dating to the Vashon glaciation -- roughly 14,000 years ago. It is not native to the region. Geological analysis identifies the granite as originating from a formation in the Canadian Rockies, consistent with glacial transport, but the smoothness and the anomalous striations suggest intentional shaping by tools that did not exist in that era. When placed on a flat surface, the stone does not roll. It does not slide. It sits exactly where it is placed, as though it has decided to be there. In its presence, compasses spin slowly, and digital clocks lose seconds.",
+      "narrative_function": "macguffin",
+      "plot_significance": "The Glacial Erratum is evidence that the island's temporal anomalies predate human presence entirely. Something shaped this stone with intention during an era when the island was buried under a mile of ice. It raises the most unsettling question in the Room 33 mythology: is the temporal instability caused by something, or is it a property of the place itself -- as natural as the tides, as old as the bedrock? The stone disrupts instruments and temporal perception in its vicinity, making it both a powerful tool and a dangerous liability. Some believe it is a fragment of whatever force created the thin points. Others believe it is a warning left by something that was here before the ice.",
+      "appears_in": ["pre-001", "ind-003"],
+      "associated_people": [],
+      "associated_places": ["place-001"],
+      "arc": "The Deep Memory",
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "prop-r33-010",
+      "name": "The Mosquito Fleet Logbook",
+      "description": "A water-stained captain's logbook from the steamer 'Burton,' one of the small steamers of the Mosquito Fleet that connected Vashon Island to the mainland from the 1890s through the 1920s. The logbook records routine passages -- departure times, passenger counts, weather, cargo manifests. But the captain, whose name has been worn illegible by water damage, also noted anomalies in the margins: fog banks that appeared instantaneously in clear weather, passengers who boarded at one dock and were not aboard at the next, a recurring sighting of a 'large canoe, very old in construction' that appeared in the shipping lane near Quartermaster Harbor and vanished when approached. The final entry, dated November 1918, reads: 'Fog again. Three passengers unaccounted for. I will not make this run again.'",
+      "narrative_function": "evidence",
+      "plot_significance": "The Mosquito Fleet Logbook documents temporal displacement events from the perspective of an unwitting witness. The captain did not understand what he was seeing, but his careful maritime observations provide precise locations, times, and conditions for dozens of thin-point activations over three decades. Cross-referenced with tide charts and weather records, the logbook reveals that temporal events on the water follow a pattern tied to extreme tidal exchanges -- the same king tides that expose the deepest layers of the shell middens. The missing passengers were not lost overboard; they stepped through thin points that formed in the fog. The logbook also connects to the Canoe Fragment, as the 'large canoe' sighted by the captain matches S'Homamish construction from roughly 1500 CE.",
+      "appears_in": ["gro-003", "gro-012", "ear-001"],
+      "associated_people": [],
+      "associated_places": ["place-007", "place-024", "place-052"],
+      "arc": "The Lodge",
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    }
+  ]
 }

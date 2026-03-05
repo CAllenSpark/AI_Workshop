@@ -5344,6 +5344,337 @@
       ],
       "entry_type": "historical",
       "scope": "tacoma"
+    },
+    {
+      "id": "fan-001",
+      "title": "The Lodge Appears at the Crossroads",
+      "date_start": "~1000",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The S'Homamish recognize a gathering place at the island's center where the forest opens into a natural clearing. They call it 'the place where stories meet.' Cedar posts mark a structure that seems older than anyone can remember building.",
+      "details": "Elders speak of a structure that was always there — not built by human hands but grown from the island itself. The clearing where it stands is one of the few places on the island where all five village sites are equidistant. Stories told here have a way of becoming real. Visitors sometimes emerge from the forest claiming to have been gone for minutes, though days have passed.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [],
+      "tags": [
+        "lodge",
+        "origins",
+        "indigenous",
+        "supernatural",
+        "thin-place"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Lodge",
+        "beat": "setup",
+        "anchors": [
+          {
+            "entry_id": "ind-001",
+            "relationship": "backdrop",
+            "description": "Built on the foundation of S'Homamish habitation patterns"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fan-002",
+      "title": "Vancouver's Unnamed Observation",
+      "date_start": "1792-05-21",
+      "era": "exploration",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "During Peter Puget's survey of the southern Sound, the expedition's log records a curious anomaly: a 'light upon the eastern shore of the large island, steady and unwavering, unlike any campfire.' Vancouver orders the observation struck from the official chart.",
+      "details": "Puget's personal journal, never published, contains a longer passage: 'We observed from the pinnace a luminescence on Vashon's Island of such constancy as to suggest a lantern or lighthouse, though no European settlement exists there. Upon Mr. Whidbey's suggestion we altered course to investigate but found upon approach only a clearing in the forest and a sensation of profound unease. I ordered the men to return to their oars.' This entry does not appear in Vancouver's published 'Voyage of Discovery.'",
+      "people": [
+        "Peter Puget",
+        "Captain George Vancouver"
+      ],
+      "places": [
+        "Vashon Island",
+        "Puget Sound"
+      ],
+      "sources": [],
+      "tags": [
+        "exploration",
+        "mystery",
+        "lodge",
+        "vancouver",
+        "suppressed-record"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Lodge",
+        "beat": "foreshadowing",
+        "anchors": [
+          {
+            "entry_id": "exp-005",
+            "relationship": "parallel_event",
+            "description": "Occurs during the documented Puget survey expedition"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fan-003",
+      "title": "The Pioneer Inn Opens with 33 Rooms",
+      "date_start": "1885",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "A timber lodge is built at the island's center crossroads, positioned on the same clearing the S'Homamish marked with cedar posts. The builder, who arrived on the island six months prior with no apparent history, insists on exactly 33 rooms despite the lodge being far too large for the island's population.",
+      "details": "The lodge's guest book, leather-bound and embossed with no publisher's mark, begins accepting names on opening night. The first entry is dated 1885. The second is dated 1792. No one notices this for decades. The builder disappears three months after the opening, leaving no forwarding address and no deed. The lodge simply continues operating, maintained by a succession of caretakers who all report the same thing: the building tells you what it needs.",
+      "people": [],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [],
+      "tags": [
+        "lodge",
+        "construction",
+        "mystery",
+        "guest-book",
+        "caretaker"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Lodge",
+        "beat": "inciting-incident",
+        "anchors": [
+          {
+            "entry_id": "pio-008",
+            "relationship": "parallel_event",
+            "description": "Opens the same year as the first Chautauqua assembly, when the island draws its first wave of visitors"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fan-004",
+      "title": "The Mukai Jar That Wouldn't Empty",
+      "date_start": "1942-03",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "When the Mukai family self-exiles to Oregon in March 1942, Kuni Mukai buries a sealed strawberry barreling jar in her garden. She tells her grandson Milton it contains 'everything we can't carry.' Decades later, when the jar is unearthed during garden restoration, it is full of fresh strawberries — and a folded letter in handwriting that hasn't been written yet.",
+      "details": "The jar's contents should have decomposed within weeks. Instead, the strawberries are perfectly preserved, as if picked that morning. The letter, addressed to 'whoever finds this,' describes events on the island through the 1950s, 1970s, and 2020s with uncanny accuracy. Kuni, when asked about it in her old age, simply says: 'The garden keeps what you give it. I gave it our future so it would be safe.' The jar is now in the lodge's keeping, stored in Room 33.",
+      "people": [
+        "Kuni Mukai",
+        "Masahiro (Masa) Mukai"
+      ],
+      "places": [
+        "Mukai Farm",
+        "Vashon Island"
+      ],
+      "sources": [],
+      "tags": [
+        "mukai",
+        "internment",
+        "preservation",
+        "time",
+        "garden",
+        "jar"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Mukai Legacy",
+        "beat": "rising-action",
+        "anchors": [
+          {
+            "entry_id": "ww2-003",
+            "relationship": "divergence_point",
+            "description": "Branches from the real Mukai self-exile to Oregon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fan-005",
+      "title": "The Nike Base Picks Up Transmissions from 1854",
+      "date_start": "1955",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Operators at Nike Missile Base S-61 on Vashon Island report intermittent radio interference: voices speaking in Lushootseed, the sound of a treaty negotiation, and a man's voice repeating 'the land does not belong to us — we belong to the land.' The transmissions are logged as atmospheric anomalies and classified.",
+      "details": "The classified report, declassified in 1998, describes 47 incidents over two years of unexplained audio interference at the Vashon Nike site. Linguists at Fort Lewis identified the language as Southern Lushootseed. One transcript matches almost word-for-word a passage attributed to Chief Leschi's testimony at the Medicine Creek treaty negotiations of 1854. The base's radar operators also reported intermittent returns from objects that appeared to be wooden sailing vessels in Puget Sound. The incidents ceased when the base was decommissioned in 1963.",
+      "people": [
+        "Chief Leschi",
+        "Isaac Stevens"
+      ],
+      "places": [
+        "Vashon Island"
+      ],
+      "sources": [],
+      "tags": [
+        "nike-base",
+        "cold-war",
+        "temporal-echo",
+        "treaty",
+        "radio",
+        "lushootseed"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Treaty Echo",
+        "beat": "rising-action",
+        "anchors": [
+          {
+            "entry_id": "fer-002",
+            "relationship": "backdrop",
+            "description": "Set during Nike base operations"
+          },
+          {
+            "entry_id": "log-002",
+            "relationship": "consequence_of",
+            "description": "Echoes of the Medicine Creek Treaty"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fan-006",
+      "title": "The Shell Midden Opens at Low Tide",
+      "date_start": "~500 BCE",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "description": "At Burton Acres, where the shell midden has accumulated layers of habitation for millennia, there is a tide so low it only comes once a generation. When it does, the midden reveals a deeper layer — not of shells, but of carved bone and obsidian from no known local source. And a doorway.",
+      "details": "S'Homamish oral tradition speaks of a passage beneath the midden that leads 'to the time before time.' The carved bones depict creatures that match no known Pacific Northwest fauna — or rather, they match fauna from the Pleistocene era. The obsidian has been traced to no volcanic source in the Cascades. Those who enter the passage when the tide is at its lowest report emerging in a landscape of ice and grassland, with the sound of glacier-calving echoing across what will become Puget Sound. They return when the tide rises, but something always comes back with them — a feather, a tooth, a memory that isn't theirs.",
+      "people": [],
+      "places": [
+        "Quartermaster Harbor",
+        "Burton Acres",
+        "Vashon Island"
+      ],
+      "sources": [],
+      "tags": [
+        "shell-midden",
+        "temporal-passage",
+        "indigenous",
+        "archaeology",
+        "pleistocene"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Deep Time",
+        "beat": "setup",
+        "anchors": [
+          {
+            "entry_id": "ind-003",
+            "relationship": "divergence_point",
+            "description": "Built on the real Burton Acres Shell Midden"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fan-007",
+      "title": "The Bike in the Tree Begins to Grow",
+      "date_start": "~1994",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "When the fir tree absorbing Don Puz's bicycle reaches a certain height, local children report that the bicycle's wheels turn at night — always at the same hour, always pointing toward Room 33. A writer staying at the lodge follows the direction and discovers a path through the forest that shouldn't exist.",
+      "details": "The bicycle was donated to young Don Puz after a house fire that killed his father in 1954. The tree began growing around it immediately, as if claiming it. By the 1990s, the bike is eight feet off the ground and still rising. Berkeley Breathed wrote a children's book about it. What he didn't write about: the caretaker at the lodge who noticed that on the anniversary of the fire, the bike's shadow on the ground shows a boy riding. The path it points to leads through old-growth ravines to a clearing where the trees are impossibly large — survivors from before the great logging era, or perhaps from before logging was even possible.",
+      "people": [
+        "Don Puz",
+        "Berkeley Breathed"
+      ],
+      "places": [
+        "Vashon Highway SW",
+        "Vashon Island"
+      ],
+      "sources": [],
+      "tags": [
+        "bike-in-tree",
+        "landmark",
+        "supernatural",
+        "path",
+        "lodge"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Living Island",
+        "beat": "foreshadowing",
+        "anchors": [
+          {
+            "entry_id": "mod-011",
+            "relationship": "inspired_by",
+            "description": "Built on the real Bike in the Tree landmark"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fan-008",
+      "title": "The Island Refuses the Bridge",
+      "date_start": "1959-03-12",
+      "era": "state-ferry",
+      "layers": [
+        "event"
+      ],
+      "description": "On the day the Washington State Senate votes on the Vashon bridge proposal, every compass on the island points to the center — toward the lodge. The vote fails by 7 votes. Engineers later discover that soil samples from the proposed bridge footings contain wood fragments carbon-dated to 800 years before the nearest known tree.",
+      "details": "The bridge proposal of 1959 was the closest Vashon ever came to losing its island identity. John Cherberg's procedural ruling killed it on a technicality, but island lore holds that the vote was never really in doubt. The island itself intervened. Compass readings that day were documented by the US Coast & Geodetic Survey as an 'unexplained magnetic anomaly.' The wood fragments in the soil cores were cedar — the same species the S'Homamish used for their longhouses, but from a tree that would have been growing when the island had no recorded human inhabitants. The lodge's guest book entry for that date reads simply: 'Still here.'",
+      "people": [
+        "John Cherberg"
+      ],
+      "places": [
+        "Vashon Island",
+        "Colvos Passage",
+        "Fauntleroy"
+      ],
+      "sources": [],
+      "tags": [
+        "bridge-proposal",
+        "island-agency",
+        "magnetic-anomaly",
+        "preservation"
+      ],
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33",
+      "narrative": {
+        "arc": "The Living Island",
+        "beat": "climax",
+        "anchors": [
+          {
+            "entry_id": "fer-003",
+            "relationship": "parallel_event",
+            "description": "The real bridge vote defeat"
+          }
+        ]
+      }
     }
   ]
 }

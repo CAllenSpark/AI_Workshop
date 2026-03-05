@@ -1,3 +1,20 @@
 {
-  "universes": []
+  "universes": [
+    {
+      "id": "room-33",
+      "name": "Room 33",
+      "description": "A fantasy-meets-reality universe layered on Vashon Island's real history. At the heart of the island stands a lodge that has existed in various forms since time immemorial — first as a S'Homamish gathering place, then a pioneer inn, then a resort, now a weathered retreat. Room 33 is the nexus: a place where the boundaries between eras weaken and the island's deep memory surfaces. Writers, seekers, and the simply lost are drawn here, discovering they can step between time periods at certain thin points — the shell midden at Burton Acres, the old-growth ravines, the abandoned Nike missile base. But the past cannot be changed, only witnessed. And the island has its own will.",
+      "genre": "historical fantasy / literary mystery",
+      "themes": [
+        "memory and place",
+        "the weight of history",
+        "indigenous stewardship vs. settler extraction",
+        "what we owe the land",
+        "time as a living thing",
+        "the stories places hold"
+      ],
+      "created_by": "AI Narrator & Writer collaboration",
+      "created_at": "2026-03-05"
+    }
+  ]
 }

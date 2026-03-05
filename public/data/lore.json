@@ -1,3 +1,343 @@
 {
-  "lore": []
+  "lore": [
+    {
+      "id": "lore-001",
+      "name": "The Tide Keeper of Quartermaster Harbor",
+      "type": "folk_tale",
+      "description": "A S'Homamish tale of a spirit dwelling beneath the waters of Quartermaster Harbor who controls the tides and guides the salmon home. When honored, the Tide Keeper fills the nets and exposes the clam beds at the perfect hour. When forgotten, the tides turn strange and the fish swim past without stopping.",
+      "full_text": "Before the people came to the island, there was only the water and the spirit beneath it. The Tide Keeper sat on a throne of barnacle-covered stone at the deepest point of the harbor, where the eelgrass bends in currents that have no wind. It was the Tide Keeper who taught the first salmon the way home, drawing silver lines through the water with one long finger. Each day the Keeper breathed in and the water fell away, revealing the clam gardens and the moon snails and the purple shore crabs scuttling between stones. Each night the Keeper breathed out and the water rose, covering the gifts again until the people had rested. The elders said: leave the first salmon on the beach, belly to the sky, so the Tide Keeper knows you are grateful. Leave a cedar bough at the high-tide line after the largest harvest. And never, never take shellfish from the deepest point of the harbor, for that is where the Keeper sits, and what grows there belongs to the water alone. When the settlers came and dredged the harbor mouth, the old fishermen said the Keeper stirred in its sleep. The tides ran six minutes late for a whole season. The salmon came, but they circled the harbor entrance three times before entering, as if asking permission from something that was no longer sure it wanted to grant it.",
+      "origin_culture": "S'Homamish (sx\u0327\u02b7\u0259bab\u0161)",
+      "origin_era": "indigenous",
+      "known_by": [
+        {
+          "person_id": "person-001",
+          "level": "deep",
+          "context": "Core cultural knowledge passed through generations of S'Homamish oral tradition"
+        },
+        {
+          "person_id": "person-024",
+          "level": "vague",
+          "context": "Salmon Sherman heard fragments from indigenous neighbors when he settled at Quartermaster Harbor in 1877"
+        }
+      ],
+      "related_entries": ["ind-002", "ind-005"],
+      "related_places": ["place-007"],
+      "related_people": ["person-001"],
+      "themes": ["reciprocity", "stewardship", "the-cost-of-forgetting", "sacred-waters"],
+      "narrative_use": "Anchor for water-based encounters at Quartermaster Harbor. The Tide Keeper can manifest as a presence felt beneath the surface -- cold upwellings, strange currents, bioluminescent patterns that spell out warnings. Players who honor the old ways gain safe passage; those who take without gratitude find the tides working against them.",
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lore-002",
+      "name": "The Glacier's Memory",
+      "type": "legend",
+      "description": "A legend that the island itself remembers being buried under a mile of ice during the last glaciation. On the coldest winter nights, the land groans and shifts, and those who press their ear to bare glacial till can hear the deep grinding sound of ice that departed fifteen thousand years ago but never truly left.",
+      "full_text": "The oldest thing on this island is not the cedar, not the midden, not the stone tools buried in the clay. The oldest thing is the memory of ice. Fifteen thousand years ago, a glacier a mile thick sat on this land and pressed it down into the earth. The weight was so great that the bedrock still has not fully risen back. The island remembers. You can feel it in the glacial erratics -- boulders carried from the Cascades and dropped here when the ice retreated, sitting in fields and forests where they have no geological right to be. Each one is a scar. On the coldest nights of January, when the ground freezes hard and the stars are sharp as broken glass, the old-timers say you can hear it: a low, subsonic groan rising from the earth itself, like a body remembering an old wound. Press your palm flat against exposed glacial till -- the blue-grey clay that shows in the bluffs after a landslide -- and you feel a cold that is not the cold of winter. It is older. It is the cold of a mile of ice remembering where it sat. Some say the erratics move. Not far. Not fast. A few inches over a lifetime, always drifting north, as if trying to follow the glacier home.",
+      "origin_culture": "Composite -- elements drawn from indigenous geological knowledge and pioneer-era settler folklore",
+      "origin_era": "prehistory",
+      "known_by": [
+        {
+          "person_id": "person-001",
+          "level": "deep",
+          "context": "Indigenous understanding of the land's glacial origins, woven into place-knowledge"
+        },
+        {
+          "person_id": "person-002",
+          "level": "familiar",
+          "context": "Julie K. Stein encountered geological folklore during archaeological work at Burton Acres"
+        }
+      ],
+      "related_entries": ["pre-001", "pre-002", "pre-004"],
+      "related_places": ["place-001", "place-005"],
+      "related_people": ["person-001"],
+      "themes": ["deep-time", "landscape-as-memory", "the-weight-of-the-past", "transformation"],
+      "narrative_use": "Foundation for time-travel mechanics. The Glacier's Memory is the oldest temporal layer on the island -- the deepest stratum of Room 33. Players who touch glacial till at the right moment can be pulled back to the ice age, or experience sensory flashes of crushing weight and absolute cold. Glacial erratics serve as waypoints between eras: each one anchors a specific moment in deep time.",
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lore-003",
+      "name": "The Logger Who Walked Into the Old Growth",
+      "type": "folk_tale",
+      "description": "A pioneer-era ghost story about a young logger named Eben Harker who walked into an uncut stand of old-growth forest near Shinglemill Creek in 1889 to mark trees, and emerged three hours later aged forty years. His hair had gone white, his hands were gnarled, and he could not speak for a week. When he finally talked, he said only: 'The trees remember everything. I saw all of it.'",
+      "full_text": "They tell this one at the mill camps, usually after dark, usually after drink. Eben Harker was twenty-three years old and strong as a draft horse. The Puget Mill Company sent him up the Shinglemill Creek ravine in the autumn of 1889 to mark trees for the next season's cut. He went in at noon with a hatchet and a tin of red paint. The forest there was old -- Douglas fir eight feet across, cedar that had been growing since before Columbus. The canopy was so thick that noon looked like dusk on the forest floor. Eben did not come out at three. He did not come out at six. They sent two men in after him at first light the next morning. They found him sitting on a nurse log at the edge of the old growth, right where the cut forest met the ancient one. His hair was white. His face was lined and weathered like a man of sixty. His hands shook. The red paint tin was full -- he had not marked a single tree. He would not speak for seven days. When he did, he said the trees had shown him things. Every season that had passed through that grove. Every creature that had sheltered there. Every raindrop. He said time moved differently under the old canopy, that the trees held it like water in a basin, and when he stepped inside he had lived through all of it. He never went back into old growth. He left the island the following spring. Some say he died old in Tacoma, though he would have been only twenty-four by the calendar.",
+      "origin_culture": "Pioneer-era Vashon Island logging community",
+      "origin_era": "pioneer",
+      "known_by": [
+        {
+          "person_id": "person-046",
+          "level": "familiar",
+          "context": "Helmar Steen heard the story from older loggers when he founded his mill"
+        },
+        {
+          "person_id": "person-045",
+          "level": "vague",
+          "context": "Frances Sherman knew the tale as a cautionary story about the deep ravines"
+        }
+      ],
+      "related_entries": ["gro-001", "pre-006"],
+      "related_places": ["place-016", "place-015"],
+      "related_people": ["person-046"],
+      "themes": ["time-displacement", "old-growth-as-sacred", "the-cost-of-industry", "forbidden-knowledge"],
+      "narrative_use": "Direct adventure hook for exploring the surviving old-growth ravines. The few remaining ancient trees in Shinglemill Creek and Judd Creek canyons are the last living remnants of the forest Eben walked into. In Room 33, these ravines are thin places where old time pools. Players entering may experience temporal dilation -- minutes outside, hours or years within. The deeper into the ravine, the further back in time the visions reach.",
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lore-004",
+      "name": "The Song of the Cedar People",
+      "type": "oral_tradition",
+      "description": "A S'Homamish oral tradition about how the first people were born from the heartwood of a great western red cedar that stood at the center of the island. The cedar gave its bark for clothing, its wood for canoes, its boughs for shelter, and its roots for baskets -- and in return, the people agreed to carry the cedar's song forward through every generation.",
+      "full_text": "In the time before time had a direction, there was a cedar so large that its crown touched the low clouds and its roots drank from the salt water far below the bluffs. This cedar had stood since the ice left and had watched the land rise out of the water, watched the first mosses grow, watched the first salmon find the creeks. It had been alone for so long that it learned to sing -- a low sound, like wind in branches, but with words beneath it. The cedar sang the world into detail: it sang the ferns into uncurling, the herons into stillness, the otters into play. But it could not sing itself a companion. So the cedar opened its own heartwood -- the red, fragrant center where the oldest rings live -- and from that opening stepped the first people. They were small and quiet and they smelled of cedar. The tree gave them everything: bark stripped carefully for skirts and capes, wood split for longhouses, boughs woven for rain shelters, roots pulled gently for baskets tight enough to hold water. And the people gave the cedar the one thing it could not make alone: they carried its song. Every ceremony, every canoe launch, every child named beside the water -- the song was in it. The elders say the original cedar still stands somewhere on the island, hidden in a ravine where no logger ever cut. If you find it, press your ear to the bark. You will hear the song. And if you know the words, the tree will open its heartwood again.",
+      "origin_culture": "S'Homamish (sx\u0327\u02b7\u0259bab\u0161)",
+      "origin_era": "indigenous",
+      "known_by": [
+        {
+          "person_id": "person-001",
+          "level": "deep",
+          "context": "Central to S'Homamish cultural identity and relationship with western red cedar"
+        }
+      ],
+      "related_entries": ["ind-001", "ind-004", "pre-006"],
+      "related_places": ["place-001", "place-015", "place-016"],
+      "related_people": ["person-001"],
+      "themes": ["creation", "reciprocity", "living-memory", "cedar-as-kin", "the-song-that-holds-the-world"],
+      "narrative_use": "The Song of the Cedar People is the mythic backbone of the Room 33 universe. The original cedar is the living heart of the island's temporal power -- it has existed since the glaciers retreated and its rings encode every era. Room 33 itself may be built from its wood. Players who learn fragments of the song gain the ability to communicate with the island's deeper layers. The song is not magic in the flashy sense -- it is an act of attention so deep that the boundary between listener and land dissolves.",
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lore-005",
+      "name": "The Strawberry Fields Hold Memories",
+      "type": "superstition",
+      "description": "A belief among Vashon's Japanese American farming families that the strawberry plants absorbed the emotions of the people who tended them. Happy seasons produced sweeter fruit. The berries harvested in the spring of 1942 -- the last harvest before internment -- were said to be unbearably sweet, as if the plants knew they were saying goodbye.",
+      "full_text": "Kuni Mukai told her daughter-in-law that the strawberry plants knew things. Not in the way a person knows -- not with thoughts or words -- but in the way soil knows rain. The plants absorbed what was around them. When Denichiro sang while he worked the rows, the berries grew fatter and sweeter. When the family argued, the leaves curled at the edges. In the good years, when the island shipped 120,000 crates and the festival crowned its Strawberry Queen, the fields hummed with something that was almost contentment. You could taste it -- Vashon strawberries were famous because the plants were happy. Then came 1942. The families knew before the order came. They could feel it in the way their neighbors looked at them, in the silences at the general store. The strawberry plants felt it too. That last spring, the berries ripened early and all at once, as if the plants were rushing to give everything they had before it was too late. People who bought those final crates said the berries were the sweetest they had ever tasted -- so sweet it made your eyes sting. After the families were taken, the fields went untended. Some neighbors harvested what they could, but they said the fruit tasted of nothing. The plants lived for a few more seasons, then died back. By 1945, the strawberry fields were weeds and grass. The island never grew strawberries the same way again. Some say the plants are still there, dormant beneath the topsoil, holding the memories of the families who loved them, waiting for hands that know the old way of tending.",
+      "origin_culture": "Japanese American farming community, Vashon Island",
+      "origin_era": "early-20th-century",
+      "known_by": [
+        {
+          "person_id": "person-050",
+          "level": "deep",
+          "context": "Kuni Mukai articulated this belief most clearly; it was central to her relationship with the land"
+        },
+        {
+          "person_id": "person-049",
+          "level": "familiar",
+          "context": "Denichiro's barreling process was partly guided by reading the mood of each season's harvest"
+        },
+        {
+          "person_id": "person-051",
+          "level": "familiar",
+          "context": "Masahiro grew up with this understanding and carried it to Oregon during the family's self-exile"
+        },
+        {
+          "person_id": "person-065",
+          "level": "vague",
+          "context": "Mary Matsuda Gruenewald recalled her mother speaking of the fields in this way"
+        }
+      ],
+      "related_entries": ["ear-001", "ear-004", "ww2-001", "ww2-002", "ww2-003"],
+      "related_places": ["place-045", "place-001"],
+      "related_people": ["person-049", "person-050", "person-051", "person-062", "person-063"],
+      "themes": ["memory-in-the-land", "internment", "loss", "cultivation-as-love", "the-taste-of-grief"],
+      "narrative_use": "The emotional heart of the Room 33 WWII arc. In the fantasy layer, the strawberry fields are literal memory banks -- players who dig in the old field sites and taste soil (or find a surviving root) experience sensory flashbacks to the farming families' lives. The sweetness of the last harvest is a temporal echo so strong it has stained the ground. This is not a puzzle to solve; it is a wound to witness. Handle with the gravity the narrator guide demands.",
+      "entry_type": "speculative",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lore-006",
+      "name": "The Fisherman's Warning About Room 33",
+      "type": "superstition",
+      "description": "A superstition among Vashon Island fishermen and ferry workers that there is a room -- always numbered 33 -- in the old lodge near the harbor where time does not behave. Clocks run backward. Guests check in for one night and emerge confused about the year. The room is never available when you ask for it, but sometimes you end up there anyway.",
+      "full_text": "Ask any of the old ferry hands about Room 33 and watch their face change. They will not tell you where the lodge is, exactly. Some say it was at Burton, near the old steamer dock. Others say it moved -- that it was at Vashon Landing in the 1880s, then at Dockton during the drydock years, then somewhere near Portage after the auto ferries came. The room number is always the same: 33. The superstition goes like this. A fisherman named Calloway -- no one remembers his first name -- checked into the lodge one November night in 1923 after his engine failed in Quartermaster Harbor. He asked for any room. They gave him 33. He slept, or thought he slept, for one night. When he came down in the morning, the woman at the desk did not recognize him. The calendar said March. His boat, which had been towed to the dock, had three months of barnacle growth on the hull. Calloway never spoke of what he dreamed. After Calloway, the stories multiplied. A strawberry picker in 1936 who checked in and found the room already furnished with things from the pioneer era -- a kerosene lamp, a hand-drawn map of the island with no roads. A soldier stationed on the island during the war who opened the door to Room 33 and heard Japanese being spoken, though the room was empty. A ferry worker in the 1970s who swore the room had a window that looked out on forest where there should have been a parking lot. The rule among the old-timers is simple: if someone offers you Room 33, decline. If you find yourself in Room 33 by accident, do not open the curtains. And whatever you do, do not fall asleep.",
+      "origin_culture": "Vashon Island maritime and working-class community",
+      "origin_era": "early-20th-century",
+      "known_by": [
+        {
+          "person_id": "person-034",
+          "level": "familiar",
+          "context": "John Vanderhoef, as a Mosquito Fleet captain, collected harbor stories and knew the earliest versions"
+        },
+        {
+          "person_id": "person-024",
+          "level": "vague",
+          "context": "Salmon Sherman heard something about 'the room that moves' from dockworkers at Quartermaster Harbor"
+        }
+      ],
+      "related_entries": ["gro-003", "gro-007", "ear-003"],
+      "related_places": ["place-007", "place-024", "place-025", "place-031"],
+      "related_people": ["person-034"],
+      "themes": ["time-displacement", "liminal-spaces", "the-door-between-eras", "rooms-as-portals"],
+      "narrative_use": "This is the origin myth of Room 33 itself -- the central conceit of the fantasy universe. The room is the primary mechanism for time travel in adventures. It appears in different locations across the island depending on the era, always as room number 33 in whatever structure stands at that place. The room is not malevolent, but it is indifferent to human comfort. It connects all eras simultaneously. The curtains, when opened, show whichever era the room has drifted toward. Sleep in Room 33 is the trigger for full temporal displacement.",
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lore-007",
+      "name": "The Prophecy of the Island's Turning",
+      "type": "prophecy",
+      "description": "A prophecy attributed to an unnamed S'Homamish elder, spoken during the forced removal from the island after the Medicine Creek Treaty of 1854. The elder said that the island moves through time in a great slow circle, and that one day all the eras will meet at once -- the ice, the cedar people, the strangers, the machines -- and the island will have to choose what it becomes.",
+      "full_text": "When the soldiers came to move the people from the island to Fox Island, where they would sicken and die in the hundreds, an elder whose name has not been preserved stood at the waterline and spoke. The words were recorded by no one present, but they passed through the Puyallup oral tradition and surfaced again in fragments a century later. The elder said: This island is not a place. It is a turning. The ice knew it. The cedar knows it. You who cut the cedar will learn it. The island turns through all its days at once. What was, still is. What will be, already stirs beneath the roots. There will come a time when the turning completes -- when the ice and the forest and the farms and the machines and the things that come after machines all exist here in the same breath. On that day, the island must choose. If it remembers the song, it will continue. If it has forgotten, it will sink back beneath the water and become what it was before the ice: nothing but stone and salt and the long patience of the deep. The elder then walked to the canoe and did not look back at the island. Whether this is prophecy, elegy, or both has been debated by every generation since. The Room 33 regulars believe the Turning is approaching. The signs, they say, are in the tides -- six minutes late, just as the Tide Keeper warned.",
+      "origin_culture": "S'Homamish, preserved through Puyallup Tribe oral tradition",
+      "origin_era": "logging-treaty",
+      "known_by": [
+        {
+          "person_id": "person-001",
+          "level": "deep",
+          "context": "Preserved within indigenous oral tradition as both historical testimony and spiritual warning"
+        },
+        {
+          "person_id": "person-017",
+          "level": "by_name_only",
+          "context": "Isaac Stevens was present at treaty negotiations but dismissed indigenous spiritual statements"
+        },
+        {
+          "person_id": "person-018",
+          "level": "familiar",
+          "context": "Chief Leschi understood the elder's words as both political resistance and spiritual truth"
+        }
+      ],
+      "related_entries": ["log-001", "log-002", "log-005"],
+      "related_places": ["place-001", "place-014"],
+      "related_people": ["person-001", "person-017", "person-018"],
+      "themes": ["prophecy", "cyclical-time", "memory-as-survival", "colonialism", "the-choice-ahead"],
+      "narrative_use": "The overarching narrative frame for the entire Room 33 universe. The Turning is the endgame -- the moment when all temporal layers collapse into one and the island's fate is decided. Every adventure is, in some sense, preparation for or prevention of the Turning. Players gradually learn that their actions across different eras are all contributing to what the island will choose. The prophecy connects indigenous displacement (the deepest wound) to the island's metaphysical nature, treating the elder's words not as superstition but as the most accurate description of reality anyone has ever spoken on the island.",
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lore-008",
+      "name": "The Honoring of the Waters Between",
+      "type": "ritual",
+      "description": "A Suquamish ritual practice of offering cedar boughs and salmon bones to the waters between islands -- Colvos Passage, Dalco Passage, and the strait between Vashon and Maury -- honoring the currents as living pathways rather than empty space. The waters between are not absence; they are connection.",
+      "full_text": "The Suquamish, whose great longhouse at Old Man House on the Kitsap Peninsula could shelter eight hundred people, traveled to Vashon Island by canoe for seasonal fishing and gathering. But the crossing was never casual. The waters between islands were understood as their own kind of place -- not land, not open sea, but something in between that demanded acknowledgment. Before launching a canoe for the crossing, a paddler would place a fresh cedar bough in the water and speak to the current. The words varied by family, but the intent was constant: I see you. I ask passage. I will return what I take. At the far shore, the paddler placed salmon bones or shells at the tide line -- payment for safe crossing and a promise that the taking would be balanced by return. The Suquamish taught that the waters between islands were where spirits traveled most freely, because the water belonged to no single people and no single shore. The passages were liminal: neither here nor there, belonging to the current alone. This is why, the elders said, you sometimes saw things in the water during a crossing that you could not see from shore -- lights beneath the surface, shadows of canoes that were not there, the sound of drumming carried on a current that moved against the wind. The strongest of these visions came in Colvos Passage on the island's west side, where the tidal currents run swift and the water is deep and cold.",
+      "origin_culture": "Suquamish",
+      "origin_era": "indigenous",
+      "known_by": [
+        {
+          "person_id": "person-001",
+          "level": "familiar",
+          "context": "The S'Homamish shared the waters with the Suquamish and recognized this practice"
+        }
+      ],
+      "related_entries": ["ind-006", "ind-007"],
+      "related_places": ["place-005", "place-003", "place-051", "place-012"],
+      "related_people": ["person-001"],
+      "themes": ["liminality", "water-as-connection", "respect-for-passage", "the-space-between"],
+      "narrative_use": "Establishes water crossings as supernatural zones in the Room 33 universe. Players traveling between Vashon and the mainland (or between Vashon and Maury) may encounter temporal distortions, spectral canoes, or visions from other eras -- especially in Colvos Passage. The ritual of offering before crossing can be taught to players as a protective practice. Those who cross without acknowledgment risk being pulled into the waters between times, not just the waters between shores.",
+      "entry_type": "speculative",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lore-009",
+      "name": "Never Cut the Last Tree in the Ravine",
+      "type": "custom",
+      "description": "An unwritten rule among Vashon Island settlers, passed down from the earliest logging days, that you never cut the last standing tree in a ravine. The practical reason was erosion. The real reason, spoken only in half-jokes, was that the last tree in a ravine was the one holding something in.",
+      "full_text": "The logging companies took everything above the ravines. Two hundred million board feet of old-growth timber came off this island between 1880 and 1920. The Puget Mill Company alone logged ten square miles. But even the most aggressive timber cruiser respected one rule: leave the last tree standing in each ravine. The official reason was practical. Ravines channeled water. Remove the last anchor and the whole slope would slide into the creek in the next heavy rain. Erosion would destroy the roads, clog the waterways, ruin the timber below. Every foreman knew this. But the unofficial reason circulated in the bunkhouses. Old loggers -- men who had been cutting since the territorial days -- said the ravines were not just terrain features. They were seams in the island, places where the surface of the land did not quite meet. The old-growth trees that grew in them were not rooted in soil alone; their roots went down into something older and stranger, and their trunks held the seam shut. Cut the last one and the seam would open. What would come through? Nobody agreed. Some said water from an underground river that did not exist on any survey map. Some said cold -- a bone-deep cold from the glacier time that still pooled in the deepest ravines like fog in a valley. Some said you would hear voices speaking in languages that had not been used for a thousand years. The Puget Mill Company cut the last tree in the ravine above Shinglemill Creek in 1910. The slope did not slide. Nothing visible happened. But the loggers who worked that section afterward said the ravine felt different -- open, somehow, as if a door had been left ajar. A few of the surviving old-growth trees in the deepest ravines are still standing today. The custom, among those who know it, still holds.",
+      "origin_culture": "Vashon Island settler logging community",
+      "origin_era": "growth-industry",
+      "known_by": [
+        {
+          "person_id": "person-046",
+          "level": "deep",
+          "context": "Helmar Steen enforced this rule at his own mill, citing both practical and superstitious reasons"
+        },
+        {
+          "person_id": "person-045",
+          "level": "familiar",
+          "context": "Frances Sherman observed the custom at the Paradise Valley mill"
+        },
+        {
+          "person_id": "person-020",
+          "level": "vague",
+          "context": "Andrew Pope heard the superstition from his foremen but dismissed it as frontier nonsense"
+        }
+      ],
+      "related_entries": ["gro-001", "ear-006", "pre-006", "mod-006"],
+      "related_places": ["place-016", "place-015", "place-001"],
+      "related_people": ["person-046", "person-020"],
+      "themes": ["ecological-boundaries", "the-cost-of-extraction", "thin-places", "folk-wisdom-as-truth"],
+      "narrative_use": "Provides the in-world explanation for why the surviving old-growth ravines are thin places in the Room 33 universe. The custom is a piece of folk wisdom that was more accurate than anyone knew. The ravines are literal seams in time, held shut by the oldest living things on the island. Where the last tree was cut, the seam is weakest -- and Room 33 tends to appear nearby. Players who learn this custom gain a map of the island's supernatural geography: follow the ravines, find the seams, find the doors.",
+      "entry_type": "speculative",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lore-010",
+      "name": "The Shell Midden Spirits of Burton Acres",
+      "type": "legend",
+      "description": "A legend that the Burton Acres Shell Midden -- three thousand years of continuous human habitation compressed into layers of shell, bone, and earth -- is not merely an archaeological site but a place where the accumulated presence of thousands of lives has created a permanent spiritual residue. The spirits do not haunt; they accumulate.",
+      "full_text": "The Burton Acres Shell Midden sits on the shore of Quartermaster Harbor, a low bluff of crushed shell and dark earth that archaeologists have dated to 500 BCE and possibly earlier. When a winter storm in 1995 tore away part of the bank, it exposed layers of clam shell, fire-cracked rock, bone tools, and the compressed remains of three millennia of daily life -- cooking, eating, mending nets, telling stories, being born, dying. Three hundred and seventy-five volunteers excavated the site. They cataloged thousands of artifacts. What they did not catalog, because it does not fit into archaeological methodology, is what the volunteers reported feeling. A persistent sense of being watched -- not with hostility, but with curiosity. The smell of woodsmoke when no fire was burning. The sound of voices carried on wind that was not blowing. One volunteer, working in the deepest layer, said she felt a hand on her shoulder and turned to find no one there. Another said the shells were warm to the touch, even in January, as if the cooking fires had never fully gone out. The Puyallup Tribe representatives who consulted on the excavation were not surprised. They said the midden was not a ruin. It was still occupied. Three thousand years of continuous human presence does not simply end because the last visible person walked away. The attention, the care, the daily act of living in one place for that long -- it saturates the ground. The spirits of Burton Acres are not ghosts. They are layers. Like the midden itself, they are compressed time made physical. Stand on the midden at low tide, when the harbor pulls back and the oldest shells are exposed, and you stand on every moment that ever happened there, all at once.",
+      "origin_culture": "Composite -- Puyallup Tribe spiritual understanding combined with archaeological community experiences",
+      "origin_era": "indigenous",
+      "known_by": [
+        {
+          "person_id": "person-001",
+          "level": "deep",
+          "context": "The S'Homamish understood the midden as a living place, not an abandoned one"
+        },
+        {
+          "person_id": "person-002",
+          "level": "familiar",
+          "context": "Julie K. Stein recorded unusual volunteer experiences during the 1995 excavation"
+        },
+        {
+          "person_id": "person-003",
+          "level": "familiar",
+          "context": "Laura S. Phillips co-documented the site and its uncanny qualities"
+        },
+        {
+          "person_id": "person-004",
+          "level": "deep",
+          "context": "Judy Wright, as an indigenous representative, understood the midden's spiritual continuity"
+        }
+      ],
+      "related_entries": ["ind-003", "ind-002"],
+      "related_places": ["place-020", "place-007", "place-024"],
+      "related_people": ["person-001", "person-002", "person-003", "person-004"],
+      "themes": ["accumulated-presence", "time-as-layers", "the-dead-are-not-gone", "place-as-memory"],
+      "narrative_use": "Burton Acres is the most powerful temporal site on the island after Room 33 itself. Three thousand years of compressed habitation makes it a natural amplifier for time-travel effects. Players visiting the midden experience involuntary sensory bleed from other eras -- smells, sounds, temperature changes, peripheral figures. At low tide, when the oldest layers are exposed, full temporal displacement becomes possible without Room 33. The spirits are not hostile and cannot be fought; they can only be listened to. Players who listen learn fragments of the island's deep history that no written source preserves.",
+      "entry_type": "speculative",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "lore-011",
+      "name": "The Counting Song of the Mosquito Fleet",
+      "type": "song",
+      "description": "A work song sung by Mosquito Fleet deckhands and dock workers in the 1890s-1910s, counting the steamer stops around Vashon Island. Each verse names a landing and what you would find there. The song has thirteen verses, but old-timers insist there is a fourteenth verse that names a stop no one can find on any map -- a landing where the steamer goes when the fog is thick enough to lose the shore.",
+      "full_text": "One for the Landing where the bricks are stacked high,\nTwo for Ellisport where the sawmill sings,\nThree for Burton where the college bell rings,\nFour for Dockton where the drydock clings,\nFive for Portage where the islands meet,\nSix for Magnolia where the summer's sweet,\nSeven for Spring Beach where the tourists sleep,\nEight for Chautauqua where the preachers speak,\nNine for Center where the roads all cross,\nTen for Colvos where the current's boss,\nEleven for the Heights where the view runs free,\nTwelve for Tahlequah at the end of the lee,\nThirteen for Vashon town where the store stands tall --\nAnd fourteen for the landing that isn't there at all.\n\nThe fourteenth verse, the one the old hands whisper rather than sing, goes: Fourteen for the landing in the fog's own keep, where the steamer goes when the water's deep, where the passengers board who have been asleep, and the fare is a memory you meant to keep. No one agrees on where the fourteenth landing is. Some say it appears on the west side when the autumn fog rolls in so thick you cannot see the bow from the stern. The steamer captain would cut the engine and drift, and there it would be: a wooden dock with a kerosene lantern burning, and a figure waiting to board who was dressed in clothes from the wrong decade.",
+      "origin_culture": "Mosquito Fleet maritime workers, Puget Sound",
+      "origin_era": "growth-industry",
+      "known_by": [
+        {
+          "person_id": "person-034",
+          "level": "deep",
+          "context": "John Vanderhoef commanded the steamer Iola on the Vashon route and knew all fourteen verses"
+        },
+        {
+          "person_id": "person-026",
+          "level": "familiar",
+          "context": "S.D. Sherman, who ran the first ferry service, taught the song to later captains"
+        }
+      ],
+      "related_entries": ["gro-003", "gro-007", "pio-009"],
+      "related_places": ["place-031", "place-027", "place-024", "place-025", "place-035", "place-005"],
+      "related_people": ["person-034", "person-026"],
+      "themes": ["hidden-places", "fog-as-threshold", "the-fourteenth-stop", "maritime-mystery"],
+      "narrative_use": "The fourteenth landing is a mobile entry point to Room 33 accessible only from the water. When fog conditions are right, players traveling by boat around the island may encounter the phantom dock. Boarding the steamer at the fourteenth landing transports players to a different era. The song itself is a navigational tool -- players who learn all fourteen verses can summon the fog landing intentionally. The fare -- 'a memory you meant to keep' -- means players must sacrifice a personal memory to use this route, creating meaningful gameplay stakes.",
+      "entry_type": "fantasy",
+      "scope": "vashon",
+      "universe_id": "room-33"
+    }
+  ]
 }
