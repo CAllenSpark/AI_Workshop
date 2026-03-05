@@ -1150,6 +1150,226 @@
       "related_entries": [
         "ind-007"
       ]
+    },
+    {
+      "id": "person-125",
+      "name": "Chief Si'ahl",
+      "description": "Leader of the Duwamish and Suquamish peoples, for whom the city of Seattle is named. Known for his eloquent speeches about the relationship between indigenous peoples and settlers.",
+      "role": "indigenous leader",
+      "period": "~1786–1866",
+      "related_entries": [
+        "sea-001"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-126",
+      "name": "Arthur A. Denny",
+      "description": "Leader of the Denny Party, the founding settlers of Seattle. Arrived at Alki Point in November 1851 and helped establish the city.",
+      "role": "settler / city founder",
+      "period": "1822–1899",
+      "related_entries": [
+        "sea-002"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-127",
+      "name": "David Denny",
+      "description": "Member of the Denny Party and younger brother of Arthur A. Denny. Among the first settlers at Alki Point in 1851.",
+      "role": "settler",
+      "period": "1832–1903",
+      "related_entries": [
+        "sea-002"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-128",
+      "name": "Doc Maynard",
+      "description": "David Swinson 'Doc' Maynard, early Seattle settler and physician who advocated for friendly relations with Native peoples and helped name the city after Chief Si'ahl.",
+      "role": "settler / physician",
+      "period": "1808–1873",
+      "related_entries": [
+        "sea-002"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-129",
+      "name": "Robert Moran",
+      "description": "Seattle mayor during the Great Fire of 1889 who led rebuilding efforts. Later became a shipbuilder and industrialist.",
+      "role": "mayor / industrialist",
+      "period": "1857–1943",
+      "related_entries": [
+        "sea-003"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-130",
+      "name": "David E. Skinner",
+      "description": "Seattle shipping magnate who helped develop Harbor Island and expanded Seattle's shipbuilding capacity during World War I.",
+      "role": "shipping executive",
+      "period": "1867–1943",
+      "related_entries": [
+        "sea-007"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-131",
+      "name": "Anna Louise Strong",
+      "description": "Seattle labor activist, journalist, and radical who supported the 1919 Seattle General Strike through her writing in the Union Record.",
+      "role": "journalist / activist",
+      "period": "1885–1970",
+      "related_entries": [
+        "sea-008"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-132",
+      "name": "Ole Hanson",
+      "description": "Mayor of Seattle during the 1919 General Strike who took a hard line against the strikers, gaining national attention.",
+      "role": "mayor",
+      "period": "1874–1940",
+      "related_entries": [
+        "sea-008"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-133",
+      "name": "Arthur Langlie",
+      "description": "Governor of Washington State who oversaw the creation of Washington State Ferries in 1951, transitioning Puget Sound ferry service to state operation.",
+      "role": "governor",
+      "period": "1900–1966",
+      "related_entries": [
+        "sea-010"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-134",
+      "name": "Bill Gates",
+      "description": "Co-founder of Microsoft Corporation, which moved to the Puget Sound region in 1979 and transformed the area into a global technology hub.",
+      "role": "technology entrepreneur",
+      "period": "1955–present",
+      "related_entries": [
+        "sea-012"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-135",
+      "name": "Paul Allen",
+      "description": "Co-founder of Microsoft Corporation alongside Bill Gates. Major philanthropist and investor in the Seattle area.",
+      "role": "technology entrepreneur",
+      "period": "1953–2018",
+      "related_entries": [
+        "sea-012"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-136",
+      "name": "Jeff Bezos",
+      "description": "Founder of Amazon.com, which started in Bellevue in 1994 and grew to become one of the world's largest companies, reshaping Seattle's economy and skyline.",
+      "role": "technology entrepreneur",
+      "period": "1964–present",
+      "related_entries": [
+        "sea-013"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-137",
+      "name": "Charles Enoch Peabody",
+      "description": "Captain and executive of the Puget Sound Navigation Company who consolidated the Mosquito Fleet into a dominant ferry operation serving Puget Sound.",
+      "role": "ferry company executive",
+      "period": "1857–1935",
+      "related_entries": [
+        "sea-014"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-138",
+      "name": "James Colman",
+      "description": "Scottish-born engineer and businessman who built Colman Dock in 1882, establishing Seattle's primary waterfront ferry terminal.",
+      "role": "engineer / businessman",
+      "period": "1832–1906",
+      "related_entries": [
+        "sea-015"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-139",
+      "name": "Jacob Weisbach",
+      "description": "Mayor of Tacoma during the 1885 anti-Chinese expulsion, who facilitated the forced removal of Chinese residents from the city.",
+      "role": "mayor",
+      "period": "~1840–~1900",
+      "related_entries": [
+        "tac-003"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-140",
+      "name": "Chauncey Griggs",
+      "description": "Co-founder of the St. Paul & Tacoma Lumber Company in 1888, one of the largest lumber operations in the Pacific Northwest.",
+      "role": "lumber industrialist",
+      "period": "1832–1910",
+      "related_entries": [
+        "tac-006"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-141",
+      "name": "Henry Hewitt Jr.",
+      "description": "Co-founder of the St. Paul & Tacoma Lumber Company and prominent Tacoma business leader in the late 19th century.",
+      "role": "lumber industrialist",
+      "period": "1840–1918",
+      "related_entries": [
+        "tac-006"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-142",
+      "name": "Frederick Weyerhaeuser",
+      "description": "Timber magnate who incorporated the Weyerhaeuser Timber Company in Tacoma in 1900 after purchasing 900,000 acres of Pacific Northwest timberland.",
+      "role": "timber industrialist",
+      "period": "1834–1914",
+      "related_entries": [
+        "tac-008"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-143",
+      "name": "James J. Hill",
+      "description": "Railroad magnate known as the 'Empire Builder' who sold 900,000 acres of Northern Pacific land to Frederick Weyerhaeuser, enabling the Weyerhaeuser Timber Company.",
+      "role": "railroad magnate",
+      "period": "1838–1916",
+      "related_entries": [
+        "tac-008"
+      ],
+      "entry_type": "historical"
+    },
+    {
+      "id": "person-144",
+      "name": "Leonard Coatsworth",
+      "description": "Tacoma News Tribune editor who was the last person to drive across the Tacoma Narrows Bridge before its dramatic collapse on November 7, 1940.",
+      "role": "newspaper editor",
+      "period": "~1900–~1970",
+      "related_entries": [
+        "tac-010"
+      ],
+      "entry_type": "historical"
     }
   ]
 }

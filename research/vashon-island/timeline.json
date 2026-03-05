@@ -4295,6 +4295,1055 @@
         "croatian",
         "immigration"
       ]
+    },
+    {
+      "id": "sea-001",
+      "title": "Duwamish People Establish Villages on Elliott Bay",
+      "date_start": "~1000",
+      "era": "indigenous",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Duwamish establish permanent winter villages along the Duwamish River and Elliott Bay, including a major longhouse site at what is now Pioneer Square.",
+      "people": [
+        "Chief Si'ahl"
+      ],
+      "places": [
+        "Elliott Bay",
+        "Duwamish River",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "History of the Duwamish People -- Duwamish Tribe",
+          "url": "https://www.duwamishtribe.org/history",
+          "type": "primary"
+        },
+        {
+          "title": "Chief Seattle (Si'ahl) -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5071",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "indigenous",
+        "duwamish"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-002",
+      "title": "Denny Party Lands at Alki Point",
+      "date_start": "1851-11-13",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Twenty-four members of the Denny Party arrive at Alki Point aboard the schooner Exact, founding the settlement that would become Seattle.",
+      "people": [
+        "Arthur A. Denny",
+        "David Denny",
+        "Doc Maynard"
+      ],
+      "places": [
+        "Alki Point",
+        "Elliott Bay",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Denny Party lands at Alki Point -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5392",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "founding",
+        "pioneer"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-003",
+      "title": "Great Seattle Fire Destroys Downtown",
+      "date_start": "1889-06-06",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "An overturned glue pot ignites a fire that destroys 120 acres of Seattle's central business district and waterfront. The city rebuilds in brick and stone.",
+      "people": [
+        "Robert Moran"
+      ],
+      "places": [
+        "Pioneer Square",
+        "Seattle",
+        "Elliott Bay"
+      ],
+      "sources": [
+        {
+          "title": "The Great Seattle Fire -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/5115",
+          "type": "secondary"
+        },
+        {
+          "title": "Great Seattle Fire of 1889 -- Seattle City Archives",
+          "url": "https://www.seattle.gov/cityarchives/exhibits-and-education/digital-document-libraries/the-great-seattle-fire-of-1889",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "fire",
+        "rebuilding"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-004",
+      "title": "Mosquito Fleet Era on Puget Sound",
+      "date_start": "~1890",
+      "date_end": "~1930",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "A network of privately operated steamboats becomes the primary transportation system across Puget Sound, connecting Seattle, Tacoma, and Vashon Island.",
+      "people": [],
+      "places": [
+        "Puget Sound",
+        "Seattle",
+        "Tacoma",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Mosquito Fleet -- HistoryLink.org",
+          "url": "https://historylink.org/File/869",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "transportation",
+        "steamboat",
+        "mosquito-fleet",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-005",
+      "title": "Klondike Gold Rush Transforms Seattle",
+      "date_start": "1897-07-17",
+      "date_end": "1899",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The steamship Portland arrives in Seattle carrying Klondike gold, igniting a rush that transforms Seattle into the primary outfitting port for Alaska-bound prospectors.",
+      "people": [],
+      "places": [
+        "Seattle",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Klondike Gold Rush begins -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/699",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "gold-rush",
+        "economy",
+        "maritime"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-006",
+      "title": "Pike Place Market Opens",
+      "date_start": "1907-08-17",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Seattle's Pike Place Market opens as a public farmers' market. Japanese American farmers operate 70-80% of stalls in the early years.",
+      "people": [],
+      "places": [
+        "Pike Place Market",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Seattle's Pike Place Market opens -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/1949",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "market",
+        "agriculture",
+        "japanese-american"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-007",
+      "title": "Seattle Shipyards Boom During World War I",
+      "date_start": "1916",
+      "date_end": "1920",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Skinner & Eddy Corporation and other Seattle shipyards produce warships and cargo vessels at record pace, employing tens of thousands of workers.",
+      "people": [
+        "David E. Skinner"
+      ],
+      "places": [
+        "Seattle",
+        "Harbor Island",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "Skinner & Eddy Corporation -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/23081",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "shipbuilding",
+        "wwi",
+        "industry"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-008",
+      "title": "Seattle General Strike",
+      "date_start": "1919-02-06",
+      "date_end": "1919-02-11",
+      "era": "early-20th-century",
+      "layers": [
+        "event"
+      ],
+      "description": "Sixty-five thousand workers walk off the job in the first large-scale general strike in United States history, growing out of a shipyard workers' wage dispute.",
+      "people": [
+        "Anna Louise Strong",
+        "Ole Hanson"
+      ],
+      "places": [
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Seattle General Strike, 1919 -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/861",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "labor",
+        "strike"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-009",
+      "title": "Boeing Plant 2 Wartime Bomber Production",
+      "date_start": "1941",
+      "date_end": "1945",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Boeing's Plant 2 mass-produces B-17 and B-29 bombers, building 6,981 B-17s and employing nearly 50,000 workers at peak. The factory roof is camouflaged as a suburban neighborhood.",
+      "people": [],
+      "places": [
+        "Boeing Plant 2",
+        "Duwamish River",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Remembering Boeing's Plant 2 -- Flying Magazine",
+          "url": "https://www.flyingmag.com/remembering-boeings-plant-2-the-birthplace-of-the-b-17/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "wwii",
+        "boeing",
+        "industry",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-010",
+      "title": "Washington State Ferries Begins Operations",
+      "date_start": "1951-06-01",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Washington State purchases the Black Ball Line's Puget Sound ferry fleet and begins operating Washington State Ferries, the largest ferry system in the United States.",
+      "people": [
+        "Arthur Langlie"
+      ],
+      "places": [
+        "Puget Sound",
+        "Colman Dock",
+        "Seattle",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Washington State Ferries begins operations -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/5081",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "ferry",
+        "transportation",
+        "state-ferry",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-011",
+      "title": "Century 21 Exposition (Seattle World's Fair)",
+      "date_start": "1962-04-21",
+      "date_end": "1962-10-21",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Century 21 Exposition draws nearly 10 million visitors, producing the Space Needle and establishing Seattle as a modern metropolis.",
+      "people": [],
+      "places": [
+        "Seattle Center",
+        "Space Needle",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Century 21 -- The 1962 Seattle World's Fair -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/2290",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "worlds-fair",
+        "space-needle",
+        "culture"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-012",
+      "title": "Microsoft Moves to Bellevue",
+      "date_start": "1979-01-01",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place",
+        "person"
+      ],
+      "description": "Microsoft relocates from Albuquerque to Bellevue, Washington, beginning the Puget Sound region's transformation into a global technology hub.",
+      "people": [
+        "Bill Gates",
+        "Paul Allen"
+      ],
+      "places": [
+        "Bellevue",
+        "Seattle",
+        "Redmond"
+      ],
+      "sources": [
+        {
+          "title": "Microsoft moves to Bellevue -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/21161",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "technology",
+        "microsoft"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-013",
+      "title": "Amazon Founded in Bellevue",
+      "date_start": "1994-07-05",
+      "era": "modern",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Jeff Bezos founds Amazon as an online bookstore in a Bellevue garage, eventually reshaping Seattle's economy and urban landscape.",
+      "people": [
+        "Jeff Bezos"
+      ],
+      "places": [
+        "Bellevue",
+        "Seattle"
+      ],
+      "sources": [
+        {
+          "title": "Amazon: The Early Years -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/23230",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "technology",
+        "amazon",
+        "economy"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-014",
+      "title": "Puget Sound Navigation Company Dominates Ferry Service",
+      "date_start": "1900",
+      "date_end": "1951",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Puget Sound Navigation Company (Black Ball Line) consolidates the Mosquito Fleet into a single dominant ferry system serving Puget Sound, including routes to Vashon Island.",
+      "people": [
+        "Charles Enoch Peabody"
+      ],
+      "places": [
+        "Puget Sound",
+        "Colman Dock",
+        "Seattle",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Puget Sound Navigation Company -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/22662",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "ferry",
+        "transportation",
+        "black-ball-line",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "sea-015",
+      "title": "Colman Dock Serves as Seattle Ferry Hub",
+      "date_start": "1882",
+      "era": "growth-industry",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "description": "James Colman builds a wharf that becomes Seattle's primary ferry terminal, anchoring the city's connection to Puget Sound island communities.",
+      "people": [
+        "James Colman"
+      ],
+      "places": [
+        "Colman Dock",
+        "Seattle",
+        "Elliott Bay"
+      ],
+      "sources": [
+        {
+          "title": "Seattle -- A Brief History of Its Founding -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/303",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "seattle",
+        "ferry",
+        "waterfront",
+        "transportation"
+      ],
+      "entry_type": "historical",
+      "scope": "seattle"
+    },
+    {
+      "id": "tac-001",
+      "title": "Treaty of Medicine Creek Signed",
+      "date_start": "1854-12-26",
+      "era": "logging-treaty",
+      "layers": [
+        "event",
+        "person"
+      ],
+      "description": "Governor Isaac Stevens and leaders of the Nisqually, Puyallup, and Squaxin Island tribes sign the Treaty of Medicine Creek, ceding 2.5 million acres of tribal land.",
+      "people": [
+        "Isaac Stevens",
+        "Chief Leschi"
+      ],
+      "places": [
+        "Medicine Creek",
+        "Nisqually River",
+        "Puget Sound"
+      ],
+      "sources": [
+        {
+          "title": "South Puget Sound tribes sign Treaty of Medicine Creek -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5254",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "treaty",
+        "indigenous",
+        "puyallup",
+        "nisqually"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-002",
+      "title": "Northern Pacific Railroad Selects Tacoma as Terminus",
+      "date_start": "1873-07-14",
+      "era": "pioneer",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Northern Pacific Railroad announces Commencement Bay in Tacoma as the western terminus of its transcontinental line, transforming Tacoma into the 'City of Destiny.'",
+      "people": [],
+      "places": [
+        "Commencement Bay",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Northern Pacific Railroad announces Tacoma terminus -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/922",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "railroad",
+        "founding",
+        "city-of-destiny"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-003",
+      "title": "Tacoma Anti-Chinese Expulsion",
+      "date_start": "1885-11-03",
+      "era": "growth-industry",
+      "layers": [
+        "event"
+      ],
+      "description": "A mob forcibly expels Tacoma's entire Chinese community of approximately 200 people. The systematic expulsion becomes known as 'The Tacoma Method.'",
+      "people": [
+        "Jacob Weisbach"
+      ],
+      "places": [
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma expels the entire Chinese community -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5063",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "anti-chinese",
+        "civil-rights"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-004",
+      "title": "Point Defiance Park Established",
+      "date_start": "1888-12",
+      "era": "growth-industry",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "description": "Congress grants the former Point Defiance military reservation to Tacoma for use as a public park, later home to the ferry terminal for the Vashon Island route.",
+      "people": [],
+      "places": [
+        "Point Defiance Park",
+        "Tacoma",
+        "Puget Sound",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Point Defiance Park (Tacoma) -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/23005",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "park",
+        "vashon-connection",
+        "ferry"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-005",
+      "title": "Tacoma Smelter Begins Operations",
+      "date_start": "1889-09-12",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "description": "A lead smelter begins operating near Tacoma. Later acquired by ASARCO, it disperses arsenic and lead across a 1,000-square-mile area including Vashon Island via its 562-foot smokestack.",
+      "people": [],
+      "places": [
+        "Ruston",
+        "Commencement Bay",
+        "Tacoma",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma Smelter: A Toxic Legacy -- Collaborative for Health & Environment",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "asarco",
+        "smelter",
+        "pollution",
+        "environment",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-006",
+      "title": "St. Paul & Tacoma Lumber Company Founded",
+      "date_start": "1888",
+      "era": "growth-industry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The St. Paul & Tacoma Lumber Company is founded in partnership with the Northern Pacific Railway. Tacoma becomes known as the 'Lumber Capital of the World.'",
+      "people": [
+        "Chauncey Griggs",
+        "Henry Hewitt Jr."
+      ],
+      "places": [
+        "Commencement Bay",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "St. Paul & Tacoma Lumber Company -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/21129",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "lumber",
+        "industry",
+        "railroad"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-007",
+      "title": "Stadium High School Opens in Converted Hotel",
+      "date_start": "1906-09-10",
+      "era": "early-20th-century",
+      "layers": [
+        "place",
+        "event"
+      ],
+      "description": "Tacoma High School opens in a building originally constructed as a luxury chateau-style hotel for the Northern Pacific Railroad.",
+      "people": [],
+      "places": [
+        "Stadium High School",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma High School opens -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5069",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "architecture",
+        "education"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-008",
+      "title": "Weyerhaeuser Timber Company Incorporated in Tacoma",
+      "date_start": "1900-01-18",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "person",
+        "place"
+      ],
+      "description": "Frederick Weyerhaeuser purchases 900,000 acres of Washington timberland from Northern Pacific Railway, the largest private land transaction in U.S. history at the time.",
+      "people": [
+        "Frederick Weyerhaeuser",
+        "James J. Hill"
+      ],
+      "places": [
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Weyerhaeuser Timber Company incorporates -- HistoryLink.org",
+          "url": "https://historylink.org/File/7617",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "lumber",
+        "weyerhaeuser",
+        "industry"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-009",
+      "title": "Tahlequah-Point Defiance Ferry Service Begins",
+      "date_start": "1920-05-15",
+      "era": "early-20th-century",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Ferry service begins between Point Defiance in Tacoma and Tahlequah at the southern tip of Vashon Island, becoming the island's primary connection to the Tacoma area.",
+      "people": [],
+      "places": [
+        "Point Defiance",
+        "Tahlequah",
+        "Vashon Island",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tahlequah Dock -- vashonhistory.com",
+          "url": "https://www.vashonhistory.com/Publications/time_and_again/tahlequah_dock.pdf",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "ferry",
+        "transportation",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-010",
+      "title": "Tacoma Narrows Bridge ('Galloping Gertie') Collapses",
+      "date_start": "1940-11-07",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Tacoma Narrows Bridge collapses into Puget Sound in 42 mph winds due to aeroelastic flutter, becoming the most famous structural failure in engineering history.",
+      "people": [
+        "Leonard Coatsworth"
+      ],
+      "places": [
+        "Tacoma Narrows",
+        "Puget Sound",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma Narrows Bridge collapses -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5048",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "bridge",
+        "engineering",
+        "galloping-gertie"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-011",
+      "title": "Camp Harmony Interns Japanese Americans",
+      "date_start": "1942-04",
+      "date_end": "1942-09",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Approximately 7,390 Japanese Americans are confined at the Puyallup Assembly Center ('Camp Harmony'). Vashon Island's Japanese American strawberry farming families are among those removed.",
+      "people": [],
+      "places": [
+        "Puyallup Fairgrounds",
+        "Puyallup",
+        "Tacoma",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Camp Harmony (Puyallup Assembly Center), 1942 -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/8748",
+          "type": "secondary"
+        },
+        {
+          "title": "Puyallup (detention facility) -- Densho Encyclopedia",
+          "url": "https://encyclopedia.densho.org/Puyallup_(detention_facility)/",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "wwii",
+        "japanese-internment",
+        "civil-rights",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-012",
+      "title": "Todd Shipyards Wartime Production in Tacoma",
+      "date_start": "1939",
+      "date_end": "1945",
+      "era": "wwii",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "Todd Shipyards produces 45 destroyers and services 576 ships for the war effort, establishing Puget Sound as a major naval shipbuilding center.",
+      "people": [],
+      "places": [
+        "Commencement Bay",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Harbor Island: Hub of WWII Shipwork -- HistoryLink.org",
+          "url": "https://www.historylink.org/File/22852",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "wwii",
+        "shipbuilding",
+        "industry"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-013",
+      "title": "Replacement Tacoma Narrows Bridge Opens",
+      "date_start": "1950-10-14",
+      "era": "state-ferry",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "A redesigned Tacoma Narrows Bridge opens, incorporating deep stiffening trusses learned from the 1940 collapse.",
+      "people": [],
+      "places": [
+        "Tacoma Narrows",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma Narrows Bridge history -- WSDOT",
+          "url": "https://www.wsdot.wa.gov/tnbhistory/",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "bridge",
+        "engineering",
+        "transportation"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-014",
+      "title": "Tacoma Dome Opens",
+      "date_start": "1983-04-21",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place"
+      ],
+      "description": "The Tacoma Dome opens as the largest wooden-domed structure in the world, symbolizing Tacoma's timber heritage.",
+      "people": [],
+      "places": [
+        "Tacoma Dome",
+        "Tacoma"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma Dome opens -- HistoryLink.org",
+          "url": "https://www.historylink.org/file/5154",
+          "type": "secondary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "architecture",
+        "timber",
+        "culture"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
+    },
+    {
+      "id": "tac-015",
+      "title": "ASARCO Smelter Smokestack Demolished",
+      "date_start": "1993-01-17",
+      "era": "modern",
+      "layers": [
+        "event",
+        "place",
+        "environment"
+      ],
+      "description": "The 562-foot ASARCO smelter smokestack in Ruston is demolished. Cleanup of contaminated soils, including on Vashon Island, continues for decades.",
+      "people": [],
+      "places": [
+        "Ruston",
+        "Tacoma",
+        "Vashon Island"
+      ],
+      "sources": [
+        {
+          "title": "Tacoma Smelter Plume Program -- Tacoma-Pierce County Health Department",
+          "url": "https://tpchd.org/homes/dirt-alert-tacoma-smelter-plume/",
+          "type": "primary"
+        }
+      ],
+      "tags": [
+        "regional-context",
+        "tacoma",
+        "asarco",
+        "environment",
+        "pollution",
+        "superfund",
+        "vashon-connection"
+      ],
+      "entry_type": "historical",
+      "scope": "tacoma"
     }
   ]
 }

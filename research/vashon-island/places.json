@@ -770,6 +770,183 @@
       "related_entries": [
         "exp-004"
       ]
+    },
+    {
+      "id": "place-068",
+      "name": "Alki Point",
+      "type": "geographic-point",
+      "description": "Landing site of the Denny Party in 1851, the founding settlement of what would become Seattle. Located on the western shore of Elliott Bay.",
+      "related_entries": [
+        "sea-002"
+      ]
+    },
+    {
+      "id": "place-069",
+      "name": "Duwamish River",
+      "type": "waterway",
+      "description": "River flowing into Elliott Bay, central to Duwamish tribal life and later industrialized as part of Seattle's harbor development.",
+      "related_entries": [
+        "sea-001",
+        "sea-009"
+      ]
+    },
+    {
+      "id": "place-070",
+      "name": "Pioneer Square",
+      "type": "historic-district",
+      "description": "Seattle's oldest neighborhood, devastated by the Great Fire of 1889 and rebuilt in brick and stone. The heart of early Seattle.",
+      "related_entries": [
+        "sea-003"
+      ]
+    },
+    {
+      "id": "place-071",
+      "name": "Pike Place Market",
+      "type": "market",
+      "description": "Seattle's iconic public farmers market, opened in 1907 to connect consumers directly with farmers. One of the oldest continuously operated public markets in the U.S.",
+      "related_entries": [
+        "sea-006"
+      ]
+    },
+    {
+      "id": "place-072",
+      "name": "Harbor Island",
+      "type": "island",
+      "description": "Artificial island at the mouth of the Duwamish River, created in the early 1900s and developed into a major shipbuilding and industrial center.",
+      "related_entries": [
+        "sea-007"
+      ]
+    },
+    {
+      "id": "place-073",
+      "name": "Boeing Plant 2",
+      "type": "industrial-site",
+      "description": "Boeing's massive wartime factory along the Duwamish River where B-17 and B-29 bombers were produced during World War II.",
+      "related_entries": [
+        "sea-009"
+      ]
+    },
+    {
+      "id": "place-074",
+      "name": "Colman Dock",
+      "type": "ferry-terminal",
+      "description": "Seattle's primary waterfront ferry terminal, built by James Colman in 1882. Served as the hub for Puget Sound ferry service for over a century.",
+      "related_entries": [
+        "sea-010",
+        "sea-014",
+        "sea-015"
+      ]
+    },
+    {
+      "id": "place-075",
+      "name": "Seattle Center",
+      "type": "civic-center",
+      "description": "74-acre civic campus built for the 1962 Century 21 Exposition (Seattle World's Fair). Home to the Space Needle, museums, and performance venues.",
+      "related_entries": [
+        "sea-011"
+      ]
+    },
+    {
+      "id": "place-076",
+      "name": "Space Needle",
+      "type": "landmark",
+      "description": "605-foot observation tower built for the 1962 World's Fair, Seattle's most iconic architectural landmark.",
+      "related_entries": [
+        "sea-011"
+      ]
+    },
+    {
+      "id": "place-077",
+      "name": "Bellevue",
+      "type": "settlement",
+      "description": "City east of Seattle across Lake Washington. Became a major technology hub after Microsoft moved there in 1979.",
+      "related_entries": [
+        "sea-012",
+        "sea-013"
+      ]
+    },
+    {
+      "id": "place-078",
+      "name": "Redmond",
+      "type": "settlement",
+      "description": "City east of Bellevue that became Microsoft's permanent headquarters location, transforming from a rural community to a tech center.",
+      "related_entries": [
+        "sea-012"
+      ]
+    },
+    {
+      "id": "place-079",
+      "name": "Medicine Creek",
+      "type": "waterway",
+      "description": "Creek near present-day Olympia where the 1854 Treaty of Medicine Creek was signed, ceding tribal lands including Vashon Island to the U.S. government.",
+      "related_entries": [
+        "tac-001"
+      ]
+    },
+    {
+      "id": "place-080",
+      "name": "Point Defiance Park",
+      "type": "public-park",
+      "description": "760-acre park at the northern tip of Tacoma overlooking Puget Sound and Vashon Island, established in 1888. Site of the Tahlequah ferry terminal.",
+      "related_entries": [
+        "tac-004"
+      ]
+    },
+    {
+      "id": "place-081",
+      "name": "Ruston",
+      "type": "settlement",
+      "description": "Small city adjacent to Tacoma, site of the ASARCO copper smelter that operated from 1889 to 1985. Smelter emissions affected Vashon Island for decades.",
+      "related_entries": [
+        "tac-005",
+        "tac-015"
+      ]
+    },
+    {
+      "id": "place-082",
+      "name": "Stadium High School",
+      "type": "school",
+      "description": "Tacoma landmark originally built as a luxury hotel in 1891, converted to a high school in 1906 after a fire. Notable for its French chateau-style architecture.",
+      "related_entries": [
+        "tac-007"
+      ]
+    },
+    {
+      "id": "place-083",
+      "name": "Tacoma Narrows",
+      "type": "waterway",
+      "description": "Strait connecting the main basin of Puget Sound with its southern reaches, between Tacoma and the Kitsap Peninsula. Site of the famous bridge collapse of 1940.",
+      "related_entries": [
+        "tac-010",
+        "tac-013"
+      ]
+    },
+    {
+      "id": "place-084",
+      "name": "Puyallup",
+      "type": "settlement",
+      "description": "City southeast of Tacoma, home to the Puyallup Tribe and site of the Western Washington Fairgrounds used as Camp Harmony internment assembly center in 1942.",
+      "related_entries": [
+        "tac-011"
+      ]
+    },
+    {
+      "id": "place-085",
+      "name": "Puyallup Fairgrounds",
+      "type": "internment-site",
+      "description": "Western Washington Fairgrounds in Puyallup, used as 'Camp Harmony' temporary assembly center where Japanese Americans were detained in 1942 before transfer to permanent internment camps.",
+      "related_entries": [
+        "tac-011"
+      ]
+    },
+    {
+      "id": "place-086",
+      "name": "Tacoma Dome",
+      "type": "arena",
+      "description": "Large wooden-domed arena in Tacoma, opened in 1983. One of the largest wood-domed structures in the world.",
+      "related_entries": [
+        "tac-014"
+      ]
     }
   ]
 }
