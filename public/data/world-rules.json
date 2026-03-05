@@ -1,230 +1,153 @@
 {
   "worldRules": [
     {
-      "id": "wr-001",
-      "name": "The Echo Principle",
-      "description": "Travelers who cross between eras witness history as it happened -- they cannot alter past events. Actions taken in a past era produce no lasting change to the historical record. A traveler may speak to a historical figure, move an object, or leave footprints in the mud, but these traces fade like breath on glass once the traveler departs. The past is an echo: vivid, immediate, and untouchable.",
+      "id": "rule-1",
+      "name": "The Lodge Chooses",
+      "description": "The lodge selects its guests through forces beyond coincidence or intent.",
+      "category": "supernatural",
+      "implications": [
+        "Every guest, every worker, every soul who crosses the threshold was summoned by forces older than memory. The lodge is not a trap — it is an invitation."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-2",
+      "name": "Time Is Not Linear Here",
+      "description": "Temporal boundaries inside and around the lodge are fluid and permeable.",
       "category": "physics",
       "implications": [
-        "Players cannot prevent historical injustices such as internment or treaty dispossession -- they can only witness and understand them",
-        "Objects carried into a past era cannot be left behind permanently; they return with the traveler or dissolve",
-        "Conversations with historical figures feel real in the moment but leave no memory in the person once the traveler departs",
-        "The echo principle preserves the integrity of the historical record -- no paradoxes, no alternate timelines"
+        "A guest may hear music from 1935 in a 2024 hallway. A storm in the present may reveal the lodge as it was in 1910. Time is the lodge's native language."
       ],
-      "exceptions": [
-        "Emotional resonance can linger: a historical figure may feel an inexplicable mood shift after an encounter, though they will not remember the traveler",
-        "Sacred sites governed by the Cultural Memory rule (wr-008) may retain faint traces of a traveler's presence across eras"
-      ],
-      "related_entries": [],
       "universe_id": "room-33"
     },
     {
-      "id": "wr-002",
-      "name": "The Thinning Veil",
-      "description": "The boundary between eras is not uniform across the island. It weakens at specific locations and during specific conditions. These thin places share common traits: layered human presence over centuries, geological antiquity, proximity to water, or sustained emotional intensity. The veil is thinnest where history has accumulated most densely -- shell middens, old-growth ravines, sites of great joy or great suffering.",
+      "id": "rule-3",
+      "name": "The Storm Is a Character",
+      "description": "Storms are not weather events but narrative forces that respond to emotional states.",
       "category": "supernatural",
       "implications": [
-        "Crossing between eras is only possible at recognized thin places, not anywhere on the island",
-        "The Burton Acres Shell Midden, with over 3,000 years of continuous human habitation, is one of the most permeable sites",
-        "Old-growth ravines at Shinglemill Creek and Judd Creek Canyon retain primordial energy that weakens temporal barriers",
-        "Sites of intense emotional events -- the Mukai Farm during internment, the treaty grounds -- develop temporary thinning",
-        "Travelers can sense thinning as a physical sensation: pressure changes in the ears, a metallic taste, the feeling of standing in two places at once"
+        "Each storm strips away a layer of pretense. The bigger the lie a guest carries, the fiercer the storm that greets them."
       ],
-      "exceptions": [
-        "Room 33 itself is the sole location where the veil is permanently open, regardless of conditions (see wr-003)",
-        "A violent storm can temporarily thin the veil at locations that are normally stable (see wr-010)"
-      ],
-      "related_entries": [],
       "universe_id": "room-33"
     },
     {
-      "id": "wr-003",
-      "name": "The Room 33 Nexus",
-      "description": "Room 33 is the fixed point. It exists in every era simultaneously -- the same physical space, though the structure around it changes. In indigenous times it was a cedar-planked chamber in a longhouse. In the pioneer era, a back room of a rough-hewn lodge. In the modern era, a wood-paneled room in an aging island inn. The room number has always been 33, though no one can explain why a longhouse would have numbered rooms. The room is the only place where a traveler can choose which era to enter. At all other thin places, the destination era is determined by the site itself.",
+      "id": "rule-4",
+      "name": "Mixie Remembers Everything",
+      "description": "The bartender has served across all eras and retains memory of every guest and event.",
       "category": "supernatural",
       "implications": [
-        "Room 33 functions as the hub for all temporal travel -- travelers return here between era jumps",
-        "The room's appearance shifts to match the era the traveler intends to visit, serving as a preview and transition space",
-        "A journal found in the room contains entries from travelers across centuries, all in different hands, all describing the same disorientation",
-        "The room can only be occupied by one traveling party at a time -- others who try the door find it locked or absent",
-        "The lodge staff in every era seem unsurprised by guests who appear confused about the date"
+        "Mixie has served every era, every guest. She does not age. She does not forget. She does not judge. But she remembers."
       ],
-      "exceptions": [
-        "The room cannot access eras before sustained human presence on the island -- roughly before 10,000 BCE the door opens onto darkness and cold",
-        "During the 2,000-year archaeological silence (2500 BCE to 500 BCE), the room exists but is difficult to exit -- the island outside is strange and uncertain"
-      ],
-      "related_entries": [],
       "universe_id": "room-33"
     },
     {
-      "id": "wr-004",
-      "name": "The Observer's Boundary",
-      "description": "Travelers exist in past eras as liminal presences -- visible and audible to the people of that time, but inherently forgettable. Historical figures can see a traveler, speak with them, even share a meal, but the interaction carries a dreamlike quality. The traveler cannot sustain deep relationships, assume positions of authority, or meaningfully insert themselves into the social fabric of another era. They are guests, not residents.",
-      "category": "social",
-      "implications": [
-        "Players can have meaningful conversations with historical NPCs but cannot become their close friends, employees, or family members",
-        "Attempts to reveal future knowledge produce confusion in the listener -- the words seem to slide off their understanding",
-        "Travelers are perceived as 'passing through' -- strangers on the steamer, visitors from the mainland, wanderers in the woods",
-        "The longer a traveler stays in a single era, the more transparent they become to the people around them, eventually passing unnoticed like a shadow"
-      ],
-      "exceptions": [
-        "Children and animals perceive travelers more clearly and remember them longer",
-        "People at moments of extreme emotional intensity -- grief, terror, wonder -- can form genuine if brief connections with travelers",
-        "The S'Homamish people, whose spiritual traditions acknowledge beings who walk between worlds, may recognize travelers for what they are"
-      ],
-      "related_entries": [],
-      "universe_id": "room-33"
-    },
-    {
-      "id": "wr-005",
-      "name": "Temporal Sickness",
-      "description": "Crossing between eras exacts a physical and psychological toll. The human body was not meant to exist outside its native time. Short visits produce manageable symptoms: nausea, disorientation, a persistent ringing in the ears. Extended stays cause temporal sickness -- a progressive condition where the traveler begins losing their sense of which era is home. Memories blur. They start remembering things that haven't happened yet, or forgetting things that already have.",
-      "category": "physics",
-      "implications": [
-        "Players face a practical time limit in each era -- typically hours, not days, before symptoms become dangerous",
-        "Temporal sickness manifests physically: nosebleeds, double vision, the sensation that one's hands belong to someone else",
-        "Advanced cases cause era bleed -- the traveler sees two time periods superimposed on the same landscape simultaneously",
-        "A traveler who ignores the symptoms risks becoming unstuck: unable to return to their native era, drifting between times like a ghost",
-        "Recovery requires returning to one's home era and grounding (see wr-006)"
-      ],
-      "exceptions": [
-        "The interior of Room 33 is temporally neutral -- sickness symptoms pause while inside",
-        "Certain grounding objects (see wr-006) can slow the progression of temporal sickness"
-      ],
-      "related_entries": [],
-      "universe_id": "room-33"
-    },
-    {
-      "id": "wr-006",
-      "name": "The Anchor of Origin",
-      "description": "Every traveler must carry something that binds them to their home era -- a personal object saturated with the emotional weight of their own time. A photograph, a letter, a key to their apartment, a child's drawing. This anchor is what pulls them back. Without it, the traveler has no fixed point to return to. The anchor must be personally meaningful; a generic modern object carries no temporal weight. The strength of the anchor is proportional to the emotional bond the traveler has with it.",
-      "category": "magic",
-      "implications": [
-        "Losing one's anchor object in another era is the primary danger of temporal travel -- it strands the traveler",
-        "The anchor grows warm when it is time to return, serving as an intuitive warning system",
-        "A traveler whose anchor is destroyed must find or create a new emotional bond to their home era before they can return",
-        "Multiple travelers can share an anchor if they share a genuine emotional connection to the same object",
-        "The anchor also serves as a compass in Room 33 -- it pulls toward the door that leads home"
-      ],
-      "exceptions": [
-        "Writers and seekers with exceptionally strong sense of identity may anchor to an idea or memory rather than a physical object, though this is rare and unreliable",
-        "The lodge journal in Room 33 can serve as a temporary emergency anchor for any traveler, though it pulls them only to Room 33, not to their home era"
-      ],
-      "related_entries": [],
-      "universe_id": "room-33"
-    },
-    {
-      "id": "wr-007",
-      "name": "The Living Island",
-      "description": "Vashon Island possesses a slow, geological awareness. It is not sentient in the way a person is, but it notices. It notices who comes and who goes, who takes and who gives, who remembers and who forgets. The island expresses its awareness through natural phenomena: fog that guides or conceals, tides that reveal or hide, trees that seem to lean toward or away from travelers. The island is neither benevolent nor malevolent -- it is attentive. It responds to intention.",
+      "id": "rule-5",
+      "name": "No One Leaves Until They're Ready",
+      "description": "The lodge holds guests for exactly as long as they need, no more, no less.",
       "category": "supernatural",
       "implications": [
-        "The island's terrain subtly shifts to aid travelers whose intentions align with understanding and respect -- paths appear clearer, distances feel shorter",
-        "Travelers with exploitative or careless intentions find the island hostile: trails loop back on themselves, fog thickens, tides cut off retreat",
-        "The old-growth trees are the island's oldest sensory organs -- cutting one in any era sends a tremor through all eras",
-        "Wildlife behaves as an extension of island awareness: an eagle circling overhead, a seal watching from the water, a deer blocking a path are all forms of attention",
-        "The island's mood can be read by those who are sensitive: a feeling of welcome, unease, warning, or grief that has no visible source"
+        "Some guests stay a night. Some stay decades. The lodge does not imprison — it holds, teaches, and waits."
       ],
-      "exceptions": [
-        "The island's awareness dims in eras of heavy industrial activity -- the logging era partially deafened it, and it took decades to recover",
-        "Human-built structures are mostly invisible to the island's awareness unless they have stood long enough to become part of the landscape"
-      ],
-      "related_entries": [],
       "universe_id": "room-33"
     },
     {
-      "id": "wr-008",
-      "name": "The Law of Cultural Memory",
-      "description": "Sacred sites, places of ceremony, and land shaped by sustained cultural practice carry power that transcends temporal boundaries. The S'Homamish fishing grounds, the shell middens, the cedar groves used for canoe-building -- these places remember the people who tended them. A traveler who approaches such a site with respect may receive insight, protection, or passage. A traveler who approaches with disrespect, greed, or thoughtlessness will face consequences: disorientation, expulsion from the era, or confrontation with the accumulated grief and anger of displaced peoples.",
-      "category": "social",
-      "implications": [
-        "Sacred indigenous sites are the most powerful thin places on the island, but they are also the most protected",
-        "Travelers who take artifacts from sacred sites find the objects crumble to dust when they cross back to their home era",
-        "The cultural memory of a place can manifest as spectral echoes -- sounds of ceremony, the smell of cedar smoke, the feeling of being watched by ancestral presences",
-        "Disrespectful behavior at sacred sites triggers immediate temporal sickness far more severe than normal crossing would cause",
-        "Knowledge shared by cultural memory is earned, not taken -- it comes as dreams, intuitions, and symbolic visions, not as data"
-      ],
-      "exceptions": [
-        "Travelers who have been formally welcomed by indigenous people of any era carry that welcome across all eras at that site",
-        "Researchers and descendants acting in genuine service to cultural preservation may be granted deeper access"
-      ],
-      "related_entries": [],
-      "universe_id": "room-33"
-    },
-    {
-      "id": "wr-009",
-      "name": "The Lodge Remembers",
-      "description": "The lodge that houses Room 33 keeps a memory of every person who has ever stayed there, in any era, in any form. This memory is not stored in a book or a database -- it lives in the building itself. Doors creak in recognition. The smell of a previous guest's pipe tobacco drifts through a hallway decades after they left. A traveler may find a room arranged exactly to their preference by staff who have never met them, because the lodge has. The lodge is the island's memory made architectural.",
-      "category": "setting",
-      "implications": [
-        "Returning travelers are recognized by the lodge even if the staff and the building's exterior have changed completely",
-        "The lodge sometimes presents travelers with objects or messages left by previous guests from other eras -- a letter addressed to someone who hasn't been born yet, a key that fits a lock in another century",
-        "The building's floorplan is subtly inconsistent -- hallways seem longer or shorter depending on who is walking them, and rooms appear or disappear based on need",
-        "Long-term staff at the lodge in any era develop an intuitive understanding of temporal travelers without ever being told explicitly -- they simply know not to ask too many questions",
-        "The lodge's memory can be consulted like a library by those who know how: sitting quietly in the common room and listening to the building think"
-      ],
-      "exceptions": [
-        "The lodge's memory can be disrupted by major renovations -- tearing out original materials creates gaps in its recall, like removing pages from a journal",
-        "Fire is the lodge's greatest fear; it has burned and been rebuilt at least twice, and each rebuilding cost it centuries of memory"
-      ],
-      "related_entries": [],
-      "universe_id": "room-33"
-    },
-    {
-      "id": "wr-010",
-      "name": "Storm Surge",
-      "description": "Puget Sound storms amplify all supernatural phenomena on the island. When a Pacific storm system drives rain and wind across the water, the veil between eras thins everywhere, not just at recognized sites. Temporal echoes become audible to ordinary people. Objects slip between centuries. The lodge groans and shifts. Room 33's door may open to eras it normally cannot reach. Storms are when the island is most alive and most dangerous -- the rules loosen, the boundaries blur, and travelers who are not careful may find themselves somewhere they never intended to go.",
-      "category": "supernatural",
-      "implications": [
-        "Major storms create temporary thin places at locations that are normally stable -- a beach, a road, a backyard",
-        "During storms, non-travelers may briefly perceive echoes from other eras: ghost lights on the water, voices in a language they don't recognize, the smell of woodsmoke from a fire that burned a century ago",
-        "Temporal sickness accelerates during storms -- what would normally take hours of exposure can happen in minutes",
-        "The strongest storms can strand travelers in unintended eras by scrambling the navigation of thin places",
-        "Lightning strikes on the island occasionally fuse objects from different eras together -- a modern nail embedded in old-growth wood, a pioneer coin melted into volcanic rock"
-      ],
-      "exceptions": [
-        "Room 33 remains stable and navigable during storms, though the journey from the room to the outside world may deposit the traveler in an unexpected part of the era",
-        "Summer storms carry less temporal charge than winter storms -- the long darkness of Pacific Northwest winters concentrates the island's supernatural energy"
-      ],
-      "related_entries": [],
-      "universe_id": "room-33"
-    },
-    {
-      "id": "wr-011",
-      "name": "The Witness Obligation",
-      "description": "Those who travel between eras incur a debt. The island grants passage not for entertainment but for understanding. Travelers who witness historical events -- particularly moments of injustice, suffering, or loss -- carry an obligation to remember and to tell. This is not a spoken contract but a felt one: travelers who return from witnessing the internment of Japanese American families, or the dispossession of the S'Homamish, find that the knowledge burns in them until they share it. Silence about what they have seen causes their anchor to weaken and their connection to Room 33 to fade.",
+      "id": "rule-6",
+      "name": "The Lodge Is Not Evil",
+      "description": "The lodge reflects truth, which can feel painful but is never malicious.",
       "category": "narrative",
       "implications": [
-        "The island rewards travelers who engage with difficult history rather than seeking only pleasant or exciting eras",
-        "A traveler who repeatedly visits only comfortable eras will find those eras increasingly inaccessible -- the lodge steers them toward what they need to see, not what they want to see",
-        "Sharing witnessed history with others -- through writing, teaching, or conversation -- strengthens the traveler's temporal anchor",
-        "The most experienced travelers are those who have borne witness to the island's full range of history, including its cruelties",
-        "This rule ensures that the Room 33 experience is ultimately educational and empathetic, not escapist"
+        "The lodge is a mirror, not a monster. What feels like cruelty is clarity. What feels like a cage is a chrysalis."
       ],
-      "exceptions": [
-        "Travelers are never forced to witness trauma they are not prepared for -- the island senses readiness and does not push beyond what a person can bear",
-        "Children who find their way into Room 33 are shown only wonder, never horror -- the island protects the young"
-      ],
-      "related_entries": [],
       "universe_id": "room-33"
     },
     {
-      "id": "wr-012",
-      "name": "The Cartographer's Paradox",
-      "description": "The island's geography is fixed in the physical world but fluid in the spaces between eras. A traveler walking a forest trail may round a bend and find the trail continues into a different century. The transition is seamless -- the same Douglas firs, the same slope of ground, but the light has changed, the birdsong is different, and the trail is now a footpath worn by moccasins rather than hiking boots. These geographic overlaps occur at places where the land itself has not changed significantly between eras. Where the land is unchanged, time flows more freely across it.",
+      "id": "rule-7",
+      "name": "Every Object Has Memory",
+      "description": "Physical objects within the lodge retain emotional impressions from those who have touched them.",
+      "category": "supernatural",
+      "implications": [
+        "A glass left on the bar holds the sorrow of the hand that set it down. A key remembers every lock it has opened. Objects are witnesses."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-8",
+      "name": "Music Is a Portal",
+      "description": "Music can transport guests across time and identity within the lodge.",
+      "category": "supernatural",
+      "implications": [
+        "The right melody at the right moment can pull a guest into a different time, a different version of themselves. The jukebox is not random."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-9",
+      "name": "Room 33 Is the Heart",
+      "description": "Room 33 is the lodge's core — a space that manifests differently for every guest.",
+      "category": "supernatural",
+      "implications": [
+        "What happens inside Room 33 is different for every guest. Some emerge transformed. Some emerge terrified. Some do not emerge at all — at least not in the same era they entered."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-10",
+      "name": "Confession Is Currency",
+      "description": "Honesty is rewarded with insight; deception triggers escalation.",
+      "category": "social",
+      "implications": [
+        "The lodge rewards honesty with revelation and punishes deception with escalation. A lie told at the bar may summon a storm."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-11",
+      "name": "The Forest Watches",
+      "description": "The surrounding forest is an extension of the lodge's awareness and will.",
+      "category": "supernatural",
+      "implications": [
+        "Trees that have stood for centuries serve as the lodge's perimeter, its early warning system, its dreamscape. Lost guests find themselves among roots that seem to guide — or mislead."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-12",
+      "name": "Names Have Power",
+      "description": "Naming a fear or truth gives a guest power over it within the lodge.",
+      "category": "magic",
+      "implications": [
+        "Guests who can name their fear begin to master it. The lodge asks each soul: what do you call the thing you carry?"
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-13",
+      "name": "The Fourth Wall Is Thin",
+      "description": "The boundary between the story world and the audience is occasionally breached.",
+      "category": "narrative",
+      "implications": [
+        "Occasional moments of uncanny awareness — a glance at the camera, a line that speaks directly to the viewer — remind us that the lodge exists between worlds, including the one where we sit watching."
+      ],
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-14",
+      "name": "Every Exit Is Also an Entrance",
+      "description": "Leaving the lodge is itself a transformation; the outside world is seen with new eyes.",
       "category": "physics",
       "implications": [
-        "Natural features that persist across eras -- old-growth trees, rock formations, streams, ridgelines -- serve as bridges between times",
-        "Heavily developed or altered landscapes resist temporal crossing because the physical discontinuity between eras is too great",
-        "Maps drawn in one era may show paths and features that only exist in another era -- a traveler's map updates itself as they cross temporal boundaries",
-        "The island's coastline, which has changed relatively little in recorded history, is one of the most reliable routes for cross-era travel on foot",
-        "Travelers navigating by landmark rather than by trail are more likely to experience unintentional era shifts"
+        "Guests who leave are changed. The world they return to has not changed — but they see it differently. Some find they cannot stop hearing the lodge's music."
       ],
-      "exceptions": [
-        "The town center of Vashon, which has been continuously rebuilt, is temporally rigid -- era shifts almost never occur there spontaneously",
-        "Quartermaster Harbor's shape has remained so consistent across millennia that it sometimes shows multiple eras simultaneously at its edges, like a palimpsest"
+      "universe_id": "room-33"
+    },
+    {
+      "id": "rule-15",
+      "name": "The Story Serves the Feeling",
+      "description": "Emotional resonance takes priority over plot cleverness in all narrative decisions.",
+      "category": "narrative",
+      "implications": [
+        "If a plot point is clever but emotionally hollow, it is cut. If a moment is simple but devastating, it stays. The story bows to the heart."
       ],
-      "related_entries": [],
       "universe_id": "room-33"
     }
   ]

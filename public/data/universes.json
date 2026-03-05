@@ -14,7 +14,427 @@
         "the stories places hold"
       ],
       "created_by": "AI Narrator & Writer collaboration",
-      "created_at": "2026-03-05"
+      "created_at": "2026-03-05",
+      "logline": "A bartender at a remote Pacific Northwest lodge discovers she may have been serving drinks — and writing the same unfinished novel — across multiple decades, guided by a room that exists outside of time.",
+      "primeDirective": "Every story element must serve emotional truth over plot mechanics. The lodge is a mirror, not a maze.",
+      "seasonArcs": [
+        {
+          "season": 1,
+          "title": "The Threshold",
+          "centralQuestion": "What happens when you stop running?"
+        },
+        {
+          "season": 2,
+          "title": "The Echo",
+          "centralQuestion": "What did you leave behind?"
+        },
+        {
+          "season": 3,
+          "title": "The Storm",
+          "centralQuestion": "What are you willing to lose?"
+        },
+        {
+          "season": 4,
+          "title": "The Room",
+          "centralQuestion": "What waits behind the door?"
+        },
+        {
+          "season": 5,
+          "title": "The Return",
+          "centralQuestion": "Was it worth it?"
+        }
+      ],
+      "worldRules": [
+        {
+          "id": "rule-1",
+          "number": 1,
+          "title": "The Lodge Chooses",
+          "description": "The lodge selects its guests through forces beyond coincidence or intent.",
+          "expanded": "Every guest, every worker, every soul who crosses the threshold was summoned by forces older than memory. The lodge is not a trap — it is an invitation."
+        },
+        {
+          "id": "rule-2",
+          "number": 2,
+          "title": "Time Is Not Linear Here",
+          "description": "Temporal boundaries inside and around the lodge are fluid and permeable.",
+          "expanded": "A guest may hear music from 1935 in a 2024 hallway. A storm in the present may reveal the lodge as it was in 1910. Time is the lodge's native language."
+        },
+        {
+          "id": "rule-3",
+          "number": 3,
+          "title": "The Storm Is a Character",
+          "description": "Storms are not weather events but narrative forces that respond to emotional states.",
+          "expanded": "Each storm strips away a layer of pretense. The bigger the lie a guest carries, the fiercer the storm that greets them."
+        },
+        {
+          "id": "rule-4",
+          "number": 4,
+          "title": "Mixie Remembers Everything",
+          "description": "The bartender has served across all eras and retains memory of every guest and event.",
+          "expanded": "Mixie has served every era, every guest. She does not age. She does not forget. She does not judge. But she remembers."
+        },
+        {
+          "id": "rule-5",
+          "number": 5,
+          "title": "No One Leaves Until They're Ready",
+          "description": "The lodge holds guests for exactly as long as they need, no more, no less.",
+          "expanded": "Some guests stay a night. Some stay decades. The lodge does not imprison — it holds, teaches, and waits."
+        },
+        {
+          "id": "rule-6",
+          "number": 6,
+          "title": "The Lodge Is Not Evil",
+          "description": "The lodge reflects truth, which can feel painful but is never malicious.",
+          "expanded": "The lodge is a mirror, not a monster. What feels like cruelty is clarity. What feels like a cage is a chrysalis."
+        },
+        {
+          "id": "rule-7",
+          "number": 7,
+          "title": "Every Object Has Memory",
+          "description": "Physical objects within the lodge retain emotional impressions from those who have touched them.",
+          "expanded": "A glass left on the bar holds the sorrow of the hand that set it down. A key remembers every lock it has opened. Objects are witnesses."
+        },
+        {
+          "id": "rule-8",
+          "number": 8,
+          "title": "Music Is a Portal",
+          "description": "Music can transport guests across time and identity within the lodge.",
+          "expanded": "The right melody at the right moment can pull a guest into a different time, a different version of themselves. The jukebox is not random."
+        },
+        {
+          "id": "rule-9",
+          "number": 9,
+          "title": "Room 33 Is the Heart",
+          "description": "Room 33 is the lodge's core — a space that manifests differently for every guest.",
+          "expanded": "What happens inside Room 33 is different for every guest. Some emerge transformed. Some emerge terrified. Some do not emerge at all — at least not in the same era they entered."
+        },
+        {
+          "id": "rule-10",
+          "number": 10,
+          "title": "Confession Is Currency",
+          "description": "Honesty is rewarded with insight; deception triggers escalation.",
+          "expanded": "The lodge rewards honesty with revelation and punishes deception with escalation. A lie told at the bar may summon a storm."
+        },
+        {
+          "id": "rule-11",
+          "number": 11,
+          "title": "The Forest Watches",
+          "description": "The surrounding forest is an extension of the lodge's awareness and will.",
+          "expanded": "Trees that have stood for centuries serve as the lodge's perimeter, its early warning system, its dreamscape. Lost guests find themselves among roots that seem to guide — or mislead."
+        },
+        {
+          "id": "rule-12",
+          "number": 12,
+          "title": "Names Have Power",
+          "description": "Naming a fear or truth gives a guest power over it within the lodge.",
+          "expanded": "Guests who can name their fear begin to master it. The lodge asks each soul: what do you call the thing you carry?"
+        },
+        {
+          "id": "rule-13",
+          "number": 13,
+          "title": "The Fourth Wall Is Thin",
+          "description": "The boundary between the story world and the audience is occasionally breached.",
+          "expanded": "Occasional moments of uncanny awareness — a glance at the camera, a line that speaks directly to the viewer — remind us that the lodge exists between worlds, including the one where we sit watching."
+        },
+        {
+          "id": "rule-14",
+          "number": 14,
+          "title": "Every Exit Is Also an Entrance",
+          "description": "Leaving the lodge is itself a transformation; the outside world is seen with new eyes.",
+          "expanded": "Guests who leave are changed. The world they return to has not changed — but they see it differently. Some find they cannot stop hearing the lodge's music."
+        },
+        {
+          "id": "rule-15",
+          "number": 15,
+          "title": "The Story Serves the Feeling",
+          "description": "Emotional resonance takes priority over plot cleverness in all narrative decisions.",
+          "expanded": "If a plot point is clever but emotionally hollow, it is cut. If a moment is simple but devastating, it stays. The story bows to the heart."
+        }
+      ],
+      "episodes": [
+        {
+          "id": "s1e01",
+          "season": 1,
+          "episode": 1,
+          "title": "Pressure in the Air",
+          "theme": "What happens when something is about to change?",
+          "function": "Introduction. Storm approaching.",
+          "coldOpen": "1910 lodge construction.",
+          "characterFocus": ["Mixie", "Flynn", "Chris", "Matt"],
+          "mysteryPlanted": ["photograph", "mirror delay", "approaching storm", "Matt's arrival"]
+        },
+        {
+          "id": "s1e02",
+          "season": 1,
+          "episode": 2,
+          "title": "Regulars",
+          "theme": "What patterns do we build to avoid change?",
+          "function": "World-building.",
+          "coldOpen": "1935, M. Quinn tends bar looking like Mixie.",
+          "characterFocus": ["Mixie", "Chris", "Z", "Akira", "Esmerelda"],
+          "mysteryPlanted": ["M. Quinn", "Room 33 guest experience"]
+        },
+        {
+          "id": "s1e03",
+          "season": 1,
+          "episode": 3,
+          "title": "The Woman in the Storm",
+          "theme": "What stories do we tell about the things we cannot explain?",
+          "function": "Origin story.",
+          "coldOpen": "1915, Siobhan at window of Room 33.",
+          "characterFocus": ["Mixie", "Siobhan (legend)", "Jauncey", "Sam", "Stefan"],
+          "majorEvent": "Major storm. Time slip shows 1935 bar."
+        },
+        {
+          "id": "s1e04",
+          "season": 1,
+          "episode": 4,
+          "title": "Room 33",
+          "theme": "What happens when you stop resisting?",
+          "function": "Threshold episode.",
+          "coldOpen": "1965, Fink incident.",
+          "characterFocus": ["Matt", "Mixie", "Marie", "Esmerelda"],
+          "majorEvent": "Matt enters Room 33."
+        },
+        {
+          "id": "s1e05",
+          "season": 1,
+          "episode": 5,
+          "title": "Static",
+          "theme": "What happens when reality contradicts itself?",
+          "function": "Mid-season escalation.",
+          "coldOpen": "Self-describing library book.",
+          "characterFocus": ["Chris", "Stefan", "Sam", "Mixie"],
+          "majorEvent": "Chris vanishes from bar."
+        },
+        {
+          "id": "s1e06",
+          "season": 1,
+          "episode": 6,
+          "title": "The Photograph",
+          "theme": "What if you are not who you think you are?",
+          "function": "Identity fracture.",
+          "coldOpen": "1938, M. Quinn.",
+          "characterFocus": ["Mixie"],
+          "majorEvent": "Mixie finds M. Quinn in ledger, handwriting matches. She writes letter to Room 33, gets skeleton key back."
+        },
+        {
+          "id": "s1e07",
+          "season": 1,
+          "episode": 7,
+          "title": "What the Storm Took",
+          "theme": "What is the cost of knowing?",
+          "function": "Consequence and loss.",
+          "coldOpen": "Storm montage.",
+          "characterFocus": ["Sam", "Mixie"],
+          "majorEvent": "Sam and Mixie discover Room 33/disappearance correlation. Mixie realizes novel is transcription."
+        },
+        {
+          "id": "s1e08",
+          "season": 1,
+          "episode": 8,
+          "title": "The Foresters",
+          "theme": "What happens when people try to own what should be tended?",
+          "function": "Lore expansion.",
+          "coldOpen": "1935 Foresters enter Room 33.",
+          "characterFocus": ["Mixie"],
+          "majorEvent": "Foresters revealed. 'Callahan' in ledger. 1943 unfinished letter."
+        },
+        {
+          "id": "s1e09",
+          "season": 1,
+          "episode": 9,
+          "title": "The Other Draft",
+          "theme": "What happens when the author enters the story?",
+          "function": "Convergence. Storm climax.",
+          "coldOpen": "Novel pages.",
+          "characterFocus": ["Mixie", "Siobhan", "Flynn", "Tom"],
+          "majorEvent": "Three earlier novel drafts found. Mixie enters Room 33. Encounters Siobhan in mirror. Dies. Flynn's vigil. Tom's speech."
+        },
+        {
+          "id": "s1e10",
+          "season": 1,
+          "episode": 10,
+          "title": "Check-Out Time",
+          "theme": "What does it mean to stop running from who you are?",
+          "function": "Season finale.",
+          "coldOpen": "Mixie behind bar.",
+          "characterFocus": ["Mixie", "Jauncey"],
+          "majorEvent": "Rebirth. Novel finished. Jauncey's original song. New guest arrives. Distant thunder."
+        }
+      ],
+      "items": [
+        {
+          "id": "the-photograph",
+          "name": "The Photograph",
+          "significance": "Central mystery object linking Mixie to M. Quinn across decades.",
+          "era": "c. 1935-1942",
+          "description": "A framed photograph behind the bar of a woman who looks exactly like Mixie, dated to the mid-twentieth century. Its presence is the first crack in Mixie's understanding of herself.",
+          "connectedCharacters": ["Mixie", "M. Quinn"],
+          "connectedLocations": ["Triangle Bar"],
+          "tags": ["mystery", "identity", "time"]
+        },
+        {
+          "id": "guest-ledger",
+          "name": "Guest Ledger",
+          "significance": "Historical record containing M. Quinn entries and Forester connections.",
+          "era": "1910-present",
+          "description": "A leather-bound guest register that has recorded every arrival since the lodge opened in 1910. Contains M. Quinn entries with handwriting that matches Mixie's own.",
+          "connectedCharacters": ["Mixie", "M. Quinn", "Callahan"],
+          "connectedLocations": ["Front Desk", "The Lodge"],
+          "tags": ["record", "identity", "history"]
+        },
+        {
+          "id": "mixies-notebook",
+          "name": "Mixie's Notebook",
+          "significance": "The novel Mixie is writing, which may be a transcription rather than an original work.",
+          "era": "present (with drafts from 1936, 1938, 1942)",
+          "description": "A handwritten novel-in-progress that Mixie believes she is composing. Earlier drafts from 1936, 1938, and 1942 are discovered, suggesting the novel writes itself through whoever tends bar.",
+          "connectedCharacters": ["Mixie", "M. Quinn"],
+          "connectedLocations": ["Triangle Bar", "Room 33"],
+          "tags": ["writing", "mystery", "recursion"]
+        },
+        {
+          "id": "the-piano",
+          "name": "The Piano",
+          "significance": "Instrument that plays autonomously during storms, bridging eras through music.",
+          "era": "1910-present",
+          "description": "An upright piano in the Triangle Bar that plays untouched during storms. Its melodies correspond to songs from different decades, as if the lodge is cycling through its own memory.",
+          "connectedCharacters": ["Jauncey"],
+          "connectedLocations": ["Triangle Bar"],
+          "tags": ["music", "supernatural", "storm"]
+        },
+        {
+          "id": "the-mirror",
+          "name": "The Mirror",
+          "significance": "Portal and truth-teller; Siobhan's primary connection point across time.",
+          "era": "1915-present",
+          "description": "An antique mirror that reflects a fraction of a second late. Connected to Siobhan's legend and Room 33. Functions as a portal between eras for those the lodge has chosen.",
+          "connectedCharacters": ["Siobhan", "Mixie"],
+          "connectedLocations": ["Room 33", "Hallway"],
+          "tags": ["portal", "supernatural", "identity"]
+        },
+        {
+          "id": "room-33-key",
+          "name": "Room 33 Key",
+          "significance": "The lodge's response to Mixie's letter — an invitation to the heart.",
+          "era": "present",
+          "description": "A brass skeleton key returned by Room 33 after Mixie writes a letter and slides it under the door. The key did not exist before this moment; it was created by the room in response to honest confession.",
+          "connectedCharacters": ["Mixie"],
+          "connectedLocations": ["Room 33"],
+          "tags": ["key", "invitation", "confession"]
+        },
+        {
+          "id": "flynns-pocket-watch",
+          "name": "Flynn's Pocket Watch",
+          "significance": "Temporal anomaly object that responds to the lodge's shifts in time.",
+          "era": "present",
+          "description": "A pocket watch carried by Flynn, composed of parts that self-assemble during storms. When the lodge shifts between eras, the watch disassembles and reassembles to show a different time.",
+          "connectedCharacters": ["Flynn"],
+          "connectedLocations": ["The Lodge"],
+          "tags": ["time", "supernatural", "storm"]
+        },
+        {
+          "id": "jaunceys-the-sea",
+          "name": "The Sea That Held Her",
+          "significance": "Original song that serves as the emotional climax of Season 1.",
+          "era": "present",
+          "description": "An original song composed and performed by Jauncey in the season finale. The song channels everything the lodge has taught its guests about holding on and letting go.",
+          "connectedCharacters": ["Jauncey"],
+          "connectedLocations": ["Triangle Bar"],
+          "tags": ["music", "climax", "catharsis"]
+        },
+        {
+          "id": "foresters-symbols",
+          "name": "Foresters' Symbols",
+          "significance": "Evidence of a secret society's long involvement with the lodge.",
+          "era": "1910-present",
+          "description": "Compass roses and coded marks carved, painted, and embedded throughout the lodge by the Foresters, a secret society that has attempted to study and control the lodge's power for over a century.",
+          "connectedCharacters": ["Foresters"],
+          "connectedLocations": ["The Lodge"],
+          "tags": ["secret society", "symbols", "lore"]
+        },
+        {
+          "id": "brass-bell",
+          "name": "Brass Bell",
+          "significance": "Storm herald and supernatural alarm.",
+          "era": "1910-present",
+          "description": "A service bell at the front desk that rings on its own during storms. Its tone changes depending on the severity of the approaching temporal disturbance.",
+          "connectedCharacters": [],
+          "connectedLocations": ["Front Desk"],
+          "tags": ["storm", "supernatural", "warning"]
+        },
+        {
+          "id": "toms-tools",
+          "name": "Tom's Tools",
+          "significance": "Collection of anomalous objects recovered from the lodge's fireplace.",
+          "era": "various",
+          "description": "A workshop and cigar box containing 37 objects pulled from the fireplace ash over the years. Each object belongs to a different era. Tom catalogues them without fully understanding their origin.",
+          "connectedCharacters": ["Tom"],
+          "connectedLocations": ["Workshop", "The Lodge"],
+          "tags": ["collection", "mystery", "time"]
+        },
+        {
+          "id": "foresters-journal",
+          "name": "Foresters' Journal",
+          "significance": "Secret society records revealing the lodge's deeper history and the Callahan connection.",
+          "era": "1910-1960s",
+          "description": "Records from a locked cabinet containing the Foresters' membership ledger. The name 'Callahan' appears, connecting the secret society to the lodge's founding and its supernatural properties.",
+          "connectedCharacters": ["Foresters", "Callahan"],
+          "connectedLocations": ["The Lodge"],
+          "tags": ["secret society", "history", "lore"]
+        },
+        {
+          "id": "abandoned-belongings",
+          "name": "Abandoned Belongings",
+          "significance": "Physical evidence of guests who entered Room 33 and never returned to their own time.",
+          "era": "various",
+          "description": "Personal items left behind by guests who vanished from the lodge. The most notable is the Voss steamer trunk, packed as if for departure but never collected.",
+          "connectedCharacters": ["Voss"],
+          "connectedLocations": ["Room 33", "Storage"],
+          "tags": ["disappearance", "mystery", "loss"]
+        },
+        {
+          "id": "unlabeled-bottle",
+          "name": "Unlabeled Bottle",
+          "significance": "Subtle supernatural presence behind the bar — the lodge's quiet persistence.",
+          "era": "unknown",
+          "description": "A mystery bottle kept behind the bar whose liquid level never changes regardless of how much is poured. No one remembers when it arrived or what it contains.",
+          "connectedCharacters": ["Mixie"],
+          "connectedLocations": ["Triangle Bar"],
+          "tags": ["supernatural", "mystery", "permanence"]
+        },
+        {
+          "id": "library-clock",
+          "name": "Library Clock",
+          "significance": "Temporal barometer connected to the lodge's mechanical heart.",
+          "era": "1910-present",
+          "description": "A grandfather clock in the library that is mechanically synced with the boiler. During storms, both accelerate together, as if the lodge's heartbeat quickens in anticipation.",
+          "connectedCharacters": [],
+          "connectedLocations": ["Library"],
+          "tags": ["time", "storm", "supernatural"]
+        },
+        {
+          "id": "landscape-painting",
+          "name": "Landscape Painting",
+          "significance": "Visual evidence that the lodge reshapes its own interior according to its mood.",
+          "era": "unknown",
+          "description": "A painting hung above the fireplace that changes subtly between viewings. Guests who look closely notice different seasons, different figures in the distance, different light.",
+          "connectedCharacters": [],
+          "connectedLocations": ["Great Room"],
+          "tags": ["supernatural", "art", "perception"]
+        },
+        {
+          "id": "ambers-photograph",
+          "name": "Amber's Photograph",
+          "significance": "Season Two mystery seed planted in Season One.",
+          "era": "present",
+          "description": "A photo album containing images shot from impossible angles — inside walls, beneath floors, from the perspective of the lodge itself. Intended as the entry point for Season Two's central mystery.",
+          "connectedCharacters": ["Amber"],
+          "connectedLocations": ["The Lodge"],
+          "tags": ["mystery", "photography", "season-two"]
+        }
+      ]
     }
   ]
 }

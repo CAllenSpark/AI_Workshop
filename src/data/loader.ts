@@ -2,7 +2,7 @@ import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, Narrat
 
 const BASE_PATH = import.meta.env.BASE_URL + 'data/';
 const CACHE_KEY = 'wrc_data_cache';
-const CACHE_VERSION = '6';
+const CACHE_VERSION = '7';
 const CACHE_VERSION_KEY = 'wrc_cache_version';
 
 async function fetchJson<T>(filename: string): Promise<T> {
