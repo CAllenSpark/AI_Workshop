@@ -2082,1998 +2082,6 @@
       ]
     },
     {
-      "id": "person-001",
-      "type": "person",
-      "title": "sx̌ʷəbabš (Sqababsh / S'Homamish)",
-      "text": "sx̌ʷəbabš (Sqababsh / S'Homamish) indigenous people Original permanent inhabitants of Vashon and Maury Islands. Built five main village sites. Relied on salmon fishing, shellfish, hunting, and plant harvesting. Descendants are enrolled members of the Puyallup Tribe of Indians.",
-      "period": "~1500–1856",
-      "related_entries": [
-        "ind-001",
-        "log-002"
-      ]
-    },
-    {
-      "id": "person-002",
-      "type": "person",
-      "title": "Julie K. Stein",
-      "text": "Julie K. Stein archaeologist Co-edited the publication \"Vashon Island Archaeology: A View from Burton Acres Shell Midden\" (2003), documenting the collaborative excavation of the Burton Acres Shell Midden site after a 1995 storm exposed its contents.",
-      "period": "1990s–2000s",
-      "related_entries": [
-        "ind-003"
-      ]
-    },
-    {
-      "id": "person-003",
-      "type": "person",
-      "title": "Laura S. Phillips",
-      "text": "Laura S. Phillips archaeologist Co-edited \"Vashon Island Archaeology: A View from Burton Acres Shell Midden\" (2003) with Julie K. Stein, publishing the findings from the 1995 excavation involving 375 volunteers.",
-      "period": "1990s–2000s",
-      "related_entries": [
-        "ind-003"
-      ]
-    },
-    {
-      "id": "person-004",
-      "type": "person",
-      "title": "Judy Wright",
-      "text": "Judy Wright indigenous people Contributed to the collaborative excavation and study of the Burton Acres Shell Midden on Quartermaster Harbor, which documented centuries of indigenous habitation.",
-      "period": "1990s",
-      "related_entries": [
-        "ind-003"
-      ]
-    },
-    {
-      "id": "person-005",
-      "type": "person",
-      "title": "Manuel Quimper",
-      "text": "Manuel Quimper explorer Sailed the Princesa Real into the Strait of Juan de Fuca in 1790, discovering Admiralty Inlet -- the entrance to Puget Sound -- but did not enter. First European to report seeing Mount Baker.",
-      "period": "Active on the Strait of Juan de Fuca in 1790",
-      "related_entries": [
-        "exp-003"
-      ]
-    },
-    {
-      "id": "person-006",
-      "type": "person",
-      "title": "Juan Carrasco",
-      "text": "Juan Carrasco explorer Identified the entrance to Admiralty Inlet (leading to Puget Sound and the waters around Vashon Island) during the 1790 Spanish expedition, though the expedition did not proceed south into it.",
-      "period": "Active 1790",
-      "related_entries": [
-        "exp-003"
-      ]
-    },
-    {
-      "id": "person-007",
-      "type": "person",
-      "title": "Francisco de Eliza",
-      "text": "Francisco de Eliza explorer Ordered both the 1790 Quimper expedition and the 1791 Narvaez expedition to explore the Strait of Juan de Fuca. The 1791 expedition passed by Admiralty Inlet but did not enter Puget Sound, leaving it for British discovery the following year.",
-      "period": "Active 1790–1791",
-      "related_entries": [
-        "exp-003",
-        "exp-004"
-      ]
-    },
-    {
-      "id": "person-008",
-      "type": "person",
-      "title": "Jose Maria Narvaez",
-      "text": "Jose Maria Narvaez explorer Passed by Admiralty Inlet in 1791 aboard the Santa Saturnina but returned to Nootka Sound without exploring Puget Sound, leaving the waterway for George Vancouver's expedition the next year.",
-      "period": "Active 1791",
-      "related_entries": [
-        "exp-004"
-      ]
-    },
-    {
-      "id": "person-009",
-      "type": "person",
-      "title": "Captain George Vancouver",
-      "text": "Captain George Vancouver explorer Named Vashon Island after his friend Captain James Vashon during British surveys of Puget Sound. Produced the first European maps of the area.",
-      "period": "Active on Puget Sound in 1792",
-      "related_entries": [
-        "exp-001",
-        "exp-005"
-      ]
-    },
-    {
-      "id": "person-010",
-      "type": "person",
-      "title": "Captain James Vashon",
-      "text": "Captain James Vashon explorer The island's namesake. A fellow naval officer and friend of George Vancouver.",
-      "period": "Contemporary of Vancouver",
-      "related_entries": [
-        "exp-001"
-      ]
-    },
-    {
-      "id": "person-011",
-      "type": "person",
-      "title": "Peter Puget",
-      "text": "Peter Puget historical figure Led a week-long survey of the southern Puget Sound in two rowing craft, passing Vashon Island and charting the waterway's farthest inlets. Vancouver named the southern portion of the waterway \"Puget's Sound\" in his honor on May 29, 1792.",
-      "period": "Active on Puget Sound in May 1792",
-      "related_entries": [
-        "exp-005"
-      ]
-    },
-    {
-      "id": "person-012",
-      "type": "person",
-      "title": "Joseph Whidbey",
-      "text": "Joseph Whidbey historical figure Accompanied Peter Puget on the week-long survey of southern Puget Sound, departing HMS Discovery on May 20, 1792, and sailing past Vashon Island while charting the waterway.",
-      "period": "Active on Puget Sound in May 1792",
-      "related_entries": [
-        "exp-005"
-      ]
-    },
-    {
-      "id": "person-013",
-      "type": "person",
-      "title": "William A. Maury",
-      "text": "William A. Maury historical figure Maury Island's namesake. The smaller island adjacent to Vashon was named after him when Lt. Wilkes charted the waters of Puget Sound in 1841.",
-      "period": "Active 1841",
-      "related_entries": [
-        "exp-002"
-      ]
-    },
-    {
-      "id": "person-014",
-      "type": "person",
-      "title": "Lt. Charles Wilkes",
-      "text": "Lt. Charles Wilkes historical figure Named Maury Island after crew member William A. Maury. Named Quartermaster Harbor and nearly all of Vashon-Maury Island's coastal points after quartermasters on his voyage. First American survey of the area.",
-      "period": "Surveyed Puget Sound in 1841",
-      "related_entries": [
-        "exp-002",
-        "exp-007"
-      ]
-    },
-    {
-      "id": "person-015",
-      "type": "person",
-      "title": "Archibald McDonald",
-      "text": "Archibald McDonald tribal leader Established Fort Nisqually in 1833, the first European settlement on Puget Sound, near the mouth of Sequalitchew Creek. The fort served as a fur trade hub and drew European and American attention to the broader Puget Sound region, including Vashon Island.",
-      "period": "Active 1833",
-      "related_entries": [
-        "exp-006"
-      ]
-    },
-    {
-      "id": "person-016",
-      "type": "person",
-      "title": "Samuel Royal Thurston",
-      "text": "Samuel Royal Thurston homesteader Authored the Donation Land Claim Act of 1850, which granted up to 640 acres of Oregon Territory land to married settlers. The act provided the legal mechanism under which Vashon Island was later claimed, starting in the 1860s. It explicitly excluded Black and Hawaiian settlers.",
-      "period": "1850s",
-      "related_entries": [
-        "log-003"
-      ]
-    },
-    {
-      "id": "person-017",
-      "type": "person",
-      "title": "Isaac Stevens",
-      "text": "Isaac Stevens government official Negotiated the Medicine Creek Treaty of 1854, which ceded indigenous lands to the U.S. government and led to the removal of the S'Homamish from Vashon Island. His treaty terms provoked the Puget Sound Indian War of 1855–1856.",
-      "period": "1850s",
-      "related_entries": [
-        "log-002",
-        "log-005"
-      ]
-    },
-    {
-      "id": "person-018",
-      "type": "person",
-      "title": "Chief Leschi",
-      "text": "Chief Leschi indigenous people Led resistance against the Treaty of Medicine Creek's unfair terms during the Puget Sound Indian War of 1855–1856. Retreated east after the Battle of Seattle (January 26, 1856), was later captured, controversially convicted of murder, and hanged in 1858. Posthumously exonerated in 2004.",
-      "period": "1850s",
-      "related_entries": [
-        "log-005"
-      ]
-    },
-    {
-      "id": "person-019",
-      "type": "person",
-      "title": "John Swan",
-      "text": "John Swan military Served as guard over nearly 5,000 indigenous men, women, and children -- including the S'Homamish from Vashon Island -- who were forcibly interned on Fox Island during the Puget Sound Indian War. Over one-third of the internees fell ill under devastating conditions.",
-      "period": "1855–1856",
-      "related_entries": [
-        "log-005"
-      ]
-    },
-    {
-      "id": "person-020",
-      "type": "person",
-      "title": "Andrew J. Pope",
-      "text": "Andrew J. Pope business owner Together with William C. Talbot, filed the first formal land claim on Vashon Island on August 1, 1864 -- 80 acres on the west side of the island for logging operations. Both were from Maine sawmill families.",
-      "period": "Active 1864",
-      "related_entries": [
-        "log-006"
-      ]
-    },
-    {
-      "id": "person-021",
-      "type": "person",
-      "title": "William C. Talbot",
-      "text": "William C. Talbot logger Together with Andrew J. Pope, filed the first non-indigenous land claim on Vashon Island in 1864. Their Port Gamble mill had been operating since 1853, and the Vashon claim expanded their timber operations throughout Puget Sound.",
-      "period": "Active 1864",
-      "related_entries": [
-        "log-006"
-      ]
-    },
-    {
-      "id": "person-022",
-      "type": "person",
-      "title": "Arthur Phinney",
-      "text": "Arthur Phinney historical figure Made land claims totaling 592 acres on Vashon Island in 1864, the same year Pope and Talbot filed their claim. His claims encompassed the area that would later become the town of Vashon.",
-      "period": "Active 1864",
-      "related_entries": [
-        "log-006"
-      ]
-    },
-    {
-      "id": "person-023",
-      "type": "person",
-      "title": "Mathew Bridges",
-      "text": "Mathew Bridges homesteader First permanent homesteader, marking the beginning of European-American settlement on the island.",
-      "period": "Filed homestead claim in 1865",
-      "related_entries": [
-        "pio-001"
-      ]
-    },
-    {
-      "id": "person-024",
-      "type": "person",
-      "title": "Salmon Sherman",
-      "text": "Salmon Sherman homesteader Along with his wife Eliza Sherman, settled along Quartermaster Harbor in 1877, taking shelter in an abandoned logger's shack they nicknamed \"Fort Necessity.\" Considered the first permanent family settlers. Descendants, now in their sixth generation, still live on the island.",
-      "period": "Arrived 1877",
-      "related_entries": [
-        "pio-004"
-      ]
-    },
-    {
-      "id": "person-025",
-      "type": "person",
-      "title": "Eliza Sherman",
-      "text": "Eliza Sherman homesteader Settled with her husband Salmon Sherman along Quartermaster Harbor in 1877. Part of the first permanent family settlement on Vashon Island, arriving with the Price and Gilman families from Minnesota.",
-      "period": "Arrived 1877",
-      "related_entries": [
-        "pio-004"
-      ]
-    },
-    {
-      "id": "person-026",
-      "type": "person",
-      "title": "S.D. Sherman",
-      "text": "S.D. Sherman business owner Established the first semi-regular ferry service to Vashon Island by converting a lifeboat into the schooner Old Black Joe. Previously rowed mail from Tacoma to Quartermaster Harbor. Served as an essential transportation link for the growing island community.",
-      "period": "Active ~1880s",
-      "related_entries": [
-        "pio-002",
-        "pio-004",
-        "pio-006"
-      ]
-    },
-    {
-      "id": "person-027",
-      "type": "person",
-      "title": "T.D. Soper",
-      "text": "T.D. Soper homesteader Petitioned King County for Road No. 117 (today's SW Bank Road), leading from the island's center to the brickyard and post office at Vashon Landing. This was among the first official county roads on the island.",
-      "period": "Active 1883",
-      "related_entries": [
-        "pio-005"
-      ]
-    },
-    {
-      "id": "person-028",
-      "type": "person",
-      "title": "Edwin Broadway",
-      "text": "Edwin Broadway homesteader Petitioned King County for Road No. 116 (today's SW Cemetery Road), running from the center of the island to the Ellisport dock. One of the first official county roads established on Vashon Island.",
-      "period": "Active 1883",
-      "related_entries": [
-        "pio-005"
-      ]
-    },
-    {
-      "id": "person-029",
-      "type": "person",
-      "title": "Mason Holmes",
-      "text": "Mason Holmes homesteader Petitioned King County for Road No. 118 (today's Vashon Highway SW), running south from Road No. 117. This road became one of the island's most important transportation arteries.",
-      "period": "Active 1883",
-      "related_entries": [
-        "pio-005"
-      ]
-    },
-    {
-      "id": "person-030",
-      "type": "person",
-      "title": "Samuel C. Herriott",
-      "text": "Samuel C. Herriott historical figure Served as the first postmaster when the Vashon Post Office opened on April 12, 1883, establishing an official U.S. government presence and regularizing mail delivery on the island.",
-      "period": "Appointed April 12, 1883",
-      "related_entries": [
-        "pio-006"
-      ]
-    },
-    {
-      "id": "person-031",
-      "type": "person",
-      "title": "Albert Atwood",
-      "text": "Albert Atwood historical figure Organized the first Methodist class on Vashon Island on April 4, 1884, leading to the construction of the island's first church building the following year.",
-      "period": "Active 1884",
-      "related_entries": [
-        "pio-007"
-      ]
-    },
-    {
-      "id": "person-032",
-      "type": "person",
-      "title": "John N. Dennison",
-      "text": "John N. Dennison historical figure Sent Rev. Albert Atwood to organize a Methodist class on Vashon Island in response to requests from island residents, initiating the establishment of the island's first church.",
-      "period": "Active 1884",
-      "related_entries": [
-        "pio-007"
-      ]
-    },
-    {
-      "id": "person-033",
-      "type": "person",
-      "title": "R.B. Dilworth",
-      "text": "R.B. Dilworth historical figure Organized the first Chautauqua assembly on Puget Sound, held at Dilworth Point on Vashon Island on August 3, 1885. Had been active in the original Chautauqua assembly in New York since 1874. Dilworth Point is named after him.",
-      "period": "Active 1885",
-      "related_entries": [
-        "pio-008"
-      ]
-    },
-    {
-      "id": "person-034",
-      "type": "person",
-      "title": "John F. Vanderhoef",
-      "text": "John F. Vanderhoef historical figure Took command of the steamer Iola in 1887 and established six weekly round trips between Tacoma, Seattle, and Vashon Island landings, creating the island's first reliable Mosquito Fleet connection. Held the mail contract for the east side of Vashon-Maury Island.",
-      "period": "Active 1887 onward",
-      "related_entries": [
-        "pio-009"
-      ]
-    },
-    {
-      "id": "person-035",
-      "type": "person",
-      "title": "Lucian Cook",
-      "text": "Lucian Cook business owner Ran a brickyard on Quartermaster Harbor, bought the steamer Estella to transport bricks and workmen to Tacoma, and later commissioned six barges and purchased the steamer Seaside as a towboat. Key figure in the island's brick manufacturing boom that supplied Seattle and Tacoma.",
-      "period": "Active ~1888–1900",
-      "related_entries": [
-        "gro-003",
-        "pio-010"
-      ]
-    },
-    {
-      "id": "person-036",
-      "type": "person",
-      "title": "Frank Gorsuch",
-      "text": "Frank Gorsuch historical figure Built and opened the first store at the crossroads that became the town of Vashon in 1890. His general store, which still stands, effectively founded the town of Vashon. The building was added to the National Register of Historic Places in 2000.",
-      "period": "Active 1890",
-      "related_entries": [
-        "pio-011"
-      ]
-    },
-    {
-      "id": "person-037",
-      "type": "person",
-      "title": "Ira Thompson",
-      "text": "Ira Thompson business owner Recalled that \"although overland travel was tough and the mud deep, Gorsuch was soon doing business with people throughout the Island,\" providing firsthand testimony about the founding of the town of Vashon.",
-      "period": "Active 1890s",
-      "related_entries": [
-        "pio-011"
-      ]
-    },
-    {
-      "id": "person-038",
-      "type": "person",
-      "title": "Miles F. Hatch (also Miles Hatch)",
-      "text": "Miles F. Hatch (also Miles Hatch) business owner Founded and named the town of Burton after his birthplace. Donated the hilltop campus land for Vashon College and spearheaded its founding in 1892. Operated a sawmill at Assembly Point, developed the Mileta Farm dairy, and built a store at the Burton Peninsula. Burton became the island's dominant town under his leadership.",
-      "period": "Active 1890s–1900s",
-      "related_entries": [
-        "gro-005",
-        "gro-010",
-        "gro-012",
-        "pio-012"
-      ]
-    },
-    {
-      "id": "person-039",
-      "type": "person",
-      "title": "A.C. Jones",
-      "text": "A.C. Jones educator Hired as the first president of Vashon College at Burton, which opened in 1892 as a non-denominational Christian co-educational institution offering classical and scientific programs, a pharmacy school, conservatory of music, and school of commerce.",
-      "period": "Active 1892",
-      "related_entries": [
-        "gro-005",
-        "pio-012"
-      ]
-    },
-    {
-      "id": "person-040",
-      "type": "person",
-      "title": "John Cage Gorsuch",
-      "text": "John Cage Gorsuch farmer Planted the first commercial strawberry operation on Vashon Island in the early 1890s. By 1896, he was harvesting 6,120 pounds per acre from his three-acre farm, launching the island's signature agricultural industry that would ship 120,000 crates annually by 1909.",
-      "period": "Active ~1893–1896",
-      "related_entries": [
-        "gro-009"
-      ]
-    },
-    {
-      "id": "person-041",
-      "type": "person",
-      "title": "Howard C. Stone",
-      "text": "Howard C. Stone historical figure Built the two-story Burton Masonic Hall for the Woodmen of the World fraternal order in 1894, the island's first fraternal building. The hall is now a designated King County landmark.",
-      "period": "Active 1894",
-      "related_entries": [
-        "gro-007"
-      ]
-    },
-    {
-      "id": "person-042",
-      "type": "person",
-      "title": "J.E. Mace",
-      "text": "J.E. Mace historical figure Discovered bags of smuggled opium on a Vashon Island beach in 1895 and reported his find to the Seattle Customs Office. Received $175 by court order for turning in the opium, revealing the island's position along Pacific Northwest maritime smuggling routes.",
-      "period": "Active 1895",
-      "related_entries": [
-        "gro-008"
-      ]
-    },
-    {
-      "id": "person-043",
-      "type": "person",
-      "title": "Asa Start",
-      "text": "Asa Start writer Neighbor of J.E. Mace, on whose property Mace buried smuggled opium found on the beach in 1895 before reporting it to government authorities.",
-      "period": "Active 1895",
-      "related_entries": [
-        "gro-008"
-      ]
-    },
-    {
-      "id": "person-044",
-      "type": "person",
-      "title": "J.T. Thompson",
-      "text": "J.T. Thompson historical figure The first telephone line on Vashon Island ran half a mile between the local newspaper office and the J.T. Thompson household in 1891 -- little more than an acoustic wire system.",
-      "period": "Active 1891",
-      "related_entries": [
-        "gro-011"
-      ]
-    },
-    {
-      "id": "person-045",
-      "type": "person",
-      "title": "Frances Sherman",
-      "text": "Frances Sherman logger Ran a sawmill in Paradise Valley and won a contract to supply lumber for the Luna Park amusement park at Alki Point. Part of the island's active lumber industry during the growth era.",
-      "period": "Active ~1890s–1900s",
-      "related_entries": [
-        "gro-012"
-      ]
-    },
-    {
-      "id": "person-046",
-      "type": "person",
-      "title": "Helmar Steen",
-      "text": "Helmar Steen business owner Founded the Steen Mill and built a logging railroad along what is now Cove Road. His mill provided his home with an early luxury -- electric light -- before the island's formal electrification in 1913.",
-      "period": "Active ~1902 onward",
-      "related_entries": [
-        "gro-012"
-      ]
-    },
-    {
-      "id": "person-047",
-      "type": "person",
-      "title": "Mark Twain",
-      "text": "Mark Twain writer Reportedly among the notable speakers at the Puget Sound Chautauqua Assembly at Tramp Harbor on Vashon Island, which featured a 1,200-seat pavilion and drew audiences from across the region.",
-      "period": "Reportedly spoke at Vashon Chautauqua, late 1800s–early 1900s",
-      "related_entries": [
-        "gro-004"
-      ]
-    },
-    {
-      "id": "person-048",
-      "type": "person",
-      "title": "Theodore Roosevelt",
-      "text": "Theodore Roosevelt historical figure Reportedly among the notable speakers at the Puget Sound Chautauqua Assembly at Tramp Harbor on Vashon Island, reflecting the assembly's national cultural significance.",
-      "period": "Reportedly spoke at Vashon Chautauqua, early 1900s",
-      "related_entries": [
-        "gro-004"
-      ]
-    },
-    {
-      "id": "person-049",
-      "type": "person",
-      "title": "Denichiro Mukai",
-      "text": "Denichiro Mukai farmer Developed a renowned strawberry barreling method that concentrated flavor and moisture. Built a cold-process fruit barreling plant in 1926. His farmstead, listed on the National Register of Historic Places in 1994, is now a heritage site. Was among those forcibly interned during WWII.",
-      "period": "Arrived 1910; active through 1942 (internment)",
-      "related_entries": [
-        "ear-001",
-        "ear-012",
-        "mod-007",
-        "ww2-001"
-      ]
-    },
-    {
-      "id": "person-050",
-      "type": "person",
-      "title": "Kuni Mukai",
-      "text": "Kuni Mukai historical figure Designed and installed the formal Japanese stroll garden at Mukai Farm in the 1930s -- the only known Japanese garden of that era designed by a woman. Self-exiled to Oregon with the family during WWII to avoid internment. Returned to Vashon after the war and resumed farming.",
-      "period": "Active 1920s–1990s",
-      "related_entries": [
-        "ear-012",
-        "mod-007",
-        "ww2-003",
-        "ww2-006"
-      ]
-    },
-    {
-      "id": "person-051",
-      "type": "person",
-      "title": "Masahiro (Masa) Mukai",
-      "text": "Masahiro (Masa) Mukai farmer Because his parents could not own land under Washington's 1921 Alien Land Law, the family purchased 40 acres in Masa's name in 1926. Designed the cold-process fruit barreling plant as a teenager. Received advance warning of internment from a military friend and moved his family to eastern Oregon, making them the only Vashon Japanese Americans to avoid the concentration camps. Invented his own seed harvester in Oregon. Returned to Vashon after the war.",
-      "period": "Born 1911 on Vashon Island; active through 1990s",
-      "related_entries": [
-        "ear-012",
-        "ww2-003",
-        "ww2-006"
-      ]
-    },
-    {
-      "id": "person-052",
-      "type": "person",
-      "title": "Deb Harrington",
-      "text": "Deb Harrington historical figure Constructed the Mukai Cold Process Fruit Barreling Plant in 1926, a one-story wood-frame building designed by young Masahiro Mukai. The plant is now a King County landmark and National Register site.",
-      "period": "Active 1926",
-      "related_entries": [
-        "ear-012"
-      ]
-    },
-    {
-      "id": "person-053",
-      "type": "person",
-      "title": "Melissa Jaynes",
-      "text": "Melissa Jaynes farmer Crowned Vashon's first Strawberry Queen in 1923 at the age of 101, during the annual Strawberry Festival that celebrated the island's booming berry industry.",
-      "period": "Active 1923",
-      "related_entries": [
-        "ear-005"
-      ]
-    },
-    {
-      "id": "person-054",
-      "type": "person",
-      "title": "Lewis Cass Beall Sr",
-      "text": "Lewis Cass Beall Sr business owner Founded the Harrington-Beall Greenhouse Company on a 23-acre site southeast of Vashon's business center. The business grew into the nation's largest grower of roses and an orchid establishment of international renown, operating for 101 years.",
-      "period": "Active from ~1888",
-      "related_entries": [
-        "ear-004"
-      ]
-    },
-    {
-      "id": "person-055",
-      "type": "person",
-      "title": "Tom Beall Jr",
-      "text": "Tom Beall Jr business owner Partnered in the Harrington-Beall Greenhouse Company, growing it into a 150,000-square-foot operation with over 50 greenhouses. By 1923, it was the island's largest employer with 25 to 30 year-round workers. During WWII, rare orchids from England were shipped to the Vashon greenhouses for safekeeping.",
-      "period": "Active early–mid 20th century",
-      "related_entries": [
-        "ear-004"
-      ]
-    },
-    {
-      "id": "person-056",
-      "type": "person",
-      "title": "Charles A. Cook",
-      "text": "Charles A. Cook community leader Platted the Magnolia Beach resort community on Vashon Island in 1902, part of the island's flourishing summer tourism industry that drew over 8,000 visitors per season from Tacoma by 1915.",
-      "period": "Active 1902–1920s",
-      "related_entries": [
-        "ear-008"
-      ]
-    },
-    {
-      "id": "person-057",
-      "type": "person",
-      "title": "G.A. Collins",
-      "text": "G.A. Collins government official Built a steam electric generating plant at Ellisport, bringing the first electric lights to Vashon Island. The system was inaugurated on November 24, 1913, with Governor Ernest Lister pressing the button.",
-      "period": "Active 1913",
-      "related_entries": [
-        "ear-007"
-      ]
-    },
-    {
-      "id": "person-058",
-      "type": "person",
-      "title": "Ernest Lister",
-      "text": "Ernest Lister government official Inaugurated the Vashon Island electrical system on November 24, 1913, by pressing the button that activated G.A. Collins's steam electric plant at Ellisport.",
-      "period": "Active 1913",
-      "related_entries": [
-        "ear-007"
-      ]
-    },
-    {
-      "id": "person-059",
-      "type": "person",
-      "title": "Ruth A. Brown",
-      "text": "Ruth A. Brown historical figure Founded Camp Sealth in 1920, the first permanent resident camp for girls in Washington State. The camp began on Blake Island and moved to a 150-acre site on Vashon Island's southwest corner in 1921. It has operated for over 100 continuous summers and expanded to nearly 400 acres.",
-      "period": "Active 1920–1921",
-      "related_entries": [
-        "ear-010"
-      ]
-    },
-    {
-      "id": "person-060",
-      "type": "person",
-      "title": "Louis Modaranga",
-      "text": "Louis Modaranga historical figure Attacked on the night of May 12, 1930, by four white men while employed at the Steen Mill box factory in Ellisport. Despite testimony that the assault was provoked, Modaranga was charged with felony assault while none of his attackers were arrested. His case exemplified the anti-Filipino violence faced by farmworkers during the Great Depression.",
-      "period": "Active 1930",
-      "related_entries": [
-        "ear-013"
-      ]
-    },
-    {
-      "id": "person-061",
-      "type": "person",
-      "title": "Oliver Scott Van Olinda (also Oliver Van Olinda)",
-      "text": "Oliver Scott Van Olinda (also Oliver Van Olinda) historian Became the community's first historian, documenting early island life and settlement patterns. Taught stenography and typing on the founding faculty of Vashon College and also edited the weekly Vashon Island Press. Described the first automobiles arriving on the island in 1907 as \"the most powerful influence\" on island life alongside the telephone.",
-      "period": "1890s onward",
-      "related_entries": [
-        "ear-011",
-        "gro-005",
-        "pio-003"
-      ]
-    },
-    {
-      "id": "person-062",
-      "type": "person",
-      "title": "Heisuke Matsuda",
-      "text": "Heisuke Matsuda farmer Farmed strawberries on Vashon Island with his wife Mitsuno. Father of Mary Matsuda Gruenewald and Yoneichi Matsuda. Forcibly removed from the island on May 16, 1942, and sent to internment camps.",
-      "period": "Active from 1927; forcibly removed 1942",
-      "related_entries": [
-        "mod-010",
-        "ww2-002"
-      ]
-    },
-    {
-      "id": "person-063",
-      "type": "person",
-      "title": "Mitsuno Matsuda",
-      "text": "Mitsuno Matsuda farmer Strawberry farmer on Vashon Island. Mother of Mary Matsuda Gruenewald and Yoneichi Matsuda. Forcibly removed from the island and interned during WWII. Her family's story is told in her daughter's memoir \"Looking Like the Enemy.\"",
-      "period": "Active from 1927; forcibly removed 1942",
-      "related_entries": [
-        "mod-010",
-        "ww2-002"
-      ]
-    },
-    {
-      "id": "person-064",
-      "type": "person",
-      "title": "Yoneichi Matsuda",
-      "text": "Yoneichi Matsuda military Volunteered from Heart Mountain internment camp to serve in the U.S. Army's 442nd Regimental Combat Team, the most decorated unit for its size and length of service in U.S. military history. His family had farmed strawberries on Vashon Island since 1927.",
-      "period": "Active 1940s",
-      "related_entries": [
-        "mod-010",
-        "ww2-002",
-        "ww2-005"
-      ]
-    },
-    {
-      "id": "person-065",
-      "type": "person",
-      "title": "Mary Matsuda Gruenewald",
-      "text": "Mary Matsuda Gruenewald educator Published \"Looking Like the Enemy: My Story of Imprisonment in Japanese American Internment Camps\" in 2005 at age 80, preserving the story of Vashon's Japanese American community. Enrolled in the U.S. Cadet Nurse Corps during the war. In 2017, Vashon Island High School retroactively awarded her the diploma she was denied when internment cut short her education.",
-      "period": "Born 1925 on Vashon Island; died 2021",
-      "related_entries": [
-        "mod-010",
-        "ww2-002",
-        "ww2-005"
-      ]
-    },
-    {
-      "id": "person-066",
-      "type": "person",
-      "title": "Chiyeko Mukai",
-      "text": "Chiyeko Mukai historical figure Self-exiled with her husband Masa from Vashon to Dead Ox Flat, Oregon, in March 1942 to avoid internment, as she had relatives in eastern Oregon. One of only four Mukai family members who avoided the concentration camps.",
-      "period": "Active 1940s",
-      "related_entries": [
-        "ww2-003"
-      ]
-    },
-    {
-      "id": "person-067",
-      "type": "person",
-      "title": "Milton Mukai",
-      "text": "Milton Mukai historical figure Accompanied his parents and grandmother Kuni when the Mukai family self-exiled from Vashon Island to Dead Ox Flat, Oregon, in March 1942. One of the four Mukai family members who avoided internment.",
-      "period": "Active 1940s",
-      "related_entries": [
-        "ww2-003"
-      ]
-    },
-    {
-      "id": "person-068",
-      "type": "person",
-      "title": "John Cherberg",
-      "text": "John Cherberg government official Made the procedural ruling on March 12, 1959, that effectively killed the most serious Vashon Island bridge proposal in history. Ruled that the House bill had broadened the original scope and must return to committee. A vote to override his ruling failed 21 to 28, and the bridge was never built.",
-      "period": "Active 1959",
-      "related_entries": [
-        "fer-003"
-      ]
-    },
-    {
-      "id": "person-069",
-      "type": "person",
-      "title": "Fred Eernisse",
-      "text": "Fred Eernisse artist Co-founded the Vashon Arts League in 1949 with Norman Edson and Art Hansen, which became the oldest private nonprofit community arts organization in Washington State. The organization eventually grew into Vashon Center for the Arts.",
-      "period": "Active 1949 onward",
-      "related_entries": [
-        "fer-004"
-      ]
-    },
-    {
-      "id": "person-070",
-      "type": "person",
-      "title": "Norman Edson",
-      "text": "Norman Edson artist Co-founded the Vashon Arts League in 1949, showing art created by islanders. The organization received 501(c)(3) status in 1966 and became the island's largest nonprofit arts institution.",
-      "period": "Active 1949 onward",
-      "related_entries": [
-        "fer-004"
-      ]
-    },
-    {
-      "id": "person-071",
-      "type": "person",
-      "title": "Art Hansen",
-      "text": "Art Hansen artist Co-founded the Vashon Arts League in 1949 with Fred Eernisse and Norman Edson, establishing the institutional foundation for the island's arts community.",
-      "period": "Active 1949 onward",
-      "related_entries": [
-        "fer-004"
-      ]
-    },
-    {
-      "id": "person-072",
-      "type": "person",
-      "title": "Shirley Speidel",
-      "text": "Shirley Speidel community leader Helped revitalize the Vashon arts organization, finding a permanent home in the old Boy Scout Cabin at Ober Park. Instrumental in the organization receiving its 501(c)(3) nonprofit status in 1966 as Vashon Associated Arts.",
-      "period": "Active 1960s",
-      "related_entries": [
-        "fer-004"
-      ]
-    },
-    {
-      "id": "person-073",
-      "type": "person",
-      "title": "Tony Grant",
-      "text": "Tony Grant logger A 17-year-old who was held down by three loggers who forcibly cut his hair during the cultural tensions surrounding the counterculture influx to Vashon Island around 1970. The incident exemplified the friction between long-time residents and the incoming counterculture movement.",
-      "period": "Active ~1970",
-      "related_entries": [
-        "fer-005"
-      ]
-    },
-    {
-      "id": "person-074",
-      "type": "person",
-      "title": "Bill Kirschner",
-      "text": "Bill Kirschner business owner University of Washington engineering graduate who pioneered fiberglass ski technology. Experimented in his grandfather Otto's garage on Vashon Island before perfecting a wet-wrap fiberglass process in 1961. Co-founded K2 Corporation with his brother Don in 1962. The company became the island's largest private employer with approximately 750 workers at its peak.",
-      "period": "Active 1950s–1960s",
-      "related_entries": [
-        "mod-003"
-      ]
-    },
-    {
-      "id": "person-075",
-      "type": "person",
-      "title": "Don Kirschner",
-      "text": "Don Kirschner business owner Co-founded K2 Corporation on Vashon Island with his brother Bill in 1962, named for both the world's second-highest mountain and the two Kirschner brothers. The company revolutionized the ski industry with fiberglass technology.",
-      "period": "Active 1962 onward",
-      "related_entries": [
-        "mod-003"
-      ]
-    },
-    {
-      "id": "person-076",
-      "type": "person",
-      "title": "Otto Kirschner",
-      "text": "Otto Kirschner historical figure His garage on Vashon Island served as the original workshop where Bill Kirschner experimented with fiberglass ski prototypes in the 1950s, leading to the founding of K2 Corporation.",
-      "period": "Active mid-20th century",
-      "related_entries": [
-        "mod-003"
-      ]
-    },
-    {
-      "id": "person-077",
-      "type": "person",
-      "title": "Jim Stewart",
-      "text": "Jim Stewart business owner Moved his coffee roasting operation to Vashon Island in 1982, purchasing a historic building in the town of Vashon. After winning a regional tasting competition, the company changed its name from Stewart Brothers Coffee to Seattle's Best Coffee. Starbucks acquired SBC in 2003 and closed the Vashon facility. The building was later reopened as The Vashon Island Coffee Roasterie.",
-      "period": "Active 1982 onward",
-      "related_entries": [
-        "mod-004"
-      ]
-    },
-    {
-      "id": "person-078",
-      "type": "person",
-      "title": "Lawrence Matsuda",
-      "text": "Lawrence Matsuda artist Collaborated with artist Roger Shimomura on the \"Nisei Trilogy,\" a collaborative artwork depicting the Japanese American wartime experience, which is on permanent display in the Mukai house on Vashon Island.",
-      "period": "Active 1990s onward",
-      "related_entries": [
-        "mod-007"
-      ]
-    },
-    {
-      "id": "person-079",
-      "type": "person",
-      "title": "Roger Shimomura",
-      "text": "Roger Shimomura artist Collaborated with poet Lawrence Matsuda on the \"Nisei Trilogy,\" a collaborative artwork depicting the Japanese American wartime experience, on permanent display at Mukai Farm and Garden on Vashon Island.",
-      "period": "Active 1990s onward",
-      "related_entries": [
-        "mod-007"
-      ]
-    },
-    {
-      "id": "person-080",
-      "type": "person",
-      "title": "Berkeley Breathed",
-      "text": "Berkeley Breathed writer Wrote the children's book \"Red Ranger Came Calling,\" inspired by Vashon Island's iconic \"Bike in the Tree\" landmark -- a bicycle gradually absorbed by a growing fir tree since the 1950s.",
-      "period": "Book published 1997",
-      "related_entries": [
-        "mod-011"
-      ]
-    },
-    {
-      "id": "person-081",
-      "type": "person",
-      "title": "Don Puz",
-      "text": "Don Puz historical figure Original owner of the red bicycle that became the iconic \"Bike in the Tree\" landmark. After a devastating house fire killed his father in 1954, neighbors donated the bicycle to young Don. He left it leaning against a small fir tree, which gradually grew around it over the decades.",
-      "period": "Active 1954 onward",
-      "related_entries": [
-        "mod-011"
-      ]
-    },
-    {
-      "id": "person-082",
-      "type": "person",
-      "title": "Jeff Ammon",
-      "text": "Jeff Ammon historical figure Maintained the \"Bike in the Tree\" landmark by replacing handlebars and wheels when vandals stripped them, helping preserve one of the island's most quirky and beloved attractions.",
-      "period": "Active late 20th century",
-      "related_entries": [
-        "mod-011"
-      ]
-    },
-    {
-      "id": "person-083",
-      "type": "person",
-      "title": "Sharon Nelson",
-      "text": "Sharon Nelson historical figure Founded Preserve Our Islands, the grassroots organization that led the 13-year fight against Glacier Northwest's proposed gravel mine expansion on Maury Island. The battle ended in 2010 when King County purchased the 200-acre site for $36 million, creating a new county park.",
-      "period": "Active 1998–2010",
-      "related_entries": [
-        "mod-008"
-      ]
-    },
-    {
-      "id": "person-084",
-      "type": "person",
-      "title": "Dow Constantine",
-      "text": "Dow Constantine historical figure Completed the purchase of the Glacier Northwest gravel mine site on Maury Island on December 30, 2010, for $36 million. The 200-acre parcel became a county park, protecting a mile of shoreline and over 200 acres of madrone forest.",
-      "period": "Active 2010",
-      "related_entries": [
-        "mod-008"
-      ]
-    },
-    {
-      "id": "person-085",
-      "type": "person",
-      "title": "Jim Bristow",
-      "text": "Jim Bristow community leader Led the Vashon Medical Reserve Corps (VMRC) in a volunteer-driven pandemic response that achieved the lowest COVID-19 case rate in King County. The program delivered over 19,000 vaccine doses, conducted 7,500+ PCR tests, and was recognized by the New York Times as a model for rural communities.",
-      "period": "Active 2020–2022",
-      "related_entries": [
-        "mod-012"
-      ]
-    },
-    {
-      "id": "person-093",
-      "type": "person",
-      "title": "Glenda Pearson",
-      "text": "Glenda Pearson community leader Longtime Vashon Island community organizer and advocate for rural character preservation. Active in land use planning debates that shaped the island's identity as a haven for artists and small-scale agriculture rather than suburban development.",
-      "period": "Active 1980s–2000s",
-      "related_entries": []
-    },
-    {
-      "id": "person-094",
-      "type": "person",
-      "title": "Betty MacDonald",
-      "text": "Betty MacDonald writer Author of 'The Egg and I' (1945), a humorous memoir of rural life that became a bestseller and inspired the Ma and Pa Kettle film series. While set on the Olympic Peninsula, MacDonald later lived on Vashon Island with her second husband, Donald MacDonald, in the 1940s-50s. Her presence contributed to Vashon's literary reputation.",
-      "period": "Active on Vashon 1940s–1958",
-      "related_entries": []
-    },
-    {
-      "id": "person-095",
-      "type": "person",
-      "title": "Jean Findlay",
-      "text": "Jean Findlay community leader Founding member of the Vashon-Maury Island Heritage Association (later Vashon Heritage Museum). Instrumental in preserving island historical records, oral histories, and artifacts. Led early efforts to document pioneer-era structures before they were lost.",
-      "period": "Active 1970s–1990s",
-      "related_entries": []
-    },
-    {
-      "id": "person-096",
-      "type": "person",
-      "title": "Bruce Haulman",
-      "text": "Bruce Haulman historian Vashon Island's preeminent modern historian and author. Creator of vashonhistory.com, the most comprehensive online resource for island history. Author of multiple books on Vashon history and regular columnist for the Vashon-Maury Island Beachcomber. His work has made island history accessible to researchers and the general public.",
-      "period": "Active 1990s–present",
-      "related_entries": []
-    },
-    {
-      "id": "person-097",
-      "type": "person",
-      "title": "Rayna Holtz",
-      "text": "Rayna Holtz farmer Pioneer of the organic farming movement on Vashon Island. Helped establish the Vashon Island Growers Association and the Saturday Farmers Market, which became central to the island's identity as an organic agriculture community. Part of the back-to-the-land movement that drew young farmers to the island in the 1970s-80s.",
-      "period": "Active 1970s–2000s",
-      "related_entries": []
-    },
-    {
-      "id": "person-098",
-      "type": "person",
-      "title": "John de Groen",
-      "text": "John de Groen business owner Co-founder and early leader of K2 Corporation alongside the Kirschner family. Helped transform K2 from a small island ski manufacturer into a major sporting goods company. K2 became Vashon's largest employer and its economic anchor for decades.",
-      "period": "Active 1960s–1980s",
-      "related_entries": []
-    },
-    {
-      "id": "person-099",
-      "type": "person",
-      "title": "Norie Sato",
-      "text": "Norie Sato artist Japanese American artist based on Vashon Island, known for large-scale public art installations throughout the Pacific Northwest. Her work explores themes of memory, landscape, and cultural identity. Recipient of numerous public art commissions including works for Sound Transit and the Seattle Art Museum.",
-      "period": "Active 1990s–present",
-      "related_entries": []
-    },
-    {
-      "id": "person-100",
-      "type": "person",
-      "title": "Kara Jones",
-      "text": "Kara Jones artist Vashon Island poet and publisher. Founded Soulstice Press, a small literary press based on the island. Representative of the vibrant independent publishing and poetry community that flourished on Vashon from the 1990s onward.",
-      "period": "Active 1990s–present",
-      "related_entries": []
-    },
-    {
-      "id": "person-101",
-      "type": "person",
-      "title": "Henning Sehmsdorf",
-      "text": "Henning Sehmsdorf educator Professor Emeritus at University of Washington and Vashon Island organic farmer. Co-founded the S&S Homestead Farm on Vashon, a model for sustainable biodynamic agriculture. Author of works on sustainable farming practices. His farm became an educational center for regenerative agriculture.",
-      "period": "Active 1980s–present",
-      "related_entries": []
-    },
-    {
-      "id": "person-102",
-      "type": "person",
-      "title": "Elizabeth Simpson",
-      "text": "Elizabeth Simpson educator Co-founder of S&S Homestead Farm on Vashon Island with Henning Sehmsdorf. Together they developed one of the Pacific Northwest's premier demonstrations of biodynamic and sustainable farming practices, hosting workshops and educational programs for decades.",
-      "period": "Active 1980s–present",
-      "related_entries": []
-    },
-    {
-      "id": "person-103",
-      "type": "person",
-      "title": "Captain Alexander M. Peabody",
-      "text": "Captain Alexander M. Peabody business owner President of the Black Ball Line (Puget Sound Navigation Company), which operated ferry service to Vashon Island before state takeover. His contentious relationship with the Washington Toll Bridge Authority over fares and subsidies led to the dramatic 1951 state purchase of the Black Ball fleet, creating Washington State Ferries.",
-      "period": "Active 1930s–1951",
-      "related_entries": []
-    },
-    {
-      "id": "person-104",
-      "type": "person",
-      "title": "Alex Anderson",
-      "text": "Alex Anderson community leader Chairman of the Vashon Island anti-bridge committee in the late 1950s. Led the successful grassroots campaign that defeated the 1959 proposal to build a bridge connecting Vashon to the mainland. The campaign's victory preserved the island's rural character and ferry-dependent identity.",
-      "period": "Active late 1950s",
-      "related_entries": []
-    },
-    {
-      "id": "person-105",
-      "type": "person",
-      "title": "Leschi's Wife (Mary)",
-      "text": "Leschi's Wife (Mary) historical figure Wife of Chief Leschi of the Nisqually. During the Puget Sound War, she and other family members were among those displaced by the conflict. Her story represents the broader experience of indigenous women and families during the treaty era and forced relocations.",
-      "period": "Active 1850s",
-      "related_entries": []
-    },
-    {
-      "id": "person-106",
-      "type": "person",
-      "title": "William Tolmie",
-      "text": "William Tolmie business owner Chief Factor at the Hudson's Bay Company's Fort Nisqually from 1843. Managed the Puget Sound Agricultural Company, which ran livestock operations that competed with American settlers for land. His presence and the HBC's claims complicated early American settlement patterns around Vashon Island.",
-      "period": "Active 1843–1860s",
-      "related_entries": []
-    },
-    {
-      "id": "person-107",
-      "type": "person",
-      "title": "Lucy Gerand",
-      "text": "Lucy Gerand indigenous leader Puyallup woman and vital historical witness to pre-settlement Vashon Island life. Interviewed by anthropologist T.T. Waterman in the 1920s, she provided detailed accounts of traditional place names, village sites, and seasonal resource gathering patterns of the sx̌ʷəbabš (S'Homamish) people on Vashon and Maury Islands. Her testimony remains one of the most important primary sources for understanding indigenous lifeways on the island.",
-      "period": "Early 1800s–1929",
-      "related_entries": []
-    },
-    {
-      "id": "person-108",
-      "type": "person",
-      "title": "Captain Gertrude Wiman",
-      "text": "Captain Gertrude Wiman historical figure First woman licensed as a steamship pilot on Puget Sound, earning her license around 1907. Commanded vessels on the Mosquito Fleet routes that served Vashon Island, breaking gender barriers in the maritime industry at a time when women captains were virtually unheard of. Her achievement reflected the independent spirit of island communities that depended on these small ferry operators.",
-      "period": "Active ~1907",
-      "related_entries": []
-    },
-    {
-      "id": "person-109",
-      "type": "person",
-      "title": "Marjorie Rose Stanley",
-      "text": "Marjorie Rose Stanley historian Vashon Island historian who spent over 60 years documenting island history. Published the first 'History of Vashon Island' in 1926 and later serialized an expanded version in the Vashon-Maury Island Beachcomber in 1967. Her work preserved the oral histories and pioneer stories that might otherwise have been lost, forming a foundation for later historians.",
-      "period": "Active 1920s–1980s",
-      "related_entries": []
-    },
-    {
-      "id": "person-110",
-      "type": "person",
-      "title": "Bill Moyer",
-      "text": "Bill Moyer community leader Fourth-generation Washingtonian and Vashon Island resident who founded the Backbone Campaign in 2003. Pioneered 'artful activism' combining creative arts with environmental and social justice advocacy. Led campaigns including opposition to Lower Snake River dams for salmon and orca protection. His annual Action Camp on Vashon became a national model for activist training.",
-      "period": "Active 2003–present",
-      "related_entries": []
-    },
-    {
-      "id": "person-111",
-      "type": "person",
-      "title": "Alfred J. Stuckey",
-      "text": "Alfred J. Stuckey business owner Superintendent of the Martinolich Shipyard (Dockton Dry Dock) on Quartermaster Harbor from its founding through 1909. Oversaw construction of numerous vessels including steam launches and small freighters. Under his management, the yard employed over 80 workers and became one of the most important maritime industrial operations on Puget Sound.",
-      "period": "Active 1892–1909",
-      "related_entries": []
-    },
-    {
-      "id": "person-112",
-      "type": "person",
-      "title": "John A. Martinolich",
-      "text": "John A. Martinolich business owner Croatian-born shipbuilder known as the 'King of Purse Seiners' in the 1920s. Operated the Martinolich Shipyard at Dockton on Quartermaster Harbor, building and repairing vessels for the Puget Sound fishing fleet. His yard attracted a community of Croatian workers, creating a distinctive ethnic enclave at Dockton that influenced the island's cultural diversity.",
-      "period": "Active 1910s–1940s",
-      "related_entries": []
-    },
-    {
-      "id": "person-113",
-      "type": "person",
-      "title": "Mary Bridges",
-      "text": "Mary Bridges historical figure Wife of Mathew Bridges, the first European-American homesteader on Vashon Island (1865). Believed to have been of Duwamish descent, representing one of the earliest examples of intermarriage between settlers and indigenous peoples on the island. Her presence highlights the complex relationships between indigenous and settler communities in the earliest days of homesteading.",
-      "period": "Active 1860s–1870s",
-      "related_entries": []
-    },
-    {
-      "id": "person-114",
-      "type": "person",
-      "title": "Homer Hadley",
-      "text": "Homer Hadley historical figure Engineer and bridge designer who proposed a cross-sound bridge connecting Vashon Island to the mainland in the 1930s. Known for designing the Mercer Island floating bridge (Lacey V. Murrow Memorial Bridge). His Vashon bridge proposal sparked decades of debate about the island's future character — whether to remain ferry-dependent and rural or become connected and suburban.",
-      "period": "Active 1930s–1950s",
-      "related_entries": []
-    },
-    {
-      "id": "person-115",
-      "type": "person",
-      "title": "Sakai Family",
-      "text": "Sakai Family farmer One of several prominent Japanese American farming families on Vashon Island who cultivated strawberries and other crops from the early 1900s through 1942. Like the Mukai and Matsuda families, the Sakais were forcibly removed during Executive Order 9066 and sent to internment camps. Their farms were never fully recovered after the war.",
-      "period": "Active early 1900s–1942",
-      "related_entries": []
-    },
-    {
-      "id": "person-116",
-      "type": "person",
-      "title": "Hoshi Family",
-      "text": "Hoshi Family farmer Japanese American farming family on Vashon Island who were part of the thriving agricultural community that made the island one of the leading strawberry producers in Washington state. Forcibly removed during the 1942 internment of Japanese Americans, their story is part of the broader narrative of loss and resilience that shaped the island's WWII history.",
-      "period": "Active early 1900s–1942",
-      "related_entries": []
-    },
-    {
-      "id": "person-117",
-      "type": "person",
-      "title": "Bill Knox",
-      "text": "Bill Knox artist Vashon-based artist, designer, and engineer who created the iconic color schemes for K2 skis and built the original prototype for the K2 ski boot. As a painter he specialized in watercolor landscapes and wildlife, with work selected for U.S. postage stamps. His combination of artistic talent and engineering skill was central to K2's distinctive visual identity during its growth years.",
-      "period": "Active 1960s–1990s",
-      "related_entries": []
-    },
-    {
-      "id": "person-118",
-      "type": "person",
-      "title": "Peter Manson",
-      "text": "Peter Manson business owner Named the village of Dockton on Quartermaster Harbor, noting the dry dock facility could 'dock a ton of boats.' Later founded a pile driving company that became Manson Construction, which grew into a major marine construction firm that still operates today. His entrepreneurship at Dockton exemplified the industrial ambition that characterized Vashon's growth era.",
-      "period": "Active 1890s–1920s",
-      "related_entries": []
-    },
-    {
-      "id": "person-119",
-      "type": "person",
-      "title": "August M. Takatsuka",
-      "text": "August M. Takatsuka farmer Vashon-born son of Japanese immigrant farmers who returned from military service in WWII to resume strawberry farming on the island. Later transitioned to Christmas tree cultivation in the 1970s. His persistence in farming after the devastation of internment represented the resilience of the Japanese American agricultural community on Vashon.",
-      "period": "Active 1945–1980s",
-      "related_entries": []
-    },
-    {
-      "id": "person-120",
-      "type": "person",
-      "title": "Sato Mukai",
-      "text": "Sato Mukai historical figure First wife of Denichiro Mukai, who died in 1921. Her death preceded the family's land purchase in their American-born son Masa's name in 1926, a legal strategy necessitated by the Washington State Alien Land Law that barred Japanese immigrants from owning property.",
-      "period": "Active 1910–1921",
-      "related_entries": []
-    },
-    {
-      "id": "place-001",
-      "type": "place",
-      "title": "Vashon Island",
-      "text": "Vashon Island island Referenced in 86 timeline entries spanning early-20th-century, exploration, growth-industry, indigenous, logging-treaty, modern, pioneer, prehistory, state-ferry, wwii eras.",
-      "related_entries": [
-        "ear-001",
-        "ear-002",
-        "ear-003",
-        "ear-004",
-        "ear-005",
-        "ear-006",
-        "ear-007",
-        "ear-008",
-        "ear-009",
-        "ear-010",
-        "ear-011",
-        "ear-012",
-        "ear-013",
-        "ear-014",
-        "exp-001",
-        "exp-005",
-        "exp-007",
-        "fer-001",
-        "fer-002",
-        "fer-003",
-        "fer-004",
-        "fer-005",
-        "gro-001",
-        "gro-003",
-        "gro-004",
-        "gro-005",
-        "gro-006",
-        "gro-007",
-        "gro-008",
-        "gro-009",
-        "gro-010",
-        "gro-011",
-        "gro-012",
-        "ind-001",
-        "ind-002",
-        "ind-003",
-        "ind-004",
-        "ind-005",
-        "ind-006",
-        "ind-007",
-        "ind-008",
-        "log-001",
-        "log-002",
-        "log-003",
-        "log-004",
-        "log-005",
-        "log-006",
-        "mod-001",
-        "mod-002",
-        "mod-003",
-        "mod-004",
-        "mod-005",
-        "mod-006",
-        "mod-007",
-        "mod-009",
-        "mod-010",
-        "mod-011",
-        "mod-012",
-        "pio-001",
-        "pio-002",
-        "pio-004",
-        "pio-005",
-        "pio-006",
-        "pio-007",
-        "pio-008",
-        "pio-009",
-        "pio-010",
-        "pio-011",
-        "pio-012",
-        "pio-013",
-        "pre-001",
-        "pre-002",
-        "pre-003",
-        "pre-004",
-        "pre-005",
-        "pre-006",
-        "pre-007",
-        "pre-008",
-        "pre-009",
-        "ww2-001",
-        "ww2-002",
-        "ww2-003",
-        "ww2-004",
-        "ww2-005",
-        "ww2-006",
-        "ww2-007"
-      ]
-    },
-    {
-      "id": "place-002",
-      "type": "place",
-      "title": "Maury Island",
-      "text": "Maury Island island Referenced in 14 timeline entries spanning early-20th-century, exploration, growth-industry, indigenous, modern, pioneer, prehistory eras.",
-      "related_entries": [
-        "ear-002",
-        "ear-006",
-        "ear-009",
-        "exp-002",
-        "exp-007",
-        "gro-002",
-        "gro-003",
-        "ind-001",
-        "ind-002",
-        "mod-006",
-        "mod-008",
-        "pio-003",
-        "pre-001",
-        "pre-008"
-      ]
-    },
-    {
-      "id": "place-003",
-      "type": "place",
-      "title": "Puget Sound",
-      "text": "Puget Sound body-of-water Referenced in 19 timeline entries spanning exploration, indigenous, logging-treaty, modern, prehistory, wwii eras.",
-      "related_entries": [
-        "exp-001",
-        "exp-002",
-        "exp-003",
-        "exp-004",
-        "exp-005",
-        "exp-006",
-        "exp-007",
-        "ind-004",
-        "ind-005",
-        "ind-007",
-        "log-005",
-        "mod-008",
-        "pre-001",
-        "pre-003",
-        "pre-004",
-        "pre-007",
-        "pre-008",
-        "pre-009",
-        "ww2-004"
-      ]
-    },
-    {
-      "id": "place-004",
-      "type": "place",
-      "title": "Strait of Juan de Fuca",
-      "text": "Strait of Juan de Fuca waterway Referenced in 2 timeline entries spanning exploration, prehistory eras.",
-      "related_entries": [
-        "exp-003",
-        "pre-003"
-      ]
-    },
-    {
-      "id": "place-005",
-      "type": "place",
-      "title": "Colvos Passage",
-      "text": "Colvos Passage waterway Referenced in 3 timeline entries spanning early-20th-century, pioneer, state-ferry eras.",
-      "related_entries": [
-        "ear-010",
-        "fer-003",
-        "pio-009"
-      ]
-    },
-    {
-      "id": "place-006",
-      "type": "place",
-      "title": "Admiralty Inlet",
-      "text": "Admiralty Inlet body-of-water Referenced in 2 timeline entries spanning exploration eras.",
-      "related_entries": [
-        "exp-003",
-        "exp-004"
-      ]
-    },
-    {
-      "id": "place-007",
-      "type": "place",
-      "title": "Quartermaster Harbor",
-      "text": "Quartermaster Harbor harbor Referenced in 12 timeline entries spanning exploration, growth-industry, indigenous, pioneer, prehistory eras.",
-      "related_entries": [
-        "exp-007",
-        "gro-003",
-        "gro-007",
-        "gro-010",
-        "gro-012",
-        "ind-002",
-        "ind-003",
-        "ind-005",
-        "pio-004",
-        "pio-010",
-        "pio-012",
-        "pre-008"
-      ]
-    },
-    {
-      "id": "place-008",
-      "type": "place",
-      "title": "Tramp Harbor",
-      "text": "Tramp Harbor harbor Referenced in 2 timeline entries spanning growth-industry, pioneer eras.",
-      "related_entries": [
-        "gro-004",
-        "pio-008"
-      ]
-    },
-    {
-      "id": "place-009",
-      "type": "place",
-      "title": "Elliott Bay",
-      "text": "Elliott Bay body-of-water Referenced in the context of: Chinese Fishing Community Established at Manzanita (~1875)",
-      "related_entries": [
-        "pio-003"
-      ]
-    },
-    {
-      "id": "place-010",
-      "type": "place",
-      "title": "Commencement Bay",
-      "text": "Commencement Bay body-of-water Referenced in the context of: Peter Puget Surveys Southern Sound Past Vashon Island (1792-05-20)",
-      "related_entries": [
-        "exp-005"
-      ]
-    },
-    {
-      "id": "place-011",
-      "type": "place",
-      "title": "Nisqually River",
-      "text": "Nisqually River waterway Referenced in the context of: Hudson's Bay Company Establishes Fort Nisqually (1833)",
-      "related_entries": [
-        "exp-006"
-      ]
-    },
-    {
-      "id": "place-012",
-      "type": "place",
-      "title": "Kitsap Peninsula",
-      "text": "Kitsap Peninsula peninsula Referenced in 2 timeline entries spanning indigenous, state-ferry eras.",
-      "related_entries": [
-        "fer-003",
-        "ind-006"
-      ]
-    },
-    {
-      "id": "place-013",
-      "type": "place",
-      "title": "Blake Island",
-      "text": "Blake Island island Referenced in the context of: Camp Sealth Founded by Camp Fire Girls (1920)",
-      "related_entries": [
-        "ear-010"
-      ]
-    },
-    {
-      "id": "place-014",
-      "type": "place",
-      "title": "Fox Island",
-      "text": "Fox Island island Referenced in 3 timeline entries spanning exploration, logging-treaty eras.",
-      "related_entries": [
-        "exp-005",
-        "log-002",
-        "log-005"
-      ]
-    },
-    {
-      "id": "place-015",
-      "type": "place",
-      "title": "Judd Creek",
-      "text": "Judd Creek waterway Referenced in 2 timeline entries spanning modern, prehistory eras.",
-      "related_entries": [
-        "mod-006",
-        "pre-006"
-      ]
-    },
-    {
-      "id": "place-016",
-      "type": "place",
-      "title": "Shinglemill Creek",
-      "text": "Shinglemill Creek waterway Referenced in 2 timeline entries spanning modern, prehistory eras.",
-      "related_entries": [
-        "mod-006",
-        "pre-006"
-      ]
-    },
-    {
-      "id": "place-017",
-      "type": "place",
-      "title": "Whispering Firs Bog",
-      "text": "Whispering Firs Bog wetland Referenced in the context of: Vashon-Maury Island Land Trust Founded (1989)",
-      "related_entries": [
-        "mod-006"
-      ]
-    },
-    {
-      "id": "place-018",
-      "type": "place",
-      "title": "Gold Beach",
-      "text": "Gold Beach beach Referenced in the context of: Glacier Northwest Gravel Mine Controversy on Maury Island (1998)",
-      "related_entries": [
-        "mod-008"
-      ]
-    },
-    {
-      "id": "place-019",
-      "type": "place",
-      "title": "Dilworth Point",
-      "text": "Dilworth Point geographic-point Referenced in 2 timeline entries spanning growth-industry, pioneer eras.",
-      "related_entries": [
-        "gro-004",
-        "pio-008"
-      ]
-    },
-    {
-      "id": "place-020",
-      "type": "place",
-      "title": "Burton Acres",
-      "text": "Burton Acres geographic-area Referenced in the context of: Burton Acres Shell Midden Accumulation (~500 BCE)",
-      "related_entries": [
-        "ind-003"
-      ]
-    },
-    {
-      "id": "place-021",
-      "type": "place",
-      "title": "Burton Peninsula",
-      "text": "Burton Peninsula geographic-area Referenced in the context of: Sawmills and Steamer Routes Serve the Island Economy (~1890)",
-      "related_entries": [
-        "gro-012"
-      ]
-    },
-    {
-      "id": "place-022",
-      "type": "place",
-      "title": "Vashon",
-      "text": "Vashon settlement Referenced in the context of: Island Population Triples: 944 to 2,810 (1900)",
-      "related_entries": [
-        "ear-009"
-      ]
-    },
-    {
-      "id": "place-023",
-      "type": "place",
-      "title": "Town of Vashon",
-      "text": "Town of Vashon settlement Referenced in the context of: Frank Gorsuch Opens First Store in the Town of Vashon (1890)",
-      "related_entries": [
-        "pio-011"
-      ]
-    },
-    {
-      "id": "place-024",
-      "type": "place",
-      "title": "Burton",
-      "text": "Burton settlement Referenced in 8 timeline entries spanning early-20th-century, growth-industry, pioneer eras.",
-      "related_entries": [
-        "ear-009",
-        "ear-013",
-        "gro-003",
-        "gro-005",
-        "gro-007",
-        "gro-010",
-        "pio-010",
-        "pio-012"
-      ]
-    },
-    {
-      "id": "place-025",
-      "type": "place",
-      "title": "Dockton",
-      "text": "Dockton settlement Referenced in 3 timeline entries spanning early-20th-century, growth-industry eras.",
-      "related_entries": [
-        "ear-007",
-        "ear-009",
-        "gro-002"
-      ]
-    },
-    {
-      "id": "place-026",
-      "type": "place",
-      "title": "Center",
-      "text": "Center settlement Referenced in 3 timeline entries spanning early-20th-century, growth-industry, pioneer eras.",
-      "related_entries": [
-        "ear-011",
-        "gro-006",
-        "pio-013"
-      ]
-    },
-    {
-      "id": "place-027",
-      "type": "place",
-      "title": "Ellisport",
-      "text": "Ellisport settlement Referenced in 4 timeline entries spanning early-20th-century, growth-industry, pioneer eras.",
-      "related_entries": [
-        "ear-007",
-        "ear-013",
-        "gro-004",
-        "pio-005"
-      ]
-    },
-    {
-      "id": "place-028",
-      "type": "place",
-      "title": "Vashon Heights",
-      "text": "Vashon Heights settlement Referenced in the context of: First Paved Road and Automobile Era Transform the Island (1907)",
-      "related_entries": [
-        "ear-011"
-      ]
-    },
-    {
-      "id": "place-029",
-      "type": "place",
-      "title": "Manzanita",
-      "text": "Manzanita settlement Referenced in 2 timeline entries spanning growth-industry, pioneer eras.",
-      "related_entries": [
-        "gro-006",
-        "pio-003"
-      ]
-    },
-    {
-      "id": "place-030",
-      "type": "place",
-      "title": "Magnolia Beach",
-      "text": "Magnolia Beach beach Referenced in the context of: Spring Beach Resort and Summer Tourism Flourish (1905)",
-      "related_entries": [
-        "ear-008"
-      ]
-    },
-    {
-      "id": "place-031",
-      "type": "place",
-      "title": "Vashon Landing",
-      "text": "Vashon Landing settlement Referenced in 3 timeline entries spanning growth-industry, pioneer eras.",
-      "related_entries": [
-        "gro-003",
-        "pio-005",
-        "pio-009"
-      ]
-    },
-    {
-      "id": "place-032",
-      "type": "place",
-      "title": "Spring Beach",
-      "text": "Spring Beach beach Referenced in the context of: Spring Beach Resort and Summer Tourism Flourish (1905)",
-      "related_entries": [
-        "ear-008"
-      ]
-    },
-    {
-      "id": "place-033",
-      "type": "place",
-      "title": "Chautauqua Beach",
-      "text": "Chautauqua Beach beach Referenced in the context of: First Chautauqua Assembly on Puget Sound Held on Vashon (1885-08-03)",
-      "related_entries": [
-        "pio-008"
-      ]
-    },
-    {
-      "id": "place-034",
-      "type": "place",
-      "title": "Mileta",
-      "text": "Mileta settlement Referenced in the context of: Burton Emerges as the Island's Social and Commercial Center (1892)",
-      "related_entries": [
-        "gro-010"
-      ]
-    },
-    {
-      "id": "place-035",
-      "type": "place",
-      "title": "Portage",
-      "text": "Portage settlement Referenced in 3 timeline entries spanning early-20th-century eras.",
-      "related_entries": [
-        "ear-002",
-        "ear-003",
-        "ear-011"
-      ]
-    },
-    {
-      "id": "place-036",
-      "type": "place",
-      "title": "Paradise Valley",
-      "text": "Paradise Valley settlement Referenced in 2 timeline entries spanning growth-industry, state-ferry eras.",
-      "related_entries": [
-        "fer-005",
-        "gro-012"
-      ]
-    },
-    {
-      "id": "place-037",
-      "type": "place",
-      "title": "Paradise Ridge",
-      "text": "Paradise Ridge settlement Referenced in the context of: Nike Missile Base S-61 Established on Vashon Island (1953)",
-      "related_entries": [
-        "fer-002"
-      ]
-    },
-    {
-      "id": "place-038",
-      "type": "place",
-      "title": "Sunrise Ridge",
-      "text": "Sunrise Ridge settlement Referenced in the context of: Nike Missile Base S-61 Established on Vashon Island (1953)",
-      "related_entries": [
-        "fer-002"
-      ]
-    },
-    {
-      "id": "place-039",
-      "type": "place",
-      "title": "Oakwood Terrace",
-      "text": "Oakwood Terrace settlement Referenced in the context of: Nike Missile Base S-61 Established on Vashon Island (1953)",
-      "related_entries": [
-        "fer-002"
-      ]
-    },
-    {
-      "id": "place-040",
-      "type": "place",
-      "title": "Des Moines",
-      "text": "Des Moines settlement Referenced in the context of: First Auto Ferry to Vashon Island (1916)",
-      "related_entries": [
-        "ear-003"
-      ]
-    },
-    {
-      "id": "place-041",
-      "type": "place",
-      "title": "Seattle",
-      "text": "Seattle settlement Referenced in 2 timeline entries spanning logging-treaty, pioneer eras.",
-      "related_entries": [
-        "log-005",
-        "pio-009"
-      ]
-    },
-    {
-      "id": "place-042",
-      "type": "place",
-      "title": "Tacoma",
-      "text": "Tacoma settlement Referenced in 3 timeline entries spanning pioneer eras.",
-      "related_entries": [
-        "pio-003",
-        "pio-009",
-        "pio-010"
-      ]
-    },
-    {
-      "id": "place-043",
-      "type": "place",
-      "title": "Southworth",
-      "text": "Southworth settlement Referenced in the context of: Washington State Ferries Begins Service (1951-06-01)",
-      "related_entries": [
-        "fer-001"
-      ]
-    },
-    {
-      "id": "place-044",
-      "type": "place",
-      "title": "Tahlequah",
-      "text": "Tahlequah settlement Referenced in the context of: Puget Mill Company Logs 10 Square Miles of the Island (1910)",
-      "related_entries": [
-        "ear-006"
-      ]
-    },
-    {
-      "id": "place-045",
-      "type": "place",
-      "title": "Mukai Farm",
-      "text": "Mukai Farm heritage-site Referenced in 4 timeline entries spanning early-20th-century, wwii eras.",
-      "related_entries": [
-        "ear-001",
-        "ear-012",
-        "ww2-003",
-        "ww2-006"
-      ]
-    },
-    {
-      "id": "place-046",
-      "type": "place",
-      "title": "Mukai Farm and Garden",
-      "text": "Mukai Farm and Garden heritage-site Referenced in the context of: Mukai Farm Listed on National Register of Historic Places (1994)",
-      "related_entries": [
-        "mod-007"
-      ]
-    },
-    {
-      "id": "place-047",
-      "type": "place",
-      "title": "Camp Sealth",
-      "text": "Camp Sealth youth-camp Referenced in the context of: Camp Sealth Founded by Camp Fire Girls (1920)",
-      "related_entries": [
-        "ear-010"
-      ]
-    },
-    {
-      "id": "place-048",
-      "type": "place",
-      "title": "Ober Park",
-      "text": "Ober Park public-park Referenced in 2 timeline entries spanning state-ferry, wwii eras.",
-      "related_entries": [
-        "fer-004",
-        "ww2-002"
-      ]
-    },
-    {
-      "id": "place-049",
-      "type": "place",
-      "title": "Village Green",
-      "text": "Village Green community-space Referenced in the context of: Vashon Island Farmers Market Established (~1985)",
-      "related_entries": [
-        "mod-005"
-      ]
-    },
-    {
-      "id": "place-050",
-      "type": "place",
-      "title": "Vashon Island Coffee Roasterie",
-      "text": "Vashon Island Coffee Roasterie business Referenced in the context of: Stewart Brothers Coffee Opens Roastery on Vashon Island (1982)",
-      "related_entries": [
-        "mod-004"
-      ]
-    },
-    {
-      "id": "place-051",
-      "type": "place",
-      "title": "Old Man House",
-      "text": "Old Man House historic-site Referenced in the context of: Suquamish Seasonal Use of Vashon Island (~1000)",
-      "related_entries": [
-        "ind-006"
-      ]
-    },
-    {
-      "id": "place-052",
-      "type": "place",
-      "title": "Assembly Point",
-      "text": "Assembly Point gathering-point Referenced in 2 timeline entries spanning growth-industry eras.",
-      "related_entries": [
-        "gro-010",
-        "gro-012"
-      ]
-    },
-    {
-      "id": "place-053",
-      "type": "place",
-      "title": "Fauntleroy",
-      "text": "Fauntleroy ferry-terminal Referenced in the context of: Vashon Bridge Proposal Defeated in State Legislature (1959-03-12)",
-      "related_entries": [
-        "fer-003"
-      ]
-    },
-    {
-      "id": "place-054",
-      "type": "place",
-      "title": "Fauntleroy Terminal",
-      "text": "Fauntleroy Terminal ferry-terminal Referenced in the context of: Washington State Ferries Begins Service (1951-06-01)",
-      "related_entries": [
-        "fer-001"
-      ]
-    },
-    {
-      "id": "place-055",
-      "type": "place",
-      "title": "Point Defiance",
-      "text": "Point Defiance geographic-point Referenced in the context of: Spring Beach Resort and Summer Tourism Flourish (1905)",
-      "related_entries": [
-        "ear-008"
-      ]
-    },
-    {
-      "id": "place-056",
-      "type": "place",
-      "title": "Vashon Highway",
-      "text": "Vashon Highway road Referenced in 2 timeline entries spanning modern eras.",
-      "related_entries": [
-        "mod-003",
-        "mod-009"
-      ]
-    },
-    {
-      "id": "place-057",
-      "type": "place",
-      "title": "Vashon Highway SW",
-      "text": "Vashon Highway SW road Referenced in the context of: The Bike in the Tree: Vashon's Accidental Landmark (~1954)",
-      "related_entries": [
-        "mod-011"
-      ]
-    },
-    {
-      "id": "place-058",
-      "type": "place",
-      "title": "Heart Mountain",
-      "text": "Heart Mountain internment-site Referenced in 2 timeline entries spanning wwii eras.",
-      "related_entries": [
-        "ww2-002",
-        "ww2-005"
-      ]
-    },
-    {
-      "id": "place-059",
-      "type": "place",
-      "title": "Pinedale Assembly Center",
-      "text": "Pinedale Assembly Center internment-site Referenced in the context of: Day of Exile: Vashon Japanese Americans Forcibly Removed (1942-05-16)",
-      "related_entries": [
-        "ww2-002"
-      ]
-    },
-    {
-      "id": "place-060",
-      "type": "place",
-      "title": "Tule Lake",
-      "text": "Tule Lake internment-site Referenced in the context of: Day of Exile: Vashon Japanese Americans Forcibly Removed (1942-05-16)",
-      "related_entries": [
-        "ww2-002"
-      ]
-    },
-    {
-      "id": "place-061",
-      "type": "place",
-      "title": "Minidoka",
-      "text": "Minidoka internment-site Referenced in the context of: Day of Exile: Vashon Japanese Americans Forcibly Removed (1942-05-16)",
-      "related_entries": [
-        "ww2-002"
-      ]
-    },
-    {
-      "id": "place-062",
-      "type": "place",
-      "title": "Dead Ox Flat, Oregon",
-      "text": "Dead Ox Flat, Oregon internment-site Referenced in the context of: Mukai Family Self-Exiles to Oregon Before Internment Order (1942-03)",
-      "related_entries": [
-        "ww2-003"
-      ]
-    },
-    {
-      "id": "place-063",
-      "type": "place",
-      "title": "Center School",
-      "text": "Center School school Referenced in the context of: Army Units Stationed on Vashon for Puget Sound Defense (1942)",
-      "related_entries": [
-        "ww2-004"
-      ]
-    },
-    {
-      "id": "place-064",
-      "type": "place",
-      "title": "Port Gamble",
-      "text": "Port Gamble mill-town Referenced in the context of: Pope and Talbot File First Land Claim on Vashon Island (1864-08-01)",
-      "related_entries": [
-        "log-006"
-      ]
-    },
-    {
-      "id": "place-065",
-      "type": "place",
-      "title": "Fort Nisqually",
-      "text": "Fort Nisqually fort Referenced in the context of: Hudson's Bay Company Establishes Fort Nisqually (1833)",
-      "related_entries": [
-        "exp-006"
-      ]
-    },
-    {
-      "id": "place-066",
-      "type": "place",
-      "title": "Oregon Territory",
-      "text": "Oregon Territory territory Referenced in the context of: Donation Land Claim Act Opens Vashon Island to Settlement (1850-09-27)",
-      "related_entries": [
-        "log-003"
-      ]
-    },
-    {
-      "id": "place-067",
-      "type": "place",
-      "title": "Nootka Sound",
-      "text": "Nootka Sound territory Referenced in the context of: Spanish Expedition Misses Puget Sound (1791)",
-      "related_entries": [
-        "exp-004"
-      ]
-    },
-    {
-      "id": "env-001",
-      "type": "environment",
-      "title": "Glacial Origins",
-      "text": "Glacial Origins geology Vashon Island was formed by the retreat of the Vashon Stade of the Fraser Glaciation, the last major ice age in the Puget Sound region (~12,000–10,000 BCE). The island's terrain is composed of glacial till — a mix of clay, sand, gravel, and boulders deposited by the retreating ice sheet. The glaciation carved the deep waterways of Puget Sound that now surround the island.",
-      "related_entries": [
-        "pre-001"
-      ]
-    },
-    {
-      "id": "env-002",
-      "type": "environment",
-      "title": "Stratigraphy",
-      "text": "Stratigraphy geology The retreating Vashon glacier left a distinctive layered geological profile: - **Vashon Till** (surface): Dense, unsorted mixture of clay, silt, sand, and gravel - **Esperance Sand** (middle): Porous advance outwash deposited by meltwater streams ahead of the glacier - **Lawton Clay** (deep): Fine sediment deposited in proglacial lakes, largely impermeable This layering determines the island's hydrology: water percolates through permeable till and outwash until hitting impermeable clay, emerg...",
-      "related_entries": [
-        "pre-001",
-        "pre-006"
-      ]
-    },
-    {
-      "id": "env-003",
-      "type": "environment",
-      "title": "Puget Sound Formation",
-      "text": "Puget Sound Formation hydrology By approximately 14,000 BCE, glacial retreat opened the Strait of Juan de Fuca, allowing saltwater to re-enter the Puget Sound basin and transforming freshwater proglacial lakes (including Glacial Lake Russell) into a saltwater inland sea. The resulting fjord system averages 450 feet in depth, with a maximum of 930 feet off Jefferson Point. Deep channels surrounding Vashon Island — some as deep as the island is high (over 600 feet) — were carved by subglacial meltwater during the Vashon Stade.",
-      "related_entries": [
-        "pre-003"
-      ]
-    },
-    {
-      "id": "env-004",
-      "type": "environment",
-      "title": "Terrain",
-      "text": "Terrain geology - **Bluffs:** Steep glacial bluffs line much of the coastline, particularly on the western and northern shores. Formed by erosion exploiting the contrast between permeable and impermeable geological layers. - **Ravines:** Hundreds of small ravines and creek valleys carved through erodible glacial sediments by surface water. Shinglemill Creek and Judd Creek cut entirely through the outwash layer. - **Soils:** Rich glacial soils support agriculture, particularly the clay loam ideal for strawber...",
-      "related_entries": [
-        "pre-006",
-        "pre-001"
-      ]
-    },
-    {
-      "id": "env-005",
-      "type": "environment",
-      "title": "Post-Glacial Succession",
-      "text": "Post-Glacial Succession ecology (~12,000–8,000 BCE) After ice sheet retreat, the bare glacial landscape underwent classic post-glacial ecological succession: 1. **16,000–15,000 BP:** Temperatures ~4°C colder than present; largely barren landscape 2. **14,000–12,000 BP:** Lodgepole pine (*Pinus contorta*) established in open parkland conditions 3. **12,000–10,000 BP:** Wider variety of trees; transition to closed forest with western hemlock and alder 4. **~8,000 BCE:** Signature Pacific Northwest species (Douglas fir, wester...",
-      "related_entries": [
-        "pre-005"
-      ]
-    },
-    {
-      "id": "env-006",
-      "type": "environment",
-      "title": "Historic Forest Cover",
-      "text": "Historic Forest Cover ecology Before European-American settlement, the island was densely forested with old-growth: - **Douglas fir** (*Pseudotsuga menziesii*) — dominant canopy species - **Western red cedar** (*Thuja plicata*) — culturally significant to Coast Salish peoples; called the \"Tree of Life\" - **Western hemlock** (*Tsuga heterophylla*) — shade-tolerant understory - **Big-leaf maple** (*Acer macrophyllum*) — in ravines and lowlands - **Red alder** (*Alnus rubra*) — pioneer species in disturbed areas The cedar wa...",
-      "related_entries": [
-        "ind-004",
-        "log-001"
-      ]
-    },
-    {
-      "id": "env-007",
-      "type": "environment",
-      "title": "Deforestation & Recovery",
-      "text": "Deforestation & Recovery ecology - **1852–1860s:** Early logging camps near shoreline; ox-team skid roads to beach. An estimated 200 million board feet of timber on island as of mid-1880s. - **1893:** Major wildfire burned logged-off areas near Center for two days; nearly reached town before wind shift. - **1910–1915:** Puget Mill Company cleared roughly 30% of the island's land area (10 square miles) in industrial-scale operations. A 1922 blaze burned the width of the south end for two miles. - **1994:** WSU Extension fores...",
-      "related_entries": [
-        "log-001",
-        "ear-006",
-        "log-007"
-      ]
-    },
-    {
-      "id": "env-008",
-      "type": "environment",
-      "title": "Marine Environment",
-      "text": "Marine Environment ecology - **Shoreline:** Mix of rocky beaches, sandy shores, and tidal flats. Vashon carries half of all King County's shorelines. - **Salmon:** All five species of Pacific salmon (Chinook, coho, sockeye, chum, pink) colonized Puget Sound ~14,900 years ago in two pulses — from the south via the Chehalis River and from the north through the Strait of Juan de Fuca. - **Shellfish:** Productive intertidal beds established by ~6,000 BCE, particularly in Quartermaster Harbor. Native species include littlen...",
-      "related_entries": [
-        "pre-004",
-        "pre-008",
-        "ind-005"
-      ]
-    },
-    {
-      "id": "env-009",
-      "type": "environment",
-      "title": "Agricultural Landscape",
-      "text": "Agricultural Landscape ecology Five distinct phases of agricultural history: 1. **Indigenous stewardship** (pre-contact): Seasonal round of resource gathering — camas root, berries (salal, huckleberry, salmonberry), shellfish, salmon, waterfowl, marine mammals. Fire used to maintain prairie openings. 2. **Homestead era** (1865–1890s): Mixed subsistence farming; clearing forest for fields. 3. **Strawberry era** (1890–1942): Signature crop cultivated primarily by Japanese American families. Mukai cold-process barreling innov...",
-      "related_entries": [
-        "gro-001",
-        "gro-009",
-        "ww2-007",
-        "mod-014"
-      ]
-    },
-    {
-      "id": "env-010",
-      "type": "environment",
-      "title": "Conservation",
-      "text": "Conservation conservation - **Vashon-Maury Island Land Trust** (founded 1989): Over 2,000 acres permanently protected, 10 miles of public trails. Preserves include Shinglemill Creek, Judd Creek, Fisher Pond, Christensen Pond, and 12 acres of the historic Matsuda Farm. Programs include \"Seven over Seventy\" (large private holdings) and \"The Four Creeks Campaign\" (major watersheds). - **Glacier Northwest Mine Controversy** (1998–2010): Proposed gravel mine expansion on Maury Island (7.5M tons/year) fought by Preserve Our...",
-      "related_entries": [
-        "mod-006",
-        "mod-008"
-      ]
-    },
-    {
-      "id": "env-011",
-      "type": "environment",
-      "title": "Pacific Maritime",
-      "text": "Pacific Maritime climate Vashon Island has a mild, maritime climate moderated by the waters of Puget Sound: - **Winters:** Cool and wet (average January temperature ~40°F / 4°C) - **Summers:** Warm and dry (average July temperature ~65°F / 18°C) - **Precipitation:** ~38 inches annually, concentrated October through March - **Rain shadow:** Partially in the Olympic rain shadow, receiving less rain than areas to the west - **Frost:** Occasional; the maritime influence moderates temperature extremes - **Growing season:*...",
-      "related_entries": [
-        "pre-001"
-      ]
-    },
-    {
-      "id": "env-012",
-      "type": "environment",
-      "title": "Holocene Climatic Optimum",
-      "text": "Holocene Climatic Optimum climate (~7,500–2,500 BCE) A prolonged warm period with temperatures averaging ~2°C warmer than the modern baseline and ~45% less precipitation. This expanded prairie-like openings and oak woodland at the expense of dense conifer forest, influenced fire regimes, and affected distribution of plant foods important to early inhabitants. The modern cool, wet climate pattern became established after ~4,200 years ago.",
-      "related_entries": [
-        "pre-007"
-      ]
-    },
-    {
       "id": "sea-001",
       "type": "entry",
       "title": "Duwamish People Establish Villages on Elliott Bay",
@@ -5171,6 +3179,797 @@
       "universe_id": "room-33"
     },
     {
+      "id": "person-001",
+      "type": "person",
+      "title": "sx̌ʷəbabš (Sqababsh / S'Homamish)",
+      "text": "sx̌ʷəbabš (Sqababsh / S'Homamish) Original permanent inhabitants of Vashon and Maury Islands. Built five main village sites. Relied on salmon fishing, shellfish, hunting, and plant harvesting. Descendants are enrolled members of the Puyallup Tribe of Indians. indigenous people",
+      "tags": []
+    },
+    {
+      "id": "person-002",
+      "type": "person",
+      "title": "Julie K. Stein",
+      "text": "Julie K. Stein Co-edited the publication \"Vashon Island Archaeology: A View from Burton Acres Shell Midden\" (2003), documenting the collaborative excavation of the Burton Acres Shell Midden site after a 1995 storm exposed its contents. archaeologist",
+      "tags": []
+    },
+    {
+      "id": "person-003",
+      "type": "person",
+      "title": "Laura S. Phillips",
+      "text": "Laura S. Phillips Co-edited \"Vashon Island Archaeology: A View from Burton Acres Shell Midden\" (2003) with Julie K. Stein, publishing the findings from the 1995 excavation involving 375 volunteers. archaeologist",
+      "tags": []
+    },
+    {
+      "id": "person-004",
+      "type": "person",
+      "title": "Judy Wright",
+      "text": "Judy Wright Contributed to the collaborative excavation and study of the Burton Acres Shell Midden on Quartermaster Harbor, which documented centuries of indigenous habitation. indigenous people",
+      "tags": []
+    },
+    {
+      "id": "person-005",
+      "type": "person",
+      "title": "Manuel Quimper",
+      "text": "Manuel Quimper Sailed the Princesa Real into the Strait of Juan de Fuca in 1790, discovering Admiralty Inlet -- the entrance to Puget Sound -- but did not enter. First European to report seeing Mount Baker. explorer",
+      "tags": []
+    },
+    {
+      "id": "person-006",
+      "type": "person",
+      "title": "Juan Carrasco",
+      "text": "Juan Carrasco Identified the entrance to Admiralty Inlet (leading to Puget Sound and the waters around Vashon Island) during the 1790 Spanish expedition, though the expedition did not proceed south into it. explorer",
+      "tags": []
+    },
+    {
+      "id": "person-007",
+      "type": "person",
+      "title": "Francisco de Eliza",
+      "text": "Francisco de Eliza Ordered both the 1790 Quimper expedition and the 1791 Narvaez expedition to explore the Strait of Juan de Fuca. The 1791 expedition passed by Admiralty Inlet but did not enter Puget Sound, leaving it for British discovery the following year. explorer",
+      "tags": []
+    },
+    {
+      "id": "person-008",
+      "type": "person",
+      "title": "Jose Maria Narvaez",
+      "text": "Jose Maria Narvaez Passed by Admiralty Inlet in 1791 aboard the Santa Saturnina but returned to Nootka Sound without exploring Puget Sound, leaving the waterway for George Vancouver's expedition the next year. explorer",
+      "tags": []
+    },
+    {
+      "id": "person-009",
+      "type": "person",
+      "title": "Captain George Vancouver",
+      "text": "Captain George Vancouver Named Vashon Island after his friend Captain James Vashon during British surveys of Puget Sound. Produced the first European maps of the area. explorer",
+      "tags": []
+    },
+    {
+      "id": "person-010",
+      "type": "person",
+      "title": "Captain James Vashon",
+      "text": "Captain James Vashon The island's namesake. A fellow naval officer and friend of George Vancouver. explorer",
+      "tags": []
+    },
+    {
+      "id": "person-011",
+      "type": "person",
+      "title": "Peter Puget",
+      "text": "Peter Puget Led a week-long survey of the southern Puget Sound in two rowing craft, passing Vashon Island and charting the waterway's farthest inlets. Vancouver named the southern portion of the waterway \"Puget's Sound\" in his honor on May 29, 1792. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-012",
+      "type": "person",
+      "title": "Joseph Whidbey",
+      "text": "Joseph Whidbey Accompanied Peter Puget on the week-long survey of southern Puget Sound, departing HMS Discovery on May 20, 1792, and sailing past Vashon Island while charting the waterway. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-013",
+      "type": "person",
+      "title": "William A. Maury",
+      "text": "William A. Maury Maury Island's namesake. The smaller island adjacent to Vashon was named after him when Lt. Wilkes charted the waters of Puget Sound in 1841. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-014",
+      "type": "person",
+      "title": "Lt. Charles Wilkes",
+      "text": "Lt. Charles Wilkes Named Maury Island after crew member William A. Maury. Named Quartermaster Harbor and nearly all of Vashon-Maury Island's coastal points after quartermasters on his voyage. First American survey of the area. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-015",
+      "type": "person",
+      "title": "Archibald McDonald",
+      "text": "Archibald McDonald Established Fort Nisqually in 1833, the first European settlement on Puget Sound, near the mouth of Sequalitchew Creek. The fort served as a fur trade hub and drew European and American attention to the broader Puget Sound region, including Vashon Island. tribal leader",
+      "tags": []
+    },
+    {
+      "id": "person-016",
+      "type": "person",
+      "title": "Samuel Royal Thurston",
+      "text": "Samuel Royal Thurston Authored the Donation Land Claim Act of 1850, which granted up to 640 acres of Oregon Territory land to married settlers. The act provided the legal mechanism under which Vashon Island was later claimed, starting in the 1860s. It explicitly excluded Black and Hawaiian settlers. homesteader",
+      "tags": []
+    },
+    {
+      "id": "person-017",
+      "type": "person",
+      "title": "Isaac Stevens",
+      "text": "Isaac Stevens Negotiated the Medicine Creek Treaty of 1854, which ceded indigenous lands to the U.S. government and led to the removal of the S'Homamish from Vashon Island. His treaty terms provoked the Puget Sound Indian War of 1855–1856. government official",
+      "tags": []
+    },
+    {
+      "id": "person-018",
+      "type": "person",
+      "title": "Chief Leschi",
+      "text": "Chief Leschi Led resistance against the Treaty of Medicine Creek's unfair terms during the Puget Sound Indian War of 1855–1856. Retreated east after the Battle of Seattle (January 26, 1856), was later captured, controversially convicted of murder, and hanged in 1858. Posthumously exonerated in 2004. indigenous people",
+      "tags": []
+    },
+    {
+      "id": "person-019",
+      "type": "person",
+      "title": "John Swan",
+      "text": "John Swan Served as guard over nearly 5,000 indigenous men, women, and children -- including the S'Homamish from Vashon Island -- who were forcibly interned on Fox Island during the Puget Sound Indian War. Over one-third of the internees fell ill under devastating conditions. military",
+      "tags": []
+    },
+    {
+      "id": "person-020",
+      "type": "person",
+      "title": "Andrew J. Pope",
+      "text": "Andrew J. Pope Together with William C. Talbot, filed the first formal land claim on Vashon Island on August 1, 1864 -- 80 acres on the west side of the island for logging operations. Both were from Maine sawmill families. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-021",
+      "type": "person",
+      "title": "William C. Talbot",
+      "text": "William C. Talbot Together with Andrew J. Pope, filed the first non-indigenous land claim on Vashon Island in 1864. Their Port Gamble mill had been operating since 1853, and the Vashon claim expanded their timber operations throughout Puget Sound. logger",
+      "tags": []
+    },
+    {
+      "id": "person-022",
+      "type": "person",
+      "title": "Arthur Phinney",
+      "text": "Arthur Phinney Made land claims totaling 592 acres on Vashon Island in 1864, the same year Pope and Talbot filed their claim. His claims encompassed the area that would later become the town of Vashon. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-023",
+      "type": "person",
+      "title": "Mathew Bridges",
+      "text": "Mathew Bridges First permanent homesteader, marking the beginning of European-American settlement on the island. homesteader",
+      "tags": []
+    },
+    {
+      "id": "person-024",
+      "type": "person",
+      "title": "Salmon Sherman",
+      "text": "Salmon Sherman Along with his wife Eliza Sherman, settled along Quartermaster Harbor in 1877, taking shelter in an abandoned logger's shack they nicknamed \"Fort Necessity.\" Considered the first permanent family settlers. Descendants, now in their sixth generation, still live on the island. homesteader",
+      "tags": []
+    },
+    {
+      "id": "person-025",
+      "type": "person",
+      "title": "Eliza Sherman",
+      "text": "Eliza Sherman Settled with her husband Salmon Sherman along Quartermaster Harbor in 1877. Part of the first permanent family settlement on Vashon Island, arriving with the Price and Gilman families from Minnesota. homesteader",
+      "tags": []
+    },
+    {
+      "id": "person-026",
+      "type": "person",
+      "title": "S.D. Sherman",
+      "text": "S.D. Sherman Established the first semi-regular ferry service to Vashon Island by converting a lifeboat into the schooner Old Black Joe. Previously rowed mail from Tacoma to Quartermaster Harbor. Served as an essential transportation link for the growing island community. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-027",
+      "type": "person",
+      "title": "T.D. Soper",
+      "text": "T.D. Soper Petitioned King County for Road No. 117 (today's SW Bank Road), leading from the island's center to the brickyard and post office at Vashon Landing. This was among the first official county roads on the island. homesteader",
+      "tags": []
+    },
+    {
+      "id": "person-028",
+      "type": "person",
+      "title": "Edwin Broadway",
+      "text": "Edwin Broadway Petitioned King County for Road No. 116 (today's SW Cemetery Road), running from the center of the island to the Ellisport dock. One of the first official county roads established on Vashon Island. homesteader",
+      "tags": []
+    },
+    {
+      "id": "person-029",
+      "type": "person",
+      "title": "Mason Holmes",
+      "text": "Mason Holmes Petitioned King County for Road No. 118 (today's Vashon Highway SW), running south from Road No. 117. This road became one of the island's most important transportation arteries. homesteader",
+      "tags": []
+    },
+    {
+      "id": "person-030",
+      "type": "person",
+      "title": "Samuel C. Herriott",
+      "text": "Samuel C. Herriott Served as the first postmaster when the Vashon Post Office opened on April 12, 1883, establishing an official U.S. government presence and regularizing mail delivery on the island. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-031",
+      "type": "person",
+      "title": "Albert Atwood",
+      "text": "Albert Atwood Organized the first Methodist class on Vashon Island on April 4, 1884, leading to the construction of the island's first church building the following year. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-032",
+      "type": "person",
+      "title": "John N. Dennison",
+      "text": "John N. Dennison Sent Rev. Albert Atwood to organize a Methodist class on Vashon Island in response to requests from island residents, initiating the establishment of the island's first church. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-033",
+      "type": "person",
+      "title": "R.B. Dilworth",
+      "text": "R.B. Dilworth Organized the first Chautauqua assembly on Puget Sound, held at Dilworth Point on Vashon Island on August 3, 1885. Had been active in the original Chautauqua assembly in New York since 1874. Dilworth Point is named after him. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-034",
+      "type": "person",
+      "title": "John F. Vanderhoef",
+      "text": "John F. Vanderhoef Took command of the steamer Iola in 1887 and established six weekly round trips between Tacoma, Seattle, and Vashon Island landings, creating the island's first reliable Mosquito Fleet connection. Held the mail contract for the east side of Vashon-Maury Island. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-035",
+      "type": "person",
+      "title": "Lucian Cook",
+      "text": "Lucian Cook Ran a brickyard on Quartermaster Harbor, bought the steamer Estella to transport bricks and workmen to Tacoma, and later commissioned six barges and purchased the steamer Seaside as a towboat. Key figure in the island's brick manufacturing boom that supplied Seattle and Tacoma. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-036",
+      "type": "person",
+      "title": "Frank Gorsuch",
+      "text": "Frank Gorsuch Built and opened the first store at the crossroads that became the town of Vashon in 1890. His general store, which still stands, effectively founded the town of Vashon. The building was added to the National Register of Historic Places in 2000. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-037",
+      "type": "person",
+      "title": "Ira Thompson",
+      "text": "Ira Thompson Recalled that \"although overland travel was tough and the mud deep, Gorsuch was soon doing business with people throughout the Island,\" providing firsthand testimony about the founding of the town of Vashon. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-038",
+      "type": "person",
+      "title": "Miles F. Hatch",
+      "text": "Miles F. Hatch Founded and named the town of Burton after his birthplace. Donated the hilltop campus land for Vashon College and spearheaded its founding in 1892. Operated a sawmill at Assembly Point, developed the Mileta Farm dairy, and built a store at the Burton Peninsula. Burton became the island's dominant town under his leadership. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-039",
+      "type": "person",
+      "title": "A.C. Jones",
+      "text": "A.C. Jones Hired as the first president of Vashon College at Burton, which opened in 1892 as a non-denominational Christian co-educational institution offering classical and scientific programs, a pharmacy school, conservatory of music, and school of commerce. educator",
+      "tags": []
+    },
+    {
+      "id": "person-040",
+      "type": "person",
+      "title": "John Cage Gorsuch",
+      "text": "John Cage Gorsuch Planted the first commercial strawberry operation on Vashon Island in the early 1890s. By 1896, he was harvesting 6,120 pounds per acre from his three-acre farm, launching the island's signature agricultural industry that would ship 120,000 crates annually by 1909. farmer",
+      "tags": []
+    },
+    {
+      "id": "person-041",
+      "type": "person",
+      "title": "Howard C. Stone",
+      "text": "Howard C. Stone Built the two-story Burton Masonic Hall for the Woodmen of the World fraternal order in 1894, the island's first fraternal building. The hall is now a designated King County landmark. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-042",
+      "type": "person",
+      "title": "J.E. Mace",
+      "text": "J.E. Mace Discovered bags of smuggled opium on a Vashon Island beach in 1895 and reported his find to the Seattle Customs Office. Received $175 by court order for turning in the opium, revealing the island's position along Pacific Northwest maritime smuggling routes. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-043",
+      "type": "person",
+      "title": "Asa Start",
+      "text": "Asa Start Neighbor of J.E. Mace, on whose property Mace buried smuggled opium found on the beach in 1895 before reporting it to government authorities. writer",
+      "tags": []
+    },
+    {
+      "id": "person-044",
+      "type": "person",
+      "title": "J.T. Thompson",
+      "text": "J.T. Thompson The first telephone line on Vashon Island ran half a mile between the local newspaper office and the J.T. Thompson household in 1891 -- little more than an acoustic wire system. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-045",
+      "type": "person",
+      "title": "Frances Sherman",
+      "text": "Frances Sherman Ran a sawmill in Paradise Valley and won a contract to supply lumber for the Luna Park amusement park at Alki Point. Part of the island's active lumber industry during the growth era. logger",
+      "tags": []
+    },
+    {
+      "id": "person-046",
+      "type": "person",
+      "title": "Helmar Steen",
+      "text": "Helmar Steen Founded the Steen Mill and built a logging railroad along what is now Cove Road. His mill provided his home with an early luxury -- electric light -- before the island's formal electrification in 1913. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-047",
+      "type": "person",
+      "title": "Mark Twain",
+      "text": "Mark Twain Reportedly among the notable speakers at the Puget Sound Chautauqua Assembly at Tramp Harbor on Vashon Island, which featured a 1,200-seat pavilion and drew audiences from across the region. writer",
+      "tags": []
+    },
+    {
+      "id": "person-048",
+      "type": "person",
+      "title": "Theodore Roosevelt",
+      "text": "Theodore Roosevelt Reportedly among the notable speakers at the Puget Sound Chautauqua Assembly at Tramp Harbor on Vashon Island, reflecting the assembly's national cultural significance. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-049",
+      "type": "person",
+      "title": "Denichiro Mukai",
+      "text": "Denichiro Mukai Developed a renowned strawberry barreling method that concentrated flavor and moisture. Built a cold-process fruit barreling plant in 1926. His farmstead, listed on the National Register of Historic Places in 1994, is now a heritage site. Was among those forcibly interned during WWII. farmer",
+      "tags": []
+    },
+    {
+      "id": "person-050",
+      "type": "person",
+      "title": "Kuni Mukai",
+      "text": "Kuni Mukai Designed and installed the formal Japanese stroll garden at Mukai Farm in the 1930s -- the only known Japanese garden of that era designed by a woman. Self-exiled to Oregon with the family during WWII to avoid internment. Returned to Vashon after the war and resumed farming. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-051",
+      "type": "person",
+      "title": "Masahiro (Masa) Mukai",
+      "text": "Masahiro (Masa) Mukai Because his parents could not own land under Washington's 1921 Alien Land Law, the family purchased 40 acres in Masa's name in 1926. Designed the cold-process fruit barreling plant as a teenager. Received advance warning of internment from a military friend and moved his family to eastern Oregon, making them the only Vashon Japanese Americans to avoid the concentration camps. Invented his own seed harvester in Oregon. Returned to Vashon after the war. farmer",
+      "tags": []
+    },
+    {
+      "id": "person-052",
+      "type": "person",
+      "title": "Deb Harrington",
+      "text": "Deb Harrington Constructed the Mukai Cold Process Fruit Barreling Plant in 1926, a one-story wood-frame building designed by young Masahiro Mukai. The plant is now a King County landmark and National Register site. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-053",
+      "type": "person",
+      "title": "Melissa Jaynes",
+      "text": "Melissa Jaynes Crowned Vashon's first Strawberry Queen in 1923 at the age of 101, during the annual Strawberry Festival that celebrated the island's booming berry industry. farmer",
+      "tags": []
+    },
+    {
+      "id": "person-054",
+      "type": "person",
+      "title": "Lewis Cass Beall Sr",
+      "text": "Lewis Cass Beall Sr Founded the Harrington-Beall Greenhouse Company on a 23-acre site southeast of Vashon's business center. The business grew into the nation's largest grower of roses and an orchid establishment of international renown, operating for 101 years. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-055",
+      "type": "person",
+      "title": "Tom Beall Jr",
+      "text": "Tom Beall Jr Partnered in the Harrington-Beall Greenhouse Company, growing it into a 150,000-square-foot operation with over 50 greenhouses. By 1923, it was the island's largest employer with 25 to 30 year-round workers. During WWII, rare orchids from England were shipped to the Vashon greenhouses for safekeeping. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-056",
+      "type": "person",
+      "title": "Charles A. Cook",
+      "text": "Charles A. Cook Platted the Magnolia Beach resort community on Vashon Island in 1902, part of the island's flourishing summer tourism industry that drew over 8,000 visitors per season from Tacoma by 1915. community leader",
+      "tags": []
+    },
+    {
+      "id": "person-057",
+      "type": "person",
+      "title": "G.A. Collins",
+      "text": "G.A. Collins Built a steam electric generating plant at Ellisport, bringing the first electric lights to Vashon Island. The system was inaugurated on November 24, 1913, with Governor Ernest Lister pressing the button. government official",
+      "tags": []
+    },
+    {
+      "id": "person-058",
+      "type": "person",
+      "title": "Ernest Lister",
+      "text": "Ernest Lister Inaugurated the Vashon Island electrical system on November 24, 1913, by pressing the button that activated G.A. Collins's steam electric plant at Ellisport. government official",
+      "tags": []
+    },
+    {
+      "id": "person-059",
+      "type": "person",
+      "title": "Ruth A. Brown",
+      "text": "Ruth A. Brown Founded Camp Sealth in 1920, the first permanent resident camp for girls in Washington State. The camp began on Blake Island and moved to a 150-acre site on Vashon Island's southwest corner in 1921. It has operated for over 100 continuous summers and expanded to nearly 400 acres. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-060",
+      "type": "person",
+      "title": "Louis Modaranga",
+      "text": "Louis Modaranga Attacked on the night of May 12, 1930, by four white men while employed at the Steen Mill box factory in Ellisport. Despite testimony that the assault was provoked, Modaranga was charged with felony assault while none of his attackers were arrested. His case exemplified the anti-Filipino violence faced by farmworkers during the Great Depression. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-061",
+      "type": "person",
+      "title": "Oliver Scott Van Olinda",
+      "text": "Oliver Scott Van Olinda Became the community's first historian, documenting early island life and settlement patterns. Taught stenography and typing on the founding faculty of Vashon College and also edited the weekly Vashon Island Press. Described the first automobiles arriving on the island in 1907 as \"the most powerful influence\" on island life alongside the telephone. historian",
+      "tags": []
+    },
+    {
+      "id": "person-062",
+      "type": "person",
+      "title": "Heisuke Matsuda",
+      "text": "Heisuke Matsuda Farmed strawberries on Vashon Island with his wife Mitsuno. Father of Mary Matsuda Gruenewald and Yoneichi Matsuda. Forcibly removed from the island on May 16, 1942, and sent to internment camps. farmer",
+      "tags": []
+    },
+    {
+      "id": "person-063",
+      "type": "person",
+      "title": "Mitsuno Matsuda",
+      "text": "Mitsuno Matsuda Strawberry farmer on Vashon Island. Mother of Mary Matsuda Gruenewald and Yoneichi Matsuda. Forcibly removed from the island and interned during WWII. Her family's story is told in her daughter's memoir \"Looking Like the Enemy.\" farmer",
+      "tags": []
+    },
+    {
+      "id": "person-064",
+      "type": "person",
+      "title": "Yoneichi Matsuda",
+      "text": "Yoneichi Matsuda Volunteered from Heart Mountain internment camp to serve in the U.S. Army's 442nd Regimental Combat Team, the most decorated unit for its size and length of service in U.S. military history. His family had farmed strawberries on Vashon Island since 1927. military",
+      "tags": []
+    },
+    {
+      "id": "person-065",
+      "type": "person",
+      "title": "Mary Matsuda Gruenewald",
+      "text": "Mary Matsuda Gruenewald Published \"Looking Like the Enemy: My Story of Imprisonment in Japanese American Internment Camps\" in 2005 at age 80, preserving the story of Vashon's Japanese American community. Enrolled in the U.S. Cadet Nurse Corps during the war. In 2017, Vashon Island High School retroactively awarded her the diploma she was denied when internment cut short her education. educator",
+      "tags": []
+    },
+    {
+      "id": "person-066",
+      "type": "person",
+      "title": "Chiyeko Mukai",
+      "text": "Chiyeko Mukai Self-exiled with her husband Masa from Vashon to Dead Ox Flat, Oregon, in March 1942 to avoid internment, as she had relatives in eastern Oregon. One of only four Mukai family members who avoided the concentration camps. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-067",
+      "type": "person",
+      "title": "Milton Mukai",
+      "text": "Milton Mukai Accompanied his parents and grandmother Kuni when the Mukai family self-exiled from Vashon Island to Dead Ox Flat, Oregon, in March 1942. One of the four Mukai family members who avoided internment. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-068",
+      "type": "person",
+      "title": "John Cherberg",
+      "text": "John Cherberg Made the procedural ruling on March 12, 1959, that effectively killed the most serious Vashon Island bridge proposal in history. Ruled that the House bill had broadened the original scope and must return to committee. A vote to override his ruling failed 21 to 28, and the bridge was never built. government official",
+      "tags": []
+    },
+    {
+      "id": "person-069",
+      "type": "person",
+      "title": "Fred Eernisse",
+      "text": "Fred Eernisse Co-founded the Vashon Arts League in 1949 with Norman Edson and Art Hansen, which became the oldest private nonprofit community arts organization in Washington State. The organization eventually grew into Vashon Center for the Arts. artist",
+      "tags": []
+    },
+    {
+      "id": "person-070",
+      "type": "person",
+      "title": "Norman Edson",
+      "text": "Norman Edson Co-founded the Vashon Arts League in 1949, showing art created by islanders. The organization received 501(c)(3) status in 1966 and became the island's largest nonprofit arts institution. artist",
+      "tags": []
+    },
+    {
+      "id": "person-071",
+      "type": "person",
+      "title": "Art Hansen",
+      "text": "Art Hansen Co-founded the Vashon Arts League in 1949 with Fred Eernisse and Norman Edson, establishing the institutional foundation for the island's arts community. artist",
+      "tags": []
+    },
+    {
+      "id": "person-072",
+      "type": "person",
+      "title": "Shirley Speidel",
+      "text": "Shirley Speidel Helped revitalize the Vashon arts organization, finding a permanent home in the old Boy Scout Cabin at Ober Park. Instrumental in the organization receiving its 501(c)(3) nonprofit status in 1966 as Vashon Associated Arts. community leader",
+      "tags": []
+    },
+    {
+      "id": "person-073",
+      "type": "person",
+      "title": "Tony Grant",
+      "text": "Tony Grant A 17-year-old who was held down by three loggers who forcibly cut his hair during the cultural tensions surrounding the counterculture influx to Vashon Island around 1970. The incident exemplified the friction between long-time residents and the incoming counterculture movement. logger",
+      "tags": []
+    },
+    {
+      "id": "person-074",
+      "type": "person",
+      "title": "Bill Kirschner",
+      "text": "Bill Kirschner University of Washington engineering graduate who pioneered fiberglass ski technology. Experimented in his grandfather Otto's garage on Vashon Island before perfecting a wet-wrap fiberglass process in 1961. Co-founded K2 Corporation with his brother Don in 1962. The company became the island's largest private employer with approximately 750 workers at its peak. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-075",
+      "type": "person",
+      "title": "Don Kirschner",
+      "text": "Don Kirschner Co-founded K2 Corporation on Vashon Island with his brother Bill in 1962, named for both the world's second-highest mountain and the two Kirschner brothers. The company revolutionized the ski industry with fiberglass technology. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-076",
+      "type": "person",
+      "title": "Otto Kirschner",
+      "text": "Otto Kirschner His garage on Vashon Island served as the original workshop where Bill Kirschner experimented with fiberglass ski prototypes in the 1950s, leading to the founding of K2 Corporation. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-077",
+      "type": "person",
+      "title": "Jim Stewart",
+      "text": "Jim Stewart Moved his coffee roasting operation to Vashon Island in 1982, purchasing a historic building in the town of Vashon. After winning a regional tasting competition, the company changed its name from Stewart Brothers Coffee to Seattle's Best Coffee. Starbucks acquired SBC in 2003 and closed the Vashon facility. The building was later reopened as The Vashon Island Coffee Roasterie. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-078",
+      "type": "person",
+      "title": "Lawrence Matsuda",
+      "text": "Lawrence Matsuda Collaborated with artist Roger Shimomura on the \"Nisei Trilogy,\" a collaborative artwork depicting the Japanese American wartime experience, which is on permanent display in the Mukai house on Vashon Island. artist",
+      "tags": []
+    },
+    {
+      "id": "person-079",
+      "type": "person",
+      "title": "Roger Shimomura",
+      "text": "Roger Shimomura Collaborated with poet Lawrence Matsuda on the \"Nisei Trilogy,\" a collaborative artwork depicting the Japanese American wartime experience, on permanent display at Mukai Farm and Garden on Vashon Island. artist",
+      "tags": []
+    },
+    {
+      "id": "person-080",
+      "type": "person",
+      "title": "Berkeley Breathed",
+      "text": "Berkeley Breathed Wrote the children's book \"Red Ranger Came Calling,\" inspired by Vashon Island's iconic \"Bike in the Tree\" landmark -- a bicycle gradually absorbed by a growing fir tree since the 1950s. writer",
+      "tags": []
+    },
+    {
+      "id": "person-081",
+      "type": "person",
+      "title": "Don Puz",
+      "text": "Don Puz Original owner of the red bicycle that became the iconic \"Bike in the Tree\" landmark. After a devastating house fire killed his father in 1954, neighbors donated the bicycle to young Don. He left it leaning against a small fir tree, which gradually grew around it over the decades. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-082",
+      "type": "person",
+      "title": "Jeff Ammon",
+      "text": "Jeff Ammon Maintained the \"Bike in the Tree\" landmark by replacing handlebars and wheels when vandals stripped them, helping preserve one of the island's most quirky and beloved attractions. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-083",
+      "type": "person",
+      "title": "Sharon Nelson",
+      "text": "Sharon Nelson Founded Preserve Our Islands, the grassroots organization that led the 13-year fight against Glacier Northwest's proposed gravel mine expansion on Maury Island. The battle ended in 2010 when King County purchased the 200-acre site for $36 million, creating a new county park. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-084",
+      "type": "person",
+      "title": "Dow Constantine",
+      "text": "Dow Constantine Completed the purchase of the Glacier Northwest gravel mine site on Maury Island on December 30, 2010, for $36 million. The 200-acre parcel became a county park, protecting a mile of shoreline and over 200 acres of madrone forest. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-085",
+      "type": "person",
+      "title": "Jim Bristow",
+      "text": "Jim Bristow Led the Vashon Medical Reserve Corps (VMRC) in a volunteer-driven pandemic response that achieved the lowest COVID-19 case rate in King County. The program delivered over 19,000 vaccine doses, conducted 7,500+ PCR tests, and was recognized by the New York Times as a model for rural communities. community leader",
+      "tags": []
+    },
+    {
+      "id": "person-093",
+      "type": "person",
+      "title": "Glenda Pearson",
+      "text": "Glenda Pearson Longtime Vashon Island community organizer and advocate for rural character preservation. Active in land use planning debates that shaped the island's identity as a haven for artists and small-scale agriculture rather than suburban development. community leader",
+      "tags": []
+    },
+    {
+      "id": "person-094",
+      "type": "person",
+      "title": "Betty MacDonald",
+      "text": "Betty MacDonald Author of 'The Egg and I' (1945), a humorous memoir of rural life that became a bestseller and inspired the Ma and Pa Kettle film series. While set on the Olympic Peninsula, MacDonald later lived on Vashon Island with her second husband, Donald MacDonald, in the 1940s-50s. Her presence contributed to Vashon's literary reputation. writer",
+      "tags": []
+    },
+    {
+      "id": "person-095",
+      "type": "person",
+      "title": "Jean Findlay",
+      "text": "Jean Findlay Founding member of the Vashon-Maury Island Heritage Association (later Vashon Heritage Museum). Instrumental in preserving island historical records, oral histories, and artifacts. Led early efforts to document pioneer-era structures before they were lost. community leader",
+      "tags": []
+    },
+    {
+      "id": "person-096",
+      "type": "person",
+      "title": "Bruce Haulman",
+      "text": "Bruce Haulman Vashon Island's preeminent modern historian and author. Creator of vashonhistory.com, the most comprehensive online resource for island history. Author of multiple books on Vashon history and regular columnist for the Vashon-Maury Island Beachcomber. His work has made island history accessible to researchers and the general public. historian",
+      "tags": []
+    },
+    {
+      "id": "person-097",
+      "type": "person",
+      "title": "Rayna Holtz",
+      "text": "Rayna Holtz Pioneer of the organic farming movement on Vashon Island. Helped establish the Vashon Island Growers Association and the Saturday Farmers Market, which became central to the island's identity as an organic agriculture community. Part of the back-to-the-land movement that drew young farmers to the island in the 1970s-80s. farmer",
+      "tags": []
+    },
+    {
+      "id": "person-098",
+      "type": "person",
+      "title": "John de Groen",
+      "text": "John de Groen Co-founder and early leader of K2 Corporation alongside the Kirschner family. Helped transform K2 from a small island ski manufacturer into a major sporting goods company. K2 became Vashon's largest employer and its economic anchor for decades. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-099",
+      "type": "person",
+      "title": "Norie Sato",
+      "text": "Norie Sato Japanese American artist based on Vashon Island, known for large-scale public art installations throughout the Pacific Northwest. Her work explores themes of memory, landscape, and cultural identity. Recipient of numerous public art commissions including works for Sound Transit and the Seattle Art Museum. artist",
+      "tags": []
+    },
+    {
+      "id": "person-100",
+      "type": "person",
+      "title": "Kara Jones",
+      "text": "Kara Jones Vashon Island poet and publisher. Founded Soulstice Press, a small literary press based on the island. Representative of the vibrant independent publishing and poetry community that flourished on Vashon from the 1990s onward. artist",
+      "tags": []
+    },
+    {
+      "id": "person-101",
+      "type": "person",
+      "title": "Henning Sehmsdorf",
+      "text": "Henning Sehmsdorf Professor Emeritus at University of Washington and Vashon Island organic farmer. Co-founded the S&S Homestead Farm on Vashon, a model for sustainable biodynamic agriculture. Author of works on sustainable farming practices. His farm became an educational center for regenerative agriculture. educator",
+      "tags": []
+    },
+    {
+      "id": "person-102",
+      "type": "person",
+      "title": "Elizabeth Simpson",
+      "text": "Elizabeth Simpson Co-founder of S&S Homestead Farm on Vashon Island with Henning Sehmsdorf. Together they developed one of the Pacific Northwest's premier demonstrations of biodynamic and sustainable farming practices, hosting workshops and educational programs for decades. educator",
+      "tags": []
+    },
+    {
+      "id": "person-103",
+      "type": "person",
+      "title": "Captain Alexander M. Peabody",
+      "text": "Captain Alexander M. Peabody President of the Black Ball Line (Puget Sound Navigation Company), which operated ferry service to Vashon Island before state takeover. His contentious relationship with the Washington Toll Bridge Authority over fares and subsidies led to the dramatic 1951 state purchase of the Black Ball fleet, creating Washington State Ferries. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-104",
+      "type": "person",
+      "title": "Alex Anderson",
+      "text": "Alex Anderson Chairman of the Vashon Island anti-bridge committee in the late 1950s. Led the successful grassroots campaign that defeated the 1959 proposal to build a bridge connecting Vashon to the mainland. The campaign's victory preserved the island's rural character and ferry-dependent identity. community leader",
+      "tags": []
+    },
+    {
+      "id": "person-105",
+      "type": "person",
+      "title": "Leschi's Wife (Mary)",
+      "text": "Leschi's Wife (Mary) Wife of Chief Leschi of the Nisqually. During the Puget Sound War, she and other family members were among those displaced by the conflict. Her story represents the broader experience of indigenous women and families during the treaty era and forced relocations. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-106",
+      "type": "person",
+      "title": "William Tolmie",
+      "text": "William Tolmie Chief Factor at the Hudson's Bay Company's Fort Nisqually from 1843. Managed the Puget Sound Agricultural Company, which ran livestock operations that competed with American settlers for land. His presence and the HBC's claims complicated early American settlement patterns around Vashon Island. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-107",
+      "type": "person",
+      "title": "Lucy Gerand",
+      "text": "Lucy Gerand Puyallup woman and vital historical witness to pre-settlement Vashon Island life. Interviewed by anthropologist T.T. Waterman in the 1920s, she provided detailed accounts of traditional place names, village sites, and seasonal resource gathering patterns of the sx̌ʷəbabš (S'Homamish) people on Vashon and Maury Islands. Her testimony remains one of the most important primary sources for understanding indigenous lifeways on the island. indigenous leader",
+      "tags": []
+    },
+    {
+      "id": "person-108",
+      "type": "person",
+      "title": "Captain Gertrude Wiman",
+      "text": "Captain Gertrude Wiman First woman licensed as a steamship pilot on Puget Sound, earning her license around 1907. Commanded vessels on the Mosquito Fleet routes that served Vashon Island, breaking gender barriers in the maritime industry at a time when women captains were virtually unheard of. Her achievement reflected the independent spirit of island communities that depended on these small ferry operators. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-109",
+      "type": "person",
+      "title": "Marjorie Rose Stanley",
+      "text": "Marjorie Rose Stanley Vashon Island historian who spent over 60 years documenting island history. Published the first 'History of Vashon Island' in 1926 and later serialized an expanded version in the Vashon-Maury Island Beachcomber in 1967. Her work preserved the oral histories and pioneer stories that might otherwise have been lost, forming a foundation for later historians. historian",
+      "tags": []
+    },
+    {
+      "id": "person-110",
+      "type": "person",
+      "title": "Bill Moyer",
+      "text": "Bill Moyer Fourth-generation Washingtonian and Vashon Island resident who founded the Backbone Campaign in 2003. Pioneered 'artful activism' combining creative arts with environmental and social justice advocacy. Led campaigns including opposition to Lower Snake River dams for salmon and orca protection. His annual Action Camp on Vashon became a national model for activist training. community leader",
+      "tags": []
+    },
+    {
+      "id": "person-111",
+      "type": "person",
+      "title": "Alfred J. Stuckey",
+      "text": "Alfred J. Stuckey Superintendent of the Martinolich Shipyard (Dockton Dry Dock) on Quartermaster Harbor from its founding through 1909. Oversaw construction of numerous vessels including steam launches and small freighters. Under his management, the yard employed over 80 workers and became one of the most important maritime industrial operations on Puget Sound. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-112",
+      "type": "person",
+      "title": "John A. Martinolich",
+      "text": "John A. Martinolich Croatian-born shipbuilder known as the 'King of Purse Seiners' in the 1920s. Operated the Martinolich Shipyard at Dockton on Quartermaster Harbor, building and repairing vessels for the Puget Sound fishing fleet. His yard attracted a community of Croatian workers, creating a distinctive ethnic enclave at Dockton that influenced the island's cultural diversity. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-113",
+      "type": "person",
+      "title": "Mary Bridges",
+      "text": "Mary Bridges Wife of Mathew Bridges, the first European-American homesteader on Vashon Island (1865). Believed to have been of Duwamish descent, representing one of the earliest examples of intermarriage between settlers and indigenous peoples on the island. Her presence highlights the complex relationships between indigenous and settler communities in the earliest days of homesteading. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-114",
+      "type": "person",
+      "title": "Homer Hadley",
+      "text": "Homer Hadley Engineer and bridge designer who proposed a cross-sound bridge connecting Vashon Island to the mainland in the 1930s. Known for designing the Mercer Island floating bridge (Lacey V. Murrow Memorial Bridge). His Vashon bridge proposal sparked decades of debate about the island's future character — whether to remain ferry-dependent and rural or become connected and suburban. historical figure",
+      "tags": []
+    },
+    {
+      "id": "person-115",
+      "type": "person",
+      "title": "Sakai Family",
+      "text": "Sakai Family One of several prominent Japanese American farming families on Vashon Island who cultivated strawberries and other crops from the early 1900s through 1942. Like the Mukai and Matsuda families, the Sakais were forcibly removed during Executive Order 9066 and sent to internment camps. Their farms were never fully recovered after the war. farmer",
+      "tags": []
+    },
+    {
+      "id": "person-116",
+      "type": "person",
+      "title": "Hoshi Family",
+      "text": "Hoshi Family Japanese American farming family on Vashon Island who were part of the thriving agricultural community that made the island one of the leading strawberry producers in Washington state. Forcibly removed during the 1942 internment of Japanese Americans, their story is part of the broader narrative of loss and resilience that shaped the island's WWII history. farmer",
+      "tags": []
+    },
+    {
+      "id": "person-117",
+      "type": "person",
+      "title": "Bill Knox",
+      "text": "Bill Knox Vashon-based artist, designer, and engineer who created the iconic color schemes for K2 skis and built the original prototype for the K2 ski boot. As a painter he specialized in watercolor landscapes and wildlife, with work selected for U.S. postage stamps. His combination of artistic talent and engineering skill was central to K2's distinctive visual identity during its growth years. artist",
+      "tags": []
+    },
+    {
+      "id": "person-118",
+      "type": "person",
+      "title": "Peter Manson",
+      "text": "Peter Manson Named the village of Dockton on Quartermaster Harbor, noting the dry dock facility could 'dock a ton of boats.' Later founded a pile driving company that became Manson Construction, which grew into a major marine construction firm that still operates today. His entrepreneurship at Dockton exemplified the industrial ambition that characterized Vashon's growth era. business owner",
+      "tags": []
+    },
+    {
+      "id": "person-119",
+      "type": "person",
+      "title": "August M. Takatsuka",
+      "text": "August M. Takatsuka Vashon-born son of Japanese immigrant farmers who returned from military service in WWII to resume strawberry farming on the island. Later transitioned to Christmas tree cultivation in the 1970s. His persistence in farming after the devastation of internment represented the resilience of the Japanese American agricultural community on Vashon. farmer",
+      "tags": []
+    },
+    {
+      "id": "person-120",
+      "type": "person",
+      "title": "Sato Mukai",
+      "text": "Sato Mukai First wife of Denichiro Mukai, who died in 1921. Her death preceded the family's land purchase in their American-born son Masa's name in 1926, a legal strategy necessitated by the Washington State Alien Land Law that barred Japanese immigrants from owning property. historical figure",
+      "tags": []
+    },
+    {
       "id": "person-121",
       "type": "person",
       "title": "Suquamish",
@@ -5362,7 +4161,7 @@
       "id": "person-creative-001",
       "type": "person",
       "title": "Mixie Green",
-      "text": "Mixie Green Mixie is the heart of Whispering Pines — a bartender whose warmth masks a deeper unease. She is writing a novel about a bartender in a time-shifting lodge, unaware that identical drafts exist from the 1930s and 1940s. She remembers every drink she has ever poured but cannot remember why she started. Head Bartender Arrived drawn by impulse she couldn't name. Writing novel about bartender in time-shifting lodge — identical drafts exist from 1930s-1940s.",
+      "text": "Mixie Green Mixie is the heart of Whispering Pines — a bartender whose warmth masks a deeper unease. She is writing a novel about a bartender in a time-shifting lodge, unaware that identical drafts exist from the 1930s and 1940s. She remembers every drink she has ever poured but cannot remember why she started. Head Bartender",
       "tags": [
         "protagonist",
         "bartender",
@@ -5377,7 +4176,7 @@
       "id": "person-creative-002",
       "type": "person",
       "title": "Flynn Callahan",
-      "text": "Flynn Callahan Mixie's partner behind the bar — steady, warm, deeply protective. Lives in Owl cabin. Repairs watches as meditation. Callahan name appears in the Foresters' 1935 membership ledger. Co-Bartender Chose Owl cabin facing forest. Repairs watches obsessively. Callahan appears in Foresters' 1935 membership ledger.",
+      "text": "Flynn Callahan Mixie's partner behind the bar — steady, warm, deeply protective. Lives in Owl cabin. Repairs watches as meditation. Callahan name appears in the Foresters' 1935 membership ledger. Co-Bartender",
       "tags": [
         "bartender",
         "grief",
@@ -5392,7 +4191,7 @@
       "id": "person-creative-003",
       "type": "person",
       "title": "Siobhan Ni Ceallaigh (The Woman of the Storm)",
-      "text": "Siobhan Ni Ceallaigh (The Woman of the Storm) Born County Kerry ~1889, arrived 1912 with husband Cormac. After Cormac was lost at sea in 1915, her grief-fueled ritual in Room 33 transformed it into a threshold between times. She did not die conventionally — she became part of the lodge. Origin Figure / Supernatural Presence Arrived from Ireland 1912. Cormac lost at sea Nov 1915. Ritual in what became Room 33. Did not die conventionally — became part of the lodge.",
+      "text": "Siobhan Ni Ceallaigh (The Woman of the Storm) Born County Kerry ~1889, arrived 1912 with husband Cormac. After Cormac was lost at sea in 1915, her grief-fueled ritual in Room 33 transformed it into a threshold between times. She did not die conventionally — she became part of the lodge. Origin Figure / Supernatural Presence",
       "tags": [
         "origin",
         "supernatural",
@@ -5522,7 +4321,7 @@
       "id": "person-creative-012",
       "type": "person",
       "title": "Tom Hargrove",
-      "text": "Tom Hargrove 63-year-old groundskeeper whose actual tenure may be far longer than records show. Maintains the boiler, the hatch to the caves, and both the mechanical and supernatural systems of the lodge. His vigil speech is the series' emotional bedrock. Groundskeeper Official hire 1987, appears in earlier photographs. Maintains basement hatch to caves, collects objects from fireplace ash, navigates service corridors without light.",
+      "text": "Tom Hargrove 63-year-old groundskeeper whose actual tenure may be far longer than records show. Maintains the boiler, the hatch to the caves, and both the mechanical and supernatural systems of the lodge. His vigil speech is the series' emotional bedrock. Groundskeeper",
       "tags": [
         "lodge-staff",
         "groundskeeper",
@@ -5563,6 +4362,544 @@
       ],
       "entry_type": "fantasy",
       "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-015",
+      "type": "person",
+      "title": "Dr. Aldric Voss",
+      "text": "Dr. Aldric Voss Founder of the Foresters of the Eternal Compass. Arrived at the lodge in 1928, obsessed with understanding and controlling its threshold properties. His hubris led to the society's destruction when he carried something from the Water Chamber into Room 33 in 1943. Antagonist / Foresters Founder",
+      "tags": [
+        "foresters",
+        "antagonist",
+        "hubris",
+        "control"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-016",
+      "type": "person",
+      "title": "M. Quinn",
+      "text": "M. Quinn A woman who tended bar at the Triangle from 1935 to 1942. She looked exactly like Mixie Green and wrote an identical novel. Her identity is the central mystery of the cycle — was she Mixie in another era, or a previous iteration of the same pattern? Bartender / Mystery Figure",
+      "tags": [
+        "cycle",
+        "bartender",
+        "mystery",
+        "doppelganger"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-017",
+      "type": "person",
+      "title": "Iris Malone",
+      "text": "Iris Malone Identified by the Foresters as an 'Anomaly' — a guest with unusual sensitivity to the lodge's threshold properties. She disappeared in 1938, a victim of the Foresters' increasingly dangerous experiments with Room 33. Vanished Guest / Foresters Victim",
+      "tags": [
+        "anomaly",
+        "foresters",
+        "disappearance",
+        "victim"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-018",
+      "type": "person",
+      "title": "Vivian Cross",
+      "text": "Vivian Cross Another woman who looked like Mixie, tending bar at the Triangle during the 1950s. Her existence confirms the cycle — the lodge perpetually draws a version of the same bartender-witness across eras. Bartender / Cycle Figure",
+      "tags": [
+        "cycle",
+        "bartender",
+        "lookalike"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "person-creative-019",
+      "type": "person",
+      "title": "Harold Fink",
+      "text": "Harold Fink A guest who opened Room 33 during a storm in 1967. What he saw was never recorded — only that he screamed. The incident led to Room 33 being sealed, its compass rose papered over, and its existence suppressed by management. Witness / Catalyst",
+      "tags": [
+        "incident",
+        "room-33",
+        "witness",
+        "sealed"
+      ],
+      "entry_type": "fantasy",
+      "universe_id": "room-33"
+    },
+    {
+      "id": "place-001",
+      "type": "place",
+      "title": "Vashon Island",
+      "text": "Vashon Island Referenced in 86 timeline entries spanning early-20th-century, exploration, growth-industry, indigenous, logging-treaty, modern, pioneer, prehistory, state-ferry, wwii eras.",
+      "tags": []
+    },
+    {
+      "id": "place-002",
+      "type": "place",
+      "title": "Maury Island",
+      "text": "Maury Island Referenced in 14 timeline entries spanning early-20th-century, exploration, growth-industry, indigenous, modern, pioneer, prehistory eras.",
+      "tags": []
+    },
+    {
+      "id": "place-003",
+      "type": "place",
+      "title": "Puget Sound",
+      "text": "Puget Sound Referenced in 19 timeline entries spanning exploration, indigenous, logging-treaty, modern, prehistory, wwii eras.",
+      "tags": []
+    },
+    {
+      "id": "place-004",
+      "type": "place",
+      "title": "Strait of Juan de Fuca",
+      "text": "Strait of Juan de Fuca Referenced in 2 timeline entries spanning exploration, prehistory eras.",
+      "tags": []
+    },
+    {
+      "id": "place-005",
+      "type": "place",
+      "title": "Colvos Passage",
+      "text": "Colvos Passage Referenced in 3 timeline entries spanning early-20th-century, pioneer, state-ferry eras.",
+      "tags": []
+    },
+    {
+      "id": "place-006",
+      "type": "place",
+      "title": "Admiralty Inlet",
+      "text": "Admiralty Inlet Referenced in 2 timeline entries spanning exploration eras.",
+      "tags": []
+    },
+    {
+      "id": "place-007",
+      "type": "place",
+      "title": "Quartermaster Harbor",
+      "text": "Quartermaster Harbor Referenced in 12 timeline entries spanning exploration, growth-industry, indigenous, pioneer, prehistory eras.",
+      "tags": []
+    },
+    {
+      "id": "place-008",
+      "type": "place",
+      "title": "Tramp Harbor",
+      "text": "Tramp Harbor Referenced in 2 timeline entries spanning growth-industry, pioneer eras.",
+      "tags": []
+    },
+    {
+      "id": "place-009",
+      "type": "place",
+      "title": "Elliott Bay",
+      "text": "Elliott Bay Referenced in the context of: Chinese Fishing Community Established at Manzanita (~1875)",
+      "tags": []
+    },
+    {
+      "id": "place-010",
+      "type": "place",
+      "title": "Commencement Bay",
+      "text": "Commencement Bay Referenced in the context of: Peter Puget Surveys Southern Sound Past Vashon Island (1792-05-20)",
+      "tags": []
+    },
+    {
+      "id": "place-011",
+      "type": "place",
+      "title": "Nisqually River",
+      "text": "Nisqually River Referenced in the context of: Hudson's Bay Company Establishes Fort Nisqually (1833)",
+      "tags": []
+    },
+    {
+      "id": "place-012",
+      "type": "place",
+      "title": "Kitsap Peninsula",
+      "text": "Kitsap Peninsula Referenced in 2 timeline entries spanning indigenous, state-ferry eras.",
+      "tags": []
+    },
+    {
+      "id": "place-013",
+      "type": "place",
+      "title": "Blake Island",
+      "text": "Blake Island Referenced in the context of: Camp Sealth Founded by Camp Fire Girls (1920)",
+      "tags": []
+    },
+    {
+      "id": "place-014",
+      "type": "place",
+      "title": "Fox Island",
+      "text": "Fox Island Referenced in 3 timeline entries spanning exploration, logging-treaty eras.",
+      "tags": []
+    },
+    {
+      "id": "place-015",
+      "type": "place",
+      "title": "Judd Creek",
+      "text": "Judd Creek Referenced in 2 timeline entries spanning modern, prehistory eras.",
+      "tags": []
+    },
+    {
+      "id": "place-016",
+      "type": "place",
+      "title": "Shinglemill Creek",
+      "text": "Shinglemill Creek Referenced in 2 timeline entries spanning modern, prehistory eras.",
+      "tags": []
+    },
+    {
+      "id": "place-017",
+      "type": "place",
+      "title": "Whispering Firs Bog",
+      "text": "Whispering Firs Bog Referenced in the context of: Vashon-Maury Island Land Trust Founded (1989)",
+      "tags": []
+    },
+    {
+      "id": "place-018",
+      "type": "place",
+      "title": "Gold Beach",
+      "text": "Gold Beach Referenced in the context of: Glacier Northwest Gravel Mine Controversy on Maury Island (1998)",
+      "tags": []
+    },
+    {
+      "id": "place-019",
+      "type": "place",
+      "title": "Dilworth Point",
+      "text": "Dilworth Point Referenced in 2 timeline entries spanning growth-industry, pioneer eras.",
+      "tags": []
+    },
+    {
+      "id": "place-020",
+      "type": "place",
+      "title": "Burton Acres",
+      "text": "Burton Acres Referenced in the context of: Burton Acres Shell Midden Accumulation (~500 BCE)",
+      "tags": []
+    },
+    {
+      "id": "place-021",
+      "type": "place",
+      "title": "Burton Peninsula",
+      "text": "Burton Peninsula Referenced in the context of: Sawmills and Steamer Routes Serve the Island Economy (~1890)",
+      "tags": []
+    },
+    {
+      "id": "place-022",
+      "type": "place",
+      "title": "Vashon",
+      "text": "Vashon Referenced in the context of: Island Population Triples: 944 to 2,810 (1900)",
+      "tags": []
+    },
+    {
+      "id": "place-023",
+      "type": "place",
+      "title": "Town of Vashon",
+      "text": "Town of Vashon Referenced in the context of: Frank Gorsuch Opens First Store in the Town of Vashon (1890)",
+      "tags": []
+    },
+    {
+      "id": "place-024",
+      "type": "place",
+      "title": "Burton",
+      "text": "Burton Referenced in 8 timeline entries spanning early-20th-century, growth-industry, pioneer eras.",
+      "tags": []
+    },
+    {
+      "id": "place-025",
+      "type": "place",
+      "title": "Dockton",
+      "text": "Dockton Referenced in 3 timeline entries spanning early-20th-century, growth-industry eras.",
+      "tags": []
+    },
+    {
+      "id": "place-026",
+      "type": "place",
+      "title": "Center",
+      "text": "Center Referenced in 3 timeline entries spanning early-20th-century, growth-industry, pioneer eras.",
+      "tags": []
+    },
+    {
+      "id": "place-027",
+      "type": "place",
+      "title": "Ellisport",
+      "text": "Ellisport Referenced in 4 timeline entries spanning early-20th-century, growth-industry, pioneer eras.",
+      "tags": []
+    },
+    {
+      "id": "place-028",
+      "type": "place",
+      "title": "Vashon Heights",
+      "text": "Vashon Heights Referenced in the context of: First Paved Road and Automobile Era Transform the Island (1907)",
+      "tags": []
+    },
+    {
+      "id": "place-029",
+      "type": "place",
+      "title": "Manzanita",
+      "text": "Manzanita Referenced in 2 timeline entries spanning growth-industry, pioneer eras.",
+      "tags": []
+    },
+    {
+      "id": "place-030",
+      "type": "place",
+      "title": "Magnolia Beach",
+      "text": "Magnolia Beach Referenced in the context of: Spring Beach Resort and Summer Tourism Flourish (1905)",
+      "tags": []
+    },
+    {
+      "id": "place-031",
+      "type": "place",
+      "title": "Vashon Landing",
+      "text": "Vashon Landing Referenced in 3 timeline entries spanning growth-industry, pioneer eras.",
+      "tags": []
+    },
+    {
+      "id": "place-032",
+      "type": "place",
+      "title": "Spring Beach",
+      "text": "Spring Beach Referenced in the context of: Spring Beach Resort and Summer Tourism Flourish (1905)",
+      "tags": []
+    },
+    {
+      "id": "place-033",
+      "type": "place",
+      "title": "Chautauqua Beach",
+      "text": "Chautauqua Beach Referenced in the context of: First Chautauqua Assembly on Puget Sound Held on Vashon (1885-08-03)",
+      "tags": []
+    },
+    {
+      "id": "place-034",
+      "type": "place",
+      "title": "Mileta",
+      "text": "Mileta Referenced in the context of: Burton Emerges as the Island's Social and Commercial Center (1892)",
+      "tags": []
+    },
+    {
+      "id": "place-035",
+      "type": "place",
+      "title": "Portage",
+      "text": "Portage Referenced in 3 timeline entries spanning early-20th-century eras.",
+      "tags": []
+    },
+    {
+      "id": "place-036",
+      "type": "place",
+      "title": "Paradise Valley",
+      "text": "Paradise Valley Referenced in 2 timeline entries spanning growth-industry, state-ferry eras.",
+      "tags": []
+    },
+    {
+      "id": "place-037",
+      "type": "place",
+      "title": "Paradise Ridge",
+      "text": "Paradise Ridge Referenced in the context of: Nike Missile Base S-61 Established on Vashon Island (1953)",
+      "tags": []
+    },
+    {
+      "id": "place-038",
+      "type": "place",
+      "title": "Sunrise Ridge",
+      "text": "Sunrise Ridge Referenced in the context of: Nike Missile Base S-61 Established on Vashon Island (1953)",
+      "tags": []
+    },
+    {
+      "id": "place-039",
+      "type": "place",
+      "title": "Oakwood Terrace",
+      "text": "Oakwood Terrace Referenced in the context of: Nike Missile Base S-61 Established on Vashon Island (1953)",
+      "tags": []
+    },
+    {
+      "id": "place-040",
+      "type": "place",
+      "title": "Des Moines",
+      "text": "Des Moines Referenced in the context of: First Auto Ferry to Vashon Island (1916)",
+      "tags": []
+    },
+    {
+      "id": "place-041",
+      "type": "place",
+      "title": "Seattle",
+      "text": "Seattle Referenced in 2 timeline entries spanning logging-treaty, pioneer eras.",
+      "tags": []
+    },
+    {
+      "id": "place-042",
+      "type": "place",
+      "title": "Tacoma",
+      "text": "Tacoma Referenced in 3 timeline entries spanning pioneer eras.",
+      "tags": []
+    },
+    {
+      "id": "place-043",
+      "type": "place",
+      "title": "Southworth",
+      "text": "Southworth Referenced in the context of: Washington State Ferries Begins Service (1951-06-01)",
+      "tags": []
+    },
+    {
+      "id": "place-044",
+      "type": "place",
+      "title": "Tahlequah",
+      "text": "Tahlequah Referenced in the context of: Puget Mill Company Logs 10 Square Miles of the Island (1910)",
+      "tags": []
+    },
+    {
+      "id": "place-045",
+      "type": "place",
+      "title": "Mukai Farm",
+      "text": "Mukai Farm Referenced in 4 timeline entries spanning early-20th-century, wwii eras.",
+      "tags": []
+    },
+    {
+      "id": "place-046",
+      "type": "place",
+      "title": "Mukai Farm and Garden",
+      "text": "Mukai Farm and Garden Referenced in the context of: Mukai Farm Listed on National Register of Historic Places (1994)",
+      "tags": []
+    },
+    {
+      "id": "place-047",
+      "type": "place",
+      "title": "Camp Sealth",
+      "text": "Camp Sealth Referenced in the context of: Camp Sealth Founded by Camp Fire Girls (1920)",
+      "tags": []
+    },
+    {
+      "id": "place-048",
+      "type": "place",
+      "title": "Ober Park",
+      "text": "Ober Park Referenced in 2 timeline entries spanning state-ferry, wwii eras.",
+      "tags": []
+    },
+    {
+      "id": "place-049",
+      "type": "place",
+      "title": "Village Green",
+      "text": "Village Green Referenced in the context of: Vashon Island Farmers Market Established (~1985)",
+      "tags": []
+    },
+    {
+      "id": "place-050",
+      "type": "place",
+      "title": "Vashon Island Coffee Roasterie",
+      "text": "Vashon Island Coffee Roasterie Referenced in the context of: Stewart Brothers Coffee Opens Roastery on Vashon Island (1982)",
+      "tags": []
+    },
+    {
+      "id": "place-051",
+      "type": "place",
+      "title": "Old Man House",
+      "text": "Old Man House Referenced in the context of: Suquamish Seasonal Use of Vashon Island (~1000)",
+      "tags": []
+    },
+    {
+      "id": "place-052",
+      "type": "place",
+      "title": "Assembly Point",
+      "text": "Assembly Point Referenced in 2 timeline entries spanning growth-industry eras.",
+      "tags": []
+    },
+    {
+      "id": "place-053",
+      "type": "place",
+      "title": "Fauntleroy",
+      "text": "Fauntleroy Referenced in the context of: Vashon Bridge Proposal Defeated in State Legislature (1959-03-12)",
+      "tags": []
+    },
+    {
+      "id": "place-054",
+      "type": "place",
+      "title": "Fauntleroy Terminal",
+      "text": "Fauntleroy Terminal Referenced in the context of: Washington State Ferries Begins Service (1951-06-01)",
+      "tags": []
+    },
+    {
+      "id": "place-055",
+      "type": "place",
+      "title": "Point Defiance",
+      "text": "Point Defiance Referenced in the context of: Spring Beach Resort and Summer Tourism Flourish (1905)",
+      "tags": []
+    },
+    {
+      "id": "place-056",
+      "type": "place",
+      "title": "Vashon Highway",
+      "text": "Vashon Highway Referenced in 2 timeline entries spanning modern eras.",
+      "tags": []
+    },
+    {
+      "id": "place-057",
+      "type": "place",
+      "title": "Vashon Highway SW",
+      "text": "Vashon Highway SW Referenced in the context of: The Bike in the Tree: Vashon's Accidental Landmark (~1954)",
+      "tags": []
+    },
+    {
+      "id": "place-058",
+      "type": "place",
+      "title": "Heart Mountain",
+      "text": "Heart Mountain Referenced in 2 timeline entries spanning wwii eras.",
+      "tags": []
+    },
+    {
+      "id": "place-059",
+      "type": "place",
+      "title": "Pinedale Assembly Center",
+      "text": "Pinedale Assembly Center Referenced in the context of: Day of Exile: Vashon Japanese Americans Forcibly Removed (1942-05-16)",
+      "tags": []
+    },
+    {
+      "id": "place-060",
+      "type": "place",
+      "title": "Tule Lake",
+      "text": "Tule Lake Referenced in the context of: Day of Exile: Vashon Japanese Americans Forcibly Removed (1942-05-16)",
+      "tags": []
+    },
+    {
+      "id": "place-061",
+      "type": "place",
+      "title": "Minidoka",
+      "text": "Minidoka Referenced in the context of: Day of Exile: Vashon Japanese Americans Forcibly Removed (1942-05-16)",
+      "tags": []
+    },
+    {
+      "id": "place-062",
+      "type": "place",
+      "title": "Dead Ox Flat, Oregon",
+      "text": "Dead Ox Flat, Oregon Referenced in the context of: Mukai Family Self-Exiles to Oregon Before Internment Order (1942-03)",
+      "tags": []
+    },
+    {
+      "id": "place-063",
+      "type": "place",
+      "title": "Center School",
+      "text": "Center School Referenced in the context of: Army Units Stationed on Vashon for Puget Sound Defense (1942)",
+      "tags": []
+    },
+    {
+      "id": "place-064",
+      "type": "place",
+      "title": "Port Gamble",
+      "text": "Port Gamble Referenced in the context of: Pope and Talbot File First Land Claim on Vashon Island (1864-08-01)",
+      "tags": []
+    },
+    {
+      "id": "place-065",
+      "type": "place",
+      "title": "Fort Nisqually",
+      "text": "Fort Nisqually Referenced in the context of: Hudson's Bay Company Establishes Fort Nisqually (1833)",
+      "tags": []
+    },
+    {
+      "id": "place-066",
+      "type": "place",
+      "title": "Oregon Territory",
+      "text": "Oregon Territory Referenced in the context of: Donation Land Claim Act Opens Vashon Island to Settlement (1850-09-27)",
+      "tags": []
+    },
+    {
+      "id": "place-067",
+      "type": "place",
+      "title": "Nootka Sound",
+      "text": "Nootka Sound Referenced in the context of: Spanish Expedition Misses Puget Sound (1791)",
+      "tags": []
     },
     {
       "id": "place-068",
@@ -5701,7 +5038,7 @@
       "id": "place-creative-001",
       "type": "place",
       "title": "Whispering Pines Lodge",
-      "text": "Whispering Pines Lodge A remote Pacific Northwest lodge on Vashon Island where time moves differently. Built 1910, renovated 1935 by Foresters, operating continuously. Cedar and wood smoke. Warm light through old windows. Constant whisper of surrounding forest. The lodge is the series' central character — chooses guests, shapes experiences, holds them until ready.",
+      "text": "Whispering Pines Lodge A remote Pacific Northwest lodge on Vashon Island where time moves differently. Built 1910, renovated 1935 by Foresters, operating continuously.",
       "tags": [
         "lodge",
         "central",
@@ -5714,7 +5051,7 @@
       "id": "place-creative-002",
       "type": "place",
       "title": "Room 33",
-      "text": "Room 33 The threshold room at the lodge's heart. Created by Siobhan's 1915 ritual. Guests during storms may emerge transformed, terrified, or not at all. Cold and silent. Thick absorptive silence. Compass rose on floor. Wardrobe mirror reflects things not present. Threshold (between eras), reset (returning transformed), selection (choosing who enters).",
+      "text": "Room 33 The threshold room at the lodge's heart. Created by Siobhan's 1915 ritual. Guests during storms may emerge transformed, terrified, or not at all.",
       "tags": [
         "threshold",
         "supernatural",
@@ -5728,7 +5065,7 @@
       "id": "place-creative-003",
       "type": "place",
       "title": "The Triangle Bar",
-      "text": "The Triangle Bar Emotional center — triangular room where Mixie and Flynn tend bar. Every confession, relationship, and story passes through. Warm amber light. Cedar, whiskey, old wood. Glasses clinking. Piano in corner. Mirror reflecting a beat late. The confessional. Every significant conversation happens here.",
+      "text": "The Triangle Bar Emotional center — triangular room where Mixie and Flynn tend bar. Every confession, relationship, and story passes through.",
       "tags": [
         "bar",
         "emotional-center",
@@ -5742,7 +5079,7 @@
       "id": "place-creative-004",
       "type": "place",
       "title": "The Great Room",
-      "text": "The Great Room Lodge's communal center with massive stone fireplace burning continuously since 1910. Fire's ash contains objects from other eras, collected by Tom. Wood smoke and cedar. Crackling fire. Vaulted ceiling with visible timber beams. Communal gathering space and anchor point for the lodge's living presence.",
+      "text": "The Great Room Lodge's communal center with massive stone fireplace burning continuously since 1910. Fire's ash contains objects from other eras, collected by Tom.",
       "tags": [
         "communal",
         "fireplace",
@@ -5755,7 +5092,7 @@
       "id": "place-creative-005",
       "type": "place",
       "title": "The Lobby & Front Desk",
-      "text": "The Lobby & Front Desk Illusion of normalcy — competent hotel lobby masking lodge's true nature. Guest ledger contains every name since 1910. Grandfather clock ticking. Warm wood and polished brass. Old paper from guest ledger. Threshold between the ordinary world and the lodge's deeper nature.",
+      "text": "The Lobby & Front Desk Illusion of normalcy — competent hotel lobby masking lodge's true nature. Guest ledger contains every name since 1910.",
       "tags": [
         "lobby",
         "normalcy",
@@ -5769,7 +5106,7 @@
       "id": "place-creative-006",
       "type": "place",
       "title": "The Library",
-      "text": "The Library Wood-paneled room with ~2,000 books, Foresters' coded texts, clock synced to boiler. Locked cabinet contains Foresters' records and earlier drafts of Mixie's novel. Old paper, leather, wood polish. Quiet except for clock. Warm, amber-lit, enclosed. Investigation hub and repository of the lodge's documented history.",
+      "text": "The Library Wood-paneled room with ~2,000 books, Foresters' coded texts, clock synced to boiler. Locked cabinet contains Foresters' records and earlier drafts of Mixie's novel.",
       "tags": [
         "library",
         "investigation",
@@ -5783,7 +5120,7 @@
       "id": "place-creative-007",
       "type": "place",
       "title": "The Dining Room & Kitchen",
-      "text": "The Dining Room & Kitchen Lodge's most practical spaces — grounding supernatural in ordinary. Kitchen resists supernatural influence. Communal table since 1910. Coffee morning, bread afternoon, roasting vegetables evening. Morning light through east windows. Grounding anchor where the mundane resists the supernatural.",
+      "text": "The Dining Room & Kitchen Lodge's most practical spaces — grounding supernatural in ordinary. Kitchen resists supernatural influence. Communal table since 1910.",
       "tags": [
         "dining",
         "kitchen",
@@ -5797,7 +5134,7 @@
       "id": "place-creative-008",
       "type": "place",
       "title": "The Service Corridors",
-      "text": "The Service Corridors Network of narrow passages. Sound travels impossibly. During storms, carry whispers from other eras and rearrange spatially. Narrow, four feet wide. Damp plaster, metallic tang. Sound distortion. Temperature pockets. Liminal connective tissue enabling spatial disorientation and temporal bleed.",
+      "text": "The Service Corridors Network of narrow passages. Sound travels impossibly. During storms, carry whispers from other eras and rearrange spatially.",
       "tags": [
         "corridors",
         "hidden",
@@ -5811,7 +5148,7 @@
       "id": "place-creative-009",
       "type": "place",
       "title": "The Basement & Boiler Room",
-      "text": "The Basement & Boiler Room Tom's domain. 1935 Kewanee steam boiler modified by Foresters. Concealed hatch to cave system. Boiler accelerates before storms. Steam visions form. Machine oil, warm metal. Boiler's cyclic pulse like heartbeat. Low ceilings. Hatch vibrates faintly. Gateway between the mechanical and the primal; Tom's seat of power and the lodge's heartbeat.",
+      "text": "The Basement & Boiler Room Tom's domain. 1935 Kewanee steam boiler modified by Foresters. Concealed hatch to cave system. Boiler accelerates before storms. Steam visions form.",
       "tags": [
         "basement",
         "boiler",
@@ -5826,7 +5163,7 @@
       "id": "place-creative-010",
       "type": "place",
       "title": "The Storage Rooms (Lost and Found)",
-      "text": "The Storage Rooms (Lost and Found) Off service corridors — belongings left by guests who vanished. Tom maintains it like a cemetery. Locked Voss steamer trunk is Season Two mystery. Old leather and cedar. Absorbed silence — visitors involuntarily whisper. Voss trunk emits faint perfume and pipe tobacco. Memorial and mystery repository; physical evidence of the lodge's history of disappearances.",
+      "text": "The Storage Rooms (Lost and Found) Off service corridors — belongings left by guests who vanished. Tom maintains it like a cemetery. Locked Voss steamer trunk is Season Two mystery.",
       "tags": [
         "storage",
         "lost-and-found",
@@ -5840,7 +5177,7 @@
       "id": "place-creative-011",
       "type": "place",
       "title": "The Whispering Pines (Forest)",
-      "text": "The Whispering Pines (Forest) Old-growth Pacific Northwest rainforest surrounding lodge. Trees produce sustained whisper. Trails shift during storms. Forest is lodge's soft boundary. Every shade of green. Filtered light, perpetual twilight. The whisper — always present, always almost language. Petrichor, cedar, fir sap. The lodge's soft boundary and living perimeter; both protective barrier and testing ground.",
+      "text": "The Whispering Pines (Forest) Old-growth Pacific Northwest rainforest surrounding lodge. Trees produce sustained whisper. Trails shift during storms. Forest is lodge's soft boundary.",
       "tags": [
         "forest",
         "boundary",
@@ -5854,7 +5191,7 @@
       "id": "place-creative-012",
       "type": "place",
       "title": "The Clearing & Fire Pit",
-      "text": "The Clearing & Fire Pit Natural clearing quarter mile south with fire pit ringed by river stones predating European settlement. Lodge's outdoor confessional. Wood smoke. Fire's crackle. Open sky through canopy like natural oculus. Natural amphitheater acoustics. Outdoor truth-telling space; the lodge's open-air confessional and ritual ground.",
+      "text": "The Clearing & Fire Pit Natural clearing quarter mile south with fire pit ringed by river stones predating European settlement. Lodge's outdoor confessional.",
       "tags": [
         "clearing",
         "fire",
@@ -5869,7 +5206,7 @@
       "id": "place-creative-013",
       "type": "place",
       "title": "The Stone Circle",
-      "text": "The Stone Circle Twelve glacial erratics in circle deep in forest, thirteenth at center. Oldest intentional structure. Moss grows to perimeter but does not cross. Quietest outdoor space. Forest whisper muted. Diffused light, no proper shadows. Fullness of deep listening. Origin point and sacred anchor; the eye of every storm and the lodge's deepest root.",
+      "text": "The Stone Circle Twelve glacial erratics in circle deep in forest, thirteenth at center. Oldest intentional structure. Moss grows to perimeter but does not cross.",
       "tags": [
         "ancient",
         "stone-circle",
@@ -5883,7 +5220,7 @@
       "id": "place-creative-014",
       "type": "place",
       "title": "The Guest Cabins",
-      "text": "The Guest Cabins Six detached cabins along Shore Path, each with own personality. They drift — shifting position subtly. Named: Cedar, Fern, Owl, Hemlock, Raven, Moss. Owl is Flynn's. Moss retains Siobhan's lavender. Each cabin has distinct character. Salt air from shore. Wood and forest scents. Isolation within community. Individual character spaces providing isolation, privacy, and personal supernatural encounters.",
+      "text": "The Guest Cabins Six detached cabins along Shore Path, each with own personality. They drift — shifting position subtly. Named: Cedar, Fern, Owl, Hemlock, Raven, Moss. Owl is Flynn's. Moss retains Siobhan's lavender.",
       "tags": [
         "cabins",
         "drift",
@@ -5897,7 +5234,7 @@
       "id": "place-creative-015",
       "type": "place",
       "title": "The Caves",
-      "text": "The Caves Branching cave system beneath lodge — oldest space. Three levels: Upper Chambers, Middle Passages, Water Chamber with temporally reflective pool. Deeper you go, less stable time becomes. Absolute darkness. Water everywhere. Carved walls with spirals and wave patterns. Temperature rises with depth. The lodge's deepest source of power; where time itself becomes unstable and the oldest forces reside.",
+      "text": "The Caves Branching cave system beneath lodge — oldest space. Three levels: Upper Chambers, Middle Passages, Water Chamber with temporally reflective pool. Deeper you go, less stable time becomes.",
       "tags": [
         "caves",
         "source",
@@ -5911,7 +5248,7 @@
       "id": "place-creative-016",
       "type": "place",
       "title": "The Subterranean Waterways",
-      "text": "The Subterranean Waterways Underground streams threading cave system — lodge's connective tissue. Water carries temporal and memorial properties. Spring emerges in basement at constant 42 degrees. Water is memory. Sound of moving water throughout cave system, basement, and during storms, building's walls. Cold, mineral-scented, rhythmic. The lodge's circulatory system; carrier of memory and temporal properties throughout the structure.",
+      "text": "The Subterranean Waterways Underground streams threading cave system — lodge's connective tissue. Water carries temporal and memorial properties. Spring emerges in basement at constant 42 degrees. Water is memory.",
       "tags": [
         "water",
         "underground",
@@ -5925,7 +5262,7 @@
       "id": "place-creative-017",
       "type": "place",
       "title": "The Hidden Rooms",
-      "text": "The Hidden Rooms Spaces appearing only when conditions are met — during storms, for specific people, at specific emotional states. Known rooms: Writing Room, Memory Room, Mirror Room, Seventh Cabin. Warm. Silent like Room 33. Lit by unidentifiable sources. Subtle vibration, as though lodge expends effort to maintain space. The lodge's most active expressions of agency; spaces created in response to need.",
+      "text": "The Hidden Rooms Spaces appearing only when conditions are met — during storms, for specific people, at specific emotional states. Known rooms: Writing Room, Memory Room, Mirror Room, Seventh Cabin.",
       "tags": [
         "hidden",
         "conditional",
@@ -5939,7 +5276,7 @@
       "id": "place-creative-018",
       "type": "place",
       "title": "The Shore Path",
-      "text": "The Shore Path Path connecting the guest cabins along the shoreline, serving as the lodge's edge where forest meets water. The boundary between the lodge's domain and the wider island. Salt air and tide sounds. Gravel underfoot. Forest on one side, water on the other. Liminal edge space. Boundary path between the lodge's interior world and the external reality of Vashon Island.",
+      "text": "The Shore Path Path connecting the guest cabins along the shoreline, serving as the lodge's edge where forest meets water. The boundary between the lodge's domain and the wider island.",
       "tags": [
         "shore",
         "path",

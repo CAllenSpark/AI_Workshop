@@ -5687,7 +5687,7 @@
       ],
       "description": "Glaciers carve Vashon Island and deposit the glacial erratics that form the stone circle. The cave system exists beneath.",
       "places": [
-        "Stone Circle",
+        "The Stone Circle",
         "The Caves"
       ],
       "sources": [],
@@ -5714,8 +5714,8 @@
       ],
       "description": "The Duwamish and Puyallup peoples recognize this land as a place of passage -- not a resource but a relationship. They visit, they listen, they do not build.",
       "places": [
-        "Stone Circle",
-        "The Forest"
+        "The Stone Circle",
+        "The Whispering Pines (Forest)"
       ],
       "sources": [],
       "tags": [
@@ -5767,11 +5767,11 @@
       ],
       "description": "Cormac and Siobhan Ni Ceallaigh arrive at the lodge from Ireland. Siobhan plants lavender along the Shore Path.",
       "people": [
-        "Siobhan Ni Ceallaigh"
+        "Siobhan Ni Ceallaigh (The Woman of the Storm)"
       ],
       "places": [
         "Whispering Pines Lodge",
-        "Guest Cabins"
+        "The Guest Cabins"
       ],
       "sources": [],
       "tags": [
@@ -5796,7 +5796,7 @@
       ],
       "description": "Cormac is lost at sea during a storm. Siobhan's grief becomes the catalyst for the lodge's transformation.",
       "people": [
-        "Siobhan Ni Ceallaigh"
+        "Siobhan Ni Ceallaigh (The Woman of the Storm)"
       ],
       "sources": [],
       "tags": [
@@ -5823,7 +5823,7 @@
       ],
       "description": "Siobhan performs a ritual in her room -- merging her grief with the land's ancient properties. The room becomes a threshold between times. Room 33 is born.",
       "people": [
-        "Siobhan Ni Ceallaigh"
+        "Siobhan Ni Ceallaigh (The Woman of the Storm)"
       ],
       "places": [
         "Room 33"
@@ -5883,9 +5883,9 @@
       ],
       "description": "The Foresters fund a major renovation. The Triangle Bar is rebuilt, service corridors expanded, the basement hatch installed, and the compass rose placed in Room 33.",
       "places": [
-        "Triangle Bar",
-        "Service Corridors",
-        "Basement",
+        "The Triangle Bar",
+        "The Service Corridors",
+        "The Basement & Boiler Room",
         "Room 33"
       ],
       "sources": [],
@@ -5918,7 +5918,7 @@
         "Mixie Green"
       ],
       "places": [
-        "Triangle Bar"
+        "The Triangle Bar"
       ],
       "sources": [],
       "tags": [
@@ -5980,7 +5980,7 @@
       "places": [
         "Room 33",
         "The Caves",
-        "Basement"
+        "The Basement & Boiler Room"
       ],
       "sources": [],
       "tags": [
@@ -6011,7 +6011,7 @@
         "Vivian Cross"
       ],
       "places": [
-        "Triangle Bar"
+        "The Triangle Bar"
       ],
       "sources": [],
       "tags": [
@@ -6129,7 +6129,7 @@
         "Flynn Callahan"
       ],
       "places": [
-        "Triangle Bar",
+        "The Triangle Bar",
         "Whispering Pines Lodge"
       ],
       "sources": [],
@@ -6159,13 +6159,13 @@
       "description": "The most powerful storm of the season. Mixie enters Room 33 with the skeleton key. She encounters Siobhan in the wardrobe mirror. She dies and is reborn behind the bar -- transformed from witness to steward.",
       "people": [
         "Mixie Green",
-        "Siobhan Ni Ceallaigh",
+        "Siobhan Ni Ceallaigh (The Woman of the Storm)",
         "Flynn Callahan",
         "Tom Hargrove"
       ],
       "places": [
         "Room 33",
-        "Triangle Bar"
+        "The Triangle Bar"
       ],
       "sources": [],
       "tags": [
