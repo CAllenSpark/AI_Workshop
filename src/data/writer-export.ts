@@ -8,12 +8,10 @@
  */
 import type {
   DataStore,
-  TimelineEntry,
-  Person,
-  Place,
-  NarrativeProp,
   NarrativeBeat,
   EntryType,
+  LoreType,
+  WorldRuleCategory,
 } from '../types';
 import { parseDate } from './loader';
 import { ERAS } from './eras';
@@ -378,6 +376,159 @@ export function buildPropsCatalog(data: DataStore): PropsCatalogExport {
 }
 
 // ────────────────────────────────────────────
+// Lore Compendium
+// ────────────────────────────────────────────
+
+export interface LoreCompendiumItem {
+  id: string;
+  name: string;
+  type: LoreType;
+  description: string;
+  full_text?: string;
+  origin_culture?: string;
+  origin_era?: string;
+  entry_type?: EntryType;
+  themes?: string[];
+  narrative_use?: string;
+  known_by: Array<{ person_id: string; person_name: string; level: string; context?: string }>;
+  related_entries: Array<{ entry_id: string; title: string }>;
+  related_places: Array<{ place_id: string; place_name: string }>;
+  related_people: Array<{ person_id: string; person_name: string }>;
+}
+
+export interface LoreCompendiumExport {
+  export_metadata: {
+    type: 'lore-compendium';
+    generated_at: string;
+    lore_count: number;
+    version: string;
+  };
+  lore: LoreCompendiumItem[];
+}
+
+export function buildLoreCompendium(data: DataStore): LoreCompendiumExport {
+  const loreItems: LoreCompendiumItem[] = [];
+
+  for (const l of (data.lore ?? [])) {
+    const knownBy = (l.known_by ?? []).map((k) => {
+      const person = data.peopleById.get(k.person_id);
+      return { person_id: k.person_id, person_name: person?.name ?? k.person_id, level: k.level, context: k.context };
+    });
+
+    const relatedEntries = (l.related_entries ?? [])
+      .map((eid) => data.entriesById.get(eid))
+      .filter(Boolean)
+      .map((e) => ({ entry_id: e!.id, title: e!.title }));
+
+    const relatedPlaces = (l.related_places ?? [])
+      .map((pid) => data.placesById.get(pid))
+      .filter(Boolean)
+      .map((p) => ({ place_id: p!.id, place_name: p!.name }));
+
+    const relatedPeople = (l.related_people ?? [])
+      .map((pid) => data.peopleById.get(pid))
+      .filter(Boolean)
+      .map((p) => ({ person_id: p!.id, person_name: p!.name }));
+
+    loreItems.push({
+      id: l.id,
+      name: l.name,
+      type: l.type,
+      description: l.description,
+      full_text: l.full_text,
+      origin_culture: l.origin_culture,
+      origin_era: l.origin_era,
+      entry_type: l.entry_type,
+      themes: l.themes,
+      narrative_use: l.narrative_use,
+      known_by: knownBy,
+      related_entries: relatedEntries,
+      related_places: relatedPlaces,
+      related_people: relatedPeople,
+    });
+  }
+
+  // Sort by type, then name
+  loreItems.sort((a, b) => {
+    if (a.type !== b.type) return a.type.localeCompare(b.type);
+    return a.name.localeCompare(b.name);
+  });
+
+  return {
+    export_metadata: {
+      type: 'lore-compendium',
+      generated_at: new Date().toISOString(),
+      lore_count: loreItems.length,
+      version: '1.0',
+    },
+    lore: loreItems,
+  };
+}
+
+// ────────────────────────────────────────────
+// World Rules Codex
+// ────────────────────────────────────────────
+
+export interface WorldRuleCodexItem {
+  id: string;
+  name: string;
+  description: string;
+  category: WorldRuleCategory;
+  implications: string[];
+  exceptions?: string[];
+  universe_id?: string;
+  related_entries: Array<{ entry_id: string; title: string }>;
+}
+
+export interface WorldRulesCodexExport {
+  export_metadata: {
+    type: 'world-rules-codex';
+    generated_at: string;
+    rule_count: number;
+    version: string;
+  };
+  rules: WorldRuleCodexItem[];
+}
+
+export function buildWorldRulesCodex(data: DataStore): WorldRulesCodexExport {
+  const rules: WorldRuleCodexItem[] = [];
+
+  for (const rule of (data.worldRules ?? [])) {
+    const relatedEntries = (rule.related_entries ?? [])
+      .map((eid) => data.entriesById.get(eid))
+      .filter(Boolean)
+      .map((e) => ({ entry_id: e!.id, title: e!.title }));
+
+    rules.push({
+      id: rule.id,
+      name: rule.name,
+      description: rule.description,
+      category: rule.category,
+      implications: rule.implications,
+      exceptions: rule.exceptions,
+      universe_id: rule.universe_id,
+      related_entries: relatedEntries,
+    });
+  }
+
+  // Sort by category, then name
+  rules.sort((a, b) => {
+    if (a.category !== b.category) return a.category.localeCompare(b.category);
+    return a.name.localeCompare(b.name);
+  });
+
+  return {
+    export_metadata: {
+      type: 'world-rules-codex',
+      generated_at: new Date().toISOString(),
+      rule_count: rules.length,
+      version: '1.0',
+    },
+    rules,
+  };
+}
+
+// ────────────────────────────────────────────
 // Combined Writer Export
 // ────────────────────────────────────────────
 
@@ -390,6 +541,8 @@ export interface WriterExport {
   characters: CharacterDossierExport;
   locations: LocationGuideExport;
   props: PropsCatalogExport;
+  lore: LoreCompendiumExport;
+  worldRules: WorldRulesCodexExport;
 }
 
 export function buildWriterExport(data: DataStore): WriterExport {
@@ -397,10 +550,12 @@ export function buildWriterExport(data: DataStore): WriterExport {
     export_metadata: {
       type: 'writer-full',
       generated_at: new Date().toISOString(),
-      version: '1.0',
+      version: '2.0',
     },
     characters: buildCharacterDossiers(data),
     locations: buildLocationGuides(data),
     props: buildPropsCatalog(data),
+    lore: buildLoreCompendium(data),
+    worldRules: buildWorldRulesCodex(data),
   };
 }

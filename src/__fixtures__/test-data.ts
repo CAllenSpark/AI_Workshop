@@ -4,7 +4,7 @@
  * fantasy entries, regional entries, universe management.
  * Does NOT duplicate production data.
  */
-import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, NarrativeProp, DataStore } from '../types';
+import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, NarrativeProp, Lore, WorldRule, DataStore } from '../types';
 import { parseDate } from '../data/loader';
 
 export const TEST_UNIVERSES: Universe[] = [
@@ -208,6 +208,71 @@ export const TEST_PROPS: NarrativeProp[] = [
   },
 ];
 
+export const TEST_LORE: Lore[] = [
+  {
+    id: 'lore-001',
+    name: 'The Singing Stones',
+    type: 'legend',
+    description: 'A legend about stones near the harbor that hum at low tide.',
+    full_text: 'Long before settlers came, the people of the island knew that certain stones near the harbor would sing when the tide pulled away...',
+    origin_culture: 'Coast Salish',
+    origin_era: 'indigenous',
+    known_by: [
+      { person_id: 'p-003', level: 'deep', context: 'Passed down through generations' },
+      { person_id: 'p-005', level: 'familiar' },
+    ],
+    related_entries: ['e-004', 'e-fan-001'],
+    related_places: ['pl-002'],
+    related_people: ['p-003'],
+    themes: ['memory', 'landscape'],
+    narrative_use: 'Introduce as ambient detail near the harbor; deepen when players investigate',
+    entry_type: 'speculative',
+    scope: 'vashon',
+  },
+  {
+    id: 'lore-002',
+    name: 'Pioneer Harvest Song',
+    type: 'song',
+    description: 'A work song sung during strawberry harvests.',
+    origin_culture: 'Pioneer settlers',
+    origin_era: 'pioneer',
+    known_by: [
+      { person_id: 'p-001', level: 'deep' },
+    ],
+    related_entries: ['e-001'],
+    themes: ['labor', 'community'],
+    entry_type: 'historical',
+    scope: 'vashon',
+  },
+];
+
+export const TEST_WORLD_RULES: WorldRule[] = [
+  {
+    id: 'wr-001',
+    name: 'Tidal Memory',
+    description: 'The tides carry echoes of past events. Spirits are strongest at extreme low tides.',
+    category: 'supernatural',
+    implications: [
+      'Supernatural encounters should be timed to tidal cycles',
+      'Players near the shore at low tide may hear whispers from the past',
+    ],
+    exceptions: ['The Tidewalker can appear at any tide level near glacial deposits'],
+    related_entries: ['e-fan-001', 'e-005'],
+    universe_id: 'test-campaign',
+  },
+  {
+    id: 'wr-002',
+    name: 'Historical Inviolability',
+    description: 'No supernatural event can alter documented historical outcomes.',
+    category: 'narrative',
+    implications: [
+      'Fantasy elements exist in gaps of the historical record only',
+      'Players cannot change documented events through supernatural means',
+    ],
+    universe_id: 'test-campaign',
+  },
+];
+
 /** Build a complete DataStore from test fixtures */
 export function buildTestStore(): DataStore {
   const entries = [...TEST_ENTRIES].sort((a, b) => parseDate(a.date_start) - parseDate(b.date_start));
@@ -216,12 +281,16 @@ export function buildTestStore(): DataStore {
   const environment = TEST_ENVIRONMENT;
   const universes = TEST_UNIVERSES;
   const props = TEST_PROPS;
+  const lore = TEST_LORE;
+  const worldRules = TEST_WORLD_RULES;
 
   const entriesById = new Map(entries.map((e) => [e.id, e]));
   const peopleById = new Map(people.map((p) => [p.id, p]));
   const placesById = new Map(places.map((p) => [p.id, p]));
   const peopleByName = new Map(people.map((p) => [p.name, p]));
   const placesByName = new Map(places.map((p) => [p.name, p]));
+  const loreById = new Map(lore.map((l) => [l.id, l]));
+  const worldRulesById = new Map(worldRules.map((r) => [r.id, r]));
 
   const parsedDates = new Map(entries.map((e) => [e.id, parseDate(e.date_start)]));
 
@@ -249,8 +318,8 @@ export function buildTestStore(): DataStore {
   }
 
   return {
-    entries, people, places, environment, universes, props,
-    entriesById, peopleById, placesById, peopleByName, placesByName,
+    entries, people, places, environment, universes, props, lore, worldRules,
+    entriesById, peopleById, placesById, peopleByName, placesByName, loreById, worldRulesById,
     parsedDates, entriesByEra, entriesByScope, entriesByType,
     warnings: [],
   };

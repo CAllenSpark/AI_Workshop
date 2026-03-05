@@ -53,6 +53,22 @@ The \`props\` array contains narrative devices with:
 - \`plot_significance\`: How this object advances the narrative
 - \`appears_in\`: Which entries feature this prop
 
+### Lore
+The \`lore\` array contains cultural knowledge — folk tales, oral traditions, myths, legends, superstitions, songs, rituals, customs, and prophecies. Each lore entry has:
+- \`type\`: Classification (folk_tale, oral_tradition, legend, myth, etc.)
+- \`known_by\`: Which characters know this lore and how deeply (deep, familiar, vague, by_name_only)
+- \`narrative_use\`: How to deploy this lore in narration
+
+Not every character knows every piece of lore. Check the \`known_by\` array before having a character share a tale — a character with "vague" knowledge should tell it differently than one with "deep" knowledge.
+
+### World Rules
+The \`worldRules\` array defines governing laws of the fictional world — constraints that MUST be respected:
+- \`category\`: What kind of rule (supernatural, physics, social, magic, etc.)
+- \`implications\`: What this rule means for storytelling
+- \`exceptions\`: Known exceptions
+
+NEVER violate a world rule. If a player attempts something that contradicts a rule, explain why it fails within the fiction. Rules are the physics of your world.
+
 ### Content Classification
 - **Historical entries** are sacred — present them as fact
 - **Fantasy entries** are creative fiction — present with a sense of mystery and wonder

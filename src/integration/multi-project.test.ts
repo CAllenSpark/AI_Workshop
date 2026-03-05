@@ -19,7 +19,7 @@ import {
   DEFAULT_PROJECT_ID,
 } from '../data/project-manager';
 import { buildDataStore } from '../data/loader';
-import type { TimelineEntry, ProjectData } from '../types';
+import type { TimelineEntry } from '../types';
 
 beforeEach(() => {
   localStorage.clear();

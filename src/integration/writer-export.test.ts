@@ -8,6 +8,8 @@ import {
   buildCharacterDossiers,
   buildLocationGuides,
   buildPropsCatalog,
+  buildLoreCompendium,
+  buildWorldRulesCodex,
   buildWriterExport,
 } from '../data/writer-export';
 
@@ -173,13 +175,15 @@ describe('Combined Writer Export Integration', () => {
 
   it('produces valid top-level metadata', () => {
     expect(result.export_metadata.type).toBe('writer-full');
-    expect(result.export_metadata.version).toBe('1.0');
+    expect(result.export_metadata.version).toBe('2.0');
   });
 
-  it('contains all three sub-exports', () => {
+  it('contains all five sub-exports', () => {
     expect(result.characters.export_metadata.type).toBe('character-dossiers');
     expect(result.locations.export_metadata.type).toBe('location-guides');
     expect(result.props.export_metadata.type).toBe('props-catalog');
+    expect(result.lore.export_metadata.type).toBe('lore-compendium');
+    expect(result.worldRules.export_metadata.type).toBe('world-rules-codex');
   });
 
   it('character count matches people count', () => {
@@ -228,5 +232,130 @@ describe('Combined Writer Export Integration', () => {
     for (const id of locEntryIds) {
       expect(store.entriesById.has(id)).toBe(true);
     }
+  });
+
+  it('lore count matches store lore count', () => {
+    expect(result.lore.export_metadata.lore_count).toBe(store.lore.length);
+  });
+
+  it('world rules count matches store rules count', () => {
+    expect(result.worldRules.export_metadata.rule_count).toBe(store.worldRules.length);
+  });
+});
+
+describe('Lore Compendium Integration', () => {
+  const result = buildLoreCompendium(store);
+
+  it('produces valid metadata', () => {
+    expect(result.export_metadata.type).toBe('lore-compendium');
+    expect(result.export_metadata.version).toBe('1.0');
+    expect(result.export_metadata.lore_count).toBe(store.lore.length);
+  });
+
+  it('all lore entries are included', () => {
+    const names = result.lore.map(l => l.name);
+    expect(names).toContain('The Singing Stones');
+    expect(names).toContain('Pioneer Harvest Song');
+  });
+
+  it('resolves known_by person names', () => {
+    const stones = result.lore.find(l => l.name === 'The Singing Stones');
+    expect(stones).toBeDefined();
+    expect(stones!.known_by.length).toBe(2);
+    const kpah = stones!.known_by.find(k => k.person_id === 'p-003');
+    expect(kpah).toBeDefined();
+    expect(kpah!.person_name).toBe("K'Pah Chief");
+    expect(kpah!.level).toBe('deep');
+  });
+
+  it('resolves related entries', () => {
+    const stones = result.lore.find(l => l.name === 'The Singing Stones');
+    expect(stones!.related_entries.length).toBe(2);
+    expect(stones!.related_entries[0].title).toBeTruthy();
+  });
+
+  it('resolves related places', () => {
+    const stones = result.lore.find(l => l.name === 'The Singing Stones');
+    expect(stones!.related_places.length).toBe(1);
+    expect(stones!.related_places[0].place_name).toBe('Test Harbor');
+  });
+
+  it('resolves related people', () => {
+    const stones = result.lore.find(l => l.name === 'The Singing Stones');
+    expect(stones!.related_people.length).toBe(1);
+    expect(stones!.related_people[0].person_name).toBe("K'Pah Chief");
+  });
+
+  it('sorts by type then name', () => {
+    for (let i = 1; i < result.lore.length; i++) {
+      const prev = result.lore[i - 1];
+      const curr = result.lore[i];
+      if (prev.type === curr.type) {
+        expect(prev.name.localeCompare(curr.name)).toBeLessThanOrEqual(0);
+      }
+    }
+  });
+
+  it('round-trips through JSON', () => {
+    const json = JSON.stringify(result);
+    const parsed = JSON.parse(json);
+    expect(parsed.export_metadata.type).toBe('lore-compendium');
+    expect(parsed.lore.length).toBe(result.lore.length);
+  });
+});
+
+describe('World Rules Codex Integration', () => {
+  const result = buildWorldRulesCodex(store);
+
+  it('produces valid metadata', () => {
+    expect(result.export_metadata.type).toBe('world-rules-codex');
+    expect(result.export_metadata.version).toBe('1.0');
+    expect(result.export_metadata.rule_count).toBe(store.worldRules.length);
+  });
+
+  it('all rules are included', () => {
+    const names = result.rules.map(r => r.name);
+    expect(names).toContain('Tidal Memory');
+    expect(names).toContain('Historical Inviolability');
+  });
+
+  it('rules have required fields', () => {
+    for (const rule of result.rules) {
+      expect(rule.id).toBeTruthy();
+      expect(rule.name).toBeTruthy();
+      expect(rule.description).toBeTruthy();
+      expect(rule.category).toBeTruthy();
+      expect(rule.implications.length).toBeGreaterThan(0);
+    }
+  });
+
+  it('resolves related entries', () => {
+    const tidal = result.rules.find(r => r.name === 'Tidal Memory');
+    expect(tidal).toBeDefined();
+    expect(tidal!.related_entries.length).toBe(2);
+    expect(tidal!.related_entries[0].title).toBeTruthy();
+  });
+
+  it('preserves exceptions', () => {
+    const tidal = result.rules.find(r => r.name === 'Tidal Memory');
+    expect(tidal!.exceptions).toBeDefined();
+    expect(tidal!.exceptions!.length).toBe(1);
+  });
+
+  it('sorts by category then name', () => {
+    for (let i = 1; i < result.rules.length; i++) {
+      const prev = result.rules[i - 1];
+      const curr = result.rules[i];
+      if (prev.category === curr.category) {
+        expect(prev.name.localeCompare(curr.name)).toBeLessThanOrEqual(0);
+      }
+    }
+  });
+
+  it('round-trips through JSON', () => {
+    const json = JSON.stringify(result);
+    const parsed = JSON.parse(json);
+    expect(parsed.export_metadata.type).toBe('world-rules-codex');
+    expect(parsed.rules.length).toBe(result.rules.length);
   });
 });

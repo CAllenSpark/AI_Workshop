@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import type { TimelineEntry, LayerKey, EraKey, EntryType, ScopeKey } from '../types';
-import { ERAS, LAYER_COLORS, FANTASY_LAYER_COLORS, ENTRY_TYPE_COLORS, SCOPE_COLORS } from '../data/eras';
+import { ERAS, LAYER_COLORS, FANTASY_LAYER_COLORS, ENTRY_TYPE_COLORS } from '../data/eras';
 import './AddEntryDialog.css';
 
 interface Props {

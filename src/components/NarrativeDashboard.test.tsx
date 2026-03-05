@@ -5,7 +5,7 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import NarrativeDashboard from './NarrativeDashboard';
-import { buildTestStore, TEST_ENTRIES } from '../__fixtures__/test-data';
+import { buildTestStore } from '../__fixtures__/test-data';
 import type { DataStore } from '../types';
 
 function renderDashboard(overrides: { data?: DataStore; viewMode?: 'all' | 'historical' | 'creative'; books?: import('../types').Book[] } = {}) {

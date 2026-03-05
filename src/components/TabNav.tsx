@@ -1,6 +1,6 @@
 import './TabNav.css';
 
-export type TabKey = 'timeline' | 'people' | 'narrative';
+export type TabKey = 'timeline' | 'people' | 'narrative' | 'map';
 
 interface Props {
   activeTab: TabKey;
@@ -11,6 +11,7 @@ const TABS: { key: TabKey; label: string; shortcut: string }[] = [
   { key: 'timeline', label: 'Timeline', shortcut: '1' },
   { key: 'people', label: 'People', shortcut: '2' },
   { key: 'narrative', label: 'Narrative', shortcut: '3' },
+  { key: 'map', label: 'Map', shortcut: '4' },
 ];
 
 export default function TabNav({ activeTab, onChange }: Props) {

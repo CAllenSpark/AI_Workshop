@@ -1,8 +1,8 @@
-import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, NarrativeProp, DataStore, DataWarning } from '../types';
+import type { TimelineEntry, Person, Place, EnvironmentFeature, Universe, NarrativeProp, Lore, WorldRule, DataStore, DataWarning } from '../types';
 
 const BASE_PATH = import.meta.env.BASE_URL + 'data/';
 const CACHE_KEY = 'wrc_data_cache';
-const CACHE_VERSION = '4';
+const CACHE_VERSION = '5';
 const CACHE_VERSION_KEY = 'wrc_cache_version';
 
 async function fetchJson<T>(filename: string): Promise<T> {
@@ -57,6 +57,8 @@ function validateData(
   people: Person[],
   places: Place[],
   universes: Universe[],
+  lore: Lore[] = [],
+  worldRules: WorldRule[] = [],
 ): DataWarning[] {
   const warnings: DataWarning[] = [];
   const peopleNames = new Set(people.map((p) => p.name));
@@ -139,6 +141,54 @@ function validateData(
     }
   }
 
+  // Validate lore references
+  for (const l of lore) {
+    if (!l.name) {
+      warnings.push({ type: 'missing_field', entityType: 'lore', entityId: l.id, message: `Lore ${l.id} missing name` });
+    }
+    if (l.related_entries) {
+      for (const eid of l.related_entries) {
+        if (!entryIds.has(eid)) {
+          warnings.push({ type: 'missing_reference', entityType: 'lore', entityId: l.id, message: `Lore "${l.name}" references unknown entry: "${eid}"` });
+        }
+      }
+    }
+    if (l.related_people) {
+      for (const pid of l.related_people) {
+        if (!people.some((p) => p.id === pid)) {
+          warnings.push({ type: 'missing_reference', entityType: 'lore', entityId: l.id, message: `Lore "${l.name}" references unknown person: "${pid}"` });
+        }
+      }
+    }
+    if (l.related_places) {
+      for (const plid of l.related_places) {
+        if (!places.some((p) => p.id === plid)) {
+          warnings.push({ type: 'missing_reference', entityType: 'lore', entityId: l.id, message: `Lore "${l.name}" references unknown place: "${plid}"` });
+        }
+      }
+    }
+    if (l.entry_type === 'fantasy' && !l.universe_id) {
+      warnings.push({ type: 'invalid_fantasy', entityType: 'lore', entityId: l.id, message: `Fantasy lore "${l.name}" missing universe_id` });
+    }
+  }
+
+  // Validate world rule references
+  for (const rule of worldRules) {
+    if (!rule.name) {
+      warnings.push({ type: 'missing_field', entityType: 'worldRule', entityId: rule.id, message: `World rule ${rule.id} missing name` });
+    }
+    if (rule.related_entries) {
+      for (const eid of rule.related_entries) {
+        if (!entryIds.has(eid)) {
+          warnings.push({ type: 'missing_reference', entityType: 'worldRule', entityId: rule.id, message: `World rule "${rule.name}" references unknown entry: "${eid}"` });
+        }
+      }
+    }
+    if (rule.universe_id && universes.length > 0 && !universeIds.has(rule.universe_id)) {
+      warnings.push({ type: 'missing_reference', entityType: 'worldRule', entityId: rule.id, message: `World rule "${rule.name}" references unknown universe: "${rule.universe_id}"` });
+    }
+  }
+
   return warnings;
 }
 
@@ -147,6 +197,8 @@ function buildIndexes(
   entries: TimelineEntry[],
   people: Person[],
   places: Place[],
+  lore: Lore[] = [],
+  worldRules: WorldRule[] = [],
 ) {
   const entriesById = new Map<string, TimelineEntry>();
   const parsedDates = new Map<string, number>();
@@ -190,11 +242,21 @@ function buildIndexes(
     placesByName.set(p.name, p);
   }
 
-  return { entriesById, peopleById, placesById, peopleByName, placesByName, parsedDates, entriesByEra, entriesByScope, entriesByType };
+  const loreById = new Map<string, Lore>();
+  for (const l of lore) {
+    loreById.set(l.id, l);
+  }
+
+  const worldRulesById = new Map<string, WorldRule>();
+  for (const r of worldRules) {
+    worldRulesById.set(r.id, r);
+  }
+
+  return { entriesById, peopleById, placesById, peopleByName, placesByName, loreById, worldRulesById, parsedDates, entriesByEra, entriesByScope, entriesByType };
 }
 
 /** Try to load data from localStorage cache */
-function loadFromCache(): { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[]; props: NarrativeProp[] } | null {
+function loadFromCache(): { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[]; props: NarrativeProp[]; lore: Lore[]; worldRules: WorldRule[] } | null {
   try {
     const version = localStorage.getItem(CACHE_VERSION_KEY);
     if (version !== CACHE_VERSION) return null;
@@ -209,7 +271,7 @@ function loadFromCache(): { entries: TimelineEntry[]; people: Person[]; places: 
 }
 
 /** Save data to localStorage cache */
-function saveToCache(data: { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[]; props: NarrativeProp[] }): void {
+function saveToCache(data: { entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[]; props: NarrativeProp[]; lore: Lore[]; worldRules: WorldRule[] }): void {
   try {
     localStorage.setItem(CACHE_VERSION_KEY, CACHE_VERSION);
     localStorage.setItem(CACHE_KEY, JSON.stringify(data));
@@ -228,6 +290,8 @@ export async function loadData(): Promise<DataStore> {
   let environment: EnvironmentFeature[];
   let universes: Universe[];
   let props: NarrativeProp[];
+  let lore: Lore[];
+  let worldRules: WorldRule[];
 
   if (cached) {
     entries = cached.entries;
@@ -236,6 +300,8 @@ export async function loadData(): Promise<DataStore> {
     environment = cached.environment;
     universes = cached.universes ?? [];
     props = cached.props ?? [];
+    lore = cached.lore ?? [];
+    worldRules = cached.worldRules ?? [];
 
     // Background refresh: fetch fresh data and update cache
     fetchFreshData().then((fresh) => {
@@ -250,6 +316,8 @@ export async function loadData(): Promise<DataStore> {
     environment = fresh.environment;
     universes = fresh.universes;
     props = fresh.props;
+    lore = fresh.lore;
+    worldRules = fresh.worldRules;
     saveToCache(fresh);
   }
 
@@ -261,10 +329,10 @@ export async function loadData(): Promise<DataStore> {
   entries.sort((a, b) => parseDate(a.date_start) - parseDate(b.date_start));
 
   // Build all indexes
-  const indexes = buildIndexes(entries, people, places);
+  const indexes = buildIndexes(entries, people, places, lore, worldRules);
 
   // Validate data integrity
-  const warnings = validateData(entries, people, places, universes);
+  const warnings = validateData(entries, people, places, universes, lore, worldRules);
   if (warnings.length > 0) {
     console.warn(`[DataStore] ${warnings.length} data validation warnings:`);
     for (const w of warnings) {
@@ -272,11 +340,11 @@ export async function loadData(): Promise<DataStore> {
     }
   }
 
-  return { entries, people, places, environment, universes, props, warnings, ...indexes };
+  return { entries, people, places, environment, universes, props, lore, worldRules, warnings, ...indexes };
 }
 
 /** Fetch all data files from disk */
-async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[]; props: NarrativeProp[] } | null> {
+async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Person[]; places: Place[]; environment: EnvironmentFeature[]; universes: Universe[]; props: NarrativeProp[]; lore: Lore[]; worldRules: WorldRule[] } | null> {
   try {
     const [timelineData, peopleData, placesData, envData] = await Promise.all([
       fetchJson<{ entries: TimelineEntry[] }>('timeline.json'),
@@ -303,6 +371,24 @@ async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Per
       // props.json may not exist yet — that's fine
     }
 
+    // Try loading lore (may not exist yet)
+    let loreData: Lore[] = [];
+    try {
+      const lData = await fetchJson<{ lore: Lore[] }>('lore.json');
+      loreData = lData.lore ?? [];
+    } catch {
+      // lore.json may not exist yet — that's fine
+    }
+
+    // Try loading world rules (may not exist yet)
+    let worldRulesData: WorldRule[] = [];
+    try {
+      const wrData = await fetchJson<{ worldRules: WorldRule[] }>('world-rules.json');
+      worldRulesData = wrData.worldRules ?? [];
+    } catch {
+      // world-rules.json may not exist yet — that's fine
+    }
+
     return {
       entries: timelineData.entries,
       people: peopleData.people,
@@ -310,6 +396,8 @@ async function fetchFreshData(): Promise<{ entries: TimelineEntry[]; people: Per
       environment: envData.environment_features,
       universes: universesData,
       props: propsData,
+      lore: loreData,
+      worldRules: worldRulesData,
     };
   } catch {
     return null;
@@ -324,13 +412,15 @@ export function buildDataStore(
   environment: EnvironmentFeature[],
   universes: Universe[],
   props: NarrativeProp[],
+  lore: Lore[] = [],
+  worldRules: WorldRule[] = [],
 ): DataStore {
   entries = entries.map(applyEntryDefaults);
   people = people.map(applyPersonDefaults);
   entries.sort((a, b) => parseDate(a.date_start) - parseDate(b.date_start));
-  const indexes = buildIndexes(entries, people, places);
-  const warnings = validateData(entries, people, places, universes);
-  return { entries, people, places, environment, universes, props, warnings, ...indexes };
+  const indexes = buildIndexes(entries, people, places, lore, worldRules);
+  const warnings = validateData(entries, people, places, universes, lore, worldRules);
+  return { entries, people, places, environment, universes, props, lore, worldRules, warnings, ...indexes };
 }
 
 /** Add a new entry to the data store (in-memory only for prototype) */

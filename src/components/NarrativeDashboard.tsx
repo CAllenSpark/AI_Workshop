@@ -35,7 +35,7 @@ const BEAT_LABELS: Record<NarrativeBeat, string> = {
   'epilogue': 'Epilogue',
 };
 
-export default function NarrativeDashboard({ data, viewMode, books, onEntrySelect }: Props) {
+export default function NarrativeDashboard({ data, viewMode: _viewMode, books, onEntrySelect }: Props) {
   const [activeBook, setActiveBook] = useState<string | null>(null);
 
   // Gather all creative entries, optionally filtered by book

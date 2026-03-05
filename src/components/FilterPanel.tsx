@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import type { EraKey, LayerKey, EntryType, ScopeKey } from '../types';
+import type { EraKey, LayerKey, ScopeKey } from '../types';
 import { ERAS, LAYER_COLORS, ENTRY_TYPE_COLORS, SCOPE_COLORS } from '../data/eras';
 import type { ViewMode } from './ViewModeToggle';
 import './FilterPanel.css';

@@ -154,6 +154,84 @@ export interface NarrativeProp {
   universe_id?: string;
 }
 
+// ────────────────────────────────────────────
+// Lore (folk tales, oral traditions, cultural knowledge)
+// ────────────────────────────────────────────
+
+/** Classification of a lore entry */
+export type LoreType =
+  | 'folk_tale'
+  | 'oral_tradition'
+  | 'legend'
+  | 'myth'
+  | 'superstition'
+  | 'song'
+  | 'proverb'
+  | 'ritual'
+  | 'custom'
+  | 'prophecy';
+
+/** How well a character knows a piece of lore */
+export interface LoreKnowledge {
+  person_id: string;
+  level: 'deep' | 'familiar' | 'vague' | 'by_name_only';
+  context?: string;
+}
+
+/**
+ * A piece of cultural lore — folk tales, oral traditions, myths, legends,
+ * superstitions, songs, rituals, customs, or prophecies.
+ */
+export interface Lore {
+  id: string;
+  name: string;
+  type: LoreType;
+  description: string;
+  full_text?: string;
+  origin_culture?: string;
+  origin_era?: string;
+  known_by?: LoreKnowledge[];
+  related_entries?: string[];
+  related_places?: string[];
+  related_people?: string[];
+  themes?: string[];
+  narrative_use?: string;
+  entry_type?: EntryType;
+  scope?: ScopeKey;
+  universe_id?: string;
+}
+
+// ────────────────────────────────────────────
+// World Rules (governing laws of the fiction)
+// ────────────────────────────────────────────
+
+/** Category of a world rule */
+export type WorldRuleCategory =
+  | 'supernatural'
+  | 'physics'
+  | 'social'
+  | 'narrative'
+  | 'setting'
+  | 'magic'
+  | 'technology'
+  | 'other';
+
+/**
+ * A governing rule of the fictional world.
+ * Defines what is and isn't possible — constraints that
+ * the AI narrator must respect and writers should stay consistent with.
+ */
+export interface WorldRule {
+  id: string;
+  name: string;
+  description: string;
+  category: WorldRuleCategory;
+  implications: string[];
+  exceptions?: string[];
+  related_entries?: string[];
+  universe_id?: string;
+}
+
 /** Fantasy universe / campaign definition */
 export interface Universe {
   id: string;
@@ -210,6 +288,8 @@ export interface ProjectData {
   environment: EnvironmentFeature[];
   universes: Universe[];
   props: NarrativeProp[];
+  lore: Lore[];
+  worldRules: WorldRule[];
 }
 
 /** Valid era keys matching the schema */
@@ -257,12 +337,16 @@ export interface DataStore {
   environment: EnvironmentFeature[];
   universes: Universe[];
   props: NarrativeProp[];
+  lore: Lore[];
+  worldRules: WorldRule[];
   // O(1) lookup maps
   entriesById: Map<string, TimelineEntry>;
   peopleById: Map<string, Person>;
   placesById: Map<string, Place>;
   peopleByName: Map<string, Person>;
   placesByName: Map<string, Place>;
+  loreById: Map<string, Lore>;
+  worldRulesById: Map<string, WorldRule>;
   // Pre-computed date cache (entry.id -> numeric year)
   parsedDates: Map<string, number>;
   // Entries grouped by era for fast era filtering

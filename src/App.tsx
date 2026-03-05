@@ -21,6 +21,7 @@ import TabNav from './components/TabNav';
 import type { TabKey } from './components/TabNav';
 import PeopleTimeline from './components/PeopleTimeline';
 import NarrativeDashboard from './components/NarrativeDashboard';
+import MapView from './components/MapView';
 import ProjectSelector from './components/ProjectSelector';
 import ExportDialog from './components/ExportDialog';
 import KeyboardHelp from './components/KeyboardHelp';
@@ -72,7 +73,7 @@ export default function App() {
       const pd = loadProjectData(projectId);
       if (pd) {
         setUserProjectData(
-          buildDataStore(pd.entries, pd.people, pd.places, pd.environment, pd.universes, pd.props)
+          buildDataStore(pd.entries, pd.people, pd.places, pd.environment, pd.universes, pd.props, pd.lore ?? [], pd.worldRules ?? [])
         );
       } else {
         // Empty project
@@ -157,6 +158,9 @@ export default function App() {
       }
       if (e.key === '3' && !isInput && !showExport && !showHelp && !showAddEntry) {
         setActiveTab('narrative');
+      }
+      if (e.key === '4' && !isInput && !showExport && !showHelp && !showAddEntry) {
+        setActiveTab('map');
       }
     };
     window.addEventListener('keydown', handler);
@@ -478,6 +482,17 @@ export default function App() {
               data={data}
               viewMode={viewMode}
               books={activeProject.books}
+              onEntrySelect={handleEntrySelect}
+            />
+          </div>
+        )}
+
+        {activeTab === 'map' && (
+          <div id="panel-map" role="tabpanel" aria-label="Map view">
+            <MapView
+              data={data}
+              filteredEntries={filteredEntries}
+              selectedEntryId={selectedId}
               onEntrySelect={handleEntrySelect}
             />
           </div>

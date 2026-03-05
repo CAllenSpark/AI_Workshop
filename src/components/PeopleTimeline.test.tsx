@@ -2,7 +2,7 @@
  * Unit tests for PeopleTimeline component
  * Covers: M8 people timeline, lifespan bars, view mode filtering, sorting
  */
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import PeopleTimeline from './PeopleTimeline';
 import type { DataStore, Person } from '../types';

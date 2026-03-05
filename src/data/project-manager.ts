@@ -22,6 +22,8 @@ import type {
   EnvironmentFeature,
   Universe,
   NarrativeProp,
+  Lore,
+  WorldRule,
 } from '../types';
 
 const PROJECTS_KEY = 'wrc_projects';
@@ -130,6 +132,8 @@ export function createProject(
     environment: [],
     universes: [],
     props: [],
+    lore: [],
+    worldRules: [],
   };
   localStorage.setItem(PROJECT_DATA_PREFIX + project.id, JSON.stringify(data));
 
@@ -307,6 +311,8 @@ export function importProject(
       environment: raw.environment ?? raw.environment_features ?? [],
       universes: raw.universes ?? [],
       props: raw.props ?? [],
+      lore: raw.lore ?? [],
+      worldRules: raw.worldRules ?? [],
     };
   }
 
@@ -328,4 +334,6 @@ export interface RawImportData {
   environment_features?: EnvironmentFeature[];
   universes?: Universe[];
   props?: NarrativeProp[];
+  lore?: Lore[];
+  worldRules?: WorldRule[];
 }

@@ -5,11 +5,13 @@ import {
   buildCharacterDossiers,
   buildLocationGuides,
   buildPropsCatalog,
+  buildLoreCompendium,
+  buildWorldRulesCodex,
   buildWriterExport,
 } from '../data/writer-export';
 import './ExportDialog.css';
 
-type ExportFormat = 'narrator' | 'characters' | 'locations' | 'props' | 'writer-full';
+type ExportFormat = 'narrator' | 'characters' | 'locations' | 'props' | 'lore' | 'world-rules' | 'writer-full';
 type ExportScope = 'all' | 'filtered' | 'era';
 
 const FORMAT_INFO: Record<ExportFormat, { label: string; description: string }> = {
@@ -17,7 +19,9 @@ const FORMAT_INFO: Record<ExportFormat, { label: string; description: string }> 
   'characters': { label: 'Character Dossiers', description: 'All characters with appearances, story beats, and arcs' },
   'locations': { label: 'Location Guides', description: 'All locations with era-by-era change timeline' },
   'props': { label: 'Props Catalog', description: 'Narrative devices with plot function and appearances' },
-  'writer-full': { label: 'Writer Full Export', description: 'Characters + locations + props in one file' },
+  'lore': { label: 'Lore Compendium', description: 'Folk tales, oral traditions, myths, rituals, and customs' },
+  'world-rules': { label: 'World Rules Codex', description: 'Governing laws and constraints of the fictional world' },
+  'writer-full': { label: 'Writer Full Export', description: 'Characters + locations + props + lore + rules in one file' },
 };
 
 interface Props {
@@ -81,6 +85,8 @@ export default function ExportDialog({ data, filteredEntries, onClose }: Props) 
     if (format === 'characters') return buildCharacterDossiers(data);
     if (format === 'locations') return buildLocationGuides(data);
     if (format === 'props') return buildPropsCatalog(data);
+    if (format === 'lore') return buildLoreCompendium(data);
+    if (format === 'world-rules') return buildWorldRulesCodex(data);
     if (format === 'writer-full') return buildWriterExport(data);
 
     // Narrator format (original)
@@ -227,7 +233,9 @@ export default function ExportDialog({ data, filteredEntries, onClose }: Props) 
     if (format === 'characters') return { primary: `${data.people.length} characters`, secondary: `${data.entries.length} entries` };
     if (format === 'locations') return { primary: `${data.places.length} locations`, secondary: `${data.entries.length} entries` };
     if (format === 'props') return { primary: `${(data.props ?? []).length} props`, secondary: `${data.entries.length} entries` };
-    if (format === 'writer-full') return { primary: 'Full export', secondary: `${data.people.length}P / ${data.places.length}L / ${(data.props ?? []).length}Pr` };
+    if (format === 'lore') return { primary: `${(data.lore ?? []).length} lore entries`, secondary: `${data.people.length} people` };
+    if (format === 'world-rules') return { primary: `${(data.worldRules ?? []).length} rules`, secondary: `${data.entries.length} entries` };
+    if (format === 'writer-full') return { primary: 'Full export', secondary: `${data.people.length}P / ${data.places.length}L / ${(data.props ?? []).length}Pr / ${(data.lore ?? []).length}Lo / ${(data.worldRules ?? []).length}R` };
     return { primary: `${exportEntries.length} entries`, secondary: `${new Set(exportEntries.map((e) => e.era)).size} eras` };
   }, [format, data, exportEntries]);
 

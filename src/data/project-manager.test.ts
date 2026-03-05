@@ -2,7 +2,7 @@
  * Unit tests for project-manager
  * Covers: CRUD, active project, book management, import/export
  */
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import {
   listProjects,
   getProject,
@@ -194,6 +194,8 @@ describe('loadProjectData / saveProjectData', () => {
       environment: [],
       universes: [],
       props: [],
+      lore: [],
+      worldRules: [],
     };
     saveProjectData(data);
     // Should not have stored anything for default

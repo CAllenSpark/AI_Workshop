@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react';
-import type { Person, DataStore, EntryType } from '../types';
-import { parseDate } from '../data/loader';
+import type { Person, DataStore } from '../types';
 import { ENTRY_TYPE_COLORS } from '../data/eras';
 import type { ViewMode } from './ViewModeToggle';
 import './PeopleTimeline.css';
