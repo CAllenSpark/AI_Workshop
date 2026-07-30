@@ -230,6 +230,32 @@
   color: var(--charcoal);
 }
 
+.project-template-select {
+  padding: var(--sp-sm) var(--sp-md);
+  border: 1.5px solid var(--stone-light);
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: white;
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+
+.project-template-select:focus {
+  border-color: var(--slate-blue);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 109, 140, 0.15);
+}
+
+.project-template-hint {
+  font-size: 11px;
+  color: var(--creative-muted);
+  font-style: italic;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
 .project-submit-btn {
   padding: var(--sp-sm) var(--sp-lg);
   border: none;

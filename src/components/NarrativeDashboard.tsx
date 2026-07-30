@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import type { DataStore, TimelineEntry, NarrativeBeat, Book, Universe, WorldRule, Lore, NarrativeProp } from '../types';
+import type { DataStore, TimelineEntry, NarrativeBeat, Book, Universe, WorldRule, Lore } from '../types';
 import { ENTRY_TYPE_COLORS } from '../data/eras';
 import type { ViewMode } from './ViewModeToggle';
 import './NarrativeDashboard.css';

@@ -7,6 +7,7 @@ import {
   importProject,
   DEFAULT_PROJECT_ID,
 } from '../data/project-manager';
+import { PROJECT_TEMPLATES, createProjectFromTemplate } from '../data/project-templates';
 import './ProjectSelector.css';
 
 interface Props {
@@ -26,6 +27,9 @@ export default function ProjectSelector({ activeProject, onProjectChange }: Prop
   const [newSetting, setNewSetting] = useState('');
   const [newGenre, setNewGenre] = useState('');
   const [newDesc, setNewDesc] = useState('');
+  const [newTemplate, setNewTemplate] = useState('blank');
+  const [creating, setCreating] = useState(false);
+  const [createError, setCreateError] = useState('');
 
   // Import state
   const [importName, setImportName] = useState('');
@@ -42,23 +46,42 @@ export default function ProjectSelector({ activeProject, onProjectChange }: Prop
     setView('list');
   }, [onProjectChange]);
 
-  const handleCreate = useCallback(() => {
-    if (!newName.trim()) return;
-    const project = createProject(
-      newName.trim(),
-      newDesc.trim() || `Creative project set in ${newSetting.trim() || 'an unnamed world'}`,
-      newSetting.trim() || 'Unknown',
-      newGenre.trim() || undefined,
-    );
-    refreshProjects();
-    setNewName('');
-    setNewSetting('');
-    setNewGenre('');
-    setNewDesc('');
-    setView('list');
-    onProjectChange(project.id);
-    setIsOpen(false);
-  }, [newName, newSetting, newGenre, newDesc, onProjectChange, refreshProjects]);
+  const handleCreate = useCallback(async () => {
+    if (!newName.trim() || creating) return;
+    setCreateError('');
+    setCreating(true);
+    try {
+      let project;
+      if (newTemplate !== 'blank') {
+        // Pre-populated template — starter data ships with the app (no API key needed)
+        project = await createProjectFromTemplate(newTemplate, {
+          name: newName.trim(),
+          setting: newSetting.trim() || undefined,
+          genre: newGenre.trim() || undefined,
+        });
+      } else {
+        project = createProject(
+          newName.trim(),
+          newDesc.trim() || `Creative project set in ${newSetting.trim() || 'an unnamed world'}`,
+          newSetting.trim() || 'Unknown',
+          newGenre.trim() || undefined,
+        );
+      }
+      refreshProjects();
+      setNewName('');
+      setNewSetting('');
+      setNewGenre('');
+      setNewDesc('');
+      setNewTemplate('blank');
+      setView('list');
+      onProjectChange(project.id);
+      setIsOpen(false);
+    } catch (err) {
+      setCreateError(`Create failed: ${err instanceof Error ? err.message : 'Unknown error'}`);
+    } finally {
+      setCreating(false);
+    }
+  }, [newName, newSetting, newGenre, newDesc, newTemplate, creating, onProjectChange, refreshProjects]);
 
   const handleDelete = useCallback((id: string, e: React.MouseEvent) => {
     e.stopPropagation();
@@ -158,6 +181,32 @@ export default function ProjectSelector({ activeProject, onProjectChange }: Prop
               </div>
               <div className="project-form-fields">
                 <label className="project-field">
+                  <span className="project-field-label">Start From</span>
+                  <select
+                    value={newTemplate}
+                    onChange={(e) => {
+                      const tid = e.target.value;
+                      setNewTemplate(tid);
+                      const t = PROJECT_TEMPLATES.find((tpl) => tpl.id === tid);
+                      if (t && tid !== 'blank') {
+                        if (!newName.trim()) setNewName(t.name);
+                        if (!newSetting.trim()) setNewSetting(t.setting);
+                        if (!newGenre.trim()) setNewGenre(t.genre);
+                      }
+                    }}
+                    className="project-template-select"
+                  >
+                    {PROJECT_TEMPLATES.map((t) => (
+                      <option key={t.id} value={t.id}>{t.name}</option>
+                    ))}
+                  </select>
+                  {newTemplate !== 'blank' && (
+                    <span className="project-template-hint">
+                      {PROJECT_TEMPLATES.find((t) => t.id === newTemplate)?.contents}
+                    </span>
+                  )}
+                </label>
+                <label className="project-field">
                   <span className="project-field-label">Project Name *</span>
                   <input
                     type="text"
@@ -194,12 +243,13 @@ export default function ProjectSelector({ activeProject, onProjectChange }: Prop
                     rows={2}
                   />
                 </label>
+                {createError && <div className="project-import-error">{createError}</div>}
                 <button
                   className="project-submit-btn"
                   onClick={handleCreate}
-                  disabled={!newName.trim()}
+                  disabled={!newName.trim() || creating}
                 >
-                  Create Project
+                  {creating ? 'Creating…' : 'Create Project'}
                 </button>
               </div>
             </div>

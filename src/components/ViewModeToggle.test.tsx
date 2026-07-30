@@ -7,7 +7,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import ViewModeToggle from './ViewModeToggle';
 
 describe('ViewModeToggle', () => {
-  const counts = { historical: 100, fantasy: 5, speculative: 3, all: 108 };
+  const counts = { historical: 100, fantasy: 5, speculative: 3, creative: 8, all: 108 };
 
   it('renders all three mode buttons', () => {
     render(<ViewModeToggle viewMode="all" onChange={() => {}} counts={counts} />);
